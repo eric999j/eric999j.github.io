@@ -22,6 +22,27 @@
     
   </url>
   
+  <url>
+    <loc>https://eric999j.github.io/atomichabit/</loc>
+    
+    <lastmod>2020-10-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/flow/</loc>
+    
+    <lastmod>2020-10-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/hello-world/</loc>
+    
+    <lastmod>2020-10-02</lastmod>
+    
+  </url>
+  
 
   <url>
     <loc>https://eric999j.github.io/</loc>
@@ -31,6 +52,20 @@
   </url>
 
   
+  <url>
+    <loc>https://eric999j.github.io/tags/Instrrument/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://eric999j.github.io/categories/manager/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
