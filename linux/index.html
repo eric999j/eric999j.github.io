@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="查電腦資訊$ sudo apt install hardinfo$ hardinfo | less$ cat &#x2F;etc&#x2F;hostname$ lscpu   123架構：               x86_64CPU 作業模式：       32-bit, 64-bitCPU(s):              8 $ cat &#x2F;proc&#x2F;cpuinfo   123456789eric_lu@T-0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux小技巧">
+<meta property="og:url" content="https://eric999j.github.io/linux/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="查電腦資訊$ sudo apt install hardinfo$ hardinfo | less$ cat &#x2F;etc&#x2F;hostname$ lscpu   123架構：               x86_64CPU 作業模式：       32-bit, 64-bitCPU(s):              8 $ cat &#x2F;proc&#x2F;cpuinfo   123456789eric_lu@T-0">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2020-10-11T07:00:00.000Z">
+<meta property="article:modified_time" content="2020-10-11T07:20:04.449Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="好用">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://eric999j.github.io/linux/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>Linux小技巧 | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="はじめまして盧ですどうぞよろしくおねがいします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux小技巧
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-10-11 15:00:00 / Modified: 15:20:04" itemprop="dateCreated datePublished" datetime="2020-10-11T15:00:00+08:00">2020-10-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/engineer/" itemprop="url" rel="index"><span itemprop="name">工程</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>6.8k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>6 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="查電腦資訊"><a href="#查電腦資訊" class="headerlink" title="查電腦資訊"></a>查電腦資訊</h1><p>$ sudo apt install hardinfo<br>$ hardinfo | less<br>$ cat /etc/hostname<br>$ lscpu  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">架構：               x86_64</span><br><span class="line">CPU 作業模式：       32-bit, 64-bit</span><br><span class="line">CPU(s):              8</span><br></pre></td></tr></table></figure>
+<p>$ cat /proc/cpuinfo  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">eric_lu@T-01009658UP:~$ cat &#x2F;proc&#x2F;cpuinfo | grep &quot;model name&quot;</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br><span class="line">model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</span><br></pre></td></tr></table></figure>
+<p>$ cat /proc/meminfo<br>$ lsblk # HD  </p>
+<a id="more"></a>
+
+<h1 id="Clay-Technology-World"><a href="#Clay-Technology-World" class="headerlink" title="Clay-Technology World"></a>Clay-Technology World</h1><p><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/09/17/linux-cn-change-or-check-date/">https://clay-atlas.com/blog/2020/09/17/linux-cn-change-or-check-date/</a>  日期時間<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/08/04/linux-cn-note-using-trash-rm-remove-delete/">https://clay-atlas.com/blog/2020/08/04/linux-cn-note-using-trash-rm-remove-delete/</a>  用trash取代rm避免誤刪<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/05/21/linux-cn-note-shell-script-input-argument/">https://clay-atlas.com/blog/2020/05/21/linux-cn-note-shell-script-input-argument/</a> Shell Script 輸入參數$# 0 1 2 3<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/03/21/linux-cn-note-copy-progress-bar/">https://clay-atlas.com/blog/2020/03/21/linux-cn-note-copy-progress-bar/</a> 複製檔案顯示進度 gcp<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2019/12/10/ubuntu-os-crontab-settings/">https://clay-atlas.com/blog/2019/12/10/ubuntu-os-crontab-settings/</a>  定期執行 crontab<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/01/16/linux-chinese-note-speedtest-cli/">https://clay-atlas.com/blog/2020/01/16/linux-chinese-note-speedtest-cli/</a> 測網速sudo pip3 install speedtest-cli<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2019/10/29/python-chinese-tutorial-jupyter-notebook/">https://clay-atlas.com/blog/2019/10/29/python-chinese-tutorial-jupyter-notebook/</a>  遠端jupyter<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/01/11/linux-chinese-tutorial-command-du-check-file-size/">https://clay-atlas.com/blog/2020/01/11/linux-chinese-tutorial-command-du-check-file-size/</a> 顯示檔案大小du<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/02/04/linux-ubuntu-chinese-note-remove-ppa/">https://clay-atlas.com/blog/2020/02/04/linux-ubuntu-chinese-note-remove-ppa/</a> 刪除ppa sudo ls /etc/apt/sources.list.d<br><a target="_blank" rel="noopener" href="https://clay-atlas.com/blog/2020/01/29/linux-chinese-notes-tree-command-visualization-folder/">https://clay-atlas.com/blog/2020/01/29/linux-chinese-notes-tree-command-visualization-folder/</a> tee 資料夾看階層  </p>
+<h1 id="看網頁資訊"><a href="#看網頁資訊" class="headerlink" title="看網頁資訊"></a>看網頁資訊</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$  curl -v http:&#x2F;&#x2F;ec1ecdc57218.ngrok.io&#x2F;</span><br><span class="line">*   Trying 3.134.39.220...</span><br><span class="line">* TCP_NODELAY set</span><br><span class="line">* Connected to ec1ecdc57218.ngrok.io (3.134.39.220) port 80 (#0)</span><br><span class="line">&gt; GET &#x2F; HTTP&#x2F;1.1</span><br><span class="line">&gt; Host: ec1ecdc57218.ngrok.io</span><br><span class="line">&gt; User-Agent: curl&#x2F;7.58.0</span><br><span class="line">&gt; Accept: *&#x2F;*</span><br><span class="line">&gt; </span><br><span class="line">&lt; HTTP&#x2F;1.1 200 OK</span><br><span class="line">&lt; Content-Length: 117</span><br><span class="line">&lt; Content-Type: application&#x2F;json</span><br><span class="line">&lt; Date: Wed, 30 Sep 2020 06:52:11 GMT</span><br><span class="line">&lt; Server: Werkzeug&#x2F;1.0.1 Python&#x2F;3.6.9</span><br><span class="line">&lt; </span><br><span class="line">* Connection #0 to host ec1ecdc57218.ngrok.io left intact</span><br><span class="line">&#123;&quot;id&quot;: &quot;xidGidfid0idKidxid6idF&quot;, &quot;date&quot;: &quot;09&#x2F;30&#x2F;2020&quot;, &quot;choseNumber&quot;: [8, 2, 0], &quot;probability&quot;: 0.008333333333333333&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="在colab-安靜安裝的幾種方法"><a href="#在colab-安靜安裝的幾種方法" class="headerlink" title="在colab 安靜安裝的幾種方法"></a>在colab 安靜安裝的幾種方法</h1><p>!pip3 install vpython&gt; /dev/null<br>!pip3 install -q vpython    </p>
+<p>%%capture<br>!pip3 install vpython  </p>
+<h1 id="alpine"><a href="#alpine" class="headerlink" title="alpine"></a>alpine</h1><p>極小linux方便裝在docker<br>$ docker run -ti –rm -v ${HOME}:/root -v $(pwd):/git alpine/git<br>$ docker run –name da1 -d -p 81:80 alpine/git<br>b117b223cb2003f09b8d697967666744ab81e7686165ccbabbce825aad2392d9<br>$ docker run alpine echo ‘123’<br>123</p>
+<h1 id="軟體"><a href="#軟體" class="headerlink" title="軟體"></a>軟體</h1><p>Yakuake: 下拉式終端<br>Terminator: 可以輸入指令到多個終端  </p>
+<h1 id="短指令"><a href="#短指令" class="headerlink" title="短指令"></a>短指令</h1><p>which 找指令位置<br>top 看目前執行程式<br>free -h 看記憶體容量<br>lsb_release -a 看作業系統<br>ctrl+shift+t 開新terminal<br>history | less  可以用PageUp Down<br>curl -vvvv  網址 v越多內容顯示越多<br>echo 檔案 ｜ wc -l 顯示行數  </p>
+<h1 id="長指令"><a href="#長指令" class="headerlink" title="長指令"></a>長指令</h1><p>cat a.txt | grep -A20 “Package [com.google.android.gms”  抓gms package發出的訊息<br>cat a.txt | awk ‘!/Something/‘ | grep ‘B|C|D’  可以結合awk, grew<br>rm -rf ~/.local/share/Trash/* 清垃圾桶<br>cat .ssh/id_rsa.pub  印pub key  </p>
+<h1 id="快捷建"><a href="#快捷建" class="headerlink" title="快捷建"></a>快捷建</h1><p>Ctrl+Alt+T 開terminal  </p>
+<h1 id="硬碟"><a href="#硬碟" class="headerlink" title="硬碟"></a>硬碟</h1><p>lsblk<br>blkid<br>mount<br>sudo fdisk -l  </p>
+<h1 id="14-04桌面時鐘消失"><a href="#14-04桌面時鐘消失" class="headerlink" title="14.04桌面時鐘消失"></a>14.04桌面時鐘消失</h1><p>sudo apt-get install indicator-datetime<br>sudo dpkg-reconfigure –frontend noninteractive tzdata<br>sudo killall unity-panel-service<br>或<br>sudo restart lightdm  </p>
+<h1 id="18-04-按enter-持續重複輸入"><a href="#18-04-按enter-持續重複輸入" class="headerlink" title="18.04  按enter 持續重複輸入"></a>18.04  按enter 持續重複輸入</h1><p>檢查<br>$ gsettings get org.gnome.desktop.peripherals.keyboard repeat<br>出現true 則輸入<br>$ gsettings set org.gnome.desktop.peripherals.keyboard repeat false    </p>
+<p><a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1029776/keys-get-stuck-randomly-and-type-endless-line-of-a-particular-letter-command">https://askubuntu.com/questions/1029776/keys-get-stuck-randomly-and-type-endless-line-of-a-particular-letter-command</a></p>
+<h1 id="18-04-KVM-permission-denied-error"><a href="#18-04-KVM-permission-denied-error" class="headerlink" title="18.04 KVM permission denied error"></a>18.04 KVM permission denied error</h1><p>$ sudo apt install qemu-kvm<br>$ sudo adduser <username> kvm<br>$ sudo chown <username> /dev/kvm  </p>
+<h1 id="18-04-openjdk"><a href="#18-04-openjdk" class="headerlink" title="18.04 openjdk"></a>18.04 openjdk</h1><p>sudo apt install openjdk-8-jdk<br>export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64<br>echo $JAVA_HOME<br>export PATH=$PATH:$JAVA_HOME/bin<br>echo $PATH<br>java -version  </p>
+<h1 id="18-04-postman"><a href="#18-04-postman" class="headerlink" title="18.04 postman"></a>18.04 postman</h1><p>wget <a target="_blank" rel="noopener" href="https://dl.pstmn.io/download/latest/linux64">https://dl.pstmn.io/download/latest/linux64</a> -O postman.tar.gz<br>sudo tar -xzf postman.tar.gz -C /opt<br>sudo ln -s /opt/Postman/Postman /usr/bin/postman  </p>
+<h2 id="Create-a-Desktop-Entry"><a href="#Create-a-Desktop-Entry" class="headerlink" title="Create a Desktop Entry"></a>Create a Desktop Entry</h2><p>cat &gt; ~/.local/share/applications/postman.desktop &lt;&lt;EOL  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]  </span><br><span class="line">Encoding&#x3D;UTF-8</span><br><span class="line">Name&#x3D;Postman</span><br><span class="line">Exec&#x3D;postman</span><br><span class="line">Icon&#x3D;&#x2F;opt&#x2F;Postman&#x2F;app&#x2F;resources&#x2F;app&#x2F;assets&#x2F;icon.png</span><br><span class="line">Terminal&#x3D;false</span><br><span class="line">Type&#x3D;Application</span><br><span class="line">Categories&#x3D;Development;</span><br><span class="line">EOL</span><br></pre></td></tr></table></figure>
+<h1 id="清垃圾桶"><a href="#清垃圾桶" class="headerlink" title="清垃圾桶"></a>清垃圾桶</h1><p>cd ~/. local/share/Trash/files/<br>rm -rf *  </p>
+<h1 id="無法安裝軟體"><a href="#無法安裝軟體" class="headerlink" title="無法安裝軟體"></a>無法安裝軟體</h1><p>sudo chmod 7755 /usr/lib/policykit-1/polkit-agent-helper-1  </p>
+<h1 id="目錄中文轉英文"><a href="#目錄中文轉英文" class="headerlink" title="目錄中文轉英文"></a>目錄中文轉英文</h1><p>$ export LANG=en_US<br>$ xdg-user-dirs-gtk-update  </p>
+<h1 id="顯示跑掉"><a href="#顯示跑掉" class="headerlink" title="顯示跑掉"></a>顯示跑掉</h1><p>1.先換條螢幕線<br><a target="_blank" rel="noopener" href="https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?topic_id=33458">https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?topic_id=33458</a></p>
+<h1 id="讓Windows遠端連線"><a href="#讓Windows遠端連線" class="headerlink" title="讓Windows遠端連線"></a>讓Windows遠端連線</h1><p>1.xface<br>sudo apt update<br>sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils<br>2.xrdp<br>sudo apt install xrdp<br>check: sudo systemctl status xrdp<br>3.啟動<br>可以用 systemctl 指令來啟動，輸入<br>sudo systemctl restart xrdp<br>並且確認在開機時自動啟動 xrdp<br>sudo systemctl enable xrdp<br>sudo vim /etc/xrdp/xrdp.ini<br>在最後一行加上<br>exec startxfce4<br>儲存檔案並重新啟動 Xrdp 服務<br>sudo systemctl restart xrdp<br>4.設定防火牆<br>要允許從特定 IP 或 IP 範圍連接 Xrdp 伺服器，在此範例中 192.168.1.0/24 運行以下命令<br>sudo ufw allow from 192.168.1.0/24 to any port 3389<br>如果您想允許從任何地方進行連線(基於安全原因不鼓勵)，請輸入<br>sudo ufw allow 3389<br>5.遠端空白問題<br>sudo apt-get install xorgxrdp<br><a target="_blank" rel="noopener" href="https://c-nergy.be/blog/?p=13390">https://c-nergy.be/blog/?p=13390</a><br>6.重啟<br>sudo service xrdp restart<br>netstat -na | grep 3389   </p>
+<h1 id="NoMachine"><a href="#NoMachine" class="headerlink" title="NoMachine"></a>NoMachine</h1><p><a target="_blank" rel="noopener" href="https://briian.com/59310/">https://briian.com/59310/</a> </p>
+<h1 id="Tab"><a href="#Tab" class="headerlink" title="Tab"></a>Tab</h1><p>1、pycharm使多行代碼同時縮進<br>   鼠標選中多行代碼後，按下Tab鍵，一次縮進四個字符  </p>
+<p>2、pycharm使多行代碼同時左移<br>  鼠標選中多行代碼後，同時按住shift+Tab鍵，一次左移四個字符   </p>
+<h1 id="安全重啟"><a href="#安全重啟" class="headerlink" title="安全重啟"></a>安全重啟</h1><ol>
+<li>同時按住 Ctrl 和 Alt 鍵，按住不要放  </li>
+<li>按一下 SysRq 鍵  </li>
+<li>按一下 R 鍵  </li>
+<li>按一下 E 鍵  </li>
+<li>依次按下 I , S , U , B 鍵  </li>
+</ol>
+<h1 id="Android-Studio"><a href="#Android-Studio" class="headerlink" title="Android Studio"></a>Android Studio</h1><p>Ctrl+Alt+L 自動排版  </p>
+<h2 id="可以Sh雙擊執行"><a href="#可以Sh雙擊執行" class="headerlink" title="可以Sh雙擊執行"></a>可以Sh雙擊執行</h2><p>在桌面 vim androidstudio.desktop  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name&#x3D;AndroidStudio</span><br><span class="line">Comment&#x3D;open android studio</span><br><span class="line">Exec&#x3D;sh &#x2F;home&#x2F;eric_lu&#x2F;android-studio-ide-192.6392135-linux&#x2F;android-studio&#x2F;bin&#x2F;studio.sh</span><br><span class="line">Icon&#x3D;&#x2F;home&#x2F;eric_lu&#x2F;android-studio-ide-192.6392135-linux&#x2F;android-studio&#x2F;bin&#x2F;studio.png</span><br><span class="line">Terminal&#x3D;false</span><br><span class="line">Type&#x3D;Application</span><br></pre></td></tr></table></figure>
+<p>右鍵點擊程式，來到最下方的『屬性』，選擇『權限』<br>將『允許檔案作為程式執行(E)』打勾，然後關閉視窗  </p>
+<p>cp androidstudio.desktop ~/.local/share/applications/<br>將我們剛建立好的 .desktop 檔案移動至應用程式區，就可以在『搜尋』當中找到這個應用程式  </p>
+<h2 id="在Ubuntu可以加速"><a href="#在Ubuntu可以加速" class="headerlink" title="在Ubuntu可以加速"></a>在Ubuntu可以加速</h2><p><a target="_blank" rel="noopener" href="https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit">https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit</a>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo vim  &#x2F;etc&#x2F;sysctl.conf   </span><br><span class="line">fs.inotify.max_user_watches &#x3D; 524288  </span><br><span class="line">sudo sysctl -p --system  </span><br></pre></td></tr></table></figure>
+
+<h2 id="裝完開啟很慢改記憶體大小"><a href="#裝完開啟很慢改記憶體大小" class="headerlink" title="裝完開啟很慢改記憶體大小"></a>裝完開啟很慢改記憶體大小</h2><p>..\Android Studio\bin*.vmoptions  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">-Xms5120m </span><br><span class="line">-Xmx10240m</span><br><span class="line">-XX:MaxPermSize&#x3D;1024m </span><br><span class="line">-XX:ReservedCodeCacheSize&#x3D;440m </span><br><span class="line">-XX:+UseCompressedOops </span><br><span class="line">-XX:-HeapDumpOnOutOfMemoryError </span><br><span class="line">-Dfile.encoding&#x3D;UTF-8</span><br></pre></td></tr></table></figure>
+<p>之後在file&gt;Invalidate caches  </p>
+<h2 id="載入慢要改設定"><a href="#載入慢要改設定" class="headerlink" title="載入慢要改設定"></a>載入慢要改設定</h2><p>解決 androidstudio 在獲取Android sdk …位置暫停導致androidstudio 啟動慢<br>打開android studio的bin目錄<br>修改idea.properties文件如下：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"> idea.fatal.error.notification &#x3D; enabled </span><br><span class="line"> disable.android .first.run &#x3D; true </span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="2-to-3"><a href="#2-to-3" class="headerlink" title="2 to 3"></a>2 to 3</h2><p>$ sudo add-apt-repository ppa:deadsnakes/ppa<br>$ sudo apt-get update<br>$ sudo apt-get install python3.6<br>$ sudo apt-get install python3.7<br>$ sudo apt install python3-pip<br>$ sudo update-alternatives - install /usr/bin/python3 python3 /usr/bin/python3.6 1<br>$ sudo update-alternatives - install /usr/bin/python3 python3 /usr/bin/python3.7 2  </p>
+<h2 id="虛擬環境"><a href="#虛擬環境" class="headerlink" title="虛擬環境"></a>虛擬環境</h2><p> python -m venv .venv<br>.venv\Scripts\activate.bat  </p>
+<h2 id="換版本"><a href="#換版本" class="headerlink" title="換版本"></a>換版本</h2><ol>
+<li>Check python version on terminal - python –version  </li>
+<li>Get root user privileges. On terminal type - sudo su  </li>
+<li>Write down the root user password  </li>
+<li>Execute this command to switch to python 3.6 -  </li>
+<li>update-alternatives –install /usr/bin/python python /usr/bin/python3 1  </li>
+<li>Check python version - python –version  </li>
+</ol>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AwesomeThings/" rel="tag"><i class="fa fa-tag"></i> 好用</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/macintosh/" rel="prev" title="Mac小技巧">
+      <i class="fa fa-chevron-left"></i> Mac小技巧
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/chrome/" rel="next" title="瀏覽器插件推薦">
+      瀏覽器插件推薦 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%A5%E9%9B%BB%E8%85%A6%E8%B3%87%E8%A8%8A"><span class="nav-number">1.</span> <span class="nav-text">查電腦資訊</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Clay-Technology-World"><span class="nav-number">2.</span> <span class="nav-text">Clay-Technology World</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9C%8B%E7%B6%B2%E9%A0%81%E8%B3%87%E8%A8%8A"><span class="nav-number">3.</span> <span class="nav-text">看網頁資訊</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8colab-%E5%AE%89%E9%9D%9C%E5%AE%89%E8%A3%9D%E7%9A%84%E5%B9%BE%E7%A8%AE%E6%96%B9%E6%B3%95"><span class="nav-number">4.</span> <span class="nav-text">在colab 安靜安裝的幾種方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#alpine"><span class="nav-number">5.</span> <span class="nav-text">alpine</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BB%9F%E9%AB%94"><span class="nav-number">6.</span> <span class="nav-text">軟體</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9F%AD%E6%8C%87%E4%BB%A4"><span class="nav-number">7.</span> <span class="nav-text">短指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%95%B7%E6%8C%87%E4%BB%A4"><span class="nav-number">8.</span> <span class="nav-text">長指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E5%BB%BA"><span class="nav-number">9.</span> <span class="nav-text">快捷建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A1%AC%E7%A2%9F"><span class="nav-number">10.</span> <span class="nav-text">硬碟</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14-04%E6%A1%8C%E9%9D%A2%E6%99%82%E9%90%98%E6%B6%88%E5%A4%B1"><span class="nav-number">11.</span> <span class="nav-text">14.04桌面時鐘消失</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-04-%E6%8C%89enter-%E6%8C%81%E7%BA%8C%E9%87%8D%E8%A4%87%E8%BC%B8%E5%85%A5"><span class="nav-number">12.</span> <span class="nav-text">18.04  按enter 持續重複輸入</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-04-KVM-permission-denied-error"><span class="nav-number">13.</span> <span class="nav-text">18.04 KVM permission denied error</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-04-openjdk"><span class="nav-number">14.</span> <span class="nav-text">18.04 openjdk</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-04-postman"><span class="nav-number">15.</span> <span class="nav-text">18.04 postman</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-a-Desktop-Entry"><span class="nav-number">15.1.</span> <span class="nav-text">Create a Desktop Entry</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B8%85%E5%9E%83%E5%9C%BE%E6%A1%B6"><span class="nav-number">16.</span> <span class="nav-text">清垃圾桶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%84%A1%E6%B3%95%E5%AE%89%E8%A3%9D%E8%BB%9F%E9%AB%94"><span class="nav-number">17.</span> <span class="nav-text">無法安裝軟體</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%AE%E9%8C%84%E4%B8%AD%E6%96%87%E8%BD%89%E8%8B%B1%E6%96%87"><span class="nav-number">18.</span> <span class="nav-text">目錄中文轉英文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A1%AF%E7%A4%BA%E8%B7%91%E6%8E%89"><span class="nav-number">19.</span> <span class="nav-text">顯示跑掉</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%93Windows%E9%81%A0%E7%AB%AF%E9%80%A3%E7%B7%9A"><span class="nav-number">20.</span> <span class="nav-text">讓Windows遠端連線</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NoMachine"><span class="nav-number">21.</span> <span class="nav-text">NoMachine</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Tab"><span class="nav-number">22.</span> <span class="nav-text">Tab</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E9%87%8D%E5%95%9F"><span class="nav-number">23.</span> <span class="nav-text">安全重啟</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Android-Studio"><span class="nav-number">24.</span> <span class="nav-text">Android Studio</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E4%BB%A5Sh%E9%9B%99%E6%93%8A%E5%9F%B7%E8%A1%8C"><span class="nav-number">24.1.</span> <span class="nav-text">可以Sh雙擊執行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8Ubuntu%E5%8F%AF%E4%BB%A5%E5%8A%A0%E9%80%9F"><span class="nav-number">24.2.</span> <span class="nav-text">在Ubuntu可以加速</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A3%9D%E5%AE%8C%E9%96%8B%E5%95%9F%E5%BE%88%E6%85%A2%E6%94%B9%E8%A8%98%E6%86%B6%E9%AB%94%E5%A4%A7%E5%B0%8F"><span class="nav-number">24.3.</span> <span class="nav-text">裝完開啟很慢改記憶體大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BC%89%E5%85%A5%E6%85%A2%E8%A6%81%E6%94%B9%E8%A8%AD%E5%AE%9A"><span class="nav-number">24.4.</span> <span class="nav-text">載入慢要改設定</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">25.</span> <span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-to-3"><span class="nav-number">25.1.</span> <span class="nav-text">2 to 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83"><span class="nav-number">25.2.</span> <span class="nav-text">虛擬環境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%9B%E7%89%88%E6%9C%AC"><span class="nav-number">25.3.</span> <span class="nav-text">換版本</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">はじめまして盧ですどうぞよろしくおねがいします。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">21k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">19 mins.</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : '38ff0c9e3e0c506c27482945e5dd3c12',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
