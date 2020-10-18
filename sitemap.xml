@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eric999j.github.io/windows/</loc>
+    <loc>https://eric999j.github.io/flow/</loc>
+    
+    <lastmod>2020-10-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/greatWork/</loc>
+    
+    <lastmod>2020-10-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/linux/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
@@ -10,6 +24,13 @@
   
   <url>
     <loc>https://eric999j.github.io/vim/</loc>
+    
+    <lastmod>2020-10-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/windows/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
@@ -24,27 +45,6 @@
   
   <url>
     <loc>https://eric999j.github.io/macintosh/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/linux/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/greatWork/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/flow/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
