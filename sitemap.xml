@@ -4,7 +4,14 @@
   <url>
     <loc>https://eric999j.github.io/flow/</loc>
     
-    <lastmod>2020-10-18</lastmod>
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/target/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
     
   </url>
   
@@ -37,7 +44,7 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/nbextensions%20/</loc>
+    <loc>https://eric999j.github.io/nbextensions/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
@@ -102,7 +109,7 @@
 
   <url>
     <loc>https://eric999j.github.io/</loc>
-    <lastmod>2020-10-18</lastmod>
+    <lastmod>2020-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,14 +117,14 @@
   
   <url>
     <loc>https://eric999j.github.io/tags/Instrrument/</loc>
-    <lastmod>2020-10-18</lastmod>
+    <lastmod>2020-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/AwesomeThings/</loc>
-    <lastmod>2020-10-18</lastmod>
+    <lastmod>2020-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -126,14 +133,14 @@
   
   <url>
     <loc>https://eric999j.github.io/categories/manager/</loc>
-    <lastmod>2020-10-18</lastmod>
+    <lastmod>2020-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/engineer/</loc>
-    <lastmod>2020-10-18</lastmod>
+    <lastmod>2020-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
