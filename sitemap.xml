@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/windows/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/vim/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/macintosh/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/linux/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/cycle/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/chrome/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/browsers/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/android/</loc>
     
     <lastmod>2020-10-31</lastmod>
@@ -30,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/cycle/</loc>
-    
-    <lastmod>2020-10-31</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/target/</loc>
     
     <lastmod>2020-10-31</lastmod>
@@ -58,49 +100,7 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/linux/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/vim/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/windows/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/nbextensions/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/macintosh/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/chrome/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/browsers/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
