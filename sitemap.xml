@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eric999j.github.io/flow/</loc>
+    <loc>https://eric999j.github.io/atomichabit/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/google/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/cycle/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
@@ -10,6 +24,13 @@
   
   <url>
     <loc>https://eric999j.github.io/target/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/flow/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
@@ -66,13 +87,6 @@
   
   <url>
     <loc>https://eric999j.github.io/browsers/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/atomichabit/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
