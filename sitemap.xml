@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/android/</loc>
+    
+    <lastmod>2020-10-31</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/book/</loc>
     
     <lastmod>2020-10-31</lastmod>
@@ -94,13 +101,6 @@
   
   <url>
     <loc>https://eric999j.github.io/browsers/</loc>
-    
-    <lastmod>2020-10-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/android/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
