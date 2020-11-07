@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/217/</loc>
+    
+    <lastmod>2020-11-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/macintosh/</loc>
     
     <lastmod>2020-11-07</lastmod>
@@ -150,6 +157,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://eric999j.github.io/tags/LeetCode/</loc>
+    <lastmod>2020-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -161,6 +175,13 @@
   
   <url>
     <loc>https://eric999j.github.io/categories/engineer/</loc>
+    <lastmod>2020-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/categories/interview/</loc>
     <lastmod>2020-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
