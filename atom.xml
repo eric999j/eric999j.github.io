@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2020-12-05T05:05:51.328Z</updated>
+  <updated>2020-12-05T15:21:46.222Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,175 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>118. Pascal&#39;s Triangle</title>
+    <link href="https://eric999j.github.io/interview/118/"/>
+    <id>https://eric999j.github.io/interview/118/</id>
+    <published>2020-12-05T15:00:00.000Z</published>
+    <updated>2020-12-05T15:21:46.222Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;In Pascal’s triangle, each number is the sum of the two numbers directly above it.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: 5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     [1],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    [1,1],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   [1,2,1],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  [1,3,3,1],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; [1,4,6,4,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>122. Best Time to Buy and Sell Stock II</title>
+    <link href="https://eric999j.github.io/interview/122/"/>
+    <id>https://eric999j.github.io/interview/122/</id>
+    <published>2020-12-05T14:00:00.000Z</published>
+    <updated>2020-12-05T14:24:44.291Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Say you have an array prices for which the ith element is the price of a given stock on day i.&lt;/p&gt;
+&lt;p&gt;Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).&lt;/p&gt;
+&lt;p&gt;Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [7,1,5,3,6,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Buy on day 2 (price &amp;#x3D; 1) and sell on day 3 (price &amp;#x3D; 5), profit &amp;#x3D; 5-1 &amp;#x3D; 4.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             Then buy on day 4 (price &amp;#x3D; 3) and sell on day 5 (price &amp;#x3D; 6), profit &amp;#x3D; 6-3 &amp;#x3D; 3.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Buy on day 1 (price &amp;#x3D; 1) and sell on day 5 (price &amp;#x3D; 5), profit &amp;#x3D; 5-1 &amp;#x3D; 4.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             engaging multiple transactions at the same time. You must sell before buying again.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [7,6,4,3,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: In this case, no transaction is done, i.e. max profit &amp;#x3D; 0.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://eric999j.github.io/interview/13/"/>
+    <id>https://eric999j.github.io/interview/13/</id>
+    <published>2020-12-05T14:00:00.000Z</published>
+    <updated>2020-12-05T15:10:59.472Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.&lt;/p&gt;
+&lt;p&gt;Symbol       Value&lt;br&gt;I             1&lt;br&gt;V             5&lt;br&gt;X             10&lt;br&gt;L             50&lt;br&gt;C             100&lt;br&gt;D             500&lt;br&gt;M             1000&lt;br&gt;For example, 2 is written as II in Roman numeral, just two one’s added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.&lt;/p&gt;
+&lt;p&gt;Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:&lt;/p&gt;
+&lt;p&gt;I can be placed before V (5) and X (10) to make 4 and 9.&lt;br&gt;X can be placed before L (50) and C (100) to make 40 and 90.&lt;br&gt;C can be placed before D (500) and M (1000) to make 400 and 900.&lt;br&gt;Given a roman numeral, convert it to an integer.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;III&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;IV&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;IX&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 4:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;LVIII&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: L &amp;#x3D; 50, V&amp;#x3D; 5, III &amp;#x3D; 3.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 5:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;MCMXCIV&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1994&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: M &amp;#x3D; 1000, CM &amp;#x3D; 900, XC &amp;#x3D; 90 and IV &amp;#x3D; 4.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>169. Majority Element</title>
+    <link href="https://eric999j.github.io/interview/169/"/>
+    <id>https://eric999j.github.io/interview/169/</id>
+    <published>2020-12-05T14:00:00.000Z</published>
+    <updated>2020-12-05T14:01:29.734Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(21).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.&lt;/p&gt;
+&lt;p&gt;You may assume that the array is non-empty and the majority element always exist in the array.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [3,2,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [2,2,1,1,1,2,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>242. Valid Anagram</title>
+    <link href="https://eric999j.github.io/interview/242/"/>
+    <id>https://eric999j.github.io/interview/242/</id>
+    <published>2020-12-05T14:00:00.000Z</published>
+    <updated>2020-12-05T14:32:20.937Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(24).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given two strings s and t , write a function to determine if t is an anagram of s.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;anagram&amp;quot;, t &amp;#x3D; &amp;quot;nagaram&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;rat&amp;quot;, t &amp;#x3D; &amp;quot;car&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note:&lt;br&gt;You may assume the string contains only lowercase alphabets.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>283. Move Zeroes</title>
+    <link href="https://eric999j.github.io/interview/283/"/>
+    <id>https://eric999j.github.io/interview/283/</id>
+    <published>2020-12-05T14:00:00.000Z</published>
+    <updated>2020-12-05T14:14:04.288Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(22).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an array nums, write a function to move all 0’s to the end of it while maintaining the relative order of the non-zero elements.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [0,1,0,3,12]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,3,12,0,0]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You must do this in-place without making a copy of the array.  &lt;/li&gt;
+&lt;li&gt;Minimize the total number of operations.</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>米其林一星大腕燒肉</title>
@@ -348,161 +517,6 @@
 &lt;p&gt;Given a list of emails, we send one email to each address in the list.  How many different addresses actually receive mails? &lt;/p&gt;
 &lt;p&gt;Example 1:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [&amp;quot;test.email+alex@leetcode.com&amp;quot;,&amp;quot;test.e.mail+bob.cathy@leetcode.com&amp;quot;,&amp;quot;testemail+david@lee.tcode.com&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: &amp;quot;testemail@leetcode.com&amp;quot; and &amp;quot;testemail@lee.tcode.com&amp;quot; actually receive mails&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1560. Most Visited Sector in a Circular Track</title>
-    <link href="https://eric999j.github.io/interview/1560/"/>
-    <id>https://eric999j.github.io/interview/1560/</id>
-    <published>2020-11-08T07:00:00.000Z</published>
-    <updated>2020-11-14T03:34:27.390Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an integer n and an integer array rounds. We have a circular track which consists of n sectors labeled from 1 to n. A marathon will be held on this track, the marathon consists of m rounds. The ith round starts at sector rounds[i - 1] and ends at sector rounds[i]. For example, round 1 starts at sector rounds[0] and ends at sector rounds[1]&lt;/p&gt;
-&lt;p&gt;Return an array of the most visited sectors sorted in ascending order.&lt;/p&gt;
-&lt;p&gt;Notice that you circulate the track in ascending order of sector numbers in the counter-clockwise direction (See the first example).&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 4, rounds &amp;#x3D; [1,3,1,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The marathon starts at sector 1. The order of the visited sectors is as follows:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 --&amp;gt; 2 --&amp;gt; 3 (end of round 1) --&amp;gt; 4 --&amp;gt; 1 (end of round 2) --&amp;gt; 2 (end of round 3 and the marathon)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;We can see that both sectors 1 and 2 are visited twice and they are the most visited sectors. Sectors 3 and 4 are visited only once.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 2, rounds &amp;#x3D; [2,1,2,1,2,1,2,1,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 7, rounds &amp;#x3D; [1,3,5,7]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2,3,4,5,6,7]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀性格的DISA</title>
-    <link href="https://eric999j.github.io/manager/disa/"/>
-    <id>https://eric999j.github.io/manager/disa/</id>
-    <published>2020-11-08T06:20:00.000Z</published>
-    <updated>2020-11-08T06:45:53.479Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;GTD探討怎麼做(How)，但過程中會牽扯到很多人，尤其是我們的上司，DISA是(Who)。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀高效能的待辦事項管理法</title>
-    <link href="https://eric999j.github.io/manager/gtd/"/>
-    <id>https://eric999j.github.io/manager/gtd/</id>
-    <published>2020-11-08T06:10:00.000Z</published>
-    <updated>2020-11-08T06:45:31.237Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Getting Things Done(GTD)在使用OKR確認好需要做什麼(What)之後，探討怎麼做(How)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀OKR做最重要的事</title>
-    <link href="https://eric999j.github.io/manager/okr/"/>
-    <id>https://eric999j.github.io/manager/okr/</id>
-    <published>2020-11-08T06:00:00.000Z</published>
-    <updated>2020-11-08T06:23:52.908Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Objectives and Key Results(OKR)是Google績效考核的一環，我們熟知的Key Performance Indicator(KPI)是上對下，OKR主張讓員工自動自發，這篇文章主要在介紹各種績效標準，這也是我回公司讀的第一本書。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1317. Convert Integer to the Sum of Two No-Zero Integers</title>
-    <link href="https://eric999j.github.io/interview/1317/"/>
-    <id>https://eric999j.github.io/interview/1317/</id>
-    <published>2020-11-07T14:00:00.000Z</published>
-    <updated>2020-11-14T03:31:50.166Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an integer n. No-Zero integer is a positive integer which doesn’t contain any 0 in its decimal representation.&lt;/p&gt;
-&lt;p&gt;Return a list of two integers [A, B] where:&lt;/p&gt;
-&lt;p&gt;A and B are No-Zero integers.&lt;br&gt;A + B = n&lt;br&gt;It’s guarateed that there is at least one valid solution. If there are many valid solutions you can return any of them.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: A &amp;#x3D; 1, B &amp;#x3D; 1. A + B &amp;#x3D; n and both A and B don&amp;#39;t contain any 0 in their decimal representation.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [2,9]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 10000&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,9999]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,68]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 5:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 1010&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [11,999]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1480. Running Sum of 1d Array</title>
-    <link href="https://eric999j.github.io/interview/1480/"/>
-    <id>https://eric999j.github.io/interview/1480/</id>
-    <published>2020-11-07T13:00:00.000Z</published>
-    <updated>2020-11-14T03:26:50.668Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).&lt;/p&gt;
-&lt;p&gt;Return the running sum of nums.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,3,6,10]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1,1,1,1,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Running sum is obtained as follows: [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,1,2,10,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [3,4,6,16,17]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
