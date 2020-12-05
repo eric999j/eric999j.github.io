@@ -2,49 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eric999j.github.io/stargazing/</loc>
+    <loc>https://eric999j.github.io/life/medium/</loc>
     
     <lastmod>2020-12-05</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/daWan/</loc>
+    <loc>https://eric999j.github.io/life/plantingRule/</loc>
     
     <lastmod>2020-12-05</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/412/</loc>
+    <loc>https://eric999j.github.io/life/stargazing/</loc>
+    
+    <lastmod>2020-12-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/daWan/</loc>
+    
+    <lastmod>2020-12-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/interview/412/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/1640/</loc>
+    <loc>https://eric999j.github.io/interview/1640/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/136/</loc>
+    <loc>https://eric999j.github.io/interview/136/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/344/</loc>
+    <loc>https://eric999j.github.io/interview/344/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/eat/</loc>
+    <loc>https://eric999j.github.io/life/eat/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
@@ -58,210 +72,196 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/medium/</loc>
-    
-    <lastmod>2020-11-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/mountainAndSea/</loc>
+    <loc>https://eric999j.github.io/life/mountainAndSea/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/plantingRule/</loc>
+    <loc>https://eric999j.github.io/interview/1470/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/1470/</loc>
+    <loc>https://eric999j.github.io/interview/1331/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/1331/</loc>
+    <loc>https://eric999j.github.io/interview/929/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/929/</loc>
+    <loc>https://eric999j.github.io/interview/788/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/788/</loc>
+    <loc>https://eric999j.github.io/interview/1560/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/1560/</loc>
+    <loc>https://eric999j.github.io/interview/1317/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/1317/</loc>
+    <loc>https://eric999j.github.io/interview/171/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/171/</loc>
+    <loc>https://eric999j.github.io/interview/1480/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/1480/</loc>
+    <loc>https://eric999j.github.io/interview/217/</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/leetcode/217/</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/disa/</loc>
+    <loc>https://eric999j.github.io/manager/disa/</loc>
     
     <lastmod>2020-11-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/gtd/</loc>
+    <loc>https://eric999j.github.io/manager/gtd/</loc>
     
     <lastmod>2020-11-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/okr/</loc>
+    <loc>https://eric999j.github.io/manager/okr/</loc>
     
     <lastmod>2020-11-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/macintosh/</loc>
+    <loc>https://eric999j.github.io/engineer/macintosh/</loc>
     
     <lastmod>2020-11-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/windows/</loc>
+    <loc>https://eric999j.github.io/manager/google/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/vim/</loc>
+    <loc>https://eric999j.github.io/engineer/windows/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/linux/</loc>
+    <loc>https://eric999j.github.io/engineer/vim/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/cycle/</loc>
+    <loc>https://eric999j.github.io/engineer/linux/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/chrome/</loc>
+    <loc>https://eric999j.github.io/manager/cycle/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/browsers/</loc>
+    <loc>https://eric999j.github.io/engineer/chrome/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/android/</loc>
+    <loc>https://eric999j.github.io/engineer/browsers/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/book/</loc>
+    <loc>https://eric999j.github.io/engineer/android/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/google/</loc>
+    <loc>https://eric999j.github.io/manager/book/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/atomichabit/</loc>
+    <loc>https://eric999j.github.io/manager/atomichabit/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/target/</loc>
+    <loc>https://eric999j.github.io/manager/target/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/flow/</loc>
+    <loc>https://eric999j.github.io/manager/flow/</loc>
     
     <lastmod>2020-10-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/greatWork/</loc>
+    <loc>https://eric999j.github.io/manager/greatWork/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/nbextensions/</loc>
+    <loc>https://eric999j.github.io/engineer/nbextensions/</loc>
     
     <lastmod>2020-10-18</lastmod>
     
@@ -291,7 +291,7 @@
 
   
   <url>
-    <loc>https://eric999j.github.io/tags/Instrrument/</loc>
+    <loc>https://eric999j.github.io/tags/Instrument/</loc>
     <lastmod>2020-12-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

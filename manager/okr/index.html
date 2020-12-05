@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Objectives and Key Results(OKR)是Google績效考核的一環，我們熟知的Key Performance Indicator(KPI)是上對下，OKR主張讓員工自動自發，這篇文章主要在介紹各種績效標準，這也是我回公司讀的第一本書。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="閱讀OKR做最重要的事">
+<meta property="og:url" content="https://eric999j.github.io/manager/okr/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="Objectives and Key Results(OKR)是Google績效考核的一環，我們熟知的Key Performance Indicator(KPI)是上對下，OKR主張讓員工自動自發，這篇文章主要在介紹各種績效標準，這也是我回公司讀的第一本書。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg">
+<meta property="article:published_time" content="2020-11-08T06:00:00.000Z">
+<meta property="article:modified_time" content="2020-11-08T06:23:52.908Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="文書">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/manager/okr/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>閱讀OKR做最重要的事 | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/manager/okr/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          閱讀OKR做最重要的事
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-11-08 14:00:00 / Modified: 14:23:52" itemprop="dateCreated datePublished" datetime="2020-11-08T14:00:00+08:00">2020-11-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/manager/" itemprop="url" rel="index"><span itemprop="name">管理</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.1k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg"></p>
+<p>Objectives and Key Results(OKR)是Google績效考核的一環，我們熟知的Key Performance Indicator(KPI)是上對下，OKR主張讓員工自動自發，這篇文章主要在介紹各種績效標準，這也是我回公司讀的第一本書。</p>
+<a id="more"></a>
+
+<h1 id="KPI-Key-Performance-Indicator-關鍵績效指標"><a href="#KPI-Key-Performance-Indicator-關鍵績效指標" class="headerlink" title="KPI(Key Performance Indicator)關鍵績效指標"></a>KPI(Key Performance Indicator)關鍵績效指標</h1><p>代表的是你與團隊的「完成度」，就像「里程表」<br>KPI用來判斷還需要多久才能完成<br>好的KPI應該具備三樣特質：可衡量、普遍性、前瞻性  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">1.可衡量：必須是有意義的評斷標準。如之前提到的「到訪率vs購買率」，或「時間vs利潤」，雖然都是量化指標，但意義與貢獻度完全不同。同樣的，「提案數vs達成數」，雖然都是量化目標，但哪個才是較優的KPI？你心裡應該有答案。</span><br><span class="line"></span><br><span class="line">2.普遍性：這些指標不只能用在一個員工，還能用在其他員工上，就算他們個性、做事方法完全不同，這樣的KPI才是好的KPI。</span><br><span class="line"></span><br><span class="line">例如被分配到難纏客戶的員工，談成一件案子的難度是不是比較高？而本來就已經談的差不多的客戶，接手的人是不是就比較容易？如果兩個人都以談成交易案件數量當成KPI，是不是不太公平？</span><br><span class="line"></span><br><span class="line">3.前瞻性：KPI不應該只侷限在「過去到現在」完成了什麼，這是落後指標；而應該是「現在到未來」應該做到什麼，這才是領先指標。而且KPI不應該是年初訂下後，就一成不變地用到年底。如果6月就發現既定目標不可能達成，卻一直堅持用到12月，每個員工年底的成績當然都不好看。管理的目的在激發鬥志，而非創造挫折感或處罰。</span><br><span class="line"></span><br><span class="line">KPI不能缺少的要素</span><br><span class="line">首先，當然是可以量化的表現。與其談公司要成為業界第一，不如談做到那些指標可以成為第一。這包括以下5個面向：</span><br><span class="line"></span><br><span class="line">1.對比：包括自己的歷史紀錄，與對手（企業）</span><br><span class="line"></span><br><span class="line">2.改善：面對問題如何解決，在現有達成率上更進一步。</span><br><span class="line"></span><br><span class="line">3.提醒：何種狀況下，例如1個月或3個月，達成率不到50%，就該提醒成員，或是每半年一次總檢討。</span><br><span class="line"></span><br><span class="line">4.分析：為何A方案目前的達成率低於預期，原因何在？假設如果改成Ｂ方案，會不會更好？</span><br><span class="line"></span><br><span class="line">5.風險：掌握以往或到目前為止所碰到的變數，為未來可能發生的風險制定應變計畫。</span><br></pre></td></tr></table></figure>
+
+<h1 id="OKR-Objectives-and-Key-Results-目標與關鍵成果"><a href="#OKR-Objectives-and-Key-Results-目標與關鍵成果" class="headerlink" title="OKR(Objectives and Key Results)目標與關鍵成果"></a>OKR(Objectives and Key Results)目標與關鍵成果</h1><p>代表的是你與團隊的「方向」，就像「指南針」<br>OKR用來找到對的方向<br>支持工作的行動，最高層級與公司使命，核心價值相關，例行性事務不需要OKRs<br>1.專注投入優先事項，短中長OKR<br>2.將目標跟團隊結合<br>3.持續追蹤<br>4.激發潛能，突破成就<br>1個主目標，1-3,最多5個子目標，子目標可能是他人的主目標，串起一個樹狀結構，大家朝同個主目標前進，子目標有0-0.3（未達成）0.4-0.6（部分達成）0.7-1(達成）,目標可視情況改進替換，找最有傑出績效目標，未達成目標也要想遇到什麼障礙，該怎麼改進，目標需具體實際，公開透明，有挑戰性，知道該如何與何時達成，關鍵結果需額外關注可升為目標，Google將OKR分決心達成與艱難達成2種，追求艱難目標就算沒達成也會得到巨大成就  </p>
+<h2 id="季初OKR"><a href="#季初OKR" class="headerlink" title="季初OKR"></a>季初OKR</h2><p>其中的戴明循環PDCA：<br>Plan 計劃<br>Do 執行<br>Check 成效檢查<br>Act 制定下次行動    </p>
+<h2 id="季末OKR"><a href="#季末OKR" class="headerlink" title="季末OKR"></a>季末OKR</h2><p>由上到下制定OKR，OKR裡一個目標：<br>O（目標）: 打造業內最好的產品<br>KR1（關鍵結果 1): 可用性提高 99.5%<br>KR2（關鍵結果 2): API 響應時間 500 ms<br>KR3（關鍵結果 3): 0 安全事故<br>制訂時最好以SMART原則確保目標可行  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">OKR應用時的一般原則</span><br><span class="line">1.明確（significant）：專注於達成特定結果。</span><br><span class="line"></span><br><span class="line">2.具體（concrete）：達成結果的方法必須具體可行。</span><br><span class="line"></span><br><span class="line">3.行動導向（action-oriented）：能夠化成具體行動，且可被衡量。</span><br><span class="line"></span><br><span class="line">4.願景（inspirational）：讓團隊能達成看起來有難度卻並非不可能之事。</span><br><span class="line"></span><br><span class="line">OKR的陷阱與限制</span><br><span class="line">不少企業都證明OKR有效，但並非一把OKR搬出來就萬事OK。可能的問題包括：</span><br><span class="line"></span><br><span class="line">1.目標太過遠大，以致根本無法達成：確實，OKR的目標必須能夠激勵人心，但千萬要腳踏實地，類似營業額年成長500％之類的目標，雖然不是完全不可能，但實際達成機率太低。</span><br><span class="line"></span><br><span class="line">2.目標太多：根據統計，一般企業年度的OKR計畫最好限制在4至6個，超過這個數量就有可能難以達到。</span><br><span class="line"></span><br><span class="line">3.關鍵結果不夠明確：類似銷售額增加、瀏覽率提高，雖然聽起來不錯，但增加多少、提高多少，實際數字不夠明確才是問題。</span><br><span class="line"></span><br><span class="line">4.資源配合不上：這種現象經常出現在缺乏溝通時，如果第一線猛衝，後勤卻配合不上，拿到的戰果也很可能拱手送人。</span><br></pre></td></tr></table></figure>
+
+<h1 id="CFR-Conversations-Feedback-and-Recognitions"><a href="#CFR-Conversations-Feedback-and-Recognitions" class="headerlink" title="CFR(Conversations, Feedback and Recognitions)"></a>CFR(Conversations, Feedback and Recognitions)</h1><p>相較OKR著重在人的情感<br>對話，回饋，讚揚<br>人際支援，善意表現  </p>
+<p>績效對談<br>員工<br>是否達成目標？知道各方面機會？工作跟主管目標一致？可以為主管提供什麼回饋？<br>主管<br>員工目標跟責任？實際表現？不佳如何改正？出色如何維持？投入工作情況？是否知道自己該關注的？<br>客戶至上，從連結創作價值，不必自己擁有內容，提供管道，從中牟利，社群創造的小眾經濟可能比主流大，公開，透明，創新<br>OKR 如果3.0以下表示不佳，連續幾季3.7以上通常會被升遷 </p>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Instrument/" rel="tag"><i class="fa fa-tag"></i> 文書</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/interview/1317/" rel="prev" title="1317. Convert Integer to the Sum of Two No-Zero Integers">
+      <i class="fa fa-chevron-left"></i> 1317. Convert Integer to the Sum of Two No-Zero Integers
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/manager/gtd/" rel="next" title="閱讀高效能的待辦事項管理法">
+      閱讀高效能的待辦事項管理法 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#KPI-Key-Performance-Indicator-%E9%97%9C%E9%8D%B5%E7%B8%BE%E6%95%88%E6%8C%87%E6%A8%99"><span class="nav-number">1.</span> <span class="nav-text">KPI(Key Performance Indicator)關鍵績效指標</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OKR-Objectives-and-Key-Results-%E7%9B%AE%E6%A8%99%E8%88%87%E9%97%9C%E9%8D%B5%E6%88%90%E6%9E%9C"><span class="nav-number">2.</span> <span class="nav-text">OKR(Objectives and Key Results)目標與關鍵成果</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A3%E5%88%9DOKR"><span class="nav-number">2.1.</span> <span class="nav-text">季初OKR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A3%E6%9C%ABOKR"><span class="nav-number">2.2.</span> <span class="nav-text">季末OKR</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CFR-Conversations-Feedback-and-Recognitions"><span class="nav-number">3.</span> <span class="nav-text">CFR(Conversations, Feedback and Recognitions)</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">37</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">41k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">37 mins.</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : '766bf14f16165256e72155feba3163b2',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
