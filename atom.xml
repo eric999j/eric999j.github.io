@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2020-12-05T15:21:46.222Z</updated>
+  <updated>2020-12-10T14:09:07.761Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>閱讀機會效應</title>
+    <link href="https://eric999j.github.io/manager/chance/"/>
+    <id>https://eric999j.github.io/manager/chance/</id>
+    <published>2020-12-12T14:00:00.000Z</published>
+    <updated>2020-12-10T14:09:07.761Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;機會存在混亂與逆境中&lt;br&gt;刻意製造混亂讓自己成長&lt;br&gt;走錯了也沒關係，說不定是另一條正確的路  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>閱讀感想</title>
+    <link href="https://eric999j.github.io/manager/cycle/"/>
+    <id>https://eric999j.github.io/manager/cycle/</id>
+    <published>2020-12-12T12:30:00.000Z</published>
+    <updated>2020-12-10T14:20:02.214Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這篇提到我對讀書方法的一些感悟，大家可以參考看看&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>閱讀刻意練習</title>
+    <link href="https://eric999j.github.io/manager/practice/"/>
+    <id>https://eric999j.github.io/manager/practice/</id>
+    <published>2020-12-12T12:10:00.000Z</published>
+    <updated>2020-12-10T14:19:00.536Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;原子習慣再搭配刻意練習就是堅持每天進步一點點&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>118. Pascal&#39;s Triangle</title>
@@ -430,93 +490,6 @@
 
 &lt;p&gt;Example 3:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1,1,2,2], n &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2,1,2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1640. Check Array Formation Through Concatenation</title>
-    <link href="https://eric999j.github.io/interview/1640/"/>
-    <id>https://eric999j.github.io/interview/1640/</id>
-    <published>2020-11-14T12:00:00.000Z</published>
-    <updated>2020-11-28T08:52:33.775Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;You are given an array of distinct integers arr and an array of integer arrays pieces, where the integers in pieces are distinct. Your goal is to form arr by concatenating the arrays in pieces in any order. However, you are not allowed to reorder the integers in each array pieces[i].&lt;/p&gt;
-&lt;p&gt;Return true if it is possible to form the array arr from pieces. Otherwise, return false.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: arr &amp;#x3D; [85], pieces &amp;#x3D; [[85]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: arr &amp;#x3D; [15,88], pieces &amp;#x3D; [[88],[15]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Concatenate [15] then [88]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: arr &amp;#x3D; [49,18,16], pieces &amp;#x3D; [[16,18,49]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Even though the numbers match, we cannot reorder pieces[0].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: arr &amp;#x3D; [91,4,64,78], pieces &amp;#x3D; [[78],[4,64],[91]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Concatenate [91] then [4,64] then [78]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 5:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: arr &amp;#x3D; [1,3,5,7], pieces &amp;#x3D; [[2,4,6,8]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>788. Rotated Digits</title>
-    <link href="https://eric999j.github.io/interview/788/"/>
-    <id>https://eric999j.github.io/interview/788/</id>
-    <published>2020-11-14T12:00:00.000Z</published>
-    <updated>2020-11-14T12:05:48.395Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;X is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.  Each digit must be rotated - we cannot choose to leave it alone.&lt;/p&gt;
-&lt;p&gt;A number is valid if each digit remains a digit after rotation. 0, 1, and 8 rotate to themselves; 2 and 5 rotate to each other (on this case they are rotated in a different direction, in other words 2 or 5 gets mirrored); 6 and 9 rotate to each other, and the rest of the numbers do not rotate to any other number and become invalid.&lt;/p&gt;
-&lt;p&gt;Now given a positive number N, how many numbers X from 1 to N are good?&lt;/p&gt;
-&lt;p&gt;Example:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: 10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;There are four good numbers in the range [1, 10] : 2, 5, 6, 9.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Note that 1 and 10 are not good numbers, since they remain unchanged after rotating.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>929. Unique Email Addresses</title>
-    <link href="https://eric999j.github.io/interview/929/"/>
-    <id>https://eric999j.github.io/interview/929/</id>
-    <published>2020-11-14T12:00:00.000Z</published>
-    <updated>2020-11-14T12:19:13.447Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Every email consists of a local name and a domain name, separated by the @ sign.&lt;/p&gt;
-&lt;p&gt;For example, in &lt;a href=&quot;mailto:&amp;#97;&amp;#x6c;&amp;#x69;&amp;#99;&amp;#101;&amp;#64;&amp;#108;&amp;#101;&amp;#x65;&amp;#116;&amp;#x63;&amp;#x6f;&amp;#x64;&amp;#x65;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#97;&amp;#x6c;&amp;#x69;&amp;#99;&amp;#101;&amp;#64;&amp;#108;&amp;#101;&amp;#x65;&amp;#116;&amp;#x63;&amp;#x6f;&amp;#x64;&amp;#x65;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt;, alice is the local name, and leetcode.com is the domain name.&lt;/p&gt;
-&lt;p&gt;Besides lowercase letters, these emails may contain ‘.’s or ‘+’s.&lt;/p&gt;
-&lt;p&gt;If you add periods (‘.’) between some characters in the local name part of an email address, mail sent there will be forwarded to the same address without dots in the local name.  For example, “&lt;a href=&quot;mailto:&amp;#97;&amp;#x6c;&amp;#105;&amp;#99;&amp;#101;&amp;#46;&amp;#122;&amp;#x40;&amp;#x6c;&amp;#101;&amp;#x65;&amp;#116;&amp;#x63;&amp;#111;&amp;#x64;&amp;#101;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#97;&amp;#x6c;&amp;#105;&amp;#99;&amp;#101;&amp;#46;&amp;#122;&amp;#x40;&amp;#x6c;&amp;#101;&amp;#x65;&amp;#116;&amp;#x63;&amp;#111;&amp;#x64;&amp;#101;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;“ and “&lt;a href=&quot;mailto:&amp;#97;&amp;#108;&amp;#x69;&amp;#x63;&amp;#101;&amp;#x7a;&amp;#64;&amp;#x6c;&amp;#101;&amp;#x65;&amp;#x74;&amp;#x63;&amp;#111;&amp;#x64;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#97;&amp;#108;&amp;#x69;&amp;#x63;&amp;#101;&amp;#x7a;&amp;#64;&amp;#x6c;&amp;#101;&amp;#x65;&amp;#x74;&amp;#x63;&amp;#111;&amp;#x64;&amp;#101;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt;“ forward to the same email address.  (Note that this rule does not apply for domain names.)&lt;/p&gt;
-&lt;p&gt;If you add a plus (‘+’) in the local name, everything after the first plus sign will be ignored. This allows certain emails to be filtered, for example &lt;a href=&quot;mailto:&amp;#109;&amp;#x2e;&amp;#x79;&amp;#43;&amp;#110;&amp;#97;&amp;#109;&amp;#101;&amp;#x40;&amp;#101;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#109;&amp;#x2e;&amp;#x79;&amp;#43;&amp;#110;&amp;#97;&amp;#109;&amp;#101;&amp;#x40;&amp;#101;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; will be forwarded to &lt;a href=&quot;mailto:&amp;#109;&amp;#x79;&amp;#64;&amp;#x65;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#109;&amp;#x79;&amp;#64;&amp;#x65;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt;.  (Again, this rule does not apply for domain names.)&lt;/p&gt;
-&lt;p&gt;It is possible to use both of these rules at the same time.&lt;/p&gt;
-&lt;p&gt;Given a list of emails, we send one email to each address in the list.  How many different addresses actually receive mails? &lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [&amp;quot;test.email+alex@leetcode.com&amp;quot;,&amp;quot;test.e.mail+bob.cathy@leetcode.com&amp;quot;,&amp;quot;testemail+david@lee.tcode.com&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: &amp;quot;testemail@leetcode.com&amp;quot; and &amp;quot;testemail@lee.tcode.com&amp;quot; actually receive mails&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
