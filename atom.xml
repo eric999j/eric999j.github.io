@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2020-12-10T14:09:07.761Z</updated>
+  <updated>2020-12-10T14:23:09.481Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,31 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>閱讀機會效應</title>
-    <link href="https://eric999j.github.io/manager/chance/"/>
-    <id>https://eric999j.github.io/manager/chance/</id>
-    <published>2020-12-12T14:00:00.000Z</published>
-    <updated>2020-12-10T14:09:07.761Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;機會存在混亂與逆境中&lt;br&gt;刻意製造混亂讓自己成長&lt;br&gt;走錯了也沒關係，說不定是另一條正確的路  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
     <title>閱讀感想</title>
     <link href="https://eric999j.github.io/manager/cycle/"/>
     <id>https://eric999j.github.io/manager/cycle/</id>
-    <published>2020-12-12T12:30:00.000Z</published>
-    <updated>2020-12-10T14:20:02.214Z</updated>
+    <published>2020-12-12T14:30:00.000Z</published>
+    <updated>2020-12-10T14:23:09.481Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
@@ -60,12 +40,32 @@
     <title>閱讀刻意練習</title>
     <link href="https://eric999j.github.io/manager/practice/"/>
     <id>https://eric999j.github.io/manager/practice/</id>
-    <published>2020-12-12T12:10:00.000Z</published>
-    <updated>2020-12-10T14:19:00.536Z</updated>
+    <published>2020-12-12T14:10:00.000Z</published>
+    <updated>2020-12-10T14:23:31.683Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;原子習慣再搭配刻意練習就是堅持每天進步一點點&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>閱讀機會效應</title>
+    <link href="https://eric999j.github.io/manager/chance/"/>
+    <id>https://eric999j.github.io/manager/chance/</id>
+    <published>2020-12-12T14:00:00.000Z</published>
+    <updated>2020-12-10T14:09:07.761Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;機會存在混亂與逆境中&lt;br&gt;刻意製造混亂讓自己成長&lt;br&gt;走錯了也沒關係，說不定是另一條正確的路  &lt;/p&gt;</summary>
     
     
     
