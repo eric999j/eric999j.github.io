@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2020-12-10T15:32:03.458Z</updated>
+  <updated>2020-12-19T06:19:44.125Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自動化</title>
+    <link href="https://eric999j.github.io/engineer/automation/"/>
+    <id>https://eric999j.github.io/engineer/automation/</id>
+    <published>2020-12-19T05:00:00.000Z</published>
+    <updated>2020-12-19T06:19:44.125Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;還記得&lt;a href=&quot;https://eric999j.github.io/engineer/android/&quot;&gt;Android小技巧&lt;/a&gt;提到的IFTTT嗎？自動化重複的事可以為生活帶來便利，這篇再來說明一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>米其林一星明福台菜海鮮</title>
@@ -458,25 +478,6 @@
     
     
     <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>種植守則</title>
-    <link href="https://eric999j.github.io/life/plantingRule/"/>
-    <id>https://eric999j.github.io/life/plantingRule/</id>
-    <published>2020-11-14T15:00:00.000Z</published>
-    <updated>2020-12-05T05:35:51.475Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="植栽" scheme="https://eric999j.github.io/tags/Planting/"/>
     
   </entry>
   
