@@ -174,7 +174,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/268/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -188,7 +188,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/interview/268/" class="post-title-link" itemprop="url">268. Missing Number</a>
+            <a href="/interview/1/" class="post-title-link" itemprop="url">1. Two Sum</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +199,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-19 15:00:00 / Modified: 15:03:30" itemprop="dateCreated datePublished" datetime="2020-12-19T15:00:00+08:00">2020-12-19</time>
+              <time title="Created: 2020-12-26 14:00:00 / Modified: 14:47:38" itemprop="dateCreated datePublished" datetime="2020-12-26T14:00:00+08:00">2020-12-26</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -217,7 +217,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.1k</span>
+              <span>630</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -236,26 +236,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg"></p>
-<p>Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.</p>
-<p>Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?</p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg"></p>
+<p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
+<p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
+<p>You can return the answer in any order.</p>
 <p>Example 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [3,0,1]</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: n &#x3D; 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [2,7,11,15], target &#x3D; 9</span><br><span class="line">Output: [0,1]</span><br><span class="line">Output: Because nums[0] + nums[1] &#x3D;&#x3D; 9, we return [0, 1].</span><br></pre></td></tr></table></figure>
 
 <p>Example 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0,1]</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: n &#x3D; 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [3,2,4], target &#x3D; 6</span><br><span class="line">Output: [1,2]</span><br></pre></td></tr></table></figure>
 
 <p>Example 3:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [9,6,4,2,3,5,7,0,1]</span><br><span class="line">Output: 8</span><br><span class="line">Explanation: n &#x3D; 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
-
-<p>Example 4:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0]</span><br><span class="line">Output: 1</span><br><span class="line">Explanation: n &#x3D; 1 since there is 1 number, so all numbers are in the range [0,1]. 1 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
-
-<p>Constraints:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n &#x3D;&#x3D; nums.length</span><br><span class="line">1 &lt;&#x3D; n &lt;&#x3D; 104</span><br><span class="line">0 &lt;&#x3D; nums[i] &lt;&#x3D; n</span><br><span class="line">All the numbers of nums are unique.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [3,3], target &#x3D; 6</span><br><span class="line">Output: [0,1]</span><br><span class="line">&#96;&#96;&#96; </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>2 &lt;= nums.length &lt;= 103<br>-109 &lt;= nums[i] &lt;= 109<br>-109 &lt;= target &lt;= 109<br>Only one valid answer exists.</p>
+<p>```</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/interview/268/#more" rel="contents">
+              <a class="btn" href="/interview/1/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -279,7 +276,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/350/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/26/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -293,7 +290,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/interview/350/" class="post-title-link" itemprop="url">350. Intersection of Two Arrays II</a>
+            <a href="/interview/26/" class="post-title-link" itemprop="url">26. Remove Duplicates from Sorted Array</a>
         </h2>
 
         <div class="post-meta">
@@ -304,7 +301,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-19 15:00:00 / Modified: 15:23:25" itemprop="dateCreated datePublished" datetime="2020-12-19T15:00:00+08:00">2020-12-19</time>
+              <time title="Created: 2020-12-26 13:00:00 / Modified: 14:49:01" itemprop="dateCreated datePublished" datetime="2020-12-26T13:00:00+08:00">2020-12-26</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -322,7 +319,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>433</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -341,19 +338,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg"></p>
-<p>Given two arrays, write a function to compute their intersection.</p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(2).jpeg"></p>
+<p>Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.</p>
+<p>Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.</p>
+<p>Clarification:</p>
+<p>Confused why the returned value is an integer but your answer is an array?</p>
+<p>Note that the input array is passed in by reference, which means a modification to the input array will be known to the caller as well.</p>
+<p>Internally you can think of this:</p>
+<p>// nums is passed in by reference. (i.e., without making a copy)<br>int len = removeDuplicates(nums);</p>
+<p>// any modification to nums in your function would be known by the caller.<br>// using the length returned by your function, it prints the first len elements.<br>for (int i = 0; i &lt; len; i++) {<br>    print(nums[i]);<br>}</p>
 <p>Example 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums1 &#x3D; [1,2,2,1], nums2 &#x3D; [2,2]</span><br><span class="line">Output: [2,2]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [1,1,2]</span><br><span class="line">Output: 2, nums &#x3D; [1,2]</span><br><span class="line">Explanation: Your function should return length &#x3D; 2, with the first two elements of nums being 1 and 2 respectively. It doesn&#39;t matter what you leave beyond the returned length.</span><br></pre></td></tr></table></figure>
 
 <p>Example 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums1 &#x3D; [4,9,5], nums2 &#x3D; [9,4,9,8,4]</span><br><span class="line">Output: [4,9]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0,0,1,1,1,2,2,3,3,4]</span><br><span class="line">Output: 5, nums &#x3D; [0,1,2,3,4]</span><br><span class="line">Explanation: Your function should return length &#x3D; 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively. It doesn&#39;t matter what values are set beyond the returned length.</span><br></pre></td></tr></table></figure>
 
-<p>Note:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Each element in the result should appear as many times as it shows in both arrays.</span><br><span class="line">The result can be in any order.</span><br></pre></td></tr></table></figure>
+<p>Constraints:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0 &lt;&#x3D; nums.length &lt;&#x3D; 3 * 104</span><br><span class="line">-104 &lt;&#x3D; nums[i] &lt;&#x3D; 104</span><br><span class="line">nums is sorted in ascending order.</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/interview/350/#more" rel="contents">
+              <a class="btn" href="/interview/26/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -377,7 +381,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/engineer/automation/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/53/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -391,7 +395,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/engineer/automation/" class="post-title-link" itemprop="url">自動化</a>
+            <a href="/interview/53/" class="post-title-link" itemprop="url">53. Maximum Subarray</a>
         </h2>
 
         <div class="post-meta">
@@ -402,7 +406,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-19 13:00:00 / Modified: 14:40:05" itemprop="dateCreated datePublished" datetime="2020-12-19T13:00:00+08:00">2020-12-19</time>
+              <time title="Created: 2020-12-26 13:00:00 / Modified: 14:07:44" itemprop="dateCreated datePublished" datetime="2020-12-26T13:00:00+08:00">2020-12-26</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -410,7 +414,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/engineer/" itemprop="url" rel="index"><span itemprop="name">工程</span></a>
+                  <a href="/categories/interview/" itemprop="url" rel="index"><span itemprop="name">面試</span></a>
                 </span>
             </span>
 
@@ -420,7 +424,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>327</span>
+              <span>559</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -439,11 +443,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg"></p>
-<p>還記得<a href="https://eric999j.github.io/engineer/android/">Android小技巧</a>提到的IFTTT嗎？自動化重複的事可以為生活帶來便利，這篇再來說明一下。</p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg"></p>
+<p>Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.</p>
+<p>Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>
+<p>Example 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [-2,1,-3,4,-1,2,1,-5,4]</span><br><span class="line">Output: 6</span><br><span class="line">Explanation: [4,-1,2,1] has the largest sum &#x3D; 6.</span><br></pre></td></tr></table></figure>
+
+<p>Example 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [1]</span><br><span class="line">Output: 1</span><br></pre></td></tr></table></figure>
+
+<p>Example 3:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0]</span><br><span class="line">Output: 0</span><br></pre></td></tr></table></figure>
+
+<p>Example 4:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [-1]</span><br><span class="line">Output: -1</span><br></pre></td></tr></table></figure>
+
+<p>Example 5:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [-2147483647]</span><br><span class="line">Output: -2147483647</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/engineer/automation/#more" rel="contents">
+              <a class="btn" href="/interview/53/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -467,7 +486,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/traditional/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/70/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -481,7 +500,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/life/traditional/" class="post-title-link" itemprop="url">米其林一星明福台菜海鮮</a>
+            <a href="/interview/70/" class="post-title-link" itemprop="url">70. Climbing Stairs</a>
         </h2>
 
         <div class="post-meta">
@@ -490,23 +509,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-12-12 23:30:00" itemprop="dateCreated datePublished" datetime="2020-12-12T23:30:00+08:00">2020-12-12</time>
+              <time title="Created: 2020-12-26 13:00:00 / Modified: 13:17:15" itemprop="dateCreated datePublished" datetime="2020-12-26T13:00:00+08:00">2020-12-26</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-10 23:32:03" itemprop="dateModified" datetime="2020-12-10T23:32:03+08:00">2020-12-10</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
+                  <a href="/categories/interview/" itemprop="url" rel="index"><span itemprop="name">面試</span></a>
                 </span>
             </span>
 
@@ -516,7 +529,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>242</span>
+              <span>619</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -535,10 +548,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://i.imgur.com/ezflDw9.jpg" alt="img"></p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg"></p>
+<p>You are climbing a staircase. It takes n steps to reach the top.</p>
+<p>Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?</p>
+<p>Example 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input: n &#x3D; 2</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: There are two ways to climb to the top.</span><br><span class="line">1. 1 step + 1 step</span><br><span class="line">2. 2 steps</span><br></pre></td></tr></table></figure>
+
+<p>Example 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: n &#x3D; 3</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: There are three ways to climb to the top.</span><br><span class="line">1. 1 step + 1 step + 1 step</span><br><span class="line">2. 1 step + 2 steps</span><br><span class="line">3. 2 steps + 1 step</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/life/traditional/#more" rel="contents">
+              <a class="btn" href="/interview/70/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -562,7 +582,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/fertilizer/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/kinmen/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -576,7 +596,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/life/fertilizer/" class="post-title-link" itemprop="url">種植肥料</a>
+            <a href="/life/kinmen/" class="post-title-link" itemprop="url">聖誕金門味</a>
         </h2>
 
         <div class="post-meta">
@@ -586,14 +606,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-12-12 23:00:00" itemprop="dateCreated datePublished" datetime="2020-12-12T23:00:00+08:00">2020-12-12</time>
+              <time title="Created: 2020-12-25 15:00:00" itemprop="dateCreated datePublished" datetime="2020-12-25T15:00:00+08:00">2020-12-25</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-10 22:37:37" itemprop="dateModified" datetime="2020-12-10T22:37:37+08:00">2020-12-10</time>
+                <time title="Modified: 2020-12-27 16:25:07" itemprop="dateModified" datetime="2020-12-27T16:25:07+08:00">2020-12-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -611,14 +631,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.2k</span>
+              <span>509</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>1 mins.</span>
             </span>
 
         </div>
@@ -630,11 +650,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg"></p>
-<p>植物的糧食，化肥就像維他命，有機肥沒腐熟可能會傷根。</p>
+          <p><img src="https://i.imgur.com/b6HlG06.jpg" alt="img"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/life/fertilizer/#more" rel="contents">
+              <a class="btn" href="/life/kinmen/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -657,7 +676,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -727,7 +746,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">60</span>
+          <span class="site-state-item-count">69</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -786,7 +805,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -795,12 +814,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">56k</span>
+    <span title="Symbols count total">61k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">51 mins.</span>
+    <span title="Reading time total">56 mins.</span>
 </div>
 
         
