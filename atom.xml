@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-01-02T09:34:16.766Z</updated>
+  <updated>2021-01-09T08:17:42.095Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,25 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>米其林一星侯布雄</title>
-    <link href="https://eric999j.github.io/life/robuchon/"/>
-    <id>https://eric999j.github.io/life/robuchon/</id>
-    <published>2021-02-02T09:00:00.000Z</published>
-    <updated>2021-01-02T09:34:16.766Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/t4KAdxj.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
   
   <entry>
     <title>ヨルシカ-パレード</title>
@@ -248,6 +229,25 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>米其林一星侯布雄</title>
+    <link href="https://eric999j.github.io/life/robuchon/"/>
+    <id>https://eric999j.github.io/life/robuchon/</id>
+    <published>2021-01-02T09:00:00.000Z</published>
+    <updated>2021-01-09T08:21:32.950Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/t4KAdxj.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
     
   </entry>
   
