@@ -36,6 +36,202 @@
   </entry>
   
   <entry>
+    <title>ヨルシカ-パレード</title>
+    <link href="https://eric999j.github.io/life/parade/"/>
+    <id>https://eric999j.github.io/life/parade/</id>
+    <published>2021-01-09T08:30:00.000Z</published>
+    <updated>2021-01-09T07:40:58.635Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;最近上班聽日文歌發現有首不錯聽，小提琴聲讓人感受到油然而生的希望，Shvara吵著說要學，所以就來研究一下。&lt;/p&gt;
+&lt;p&gt;這首歌在說走到跟男朋友一起經過的大街，想到以前種種，景物依舊，人事已非，但還是因為不想忘記這段回憶而掙扎。[加油啊(吶喊&lt;/p&gt;
+&lt;p&gt;希望大家會喜歡。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>閱讀一開口撩人又聊心</title>
+    <link href="https://eric999j.github.io/manager/hiton/"/>
+    <id>https://eric999j.github.io/manager/hiton/</id>
+    <published>2021-01-09T08:00:00.000Z</published>
+    <updated>2021-01-09T07:59:44.625Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;最近遇到對聊天有困擾的朋友，所以我買了這本書，並分享筆記給他，如果對他有幫助，也能幫到一樣有困擾的小夥伴們就太好了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>204. Count Primes</title>
+    <link href="https://eric999j.github.io/interview/204/"/>
+    <id>https://eric999j.github.io/interview/204/</id>
+    <published>2021-01-09T07:00:00.000Z</published>
+    <updated>2021-01-09T07:14:54.634Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Count the number of prime numbers less than a non-negative number, n.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>88. Merge Sorted Array</title>
+    <link href="https://eric999j.github.io/interview/88/"/>
+    <id>https://eric999j.github.io/interview/88/</id>
+    <published>2021-01-09T06:30:00.000Z</published>
+    <updated>2021-01-09T06:57:45.854Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.&lt;/p&gt;
+&lt;p&gt;The number of elements initialized in nums1 and nums2 are m and n respectively. You may assume that nums1 has enough space (size that is equal to m + n) to hold additional elements from nums2.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums1 &amp;#x3D; [1,2,3,0,0,0], m &amp;#x3D; 3, nums2 &amp;#x3D; [2,5,6], n &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2,2,3,5,6]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums1 &amp;#x3D; [1], m &amp;#x3D; 1, nums2 &amp;#x3D; [], n &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>28. Implement strStr()</title>
+    <link href="https://eric999j.github.io/interview/28/"/>
+    <id>https://eric999j.github.io/interview/28/</id>
+    <published>2021-01-09T06:00:00.000Z</published>
+    <updated>2021-01-09T06:41:20.065Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Implement strStr().&lt;/p&gt;
+&lt;p&gt;Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.&lt;/p&gt;
+&lt;p&gt;Clarification:&lt;/p&gt;
+&lt;p&gt;What should we return when needle is an empty string? This is a great question to ask during an interview.&lt;/p&gt;
+&lt;p&gt;For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C’s strstr() and Java’s indexOf().&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: haystack &amp;#x3D; &amp;quot;hello&amp;quot;, needle &amp;#x3D; &amp;quot;ll&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: haystack &amp;#x3D; &amp;quot;aaaaa&amp;quot;, needle &amp;#x3D; &amp;quot;bba&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: -1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: haystack &amp;#x3D; &amp;quot;&amp;quot;, needle &amp;#x3D; &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; haystack.length, needle.length &amp;lt;&amp;#x3D; 5 * 10ˆ4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;haystack and needle consist of only lower-case English characters.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>14. Longest Common Prefix</title>
+    <link href="https://eric999j.github.io/interview/14/"/>
+    <id>https://eric999j.github.io/interview/14/</id>
+    <published>2021-01-09T06:00:00.000Z</published>
+    <updated>2021-01-09T06:33:14.225Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Write a function to find the longest common prefix string amongst an array of strings.&lt;/p&gt;
+&lt;p&gt;If there is no common prefix, return an empty string “”.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: strs &amp;#x3D; [&amp;quot;flower&amp;quot;,&amp;quot;flow&amp;quot;,&amp;quot;flight&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;fl&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: strs &amp;#x3D; [&amp;quot;dog&amp;quot;,&amp;quot;racecar&amp;quot;,&amp;quot;car&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There is no common prefix among the input strings.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; strs.length &amp;lt;&amp;#x3D; 200&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; strs[i].length &amp;lt;&amp;#x3D; 200&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;strs[i] consists of only lower-case English letters.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>7. Reverse Integer</title>
+    <link href="https://eric999j.github.io/interview/7/"/>
+    <id>https://eric999j.github.io/interview/7/</id>
+    <published>2021-01-09T06:00:00.000Z</published>
+    <updated>2021-01-09T06:50:26.441Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given a 32-bit signed integer, reverse digits of an integer.&lt;/p&gt;
+&lt;p&gt;Note: Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For this problem, assume that your function returns 0 when the reversed integer overflows.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: x &amp;#x3D; 123&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 321&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: x &amp;#x3D; -123&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: -321&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: x &amp;#x3D; 120&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 4:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: x &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;-2ˆ31 &amp;lt;&amp;#x3D; x &amp;lt;&amp;#x3D; 231 - 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一人農業</title>
     <link href="https://eric999j.github.io/engineer/harvest/"/>
     <id>https://eric999j.github.io/engineer/harvest/</id>
@@ -360,181 +556,6 @@
 
 &lt;p&gt;Example 5:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [-2147483647]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: -2147483647&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>70. Climbing Stairs</title>
-    <link href="https://eric999j.github.io/interview/70/"/>
-    <id>https://eric999j.github.io/interview/70/</id>
-    <published>2020-12-26T05:00:00.000Z</published>
-    <updated>2020-12-26T05:17:15.088Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;You are climbing a staircase. It takes n steps to reach the top.&lt;/p&gt;
-&lt;p&gt;Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are two ways to climb to the top.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1. 1 step + 1 step&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. 2 steps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are three ways to climb to the top.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1. 1 step + 1 step + 1 step&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. 1 step + 2 steps&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. 2 steps + 1 step&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>聖誕金門味</title>
-    <link href="https://eric999j.github.io/life/kinmen/"/>
-    <id>https://eric999j.github.io/life/kinmen/</id>
-    <published>2020-12-25T07:00:00.000Z</published>
-    <updated>2020-12-27T08:25:07.773Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/b6HlG06.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>米其林一星教父牛排</title>
-    <link href="https://eric999j.github.io/life/danny/"/>
-    <id>https://eric999j.github.io/life/danny/</id>
-    <published>2020-12-20T09:00:00.000Z</published>
-    <updated>2020-12-20T11:22:53.996Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nGmilW6.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>202. Happy Number</title>
-    <link href="https://eric999j.github.io/interview/202/"/>
-    <id>https://eric999j.github.io/interview/202/</id>
-    <published>2020-12-19T07:40:00.000Z</published>
-    <updated>2020-12-19T08:26:43.361Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(39).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Write an algorithm to determine if a number n is happy.&lt;/p&gt;
-&lt;p&gt;A happy number is a number defined by the following process:&lt;/p&gt;
-&lt;p&gt;Starting with any positive integer, replace the number by the sum of the squares of its digits.&lt;br&gt;Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.&lt;br&gt;Those numbers for which this process ends in 1 are happy.&lt;br&gt;Return true if n is a happy number, and false if not.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1ˆ2 + 9ˆ2 &amp;#x3D; 82&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8ˆ2 + 2ˆ2 &amp;#x3D; 68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6ˆ2 + 8ˆ2 &amp;#x3D; 100&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1ˆ2 + 0ˆ2 + 02 &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>121. Best Time to Buy and Sell Stock</title>
-    <link href="https://eric999j.github.io/interview/121/"/>
-    <id>https://eric999j.github.io/interview/121/</id>
-    <published>2020-12-19T07:30:00.000Z</published>
-    <updated>2020-12-19T08:10:48.092Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(38).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
-&lt;p&gt;If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.&lt;/p&gt;
-&lt;p&gt;Note that you cannot sell a stock before you buy one.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [7,1,5,3,6,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Buy on day 2 (price &amp;#x3D; 1) and sell on day 5 (price &amp;#x3D; 6), profit &amp;#x3D; 6-1 &amp;#x3D; 5.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             Not 7-1 &amp;#x3D; 6, as selling price needs to be larger than buying price.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [7,6,4,3,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: In this case, no transaction is done, i.e. max profit &amp;#x3D; 0.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>191. Number of 1 Bits</title>
-    <link href="https://eric999j.github.io/interview/191/"/>
-    <id>https://eric999j.github.io/interview/191/</id>
-    <published>2020-12-19T07:00:00.000Z</published>
-    <updated>2020-12-19T07:43:53.813Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(37).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Write a function that takes an unsigned integer and returns the number of ‘1’ bits it has (also known as the Hamming weight).&lt;/p&gt;
-&lt;p&gt;Note:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Note that in some languages such as Java, there is no unsigned integer type. In this case, the input will be given as a signed integer type. It should not affect your implementation, as the integer&amp;#39;s internal binary representation is the same, whether it is signed or unsigned.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;In Java, the compiler represents the signed integers using 2&amp;#39;s complement notation. Therefore, in Example 3 above, the input represents the signed integer. -3.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>268. Missing Number</title>
-    <link href="https://eric999j.github.io/interview/268/"/>
-    <id>https://eric999j.github.io/interview/268/</id>
-    <published>2020-12-19T07:00:00.000Z</published>
-    <updated>2020-12-19T07:03:30.436Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.&lt;/p&gt;
-&lt;p&gt;Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [9,6,4,2,3,5,7,0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [0]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 1 since there is 1 number, so all numbers are in the range [0,1]. 1 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Constraints:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;n &amp;#x3D;&amp;#x3D; nums.length&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 104&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; n&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;All the numbers of nums are unique.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
