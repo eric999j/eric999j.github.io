@@ -20,22 +20,18 @@
     var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array. Follow up: Could you implement a solution using only O(1) ex">
-<meta property="og:type" content="article">
-<meta property="og:title" content="268. Missing Number">
-<meta property="og:url" content="https://eric999j.github.io/interview/268/index.html">
+  <meta name="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lunski&#39;s Clutter">
+<meta property="og:url" content="https://eric999j.github.io/archives/2020/01/index.html">
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
-<meta property="og:description" content="Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array. Follow up: Could you implement a solution using only O(1) ex">
+<meta property="og:description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg">
-<meta property="article:published_time" content="2020-12-19T07:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-19T07:03:30.436Z">
 <meta property="article:author" content="lunski">
-<meta property="article:tag" content="力扣">
+<meta property="article:tag" content="Taiwanese, Engineer, Panda, Recorder">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg">
 
-<link rel="canonical" href="https://eric999j.github.io/interview/268/">
+<link rel="canonical" href="https://eric999j.github.io/archives/2020/01/">
 
 
 <script id="page-configurations">
@@ -43,12 +39,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'zh-tw'
   };
 </script>
 
-  <title>268. Missing Number | Lunski's Clutter</title>
+  <title>Archive | Lunski's Clutter</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
     <script>
@@ -172,164 +168,57 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content archive">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/268/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/lunski.png">
-      <meta itemprop="name" content="lunski">
-      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lunski's Clutter">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          268. Missing Number
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-12-19 15:00:00 / Modified: 15:03:30" itemprop="dateCreated datePublished" datetime="2020-12-19T15:00:00+08:00">2020-12-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/interview/" itemprop="url" rel="index"><span itemprop="name">面試</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.1k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        
+        <span class="collection-header">Nice! 76 posts in total. Keep on posting.</span>
+      </div>
 
       
-        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg"></p>
-<p>Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.</p>
-<p>Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?</p>
-<p>Example 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [3,0,1]</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: n &#x3D; 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
-
-<p>Example 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0,1]</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: n &#x3D; 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
-
-<p>Example 3:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [9,6,4,2,3,5,7,0,1]</span><br><span class="line">Output: 8</span><br><span class="line">Explanation: n &#x3D; 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
-
-<p>Example 4:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0]</span><br><span class="line">Output: 1</span><br><span class="line">Explanation: n &#x3D; 1 since there is 1 number, so all numbers are in the range [0,1]. 1 is the missing number in the range since it does not appear in nums.</span><br></pre></td></tr></table></figure>
-
-<p>Constraints:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n &#x3D;&#x3D; nums.length</span><br><span class="line">1 &lt;&#x3D; n &lt;&#x3D; 104</span><br><span class="line">0 &lt;&#x3D; nums[i] &lt;&#x3D; n</span><br><span class="line">All the numbers of nums are unique.</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>這篇要找遺失的數字，因為條件說數字沒有重複(如果有可以先用set篩過)，先sort亂序list，再依照list長度尋訪他，如果有遺失會在尋訪過程中出現不一致。</p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/268-Missing-Number?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-<div>
-    <hr>
-    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
-    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
-</div>
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
     </div>
 
-    
-    
-    
-        
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-  <div class="followme">
-    <p>Welcome to my other publishing channels</p>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-01-16T15:00:00+08:00"
+              content="2020-01-16">
+          01-16
+        </time>
+      </div>
 
-    <div class="social-list">
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
+      <div class="post-title">
+          <a class="post-title-link" href="/datastructureAndAlgorithm/" itemprop="url">
+            <span itemprop="name">資料結構與演算法</span>
           </a>
-        </div>
+      </div>
+
+    </header>
+  </article>
+
+
     </div>
   </div>
-
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/LeetCode/" rel="tag"><i class="fa fa-tag"></i> 力扣</a>
-          </div>
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/interview/350/" rel="prev" title="350. Intersection of Two Arrays II">
-      <i class="fa fa-chevron-left"></i> 350. Intersection of Two Arrays II
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/interview/191/" rel="next" title="191. Number of 1 Bits">
-      191. Number of 1 Bits <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
   
   
+  
+
   
 
 
 
           </div>
           
-    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -540,25 +429,6 @@
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
-
-<script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '282e6ebad41e061ecb0e',
-      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
-      repo        : 'eric999j.github.io',
-      owner       : 'eric999j',
-      admin       : ['eric999j'],
-      id          : '8faf626afc29b1586f2b2d890874fae9',
-        language: 'zh-TW',
-      distractionFreeMode: true
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
-});
-</script>
 
 </body>
 </html>
