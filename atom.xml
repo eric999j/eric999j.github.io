@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-01-09T12:56:22.164Z</updated>
+  <updated>2021-01-16T07:06:31.809Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自動化</title>
+    <link href="https://eric999j.github.io/engineer/automation/"/>
+    <id>https://eric999j.github.io/engineer/automation/</id>
+    <published>2021-01-16T06:00:00.000Z</published>
+    <updated>2021-01-16T07:06:31.809Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;還記得&lt;a href=&quot;https://eric999j.github.io/engineer/android/&quot;&gt;Android小技巧&lt;/a&gt;提到的IFTTT嗎？自動化重複的事可以為生活帶來便利，這篇來說明整個部落格發文到推廣的流程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>ヨルシカ-パレード</title>
@@ -209,26 +229,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一人農業</title>
-    <link href="https://eric999j.github.io/engineer/harvest/"/>
-    <id>https://eric999j.github.io/engineer/harvest/</id>
-    <published>2021-01-02T10:00:00.000Z</published>
-    <updated>2021-01-02T11:16:18.074Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;先前提到&lt;a href=&quot;https://eric999j.github.io/engineer/automation/&quot;&gt;自動化&lt;/a&gt;重複的事情，這篇再把格局擴大。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
