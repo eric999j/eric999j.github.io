@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg">
 <meta property="article:published_time" content="2021-01-16T07:00:00.000Z">
-<meta property="article:modified_time" content="2021-01-16T08:21:36.907Z">
+<meta property="article:modified_time" content="2021-01-23T09:02:03.994Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-01-16 15:00:00 / Modified: 16:21:36" itemprop="dateCreated datePublished" datetime="2021-01-16T15:00:00+08:00">2021-01-16</time>
+              <time title="Created: 2021-01-16 15:00:00" itemprop="dateCreated datePublished" datetime="2021-01-16T15:00:00+08:00">2021-01-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-23 17:02:03" itemprop="dateModified" datetime="2021-01-23T17:02:03+08:00">2021-01-23</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3k</span>
+              <span>3.1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -251,7 +257,7 @@
 <p>經過這麼久的努力leetcode初級基礎題目我們已經走過一輪了，但我們一直沒進一步認識資料結構與演算法，我想在這暫停一下，先來理解基礎結構，之後的題目會比較好上手。  </p>
 <a id="more"></a>
 
-<h1 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class ListNode:</span><br><span class="line">    def __init__(self, val&#x3D;0, next&#x3D;None):</span><br><span class="line">        self.val &#x3D; val</span><br><span class="line">        self.next &#x3D; next</span><br><span class="line">class SingleLinkedList:</span><br><span class="line">  def __init__(self): </span><br><span class="line">    self.head &#x3D; None</span><br><span class="line">    self.tail &#x3D; None</span><br><span class="line">    return</span><br><span class="line">  def add_list_item(self, item):</span><br><span class="line">      if not isinstance(item, ListNode):</span><br><span class="line">          item &#x3D; ListNode(item)</span><br><span class="line">      if self.head is None:</span><br><span class="line">          self.head &#x3D; item</span><br><span class="line">      else:</span><br><span class="line">          self.tail.next &#x3D; item</span><br><span class="line">      self.tail &#x3D; item</span><br><span class="line">      return</span><br><span class="line"></span><br><span class="line">list1 &#x3D; SingleLinkedList()</span><br><span class="line">list1.add_list_item(1)</span><br><span class="line">list1.add_list_item(2)</span><br><span class="line">list1.add_list_item(3)</span><br><span class="line">list1.add_list_item(4)</span><br><span class="line">list1.add_list_item(5)</span><br><span class="line"></span><br><span class="line"># 1-&gt;2-&gt;3-&gt;4-&gt;5</span><br></pre></td></tr></table></figure>
+<h1 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class ListNode:</span><br><span class="line">    def __init__(self, val&#x3D;0, next&#x3D;None):</span><br><span class="line">        self.val &#x3D; val</span><br><span class="line">        self.next &#x3D; next</span><br><span class="line">class SingleLinkedList:</span><br><span class="line">  def __init__(self): </span><br><span class="line">    self.head &#x3D; None</span><br><span class="line">    self.tail &#x3D; None</span><br><span class="line">    return</span><br><span class="line">  def add_list_item(self, item):</span><br><span class="line">      if not isinstance(item, ListNode):</span><br><span class="line">          item &#x3D; ListNode(item)</span><br><span class="line">      if self.head is None:</span><br><span class="line">          self.head &#x3D; item</span><br><span class="line">      else:</span><br><span class="line">          self.tail.next &#x3D; item</span><br><span class="line">      self.tail &#x3D; item</span><br><span class="line">      return</span><br><span class="line"></span><br><span class="line">list1 &#x3D; SingleLinkedList()</span><br><span class="line">list1.add_list_item(1)</span><br><span class="line">list1.add_list_item(2)</span><br><span class="line">list1.add_list_item(3)</span><br><span class="line">list1.add_list_item(4)</span><br><span class="line">list1.add_list_item(5)</span><br><span class="line"></span><br><span class="line">while list1:</span><br><span class="line">  if list1.head !&#x3D; None:</span><br><span class="line">      print(list1.head.val)</span><br><span class="line">      list1.head &#x3D; list1.head.next</span><br><span class="line">  else: break</span><br><span class="line"></span><br><span class="line"># 1-&gt;2-&gt;3-&gt;4-&gt;5</span><br></pre></td></tr></table></figure>
 <p>ListNode結構就是一個值(val)跟一個鏈結(next)指到下個node。</p>
 <p>有點像區塊鏈的結構(也有個鏈)，但區塊鏈的鏈是之前節點的雜湊，內容也複雜得多。上面說明Python的寫法，也說明如何寫一個簡單的單向串列加val操作。  </p>
 <h1 id="StackAndQueue"><a href="#StackAndQueue" class="headerlink" title="StackAndQueue"></a>StackAndQueue</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">list &#x3D; []</span><br><span class="line">list.append(1)</span><br><span class="line">list.append(2)</span><br><span class="line">list.append(3)</span><br><span class="line"></span><br><span class="line">Stack:  [].pop()</span><br><span class="line"># [] &lt;-&gt;</span><br><span class="line">Queue:  [].pop(0)</span><br><span class="line"># &lt;- 0 [] &lt;-</span><br></pre></td></tr></table></figure>
@@ -307,10 +313,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/engineer/automation/" rel="prev" title="自動化">
-      <i class="fa fa-chevron-left"></i> 自動化
+    <a href="/life/parade/" rel="prev" title="ヨルシカ-パレード">
+      <i class="fa fa-chevron-left"></i> ヨルシカ-パレード
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/interview/328/" rel="next" title="328. Odd Even Linked List">
+      328. Odd Even Linked List <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -388,7 +397,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">76</span>
+          <span class="site-state-item-count">77</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -456,12 +465,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">69k</span>
+    <span title="Symbols count total">70k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:03</span>
+    <span title="Reading time total">1:04</span>
 </div>
 
         
