@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-01-23T10:19:04.533Z</updated>
+  <updated>2021-01-30T09:29:24.463Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android小技巧</title>
+    <link href="https://eric999j.github.io/engineer/android/"/>
+    <id>https://eric999j.github.io/engineer/android/</id>
+    <published>2021-01-30T09:30:00.000Z</published>
+    <updated>2021-01-30T09:29:24.463Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;常駐APP&quot;&gt;&lt;a href=&quot;#常駐APP&quot; class=&quot;headerlink&quot; title=&quot;常駐APP&quot;&gt;&lt;/a&gt;常駐APP&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Shazam&lt;/strong&gt;: 常聽到不錯的旋律又不知道歌名，用這個可以辨識&lt;br&gt;&lt;strong&gt;MixerBox&lt;/strong&gt;: Shazam辨識完用這個記起來&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Drops&lt;/strong&gt;: 學習語言必備&lt;br&gt;&lt;strong&gt;Tandem&lt;/strong&gt;: Drops邊學邊跟外國人聊天&lt;/p&gt;
+&lt;p&gt;其他：&lt;br&gt;&lt;strong&gt;水滴發票&lt;/strong&gt;： 最好用的發票對獎APP&lt;br&gt;&lt;strong&gt;Telegram&lt;/strong&gt;: 聊天外用來當稍後閱讀工具，各平台都可以裝，互相分享資料很方便&lt;br&gt;&lt;strong&gt;MyBook&lt;/strong&gt;: 每個月有免費電子書&lt;/p&gt;
+&lt;h2 id=&quot;Google類：&quot;&gt;&lt;a href=&quot;#Google類：&quot; class=&quot;headerlink&quot; title=&quot;Google類：&quot;&gt;&lt;/a&gt;Google類：&lt;/h2&gt;&lt;p&gt;組合技：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;獎勵&lt;/strong&gt;：不定期回答問題賺錢&lt;br&gt;&lt;strong&gt;Google圖書&lt;/strong&gt;：獎勵賺到的錢買喜歡的書看&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Google鬧鐘&lt;/strong&gt;：生活必備&lt;br&gt;&lt;strong&gt;IFTTT&lt;/strong&gt;: 自動化神器&lt;br&gt;&lt;strong&gt;Google日曆&lt;/strong&gt;：結合IFTTT控制鬧鐘開關&lt;/p&gt;
+&lt;p&gt;其他：&lt;br&gt;&lt;strong&gt;Google新聞&lt;/strong&gt;：追喜歡的主題時事&lt;br&gt;&lt;strong&gt;智慧鏡頭&lt;/strong&gt;：遇到不知名的植物可以辨識&lt;/p&gt;
+&lt;h1 id=&quot;情境：平時設定鬧鐘一週幾天固定時間會響，但有時候那幾天放假會被鬧鐘叫醒很困擾&quot;&gt;&lt;a href=&quot;#情境：平時設定鬧鐘一週幾天固定時間會響，但有時候那幾天放假會被鬧鐘叫醒很困擾&quot; class=&quot;headerlink&quot; title=&quot;情境：平時設定鬧鐘一週幾天固定時間會響，但有時候那幾天放假會被鬧鐘叫醒很困擾&quot;&gt;&lt;/a&gt;情境：平時設定鬧鐘一週幾天固定時間會響，但有時候那幾天放假會被鬧鐘叫醒很困擾&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JP Saxe - If the World Was Ending ft. Julia Michaels</title>
+    <link href="https://eric999j.github.io/life/earthquake/"/>
+    <id>https://eric999j.github.io/life/earthquake/</id>
+    <published>2021-01-30T09:30:00.000Z</published>
+    <updated>2021-01-30T10:27:22.293Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>155. Min Stack</title>
+    <link href="https://eric999j.github.io/interview/155/"/>
+    <id>https://eric999j.github.io/interview/155/</id>
+    <published>2021-01-30T09:00:00.000Z</published>
+    <updated>2021-01-30T09:00:15.712Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(22).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.&lt;/p&gt;
+&lt;p&gt;push(x) – Push element x onto stack.&lt;br&gt;pop() – Removes the element on top of the stack.&lt;br&gt;top() – Get the top element.&lt;br&gt;getMin() – Retrieve the minimum element in the stack.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&amp;quot;MinStack&amp;quot;,&amp;quot;push&amp;quot;,&amp;quot;push&amp;quot;,&amp;quot;push&amp;quot;,&amp;quot;getMin&amp;quot;,&amp;quot;pop&amp;quot;,&amp;quot;top&amp;quot;,&amp;quot;getMin&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[[],[-2],[0],[-3],[],[],[],[]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[null,null,null,null,-3,null,0,-2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Explanation&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MinStack minStack &amp;#x3D; new MinStack();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(-2);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(-3);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.getMin(); &amp;#x2F;&amp;#x2F; return -3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.pop();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.top();    &amp;#x2F;&amp;#x2F; return 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.getMin(); &amp;#x2F;&amp;#x2F; return -2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>自動化</title>
@@ -87,13 +165,13 @@
     <link href="https://eric999j.github.io/life/parade/"/>
     <id>https://eric999j.github.io/life/parade/</id>
     <published>2021-01-09T08:30:00.000Z</published>
-    <updated>2021-01-09T12:56:22.164Z</updated>
+    <updated>2021-01-30T09:30:57.548Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;最近上班聽日文歌發現有首不錯聽，小提琴聲讓人感受到油然而生的希望，Shvara吵著說要學，所以就來研究一下。&lt;/p&gt;
 &lt;p&gt;這首歌在說走到跟男朋友一起經過的大街，想到以前種種，景物依舊，人事已非，但還是因為不想忘記這段回憶而掙扎。[加油啊(吶喊&lt;/p&gt;
-&lt;p&gt;希望大家會喜歡。&lt;/p&gt;</summary>
+&lt;p&gt;我想這種感覺就是物の哀れ吧。&lt;/p&gt;</summary>
     
     
     
@@ -443,95 +521,6 @@
 &lt;p&gt;Note that in some languages such as Java, there is no unsigned integer type. In this case, both input and output will be given as a signed integer type. They should not affect your implementation, as the integer’s internal binary representation is the same, whether it is signed or unsigned.  &lt;/p&gt;
 &lt;p&gt;In Java, the compiler represents the signed integers using 2’s complement notation. &lt;/p&gt;
 &lt;p&gt;Therefore, in Example 2 above, the input represents the signed integer -3 and the output represents the signed integer -1073741825.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>66. Plus One</title>
-    <link href="https://eric999j.github.io/interview/66/"/>
-    <id>https://eric999j.github.io/interview/66/</id>
-    <published>2021-01-02T06:00:00.000Z</published>
-    <updated>2021-01-02T06:54:06.096Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.&lt;/p&gt;
-&lt;p&gt;The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit.&lt;/p&gt;
-&lt;p&gt;You may assume the integer does not contain any leading zero, except the number 0 itself.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: digits &amp;#x3D; [1,2,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The array represents the integer 123.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: digits &amp;#x3D; [4,3,2,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [4,3,2,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The array represents the integer 4321.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: digits &amp;#x3D; [0]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>38. Count and Say</title>
-    <link href="https://eric999j.github.io/interview/38/"/>
-    <id>https://eric999j.github.io/interview/38/</id>
-    <published>2020-12-26T08:00:00.000Z</published>
-    <updated>2020-12-26T07:34:33.784Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;The count-and-say sequence is a sequence of digit strings defined by the recursive formula:&lt;/p&gt;
-&lt;p&gt;countAndSay(1) = “1”&lt;br&gt;countAndSay(n) is the way you would “say” the digit string from countAndSay(n-1), which is then converted into a different digit string.&lt;br&gt;To determine how you “say” a digit string, split it into the minimal number of groups so that each group is a contiguous section all of the same character. Then for each group, say the number of characters, then say the character. To convert the saying into a digit string, replace the counts with a number and concatenate every saying.&lt;/p&gt;
-&lt;p&gt;Given a positive integer n, return the nth term of the count-and-say sequence.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;1&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: This is the base case.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;1211&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;countAndSay(1) &amp;#x3D; &amp;quot;1&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;countAndSay(2) &amp;#x3D; say &amp;quot;1&amp;quot; &amp;#x3D; one 1 &amp;#x3D; &amp;quot;11&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;countAndSay(3) &amp;#x3D; say &amp;quot;11&amp;quot; &amp;#x3D; two 1&amp;#39;s &amp;#x3D; &amp;quot;21&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;countAndSay(4) &amp;#x3D; say &amp;quot;21&amp;quot; &amp;#x3D; one 2 + one 1 &amp;#x3D; &amp;quot;12&amp;quot; + &amp;quot;11&amp;quot; &amp;#x3D; &amp;quot;1211&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1. Two Sum</title>
-    <link href="https://eric999j.github.io/interview/1/"/>
-    <id>https://eric999j.github.io/interview/1/</id>
-    <published>2020-12-26T06:00:00.000Z</published>
-    <updated>2020-12-26T06:47:38.105Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution, and you may not use the same element twice.&lt;/p&gt;
-&lt;p&gt;You can return the answer in any order.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [2,7,11,15], target &amp;#x3D; 9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: Because nums[0] + nums[1] &amp;#x3D;&amp;#x3D; 9, we return [0, 1].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,2,4], target &amp;#x3D; 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,3], target &amp;#x3D; 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#96;&amp;#96;&amp;#96; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Constraints:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;2 &amp;lt;= nums.length &amp;lt;= 103&lt;br&gt;-109 &amp;lt;= nums[i] &amp;lt;= 109&lt;br&gt;-109 &amp;lt;= target &amp;lt;= 109&lt;br&gt;Only one valid answer exists.&lt;/p&gt;
-&lt;p&gt;```&lt;/p&gt;</summary>
     
     
     
