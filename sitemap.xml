@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/engineer/android/</loc>
+    
+    <lastmod>2021-01-31</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/life/earthquake/</loc>
     
     <lastmod>2021-01-31</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://eric999j.github.io/life/stargazing/</loc>
     
     <lastmod>2021-01-31</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/android/</loc>
-    
-    <lastmod>2021-01-30</lastmod>
     
   </url>
   
