@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg">
 <meta property="article:published_time" content="2021-02-06T08:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-06T09:08:54.321Z">
+<meta property="article:modified_time" content="2021-02-06T10:24:15.692Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-02-06 16:00:00 / Modified: 17:08:54" itemprop="dateCreated datePublished" datetime="2021-02-06T16:00:00+08:00">2021-02-06</time>
+              <time title="Created: 2021-02-06 16:00:00 / Modified: 18:24:15" itemprop="dateCreated datePublished" datetime="2021-02-06T16:00:00+08:00">2021-02-06</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>769</span>
+              <span>543</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -267,7 +267,7 @@
 <a id="more"></a>
 
 <p>二元樹尋訪應該是樹類最基本題目了，尋訪分三種，前序，中序，後序，依照值(root.val)位置決定是哪種。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">preorder: 中-&gt;左-&gt;右</span><br><span class="line">                    stack.append((node.left))</span><br><span class="line">                    stack.append((node.right))</span><br><span class="line">                    stack.append((node))</span><br><span class="line">inorder: 左-&gt;中-&gt;右</span><br><span class="line">                    stack.append((node.left))</span><br><span class="line">                    stack.append((node))</span><br><span class="line">                    stack.append((node.right))</span><br><span class="line">postorder: 左-&gt;右-&gt;中</span><br><span class="line">                    stack.append((node,))</span><br><span class="line">                    stack.append((node.left))</span><br><span class="line">                    stack.append((node.right))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">preorder: 中-&gt;左-&gt;右  </span><br><span class="line">inorder: 左-&gt;中-&gt;右  </span><br><span class="line">postorder: 左-&gt;右-&gt;中</span><br></pre></td></tr></table></figure>
 
 <p>而題目需要中序，所以可以寫成</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def inOrder(root): </span><br><span class="line">    if root !&#x3D; None: </span><br><span class="line">        inOrder(root.left)  </span><br><span class="line">        print(root.val,end&#x3D;&quot; &quot;)  </span><br><span class="line">        inOrder(root.right) </span><br></pre></td></tr></table></figure>
@@ -465,7 +465,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">76k</span>
+    <span title="Symbols count total">75k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
