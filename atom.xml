@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-02-06T10:16:57.954Z</updated>
+  <updated>2021-02-13T09:21:19.936Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>重訓的腿拉推</title>
+    <link href="https://eric999j.github.io/life/ppl/"/>
+    <id>https://eric999j.github.io/life/ppl/</id>
+    <published>2021-02-13T09:00:00.000Z</published>
+    <updated>2021-02-13T09:21:19.936Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Collections</title>
+    <link href="https://eric999j.github.io/interview/collections/"/>
+    <id>https://eric999j.github.io/interview/collections/</id>
+    <published>2021-02-13T08:00:00.000Z</published>
+    <updated>2021-02-13T09:06:02.122Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;就跟Java一樣，語言學習到一定程度就會從基礎類別str, int, list, tuple, dict增加更方便的collections.&lt;/p&gt;
+&lt;p&gt;而這篇會介紹collections有哪些，接下來再個別介紹。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>重訓的上下休息</title>
@@ -459,64 +505,6 @@
     
     
     <category term="植栽" scheme="https://eric999j.github.io/tags/Planting/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>125. Valid Palindrome</title>
-    <link href="https://eric999j.github.io/interview/125/"/>
-    <id>https://eric999j.github.io/interview/125/</id>
-    <published>2021-01-02T07:00:00.000Z</published>
-    <updated>2021-01-02T07:42:52.933Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.&lt;/p&gt;
-&lt;p&gt;Note: For the purpose of this problem, we define empty string as valid palindrome.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: &amp;quot;A man, a plan, a canal: Panama&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: &amp;quot;race a car&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>326. Power of Three</title>
-    <link href="https://eric999j.github.io/interview/326/"/>
-    <id>https://eric999j.github.io/interview/326/</id>
-    <published>2021-01-02T06:30:00.000Z</published>
-    <updated>2021-01-02T07:44:40.387Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an integer n, return true if it is a power of three. Otherwise, return false.&lt;/p&gt;
-&lt;p&gt;An integer n is a power of three, if there exists an integer x such that n == 3x.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
