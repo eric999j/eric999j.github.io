@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-02-13T09:24:20.460Z</updated>
+  <updated>2021-02-20T09:58:48.872Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,77 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>閱讀超速學習</title>
+    <link href="https://eric999j.github.io/manager/speed/"/>
+    <id>https://eric999j.github.io/manager/speed/</id>
+    <published>2021-02-20T10:00:00.000Z</published>
+    <updated>2021-02-20T09:58:48.872Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;了解全貌：描繪學習地圖&lt;/li&gt;
+&lt;li&gt;專注目標：靈活改變方法&lt;/li&gt;
+&lt;li&gt;直截了當：直接操作省時&lt;/li&gt;
+&lt;li&gt;反覆演練：優化每個步驟&lt;/li&gt;
+&lt;li&gt;測試回憶：主動回想複習&lt;/li&gt;
+&lt;li&gt;意見回饋：擷取他人建言&lt;/li&gt;
+&lt;li&gt;重點記憶：永久保留精華&lt;/li&gt;
+&lt;li&gt;培養直覺：深入累積反射&lt;/li&gt;
+&lt;li&gt;勇於實驗：探索更多可能&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DefaultDict</title>
+    <link href="https://eric999j.github.io/interview/defaultDict/"/>
+    <id>https://eric999j.github.io/interview/defaultDict/</id>
+    <published>2021-02-20T09:00:00.000Z</published>
+    <updated>2021-02-20T09:36:12.833Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(26).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;defaultDict用來計算出現次數很方便。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Collections</title>
+    <link href="https://eric999j.github.io/interview/collections/"/>
+    <id>https://eric999j.github.io/interview/collections/</id>
+    <published>2021-02-20T08:00:00.000Z</published>
+    <updated>2021-02-20T08:47:39.074Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;就跟Java一樣，語言學習到一定程度就會從基礎類別str, int, list, tuple, set, dict增加更方便的collections.&lt;/p&gt;
+&lt;p&gt;而這篇會介紹collections有哪些，接下來再個別介紹。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>重訓的腿拉推</title>
@@ -33,27 +104,6 @@
     
     
     <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Collections</title>
-    <link href="https://eric999j.github.io/interview/collections/"/>
-    <id>https://eric999j.github.io/interview/collections/</id>
-    <published>2021-02-13T08:00:00.000Z</published>
-    <updated>2021-02-13T09:06:02.122Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;就跟Java一樣，語言學習到一定程度就會從基礎類別str, int, list, tuple, dict增加更方便的collections.&lt;/p&gt;
-&lt;p&gt;而這篇會介紹collections有哪些，接下來再個別介紹。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
@@ -460,46 +510,6 @@
     
     
     <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>重訓的十里坡</title>
-    <link href="https://eric999j.github.io/life/brute/"/>
-    <id>https://eric999j.github.io/life/brute/</id>
-    <published>2021-01-02T08:10:00.000Z</published>
-    <updated>2021-01-02T08:23:04.052Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(18).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;上次跟大家提到重訓的吃，接下來就是開始動，問題是怎麼動呢？ 其實我一開始也不知道，所以這份課表叫十里坡，在不斷努力後，還是練成了劍神。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>種植用藥</title>
-    <link href="https://eric999j.github.io/life/pesticide/"/>
-    <id>https://eric999j.github.io/life/pesticide/</id>
-    <published>2021-01-02T08:00:00.000Z</published>
-    <updated>2021-01-02T18:07:33.562Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;種植過程一定會遇到問題，對症下藥能讓你的植物頭好壯壯，脫離黑拇指稱號。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="植栽" scheme="https://eric999j.github.io/tags/Planting/"/>
     
   </entry>
   
