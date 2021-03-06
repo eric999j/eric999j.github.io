@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-02-27T12:30:46.414Z</updated>
+  <updated>2021-03-06T12:22:45.658Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>米其林餐盤想想廚房</title>
+    <link href="https://eric999j.github.io/life/josephBistro/"/>
+    <id>https://eric999j.github.io/life/josephBistro/</id>
+    <published>2021-03-06T10:00:00.000Z</published>
+    <updated>2021-03-06T12:22:45.658Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PV8XBcQ.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自動化</title>
+    <link href="https://eric999j.github.io/engineer/automation/"/>
+    <id>https://eric999j.github.io/engineer/automation/</id>
+    <published>2021-03-06T09:00:00.000Z</published>
+    <updated>2021-03-06T09:57:15.242Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;還記得&lt;a href=&quot;https://eric999j.github.io/engineer/android/&quot;&gt;Android小技巧&lt;/a&gt;提到的IFTTT嗎？自動化重複的事可以為生活帶來便利，這篇來說明整個部落格發文到推廣的流程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ActiveVoice</title>
+    <link href="https://eric999j.github.io/interview/ActiveVoice/"/>
+    <id>https://eric999j.github.io/interview/ActiveVoice/</id>
+    <published>2021-03-06T09:00:00.000Z</published>
+    <updated>2021-03-06T09:34:40.215Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The active voice is simplify and feels aggressive, that is exactly what we need.&lt;/p&gt;
+&lt;p&gt;Clear sentences express our unambiguous and firm position.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="科技英文" scheme="https://eric999j.github.io/tags/TechnicalWriting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>deque</title>
+    <link href="https://eric999j.github.io/interview/deque/"/>
+    <id>https://eric999j.github.io/interview/deque/</id>
+    <published>2021-03-06T08:00:00.000Z</published>
+    <updated>2021-03-06T08:57:42.353Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;deque更安全方便的添加元素。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>TechnicalWriting</title>
@@ -273,26 +353,6 @@
   </entry>
   
   <entry>
-    <title>自動化</title>
-    <link href="https://eric999j.github.io/engineer/automation/"/>
-    <id>https://eric999j.github.io/engineer/automation/</id>
-    <published>2021-01-23T10:00:00.000Z</published>
-    <updated>2021-01-23T10:19:04.533Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;還記得&lt;a href=&quot;https://eric999j.github.io/engineer/android/&quot;&gt;Android小技巧&lt;/a&gt;提到的IFTTT嗎？自動化重複的事可以為生活帶來便利，這篇來說明整個部落格發文到推廣的流程。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
     <title>328. Odd Even Linked List</title>
     <link href="https://eric999j.github.io/interview/328/"/>
     <id>https://eric999j.github.io/interview/328/</id>
@@ -398,97 +458,6 @@
 
 &lt;p&gt;Example 3:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>88. Merge Sorted Array</title>
-    <link href="https://eric999j.github.io/interview/88/"/>
-    <id>https://eric999j.github.io/interview/88/</id>
-    <published>2021-01-09T06:30:00.000Z</published>
-    <updated>2021-01-09T06:57:45.854Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.&lt;/p&gt;
-&lt;p&gt;The number of elements initialized in nums1 and nums2 are m and n respectively. You may assume that nums1 has enough space (size that is equal to m + n) to hold additional elements from nums2.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums1 &amp;#x3D; [1,2,3,0,0,0], m &amp;#x3D; 3, nums2 &amp;#x3D; [2,5,6], n &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2,2,3,5,6]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums1 &amp;#x3D; [1], m &amp;#x3D; 1, nums2 &amp;#x3D; [], n &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>28. Implement strStr()</title>
-    <link href="https://eric999j.github.io/interview/28/"/>
-    <id>https://eric999j.github.io/interview/28/</id>
-    <published>2021-01-09T06:00:00.000Z</published>
-    <updated>2021-01-09T06:41:20.065Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Implement strStr().&lt;/p&gt;
-&lt;p&gt;Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.&lt;/p&gt;
-&lt;p&gt;Clarification:&lt;/p&gt;
-&lt;p&gt;What should we return when needle is an empty string? This is a great question to ask during an interview.&lt;/p&gt;
-&lt;p&gt;For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C’s strstr() and Java’s indexOf().&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: haystack &amp;#x3D; &amp;quot;hello&amp;quot;, needle &amp;#x3D; &amp;quot;ll&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: haystack &amp;#x3D; &amp;quot;aaaaa&amp;quot;, needle &amp;#x3D; &amp;quot;bba&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: -1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: haystack &amp;#x3D; &amp;quot;&amp;quot;, needle &amp;#x3D; &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-&lt;p&gt;Constraints:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; haystack.length, needle.length &amp;lt;&amp;#x3D; 5 * 10ˆ4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;haystack and needle consist of only lower-case English characters.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>14. Longest Common Prefix</title>
-    <link href="https://eric999j.github.io/interview/14/"/>
-    <id>https://eric999j.github.io/interview/14/</id>
-    <published>2021-01-09T06:00:00.000Z</published>
-    <updated>2021-01-09T06:33:14.225Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Write a function to find the longest common prefix string amongst an array of strings.&lt;/p&gt;
-&lt;p&gt;If there is no common prefix, return an empty string “”.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: strs &amp;#x3D; [&amp;quot;flower&amp;quot;,&amp;quot;flow&amp;quot;,&amp;quot;flight&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;fl&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: strs &amp;#x3D; [&amp;quot;dog&amp;quot;,&amp;quot;racecar&amp;quot;,&amp;quot;car&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There is no common prefix among the input strings.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Constraints:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; strs.length &amp;lt;&amp;#x3D; 200&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; strs[i].length &amp;lt;&amp;#x3D; 200&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;strs[i] consists of only lower-case English letters.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
