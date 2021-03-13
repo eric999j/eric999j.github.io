@@ -28,8 +28,8 @@
 <meta property="og:description" content="Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may n">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg">
-<meta property="article:published_time" content="2020-12-26T06:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-26T06:47:38.105Z">
+<meta property="article:published_time" content="2021-03-13T09:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-13T09:43:42.047Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-26 14:00:00 / Modified: 14:47:38" itemprop="dateCreated datePublished" datetime="2020-12-26T14:00:00+08:00">2020-12-26</time>
+              <time title="Created: 2021-03-13 17:00:00 / Modified: 17:43:42" itemprop="dateCreated datePublished" datetime="2021-03-13T17:00:00+08:00">2021-03-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>630</span>
+              <span>952</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -264,6 +264,25 @@
 <a id="more"></a>
 
 <p>經典第一題，思路是先把需要的值減去尋訪到的值，再看剩下的值有沒有在array裡。</p>
+<p>需要知道的：</p>
+<ol>
+<li>列index <code>for i in range(len(nums))</code></li>
+<li>由數字找index <code>nums.index(remain)</code></li>
+</ol>
+<pre style="font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%"><code>'''
+Time Complexity: O(n)
+Space Complexity: O(1)
+'''
+from typing import List
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:
+        for i in range(len(nums)):
+            remain = target - nums[i]
+            if remain in nums:
+                return [i,nums.index(remain)]
+print(Solution().twoSum([2,7,11,15],9))
+</code></pre>
+
 <iframe height="400px" width="100%" src="https://repl.it/@eric999j/1-Two-Sum?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 <div>
     <hr>
@@ -306,12 +325,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/interview/26/" rel="prev" title="26. Remove Duplicates from Sorted Array">
-      <i class="fa fa-chevron-left"></i> 26. Remove Duplicates from Sorted Array
+    <a href="/interview/ShortSentences/" rel="prev" title="ShortSentences">
+      <i class="fa fa-chevron-left"></i> ShortSentences
     </a></div>
       <div class="post-nav-item">
-    <a href="/interview/38/" rel="next" title="38. Count and Say">
-      38. Count and Say <i class="fa fa-chevron-right"></i>
+    <a href="/engineer/nativeLanguage/" rel="next" title="第二母語">
+      第二母語 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -389,7 +408,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">90</span>
+          <span class="site-state-item-count">94</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -457,12 +476,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">80k</span>
+    <span title="Symbols count total">83k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:13</span>
+    <span title="Reading time total">1:16</span>
 </div>
 
         

@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-03-07T11:16:25.834Z</updated>
+  <updated>2021-03-13T10:19:46.715Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,125 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>やさしいすいせい</title>
+    <link href="https://eric999j.github.io/life/comet/"/>
+    <id>https://eric999j.github.io/life/comet/</id>
+    <published>2021-03-13T10:00:00.000Z</published>
+    <updated>2021-03-13T10:19:46.715Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;溫柔的彗星，在不理解歌詞前只覺得是首輕快溫暖的歌，&lt;br&gt;理解意境發現實際異常沈重…。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第二母語</title>
+    <link href="https://eric999j.github.io/engineer/nativeLanguage/"/>
+    <id>https://eric999j.github.io/engineer/nativeLanguage/</id>
+    <published>2021-03-13T09:30:00.000Z</published>
+    <updated>2021-03-13T09:55:53.571Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;O&quot;&gt;&lt;a href=&quot;#O&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1. Two Sum</title>
+    <link href="https://eric999j.github.io/interview/1/"/>
+    <id>https://eric999j.github.io/interview/1/</id>
+    <published>2021-03-13T09:00:00.000Z</published>
+    <updated>2021-03-13T09:43:42.047Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.&lt;/p&gt;
+&lt;p&gt;You may assume that each input would have exactly one solution, and you may not use the same element twice.&lt;/p&gt;
+&lt;p&gt;You can return the answer in any order.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [2,7,11,15], target &amp;#x3D; 9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: Because nums[0] + nums[1] &amp;#x3D;&amp;#x3D; 9, we return [0, 1].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,2,4], target &amp;#x3D; 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,3], target &amp;#x3D; 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#96;&amp;#96;&amp;#96; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Constraints:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2 &amp;lt;= nums.length &amp;lt;= 103&lt;br&gt;-109 &amp;lt;= nums[i] &amp;lt;= 109&lt;br&gt;-109 &amp;lt;= target &amp;lt;= 109&lt;br&gt;Only one valid answer exists.&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ShortSentences</title>
+    <link href="https://eric999j.github.io/interview/ShortSentences/"/>
+    <id>https://eric999j.github.io/interview/ShortSentences/</id>
+    <published>2021-03-13T08:30:00.000Z</published>
+    <updated>2021-03-13T09:32:08.661Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Short sentences make reader focus on the key point.&lt;/p&gt;
+&lt;p&gt;Lists and tables changes complicated concept easy to understand. &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="科技英文" scheme="https://eric999j.github.io/tags/TechnicalWriting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Counter</title>
+    <link href="https://eric999j.github.io/interview/counter/"/>
+    <id>https://eric999j.github.io/interview/counter/</id>
+    <published>2021-03-13T08:00:00.000Z</published>
+    <updated>2021-03-13T08:39:06.583Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Counter統計文章出現字數很方便。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>米其林餐盤想想廚房</title>
@@ -60,11 +179,11 @@
     <link href="https://eric999j.github.io/interview/ActiveVoice/"/>
     <id>https://eric999j.github.io/interview/ActiveVoice/</id>
     <published>2021-03-06T09:00:00.000Z</published>
-    <updated>2021-03-06T09:34:40.215Z</updated>
+    <updated>2021-03-13T09:25:49.734Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;The active voice is simplify and feels aggressive, that is exactly what we need.&lt;/p&gt;
+&lt;p&gt;Active voice is simplify and feels aggressive, that is exactly what we need.&lt;/p&gt;
 &lt;p&gt;Clear sentences express our unambiguous and firm position.&lt;/p&gt;</summary>
     
     
@@ -342,122 +461,6 @@
 
 &lt;p&gt;Explanation&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MinStack minStack &amp;#x3D; new MinStack();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(-2);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(-3);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.getMin(); &amp;#x2F;&amp;#x2F; return -3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.pop();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.top();    &amp;#x2F;&amp;#x2F; return 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.getMin(); &amp;#x2F;&amp;#x2F; return -2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>328. Odd Even Linked List</title>
-    <link href="https://eric999j.github.io/interview/328/"/>
-    <id>https://eric999j.github.io/interview/328/</id>
-    <published>2021-01-23T09:00:00.000Z</published>
-    <updated>2021-01-23T09:16:38.561Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(21).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.&lt;/p&gt;
-&lt;p&gt;You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: 2-&amp;gt;1-&amp;gt;3-&amp;gt;5-&amp;gt;6-&amp;gt;4-&amp;gt;7-&amp;gt;NULL&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2-&amp;gt;3-&amp;gt;6-&amp;gt;7-&amp;gt;1-&amp;gt;5-&amp;gt;4-&amp;gt;NULL&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>資料結構與演算法</title>
-    <link href="https://eric999j.github.io/interview/datastructureAndAlgorithm/"/>
-    <id>https://eric999j.github.io/interview/datastructureAndAlgorithm/</id>
-    <published>2021-01-16T07:00:00.000Z</published>
-    <updated>2021-01-23T09:02:03.994Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;經過這麼久的努力leetcode初級基礎題目我們已經走過一輪了，但我們一直沒進一步認識資料結構與演算法，我想在這暫停一下，先來理解基礎結構，之後的題目會比較好上手。  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ヨルシカ-パレード</title>
-    <link href="https://eric999j.github.io/life/parade/"/>
-    <id>https://eric999j.github.io/life/parade/</id>
-    <published>2021-01-09T08:30:00.000Z</published>
-    <updated>2021-01-31T06:00:23.346Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;最近上班聽日文歌發現有首不錯聽，小提琴聲讓人感受到油然而生的希望，Shvara吵著說要學，所以就來研究一下。&lt;/p&gt;
-&lt;p&gt;這首歌在說走到跟男朋友一起經過的大街，想到以前種種，景物依舊，人事已非，但還是因為不想忘記這段回憶而掙扎。[加油啊(吶喊&lt;/p&gt;
-&lt;p&gt;我想這種感覺就是物の哀れ吧。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀一開口撩人又聊心</title>
-    <link href="https://eric999j.github.io/manager/hiton/"/>
-    <id>https://eric999j.github.io/manager/hiton/</id>
-    <published>2021-01-09T08:00:00.000Z</published>
-    <updated>2021-01-09T07:59:44.625Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;最近遇到對聊天有困擾的朋友，所以我買了這本書，並分享筆記給他，如果對他有幫助，也能幫到一樣有困擾的小夥伴們就太好了。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>204. Count Primes</title>
-    <link href="https://eric999j.github.io/interview/204/"/>
-    <id>https://eric999j.github.io/interview/204/</id>
-    <published>2021-01-09T07:00:00.000Z</published>
-    <updated>2021-01-09T07:14:54.634Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Count the number of prime numbers less than a non-negative number, n.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
