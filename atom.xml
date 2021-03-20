@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-03-13T10:19:46.715Z</updated>
+  <updated>2021-03-20T15:11:12.879Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自動化</title>
+    <link href="https://eric999j.github.io/engineer/automation/"/>
+    <id>https://eric999j.github.io/engineer/automation/</id>
+    <published>2021-03-20T14:00:00.000Z</published>
+    <updated>2021-03-20T15:11:12.879Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Do you remember we have mentioned IFTTT in &lt;a href=&quot;https://eric999j.github.io/engineer/android/&quot;&gt;Android Skill&lt;/a&gt;? Automate repetitive things can make life more convenient.&lt;br&gt;This article shows the publication of the article to the promotion process.&lt;/p&gt;
+&lt;p&gt;還記得&lt;a href=&quot;https://eric999j.github.io/engineer/android/&quot;&gt;Android小技巧&lt;/a&gt;提到的IFTTT嗎？自動化重複的事可以為生活帶來便利，這篇來說明整個部落格發文到推廣的流程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>やさしいすいせい</title>
@@ -41,7 +62,7 @@
     <link href="https://eric999j.github.io/engineer/nativeLanguage/"/>
     <id>https://eric999j.github.io/engineer/nativeLanguage/</id>
     <published>2021-03-13T09:30:00.000Z</published>
-    <updated>2021-03-13T10:36:39.796Z</updated>
+    <updated>2021-03-19T13:45:05.396Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
@@ -145,26 +166,6 @@
     
     
     <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自動化</title>
-    <link href="https://eric999j.github.io/engineer/automation/"/>
-    <id>https://eric999j.github.io/engineer/automation/</id>
-    <published>2021-03-06T09:00:00.000Z</published>
-    <updated>2021-03-06T09:57:15.242Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;還記得&lt;a href=&quot;https://eric999j.github.io/engineer/android/&quot;&gt;Android小技巧&lt;/a&gt;提到的IFTTT嗎？自動化重複的事可以為生活帶來便利，這篇來說明整個部落格發文到推廣的流程。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
