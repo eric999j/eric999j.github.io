@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-03-20T15:11:12.879Z</updated>
+  <updated>2021-03-21T07:49:10.869Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Paragraphs</title>
+    <link href="https://eric999j.github.io/interview/Paragraphs/"/>
+    <id>https://eric999j.github.io/interview/Paragraphs/</id>
+    <published>2021-03-21T08:00:00.000Z</published>
+    <updated>2021-03-21T07:49:10.869Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(38).jpeg&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="科技英文" scheme="https://eric999j.github.io/tags/TechnicalWriting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Namedtuple</title>
+    <link href="https://eric999j.github.io/interview/namedTuple/"/>
+    <id>https://eric999j.github.io/interview/namedTuple/</id>
+    <published>2021-03-21T07:00:00.000Z</published>
+    <updated>2021-03-21T07:22:05.157Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Namedtuple生成可以使用名字來訪問元素內容的tuple子類，比class更省記憶體。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自動化</title>
     <link href="https://eric999j.github.io/engineer/automation/"/>
     <id>https://eric999j.github.io/engineer/automation/</id>
     <published>2021-03-20T14:00:00.000Z</published>
-    <updated>2021-03-20T15:11:12.879Z</updated>
+    <updated>2021-03-21T07:56:12.121Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
@@ -114,7 +153,7 @@
     <link href="https://eric999j.github.io/interview/ShortSentences/"/>
     <id>https://eric999j.github.io/interview/ShortSentences/</id>
     <published>2021-03-13T08:30:00.000Z</published>
-    <updated>2021-03-13T09:32:08.661Z</updated>
+    <updated>2021-03-21T07:54:31.944Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
@@ -135,7 +174,7 @@
     <link href="https://eric999j.github.io/interview/counter/"/>
     <id>https://eric999j.github.io/interview/counter/</id>
     <published>2021-03-13T08:00:00.000Z</published>
-    <updated>2021-03-13T08:39:06.583Z</updated>
+    <updated>2021-03-21T07:15:37.620Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
@@ -174,7 +213,7 @@
     <link href="https://eric999j.github.io/interview/ActiveVoice/"/>
     <id>https://eric999j.github.io/interview/ActiveVoice/</id>
     <published>2021-03-06T09:00:00.000Z</published>
-    <updated>2021-03-13T09:25:49.734Z</updated>
+    <updated>2021-03-21T07:53:19.894Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
@@ -412,57 +451,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android小技巧</title>
-    <link href="https://eric999j.github.io/engineer/android/"/>
-    <id>https://eric999j.github.io/engineer/android/</id>
-    <published>2021-01-30T09:30:00.000Z</published>
-    <updated>2021-01-31T06:06:28.460Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;常駐APP&quot;&gt;&lt;a href=&quot;#常駐APP&quot; class=&quot;headerlink&quot; title=&quot;常駐APP&quot;&gt;&lt;/a&gt;常駐APP&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Shazam&lt;/strong&gt;: 常聽到不錯的旋律又不知道歌名，用這個可以辨識&lt;br&gt;&lt;strong&gt;MixerBox&lt;/strong&gt;: Shazam辨識完用這個記起來&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Drops&lt;/strong&gt;: 學習語言必備&lt;br&gt;&lt;strong&gt;Tandem&lt;/strong&gt;: Drops邊學邊跟外國人聊天&lt;/p&gt;
-&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;水滴發票&lt;/strong&gt;： 最好用的發票對獎APP&lt;br&gt;&lt;strong&gt;Telegram&lt;/strong&gt;: 聊天外用來當稍後閱讀工具，各平台都可以裝，互相分享資料很方便&lt;br&gt;&lt;strong&gt;MyBook&lt;/strong&gt;: 每個月有免費電子書&lt;/p&gt;
-&lt;h2 id=&quot;Google類：&quot;&gt;&lt;a href=&quot;#Google類：&quot; class=&quot;headerlink&quot; title=&quot;Google類：&quot;&gt;&lt;/a&gt;Google類：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;獎勵&lt;/strong&gt;：不定期回答問題賺錢&lt;br&gt;&lt;strong&gt;Google圖書&lt;/strong&gt;：獎勵賺到的錢買喜歡的書看&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Google鬧鐘&lt;/strong&gt;：生活必備&lt;br&gt;&lt;strong&gt;IFTTT&lt;/strong&gt;: 自動化神器&lt;br&gt;&lt;strong&gt;Google日曆&lt;/strong&gt;：結合IFTTT控制鬧鐘開關&lt;/p&gt;
-&lt;h2 id=&quot;其他-1&quot;&gt;&lt;a href=&quot;#其他-1&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Google新聞&lt;/strong&gt;：追喜歡的主題時事&lt;br&gt;&lt;strong&gt;智慧鏡頭&lt;/strong&gt;：遇到不知名的植物可以辨識&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>155. Min Stack</title>
-    <link href="https://eric999j.github.io/interview/155/"/>
-    <id>https://eric999j.github.io/interview/155/</id>
-    <published>2021-01-30T09:00:00.000Z</published>
-    <updated>2021-01-30T09:00:15.712Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(22).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.&lt;/p&gt;
-&lt;p&gt;push(x) – Push element x onto stack.&lt;br&gt;pop() – Removes the element on top of the stack.&lt;br&gt;top() – Get the top element.&lt;br&gt;getMin() – Retrieve the minimum element in the stack.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&amp;quot;MinStack&amp;quot;,&amp;quot;push&amp;quot;,&amp;quot;push&amp;quot;,&amp;quot;push&amp;quot;,&amp;quot;getMin&amp;quot;,&amp;quot;pop&amp;quot;,&amp;quot;top&amp;quot;,&amp;quot;getMin&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[[],[-2],[0],[-3],[],[],[],[]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[null,null,null,null,-3,null,0,-2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Explanation&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MinStack minStack &amp;#x3D; new MinStack();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(-2);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.push(-3);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.getMin(); &amp;#x2F;&amp;#x2F; return -3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.pop();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.top();    &amp;#x2F;&amp;#x2F; return 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;minStack.getMin(); &amp;#x2F;&amp;#x2F; return -2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
