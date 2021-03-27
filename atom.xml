@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-03-21T08:04:37.842Z</updated>
+  <updated>2021-03-27T12:30:17.190Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,344 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Adele - When We Were Young</title>
+    <link href="https://eric999j.github.io/life/young/"/>
+    <id>https://eric999j.github.io/life/young/</id>
+    <published>2021-03-27T14:00:00.000Z</published>
+    <updated>2021-03-27T12:30:17.190Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;偶然聽到這首歌，跟介紹過的每首都有感動的感覺，決定好好研究一下，下週我生日會停刊一週，也先祝Shvara生日快樂。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Documents</title>
+    <link href="https://eric999j.github.io/interview/Documents/"/>
+    <id>https://eric999j.github.io/interview/Documents/</id>
+    <published>2021-03-27T13:30:00.000Z</published>
+    <updated>2021-03-27T11:35:24.368Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(39).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Documents tell us before we write documents, we must state our purpose. Who should read those documents, don’t waste reader’s time. &lt;/p&gt;
+&lt;p&gt;Punctuation tells us that we need to choose the right sign. if two sentences have a connection, we should use semicolons; if the connection is a sequence, we should use commas; if the second sentence use to emphasize the first sentence - em-dashes; if the second sentence is minor points (parentheses).&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="科技英文" scheme="https://eric999j.github.io/tags/TechnicalWriting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>33. Search in Rotated Sorted Array</title>
+    <link href="https://eric999j.github.io/interview/33/"/>
+    <id>https://eric999j.github.io/interview/33/</id>
+    <published>2021-03-27T13:00:00.000Z</published>
+    <updated>2021-03-27T10:31:52.341Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There is an integer array nums sorted in ascending order (with distinct values).&lt;/p&gt;
+&lt;p&gt;Prior to being passed to your function, nums is rotated at an unknown pivot index k (0 &amp;lt;= k &amp;lt; nums.length) such that the resulting array is [nums[k], nums[k+1], …, nums[n-1], nums[0], nums[1], …, nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].&lt;/p&gt;
+&lt;p&gt;Given the array nums after the rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [4,5,6,7,0,1,2], target &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [4,5,6,7,0,1,2], target &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: -1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1], target &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: -1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>23. Merge k Sorted Lists</title>
+    <link href="https://eric999j.github.io/interview/23/"/>
+    <id>https://eric999j.github.io/interview/23/</id>
+    <published>2021-03-27T12:30:00.000Z</published>
+    <updated>2021-03-27T10:23:25.228Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.&lt;/p&gt;
+&lt;p&gt;Merge all the linked-lists into one sorted linked-list and return it.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: lists &amp;#x3D; [[1,4,5],[1,3,4],[2,6]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,1,2,3,4,4,5,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The linked-lists are:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  1-&amp;gt;4-&amp;gt;5,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  1-&amp;gt;3-&amp;gt;4,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  2-&amp;gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;merging them into one sorted list:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5-&amp;gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: lists &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Example 3:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Input: lists &amp;#x3D; [[]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>21. Merge Two Sorted Lists</title>
+    <link href="https://eric999j.github.io/interview/21/"/>
+    <id>https://eric999j.github.io/interview/21/</id>
+    <published>2021-03-27T12:00:00.000Z</published>
+    <updated>2021-03-27T10:17:23.330Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: l1 &amp;#x3D; [1,2,4], l2 &amp;#x3D; [1,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,1,2,3,4,4]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: l1 &amp;#x3D; [], l2 &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: l1 &amp;#x3D; [], l2 &amp;#x3D; [0]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20. Valid Parentheses</title>
+    <link href="https://eric999j.github.io/interview/20/"/>
+    <id>https://eric999j.github.io/interview/20/</id>
+    <published>2021-03-27T11:30:00.000Z</published>
+    <updated>2021-03-27T10:16:54.175Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given a string s containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if the input string is valid.&lt;/p&gt;
+&lt;p&gt;An input string is valid if:&lt;/p&gt;
+&lt;p&gt;Open brackets must be closed by the same type of brackets.&lt;br&gt;Open brackets must be closed in the correct order.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;()&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;()[]&amp;#123;&amp;#125;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;(]&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 4:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;([)]&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 5:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;&amp;#123;[]&amp;#125;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>15. 3Sum</title>
+    <link href="https://eric999j.github.io/interview/15/"/>
+    <id>https://eric999j.github.io/interview/15/</id>
+    <published>2021-03-27T11:00:00.000Z</published>
+    <updated>2021-03-27T10:15:34.281Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.&lt;/p&gt;
+&lt;p&gt;Notice that the solution set must not contain duplicate triplets.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [-1,0,1,2,-1,-4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[-1,-1,2],[-1,0,1]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [0]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>19. Remove Nth Node From End of List</title>
+    <link href="https://eric999j.github.io/interview/19/"/>
+    <id>https://eric999j.github.io/interview/19/</id>
+    <published>2021-03-27T11:00:00.000Z</published>
+    <updated>2021-03-27T10:16:21.624Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given the head of a linked list, remove the nth node from the end of the list and return its head.&lt;/p&gt;
+&lt;p&gt;Follow up: Could you do this in one pass?&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1,2,3,4,5], n &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2,3,5]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1], n &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1,2], n &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>11. Container With Most Water</title>
+    <link href="https://eric999j.github.io/interview/11/"/>
+    <id>https://eric999j.github.io/interview/11/</id>
+    <published>2021-03-27T10:30:00.000Z</published>
+    <updated>2021-03-27T09:47:26.088Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given n non-negative integers a1, a2, …, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i is at (i, ai) and (i, 0). Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: height &amp;#x3D; [1,8,6,2,5,4,8,3,7]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: height &amp;#x3D; [1,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: height &amp;#x3D; [4,3,2,1,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 4:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: height &amp;#x3D; [1,2,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>5. Longest Palindromic Substring</title>
+    <link href="https://eric999j.github.io/interview/5/"/>
+    <id>https://eric999j.github.io/interview/5/</id>
+    <published>2021-03-27T10:00:00.000Z</published>
+    <updated>2021-03-27T09:41:44.772Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given a string s, return the longest palindromic substring in s.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;babad&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;bab&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Note: &amp;quot;aba&amp;quot; is also a valid answer.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;cbbd&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;bb&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;a&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;a&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 4:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;ac&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;a&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3. Longest Substring Without Repeating Characters</title>
+    <link href="https://eric999j.github.io/interview/3/"/>
+    <id>https://eric999j.github.io/interview/3/</id>
+    <published>2021-03-27T09:30:00.000Z</published>
+    <updated>2021-03-27T09:29:08.878Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(2).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given a string s, find the length of the longest substring without repeating characters.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;abcabcbb&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The answer is &amp;quot;abc&amp;quot;, with the length of 3.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;bbbbb&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The answer is &amp;quot;b&amp;quot;, with the length of 1.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;pwwkew&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The answer is &amp;quot;wke&amp;quot;, with the length of 3.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Notice that the answer must be a substring, &amp;quot;pwke&amp;quot; is a subsequence and not a substring.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 4:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1. Two Sum</title>
+    <link href="https://eric999j.github.io/interview/1/"/>
+    <id>https://eric999j.github.io/interview/1/</id>
+    <published>2021-03-27T09:00:00.000Z</published>
+    <updated>2021-03-27T09:41:56.250Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an array of integers nums and an</summary>
+        
+      
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Paragraphs</title>
@@ -118,38 +456,6 @@
   </entry>
   
   <entry>
-    <title>1. Two Sum</title>
-    <link href="https://eric999j.github.io/interview/1/"/>
-    <id>https://eric999j.github.io/interview/1/</id>
-    <published>2021-03-13T09:00:00.000Z</published>
-    <updated>2021-03-13T09:43:42.047Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution, and you may not use the same element twice.&lt;/p&gt;
-&lt;p&gt;You can return the answer in any order.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [2,7,11,15], target &amp;#x3D; 9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: Because nums[0] + nums[1] &amp;#x3D;&amp;#x3D; 9, we return [0, 1].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,2,4], target &amp;#x3D; 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,3], target &amp;#x3D; 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#96;&amp;#96;&amp;#96; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Constraints:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;2 &amp;lt;= nums.length &amp;lt;= 103&lt;br&gt;-109 &amp;lt;= nums[i] &amp;lt;= 109&lt;br&gt;-109 &amp;lt;= target &amp;lt;= 109&lt;br&gt;Only one valid answer exists.&lt;/p&gt;
-&lt;p&gt;```&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ShortSentences</title>
     <link href="https://eric999j.github.io/interview/ShortSentences/"/>
     <id>https://eric999j.github.io/interview/ShortSentences/</id>
@@ -206,252 +512,6 @@
     
     
     <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ActiveVoice</title>
-    <link href="https://eric999j.github.io/interview/ActiveVoice/"/>
-    <id>https://eric999j.github.io/interview/ActiveVoice/</id>
-    <published>2021-03-06T09:00:00.000Z</published>
-    <updated>2021-03-21T07:53:19.894Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Active voice is simplify and feels aggressive, that is exactly what we need.&lt;/p&gt;
-&lt;p&gt;Clear sentences express our unambiguous and firm position.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="科技英文" scheme="https://eric999j.github.io/tags/TechnicalWriting/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Deque</title>
-    <link href="https://eric999j.github.io/interview/deque/"/>
-    <id>https://eric999j.github.io/interview/deque/</id>
-    <published>2021-03-06T08:00:00.000Z</published>
-    <updated>2021-03-06T12:28:39.306Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Deque更安全方便的添加元素。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TechnicalWriting</title>
-    <link href="https://eric999j.github.io/interview/TechnicalWriting/"/>
-    <id>https://eric999j.github.io/interview/TechnicalWriting/</id>
-    <published>2021-02-27T10:00:00.000Z</published>
-    <updated>2021-02-27T12:30:46.414Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;From this moment, we open a new chapter to learn how to write English precision and elegent.&lt;br&gt;Wish everyone enjoy it. &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="科技英文" scheme="https://eric999j.github.io/tags/TechnicalWriting/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OrderedDict</title>
-    <link href="https://eric999j.github.io/interview/orderedDict/"/>
-    <id>https://eric999j.github.io/interview/orderedDict/</id>
-    <published>2021-02-27T09:00:00.000Z</published>
-    <updated>2021-02-27T10:26:16.220Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;OrderedDict照插入順序排序的dict。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀超速學習</title>
-    <link href="https://eric999j.github.io/manager/speed/"/>
-    <id>https://eric999j.github.io/manager/speed/</id>
-    <published>2021-02-20T10:00:00.000Z</published>
-    <updated>2021-02-20T09:58:48.872Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;了解全貌：描繪學習地圖&lt;/li&gt;
-&lt;li&gt;專注目標：靈活改變方法&lt;/li&gt;
-&lt;li&gt;直截了當：直接操作省時&lt;/li&gt;
-&lt;li&gt;反覆演練：優化每個步驟&lt;/li&gt;
-&lt;li&gt;測試回憶：主動回想複習&lt;/li&gt;
-&lt;li&gt;意見回饋：擷取他人建言&lt;/li&gt;
-&lt;li&gt;重點記憶：永久保留精華&lt;/li&gt;
-&lt;li&gt;培養直覺：深入累積反射&lt;/li&gt;
-&lt;li&gt;勇於實驗：探索更多可能&lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DefaultDict</title>
-    <link href="https://eric999j.github.io/interview/defaultDict/"/>
-    <id>https://eric999j.github.io/interview/defaultDict/</id>
-    <published>2021-02-20T09:00:00.000Z</published>
-    <updated>2021-02-27T09:55:36.484Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(26).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;defaultDict當調用key值時不用檢查是否存在。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Collections</title>
-    <link href="https://eric999j.github.io/interview/collections/"/>
-    <id>https://eric999j.github.io/interview/collections/</id>
-    <published>2021-02-20T08:00:00.000Z</published>
-    <updated>2021-02-20T08:47:39.074Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;就跟Java一樣，語言學習到一定程度就會從基礎類別str, int, list, tuple, set, dict增加更方便的collections.&lt;/p&gt;
-&lt;p&gt;而這篇會介紹collections有哪些，接下來再個別介紹。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>重訓的腿拉推</title>
-    <link href="https://eric999j.github.io/life/ppl/"/>
-    <id>https://eric999j.github.io/life/ppl/</id>
-    <published>2021-02-13T09:00:00.000Z</published>
-    <updated>2021-02-13T09:24:20.460Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(18).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;終於來到我目前施行的課表了，一般來說是一週推拉腿推拉腿，週日休息的節奏，但考量到週三可能要復健，一五有時會被貼紮或拉筋，而我最需加強腿部。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>重訓的上下休息</title>
-    <link href="https://eric999j.github.io/life/udr/"/>
-    <id>https://eric999j.github.io/life/udr/</id>
-    <published>2021-02-06T09:00:00.000Z</published>
-    <updated>2021-02-06T10:16:57.954Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(17).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;從摸索跟不斷追尋下，我理解到課表需要修正，由於週三一直都是去復健，而去健身房時間大約只能做&lt;br&gt;3個動作，我規劃了一天上肢/下肢各兩個動作，搭配一個胸腹，這份課表目的是變成上下分化訓練，在某部分痠痛時訓練另一半。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>94. Binary Tree Inorder Traversal</title>
-    <link href="https://eric999j.github.io/interview/94/"/>
-    <id>https://eric999j.github.io/interview/94/</id>
-    <published>2021-02-06T08:00:00.000Z</published>
-    <updated>2021-02-06T10:24:15.692Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given the root of a binary tree, return the inorder traversal of its nodes’ values.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [1,null,2,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,3,2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [1,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [2,1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 5:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [1,null,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,2]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JP Saxe - If the World Was Ending ft. Julia Michaels</title>
-    <link href="https://eric999j.github.io/life/earthquake/"/>
-    <id>https://eric999j.github.io/life/earthquake/</id>
-    <published>2021-01-30T10:00:00.000Z</published>
-    <updated>2021-01-31T06:03:28.964Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(24).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在吃飯聽到這首歌，很喜歡主唱細膩的聲線，MV在說男女遇到災難時的反應，但我想是在說更普羅大眾的-當感情遇到考驗時你還會選擇繼續相信對方嗎？&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   

@@ -174,7 +174,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/26/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/14/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -188,7 +188,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/interview/26/" class="post-title-link" itemprop="url">26. Remove Duplicates from Sorted Array</a>
+            <a href="/interview/14/" class="post-title-link" itemprop="url">14. Longest Common Prefix</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +199,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-26 13:00:00 / Modified: 14:49:01" itemprop="dateCreated datePublished" datetime="2020-12-26T13:00:00+08:00">2020-12-26</time>
+              <time title="Created: 2021-01-09 14:00:00 / Modified: 14:33:14" itemprop="dateCreated datePublished" datetime="2021-01-09T14:00:00+08:00">2021-01-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -217,7 +217,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.4k</span>
+              <span>638</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -236,26 +236,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(2).jpeg"></p>
-<p>Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.</p>
-<p>Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.</p>
-<p>Clarification:</p>
-<p>Confused why the returned value is an integer but your answer is an array?</p>
-<p>Note that the input array is passed in by reference, which means a modification to the input array will be known to the caller as well.</p>
-<p>Internally you can think of this:</p>
-<p>// nums is passed in by reference. (i.e., without making a copy)<br>int len = removeDuplicates(nums);</p>
-<p>// any modification to nums in your function would be known by the caller.<br>// using the length returned by your function, it prints the first len elements.<br>for (int i = 0; i &lt; len; i++) {<br>    print(nums[i]);<br>}</p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg"></p>
+<p>Write a function to find the longest common prefix string amongst an array of strings.</p>
+<p>If there is no common prefix, return an empty string “”.</p>
 <p>Example 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [1,1,2]</span><br><span class="line">Output: 2, nums &#x3D; [1,2]</span><br><span class="line">Explanation: Your function should return length &#x3D; 2, with the first two elements of nums being 1 and 2 respectively. It doesn&#39;t matter what you leave beyond the returned length.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: strs &#x3D; [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]</span><br><span class="line">Output: &quot;fl&quot;</span><br></pre></td></tr></table></figure>
 
 <p>Example 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0,0,1,1,1,2,2,3,3,4]</span><br><span class="line">Output: 5, nums &#x3D; [0,1,2,3,4]</span><br><span class="line">Explanation: Your function should return length &#x3D; 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively. It doesn&#39;t matter what values are set beyond the returned length.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: strs &#x3D; [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]</span><br><span class="line">Output: &quot;&quot;</span><br><span class="line">Explanation: There is no common prefix among the input strings.</span><br></pre></td></tr></table></figure>
 
 <p>Constraints:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0 &lt;&#x3D; nums.length &lt;&#x3D; 3 * 104</span><br><span class="line">-104 &lt;&#x3D; nums[i] &lt;&#x3D; 104</span><br><span class="line">nums is sorted in ascending order.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0 &lt;&#x3D; strs.length &lt;&#x3D; 200</span><br><span class="line">0 &lt;&#x3D; strs[i].length &lt;&#x3D; 200</span><br><span class="line">strs[i] consists of only lower-case English letters.</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/interview/26/#more" rel="contents">
+              <a class="btn" href="/interview/14/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -279,7 +273,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/53/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -293,7 +287,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/interview/53/" class="post-title-link" itemprop="url">53. Maximum Subarray</a>
+            <a href="/interview/7/" class="post-title-link" itemprop="url">7. Reverse Integer</a>
         </h2>
 
         <div class="post-meta">
@@ -304,7 +298,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-26 13:00:00 / Modified: 14:07:44" itemprop="dateCreated datePublished" datetime="2020-12-26T13:00:00+08:00">2020-12-26</time>
+              <time title="Created: 2021-01-09 14:00:00 / Modified: 14:50:26" itemprop="dateCreated datePublished" datetime="2021-01-09T14:00:00+08:00">2021-01-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -322,7 +316,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>559</span>
+              <span>447</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -341,26 +335,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg"></p>
-<p>Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.</p>
-<p>Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg"></p>
+<p>Given a 32-bit signed integer, reverse digits of an integer.</p>
+<p>Note: Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For this problem, assume that your function returns 0 when the reversed integer overflows.</p>
 <p>Example 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [-2,1,-3,4,-1,2,1,-5,4]</span><br><span class="line">Output: 6</span><br><span class="line">Explanation: [4,-1,2,1] has the largest sum &#x3D; 6.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: x &#x3D; 123</span><br><span class="line">Output: 321</span><br></pre></td></tr></table></figure>
 
 <p>Example 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [1]</span><br><span class="line">Output: 1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: x &#x3D; -123</span><br><span class="line">Output: -321</span><br></pre></td></tr></table></figure>
 
 <p>Example 3:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [0]</span><br><span class="line">Output: 0</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: x &#x3D; 120</span><br><span class="line">Output: 21</span><br></pre></td></tr></table></figure>
 
 <p>Example 4:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [-1]</span><br><span class="line">Output: -1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: x &#x3D; 0</span><br><span class="line">Output: 0</span><br></pre></td></tr></table></figure>
 
-<p>Example 5:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [-2147483647]</span><br><span class="line">Output: -2147483647</span><br></pre></td></tr></table></figure>
+<p>Constraints:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-2ˆ31 &lt;&#x3D; x &lt;&#x3D; 231 - 1</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/interview/53/#more" rel="contents">
+              <a class="btn" href="/interview/7/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -384,7 +378,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/70/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/robuchon/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -398,103 +392,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/interview/70/" class="post-title-link" itemprop="url">70. Climbing Stairs</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-12-26 13:00:00 / Modified: 13:17:15" itemprop="dateCreated datePublished" datetime="2020-12-26T13:00:00+08:00">2020-12-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/interview/" itemprop="url" rel="index"><span itemprop="name">面試</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>619</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg"></p>
-<p>You are climbing a staircase. It takes n steps to reach the top.</p>
-<p>Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?</p>
-<p>Example 1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input: n &#x3D; 2</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: There are two ways to climb to the top.</span><br><span class="line">1. 1 step + 1 step</span><br><span class="line">2. 2 steps</span><br></pre></td></tr></table></figure>
-
-<p>Example 2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: n &#x3D; 3</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: There are three ways to climb to the top.</span><br><span class="line">1. 1 step + 1 step + 1 step</span><br><span class="line">2. 1 step + 2 steps</span><br><span class="line">3. 2 steps + 1 step</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/interview/70/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/kinmen/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/lunski.png">
-      <meta itemprop="name" content="lunski">
-      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lunski's Clutter">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/life/kinmen/" class="post-title-link" itemprop="url">聖誕金門味</a>
+            <a href="/life/robuchon/" class="post-title-link" itemprop="url">米其林一星侯布雄</a>
         </h2>
 
         <div class="post-meta">
@@ -504,14 +402,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-12-25 15:00:00" itemprop="dateCreated datePublished" datetime="2020-12-25T15:00:00+08:00">2020-12-25</time>
+              <time title="Created: 2021-01-02 17:00:00" itemprop="dateCreated datePublished" datetime="2021-01-02T17:00:00+08:00">2021-01-02</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-09 14:01:07" itemprop="dateModified" datetime="2021-01-09T14:01:07+08:00">2021-01-09</time>
+                <time title="Modified: 2021-01-09 16:21:32" itemprop="dateModified" datetime="2021-01-09T16:21:32+08:00">2021-01-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -529,7 +427,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>509</span>
+              <span>733</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -548,10 +446,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://i.imgur.com/b6HlG06.jpg" alt="img"></p>
+          <p><img src="https://i.imgur.com/t4KAdxj.jpg" alt="img"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/life/kinmen/#more" rel="contents">
+              <a class="btn" href="/life/robuchon/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -575,7 +473,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/danny/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/brute/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -589,7 +487,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/life/danny/" class="post-title-link" itemprop="url">米其林一星教父牛排</a>
+            <a href="/life/brute/" class="post-title-link" itemprop="url">重訓的十里坡</a>
         </h2>
 
         <div class="post-meta">
@@ -600,7 +498,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-20 17:00:00 / Modified: 19:22:53" itemprop="dateCreated datePublished" datetime="2020-12-20T17:00:00+08:00">2020-12-20</time>
+              <time title="Created: 2021-01-02 16:10:00 / Modified: 16:23:04" itemprop="dateCreated datePublished" datetime="2021-01-02T16:10:00+08:00">2021-01-02</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -618,7 +516,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>541</span>
+              <span>155</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -637,10 +535,107 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://i.imgur.com/nGmilW6.jpg" alt="img"></p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(18).jpeg"></p>
+<p>上次跟大家提到重訓的吃，接下來就是開始動，問題是怎麼動呢？ 其實我一開始也不知道，所以這份課表叫十里坡，在不斷努力後，還是練成了劍神。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/life/danny/#more" rel="contents">
+              <a class="btn" href="/life/brute/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/pesticide/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/life/pesticide/" class="post-title-link" itemprop="url">種植用藥</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-01-02 16:00:00" itemprop="dateCreated datePublished" datetime="2021-01-02T16:00:00+08:00">2021-01-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-03 02:07:33" itemprop="dateModified" datetime="2021-01-03T02:07:33+08:00">2021-01-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>777</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg"></p>
+<p>種植過程一定會遇到問題，對症下藥能讓你的植物頭好壯壯，脫離黑拇指稱號。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/life/pesticide/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -663,7 +658,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -733,7 +728,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">96</span>
+          <span class="site-state-item-count">107</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -801,12 +796,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">86k</span>
+    <span title="Symbols count total">97k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:18</span>
+    <span title="Reading time total">1:28</span>
 </div>
 
         
