@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg">
 <meta property="article:published_time" content="2021-03-27T09:00:00.000Z">
-<meta property="article:modified_time" content="2021-03-27T09:41:56.250Z">
+<meta property="article:modified_time" content="2021-03-27T12:38:14.313Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-03-27 17:00:00 / Modified: 17:41:56" itemprop="dateCreated datePublished" datetime="2021-03-27T17:00:00+08:00">2021-03-27</time>
+              <time title="Created: 2021-03-27 17:00:00 / Modified: 20:38:14" itemprop="dateCreated datePublished" datetime="2021-03-27T17:00:00+08:00">2021-03-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -260,7 +260,7 @@
 <p>Example 3:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [3,3], target &#x3D; 6</span><br><span class="line">Output: [0,1]</span><br><span class="line">&#96;&#96;&#96; </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>2 &lt;= nums.length &lt;= 103<br>-109 &lt;= nums[i] &lt;= 109<br>-109 &lt;= target &lt;= 109<br>Only one valid answer exists.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!-- more--&gt;</span><br><span class="line"></span><br><span class="line">經典第一題，思路是先把需要的值減去尋訪到的值，如果剩下的值有沒有在array裡就回傳index。</span><br><span class="line"></span><br><span class="line">1. 列index：   </span><br><span class="line">&#96;for i in range(len(nums))&#96;</span><br><span class="line">2. 由數字找index：   </span><br><span class="line">&#96;nums.index(remain)&#96;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line">經典第一題，思路是先把需要的值減去尋訪到的值，如果剩下的值有沒有在array裡就回傳index。</span><br><span class="line"></span><br><span class="line">1. 列index：   </span><br><span class="line">&#96;for i in range(len(nums))&#96;</span><br><span class="line">2. 由數字找index：   </span><br><span class="line">&#96;nums.index(remain)&#96;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>Time: O(n), Space: O(1)</p>
 <p>class Solution:<br>    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:<br>        keys = {} # 看過的值<br>        for i in range(len(nums)):<br>            remain = target - nums[i]<br>            if remain in keys:<br>                return [keys[remain], i]<br>            else:<br>                keys[nums[i]] = i # keys{nums[i]:i}<br>```</p>
 
