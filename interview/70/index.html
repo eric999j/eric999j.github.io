@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
 <meta property="og:description" content="You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Example 1: 12345Input: n &#x3D; 2Outp">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg">
-<meta property="article:published_time" content="2020-12-26T05:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-26T05:17:15.088Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg">
+<meta property="article:published_time" content="2021-04-17T10:00:00.000Z">
+<meta property="article:modified_time" content="2021-04-17T09:10:47.666Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg">
 
 <link rel="canonical" href="https://eric999j.github.io/interview/70/">
 
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-26 13:00:00 / Modified: 13:17:15" itemprop="dateCreated datePublished" datetime="2020-12-26T13:00:00+08:00">2020-12-26</time>
+              <time title="Created: 2021-04-17 18:00:00 / Modified: 17:10:47" itemprop="dateCreated datePublished" datetime="2021-04-17T18:00:00+08:00">2021-04-17</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>619</span>
+              <span>757</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -247,7 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg"></p>
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg"></p>
 <p>You are climbing a staircase. It takes n steps to reach the top.</p>
 <p>Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?</p>
 <p>Example 1:</p>
@@ -258,10 +258,10 @@
 
 <a id="more"></a>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">f(1)&#x3D;1 1</span><br><span class="line">f(2)&#x3D;2 11 2</span><br><span class="line">f(3)&#x3D;3 111 12 21 &#x2F;&#x2F;f(1)+f(2)</span><br><span class="line">f(4)&#x3D;5 1111 112 211 121 22 &#x2F;&#x2F;f(2)+f(3)</span><br><span class="line">f(5)&#x3D;8 11111 2111 1211 1121 1112 221 122 212 &#x2F;&#x2F;f(3)+f(4)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">f(1)&#x3D;1                       1</span><br><span class="line">f(2)&#x3D;2                       11 2</span><br><span class="line">f(3)&#x3D;3 &#x2F;&#x2F;f(1)+f(2)           111 12 21 </span><br><span class="line">f(4)&#x3D;5 &#x2F;&#x2F;f(2)+f(3)           1111 112 211 121 22 </span><br><span class="line">f(5)&#x3D;8  &#x2F;&#x2F;f(3)+f(4)          11111 2111 1211 1121 1112 221 122 212</span><br><span class="line">f(n)&#x3D;f(n-2)+f(n-1) Fibonacci</span><br></pre></td></tr></table></figure>
 
 <p>每次爬1或2格，有幾種方法可以到終點，一開始不知道就先把例子都列出來找規律，最後知道 f(n)=f(n-2)+f(n-1)，這不是fiboncci嗎！知道規律就好辦了。  </p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/70-Climbing-Stairs?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">T: O(n), S: O(1)</span><br><span class="line">class Solution:</span><br><span class="line">    def climbStairs(self, n):</span><br><span class="line">        a,b &#x3D; 1,0</span><br><span class="line">        for _ in range(n):</span><br><span class="line">            a,b &#x3D; a+b,a</span><br><span class="line">        return a</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -303,13 +303,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/life/kinmen/" rel="prev" title="聖誕金門味">
-      <i class="fa fa-chevron-left"></i> 聖誕金門味
+    <a href="/manager/workout/" rel="prev" title="閱讀一人健身">
+      <i class="fa fa-chevron-left"></i> 閱讀一人健身
     </a></div>
-      <div class="post-nav-item">
-    <a href="/interview/26/" rel="next" title="26. Remove Duplicates from Sorted Array">
-      26. Remove Duplicates from Sorted Array <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -386,7 +383,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">111</span>
+          <span class="site-state-item-count">117</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -454,12 +451,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">101k</span>
+    <span title="Symbols count total">106k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:32</span>
+    <span title="Reading time total">1:37</span>
 </div>
 
         
