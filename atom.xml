@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-04-17T09:10:47.666Z</updated>
+  <updated>2021-04-17T10:25:10.950Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>閱讀一人健身</title>
+    <link href="https://eric999j.github.io/manager/workout/"/>
+    <id>https://eric999j.github.io/manager/workout/</id>
+    <published>2021-04-17T10:30:00.000Z</published>
+    <updated>2021-04-17T10:25:10.950Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;健身一年多，我們需要專業有實證的觀念幫助我們進入下一階段，出去玩時看到這本書正是我需要的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>70. Climbing Stairs</title>
@@ -39,26 +59,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀一人健身</title>
-    <link href="https://eric999j.github.io/manager/workout/"/>
-    <id>https://eric999j.github.io/manager/workout/</id>
-    <published>2021-04-17T10:00:00.000Z</published>
-    <updated>2021-04-17T09:34:26.762Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;健身一年多，我們需要專業有實證的觀念幫助我們進入下一階段，出去玩時看到這本書正是我需要的。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
