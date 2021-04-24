@@ -174,7 +174,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/life/kinmen/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -188,7 +188,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/life/kinmen/" class="post-title-link" itemprop="url">聖誕金門味</a>
+            <a href="/interview/91/" class="post-title-link" itemprop="url">91. Decode Ways</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +199,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-04-24 18:00:00 / Modified: 20:14:58" itemprop="dateCreated datePublished" datetime="2021-04-24T18:00:00+08:00">2021-04-24</time>
+              <time title="Created: 2021-04-24 18:30:00 / Modified: 18:30:03" itemprop="dateCreated datePublished" datetime="2021-04-24T18:30:00+08:00">2021-04-24</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -207,7 +207,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
+                  <a href="/categories/interview/" itemprop="url" rel="index"><span itemprop="name">面試</span></a>
                 </span>
             </span>
 
@@ -217,14 +217,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>545</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -236,10 +236,30 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://i.imgur.com/b6HlG06.jpg" alt="img"><br><img src="https://i.imgur.com/h9dNwh6.jpg" alt="img"><br><img src="https://i.imgur.com/cjHLN6i.jpg" alt="img"></p>
+          <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg"></p>
+<p>A message containing letters from A-Z can be encoded into numbers using the following mapping:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#39;A&#39; -&gt; &quot;1&quot;</span><br><span class="line">&#39;B&#39; -&gt; &quot;2&quot;</span><br><span class="line">...</span><br><span class="line">&#39;Z&#39; -&gt; &quot;26&quot;</span><br></pre></td></tr></table></figure>
+
+<p>To decode an encoded message, all the digits must be grouped then mapped back into letters using the reverse of the mapping above (there may be multiple ways). For example, “11106” can be mapped into:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;AAJF&quot; with the grouping (1 1 10 6)</span><br><span class="line">&quot;KJF&quot; with the grouping (11 10 6)</span><br></pre></td></tr></table></figure>
+
+<p>Note that the grouping (1 11 06) is invalid because “06” cannot be mapped into ‘F’ since “6” is different from “06”.</p>
+<p>Given a string s containing only digits, return the number of ways to decode it.</p>
+<p>The answer is guaranteed to fit in a 32-bit integer.</p>
+<p>Example 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: s &#x3D; &quot;12&quot;</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: &quot;12&quot; could be decoded as &quot;AB&quot; (1 2) or &quot;L&quot; (12).</span><br></pre></td></tr></table></figure>
+
+<p>Example 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: s &#x3D; &quot;226&quot;</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: &quot;226&quot; could be decoded as &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), or &quot;BBF&quot; (2 2 6).</span><br></pre></td></tr></table></figure>
+
+<p>Example 3:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input: s &#x3D; &quot;0&quot;</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: There is no character that is mapped to a number starting with 0.</span><br><span class="line">The only valid mappings with 0 are &#39;J&#39; -&gt; &quot;10&quot; and &#39;T&#39; -&gt; &quot;20&quot;, neither of which start with 0.</span><br><span class="line">Hence, there are no valid ways to decode this since all digits need to be mapped.</span><br></pre></td></tr></table></figure>
+
+<p>Example 4:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: s &#x3D; &quot;06&quot;</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: &quot;06&quot; cannot be mapped to &quot;F&quot; because of the leading zero (&quot;6&quot; is different from &quot;06&quot;).</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/life/kinmen/#more" rel="contents">
+              <a class="btn" href="/interview/91/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
