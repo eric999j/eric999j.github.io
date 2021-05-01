@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
 <meta property="og:description" content="Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases. Note: For the purpose of this problem, we define empty string as valid palindrome. Exampl">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg">
-<meta property="article:published_time" content="2021-01-02T07:00:00.000Z">
-<meta property="article:modified_time" content="2021-01-02T07:42:52.933Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg">
+<meta property="article:published_time" content="2021-05-01T07:30:00.000Z">
+<meta property="article:modified_time" content="2021-05-01T06:55:24.604Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg">
 
 <link rel="canonical" href="https://eric999j.github.io/interview/125/">
 
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-01-02 15:00:00 / Modified: 15:42:52" itemprop="dateCreated datePublished" datetime="2021-01-02T15:00:00+08:00">2021-01-02</time>
+              <time title="Created: 2021-05-01 15:30:00 / Modified: 14:55:24" itemprop="dateCreated datePublished" datetime="2021-05-01T15:30:00+08:00">2021-05-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>309</span>
+              <span>534</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -247,7 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg"></p>
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg"></p>
 <p>Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.</p>
 <p>Note: For the purpose of this problem, we define empty string as valid palindrome.</p>
 <p>Example 1:</p>
@@ -259,9 +259,7 @@
 <a id="more"></a>
 
 <p>判斷是不是回文，把字串去掉大小寫跟符號，比對反轉是否相同就可以了。</p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/125-Valid-Palindrome?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">T: O(1), S: O(1)</span><br><span class="line">class Solution:</span><br><span class="line">    def isPalindrome(self, s: str) -&gt; bool:</span><br><span class="line">        s &#x3D; s.lower();</span><br><span class="line">        s &#x3D; re.sub(&#39;[^a-z0-9]&#39;,&#39;&#39;,s) # clear everything except a-z, 0-9</span><br><span class="line">        print(s)</span><br><span class="line">        if s &#x3D;&#x3D; s[::-1]: </span><br><span class="line">            return True</span><br><span class="line">        else:</span><br><span class="line">            return False</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -303,12 +301,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/interview/326/" rel="prev" title="326. Power of Three">
-      <i class="fa fa-chevron-left"></i> 326. Power of Three
+    <a href="/interview/121/" rel="prev" title="121. Best Time to Buy and Sell Stock">
+      <i class="fa fa-chevron-left"></i> 121. Best Time to Buy and Sell Stock
     </a></div>
       <div class="post-nav-item">
-    <a href="/life/pesticide/" rel="next" title="種植用藥">
-      種植用藥 <i class="fa fa-chevron-right"></i>
+    <a href="/interview/128/" rel="next" title="128. Longest Consecutive Sequence">
+      128. Longest Consecutive Sequence <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -386,7 +384,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">123</span>
+          <span class="site-state-item-count">127</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -454,12 +452,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">112k</span>
+    <span title="Symbols count total">116k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:42</span>
+    <span title="Reading time total">1:46</span>
 </div>
 
         

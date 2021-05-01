@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
 <meta property="og:description" content="Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock),">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(38).jpeg">
-<meta property="article:published_time" content="2020-12-19T07:30:00.000Z">
-<meta property="article:modified_time" content="2020-12-19T08:10:48.092Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg">
+<meta property="article:published_time" content="2021-05-01T07:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-01T06:53:56.407Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(38).jpeg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg">
 
 <link rel="canonical" href="https://eric999j.github.io/interview/121/">
 
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-19 15:30:00 / Modified: 16:10:48" itemprop="dateCreated datePublished" datetime="2020-12-19T15:30:00+08:00">2020-12-19</time>
+              <time title="Created: 2021-05-01 15:00:00 / Modified: 14:53:56" itemprop="dateCreated datePublished" datetime="2021-05-01T15:00:00+08:00">2021-05-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>591</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -247,7 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(38).jpeg"></p>
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg"></p>
 <p>Say you have an array for which the ith element is the price of a given stock on day i.</p>
 <p>If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.</p>
 <p>Note that you cannot sell a stock before you buy one.</p>
@@ -259,8 +259,10 @@
 
 <a id="more"></a>
 
-<p>他的上一題是用Greegy策略，只要明天價格比較高就賣出，這題要找最大利潤，先找當前跟歷史比最大售價，再由最大售價找最大價差。</p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/121-Best-Time-to-Buy-and-Sell-Stock?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<p>他的上一題是用Greegy策略，只要明天價格比較高就賣出，這題要找最大利潤，先找當前跟歷史比最大售價，再由最大售價找最大價差，有2種解法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Normal</span><br><span class="line">T: O(n), S: O(1)</span><br><span class="line">class Solution:</span><br><span class="line">    def maxProfit(self, prices: List[int]) -&gt; int:</span><br><span class="line">            largest_profit &#x3D; 0</span><br><span class="line">            min_purchase &#x3D; prices[0]</span><br><span class="line">            for i in range(1, len(prices)):</span><br><span class="line">                if prices[i] - min_purchase &gt; largest_profit:</span><br><span class="line">                    largest_profit &#x3D; prices[i] - min_purchase</span><br><span class="line">                if prices[i] &lt; min_purchase:</span><br><span class="line">                    min_purchase &#x3D; prices[i]</span><br><span class="line">            return largest_profit</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Kadane&#39;s algorithm</span><br><span class="line">T: O(n), S: O(1)</span><br><span class="line">class Solution:</span><br><span class="line">    def maxProfit(self, prices: List[int]) -&gt; int:</span><br><span class="line">        result &#x3D; 0</span><br><span class="line">        sell &#x3D; 0</span><br><span class="line">        for i in range(len(prices)-1,-1,-1):</span><br><span class="line">            sell &#x3D; max(sell, prices[i]) # get max sell price</span><br><span class="line">            result &#x3D; max(result, sell - prices[i]) # get max profit</span><br><span class="line">        return result </span><br></pre></td></tr></table></figure>
+
+
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -302,12 +304,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/interview/191/" rel="prev" title="191. Number of 1 Bits">
-      <i class="fa fa-chevron-left"></i> 191. Number of 1 Bits
+    <a href="/interview/105/" rel="prev" title="105. Construct Binary Tree from Preorder and Inorder Traversal">
+      <i class="fa fa-chevron-left"></i> 105. Construct Binary Tree from Preorder and Inorder Traversal
     </a></div>
       <div class="post-nav-item">
-    <a href="/interview/202/" rel="next" title="202. Happy Number">
-      202. Happy Number <i class="fa fa-chevron-right"></i>
+    <a href="/interview/125/" rel="next" title="125. Valid Palindrome">
+      125. Valid Palindrome <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -385,7 +387,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">123</span>
+          <span class="site-state-item-count">127</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -453,12 +455,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">112k</span>
+    <span title="Symbols count total">116k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:42</span>
+    <span title="Reading time total">1:46</span>
 </div>
 
         
