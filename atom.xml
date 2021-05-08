@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-05-01T11:52:12.938Z</updated>
+  <updated>2021-05-08T10:51:37.998Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,180 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>隠れオタクでごめんなさい</title>
+    <link href="https://eric999j.github.io/life/nerd/"/>
+    <id>https://eric999j.github.io/life/nerd/</id>
+    <published>2021-05-08T10:30:00.000Z</published>
+    <updated>2021-05-08T10:51:37.998Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(39).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;FB回顧跳出這首還念的歌，剛好這個月也需要介紹日文歌，就決定是你了。&lt;/p&gt;
+&lt;p&gt;另外Shvara改了呈現方式，省略片假名，日中歌詞分開，大家就更容易看歌詞啦。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>152. Maximum Product Subarray</title>
+    <link href="https://eric999j.github.io/interview/152/"/>
+    <id>https://eric999j.github.io/interview/152/</id>
+    <published>2021-05-08T10:00:00.000Z</published>
+    <updated>2021-05-08T10:22:07.124Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(38).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product.&lt;/p&gt;
+&lt;p&gt;It is guaranteed that the answer will fit in a 32-bit integer.&lt;/p&gt;
+&lt;p&gt;A subarray is a contiguous subsequence of the array.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [2,3,-2,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: [2,3] has the largest product 6.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [-2,0,-1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The result cannot be 2, because [-2,-1] is not a subarray.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>143. Reorder List</title>
+    <link href="https://eric999j.github.io/interview/143/"/>
+    <id>https://eric999j.github.io/interview/143/</id>
+    <published>2021-05-08T09:30:00.000Z</published>
+    <updated>2021-05-08T10:06:24.237Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(37).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You are given the head of a singly linked-list. The list can be represented as:&lt;/p&gt;
+&lt;p&gt;L0 → L1 → … → Ln - 1 → Ln  &lt;/p&gt;
+&lt;p&gt;Reorder the list to be on the following form:&lt;/p&gt;
+&lt;p&gt;L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …  &lt;/p&gt;
+&lt;p&gt;You may not modify the values in the list’s nodes. Only nodes themselves may be changed.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,4,2,3]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [1,5,2,4,3]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>141. Linked List Cycle</title>
+    <link href="https://eric999j.github.io/interview/141/"/>
+    <id>https://eric999j.github.io/interview/141/</id>
+    <published>2021-05-08T09:00:00.000Z</published>
+    <updated>2021-05-08T09:52:59.848Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given head, the head of a linked list, determine if the linked list has a cycle in it.&lt;/p&gt;
+&lt;p&gt;There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail’s next pointer is connected to. Note that pos is not passed as a parameter.&lt;/p&gt;
+&lt;p&gt;Return true if there is a cycle in the linked list. Otherwise, return false.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [3,2,0,-4], pos &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1,2], pos &amp;#x3D; 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1], pos &amp;#x3D; -1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There is no cycle in the linked list.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>139. Word Break</title>
+    <link href="https://eric999j.github.io/interview/139/"/>
+    <id>https://eric999j.github.io/interview/139/</id>
+    <published>2021-05-08T08:30:00.000Z</published>
+    <updated>2021-05-08T09:54:20.221Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.&lt;/p&gt;
+&lt;p&gt;Note that the same word in the dictionary may be reused multiple times in the segmentation.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;leetcode&amp;quot;, wordDict &amp;#x3D; [&amp;quot;leet&amp;quot;,&amp;quot;code&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Return true because &amp;quot;leetcode&amp;quot; can be segmented as &amp;quot;leet code&amp;quot;.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;applepenapple&amp;quot;, wordDict &amp;#x3D; [&amp;quot;apple&amp;quot;,&amp;quot;pen&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Return true because &amp;quot;applepenapple&amp;quot; can be segmented as &amp;quot;apple pen apple&amp;quot;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Note that you are allowed to reuse a dictionary word.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;catsandog&amp;quot;, wordDict &amp;#x3D; [&amp;quot;cats&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;sand&amp;quot;,&amp;quot;and&amp;quot;,&amp;quot;cat&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>133. Clone Graph</title>
+    <link href="https://eric999j.github.io/interview/133/"/>
+    <id>https://eric999j.github.io/interview/133/</id>
+    <published>2021-05-08T08:00:00.000Z</published>
+    <updated>2021-05-08T09:38:30.524Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given a reference of a node in a connected undirected graph.&lt;/p&gt;
+&lt;p&gt;Return a deep copy (clone) of the graph.&lt;/p&gt;
+&lt;p&gt;Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.&lt;/p&gt;
+&lt;p&gt;class Node {&lt;br&gt;    public int val;&lt;br&gt;    public List&lt;Node&gt; neighbors;&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Test case format:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For simplicity, each node’s value is the same as the node’s index (1-indexed). For example, the first node with val == 1, the second node with val == 2, and so on. The graph is represented in the test case using an adjacency list.&lt;/p&gt;
+&lt;p&gt;An adjacency list is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a node in the graph.&lt;/p&gt;
+&lt;p&gt;The given node will always be the first node with val = 1. You must return the copy of the given node as a reference to the cloned graph.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; [[2,4],[1,3],[2,4],[1,3]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[2,4],[1,3],[2,4],[1,3]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are 4 nodes in the graph.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1st node (val &amp;#x3D; 1)&amp;#39;s neighbors are 2nd node (val &amp;#x3D; 2) and 4th node (val &amp;#x3D; 4).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2nd node (val &amp;#x3D; 2)&amp;#39;s neighbors are 1st node (val &amp;#x3D; 1) and 3rd node (val &amp;#x3D; 3).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3rd node (val &amp;#x3D; 3)&amp;#39;s neighbors are 2nd node (val &amp;#x3D; 2) and 4th node (val &amp;#x3D; 4).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4th node (val &amp;#x3D; 4)&amp;#39;s neighbors are 1st node (val &amp;#x3D; 1) and 3rd node (val &amp;#x3D; 3).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; [[]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Note that the input contains one empty list. The graph consists of only one node with val &amp;#x3D; 1 and it does not have any neighbors.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: This an empty graph, it does not have any nodes.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 4:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; [[2],[1]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[2],[1]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>超譯狐仙</title>
@@ -382,169 +556,6 @@
     
     
     <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀一人健身</title>
-    <link href="https://eric999j.github.io/manager/workout/"/>
-    <id>https://eric999j.github.io/manager/workout/</id>
-    <published>2021-04-17T10:30:00.000Z</published>
-    <updated>2021-04-17T10:25:10.950Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;健身一年多，我們需要專業有實證的觀念幫助我們進入下一階段，出去玩時看到這本書正是我需要的。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>70. Climbing Stairs</title>
-    <link href="https://eric999j.github.io/interview/70/"/>
-    <id>https://eric999j.github.io/interview/70/</id>
-    <published>2021-04-17T10:00:00.000Z</published>
-    <updated>2021-04-17T09:10:47.666Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;You are climbing a staircase. It takes n steps to reach the top.&lt;/p&gt;
-&lt;p&gt;Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are two ways to climb to the top.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1. 1 step + 1 step&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. 2 steps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: n &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are three ways to climb to the top.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1. 1 step + 1 step + 1 step&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. 1 step + 2 steps&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. 2 steps + 1 step&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>62. Unique Paths</title>
-    <link href="https://eric999j.github.io/interview/62/"/>
-    <id>https://eric999j.github.io/interview/62/</id>
-    <published>2021-04-17T09:30:00.000Z</published>
-    <updated>2021-04-17T09:01:10.476Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;A robot is located at the top-left corner of a m x n grid (marked ‘Start’ in the diagram below).&lt;/p&gt;
-&lt;p&gt;The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below).&lt;/p&gt;
-&lt;p&gt;How many possible unique paths are there?&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: m &amp;#x3D; 3, n &amp;#x3D; 7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: m &amp;#x3D; 3, n &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1. Right -&amp;gt; Down -&amp;gt; Down&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. Down -&amp;gt; Down -&amp;gt; Right&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. Down -&amp;gt; Right -&amp;gt; Down&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: m &amp;#x3D; 7, n &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Example 4:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Input: m &amp;#x3D; 3, n &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>57. Insert Interval</title>
-    <link href="https://eric999j.github.io/interview/57/"/>
-    <id>https://eric999j.github.io/interview/57/</id>
-    <published>2021-04-17T09:00:00.000Z</published>
-    <updated>2021-04-17T08:51:39.587Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(18).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).&lt;/p&gt;
-&lt;p&gt;You may assume that the intervals were initially sorted according to their start times.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: intervals &amp;#x3D; [[1,3],[6,9]], newInterval &amp;#x3D; [2,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[1,5],[6,9]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: intervals &amp;#x3D; [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval &amp;#x3D; [4,8]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[1,2],[3,10],[12,16]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: intervals &amp;#x3D; [], newInterval &amp;#x3D; [5,7]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[5,7]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: intervals &amp;#x3D; [[1,5]], newInterval &amp;#x3D; [2,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[1,5]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 5:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: intervals &amp;#x3D; [[1,5]], newInterval &amp;#x3D; [2,7]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[1,7]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>56. Merge Intervals</title>
-    <link href="https://eric999j.github.io/interview/56/"/>
-    <id>https://eric999j.github.io/interview/56/</id>
-    <published>2021-04-17T08:30:00.000Z</published>
-    <updated>2021-04-17T08:39:01.605Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(17).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: intervals &amp;#x3D; [[1,3],[2,6],[8,10],[15,18]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[1,6],[8,10],[15,18]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: intervals &amp;#x3D; [[1,4],[4,5]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[1,5]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Intervals [1,4] and [4,5] are considered overlapping.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>55. Jump Game</title>
-    <link href="https://eric999j.github.io/interview/55/"/>
-    <id>https://eric999j.github.io/interview/55/</id>
-    <published>2021-04-17T08:00:00.000Z</published>
-    <updated>2021-04-17T08:28:20.341Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(16).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array of non-negative integers nums, you are initially positioned at the first index of the array.&lt;/p&gt;
-&lt;p&gt;Each element in the array represents your maximum jump length at that position.&lt;/p&gt;
-&lt;p&gt;Determine if you are able to reach the last index.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [2,3,1,1,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,2,1,0,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
