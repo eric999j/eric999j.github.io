@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
 <meta property="og:description" content="Reverse bits of a given 32 bits unsigned integer. Example 1: 123Input: n &#x3D; 00000010100101000001111010011100Output:    964176192 (00111001011110000010100101000000)Explanation: The input binary st">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg">
-<meta property="article:published_time" content="2021-01-02T06:10:00.000Z">
-<meta property="article:modified_time" content="2021-01-02T07:44:01.750Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg">
+<meta property="article:published_time" content="2021-05-15T09:30:00.000Z">
+<meta property="article:modified_time" content="2021-05-15T09:20:36.954Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg">
 
 <link rel="canonical" href="https://eric999j.github.io/interview/190/">
 
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-01-02 14:10:00 / Modified: 15:44:01" itemprop="dateCreated datePublished" datetime="2021-01-02T14:10:00+08:00">2021-01-02</time>
+              <time title="Created: 2021-05-15 17:30:00 / Modified: 17:20:36" itemprop="dateCreated datePublished" datetime="2021-05-15T17:30:00+08:00">2021-05-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.2k</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -247,7 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg"></p>
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg"></p>
 <p>Reverse bits of a given 32 bits unsigned integer.</p>
 <p>Example 1:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: n &#x3D; 00000010100101000001111010011100</span><br><span class="line">Output:    964176192 (00111001011110000010100101000000)</span><br><span class="line">Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.</span><br></pre></td></tr></table></figure>
@@ -263,8 +263,18 @@
 <p>Therefore, in Example 2 above, the input represents the signed integer -3 and the output represents the signed integer -1073741825.</p>
 <a id="more"></a>
 
-<p>反轉32位元無號數並傳回int，將n轉換為二進位，把0b之後的值（在前面加”0”）反轉，再轉整數。</p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/190-Reverse-Bits?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<ol>
+<li>bin() to binary</li>
+<li>[2:] remove 0b</li>
+<li>zfill(32) add 0 in left to 32 bit</li>
+<li>int(num[::-1], 2)   int(x, base=10) reverse base 2 and cover to int</li>
+</ol>
+<pre><code>
+# T:O(n), S:O(1)
+class Solution:
+    def reverseBits(self, n: int) -&gt; int:
+        num = bin(n)[2:].zfill(32)
+        return int(num[::-1], 2)```</code></pre>
 
 <div>
     <hr>
@@ -307,12 +317,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/interview/66/" rel="prev" title="66. Plus One">
-      <i class="fa fa-chevron-left"></i> 66. Plus One
+    <a href="/interview/153/" rel="prev" title="153. Find Minimum in Rotated Sorted Array">
+      <i class="fa fa-chevron-left"></i> 153. Find Minimum in Rotated Sorted Array
     </a></div>
       <div class="post-nav-item">
-    <a href="/interview/198/" rel="next" title="198. House Robber">
-      198. House Robber <i class="fa fa-chevron-right"></i>
+    <a href="/interview/191/" rel="next" title="191. Number of 1 Bits">
+      191. Number of 1 Bits <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -390,7 +400,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">133</span>
+          <span class="site-state-item-count">136</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -458,12 +468,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">125k</span>
+    <span title="Symbols count total">130k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:54</span>
+    <span title="Reading time total">1:58</span>
 </div>
 
         

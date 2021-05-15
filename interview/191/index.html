@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
 <meta property="og:description" content="Write a function that takes an unsigned integer and returns the number of ‘1’ bits it has (also known as the Hamming weight). Note: 12Note that in some languages such as Java, there is no unsigned in">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(37).jpeg">
-<meta property="article:published_time" content="2020-12-19T07:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-19T07:43:53.813Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg">
+<meta property="article:published_time" content="2021-05-15T10:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-15T09:25:21.424Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(37).jpeg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg">
 
 <link rel="canonical" href="https://eric999j.github.io/interview/191/">
 
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-19 15:00:00 / Modified: 15:43:53" itemprop="dateCreated datePublished" datetime="2020-12-19T15:00:00+08:00">2020-12-19</time>
+              <time title="Created: 2021-05-15 18:00:00 / Modified: 17:25:21" itemprop="dateCreated datePublished" datetime="2021-05-15T18:00:00+08:00">2021-05-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>583</span>
+              <span>593</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -247,15 +247,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(37).jpeg"></p>
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg"></p>
 <p>Write a function that takes an unsigned integer and returns the number of ‘1’ bits it has (also known as the Hamming weight).</p>
 <p>Note:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Note that in some languages such as Java, there is no unsigned integer type. In this case, the input will be given as a signed integer type. It should not affect your implementation, as the integer&#39;s internal binary representation is the same, whether it is signed or unsigned.</span><br><span class="line">In Java, the compiler represents the signed integers using 2&#39;s complement notation. Therefore, in Example 3 above, the input represents the signed integer. -3.</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
 
-<p>給一串0跟1的無號數，傳回1的個數(Hamming weight)，這題要知道python進制表示0b(二進制)、0o(十進制)、0x(十六進制)，bin()濾出有用的int數值，最後再算’1’的個數</p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/191-Number-of-1-Bits?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<p>轉二進count 1  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># T:O(n), S:O(1)  </span><br><span class="line">class Solution:</span><br><span class="line">    def hammingWeight(self, n: int) -&gt; int:</span><br><span class="line">        return bin(n).count(&#39;1&#39;)</span><br></pre></td></tr></table></figure>
 
 <div>
     <hr>
@@ -298,12 +298,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/interview/268/" rel="prev" title="268. Missing Number">
-      <i class="fa fa-chevron-left"></i> 268. Missing Number
+    <a href="/interview/190/" rel="prev" title="190. Reverse Bits">
+      <i class="fa fa-chevron-left"></i> 190. Reverse Bits
     </a></div>
       <div class="post-nav-item">
-    <a href="/interview/202/" rel="next" title="202. Happy Number">
-      202. Happy Number <i class="fa fa-chevron-right"></i>
+    <a href="/interview/198/" rel="next" title="198. House Robber">
+      198. House Robber <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -381,7 +381,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">133</span>
+          <span class="site-state-item-count">136</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -449,12 +449,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">125k</span>
+    <span title="Symbols count total">130k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1:54</span>
+    <span title="Reading time total">1:58</span>
 </div>
 
         
