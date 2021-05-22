@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-05-15T09:48:10.074Z</updated>
+  <updated>2021-05-22T10:09:31.665Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,107 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Saving Grace</title>
+    <link href="https://eric999j.github.io/life/savingGrace/"/>
+    <id>https://eric999j.github.io/life/savingGrace/</id>
+    <published>2021-05-22T10:30:00.000Z</published>
+    <updated>2021-05-22T10:09:31.665Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;In March 2020, people were encouraged to stay at home.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;We asked our friends to share their experiences of these strange and uncertain times.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This is what they sent to us. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- Kodaline&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>208. Implement Trie (Prefix Tree)</title>
+    <link href="https://eric999j.github.io/interview/208/"/>
+    <id>https://eric999j.github.io/interview/208/</id>
+    <published>2021-05-22T10:00:00.000Z</published>
+    <updated>2021-05-22T09:45:28.347Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;A trie (pronounced as “try”) or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.&lt;/p&gt;
+&lt;p&gt;Implement the Trie class:&lt;/p&gt;
+&lt;p&gt;Trie() Initializes the trie object.&lt;br&gt;void insert(String word) Inserts the string word into the trie.&lt;br&gt;boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), and false otherwise.&lt;br&gt;boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[&amp;quot;Trie&amp;quot;, &amp;quot;insert&amp;quot;, &amp;quot;search&amp;quot;, &amp;quot;search&amp;quot;, &amp;quot;startsWith&amp;quot;, &amp;quot;insert&amp;quot;, &amp;quot;search&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[[], [&amp;quot;apple&amp;quot;], [&amp;quot;apple&amp;quot;], [&amp;quot;app&amp;quot;], [&amp;quot;app&amp;quot;], [&amp;quot;app&amp;quot;], [&amp;quot;app&amp;quot;]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[null, null, true, false, true, null, true]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Trie trie &amp;#x3D; new Trie();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;trie.insert(&amp;quot;apple&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;trie.search(&amp;quot;apple&amp;quot;);   &amp;#x2F;&amp;#x2F; return True&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;trie.search(&amp;quot;app&amp;quot;);     &amp;#x2F;&amp;#x2F; return False&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;trie.startsWith(&amp;quot;app&amp;quot;); &amp;#x2F;&amp;#x2F; return True&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;trie.insert(&amp;quot;app&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;trie.search(&amp;quot;app&amp;quot;);     &amp;#x2F;&amp;#x2F; return True&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>207. Course Schedule</title>
+    <link href="https://eric999j.github.io/interview/207/"/>
+    <id>https://eric999j.github.io/interview/207/</id>
+    <published>2021-05-22T09:30:00.000Z</published>
+    <updated>2021-05-22T09:36:47.317Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Return true if you can finish all courses. Otherwise, return false.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: numCourses &amp;#x3D; 2, prerequisites &amp;#x3D; [[1,0]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are a total of 2 courses to take. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;To take course 1 you should have finished course 0. So it is possible.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: numCourses &amp;#x3D; 2, prerequisites &amp;#x3D; [[1,0],[0,1]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are a total of 2 courses to take. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>206. Reverse Linked List</title>
+    <link href="https://eric999j.github.io/interview/206/"/>
+    <id>https://eric999j.github.io/interview/206/</id>
+    <published>2021-05-22T09:00:00.000Z</published>
+    <updated>2021-05-22T09:36:40.381Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given the head of a singly linked list, reverse the list, and return the reversed list.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [5,4,3,2,1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; [1,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [2,1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: head &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>閱讀感想</title>
@@ -435,109 +536,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>121. Best Time to Buy and Sell Stock</title>
-    <link href="https://eric999j.github.io/interview/121/"/>
-    <id>https://eric999j.github.io/interview/121/</id>
-    <published>2021-05-01T07:00:00.000Z</published>
-    <updated>2021-05-01T06:53:56.407Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
-&lt;p&gt;If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.&lt;/p&gt;
-&lt;p&gt;Note that you cannot sell a stock before you buy one.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [7,1,5,3,6,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Buy on day 2 (price &amp;#x3D; 1) and sell on day 5 (price &amp;#x3D; 6), profit &amp;#x3D; 6-1 &amp;#x3D; 5.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             Not 7-1 &amp;#x3D; 6, as selling price needs to be larger than buying price.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [7,6,4,3,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: In this case, no transaction is done, i.e. max profit &amp;#x3D; 0.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>105. Construct Binary Tree from Preorder and Inorder Traversal</title>
-    <link href="https://eric999j.github.io/interview/105/"/>
-    <id>https://eric999j.github.io/interview/105/</id>
-    <published>2021-05-01T06:30:00.000Z</published>
-    <updated>2021-05-01T06:52:35.812Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: preorder &amp;#x3D; [3,9,20,15,7], inorder &amp;#x3D; [9,3,15,20,7]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [3,9,20,null,null,15,7]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: preorder &amp;#x3D; [-1], inorder &amp;#x3D; [-1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [-1]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>104. Maximum Depth of Binary Tree</title>
-    <link href="https://eric999j.github.io/interview/104/"/>
-    <id>https://eric999j.github.io/interview/104/</id>
-    <published>2021-05-01T06:00:00.000Z</published>
-    <updated>2021-05-01T06:50:57.310Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given the root of a binary tree, return its maximum depth.&lt;/p&gt;
-&lt;p&gt;A binary tree’s maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [3,9,20,null,null,15,7]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [1,null,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [0]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>聖誕金門味</title>
-    <link href="https://eric999j.github.io/life/kinmen/"/>
-    <id>https://eric999j.github.io/life/kinmen/</id>
-    <published>2021-04-24T13:00:00.000Z</published>
-    <updated>2021-05-01T05:15:25.068Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/b6HlG06.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
     
   </entry>
   
