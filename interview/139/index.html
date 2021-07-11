@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
 <meta property="og:description" content="Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. Note that the same word in the dictionary may">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg">
-<meta property="article:published_time" content="2021-05-08T08:30:00.000Z">
-<meta property="article:modified_time" content="2021-05-08T09:54:20.221Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
+<meta property="article:published_time" content="2021-07-11T08:00:00.000Z">
+<meta property="article:modified_time" content="2021-07-11T06:10:37.504Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 
 <link rel="canonical" href="https://eric999j.github.io/interview/139/">
 
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-05-08 16:30:00 / Modified: 17:54:20" itemprop="dateCreated datePublished" datetime="2021-05-08T16:30:00+08:00">2021-05-08</time>
+              <time title="Created: 2021-07-11 16:00:00 / Modified: 14:10:37" itemprop="dateCreated datePublished" datetime="2021-07-11T16:00:00+08:00">2021-07-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.6k</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -247,7 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg"></p>
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg"></p>
 <p>Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.</p>
 <p>Note that the same word in the dictionary may be reused multiple times in the segmentation.</p>
 <p>Example 1:</p>
@@ -261,7 +261,8 @@
 
 <a id="more"></a>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    s &#x3D; &quot;catsandog&quot;</span><br><span class="line">    wordDict &#x3D; [&quot;cats&quot;, &quot;dog&quot;, &quot;sand&quot;, &quot;and&quot;, &quot;cat&quot;]</span><br><span class="line">        0 1 2 3 4 5 6 7 8 9</span><br><span class="line">        c a t s a n d d o g</span><br><span class="line">    queue &#x3D; [0]</span><br><span class="line">    you find &#39;cat&#39; and &#39;cats&#39;</span><br><span class="line">    queue &#x3D; [3,4]</span><br><span class="line">    you find &#39;and‘  and &#39;sand&#39;</span><br><span class="line">    queue &#x3D; [7]</span><br><span class="line">    you find &#39;dog&#39;, which you reached the end.</span><br><span class="line">         0</span><br><span class="line">        &#x2F; \</span><br><span class="line">      cat  cats</span><br><span class="line">      &#x2F;      \</span><br><span class="line">    sand     and</span><br><span class="line">    &#x2F;          \</span><br><span class="line">   dog         dog</span><br><span class="line"></span><br><span class="line"># T: O(nˆ2), S: O(n)</span><br><span class="line">from collections import deque</span><br><span class="line">class Solution:</span><br><span class="line">    def wordBreak(self, s: str, wordDict: List[str]) -&gt; bool:</span><br><span class="line">        visited &#x3D; set()</span><br><span class="line">        queue &#x3D; deque([0])</span><br><span class="line">        while queue:</span><br><span class="line">            start &#x3D; queue.popleft()</span><br><span class="line">            print(&quot;start: &quot;,start)</span><br><span class="line">            if start not in visited:</span><br><span class="line">                for end in range(start + 1, len(s)+1):</span><br><span class="line">                    print(&quot;end: &quot;,end)</span><br><span class="line">                    if s[start:end] in wordDict: # found word</span><br><span class="line">                        queue.append(end)</span><br><span class="line">                        print(queue)</span><br><span class="line">                        if end &#x3D;&#x3D; len(s):</span><br><span class="line">                            return True</span><br><span class="line">                visited.add(start)</span><br><span class="line">        return False</span><br></pre></td></tr></table></figure>
+<p>s = “catsandog”<br>wordDict = [“cats”, “dog”, “sand”, “and”, “cat”]<br>找字頭符合，在字典標為True.  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># T: O(nˆ2), S: O(n)</span><br><span class="line">    def wordBreak(self, s, dict):</span><br><span class="line">        n &#x3D; len(s)</span><br><span class="line">        f &#x3D; [False for i in range(n+1)] # 從該位置有無符合的字</span><br><span class="line">        f[0] &#x3D; True # 第一個字</span><br><span class="line">        for i in range(n):</span><br><span class="line">            if f[i]: # 字頭</span><br><span class="line">                for j in dict: # 找字典有的字</span><br><span class="line">                    l &#x3D; len(j)</span><br><span class="line">                    if i+l&lt;&#x3D;n and s[i:i+l] &#x3D;&#x3D; j:</span><br><span class="line">                        f[i+l] &#x3D; True # 下一個字</span><br><span class="line">        return f[n]</span><br></pre></td></tr></table></figure>
 
 <div>
     <hr>
@@ -304,12 +305,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/manager/foxTale/" rel="prev" title="超譯狐仙">
-      <i class="fa fa-chevron-left"></i> 超譯狐仙
+    <a href="/life/japanese/" rel="prev" title="日語地圖">
+      <i class="fa fa-chevron-left"></i> 日語地圖
     </a></div>
       <div class="post-nav-item">
-    <a href="/interview/141/" rel="next" title="141. Linked List Cycle">
-      141. Linked List Cycle <i class="fa fa-chevron-right"></i>
+    <a href="/interview/338/" rel="next" title="338. Counting Bits">
+      338. Counting Bits <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -387,7 +388,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">151</span>
+          <span class="site-state-item-count">152</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -455,12 +456,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">145k</span>
+    <span title="Symbols count total">147k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:12</span>
+    <span title="Reading time total">2:13</span>
 </div>
 
         

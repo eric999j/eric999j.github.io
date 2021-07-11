@@ -20,22 +20,22 @@
     var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="經過這麼久的努力leetcode初級基礎題目我們已經走過一輪了，但我們一直沒進一步認識資料結構與演算法，我想在這暫停一下，先來理解基礎結構，之後的題目會比較好上手。">
+  <meta name="description" content="Given an integer n, return an array ans of length n + 1 such that for each i (0 &lt;&#x3D; i &lt;&#x3D; n), ans[i] is the number of 1’s in the binary representation of i. Example 1: 123456Input: n &#x3D; 2Outp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="資料結構與演算法">
-<meta property="og:url" content="https://eric999j.github.io/interview/datastructureAndAlgorithm/index.html">
+<meta property="og:title" content="338. Counting Bits">
+<meta property="og:url" content="https://eric999j.github.io/interview/338/index.html">
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
-<meta property="og:description" content="經過這麼久的努力leetcode初級基礎題目我們已經走過一輪了，但我們一直沒進一步認識資料結構與演算法，我想在這暫停一下，先來理解基礎結構，之後的題目會比較好上手。">
+<meta property="og:description" content="Given an integer n, return an array ans of length n + 1 such that for each i (0 &lt;&#x3D; i &lt;&#x3D; n), ans[i] is the number of 1’s in the binary representation of i. Example 1: 123456Input: n &#x3D; 2Outp">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg">
-<meta property="article:published_time" content="2021-01-16T07:00:00.000Z">
-<meta property="article:modified_time" content="2021-01-23T09:02:03.994Z">
+<meta property="article:published_time" content="2021-07-11T08:30:00.000Z">
+<meta property="article:modified_time" content="2021-07-11T06:12:00.350Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg">
 
-<link rel="canonical" href="https://eric999j.github.io/interview/datastructureAndAlgorithm/">
+<link rel="canonical" href="https://eric999j.github.io/interview/338/">
 
 
 <script id="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>資料結構與演算法 | Lunski's Clutter</title>
+  <title>338. Counting Bits | Lunski's Clutter</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
     <script>
@@ -179,7 +179,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/datastructureAndAlgorithm/">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/338/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/lunski.png">
@@ -192,7 +192,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          資料結構與演算法
+          338. Counting Bits
         </h1>
 
         <div class="post-meta">
@@ -201,16 +201,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-01-16 15:00:00" itemprop="dateCreated datePublished" datetime="2021-01-16T15:00:00+08:00">2021-01-16</time>
+              <time title="Created: 2021-07-11 16:30:00 / Modified: 14:12:00" itemprop="dateCreated datePublished" datetime="2021-07-11T16:30:00+08:00">2021-07-11</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-23 17:02:03" itemprop="dateModified" datetime="2021-01-23T17:02:03+08:00">2021-01-23</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -234,14 +228,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3.1k</span>
+              <span>450</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>3 mins.</span>
+              <span>1 mins.</span>
             </span>
 
         </div>
@@ -254,24 +248,16 @@
 
       
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg"></p>
-<p>經過這麼久的努力leetcode初級基礎題目我們已經走過一輪了，但我們一直沒進一步認識資料結構與演算法，我想在這暫停一下，先來理解基礎結構，之後的題目會比較好上手。  </p>
+<p>Given an integer n, return an array ans of length n + 1 such that for each i (0 &lt;= i &lt;= n), ans[i] is the number of 1’s in the binary representation of i.</p>
+<p>Example 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: n &#x3D; 2</span><br><span class="line">Output: [0,1,1]</span><br><span class="line">Explanation:</span><br><span class="line">0 --&gt; 0</span><br><span class="line">1 --&gt; 1</span><br><span class="line">2 --&gt; 10</span><br></pre></td></tr></table></figure>
+
+<p>Example 2:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Input: n &#x3D; 5</span><br><span class="line">Output: [0,1,1,2,1,2]</span><br><span class="line">Explanation:</span><br><span class="line">0 --&gt; 0</span><br><span class="line">1 --&gt; 1</span><br><span class="line">2 --&gt; 10</span><br><span class="line">3 --&gt; 11</span><br><span class="line">4 --&gt; 100</span><br><span class="line">5 --&gt; 101</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
-<h1 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class ListNode:</span><br><span class="line">    def __init__(self, val&#x3D;0, next&#x3D;None):</span><br><span class="line">        self.val &#x3D; val</span><br><span class="line">        self.next &#x3D; next</span><br><span class="line">class SingleLinkedList:</span><br><span class="line">  def __init__(self): </span><br><span class="line">    self.head &#x3D; None</span><br><span class="line">    self.tail &#x3D; None</span><br><span class="line">    return</span><br><span class="line">  def add_list_item(self, item):</span><br><span class="line">      if not isinstance(item, ListNode):</span><br><span class="line">          item &#x3D; ListNode(item)</span><br><span class="line">      if self.head is None:</span><br><span class="line">          self.head &#x3D; item</span><br><span class="line">      else:</span><br><span class="line">          self.tail.next &#x3D; item</span><br><span class="line">      self.tail &#x3D; item</span><br><span class="line">      return</span><br><span class="line"></span><br><span class="line">list1 &#x3D; SingleLinkedList()</span><br><span class="line">list1.add_list_item(1)</span><br><span class="line">list1.add_list_item(2)</span><br><span class="line">list1.add_list_item(3)</span><br><span class="line">list1.add_list_item(4)</span><br><span class="line">list1.add_list_item(5)</span><br><span class="line"></span><br><span class="line">while list1:</span><br><span class="line">  if list1.head !&#x3D; None:</span><br><span class="line">      print(list1.head.val)</span><br><span class="line">      list1.head &#x3D; list1.head.next</span><br><span class="line">  else: break</span><br><span class="line"></span><br><span class="line"># 1-&gt;2-&gt;3-&gt;4-&gt;5</span><br></pre></td></tr></table></figure>
-<p>ListNode結構就是一個值(val)跟一個鏈結(next)指到下個node。</p>
-<p>有點像區塊鏈的結構(也有個鏈)，但區塊鏈的鏈是之前節點的雜湊，內容也複雜得多。上面說明Python的寫法，也說明如何寫一個簡單的單向串列加val操作。  </p>
-<h1 id="StackAndQueue"><a href="#StackAndQueue" class="headerlink" title="StackAndQueue"></a>StackAndQueue</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">list &#x3D; []</span><br><span class="line">list.append(1)</span><br><span class="line">list.append(2)</span><br><span class="line">list.append(3)</span><br><span class="line"></span><br><span class="line">Stack:  [].pop()</span><br><span class="line"># [] &lt;-&gt;</span><br><span class="line">Queue:  [].pop(0)</span><br><span class="line"># &lt;- 0 [] &lt;-</span><br></pre></td></tr></table></figure>
-<p>Stack, Queue結構就是一個列表[]。</p>
-<p>不一樣的是，Stack是先進後出，Queue是先進先出(所以pop(0)表示從頭開始取出。</p>
-<h1 id="TreeAndGraphs"><a href="#TreeAndGraphs" class="headerlink" title="TreeAndGraphs"></a>TreeAndGraphs</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class TreeNode:</span><br><span class="line">    def __init__(self, val&#x3D;0, left&#x3D;None, right&#x3D;None):</span><br><span class="line">        self.val &#x3D; val</span><br><span class="line">        self.left &#x3D; left</span><br><span class="line">        self.right &#x3D; right</span><br><span class="line">    def insertLeft(self, val):</span><br><span class="line">        if self.left &#x3D;&#x3D; None:</span><br><span class="line">            self.left &#x3D; TreeNode(val)</span><br><span class="line">        else:</span><br><span class="line">            self.left.insertLeft(val)</span><br><span class="line">    def insertRight(self, val):</span><br><span class="line">        if self.right &#x3D;&#x3D; None:</span><br><span class="line">              self.right &#x3D; TreeNode(val)</span><br><span class="line">        else:</span><br><span class="line">            self.right.insertRight(val)</span><br><span class="line"></span><br><span class="line">sampleTree &#x3D; TreeNode(1)</span><br><span class="line">sampleTree.insertLeft(2)</span><br><span class="line">sampleTree.insertRight(3)</span><br><span class="line">sampleTree.right.insertLeft(4)</span><br><span class="line">sampleTree.right.insertRight(5)</span><br><span class="line"></span><br><span class="line">#          1</span><br><span class="line">#         &#x2F;  \  </span><br><span class="line">#        2    3   </span><br><span class="line">#            &#x2F; \  </span><br><span class="line">#          4    5</span><br></pre></td></tr></table></figure>
-<p>Tree的結構跟LinkedList差不多，但next分成左右2個。</p>
-<p>上面說明如何添加節點與子樹</p>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">class Vertex:</span><br><span class="line">    def __init__(self, node):</span><br><span class="line">        self._id &#x3D; node</span><br><span class="line">        self._adjacent &#x3D; &#123;&#125;  # dict: key &#x3D; neighbor, value &#x3D; weight</span><br><span class="line"></span><br><span class="line">    def get_id(self):</span><br><span class="line">        return self._id</span><br><span class="line">    </span><br><span class="line">    def set_neighbor_weight(self, neighbor, weight&#x3D;0):</span><br><span class="line">        self._adjacent[neighbor] &#x3D; weight</span><br><span class="line"></span><br><span class="line">    def get_weight(self, neighbor):</span><br><span class="line">        return self._adjacent[neighbor]</span><br><span class="line">    </span><br><span class="line">    def get_neighbors(self):</span><br><span class="line">        return self._adjacent.keys()</span><br><span class="line">    </span><br><span class="line">    def get_degree_centrality(self):</span><br><span class="line">        return len(self._adjacent)</span><br><span class="line">    </span><br><span class="line">    def get_weighted_degree_centrality(self):</span><br><span class="line">        return sum(self._adjacent.values())</span><br><span class="line"></span><br><span class="line">class Graph:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self._vertDict &#x3D; &#123;&#125;   # key &#x3D; node id, value &#x3D; Vertex</span><br><span class="line"></span><br><span class="line">    def __iter__(self):</span><br><span class="line">        return iter(self._vertDict.values())</span><br><span class="line"></span><br><span class="line">    def add_vertex(self, node):</span><br><span class="line">        if node in self._vertDict:</span><br><span class="line">            return self._vertDict[node]</span><br><span class="line">        else:</span><br><span class="line">            vertNew &#x3D; Vertex(node)</span><br><span class="line">            self._vertDict[node] &#x3D; vertNew</span><br><span class="line">            return vertNew</span><br><span class="line"></span><br><span class="line">    def get_vertex(self, node):</span><br><span class="line">        return self._vertDict[node] if node in self._vertDict else None</span><br><span class="line"></span><br><span class="line">    def get_vertices(self):</span><br><span class="line">        return self._vertDict.keys()</span><br><span class="line">    </span><br><span class="line">    def get_count_vertices(self):</span><br><span class="line">        return len(self._vertDict)</span><br><span class="line">    </span><br><span class="line">    def get_count_edges(self):</span><br><span class="line">        count &#x3D; 0</span><br><span class="line">        for vert in self._vertDict.values():</span><br><span class="line">            count +&#x3D; vert.get_degree_centrality()</span><br><span class="line">        return count</span><br><span class="line">    </span><br><span class="line">    def add_edge(self, frm, to, w&#x3D;0):</span><br><span class="line">        self.add_vertex(frm)</span><br><span class="line">        self.add_vertex(to)</span><br><span class="line">        self._vertDict[frm].set_neighbor_weight(self._vertDict[to], w)</span><br></pre></td></tr></table></figure>
-
-<p>由多個節點(Vertex)組成並用邊(Edge)連接的就可以稱做是一個Graph，邊也可以有權重。</p>
-<h1 id="Algorithms"><a href="#Algorithms" class="headerlink" title="Algorithms"></a>Algorithms</h1><p>常見的搜尋，排序要掌握好，還有興趣就參考<a target="_blank" rel="noopener" href="https://github.com/TheAlgorithms/Python">這個</a>吧。</p>
-
+<p>轉二進位後算1個數  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">T:O(nlogn), S:O(1)</span><br><span class="line">class Solution(object):</span><br><span class="line">    def countBits(self, num):</span><br><span class="line">        return [bin(x).count(&#39;1&#39;) for x in range(num+1)]</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -313,12 +299,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/life/parade/" rel="prev" title="ヨルシカ-パレード">
-      <i class="fa fa-chevron-left"></i> ヨルシカ-パレード
+    <a href="/interview/139/" rel="prev" title="139. Word Break">
+      <i class="fa fa-chevron-left"></i> 139. Word Break
     </a></div>
       <div class="post-nav-item">
-    <a href="/interview/328/" rel="next" title="328. Odd Even Linked List">
-      328. Odd Even Linked List <i class="fa fa-chevron-right"></i>
+    <a href="/life/english/" rel="next" title="英文補全">
+      英文補全 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -379,7 +365,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LinkedList"><span class="nav-number">1.</span> <span class="nav-text">LinkedList</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StackAndQueue"><span class="nav-number">2.</span> <span class="nav-text">StackAndQueue</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TreeAndGraphs"><span class="nav-number">3.</span> <span class="nav-text">TreeAndGraphs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithms"><span class="nav-number">4.</span> <span class="nav-text">Algorithms</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -555,7 +540,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'eric999j.github.io',
       owner       : 'eric999j',
       admin       : ['eric999j'],
-      id          : 'fb3fe867ac4dbfc50dbb8e3a678d93c6',
+      id          : 'cb28d1e64324296976cbf3f0c493d298',
         language: 'zh-TW',
       distractionFreeMode: true
     });
