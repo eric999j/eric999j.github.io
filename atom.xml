@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-09-11T09:24:51.660Z</updated>
+  <updated>2021-09-17T13:05:00.085Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>必須的東西</title>
     <link href="https://eric999j.github.io/life/basic/"/>
     <id>https://eric999j.github.io/life/basic/</id>
-    <published>2021-09-05T12:30:00.000Z</published>
-    <updated>2021-09-11T09:24:51.660Z</updated>
+    <published>2021-09-17T13:30:00.000Z</published>
+    <updated>2021-09-17T13:05:00.085Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(22).jpeg&quot;&gt;&lt;/p&gt;
@@ -38,11 +38,31 @@
   </entry>
   
   <entry>
+    <title>瀏覽器插件推薦</title>
+    <link href="https://eric999j.github.io/engineer/chrome/"/>
+    <id>https://eric999j.github.io/engineer/chrome/</id>
+    <published>2021-09-17T13:00:00.000Z</published>
+    <updated>2021-09-17T12:44:47.444Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;這邊列出使用chrome-based瀏覽器需要知道的資訊。&quot;&gt;&lt;a href=&quot;#這邊列出使用chrome-based瀏覽器需要知道的資訊。&quot; class=&quot;headerlink&quot; title=&quot;這邊列出使用chrome based瀏覽器需要知道的資訊。&quot;&gt;&lt;/a&gt;這邊列出使用chrome based瀏覽器需要知道的資訊。&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>飲食的基礎</title>
     <link href="https://eric999j.github.io/life/nutrition/"/>
     <id>https://eric999j.github.io/life/nutrition/</id>
     <published>2021-08-29T06:30:00.000Z</published>
-    <updated>2021-08-29T06:31:16.404Z</updated>
+    <updated>2021-09-17T12:48:56.129Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(21).jpeg&quot;&gt;&lt;/p&gt;
@@ -487,31 +507,6 @@
 
 &lt;p&gt;Example 3:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [2,1], p &amp;#x3D; 2, q &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>230. Kth Smallest Element in a BST</title>
-    <link href="https://eric999j.github.io/interview/230/"/>
-    <id>https://eric999j.github.io/interview/230/</id>
-    <published>2021-06-05T08:30:00.000Z</published>
-    <updated>2021-06-19T08:40:46.102Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given the root of a binary search tree, and an integer k, return the kth (1-indexed) smallest element in the tree.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [3,1,4,null,2], k &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [5,3,6,2,4,null,null,1], k &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
