@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-09-17T13:05:00.085Z</updated>
+  <updated>2021-09-26T15:34:30.974Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>蔬果</title>
+    <link href="https://eric999j.github.io/life/phytochemicals/"/>
+    <id>https://eric999j.github.io/life/phytochemicals/</id>
+    <published>2021-09-26T15:30:00.000Z</published>
+    <updated>2021-09-26T15:34:30.974Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;蔬果重點在植化素(色素)跟多酚。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
+    
+  </entry>
   
   <entry>
     <title>必須的東西</title>
@@ -62,7 +82,7 @@
     <link href="https://eric999j.github.io/life/nutrition/"/>
     <id>https://eric999j.github.io/life/nutrition/</id>
     <published>2021-08-29T06:30:00.000Z</published>
-    <updated>2021-09-17T12:48:56.129Z</updated>
+    <updated>2021-09-26T15:33:10.832Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(21).jpeg&quot;&gt;&lt;/p&gt;
@@ -394,7 +414,7 @@
     <link href="https://eric999j.github.io/life/movie/"/>
     <id>https://eric999j.github.io/life/movie/</id>
     <published>2021-06-19T09:30:00.000Z</published>
-    <updated>2021-09-11T07:41:28.570Z</updated>
+    <updated>2021-09-26T13:53:51.907Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
@@ -478,35 +498,6 @@
 
 &lt;p&gt;Example 2:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [-1,1,0,-3,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,0,9,0,0]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>235. Lowest Common Ancestor of a Binary Search Tree</title>
-    <link href="https://eric999j.github.io/interview/235/"/>
-    <id>https://eric999j.github.io/interview/235/</id>
-    <published>2021-06-13T08:00:00.000Z</published>
-    <updated>2021-06-13T09:20:36.571Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.&lt;/p&gt;
-&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [6,2,8,0,4,7,9,null,null,3,5], p &amp;#x3D; 2, q &amp;#x3D; 8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The LCA of nodes 2 and 8 is 6.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [6,2,8,0,4,7,9,null,null,3,5], p &amp;#x3D; 2, q &amp;#x3D; 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: root &amp;#x3D; [2,1], p &amp;#x3D; 2, q &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
