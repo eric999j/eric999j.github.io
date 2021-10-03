@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-09-26T15:34:30.974Z</updated>
+  <updated>2021-10-03T11:59:48.836Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,15 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>電影片單</title>
+    <link href="https://eric999j.github.io/life/movie/"/>
+    <id>https://eric999j.github.io/life/movie/</id>
+    <published>2021-10-03T12:30:00.000Z</published>
+    <updated>2021-10-03T11:59:48.836Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;可能WFH了好一陣子，下班後喜歡看些電影，這邊紀錄些我看過喜歡的，如果大家有推薦也請留言跟我說喔。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蔬果</title>
     <link href="https://eric999j.github.io/life/phytochemicals/"/>
     <id>https://eric999j.github.io/life/phytochemicals/</id>
-    <published>2021-09-26T15:30:00.000Z</published>
-    <updated>2021-09-26T15:34:30.974Z</updated>
+    <published>2021-10-03T12:00:00.000Z</published>
+    <updated>2021-10-03T11:56:47.860Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;蔬果重點在植化素(色素)跟多酚。&lt;/p&gt;</summary>
+&lt;p&gt;蔬果重點在植化素。&lt;/p&gt;</summary>
     
     
     
@@ -33,6 +53,45 @@
     
     
     <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android小技巧</title>
+    <link href="https://eric999j.github.io/engineer/android/"/>
+    <id>https://eric999j.github.io/engineer/android/</id>
+    <published>2021-10-03T11:30:00.000Z</published>
+    <updated>2021-10-03T11:31:40.086Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;常駐APP&quot;&gt;&lt;a href=&quot;#常駐APP&quot; class=&quot;headerlink&quot; title=&quot;常駐APP&quot;&gt;&lt;/a&gt;常駐APP&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Pocket: 蒐集控利器  &lt;/li&gt;
+&lt;li&gt;Shazam: 常聽到不錯的旋律又不知道歌名，用這個可以辨識  &lt;/li&gt;
+&lt;li&gt;MixerBox: Shazam辨識完用這個記起來&lt;/li&gt;
+&lt;li&gt;Drops: 學習語言必備&lt;/li&gt;
+&lt;li&gt;Tandem: Drops邊學邊跟外國人聊天 &lt;/li&gt;
+&lt;li&gt;Telegram: 聊天外用來當稍後閱讀工具，各平台都可以裝，互相分享資料很方便 &lt;/li&gt;
+&lt;li&gt;水滴發票: 最好用的發票對獎APP&lt;/li&gt;
+&lt;li&gt;AZ Screen Recorder: 螢幕錄影方便&lt;/li&gt;
+&lt;li&gt;CX 檔案總管: 整理控必備  &lt;/li&gt;
+&lt;li&gt;獎勵: 買遊戲(AppSales)或書(Google圖書)&lt;/li&gt;
+&lt;li&gt;Google lens: 翻譯圖片中文字，遇到不知名的植物可以辨識    &lt;/li&gt;
+&lt;li&gt;G Suite:日曆，新聞，郵件，地圖…&lt;/li&gt;
+&lt;li&gt;IFTTT: 自動化神器，結合IFTTT控制鬧鐘開關    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Android-限免&quot;&gt;&lt;a href=&quot;#Android-限免&quot; class=&quot;headerlink&quot; title=&quot;Android 限免&quot;&gt;&lt;/a&gt;Android 限免&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;想看書：myBook  &lt;/li&gt;
+&lt;li&gt;想用其他APP: AppsFree  &lt;/li&gt;
+&lt;li&gt;想學東西: Facebook Free Udemy 社團&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
@@ -266,7 +325,7 @@
     <link href="https://eric999j.github.io/life/japanese/"/>
     <id>https://eric999j.github.io/life/japanese/</id>
     <published>2021-07-03T09:00:00.000Z</published>
-    <updated>2021-07-03T11:52:28.876Z</updated>
+    <updated>2021-10-03T11:11:37.453Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
@@ -410,26 +469,6 @@
   </entry>
   
   <entry>
-    <title>電影片單</title>
-    <link href="https://eric999j.github.io/life/movie/"/>
-    <id>https://eric999j.github.io/life/movie/</id>
-    <published>2021-06-19T09:30:00.000Z</published>
-    <updated>2021-09-26T13:53:51.907Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;可能WFH了好一陣子，下班後喜歡看些電影，這邊紀錄些我看過喜歡的，如果大家有推薦也請留言跟我說喔。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
     <title>252. Meeting Rooms</title>
     <link href="https://eric999j.github.io/interview/252/"/>
     <id>https://eric999j.github.io/interview/252/</id>
@@ -471,33 +510,6 @@
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;rat&amp;quot;, t &amp;#x3D; &amp;quot;car&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;p&gt;Note:&lt;br&gt;You may assume the string contains only lowercase alphabets.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>238. Product of Array Except Self</title>
-    <link href="https://eric999j.github.io/interview/238/"/>
-    <id>https://eric999j.github.io/interview/238/</id>
-    <published>2021-06-13T08:30:00.000Z</published>
-    <updated>2021-06-13T09:19:38.215Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(13).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].&lt;/p&gt;
-&lt;p&gt;The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.&lt;/p&gt;
-&lt;p&gt;You must write an algorithm that runs in O(n) time and without using the division operation.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [24,12,8,6]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [-1,1,0,-3,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [0,0,9,0,0]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
