@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-10-17T16:16:48.032Z</updated>
+  <updated>2021-10-24T15:02:27.326Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,22 +17,62 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>香水</title>
-    <link href="https://eric999j.github.io/life/perfume/"/>
-    <id>https://eric999j.github.io/life/perfume/</id>
-    <published>2021-10-17T15:30:00.000Z</published>
-    <updated>2021-10-17T16:16:48.032Z</updated>
+    <title>蛋白質</title>
+    <link href="https://eric999j.github.io/life/protein/"/>
+    <id>https://eric999j.github.io/life/protein/</id>
+    <published>2021-10-24T15:00:00.000Z</published>
+    <updated>2021-10-24T15:02:27.326Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;今天有點晚了，先跟大家分享用過的香水，下週再繼續飲食部分。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;protein源於古希臘語的「proteios」，意思是「最初的，基本的」，古希臘人認為，蛋白質是人類最「基本」的需求。&lt;/p&gt;</summary>
     
     
     
     <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
     
     
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重訓回顧</title>
+    <link href="https://eric999j.github.io/life/review/"/>
+    <id>https://eric999j.github.io/life/review/</id>
+    <published>2021-10-24T14:00:00.000Z</published>
+    <updated>2021-10-24T14:24:06.538Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;看完健身觀念，讓我們再來回顧之前的健身菜單。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>香水</title>
+    <link href="https://eric999j.github.io/life/perfume/"/>
+    <id>https://eric999j.github.io/life/perfume/</id>
+    <published>2021-10-24T13:30:00.000Z</published>
+    <updated>2021-10-24T13:51:39.696Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;今天從喜歡的味道知道香味的design patterns，再從調香師心境探討香調基礎，另外更改分類，因為我認為香味也是種語言。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
     
   </entry>
   
@@ -41,7 +81,7 @@
     <link href="https://eric999j.github.io/life/movie/"/>
     <id>https://eric999j.github.io/life/movie/</id>
     <published>2021-10-03T12:30:00.000Z</published>
-    <updated>2021-10-17T15:09:32.315Z</updated>
+    <updated>2021-10-24T13:09:46.320Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
@@ -81,14 +121,14 @@
     <link href="https://eric999j.github.io/engineer/android/"/>
     <id>https://eric999j.github.io/engineer/android/</id>
     <published>2021-10-03T11:30:00.000Z</published>
-    <updated>2021-10-11T14:13:15.090Z</updated>
+    <updated>2021-10-24T15:07:16.736Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;常駐APP&quot;&gt;&lt;a href=&quot;#常駐APP&quot; class=&quot;headerlink&quot; title=&quot;常駐APP&quot;&gt;&lt;/a&gt;常駐APP&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Pocket: 蒐集控利器  &lt;/li&gt;
 &lt;li&gt;Shazam: 常聽到不錯的旋律又不知道歌名，用這個可以辨識  &lt;/li&gt;
 &lt;li&gt;MixerBox: Shazam辨識完用這個記起來&lt;/li&gt;
+&lt;li&gt;台灣收音機: 聽廣播方便，還可以錄下來&lt;/li&gt;
 &lt;li&gt;Drops: 學習語言必備&lt;/li&gt;
 &lt;li&gt;Tandem: Drops邊學邊跟外國人聊天 &lt;/li&gt;
 &lt;li&gt;Telegram: 聊天外用來當稍後閱讀工具，各平台都可以裝，互相分享資料很方便 &lt;/li&gt;
@@ -96,7 +136,8 @@
 &lt;li&gt;AZ Screen Recorder: 螢幕錄影方便&lt;/li&gt;
 &lt;li&gt;CX 檔案總管: 整理控必備  &lt;/li&gt;
 &lt;li&gt;獎勵: 買遊戲(AppSales)或書(Google圖書)&lt;/li&gt;
-&lt;li&gt;Google lens: 翻譯圖片中文字，遇到不知名的植物可以辨識    &lt;/li&gt;
+&lt;li&gt;Google lens: 翻譯圖片中文字，遇到不知名的植物可以辨識  &lt;/li&gt;
+&lt;li&gt;Pocket: 蒐集控利器   &lt;/li&gt;
 &lt;li&gt;G Suite:日曆，新聞，郵件，地圖…&lt;/li&gt;
 &lt;li&gt;IFTTT: 自動化神器，結合Google日曆控制鬧鐘開關    &lt;/li&gt;
 &lt;/ul&gt;
@@ -453,56 +494,6 @@
 
 &lt;p&gt;Constraints:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;n &amp;#x3D;&amp;#x3D; nums.length&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 104&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; n&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;All the numbers of nums are unique.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>253. Meeting Rooms II</title>
-    <link href="https://eric999j.github.io/interview/253/"/>
-    <id>https://eric999j.github.io/interview/253/</id>
-    <published>2021-06-26T07:00:00.000Z</published>
-    <updated>2021-08-15T13:56:32.618Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(17).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],…] (si &amp;lt; ei), find the minimum number of conference rooms required.&lt;/p&gt;
-&lt;p&gt;Example 1&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [[0, 30],[5, 10],[15, 20]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [[7,10],[2,4]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>252. Meeting Rooms</title>
-    <link href="https://eric999j.github.io/interview/252/"/>
-    <id>https://eric999j.github.io/interview/252/</id>
-    <published>2021-06-19T09:00:00.000Z</published>
-    <updated>2021-06-19T10:46:17.645Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(13).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],…] (si &amp;lt; ei), determine if a person could attend all meetings.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [[0,30],[5,10],[15,20]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: [[7,10],[2,4]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
