@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-10-24T15:02:27.326Z</updated>
+  <updated>2021-10-31T14:21:58.268Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Wings</title>
+    <link href="https://eric999j.github.io/life/wings/"/>
+    <id>https://eric999j.github.io/life/wings/</id>
+    <published>2021-10-31T15:30:00.000Z</published>
+    <updated>2021-10-31T14:21:58.268Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;電台聽到這首旋律聽起來像羽毛一樣輕柔，但歌詞十分濃烈，覺得非常喜歡。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>烘培</title>
+    <link href="https://eric999j.github.io/life/baking/"/>
+    <id>https://eric999j.github.io/life/baking/</id>
+    <published>2021-10-31T14:00:00.000Z</published>
+    <updated>2021-10-31T14:45:37.986Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/xQY2r1m.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如同氣味，烘培也是種語言，當廚師精心呈現的作品在舌尖滾動，其實是我們在閱讀廚師的心境吧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
+    
+  </entry>
   
   <entry>
     <title>蛋白質</title>
@@ -41,7 +81,7 @@
     <link href="https://eric999j.github.io/life/review/"/>
     <id>https://eric999j.github.io/life/review/</id>
     <published>2021-10-24T14:00:00.000Z</published>
-    <updated>2021-10-24T14:24:06.538Z</updated>
+    <updated>2021-10-28T14:35:42.929Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
@@ -57,15 +97,15 @@
   </entry>
   
   <entry>
-    <title>香水</title>
+    <title>氣味</title>
     <link href="https://eric999j.github.io/life/perfume/"/>
     <id>https://eric999j.github.io/life/perfume/</id>
     <published>2021-10-24T13:30:00.000Z</published>
-    <updated>2021-10-24T13:51:39.696Z</updated>
+    <updated>2021-10-28T14:33:00.091Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;今天從喜歡的味道知道香味的design patterns，再從調香師心境探討香調基礎，另外更改分類，因為我認為香味也是種語言。&lt;/p&gt;</summary>
+&lt;p&gt;今天從喜歡的味道知道香味的design patterns，再從調香師心境探討香調基礎，另外更改分類，因為我認為氣味也是種語言。&lt;/p&gt;</summary>
     
     
     
@@ -81,7 +121,7 @@
     <link href="https://eric999j.github.io/life/movie/"/>
     <id>https://eric999j.github.io/life/movie/</id>
     <published>2021-10-03T12:30:00.000Z</published>
-    <updated>2021-10-24T13:09:46.320Z</updated>
+    <updated>2021-10-28T14:50:14.335Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
@@ -121,14 +161,14 @@
     <link href="https://eric999j.github.io/engineer/android/"/>
     <id>https://eric999j.github.io/engineer/android/</id>
     <published>2021-10-03T11:30:00.000Z</published>
-    <updated>2021-10-24T15:07:16.736Z</updated>
+    <updated>2021-10-31T13:57:58.346Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;常駐APP&quot;&gt;&lt;a href=&quot;#常駐APP&quot; class=&quot;headerlink&quot; title=&quot;常駐APP&quot;&gt;&lt;/a&gt;常駐APP&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;Shazam: 常聽到不錯的旋律又不知道歌名，用這個可以辨識  &lt;/li&gt;
 &lt;li&gt;MixerBox: Shazam辨識完用這個記起來&lt;/li&gt;
-&lt;li&gt;台灣收音機: 聽廣播方便，還可以錄下來&lt;/li&gt;
+&lt;li&gt;台灣收音機: 聽廣播方便，廣播可以錄下來，還可以當鬧鐘  &lt;/li&gt;
 &lt;li&gt;Drops: 學習語言必備&lt;/li&gt;
 &lt;li&gt;Tandem: Drops邊學邊跟外國人聊天 &lt;/li&gt;
 &lt;li&gt;Telegram: 聊天外用來當稍後閱讀工具，各平台都可以裝，互相分享資料很方便 &lt;/li&gt;
@@ -182,7 +222,7 @@
     <link href="https://eric999j.github.io/engineer/chrome/"/>
     <id>https://eric999j.github.io/engineer/chrome/</id>
     <published>2021-09-17T13:00:00.000Z</published>
-    <updated>2021-09-17T12:44:47.444Z</updated>
+    <updated>2021-10-31T14:01:13.025Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
@@ -386,7 +426,7 @@
     <link href="https://eric999j.github.io/life/japanese/"/>
     <id>https://eric999j.github.io/life/japanese/</id>
     <published>2021-07-03T09:00:00.000Z</published>
-    <updated>2021-10-03T11:11:37.453Z</updated>
+    <updated>2021-10-31T13:55:48.059Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
@@ -430,70 +470,6 @@
 
 &lt;p&gt;Example 4:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; [[2],[1]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[2],[1]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>300. Longest Increasing Subsequence</title>
-    <link href="https://eric999j.github.io/interview/300/"/>
-    <id>https://eric999j.github.io/interview/300/</id>
-    <published>2021-07-03T08:00:00.000Z</published>
-    <updated>2021-07-03T08:35:49.123Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an integer array nums, return the length of the longest strictly increasing subsequence.&lt;/p&gt;
-&lt;p&gt;A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [10,9,2,5,3,7,101,18]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [0,1,0,3,2,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [7,7,7,7,7,7,7]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>268. Missing Number</title>
-    <link href="https://eric999j.github.io/interview/268/"/>
-    <id>https://eric999j.github.io/interview/268/</id>
-    <published>2021-06-26T07:30:00.000Z</published>
-    <updated>2021-06-26T07:29:23.297Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.&lt;/p&gt;
-&lt;p&gt;Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [9,6,4,2,3,5,7,0,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [0]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: n &amp;#x3D; 1 since there is 1 number, so all numbers are in the range [0,1]. 1 is the missing number in the range since it does not appear in nums.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Constraints:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;n &amp;#x3D;&amp;#x3D; nums.length&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 104&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; n&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;All the numbers of nums are unique.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
