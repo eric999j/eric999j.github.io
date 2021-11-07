@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-10-31T14:21:58.268Z</updated>
+  <updated>2021-11-07T15:23:56.300Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>種植肥料</title>
+    <link href="https://eric999j.github.io/life/fertilizer/"/>
+    <id>https://eric999j.github.io/life/fertilizer/</id>
+    <published>2021-11-07T15:00:00.000Z</published>
+    <updated>2021-11-07T15:23:56.300Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;植物的糧食，化肥就像維他命，有機肥沒腐熟可能會傷根。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="植栽" scheme="https://eric999j.github.io/tags/Planting/"/>
+    
+  </entry>
   
   <entry>
     <title>Wings</title>
@@ -201,7 +221,7 @@
     <link href="https://eric999j.github.io/life/basic/"/>
     <id>https://eric999j.github.io/life/basic/</id>
     <published>2021-09-17T13:30:00.000Z</published>
-    <updated>2021-10-11T14:26:48.888Z</updated>
+    <updated>2021-10-31T15:17:20.263Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(22).jpeg&quot;&gt;&lt;/p&gt;
@@ -438,45 +458,6 @@
     
     
     <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>133. Clone Graph</title>
-    <link href="https://eric999j.github.io/interview/133/"/>
-    <id>https://eric999j.github.io/interview/133/</id>
-    <published>2021-07-03T08:30:00.000Z</published>
-    <updated>2021-07-03T08:53:30.411Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(16).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given a reference of a node in a connected undirected graph.&lt;/p&gt;
-&lt;p&gt;Return a deep copy (clone) of the graph.&lt;/p&gt;
-&lt;p&gt;Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;class Node:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    def init(self, val &amp;#x3D; 0, neighbors &amp;#x3D; None):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        self.val &amp;#x3D; val&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        self.neighbors &amp;#x3D; neighbors if neighbors is not None else []&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Test case format:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For simplicity, each node’s value is the same as the node’s index (1-indexed). For example, the first node with val == 1, the second node with val == 2, and so on. The graph is represented in the test case using an adjacency list.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;An adjacency list&lt;/strong&gt; is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a node in the graph.&lt;/p&gt;
-&lt;p&gt;The given node will always be the first node with val = 1. You must return the copy of the given node as a reference to the cloned graph.&lt;/p&gt;
-&lt;p&gt;Example 1:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; [[2,4],[1,3],[2,4],[1,3]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[2,4],[1,3],[2,4],[1,3]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: There are 4 nodes in the graph.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1st node (val &amp;#x3D; 1)&amp;#39;s neighbors are 2nd node (val &amp;#x3D; 2) and 4th node (val &amp;#x3D; 4).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2nd node (val &amp;#x3D; 2)&amp;#39;s neighbors are 1st node (val &amp;#x3D; 1) and 3rd node (val &amp;#x3D; 3).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3rd node (val &amp;#x3D; 3)&amp;#39;s neighbors are 2nd node (val &amp;#x3D; 2) and 4th node (val &amp;#x3D; 4).&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4th node (val &amp;#x3D; 4)&amp;#39;s neighbors are 1st node (val &amp;#x3D; 1) and 3rd node (val &amp;#x3D; 3).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; [[]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Note that the input contains one empty list. The graph consists of only one node with val &amp;#x3D; 1 and it does not have any neighbors.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 3:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: []&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: This an empty graph, it does not have any nodes.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 4:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: adjList &amp;#x3D; [[2],[1]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [[2],[1]]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
