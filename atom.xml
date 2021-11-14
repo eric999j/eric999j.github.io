@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-11-07T15:23:56.300Z</updated>
+  <updated>2021-11-14T15:58:36.685Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>種植用藥</title>
+    <link href="https://eric999j.github.io/life/pesticide/"/>
+    <id>https://eric999j.github.io/life/pesticide/</id>
+    <published>2021-11-14T15:00:00.000Z</published>
+    <updated>2021-11-14T15:58:36.685Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;學習植栽好一陣子，終於要跟看不見的神秘物質打交道了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="植栽" scheme="https://eric999j.github.io/tags/Planting/"/>
+    
+  </entry>
   
   <entry>
     <title>種植肥料</title>
@@ -438,26 +458,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日語地圖</title>
-    <link href="https://eric999j.github.io/life/japanese/"/>
-    <id>https://eric999j.github.io/life/japanese/</id>
-    <published>2021-07-03T09:00:00.000Z</published>
-    <updated>2021-10-31T13:55:48.059Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;おれの財宝か？&lt;br&gt;欲しけりゃくれてやるぜ…&lt;br&gt;探してみろ&lt;br&gt;この世のすべてをそこに置いてきた  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
     
   </entry>
   
