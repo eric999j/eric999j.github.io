@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap:
+https://eric999j.github.io/atom.xml
