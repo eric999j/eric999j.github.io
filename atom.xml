@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-12-05T15:53:16.592Z</updated>
+  <updated>2021-12-19T10:36:34.492Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>節慶點心</title>
+    <link href="https://eric999j.github.io/life/festiveSnacks/"/>
+    <id>https://eric999j.github.io/life/festiveSnacks/</id>
+    <published>2021-12-19T10:00:00.000Z</published>
+    <updated>2021-12-19T10:36:34.492Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;想起不同節日常吃到些正在消逝的東西，趕快紀錄一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文化遺產</title>
+    <link href="https://eric999j.github.io/life/cultureHeritage/"/>
+    <id>https://eric999j.github.io/life/cultureHeritage/</id>
+    <published>2021-12-19T09:00:00.000Z</published>
+    <updated>2021-12-19T09:48:41.518Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;漫漫歷史長河，讓我們用糕餅來記憶。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>古早台南味</title>
+    <link href="https://eric999j.github.io/tainan/"/>
+    <id>https://eric999j.github.io/tainan/</id>
+    <published>2021-12-19T08:00:00.000Z</published>
+    <updated>2021-12-19T09:07:43.592Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/gnyGj97.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這次跟俺娘到台南玩，順便體驗這個空氣聞起來甜甜的城市。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>聖誕金門味</title>
+    <link href="https://eric999j.github.io/life/kinmen/"/>
+    <id>https://eric999j.github.io/life/kinmen/</id>
+    <published>2021-12-19T07:00:00.000Z</published>
+    <updated>2021-12-19T09:42:37.528Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/b6HlG06.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;聖誕節前夕俺爹剛好要去金門出差，我查了一些傳統點心並列了許願清單，今天想來點金門味。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
   
   <entry>
     <title>超譯卡夫卡變形記</title>
@@ -354,86 +434,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>瀏覽器插件推薦</title>
-    <link href="https://eric999j.github.io/engineer/chrome/"/>
-    <id>https://eric999j.github.io/engineer/chrome/</id>
-    <published>2021-09-17T13:00:00.000Z</published>
-    <updated>2021-10-31T14:01:13.025Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;這邊列出使用chrome-based瀏覽器需要知道的資訊。&quot;&gt;&lt;a href=&quot;#這邊列出使用chrome-based瀏覽器需要知道的資訊。&quot; class=&quot;headerlink&quot; title=&quot;這邊列出使用chrome based瀏覽器需要知道的資訊。&quot;&gt;&lt;/a&gt;這邊列出使用chrome based瀏覽器需要知道的資訊。&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>飲食的基礎</title>
-    <link href="https://eric999j.github.io/life/nutrition/"/>
-    <id>https://eric999j.github.io/life/nutrition/</id>
-    <published>2021-08-29T06:30:00.000Z</published>
-    <updated>2021-09-26T15:33:10.832Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(21).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;好久沒換主題了，我希望小夥伴們過得健康，在一連串日文英文程式語言硬核轟炸之後，讓我們回歸生活，把焦點放到需要一輩子關注的問題- 吃。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程式語言</title>
-    <link href="https://eric999j.github.io/life/programmingLanguage/"/>
-    <id>https://eric999j.github.io/life/programmingLanguage/</id>
-    <published>2021-07-24T09:30:00.000Z</published>
-    <updated>2021-12-07T10:44:38.365Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;為了因應近期的新目標，以往的工作與興趣文章將整合，這種不向前兼容的改動在git上應該稱為硬分岔吧，但熊生就是需要破壞式創新啊（掩。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>愛を知るまでは</title>
-    <link href="https://eric999j.github.io/life/dream/"/>
-    <id>https://eric999j.github.io/life/dream/</id>
-    <published>2021-07-17T09:00:00.000Z</published>
-    <updated>2021-07-17T09:38:58.231Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;前幾天多年老友傳來這首歌，雖然接下來一個月目標不在這，但還不錯聽，就抓來研究一下。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
