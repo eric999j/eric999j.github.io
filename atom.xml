@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-12-21T08:03:54.392Z</updated>
+  <updated>2021-12-26T07:44:24.212Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>節慶點心</title>
-    <link href="https://eric999j.github.io/life/festiveSnacks/"/>
-    <id>https://eric999j.github.io/life/festiveSnacks/</id>
-    <published>2021-12-19T10:00:00.000Z</published>
-    <updated>2021-12-21T08:03:54.392Z</updated>
+    <title>文化遺產</title>
+    <link href="https://eric999j.github.io/life/cultureHeritage/"/>
+    <id>https://eric999j.github.io/life/cultureHeritage/</id>
+    <published>2021-12-26T06:00:00.000Z</published>
+    <updated>2021-12-26T07:44:24.212Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;想起不同節日常吃到些正在消逝的東西，趕快紀錄一下。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;漫漫歷史長河，讓我們用糕餅來記憶。&lt;/p&gt;</summary>
     
     
     
@@ -37,15 +37,35 @@
   </entry>
   
   <entry>
-    <title>文化遺產</title>
-    <link href="https://eric999j.github.io/life/cultureHeritage/"/>
-    <id>https://eric999j.github.io/life/cultureHeritage/</id>
-    <published>2021-12-19T09:00:00.000Z</published>
-    <updated>2021-12-22T06:22:40.764Z</updated>
+    <title>摘星紀錄</title>
+    <link href="https://eric999j.github.io/life/michelin/"/>
+    <id>https://eric999j.github.io/life/michelin/</id>
+    <published>2021-12-26T05:00:00.000Z</published>
+    <updated>2021-12-26T06:19:59.337Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;漫漫歷史長河，讓我們用糕餅來記憶。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;吃過幾家米其林，近期也知道了嵌入自訂地圖用法，決定用來統整一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>節慶點心</title>
+    <link href="https://eric999j.github.io/life/festiveSnacks/"/>
+    <id>https://eric999j.github.io/life/festiveSnacks/</id>
+    <published>2021-12-19T10:00:00.000Z</published>
+    <updated>2021-12-26T07:45:55.727Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;想起不同節日常吃到些正在消逝的東西，趕快紀錄一下。&lt;/p&gt;</summary>
     
     
     
@@ -223,7 +243,7 @@
     <link href="https://eric999j.github.io/life/chateauZoe/"/>
     <id>https://eric999j.github.io/life/chateauZoe/</id>
     <published>2021-11-21T11:00:00.000Z</published>
-    <updated>2021-11-28T15:35:04.126Z</updated>
+    <updated>2021-12-23T09:40:20.154Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/xHXQHFl.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;</summary>
@@ -394,46 +414,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android小技巧</title>
-    <link href="https://eric999j.github.io/engineer/android/"/>
-    <id>https://eric999j.github.io/engineer/android/</id>
-    <published>2021-10-03T11:30:00.000Z</published>
-    <updated>2021-10-31T13:57:58.346Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;常駐APP&quot;&gt;&lt;a href=&quot;#常駐APP&quot; class=&quot;headerlink&quot; title=&quot;常駐APP&quot;&gt;&lt;/a&gt;常駐APP&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Shazam: 常聽到不錯的旋律又不知道歌名，用這個可以辨識  &lt;/li&gt;
-&lt;li&gt;MixerBox: Shazam辨識完用這個記起來&lt;/li&gt;
-&lt;li&gt;台灣收音機: 聽廣播方便，廣播可以錄下來，還可以當鬧鐘  &lt;/li&gt;
-&lt;li&gt;Drops: 學習語言必備&lt;/li&gt;
-&lt;li&gt;Tandem: Drops邊學邊跟外國人聊天 &lt;/li&gt;
-&lt;li&gt;Telegram: 聊天外用來當稍後閱讀工具，各平台都可以裝，互相分享資料很方便 &lt;/li&gt;
-&lt;li&gt;水滴發票: 最好用的發票對獎APP&lt;/li&gt;
-&lt;li&gt;AZ Screen Recorder: 螢幕錄影方便&lt;/li&gt;
-&lt;li&gt;CX 檔案總管: 整理控必備  &lt;/li&gt;
-&lt;li&gt;獎勵: 買遊戲(AppSales)或書(Google圖書)&lt;/li&gt;
-&lt;li&gt;Google lens: 翻譯圖片中文字，遇到不知名的植物可以辨識  &lt;/li&gt;
-&lt;li&gt;Pocket: 蒐集控利器   &lt;/li&gt;
-&lt;li&gt;G Suite:日曆，新聞，郵件，地圖…&lt;/li&gt;
-&lt;li&gt;IFTTT: 自動化神器，結合Google日曆控制鬧鐘開關    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Android-限免&quot;&gt;&lt;a href=&quot;#Android-限免&quot; class=&quot;headerlink&quot; title=&quot;Android 限免&quot;&gt;&lt;/a&gt;Android 限免&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;想看書：myBook  &lt;/li&gt;
-&lt;li&gt;想用其他APP: AppsFree  &lt;/li&gt;
-&lt;li&gt;想學東西: Facebook Free Udemy 社團&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
