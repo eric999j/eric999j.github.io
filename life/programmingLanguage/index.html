@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2021-12-27T10:50:19.653Z">
+<meta property="article:modified_time" content="2022-01-01T10:30:52.158Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-27 18:50:19" itemprop="dateModified" datetime="2021-12-27T18:50:19+08:00">2021-12-27</time>
+                <time title="Modified: 2022-01-01 18:30:52" itemprop="dateModified" datetime="2022-01-01T18:30:52+08:00">2022-01-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3.7k</span>
+              <span>3.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -262,21 +262,21 @@
 <h1 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h1><ul>
 <li>統計字數</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import collections</span><br><span class="line">C &#x3D; collections.Counter()</span><br><span class="line"># 或 collections.defaultdict(int)</span><br><span class="line">s&#x3D;&quot;AABBABC&quot;</span><br><span class="line">for v in s:</span><br><span class="line">    C[v]+&#x3D;1</span><br><span class="line">print(C)</span><br><span class="line"></span><br><span class="line">&gt; Counter(&#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br><span class="line"># defaultdict(&lt;class &#39;int&#39;&gt;, &#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import collections</span><br><span class="line">C &#x3D; collections.defaultdict(int)</span><br><span class="line"># 或 collections.Counter()</span><br><span class="line"></span><br><span class="line">s&#x3D;&quot;AABBABC&quot;</span><br><span class="line">for v in s:</span><br><span class="line">    C[v]+&#x3D;1</span><br><span class="line">print(C)</span><br><span class="line"></span><br><span class="line">&gt; defaultdict(&lt;class &#39;int&#39;&gt;, &#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br><span class="line"># Counter(&#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br></pre></td></tr></table></figure>
 <h1 id="Big-O"><a href="#Big-O" class="headerlink" title="Big O"></a>Big O</h1><img src="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 
 <p>完成某事需要多久時間，一般來說nˆ2程式效能就很糟了</p>
 <p>O(1): constant, print(“abc”)<br>O(logn): logarithm遞迴，每次步驟砍半, BinarySearch<br>O(n): linear, for loop, Linear Search, BFS, DFS<br>O(nlogn): sub- quadratic, Quick/Merge/Heap Sort<br>O(nˆ2): quadratic 二次方 two layer for loop<br>O(nˆ3): cubic<br>O(2ˆn): exponential 遞迴，每次步驟倍增，遞迴Fibonacci<br>O(n!): factorial  </p>
 <p>每次步驟少2倍log n (BinarySearch<br>每次步驟多2倍2^n (遞迴Fibonacci  </p>
 <h2 id="Search-Time-Complexity"><a href="#Search-Time-Complexity" class="headerlink" title="Search Time Complexity"></a>Search Time Complexity</h2><p>BFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(Vˆ2) # queue中每個點又接多個點    </p>
-<p>DFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(h) # recursive: 樹的層數<br>SC: O(V) # stack中每個點又接多個點   </p>
+<p>DFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(h) # recursive: 樹的層數<br>SC: O(Vˆ2) # stack中每個點又接多個點   </p>
 <h1 id="Strategy"><a href="#Strategy" class="headerlink" title="Strategy"></a>Strategy</h1><ul>
 <li>暴力(枚舉)法(Brute Force)：常是quadratic </li>
 <li>貪婪法 (Greedy Algorithm)：每步擇優</li>
 <li>分治法 (Divide and Conquer)：快速跟合併，還有二元搜尋</li>
 <li>回溯（Backtracking)： 列出每階段可能，排除不可能，下階段沒分支就退回： dfs，01背包問題，每步看要不要</li>
 <li>分支限界（Branch and Bound method)：bfs</li>
-<li>動態規劃(Dynamic Programming)：n! 分治小問題，但跟分制法不同是多了儲存子問題結果</li>
+<li>動態規劃(Dynamic Programming)：n! 分治小問題，但跟分治法不同是多了儲存子問題結果</li>
 </ul>
 <h2 id="Detail"><a href="#Detail" class="headerlink" title="Detail"></a>Detail</h2><ul>
 <li>給有序陣列： Binary search, Two pointers  </li>
@@ -293,21 +293,21 @@
 <h1 id="In-place"><a href="#In-place" class="headerlink" title="In-place"></a>In-place</h1><p>在不用多餘空間前提下操作原陣列取得結果  </p>
 <p>189.Rotate Array: <code>%; a,b=b,a</code><br>206.Reverse Linked List: <code>head.next; reverse; return</code>   </p>
 <h1 id="Object-Oriented"><a href="#Object-Oriented" class="headerlink" title="Object Oriented"></a>Object Oriented</h1><p>定義物件成員與方法，有封裝，繼承，多型等特性  </p>
-<p>208.Implement Trie (Prefix Tree): <code>TrieNode: children=&#123;&#125;, end</code><br>211.Design Add and Search Words data structure: <code>TrieNode, dfs</code>      </p>
+<p>208.Implement Trie (Prefix Tree): <code>TrieNode: children=&#123;&#125;; end</code><br>211.Design Add and Search Words data structure: <code>TrieNode; dfs</code>      </p>
 <h1 id="Slow-Fast-Pointer"><a href="#Slow-Fast-Pointer" class="headerlink" title="Slow Fast Pointer"></a>Slow Fast Pointer</h1><p>快慢指標常用來檢測串列是否有迴圈  </p>
-<p>141.Linked List Cycle: <code>if slow == fast</code><br>424.longest repeating character replacement: sliding window    </p>
+<p>141.Linked List Cycle: <code>if slow == fast</code><br>424.longest repeating character replacement: <code>defaultdict; sliding window</code>    </p>
 <h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><p>針對陣列操作，常須in-place 或跟其他資料結構搭配  </p>
 <blockquote>
 <p>set用add; []用append, pop(0開頭/-1結尾)  </p>
 </blockquote>
-<p>1.Two Sum: <code>&#123;value:keys&#125;</code><br>48.Rotate Image: <code>*, [::-1], zip</code><br>54.Spiral Matrix: <code>pop(0), pop(-1), pop(-1)[::-1], pop(0)[::-1]</code><br>122.Best Time to Buy and Sell Stock II:<br>234.Palindrome Linked List: [::-1]<br>206.Reverse Linked List<br>252.Meeting Rooms<br>253.Meeting Rooms II<br>287.Find the Duplicate Number<br>844.Backspace String Compare<br>977.Squares of a Sorted Array </p>
+<p>1.Two Sum: <code>&#123;value:keys&#125;</code><br>48.Rotate Image: <code>*, [::-1], zip</code><br>54.Spiral Matrix: <code>pop(0), pop(-1), pop(-1)[::-1], pop(0)[::-1]</code><br>122.Best Time to Buy and Sell Stock II: <code>greedy</code><br>234.Palindrome Linked List: <code>[::-1]</code><br>206.Reverse Linked List: <code>recursive</code><br>252.Meeting Rooms <code>intervals[i][0]</code><br>287.Find the Duplicate Number <code>Set</code><br>844.Backspace String Compare <code>pop</code><br>977.Squares of a Sorted Array <code>*=, sort()</code> </p>
 <h1 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h1><p>將數字轉bit處理  </p>
 <p>7.Reverse Integer<br>136.Single Number<br>338.Counting Bits  </p>
 <h1 id="Heap"><a href="#Heap" class="headerlink" title="Heap"></a>Heap</h1><p>常用來找最大最小值，heappop由小到大    </p>
 <blockquote>
 <p>heapq.heapify(array)<br>heapq.heappop(array) </p>
 </blockquote>
-<p>846.Hand of Straights<br>1046.Last Stone Weight  </p>
+<p>846.Hand of Straights<br>1046.Last Stone Weight<br>253.Meeting Rooms II  </p>
 <h1 id="Sorting"><a href="#Sorting" class="headerlink" title="Sorting"></a>Sorting</h1><p>對列表可以順序或倒序排列  </p>
 <blockquote>
 <p>Sort input for O(nlogn) time and O(1) space<br>Quick, Merge, Heap, Topological Sorting: O(nlogn)<br>b=sorted(a), a.sort(), .sort(reverse=True)  </p>
@@ -464,7 +464,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">170</span>
+          <span class="site-state-item-count">171</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -523,7 +523,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -532,12 +532,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">166k</span>
+    <span title="Symbols count total">167k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:31</span>
+    <span title="Reading time total">2:32</span>
 </div>
 
         

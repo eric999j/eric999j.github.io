@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2021-12-27T08:44:59.281Z</updated>
+  <updated>2022-01-02T10:14:21.313Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,91 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>閱讀感想</title>
+    <link href="https://eric999j.github.io/manager/cycle/"/>
+    <id>https://eric999j.github.io/manager/cycle/</id>
+    <published>2022-01-02T09:30:00.000Z</published>
+    <updated>2022-01-02T10:14:21.313Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這篇提到我對讀書方法的一些感悟，大家可以參考看看&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>閱讀給下個資優生的7個秘訣</title>
+    <link href="https://eric999j.github.io/manager/genius/"/>
+    <id>https://eric999j.github.io/manager/genius/</id>
+    <published>2022-01-02T09:00:00.000Z</published>
+    <updated>2022-01-02T09:26:47.164Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在家中挖到國中生物跟班導，葉老師送的書，經過這麼多年，再看一次依舊受用，也發現現在很多處事方式就跟書中說的一樣，我很感謝她。  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>瀏覽器插件推薦</title>
+    <link href="https://eric999j.github.io/engineer/chrome/"/>
+    <id>https://eric999j.github.io/engineer/chrome/</id>
+    <published>2022-01-02T08:30:00.000Z</published>
+    <updated>2022-01-02T09:09:02.434Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;這邊列出使用chrome-based瀏覽器需要知道的資訊。&quot;&gt;&lt;a href=&quot;#這邊列出使用chrome-based瀏覽器需要知道的資訊。&quot; class=&quot;headerlink&quot; title=&quot;這邊列出使用chrome based瀏覽器需要知道的資訊。&quot;&gt;&lt;/a&gt;這邊列出使用chrome based瀏覽器需要知道的資訊。&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>烘培</title>
+    <link href="https://eric999j.github.io/life/baking/"/>
+    <id>https://eric999j.github.io/life/baking/</id>
+    <published>2022-01-02T08:00:00.000Z</published>
+    <updated>2022-01-02T09:09:49.370Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/xQY2r1m.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如同氣味，烘培也是種語言，當廚師精心呈現的作品在舌尖滾動，其實是我們在閱讀廚師的心境吧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
+    
+  </entry>
+  
+  <entry>
     <title>文化遺產</title>
     <link href="https://eric999j.github.io/life/cultureHeritage/"/>
     <id>https://eric999j.github.io/life/cultureHeritage/</id>
     <published>2021-12-26T06:00:00.000Z</published>
-    <updated>2021-12-27T08:44:59.281Z</updated>
+    <updated>2021-12-28T10:43:20.376Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
@@ -318,26 +398,6 @@
   </entry>
   
   <entry>
-    <title>烘培</title>
-    <link href="https://eric999j.github.io/life/baking/"/>
-    <id>https://eric999j.github.io/life/baking/</id>
-    <published>2021-10-31T14:00:00.000Z</published>
-    <updated>2021-12-12T14:14:18.782Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/xQY2r1m.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如同氣味，烘培也是種語言，當廚師精心呈現的作品在舌尖滾動，其實是我們在閱讀廚師的心境吧。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
     <title>蛋白質</title>
     <link href="https://eric999j.github.io/life/protein/"/>
     <id>https://eric999j.github.io/life/protein/</id>
@@ -354,66 +414,6 @@
     
     
     <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>重訓回顧</title>
-    <link href="https://eric999j.github.io/life/review/"/>
-    <id>https://eric999j.github.io/life/review/</id>
-    <published>2021-10-24T14:00:00.000Z</published>
-    <updated>2021-10-28T14:35:42.929Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;看完健身觀念，讓我們再來回顧之前的健身菜單。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>氣味</title>
-    <link href="https://eric999j.github.io/life/perfume/"/>
-    <id>https://eric999j.github.io/life/perfume/</id>
-    <published>2021-10-24T13:30:00.000Z</published>
-    <updated>2021-12-27T08:28:49.766Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;今天從喜歡的味道知道香味的design patterns，再從調香師心境探討香調基礎，另外更改分類，因為我認為氣味也是種語言。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>電影片單</title>
-    <link href="https://eric999j.github.io/life/movie/"/>
-    <id>https://eric999j.github.io/life/movie/</id>
-    <published>2021-10-03T12:30:00.000Z</published>
-    <updated>2021-12-12T14:15:24.503Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;可能WFH了好一陣子，下班後喜歡看些電影，這邊紀錄些我看過喜歡的，如果大家有推薦也請留言跟我說喔。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
     
   </entry>
   
