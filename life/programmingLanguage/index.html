@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-01-09T09:20:27.749Z">
+<meta property="article:modified_time" content="2022-01-14T09:49:13.852Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-09 17:20:27" itemprop="dateModified" datetime="2022-01-09T17:20:27+08:00">2022-01-09</time>
+                <time title="Modified: 2022-01-14 17:49:13" itemprop="dateModified" datetime="2022-01-14T17:49:13+08:00">2022-01-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>4k</span>
+              <span>4.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -267,7 +267,7 @@
 
 <p>完成某事需要多久時間，一般來說nˆ2程式效能就很糟了</p>
 <p>O(1): Constant, print(“abc”)<br>O(logn): Logarithm遞迴，每次步驟砍半, Binary Search<br>O(n): Linear, for loop, Linear Search, BFS, DFS<br>O(nlogn): Sub- quadratic, Quick/Merge/Heap Sort<br>O(nˆ2): Quadratic 二次方 two layer for loop<br>O(nˆ3): Cubic<br>O(2ˆn): Exponential 遞迴，每次步驟倍增，遞迴Fibonacci<br>O(n!): Factorial  </p>
-<p>每次步驟少2倍log n (Binary Search<br>每次步驟多2倍2^n (遞迴Fibonacci  </p>
+<p>每次步驟少一半log n (Binary Search<br>每次步驟多2倍2^n (遞迴Fibonacci  </p>
 <h2 id="Search-Time-Complexity"><a href="#Search-Time-Complexity" class="headerlink" title="Search Time Complexity"></a>Search Time Complexity</h2><p>BFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(Vˆ2) # queue中每個點又接多個點    </p>
 <p>DFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(h) # recursive: 樹的層數<br>SC: O(Vˆ2) # stack中每個點又接多個點   </p>
 <h1 id="Strategy"><a href="#Strategy" class="headerlink" title="Strategy"></a>Strategy</h1><ul>
@@ -319,16 +319,16 @@
 <blockquote>
 <p>Linear Search: O(n)<br>Binary, Interpolation, Exponential Search: O(logn)  </p>
 </blockquote>
-<p>33.Search in Rotated Sorted Array <code>Binary Search</code><br>153.Find Minimum in Rotated Sorted Array <code>Binary Search</code><br>875.Koko Eating Bananas  <code>Binary Search</code><br>1060.Missing number in sorted array  <code>Binary Search</code>    </p>
+<p>33.Search in Rotated Sorted Array <code>Binary Search[return index]</code><br>153.Find Minimum in Rotated Sorted Array <code>Binary Search[return min]</code><br>875.Koko Eating Bananas  <code>Binary Search[return min speed]</code><br>1060.Missing number in sorted array  <code>Binary Search[return k-th missing number]</code>    </p>
 <h1 id="Recursion"><a href="#Recursion" class="headerlink" title="Recursion"></a>Recursion</h1><p>遞迴函式解決問題  </p>
-<p>100.Same Tree<br>203.Remove Linked List Elements: recursion<br>226.Invert Binary Tree<br>543.Diameter of Binary Tree<br>617.Merge Two Binary Trees  </p>
-<h1 id="Backtracking"><a href="#Backtracking" class="headerlink" title="Backtracking"></a>Backtracking</h1><p>回溯是種通用算法，遞迴枚舉多維度，遇到不正確維度則到下維度，用於尋找某些計算問題的所有（或部分）解決方案    </p>
-<p>46.Permutations<br>47.PermutationsII<br>77.Combinations<br>78.Subsets    </p>
+<p>100.Same Tree <code>Self.SameTree()</code><br>203.Remove Linked List Elements: recursion <code>head.next</code><br>226.Invert Binary Tree <code>if not root: return None</code><br>543.Diameter of Binary Tree <code>diameter = depth(root.left) + depth(root.right)</code><br>617.Merge Two Binary Trees  <code>merge to one tree</code>  </p>
+<h1 id="Backtracking"><a href="#Backtracking" class="headerlink" title="Backtracking"></a>Backtracking</h1><p>回溯是種通用算法，用於尋找某些計算問題的所有（或部分）解決方案，過程中使用遞迴，逐步構建解決方案的候選者，並在確定候選者不能導致有效解決方案時立即放棄候選者，所以比暴力法快    </p>
+<p>46.Permutations <code>backtrack(nums[:i] + nums[i+1:], path+[nums[i]]) </code><br>47.PermutationsII <code>backtrack([], Counter(nums))</code><br>77.Combinations <code>backtrack(remain-1,comb,i+1)</code><br>78.Subsets <code>backtrack(i + 1, curr)</code>    </p>
 <h1 id="DFS-BFS"><a href="#DFS-BFS" class="headerlink" title="DFS/BFS"></a>DFS/BFS</h1><ul>
 <li>Depth First Search<br>深度優先搜尋常用Stack實作，對樹狀結構特定形式的回溯  </li>
 <li>Breadth First Search<br>廣度優先搜尋常用Queue實作</li>
 </ul>
-<p>127.Word Ladder<br>323.Number of Connected Components<br>547.Number of Provinces  </p>
+<p>127.Word Ladder <code>BFS, collections.deque([beginWord])</code><br>323.Number of Connected Components <code>DFS, collections.defaultdict(list)</code><br>547.Number of Provinces <code>DFS, for city, edges in enumerate(isConnected)</code>  </p>
 <h1 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h1><p>類似回溯，但問題可以被分解為相似子問題，且有最優子結構(轉移方程式)</p>
 <h2 id="Fibonacci"><a href="#Fibonacci" class="headerlink" title="Fibonacci"></a>Fibonacci</h2><p>後項為前2項相加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def fib(n):</span><br><span class="line">	# f&#x3D; 1 # factorial</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]  # factorial: #f *&#x3D; i</span><br><span class="line">    return F[n] # factorial: return f</span><br></pre></td></tr></table></figure>
@@ -467,7 +467,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">173</span>
+          <span class="site-state-item-count">175</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -535,12 +535,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">169k</span>
+    <span title="Symbols count total">172k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:34</span>
+    <span title="Reading time total">2:36</span>
 </div>
 
         

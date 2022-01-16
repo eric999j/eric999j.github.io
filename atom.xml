@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-01-09T11:43:02.439Z</updated>
+  <updated>2022-01-16T10:02:51.326Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>食譜蘇胃餅乾</title>
+    <link href="https://eric999j.github.io/life/gastrointestinalCracker/"/>
+    <id>https://eric999j.github.io/life/gastrointestinalCracker/</id>
+    <published>2022-01-16T09:00:00.000Z</published>
+    <updated>2022-01-16T10:02:51.326Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lmWkPE3.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;喝咖啡吃甜食，又讓你胃食道逆流了嗎？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;沒錯，我們就是愛喝咖啡吃甜食啊:p&lt;br&gt;但痛起來實在不舒服，除了在一次發作時吃了蘇打餅乾獲得緩解，也想既然自己會烤餅乾，也知道了些&lt;a href=&quot;https://eric999j.github.io/life/baking/&quot;&gt;烘培&lt;/a&gt; 技巧，那我們為什麼不˜一開始就開歐洲車˜自己設計食譜呢？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
   
   <entry>
     <title>閱讀感想</title>
@@ -101,7 +124,7 @@
     <link href="https://eric999j.github.io/life/baking/"/>
     <id>https://eric999j.github.io/life/baking/</id>
     <published>2022-01-02T08:00:00.000Z</published>
-    <updated>2022-01-07T10:30:02.121Z</updated>
+    <updated>2022-01-09T15:35:42.418Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/xQY2r1m.jpg&quot;&gt;&lt;/p&gt;
@@ -394,26 +417,6 @@
     
     
     <category term="植栽" scheme="https://eric999j.github.io/tags/Planting/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wings</title>
-    <link href="https://eric999j.github.io/life/wings/"/>
-    <id>https://eric999j.github.io/life/wings/</id>
-    <published>2021-10-31T15:30:00.000Z</published>
-    <updated>2021-10-31T14:21:58.268Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;電台聽到這首旋律聽起來像羽毛一樣輕柔，但歌詞十分濃烈，覺得非常喜歡。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
