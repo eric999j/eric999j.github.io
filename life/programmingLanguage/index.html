@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-01-14T09:49:13.852Z">
+<meta property="article:modified_time" content="2022-01-22T15:46:15.463Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-14 17:49:13" itemprop="dateModified" datetime="2022-01-14T17:49:13+08:00">2022-01-14</time>
+                <time title="Modified: 2022-01-22 23:46:15" itemprop="dateModified" datetime="2022-01-22T23:46:15+08:00">2022-01-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>4.4k</span>
+              <span>4.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -298,7 +298,7 @@
 </blockquote>
 <p>208.Implement Trie (Prefix Tree): <code>TrieNode: children=&#123;&#125;; end</code><br>211.Design Add and Search Words data structure: <code>TrieNode; dfs</code>      </p>
 <h1 id="Slow-Fast-Pointer"><a href="#Slow-Fast-Pointer" class="headerlink" title="Slow Fast Pointer"></a>Slow Fast Pointer</h1><p>快慢指標常用來檢測串列是否有迴圈  </p>
-<p>141.Linked List Cycle: <code>if slow == fast</code><br>424.longest repeating character replacement: <code>defaultdict; sliding window</code>    </p>
+<p>141.Linked List Cycle: <code>if slow == fast</code><br>424.longest repeating character replacement: <code>defaultdict; sliding window</code><br>647.Palindromic Substring <code>s[l] == s[r]</code>  </p>
 <h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><p>針對陣列操作，常須in-place 或跟其他資料結構搭配  </p>
 <blockquote>
 <p>set用add; []用append, pop(0開頭/-1結尾)  </p>
@@ -331,14 +331,10 @@
 <p>127.Word Ladder <code>BFS, collections.deque([beginWord])</code><br>323.Number of Connected Components <code>DFS, collections.defaultdict(list)</code><br>547.Number of Provinces <code>DFS, for city, edges in enumerate(isConnected)</code>  </p>
 <h1 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h1><p>類似回溯，但問題可以被分解為相似子問題，且有最優子結構(轉移方程式)</p>
 <h2 id="Fibonacci"><a href="#Fibonacci" class="headerlink" title="Fibonacci"></a>Fibonacci</h2><p>後項為前2項相加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def fib(n):</span><br><span class="line">	# f&#x3D; 1 # factorial</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]  # factorial: #f *&#x3D; i</span><br><span class="line">    return F[n] # factorial: return f</span><br></pre></td></tr></table></figure>
-<p>53.Maximum Subarray<br>70.Climbing Stairs<br>198.House Robber<br>1553. Minimum number of Days to eat Oranges<br>1871. Jump Game VII  </p>
-<h2 id="LCS"><a href="#LCS" class="headerlink" title="LCS"></a>LCS</h2><p>兩字串最長共同子序列</p>
-<p>91.Decode Ways  </p>
-<h2 id="Palindrome"><a href="#Palindrome" class="headerlink" title="Palindrome"></a>Palindrome</h2><p>判斷字串是否回文</p>
-<p>647.Palindromic Substring  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">def factorial(n): # n!</span><br><span class="line">	f&#x3D; 1</span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    f *&#x3D; i</span><br><span class="line">   return f</span><br><span class="line">   </span><br><span class="line">def fibonacci(n):</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]</span><br><span class="line">   return F[n]</span><br><span class="line">   </span><br><span class="line">Kadane’s Algorithm  </span><br><span class="line">def max_slice(A):</span><br><span class="line">    max_ending_here &#x3D; max_so_far &#x3D; 0</span><br><span class="line">    for a in A:</span><br><span class="line">        max_ending_here &#x3D; max(0, max_ending_here + a)</span><br><span class="line">        max_so_far &#x3D; max(max_so_far, max_ending_here)</span><br><span class="line"></span><br><span class="line">    return max_so_far</span><br></pre></td></tr></table></figure>
+<p>53.Maximum Subarray <code>Kadane&#39;s algorithm</code><br>70.Climbing Stairs <code>Fibonacci: F[0], F[1], F[2] = 0,1,2</code><br>198.House Robber <code>except the last one, nums[:i-1]</code><br>1553.Minimum number of Days to eat Oranges <code>1 + min(n%2 + count(n//2), n%3 + count(n//3))</code><br>1871.Jump Game VII  <code>dp[i+1-minJ]-dp[i-maxJ]*(i&gt;=maxJ)</code><br>91.Decode Ways  <code>dp[i] = dp[i-1], dp[i] += dp[i-2]</code>  </p>
 <h2 id="ZeroOne-Knapsack"><a href="#ZeroOne-Knapsack" class="headerlink" title="ZeroOne Knapsack"></a>ZeroOne Knapsack</h2><p>每商品有重量跟價值，每商品只能取一次，在不超過限定重量下得到最大價值  </p>
-<p>62.Unique Paths<br>63.Unique Paths II<br>64.Minimum Path Sum<br>121.Best Time to Buy and Sell Stock<br>256.Paint House<br>1423.Maximum Points You Can Obtain from Cards  </p>
+<p>62.Unique Paths <code>dp[i][j]=dp[i-1][j]+dp[i][j-1]</code><br>63.Unique Paths II<br>64.Minimum Path Sum<br>121.Best Time to Buy and Sell Stock<br>256.Paint House<br>1423.Maximum Points You Can Obtain from Cards  </p>
 <h2 id="Unbound-Knapsack"><a href="#Unbound-Knapsack" class="headerlink" title="Unbound Knapsack"></a>Unbound Knapsack</h2><p>其他條件跟ZeroOne一樣，但每商品可以取無限次  </p>
 <p>39.Combination Sum<br>139.Word Break<br>322.Coin Change<br>518.Coin Change II  </p>
 
@@ -449,7 +445,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic"><span class="nav-number">1.</span> <span class="nav-text">Basic</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Big-O"><span class="nav-number">2.</span> <span class="nav-text">Big O</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Search-Time-Complexity"><span class="nav-number">2.1.</span> <span class="nav-text">Search Time Complexity</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Strategy"><span class="nav-number">3.</span> <span class="nav-text">Strategy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Detail"><span class="nav-number">3.1.</span> <span class="nav-text">Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#In-place"><span class="nav-number">4.</span> <span class="nav-text">In-place</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object-Oriented"><span class="nav-number">5.</span> <span class="nav-text">Object Oriented</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Slow-Fast-Pointer"><span class="nav-number">6.</span> <span class="nav-text">Slow Fast Pointer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">7.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Bit-Manipulation"><span class="nav-number">8.</span> <span class="nav-text">Bit Manipulation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Heap"><span class="nav-number">9.</span> <span class="nav-text">Heap</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sorting"><span class="nav-number">10.</span> <span class="nav-text">Sorting</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Searching"><span class="nav-number">11.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Recursion"><span class="nav-number">12.</span> <span class="nav-text">Recursion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Backtracking"><span class="nav-number">13.</span> <span class="nav-text">Backtracking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DFS-BFS"><span class="nav-number">14.</span> <span class="nav-text">DFS&#x2F;BFS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">15.</span> <span class="nav-text">Dynamic Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fibonacci"><span class="nav-number">15.1.</span> <span class="nav-text">Fibonacci</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LCS"><span class="nav-number">15.2.</span> <span class="nav-text">LCS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Palindrome"><span class="nav-number">15.3.</span> <span class="nav-text">Palindrome</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ZeroOne-Knapsack"><span class="nav-number">15.4.</span> <span class="nav-text">ZeroOne Knapsack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unbound-Knapsack"><span class="nav-number">15.5.</span> <span class="nav-text">Unbound Knapsack</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic"><span class="nav-number">1.</span> <span class="nav-text">Basic</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Big-O"><span class="nav-number">2.</span> <span class="nav-text">Big O</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Search-Time-Complexity"><span class="nav-number">2.1.</span> <span class="nav-text">Search Time Complexity</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Strategy"><span class="nav-number">3.</span> <span class="nav-text">Strategy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Detail"><span class="nav-number">3.1.</span> <span class="nav-text">Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#In-place"><span class="nav-number">4.</span> <span class="nav-text">In-place</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object-Oriented"><span class="nav-number">5.</span> <span class="nav-text">Object Oriented</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Slow-Fast-Pointer"><span class="nav-number">6.</span> <span class="nav-text">Slow Fast Pointer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">7.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Bit-Manipulation"><span class="nav-number">8.</span> <span class="nav-text">Bit Manipulation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Heap"><span class="nav-number">9.</span> <span class="nav-text">Heap</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sorting"><span class="nav-number">10.</span> <span class="nav-text">Sorting</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Searching"><span class="nav-number">11.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Recursion"><span class="nav-number">12.</span> <span class="nav-text">Recursion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Backtracking"><span class="nav-number">13.</span> <span class="nav-text">Backtracking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DFS-BFS"><span class="nav-number">14.</span> <span class="nav-text">DFS&#x2F;BFS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">15.</span> <span class="nav-text">Dynamic Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fibonacci"><span class="nav-number">15.1.</span> <span class="nav-text">Fibonacci</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ZeroOne-Knapsack"><span class="nav-number">15.2.</span> <span class="nav-text">ZeroOne Knapsack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unbound-Knapsack"><span class="nav-number">15.3.</span> <span class="nav-text">Unbound Knapsack</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -467,7 +463,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">175</span>
+          <span class="site-state-item-count">177</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -535,12 +531,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">172k</span>
+    <span title="Symbols count total">173k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:36</span>
+    <span title="Reading time total">2:37</span>
 </div>
 
         
