@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-01-22T15:46:15.463Z">
+<meta property="article:modified_time" content="2022-01-28T17:12:23.880Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-22 23:46:15" itemprop="dateModified" datetime="2022-01-22T23:46:15+08:00">2022-01-22</time>
+                <time title="Modified: 2022-01-29 01:12:23" itemprop="dateModified" datetime="2022-01-29T01:12:23+08:00">2022-01-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,14 +235,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>4.8k</span>
+              <span>5.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>4 mins.</span>
+              <span>5 mins.</span>
             </span>
 
         </div>
@@ -303,7 +303,7 @@
 <blockquote>
 <p>set用add; []用append, pop(0開頭/-1結尾)  </p>
 </blockquote>
-<p>1.Two Sum: <code>&#123;value:keys&#125;</code><br>48.Rotate Image: <code>*, [::-1], zip</code><br>54.Spiral Matrix: <code>pop(0), pop(-1), pop(-1)[::-1], pop(0)[::-1]</code><br>122.Best Time to Buy and Sell Stock II: <code>greedy</code><br>234.Palindrome Linked List: <code>[::-1]</code><br>206.Reverse Linked List: <code>recursive</code><br>252.Meeting Rooms <code>intervals[i][0]</code><br>287.Find the Duplicate Number <code>set()</code><br>844.Backspace String Compare <code>pop()</code><br>977.Squares of a Sorted Array <code>*=, sort()</code><br>1046.Last Stone Weight  <code>sort(), pop()</code>  </p>
+<p>1.Two Sum: <code>&#123;value:keys&#125;</code><br>48.Rotate Image: <code>*, [::-1], zip</code><br>54.Spiral Matrix: <code>pop(0), pop(-1), pop(-1)[::-1], pop(0)[::-1]</code><br>122.Best Time to Buy and Sell Stock II: <code>greedy</code><br>234.Palindrome Linked List: <code>[::-1]</code><br>206.Reverse Linked List: <code>recursive</code><br>252.Meeting Rooms <code>intervals[i][0]</code><br>287.Find the Duplicate Number <code>set()</code><br>844.Backspace String Compare <code>pop()</code><br>977.Squares of a Sorted Array <code>*=, sort()</code><br>1046.Last Stone Weight  <code>sort(), pop()</code><br>256.Paint House <code>red=min(blue, green) + r 或用dp, dp[i][j] += min(dp[i - 1][(j + 1) % 3], dp[i - 1][(j + 2) % 3])</code><br>1423.Maximum Points You Can Obtain from Cards <code>current_pick += (cardPoints[right] - cardPoints[left])</code> </p>
 <h1 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h1><p>將數字轉bit處理  </p>
 <p>7.Reverse Integer  <code>32 bit int = -2ˆ31 to 2ˆ31-1, check after reverse</code><br>136.Single Number <code>0 XOR</code><br>338.Counting Bits <code>bin</code>  </p>
 <h1 id="Heap"><a href="#Heap" class="headerlink" title="Heap"></a>Heap</h1><p>常用來找最大最小值，heappop由小到大    </p>
@@ -332,11 +332,11 @@
 <h1 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h1><p>類似回溯，但問題可以被分解為相似子問題，且有最優子結構(轉移方程式)</p>
 <h2 id="Fibonacci"><a href="#Fibonacci" class="headerlink" title="Fibonacci"></a>Fibonacci</h2><p>後項為前2項相加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">def factorial(n): # n!</span><br><span class="line">	f&#x3D; 1</span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    f *&#x3D; i</span><br><span class="line">   return f</span><br><span class="line">   </span><br><span class="line">def fibonacci(n):</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]</span><br><span class="line">   return F[n]</span><br><span class="line">   </span><br><span class="line">Kadane’s Algorithm  </span><br><span class="line">def max_slice(A):</span><br><span class="line">    max_ending_here &#x3D; max_so_far &#x3D; 0</span><br><span class="line">    for a in A:</span><br><span class="line">        max_ending_here &#x3D; max(0, max_ending_here + a)</span><br><span class="line">        max_so_far &#x3D; max(max_so_far, max_ending_here)</span><br><span class="line"></span><br><span class="line">    return max_so_far</span><br></pre></td></tr></table></figure>
-<p>53.Maximum Subarray <code>Kadane&#39;s algorithm</code><br>70.Climbing Stairs <code>Fibonacci: F[0], F[1], F[2] = 0,1,2</code><br>198.House Robber <code>except the last one, nums[:i-1]</code><br>1553.Minimum number of Days to eat Oranges <code>1 + min(n%2 + count(n//2), n%3 + count(n//3))</code><br>1871.Jump Game VII  <code>dp[i+1-minJ]-dp[i-maxJ]*(i&gt;=maxJ)</code><br>91.Decode Ways  <code>dp[i] = dp[i-1], dp[i] += dp[i-2]</code>  </p>
+<p>53.Maximum Subarray <code>Kadane&#39;s algorithm</code><br>121.Best Time to Buy and Sell Stock <code>Kadane&#39;s algorithm</code><br>70.Climbing Stairs <code>Fibonacci: F[0], F[1], F[2] = 0,1,2</code><br>198.House Robber <code>except the last one, nums[:i-1]</code><br>1553.Minimum number of Days to eat Oranges <code>1 + min(n%2 + count(n//2), n%3 + count(n//3))</code><br>1871.Jump Game VII  <code>dp[i+1-minJ]-dp[i-maxJ]*(i&gt;=maxJ)</code><br>91.Decode Ways  <code>dp[i] = dp[i-1], dp[i] += dp[i-2]</code>  </p>
 <h2 id="ZeroOne-Knapsack"><a href="#ZeroOne-Knapsack" class="headerlink" title="ZeroOne Knapsack"></a>ZeroOne Knapsack</h2><p>每商品有重量跟價值，每商品只能取一次，在不超過限定重量下得到最大價值  </p>
-<p>62.Unique Paths <code>dp[i][j]=dp[i-1][j]+dp[i][j-1]</code><br>63.Unique Paths II<br>64.Minimum Path Sum<br>121.Best Time to Buy and Sell Stock<br>256.Paint House<br>1423.Maximum Points You Can Obtain from Cards  </p>
+<p>62.Unique Paths <code>dp[i][j]=dp[i-1][j]+dp[i][j-1]</code><br>63.Unique Paths II <code>dp[i][j]=dp[i-1][j]+dp[i][j-1]</code><br>64.Minimum Path Sum  <code>grid[r][c] += min(grid[r - 1][c], grid[r][c - 1])</code>    </p>
 <h2 id="Unbound-Knapsack"><a href="#Unbound-Knapsack" class="headerlink" title="Unbound Knapsack"></a>Unbound Knapsack</h2><p>其他條件跟ZeroOne一樣，但每商品可以取無限次  </p>
-<p>39.Combination Sum<br>139.Word Break<br>322.Coin Change<br>518.Coin Change II  </p>
+<p>39.Combination Sum <code>for comb in dp[i-c]: dp[i].append(comb + [c])</code><br>139.Word Break <code>if dp[indx - len(word)] and s[:indx].endswith(word):</code><br>322.Coin Change <code>dp[i] = min(dp[i], 1 + dp[i-coins[j]])</code><br>518.Coin Change II  <code>dp[i] = dp[i] + dp[i-coin]</code></p>
 
 <div>
     <hr>
@@ -463,7 +463,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">178</span>
+          <span class="site-state-item-count">181</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -531,12 +531,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">173k</span>
+    <span title="Symbols count total">175k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:37</span>
+    <span title="Reading time total">2:39</span>
 </div>
 
         
