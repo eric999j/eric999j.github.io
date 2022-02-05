@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-01-28T17:12:23.880Z">
+<meta property="article:modified_time" content="2022-02-02T09:36:02.777Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-29 01:12:23" itemprop="dateModified" datetime="2022-01-29T01:12:23+08:00">2022-01-29</time>
+                <time title="Modified: 2022-02-02 17:36:02" itemprop="dateModified" datetime="2022-02-02T17:36:02+08:00">2022-02-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.2k</span>
+              <span>5.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -291,36 +291,43 @@
 <li>Map/Set for O(1) time &amp; O(n) space </li>
 </ul>
 <h1 id="In-place"><a href="#In-place" class="headerlink" title="In-place"></a>In-place</h1><p>在不用多餘空間前提下操作原陣列取得結果  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a,b &#x3D; b,a</span><br></pre></td></tr></table></figure>
+
 <p>189.Rotate Array: <code>%; a,b=b,a</code><br>206.Reverse Linked List: <code>head.next; reverse; return</code>   </p>
 <h1 id="Object-Oriented"><a href="#Object-Oriented" class="headerlink" title="Object Oriented"></a>Object Oriented</h1><p>定義物件成員與方法，有封裝，繼承，多型等特性  </p>
-<blockquote>
-<p>Trie  </p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class TrieNode:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.children &#x3D; &#123;&#125;</span><br><span class="line">        self.isEnd &#x3D; False</span><br><span class="line">class Trie:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.root &#x3D; TrieNode()</span><br></pre></td></tr></table></figure>
+
 <p>208.Implement Trie (Prefix Tree): <code>TrieNode: children=&#123;&#125;; end</code><br>211.Design Add and Search Words data structure: <code>TrieNode; dfs</code>      </p>
 <h1 id="Slow-Fast-Pointer"><a href="#Slow-Fast-Pointer" class="headerlink" title="Slow Fast Pointer"></a>Slow Fast Pointer</h1><p>快慢指標常用來檢測串列是否有迴圈  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">slow &#x3D; slow.next</span><br><span class="line">fast &#x3D; fast.next.next</span><br></pre></td></tr></table></figure>
+
 <p>141.Linked List Cycle: <code>if slow == fast</code><br>424.longest repeating character replacement: <code>defaultdict; sliding window</code><br>647.Palindromic Substring <code>s[l] == s[r]</code>  </p>
 <h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><p>針對陣列操作，常須in-place 或跟其他資料結構搭配  </p>
-<blockquote>
-<p>set用add; []用append, pop(0開頭/-1結尾)  </p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set用add; []用append, pop(0開頭&#x2F;-1結尾)  </span><br></pre></td></tr></table></figure>
+
 <p>1.Two Sum: <code>&#123;value:keys&#125;</code><br>48.Rotate Image: <code>*, [::-1], zip</code><br>54.Spiral Matrix: <code>pop(0), pop(-1), pop(-1)[::-1], pop(0)[::-1]</code><br>122.Best Time to Buy and Sell Stock II: <code>greedy</code><br>234.Palindrome Linked List: <code>[::-1]</code><br>206.Reverse Linked List: <code>recursive</code><br>252.Meeting Rooms <code>intervals[i][0]</code><br>287.Find the Duplicate Number <code>set()</code><br>844.Backspace String Compare <code>pop()</code><br>977.Squares of a Sorted Array <code>*=, sort()</code><br>1046.Last Stone Weight  <code>sort(), pop()</code><br>256.Paint House <code>red=min(blue, green) + r 或用dp, dp[i][j] += min(dp[i - 1][(j + 1) % 3], dp[i - 1][(j + 2) % 3])</code><br>1423.Maximum Points You Can Obtain from Cards <code>current_pick += (cardPoints[right] - cardPoints[left])</code> </p>
 <h1 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h1><p>將數字轉bit處理  </p>
-<p>7.Reverse Integer  <code>32 bit int = -2ˆ31 to 2ˆ31-1, check after reverse</code><br>136.Single Number <code>0 XOR</code><br>338.Counting Bits <code>bin</code>  </p>
-<h1 id="Heap"><a href="#Heap" class="headerlink" title="Heap"></a>Heap</h1><p>常用來找最大最小值，heappop由小到大    </p>
-<blockquote>
-<p>heapq.heapify(array)<br>heapq.heappop(array) </p>
-</blockquote>
+<p>7.Reverse Integer  <code>32 bit int = -2ˆ31 to 2ˆ31-1, check after reverse</code><br>136.Single Number <code>0 XOR</code><br>338.Counting Bits <code>bin()</code>  </p>
+<h1 id="Heap"><a href="#Heap" class="headerlink" title="Heap"></a>Heap</h1><p>常用來找最大最小值，heappop由小到大  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">heapq.heapify(array)  </span><br><span class="line">heapq.heappop(array) </span><br></pre></td></tr></table></figure>
+
 <p>846.Hand of Straights <code>Counter(list)</code><br>253.Meeting Rooms II <code>heap[0] &lt;= it[0]: pop heap(0)</code>  </p>
 <h1 id="Sorting"><a href="#Sorting" class="headerlink" title="Sorting"></a>Sorting</h1><p>對列表可以順序或倒序排列  </p>
 <blockquote>
-<p>Sort input for O(nlogn) time and O(1) space<br>Quick, Merge, Heap, Topological Sorting: O(nlogn)<br>b=sorted(a), a.sort(), .sort(reverse=True)  </p>
+<p>Sort input for O(nlogn) time and O(1) space<br>Quick, Merge, Heap, Topological Sorting: O(nlogn)  </p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b&#x3D;sorted(a), a.sort(), .sort(reverse&#x3D;True)  </span><br></pre></td></tr></table></figure>
+
 <h1 id="Searching"><a href="#Searching" class="headerlink" title="Searching"></a>Searching</h1><p>搜尋一般會先Sorting，二分搜尋先訂左右介，再不斷於子集找中間floor/ceil      </p>
 <blockquote>
 <p>Linear Search: O(n)<br>Binary, Interpolation, Exponential Search: O(logn)  </p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">left &#x3D; 0</span><br><span class="line">right &#x3D; len(nums)-1</span><br><span class="line">        </span><br><span class="line">while left&lt;&#x3D; right:</span><br><span class="line">    mid &#x3D; (right+left)&#x2F;&#x2F;2</span><br></pre></td></tr></table></figure>
+
 <p>33.Search in Rotated Sorted Array <code>Binary Search[return index]</code><br>153.Find Minimum in Rotated Sorted Array <code>Binary Search[return min]</code><br>875.Koko Eating Bananas  <code>Binary Search[return min speed]</code><br>1060.Missing number in sorted array  <code>Binary Search[return k-th missing number]</code>    </p>
 <h1 id="Recursion"><a href="#Recursion" class="headerlink" title="Recursion"></a>Recursion</h1><p>遞迴函式解決問題  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return self.question()</span><br></pre></td></tr></table></figure>
+
 <p>100.Same Tree <code>Self.SameTree()</code><br>203.Remove Linked List Elements: recursion <code>head.next</code><br>226.Invert Binary Tree <code>if not root: return None</code><br>543.Diameter of Binary Tree <code>diameter = depth(root.left) + depth(root.right)</code><br>617.Merge Two Binary Trees  <code>merge to one tree</code>  </p>
 <h1 id="Backtracking"><a href="#Backtracking" class="headerlink" title="Backtracking"></a>Backtracking</h1><p>回溯是種通用算法，用於尋找某些計算問題的所有（或部分）解決方案，過程中使用遞迴，逐步構建解決方案的候選者，並在確定候選者不能導致有效解決方案時立即放棄候選者，所以比暴力法快    </p>
 <p>46.Permutations <code>backtrack(nums[:i] + nums[i+1:], path+[nums[i]]) </code><br>47.PermutationsII <code>backtrack([], Counter(nums))</code><br>77.Combinations <code>backtrack(remain-1,comb,i+1)</code><br>78.Subsets <code>backtrack(i + 1, curr)</code>    </p>
@@ -463,7 +470,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">181</span>
+          <span class="site-state-item-count">182</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -531,12 +538,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">175k</span>
+    <span title="Symbols count total">176k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:39</span>
+    <span title="Reading time total">2:40</span>
 </div>
 
         

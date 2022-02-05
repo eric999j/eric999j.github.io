@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/life/clashRoyale/</loc>
+    
+    <lastmod>2022-02-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/programmingLanguage/</loc>
+    
+    <lastmod>2022-02-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/fertilizer/</loc>
+    
+    <lastmod>2022-02-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/manager/JellyandHyde/</loc>
     
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/about/index.html</loc>
+    
+    <lastmod>2022-02-02</lastmod>
     
   </url>
   
@@ -19,13 +47,6 @@
     <loc>https://eric999j.github.io/life/damper/</loc>
     
     <lastmod>2022-01-30</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/life/programmingLanguage/</loc>
-    
-    <lastmod>2022-01-28</lastmod>
     
   </url>
   
@@ -306,13 +327,6 @@
     <loc>https://eric999j.github.io/life/basic/</loc>
     
     <lastmod>2021-11-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/life/fertilizer/</loc>
-    
-    <lastmod>2021-11-21</lastmod>
     
   </url>
   
@@ -780,13 +794,6 @@
   
   <url>
     <loc>https://eric999j.github.io/interview/5/</loc>
-    
-    <lastmod>2021-03-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/about/index.html</loc>
     
     <lastmod>2021-03-27</lastmod>
     
@@ -1299,7 +1306,7 @@
 
   <url>
     <loc>https://eric999j.github.io/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1307,70 +1314,70 @@
   
   <url>
     <loc>https://eric999j.github.io/tags/Instrument/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/AwesomeThings/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/LeetCode/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Planting/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Diet/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Music/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Workout/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/TechnicalWriting/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Linguistic/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Past/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1379,28 +1386,28 @@
   
   <url>
     <loc>https://eric999j.github.io/categories/manager/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/engineer/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/interview/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/life/</loc>
-    <lastmod>2022-01-30</lastmod>
+    <lastmod>2022-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
