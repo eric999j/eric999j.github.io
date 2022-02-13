@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-02-02T09:36:02.777Z">
+<meta property="article:modified_time" content="2022-02-12T09:27:34.933Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-02 17:36:02" itemprop="dateModified" datetime="2022-02-02T17:36:02+08:00">2022-02-02</time>
+                <time title="Modified: 2022-02-12 17:27:34" itemprop="dateModified" datetime="2022-02-12T17:27:34+08:00">2022-02-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.5k</span>
+              <span>5.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -322,7 +322,7 @@
 <blockquote>
 <p>Linear Search: O(n)<br>Binary, Interpolation, Exponential Search: O(logn)  </p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">left &#x3D; 0</span><br><span class="line">right &#x3D; len(nums)-1</span><br><span class="line">        </span><br><span class="line">while left&lt;&#x3D; right:</span><br><span class="line">    mid &#x3D; (right+left)&#x2F;&#x2F;2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># Binary Search: O(log n)</span><br><span class="line">def search(nums: list[int], target: int):</span><br><span class="line">    if target not in nums: return -1</span><br><span class="line">    </span><br><span class="line">    left, right &#x3D; 0, len(nums) -1</span><br><span class="line">    i &#x3D; 1</span><br><span class="line"></span><br><span class="line">    while left &lt;&#x3D; right:</span><br><span class="line">        mid &#x3D; (left + right)&#x2F;&#x2F;2</span><br><span class="line">        print(&quot;run &quot;+str(i)+&quot; times&quot;)</span><br><span class="line">        i +&#x3D; 1</span><br><span class="line">        </span><br><span class="line">        if nums[mid] &#x3D;&#x3D; target:</span><br><span class="line">            return &quot;found: &quot;+ str(nums[mid])</span><br><span class="line"> </span><br><span class="line">        if nums[mid] &lt;target:</span><br><span class="line">            left &#x3D; mid +1</span><br><span class="line">        else:</span><br><span class="line">            right &#x3D; mid -1</span><br><span class="line"></span><br><span class="line">    return -1</span><br></pre></td></tr></table></figure>
 
 <p>33.Search in Rotated Sorted Array <code>Binary Search[return index]</code><br>153.Find Minimum in Rotated Sorted Array <code>Binary Search[return min]</code><br>875.Koko Eating Bananas  <code>Binary Search[return min speed]</code><br>1060.Missing number in sorted array  <code>Binary Search[return k-th missing number]</code>    </p>
 <h1 id="Recursion"><a href="#Recursion" class="headerlink" title="Recursion"></a>Recursion</h1><p>遞迴函式解決問題  </p>
@@ -338,7 +338,7 @@
 <p>127.Word Ladder <code>BFS, collections.deque([beginWord])</code><br>323.Number of Connected Components <code>DFS, collections.defaultdict(list)</code><br>547.Number of Provinces <code>DFS, for city, edges in enumerate(isConnected)</code>  </p>
 <h1 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h1><p>類似回溯，但問題可以被分解為相似子問題，且有最優子結構(轉移方程式)</p>
 <h2 id="Fibonacci"><a href="#Fibonacci" class="headerlink" title="Fibonacci"></a>Fibonacci</h2><p>後項為前2項相加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">def factorial(n): # n!</span><br><span class="line">	f&#x3D; 1</span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    f *&#x3D; i</span><br><span class="line">   return f</span><br><span class="line">   </span><br><span class="line">def fibonacci(n):</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]</span><br><span class="line">   return F[n]</span><br><span class="line">   </span><br><span class="line">Kadane’s Algorithm  </span><br><span class="line">def max_slice(A):</span><br><span class="line">    max_ending_here &#x3D; max_so_far &#x3D; 0</span><br><span class="line">    for a in A:</span><br><span class="line">        max_ending_here &#x3D; max(0, max_ending_here + a)</span><br><span class="line">        max_so_far &#x3D; max(max_so_far, max_ending_here)</span><br><span class="line"></span><br><span class="line">    return max_so_far</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">def factorial(n): # n!</span><br><span class="line">	f&#x3D; 1</span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    f *&#x3D; i</span><br><span class="line">   return f</span><br><span class="line">   </span><br><span class="line">def fibonacci(n):</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]</span><br><span class="line">   return F[n]</span><br><span class="line">   </span><br><span class="line">Kadane’s Algorithm  </span><br><span class="line">def maximumSubarraySum(arr):</span><br><span class="line">    maxSum &#x3D; -1e8</span><br><span class="line">    currSum &#x3D; 0</span><br><span class="line"></span><br><span class="line">    for i in range(len(arr)):</span><br><span class="line">        currSum &#x3D; max(0, currSum + arr[i])</span><br><span class="line">        maxSum &#x3D; max(maxSum, currSum)</span><br><span class="line">    return maxSum</span><br></pre></td></tr></table></figure>
 <p>53.Maximum Subarray <code>Kadane&#39;s algorithm</code><br>121.Best Time to Buy and Sell Stock <code>Kadane&#39;s algorithm</code><br>70.Climbing Stairs <code>Fibonacci: F[0], F[1], F[2] = 0,1,2</code><br>198.House Robber <code>except the last one, nums[:i-1]</code><br>1553.Minimum number of Days to eat Oranges <code>1 + min(n%2 + count(n//2), n%3 + count(n//3))</code><br>1871.Jump Game VII  <code>dp[i+1-minJ]-dp[i-maxJ]*(i&gt;=maxJ)</code><br>91.Decode Ways  <code>dp[i] = dp[i-1], dp[i] += dp[i-2]</code>  </p>
 <h2 id="ZeroOne-Knapsack"><a href="#ZeroOne-Knapsack" class="headerlink" title="ZeroOne Knapsack"></a>ZeroOne Knapsack</h2><p>每商品有重量跟價值，每商品只能取一次，在不超過限定重量下得到最大價值  </p>
 <p>62.Unique Paths <code>dp[i][j]=dp[i-1][j]+dp[i][j-1]</code><br>63.Unique Paths II <code>dp[i][j]=dp[i-1][j]+dp[i][j-1]</code><br>64.Minimum Path Sum  <code>grid[r][c] += min(grid[r - 1][c], grid[r][c - 1])</code>    </p>
@@ -470,7 +470,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">182</span>
+          <span class="site-state-item-count">184</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -538,12 +538,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">176k</span>
+    <span title="Symbols count total">179k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:40</span>
+    <span title="Reading time total">2:43</span>
 </div>
 
         
