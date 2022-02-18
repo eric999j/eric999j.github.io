@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-02-13T08:22:16.427Z</updated>
+  <updated>2022-02-18T09:43:02.502Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>食譜黑糖饅頭</title>
+    <link href="https://eric999j.github.io/life/steamedBread/"/>
+    <id>https://eric999j.github.io/life/steamedBread/</id>
+    <published>2022-02-18T09:00:00.000Z</published>
+    <updated>2022-02-18T09:43:02.502Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/gz5K1Fj.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;小蘇打遇酸的中和反應上次&lt;a href=&quot;https://eric999j.github.io/life/gastrointestinalCracker/&quot;&gt;蘇胃餅乾&lt;/a&gt;介紹過了，本篇我們會談到更複雜的&lt;del&gt;堂姐&lt;/del&gt;糖解作用。  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
   
   <entry>
     <title>食譜肉桂捲</title>
@@ -41,7 +61,7 @@
     <link href="https://eric999j.github.io/manager/InnoceneAge/"/>
     <id>https://eric999j.github.io/manager/InnoceneAge/</id>
     <published>2022-02-13T08:00:00.000Z</published>
-    <updated>2022-02-10T09:37:32.897Z</updated>
+    <updated>2022-02-13T08:50:28.573Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/hiZvXst.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -182,7 +202,7 @@
     <link href="https://eric999j.github.io/life/gastrointestinalCracker/"/>
     <id>https://eric999j.github.io/life/gastrointestinalCracker/</id>
     <published>2022-01-16T09:00:00.000Z</published>
-    <updated>2022-01-17T15:39:58.422Z</updated>
+    <updated>2022-02-18T09:03:21.618Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lmWkPE3.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -397,26 +417,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>超譯卡夫卡變形記</title>
-    <link href="https://eric999j.github.io/manager/exist/"/>
-    <id>https://eric999j.github.io/manager/exist/</id>
-    <published>2021-12-05T15:30:00.000Z</published>
-    <updated>2021-12-05T15:53:16.592Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;故事像一個預言，一場夢或達利的畫般超現實，卻又如此貼近生活，變成蟲的設定其實是主角想逃離現實的映射。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   

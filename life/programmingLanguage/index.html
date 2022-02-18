@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-02-13T08:04:11.905Z">
+<meta property="article:modified_time" content="2022-02-15T10:03:34.038Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-13 16:04:11" itemprop="dateModified" datetime="2022-02-13T16:04:11+08:00">2022-02-13</time>
+                <time title="Modified: 2022-02-15 18:03:34" itemprop="dateModified" datetime="2022-02-15T18:03:34+08:00">2022-02-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.8k</span>
+              <span>5.9k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -266,7 +266,7 @@
 <h1 id="Big-O"><a href="#Big-O" class="headerlink" title="Big O"></a>Big O</h1><img src="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 
 <p>完成某事需要多久時間，一般來說nˆ2程式效能就很糟了</p>
-<p>O(1): Constant, hashmap, queue的pop<br>O(logn): Logarithm遞迴，每次步驟砍半, Binary Search<br>O(n): (List, queue, stack的pop(idx)), BFS, DFS<br>O(nlogn): Sub- quadratic, Quick/Merge/Heap Sort<br>O(nˆ2): Quadratic 二次方 two layer for loop<br>O(nˆ3): Cubic<br>O(2ˆn): Exponential 遞迴，每次步驟倍增，遞迴Fibonacci<br>O(n!): Factorial  </p>
+<p>O(1): Constant, hashmap, queue的pop<br>O(logn): Logarithm遞迴，每次步驟砍半, Binary Search<br>O(n): [List, queue, stack的pop(idx)], BFS, DFS<br>O(nlogn): Sub- quadratic, Quick/Merge/Heap Sort<br>O(nˆ2): Quadratic 二次方 two layer for loop<br>O(nˆ3): Cubic<br>O(2ˆn): Exponential 遞迴，每次步驟倍增，遞迴Fibonacci<br>O(n!): Factorial  </p>
 <p>每次步驟少一半log n (Binary Search<br>每次步驟多2倍2^n (遞迴Fibonacci  </p>
 <h2 id="Search-Time-Complexity"><a href="#Search-Time-Complexity" class="headerlink" title="Search Time Complexity"></a>Search Time Complexity</h2><p>BFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(Vˆ2) # queue中每個點又接多個點    </p>
 <p>DFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(h) # recursive: 樹的層數<br>SC: O(Vˆ2) # stack中每個點又接多個點   </p>
@@ -290,6 +290,11 @@
 <li>要common strings：Map, Trie </li>
 <li>Map/Set for O(1) time &amp; O(n) space </li>
 </ul>
+<h1 id="Step"><a href="#Step" class="headerlink" title="Step"></a>Step</h1><ol>
+<li>理解</li>
+<li>畫思路</li>
+<li>寫程式</li>
+</ol>
 <h1 id="In-place"><a href="#In-place" class="headerlink" title="In-place"></a>In-place</h1><p>在不用多餘空間前提下操作原陣列取得結果  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a,b &#x3D; b,a</span><br></pre></td></tr></table></figure>
 
@@ -335,7 +340,7 @@
 <li>Depth First Search<br>深度優先搜尋常用Stack實作，對樹狀結構特定形式的回溯  </li>
 <li>Breadth First Search<br>廣度優先搜尋常用Queue實作</li>
 </ul>
-<p>127.Word Ladder <code>BFS, collections.deque([beginWord])</code><br>323.Number of Connected Components <code>DFS, collections.defaultdict(list)</code><br>547.Number of Provinces <code>DFS, for city, edges in enumerate(isConnected)</code>  </p>
+<p>127.Word Ladder <code>BFS, collections.deque([beginWord])</code><br>323.Number of Connected Components <code>DFS, collections.defaultdict(list)</code><br>547.Number of Provinces <code>DFS, for city, edges in enumerate(isConnected)</code><br>695.Max Area of Island <code>DFS, </code></p>
 <h1 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h1><p>類似回溯，但問題可以被分解為相似子問題，且有最優子結構(轉移方程式)</p>
 <h2 id="Fibonacci"><a href="#Fibonacci" class="headerlink" title="Fibonacci"></a>Fibonacci</h2><p>後項為前2項相加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">def factorial(n): # n!</span><br><span class="line">	f&#x3D; 1</span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    f *&#x3D; i</span><br><span class="line">   return f</span><br><span class="line">   </span><br><span class="line">def fibonacci(n):</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]</span><br><span class="line">   return F[n]</span><br><span class="line">   </span><br><span class="line">Kadane’s Algorithm  </span><br><span class="line">def maximumSubarraySum(arr):</span><br><span class="line">    maxSum &#x3D; -1e8</span><br><span class="line">    currSum &#x3D; 0</span><br><span class="line"></span><br><span class="line">    for i in range(len(arr)):</span><br><span class="line">        currSum &#x3D; max(0, currSum + arr[i])</span><br><span class="line">        maxSum &#x3D; max(maxSum, currSum)</span><br><span class="line">    return maxSum</span><br></pre></td></tr></table></figure>
@@ -452,7 +457,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic"><span class="nav-number">1.</span> <span class="nav-text">Basic</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Big-O"><span class="nav-number">2.</span> <span class="nav-text">Big O</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Search-Time-Complexity"><span class="nav-number">2.1.</span> <span class="nav-text">Search Time Complexity</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Strategy"><span class="nav-number">3.</span> <span class="nav-text">Strategy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Detail"><span class="nav-number">3.1.</span> <span class="nav-text">Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#In-place"><span class="nav-number">4.</span> <span class="nav-text">In-place</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object-Oriented"><span class="nav-number">5.</span> <span class="nav-text">Object Oriented</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Slow-Fast-Pointer"><span class="nav-number">6.</span> <span class="nav-text">Slow Fast Pointer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">7.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Bit-Manipulation"><span class="nav-number">8.</span> <span class="nav-text">Bit Manipulation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Heap"><span class="nav-number">9.</span> <span class="nav-text">Heap</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sorting"><span class="nav-number">10.</span> <span class="nav-text">Sorting</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Searching"><span class="nav-number">11.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Recursion"><span class="nav-number">12.</span> <span class="nav-text">Recursion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Backtracking"><span class="nav-number">13.</span> <span class="nav-text">Backtracking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DFS-BFS"><span class="nav-number">14.</span> <span class="nav-text">DFS&#x2F;BFS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">15.</span> <span class="nav-text">Dynamic Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fibonacci"><span class="nav-number">15.1.</span> <span class="nav-text">Fibonacci</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ZeroOne-Knapsack"><span class="nav-number">15.2.</span> <span class="nav-text">ZeroOne Knapsack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unbound-Knapsack"><span class="nav-number">15.3.</span> <span class="nav-text">Unbound Knapsack</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic"><span class="nav-number">1.</span> <span class="nav-text">Basic</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Big-O"><span class="nav-number">2.</span> <span class="nav-text">Big O</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Search-Time-Complexity"><span class="nav-number">2.1.</span> <span class="nav-text">Search Time Complexity</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Strategy"><span class="nav-number">3.</span> <span class="nav-text">Strategy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Detail"><span class="nav-number">3.1.</span> <span class="nav-text">Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step"><span class="nav-number">4.</span> <span class="nav-text">Step</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#In-place"><span class="nav-number">5.</span> <span class="nav-text">In-place</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object-Oriented"><span class="nav-number">6.</span> <span class="nav-text">Object Oriented</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Slow-Fast-Pointer"><span class="nav-number">7.</span> <span class="nav-text">Slow Fast Pointer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">8.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Bit-Manipulation"><span class="nav-number">9.</span> <span class="nav-text">Bit Manipulation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Heap"><span class="nav-number">10.</span> <span class="nav-text">Heap</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sorting"><span class="nav-number">11.</span> <span class="nav-text">Sorting</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Searching"><span class="nav-number">12.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Recursion"><span class="nav-number">13.</span> <span class="nav-text">Recursion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Backtracking"><span class="nav-number">14.</span> <span class="nav-text">Backtracking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DFS-BFS"><span class="nav-number">15.</span> <span class="nav-text">DFS&#x2F;BFS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">16.</span> <span class="nav-text">Dynamic Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fibonacci"><span class="nav-number">16.1.</span> <span class="nav-text">Fibonacci</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ZeroOne-Knapsack"><span class="nav-number">16.2.</span> <span class="nav-text">ZeroOne Knapsack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unbound-Knapsack"><span class="nav-number">16.3.</span> <span class="nav-text">Unbound Knapsack</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -470,7 +475,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">184</span>
+          <span class="site-state-item-count">185</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -538,12 +543,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">179k</span>
+    <span title="Symbols count total">180k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:43</span>
+    <span title="Reading time total">2:44</span>
 </div>
 
         
