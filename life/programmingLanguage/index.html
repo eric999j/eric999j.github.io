@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-02-15T10:03:34.038Z">
+<meta property="article:modified_time" content="2022-02-18T10:45:41.041Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-15 18:03:34" itemprop="dateModified" datetime="2022-02-15T18:03:34+08:00">2022-02-15</time>
+                <time title="Modified: 2022-02-18 18:45:41" itemprop="dateModified" datetime="2022-02-18T18:45:41+08:00">2022-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -310,7 +310,7 @@
 <h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><p>針對陣列操作，常須in-place 或跟其他資料結構搭配  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set用add; []用append, pop(0開頭&#x2F;-1結尾)  </span><br></pre></td></tr></table></figure>
 
-<p>1.Two Sum: <code>&#123;value:keys&#125;</code><br>48.Rotate Image: <code>*, [::-1], zip</code><br>54.Spiral Matrix: <code>pop(0), pop(-1), pop(-1)[::-1], pop(0)[::-1]</code><br>122.Best Time to Buy and Sell Stock II: <code>greedy</code><br>234.Palindrome Linked List: <code>[::-1]</code><br>206.Reverse Linked List: <code>recursive</code><br>252.Meeting Rooms <code>intervals[i][0]</code><br>287.Find the Duplicate Number <code>set()</code><br>844.Backspace String Compare <code>pop()</code><br>977.Squares of a Sorted Array <code>*=, sort()</code><br>1046.Last Stone Weight  <code>sort(), pop()</code><br>256.Paint House <code>red=min(blue, green) + r 或用dp, dp[i][j] += min(dp[i - 1][(j + 1) % 3], dp[i - 1][(j + 2) % 3])</code><br>1423.Maximum Points You Can Obtain from Cards <code>current_pick += (cardPoints[right] - cardPoints[left])</code> </p>
+<p>1.Two Sum: <code>&#123;value:keys&#125;</code><br>48.Rotate Image: <code>*, [::-1], zip</code><br>54.Spiral Matrix: <code>pop(0), pop(-1), pop(-1)[::-1], pop(0)[::-1]</code><br>122.Best Time to Buy and Sell Stock II: <code>greedy</code><br>234.Palindrome Linked List: <code>[::-1]</code><br>206.Reverse Linked List: <code>recursive</code><br>252.Meeting Rooms <code>intervals[i][0]</code><br>287.Find the Duplicate Number <code>set()</code><br>394.Decode String <code>&quot;&quot;.join(cur_str)</code><br>844.Backspace String Compare <code>pop()</code><br>977.Squares of a Sorted Array <code>*=, sort()</code><br>1046.Last Stone Weight  <code>sort(), pop()</code><br>256.Paint House <code>red=min(blue, green) + r 或用dp, dp[i][j] += min(dp[i - 1][(j + 1) % 3], dp[i - 1][(j + 2) % 3])</code><br>1423.Maximum Points You Can Obtain from Cards <code>current_pick += (cardPoints[right] - cardPoints[left])</code> </p>
 <h1 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h1><p>將數字轉bit處理  </p>
 <p>7.Reverse Integer  <code>32 bit int = -2ˆ31 to 2ˆ31-1, check after reverse</code><br>136.Single Number <code>0 XOR</code><br>338.Counting Bits <code>bin()</code>  </p>
 <h1 id="Heap"><a href="#Heap" class="headerlink" title="Heap"></a>Heap</h1><p>常用來找最大最小值，heappop由小到大  </p>
@@ -333,14 +333,14 @@
 <h1 id="Recursion"><a href="#Recursion" class="headerlink" title="Recursion"></a>Recursion</h1><p>遞迴函式解決問題  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return self.question()</span><br></pre></td></tr></table></figure>
 
-<p>100.Same Tree <code>Self.SameTree()</code><br>203.Remove Linked List Elements: recursion <code>head.next</code><br>226.Invert Binary Tree <code>if not root: return None</code><br>543.Diameter of Binary Tree <code>diameter = depth(root.left) + depth(root.right)</code><br>617.Merge Two Binary Trees  <code>merge to one tree</code>  </p>
+<p>100.Same Tree <code>Self.SameTree()</code><br>203.Remove Linked List Elements: recursion <code>head.next</code><br>226.Invert Binary Tree <code>if not root: return None</code><br>366.Find Leaves of Binary Tree ``<br>543.Diameter of Binary Tree <code>diameter = depth(root.left) + depth(root.right)</code><br>617.Merge Two Binary Trees  <code>merge to one tree</code>  </p>
 <h1 id="Backtracking"><a href="#Backtracking" class="headerlink" title="Backtracking"></a>Backtracking</h1><p>回溯是種通用算法，用於尋找某些計算問題的所有（或部分）解決方案，過程中使用遞迴，逐步構建解決方案的候選者，並在確定候選者不能導致有效解決方案時立即放棄候選者，所以比暴力法快    </p>
 <p>46.Permutations <code>backtrack(nums[:i] + nums[i+1:], path+[nums[i]]) </code><br>47.PermutationsII <code>backtrack([], Counter(nums))</code><br>77.Combinations <code>backtrack(remain-1,comb,i+1)</code><br>78.Subsets <code>backtrack(i + 1, curr)</code>    </p>
 <h1 id="DFS-BFS"><a href="#DFS-BFS" class="headerlink" title="DFS/BFS"></a>DFS/BFS</h1><ul>
 <li>Depth First Search<br>深度優先搜尋常用Stack實作，對樹狀結構特定形式的回溯  </li>
 <li>Breadth First Search<br>廣度優先搜尋常用Queue實作</li>
 </ul>
-<p>127.Word Ladder <code>BFS, collections.deque([beginWord])</code><br>323.Number of Connected Components <code>DFS, collections.defaultdict(list)</code><br>547.Number of Provinces <code>DFS, for city, edges in enumerate(isConnected)</code><br>695.Max Area of Island <code>DFS, </code></p>
+<p>127.Word Ladder <code>BFS, collections.deque([beginWord])</code><br>323.Number of Connected Components <code>DFS, collections.defaultdict(list)</code><br>547.Number of Provinces <code>DFS, for city, edges in enumerate(isConnected)</code><br>695.Max Area of Island <code>DFS, dfs(r,c)</code></p>
 <h1 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h1><p>類似回溯，但問題可以被分解為相似子問題，且有最優子結構(轉移方程式)</p>
 <h2 id="Fibonacci"><a href="#Fibonacci" class="headerlink" title="Fibonacci"></a>Fibonacci</h2><p>後項為前2項相加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">def factorial(n): # n!</span><br><span class="line">	f&#x3D; 1</span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    f *&#x3D; i</span><br><span class="line">   return f</span><br><span class="line">   </span><br><span class="line">def fibonacci(n):</span><br><span class="line">	F&#x3D; &#123;&#125;  </span><br><span class="line">	F[0], F[1] &#x3D; 0,1  </span><br><span class="line">	for i in range (2,n+1):</span><br><span class="line">	    F[i]&#x3D;F[i-1]+F[i-2]</span><br><span class="line">   return F[n]</span><br><span class="line">   </span><br><span class="line">Kadane’s Algorithm  </span><br><span class="line">def maximumSubarraySum(arr):</span><br><span class="line">    maxSum &#x3D; -1e8</span><br><span class="line">    currSum &#x3D; 0</span><br><span class="line"></span><br><span class="line">    for i in range(len(arr)):</span><br><span class="line">        currSum &#x3D; max(0, currSum + arr[i])</span><br><span class="line">        maxSum &#x3D; max(maxSum, currSum)</span><br><span class="line">    return maxSum</span><br></pre></td></tr></table></figure>
@@ -475,7 +475,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">185</span>
+          <span class="site-state-item-count">186</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -543,12 +543,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">180k</span>
+    <span title="Symbols count total">182k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:44</span>
+    <span title="Reading time total">2:45</span>
 </div>
 
         
