@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-04-03T11:36:33.288Z</updated>
+  <updated>2022-04-09T12:05:46.477Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Argentina Panqueques</title>
+    <link href="https://eric999j.github.io/life/pancakes/"/>
+    <id>https://eric999j.github.io/life/pancakes/</id>
+    <published>2022-04-09T13:30:00.000Z</published>
+    <updated>2022-04-09T12:05:46.477Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/eOmUK6j.jpg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Pancakes-Recipe&quot;&gt;&lt;a href=&quot;#Pancakes-Recipe&quot; class=&quot;headerlink&quot; title=&quot;Pancakes</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unbound Knapsack</title>
+    <link href="https://eric999j.github.io/interview/unbound/"/>
+    <id>https://eric999j.github.io/interview/unbound/</id>
+    <published>2022-04-09T13:00:00.000Z</published>
+    <updated>2022-04-09T13:00:20.893Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;除了是非題也會遇到多選題。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Travel around the world</title>
     <link href="https://eric999j.github.io/life/world/"/>
     <id>https://eric999j.github.io/life/world/</id>
     <published>2022-04-03T08:30:00.000Z</published>
-    <updated>2022-04-03T11:36:33.288Z</updated>
+    <updated>2022-04-09T08:59:48.106Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
@@ -105,7 +153,7 @@
     <link href="https://eric999j.github.io/life/japanese/"/>
     <id>https://eric999j.github.io/life/japanese/</id>
     <published>2022-03-13T10:00:00.000Z</published>
-    <updated>2022-03-15T14:12:09.109Z</updated>
+    <updated>2022-04-08T09:36:30.042Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
@@ -374,46 +422,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;這篇是我對讀書方法的一些感悟，大家可以參考看看&lt;br&gt;After reading lots of books, I knew something. Wish everybody likes it.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀引導技巧的9堂課</title>
-    <link href="https://eric999j.github.io/manager/guide/"/>
-    <id>https://eric999j.github.io/manager/guide/</id>
-    <published>2022-01-09T09:00:00.000Z</published>
-    <updated>2022-01-09T11:42:03.999Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(37).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;這本是大學當Alpha Leader時訓練引導反思技術的書，因為大學著重技術部份，設計課程跟帶學生演練，一直沒認真看過理論，這次補完理論章節。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>閱讀給下個資優生的7個秘訣</title>
-    <link href="https://eric999j.github.io/manager/genius/"/>
-    <id>https://eric999j.github.io/manager/genius/</id>
-    <published>2022-01-02T09:00:00.000Z</published>
-    <updated>2022-01-02T09:26:47.164Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在家中挖到國中生物跟班導，葉老師送的書，經過這麼多年，再看一次依舊受用，也發現現在很多處事方式就跟書中說的一樣，我很感謝她。  &lt;/p&gt;</summary>
     
     
     
