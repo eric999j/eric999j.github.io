@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-03-28T07:50:06.007Z">
+<meta property="article:modified_time" content="2022-04-14T09:18:47.118Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-28 15:50:06" itemprop="dateModified" datetime="2022-03-28T15:50:06+08:00">2022-03-28</time>
+                <time title="Modified: 2022-04-14 17:18:47" itemprop="dateModified" datetime="2022-04-14T17:18:47+08:00">2022-04-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>8.3k</span>
+              <span>8.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -316,7 +316,7 @@
 <ul>
 <li>統計字數</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import collections</span><br><span class="line"># from collections import defaultdict, Counter</span><br><span class="line"></span><br><span class="line">C &#x3D; collections.defaultdict(int)</span><br><span class="line"># collections.Counter()</span><br><span class="line"></span><br><span class="line">s&#x3D;&quot;AABBABC&quot;</span><br><span class="line">for v in s:</span><br><span class="line">    C[v]+&#x3D;1</span><br><span class="line">print(C)</span><br><span class="line"></span><br><span class="line">&gt; defaultdict(&lt;class &#39;int&#39;&gt;, &#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br><span class="line"># Counter(&#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import collections</span><br><span class="line"># from collections import defaultdict, Counter</span><br><span class="line"></span><br><span class="line">C &#x3D; collections.defaultdict(int)</span><br><span class="line"># collections.Counter()</span><br><span class="line"></span><br><span class="line">s&#x3D;&quot;AABBABC&quot;</span><br><span class="line">for v in s:</span><br><span class="line">    C[v]+&#x3D;1</span><br><span class="line">print(C)</span><br><span class="line"></span><br><span class="line">&gt; defaultdict(&lt;class &#39;int&#39;&gt;, &#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br><span class="line"># Counter(&#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br><span class="line"></span><br><span class="line">---------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">words &#x3D; [&#39;apple&#39;, &#39;pear&#39;, &#39;peach&#39;, &#39;banana&#39;, &#39;plum&#39;]</span><br><span class="line">by_letter &#x3D; defaultdict(list)</span><br><span class="line"></span><br><span class="line">for word in words:</span><br><span class="line">    by_letter[word[0]].append(word)</span><br><span class="line"></span><br><span class="line">print(by_letter)</span><br><span class="line"></span><br><span class="line">&gt;  &#123;&#39;a&#39;: [&#39;apple&#39;], &#39;p&#39;: [&#39;pear&#39;, &#39;peach&#39;, &#39;plum&#39;], &#39;b&#39;: [&#39;banana&#39;]&#125;)</span><br></pre></td></tr></table></figure>
 
 <h2 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h2><p>將數字轉bit處理  </p>
 <p>7.Reverse Integer  <code>32 bit int = -2ˆ31 to 2ˆ31-1, check after reverse</code><br>136.Single Number <code>0 XOR</code><br>338.Counting Bits <code>bin()</code>  </p>
@@ -506,7 +506,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">194</span>
+          <span class="site-state-item-count">196</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -574,12 +574,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">193k</span>
+    <span title="Symbols count total">196k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2:55</span>
+    <span title="Reading time total">2:58</span>
 </div>
 
         
