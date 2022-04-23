@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-04-17T10:49:27.983Z</updated>
+  <updated>2022-04-23T10:07:16.235Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>電影片單</title>
+    <link href="https://eric999j.github.io/life/movie/"/>
+    <id>https://eric999j.github.io/life/movie/</id>
+    <published>2022-04-23T12:30:00.000Z</published>
+    <updated>2022-04-23T10:07:16.235Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;可能WFH了好一陣子，下班後喜歡看些電影，這邊紀錄些我看過喜歡的，如果大家有推薦也請留言跟我說喔。&lt;/p&gt;
+&lt;p&gt;I like to watch some movies after get off work. Here are some of the ones I have watched and liked. If you have recommendations, please leave a message.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Breadth-First Search</title>
+    <link href="https://eric999j.github.io/interview/bfs/"/>
+    <id>https://eric999j.github.io/interview/bfs/</id>
+    <published>2022-04-23T11:00:00.000Z</published>
+    <updated>2022-04-22T10:49:58.595Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;深度堆疊[]，廣度佇列deque()。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>D.O. 디오 &#39;괜찮아도 괜찮아 (That&#39;s okay)&#39;</title>
@@ -41,12 +84,12 @@
     <link href="https://eric999j.github.io/interview/dfs/"/>
     <id>https://eric999j.github.io/interview/dfs/</id>
     <published>2022-04-17T11:00:00.000Z</published>
-    <updated>2022-04-17T10:47:32.094Z</updated>
+    <updated>2022-04-22T10:39:18.053Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(13).jpeg&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;廣度佇列，深度堆疊。&lt;/p&gt;
+&lt;p&gt;深度堆疊[]，廣度佇列deque()。&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
@@ -104,7 +147,7 @@
     <link href="https://eric999j.github.io/life/world/"/>
     <id>https://eric999j.github.io/life/world/</id>
     <published>2022-04-03T08:30:00.000Z</published>
-    <updated>2022-04-19T09:54:33.027Z</updated>
+    <updated>2022-04-23T08:35:10.193Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
@@ -380,47 +423,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>食譜丹波麵包</title>
-    <link href="https://eric999j.github.io/life/damper/"/>
-    <id>https://eric999j.github.io/life/damper/</id>
-    <published>2022-01-23T10:00:00.000Z</published>
-    <updated>2022-01-30T12:22:25.145Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/x6QMZED.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-&lt;p&gt;我真的很想做出這個麵包，但就變成這樣了（掩&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The Rabbit-Proof Fence [Stage 3]</title>
-    <link href="https://eric999j.github.io/manager/rabbitProof/"/>
-    <id>https://eric999j.github.io/manager/rabbitProof/</id>
-    <published>2022-01-23T09:30:00.000Z</published>
-    <updated>2022-01-23T12:03:46.344Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/d1husYX.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-&lt;p&gt;I have some short English novels, given by my university’s English teacher, It has different levels, from easy to difficult, starter, stage 1 to stage 6,  this book is stage 3.&lt;/p&gt;
-&lt;p&gt;Because I think it’s time to practice my English pronunciation, I decided to use Google Doc’s voice input function to record my thoughts.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
