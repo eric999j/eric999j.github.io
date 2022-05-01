@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-04-23T10:07:16.235Z</updated>
+  <updated>2022-05-01T16:01:17.387Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nature and Progress</title>
+    <link href="https://eric999j.github.io/manager/progress/"/>
+    <id>https://eric999j.github.io/manager/progress/</id>
+    <published>2022-05-01T12:00:00.000Z</published>
+    <updated>2022-05-01T16:01:17.387Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(21).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;因為菲律賓朋友想看，這次把高中寫的詩翻成英文。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Brinary Search</title>
+    <link href="https://eric999j.github.io/interview/binarySearch/"/>
+    <id>https://eric999j.github.io/interview/binarySearch/</id>
+    <published>2022-05-01T11:00:00.000Z</published>
+    <updated>2022-05-01T16:01:22.415Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一直切一半的找法。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>電影片單</title>
@@ -147,7 +189,7 @@
     <link href="https://eric999j.github.io/life/world/"/>
     <id>https://eric999j.github.io/life/world/</id>
     <published>2022-04-03T08:30:00.000Z</published>
-    <updated>2022-04-23T08:35:10.193Z</updated>
+    <updated>2022-04-26T14:24:31.365Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
@@ -383,46 +425,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Dr Jelly and Mr Hyde [Stage 4]</title>
-    <link href="https://eric999j.github.io/manager/JellyandHyde/"/>
-    <id>https://eric999j.github.io/manager/JellyandHyde/</id>
-    <published>2022-01-30T11:00:00.000Z</published>
-    <updated>2022-02-10T09:37:54.560Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BReT7nY.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Stage 4 have some different things from Stage 3.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英文復興</title>
-    <link href="https://eric999j.github.io/engineer/renaissance/"/>
-    <id>https://eric999j.github.io/engineer/renaissance/</id>
-    <published>2022-01-23T10:30:00.000Z</published>
-    <updated>2022-01-25T08:20:50.919Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;有鑑於&lt;a href=&quot;https://eric999j.github.io/life/english/&quot;&gt;英文補全&lt;/a&gt;計畫過於發散，成效不彰，我決定設計一種更直觀的課表。由於這是種思想上的改革，跟十四世紀文藝復興有異曲同工之妙，就稱為英文復興吧。&lt;br&gt;&lt;code&gt;近期試用新學習方式的總結&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
