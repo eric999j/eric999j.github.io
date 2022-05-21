@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-04-14T09:18:47.118Z">
+<meta property="article:modified_time" content="2022-05-21T10:43:10.946Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-14 17:18:47" itemprop="dateModified" datetime="2022-04-14T17:18:47+08:00">2022-04-14</time>
+                <time title="Modified: 2022-05-21 18:43:10" itemprop="dateModified" datetime="2022-05-21T18:43:10+08:00">2022-05-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,14 +235,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>8.8k</span>
+              <span>7.7k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>8 mins.</span>
+              <span>7 mins.</span>
             </span>
 
         </div>
@@ -308,16 +308,6 @@
 <li>字型：courier new</li>
 <li>關閉拼字與文法</li>
 </ul>
-<h1 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h1><ul>
-<li>defaultdict</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">dic1 &#x3D; &#123;&#125;</span><br><span class="line">dic1[&quot;k1&quot;].append(&quot;kkkkk&quot;)         #error</span><br><span class="line">print(dic1)</span><br><span class="line"></span><br><span class="line">import collections</span><br><span class="line">dic &#x3D; collections.defaultdict(list)  #list</span><br><span class="line">dic[&quot;k1&quot;].append(&quot;kkkkk&quot;)</span><br><span class="line">print(dic)</span><br><span class="line"></span><br><span class="line">defaultdict(&lt;class &#39;list&#39;&gt;, &#123;&#39;k1&#39;: [&#39;kkkkk&#39;]&#125;)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>統計字數</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import collections</span><br><span class="line"># from collections import defaultdict, Counter</span><br><span class="line"></span><br><span class="line">C &#x3D; collections.defaultdict(int)</span><br><span class="line"># collections.Counter()</span><br><span class="line"></span><br><span class="line">s&#x3D;&quot;AABBABC&quot;</span><br><span class="line">for v in s:</span><br><span class="line">    C[v]+&#x3D;1</span><br><span class="line">print(C)</span><br><span class="line"></span><br><span class="line">&gt; defaultdict(&lt;class &#39;int&#39;&gt;, &#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br><span class="line"># Counter(&#123;&#39;A&#39;: 3, &#39;B&#39;: 3, &#39;C&#39;: 1&#125;)</span><br><span class="line"></span><br><span class="line">---------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">words &#x3D; [&#39;apple&#39;, &#39;pear&#39;, &#39;peach&#39;, &#39;banana&#39;, &#39;plum&#39;]</span><br><span class="line">by_letter &#x3D; defaultdict(list)</span><br><span class="line"></span><br><span class="line">for word in words:</span><br><span class="line">    by_letter[word[0]].append(word)</span><br><span class="line"></span><br><span class="line">print(by_letter)</span><br><span class="line"></span><br><span class="line">&gt;  &#123;&#39;a&#39;: [&#39;apple&#39;], &#39;p&#39;: [&#39;pear&#39;, &#39;peach&#39;, &#39;plum&#39;], &#39;b&#39;: [&#39;banana&#39;]&#125;)</span><br></pre></td></tr></table></figure>
-
 <h2 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h2><p>將數字轉bit處理  </p>
 <p>7.Reverse Integer  <code>32 bit int = -2ˆ31 to 2ˆ31-1, check after reverse</code><br>136.Single Number <code>0 XOR</code><br>338.Counting Bits <code>bin()</code>  </p>
 <h2 id="In-place"><a href="#In-place" class="headerlink" title="In-place"></a>In-place</h2><p>在不用多餘空間前提下操作原陣列取得結果  </p>
@@ -488,7 +478,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Big-O"><span class="nav-number">1.</span> <span class="nav-text">Big O</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Search-Time-Complexity"><span class="nav-number">1.1.</span> <span class="nav-text">Search Time Complexity</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Strategy"><span class="nav-number">2.</span> <span class="nav-text">Strategy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Detail"><span class="nav-number">2.1.</span> <span class="nav-text">Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Behavioral"><span class="nav-number">3.</span> <span class="nav-text">Behavioral</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Interview-Key-Elements"><span class="nav-number">4.</span> <span class="nav-text">Interview Key Elements</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-Solving-Step"><span class="nav-number">4.1.</span> <span class="nav-text">Problem Solving Step</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic"><span class="nav-number">5.</span> <span class="nav-text">Basic</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Bit-Manipulation"><span class="nav-number">5.1.</span> <span class="nav-text">Bit Manipulation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#In-place"><span class="nav-number">5.2.</span> <span class="nav-text">In-place</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heap"><span class="nav-number">5.3.</span> <span class="nav-text">Heap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-Oriented"><span class="nav-number">5.4.</span> <span class="nav-text">Object Oriented</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">6.</span> <span class="nav-text">Array</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Two-Pointer"><span class="nav-number">6.1.</span> <span class="nav-text">Two Pointer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sliding-Window"><span class="nav-number">6.2.</span> <span class="nav-text">Sliding Window</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Traversal-Recursion"><span class="nav-number">6.3.</span> <span class="nav-text">Traversal&#x2F;Recursion</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sorting"><span class="nav-number">7.</span> <span class="nav-text">Sorting</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Searching"><span class="nav-number">7.1.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BFS-DFS"><span class="nav-number">7.2.</span> <span class="nav-text">BFS&#x2F;DFS</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Backtracking"><span class="nav-number">8.</span> <span class="nav-text">Backtracking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">9.</span> <span class="nav-text">Dynamic Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fibonacci"><span class="nav-number">9.1.</span> <span class="nav-text">Fibonacci</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1-Knapsack"><span class="nav-number">9.2.</span> <span class="nav-text">0&#x2F;1 Knapsack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unbound-Knapsack"><span class="nav-number">9.3.</span> <span class="nav-text">Unbound Knapsack</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Big-O"><span class="nav-number">1.</span> <span class="nav-text">Big O</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Search-Time-Complexity"><span class="nav-number">1.1.</span> <span class="nav-text">Search Time Complexity</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Strategy"><span class="nav-number">2.</span> <span class="nav-text">Strategy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Detail"><span class="nav-number">2.1.</span> <span class="nav-text">Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Behavioral"><span class="nav-number">3.</span> <span class="nav-text">Behavioral</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Interview-Key-Elements"><span class="nav-number">4.</span> <span class="nav-text">Interview Key Elements</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-Solving-Step"><span class="nav-number">4.1.</span> <span class="nav-text">Problem Solving Step</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bit-Manipulation"><span class="nav-number">4.2.</span> <span class="nav-text">Bit Manipulation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#In-place"><span class="nav-number">4.3.</span> <span class="nav-text">In-place</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heap"><span class="nav-number">4.4.</span> <span class="nav-text">Heap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-Oriented"><span class="nav-number">4.5.</span> <span class="nav-text">Object Oriented</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">5.</span> <span class="nav-text">Array</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Two-Pointer"><span class="nav-number">5.1.</span> <span class="nav-text">Two Pointer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sliding-Window"><span class="nav-number">5.2.</span> <span class="nav-text">Sliding Window</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Traversal-Recursion"><span class="nav-number">5.3.</span> <span class="nav-text">Traversal&#x2F;Recursion</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sorting"><span class="nav-number">6.</span> <span class="nav-text">Sorting</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Searching"><span class="nav-number">6.1.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BFS-DFS"><span class="nav-number">6.2.</span> <span class="nav-text">BFS&#x2F;DFS</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Backtracking"><span class="nav-number">7.</span> <span class="nav-text">Backtracking</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dynamic-Programming"><span class="nav-number">8.</span> <span class="nav-text">Dynamic Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fibonacci"><span class="nav-number">8.1.</span> <span class="nav-text">Fibonacci</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1-Knapsack"><span class="nav-number">8.2.</span> <span class="nav-text">0&#x2F;1 Knapsack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unbound-Knapsack"><span class="nav-number">8.3.</span> <span class="nav-text">Unbound Knapsack</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -506,7 +496,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">203</span>
+          <span class="site-state-item-count">204</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -574,12 +564,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">207k</span>
+    <span title="Symbols count total">209k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">3:08</span>
+    <span title="Reading time total">3:10</span>
 </div>
 
         
