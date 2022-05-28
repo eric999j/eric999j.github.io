@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-05-21T10:52:42.808Z</updated>
+  <updated>2022-05-28T12:40:36.241Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>STAR</title>
+    <link href="https://eric999j.github.io/manager/star/"/>
+    <id>https://eric999j.github.io/manager/star/</id>
+    <published>2022-05-28T13:00:00.000Z</published>
+    <updated>2022-05-28T12:40:36.241Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(24).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;A way to answer questions.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deque</title>
+    <link href="https://eric999j.github.io/interview/deque/"/>
+    <id>https://eric999j.github.io/interview/deque/</id>
+    <published>2022-05-28T12:00:00.000Z</published>
+    <updated>2022-05-28T12:44:56.341Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;似 list, 但&lt;a href=&quot;https://stackoverflow.com/questions/717148/queue-queue-vs-collections-deque/20330499#20330499&quot;&gt;更安全&lt;/a&gt; &lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>ただ声一つ - ロクデナシ</title>
@@ -41,7 +83,7 @@
     <link href="https://eric999j.github.io/interview/defaultDict/"/>
     <id>https://eric999j.github.io/interview/defaultDict/</id>
     <published>2022-05-21T12:00:00.000Z</published>
-    <updated>2022-05-21T11:14:19.420Z</updated>
+    <updated>2022-05-28T12:25:00.737Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg&quot;&gt;&lt;/p&gt;
@@ -315,7 +357,7 @@
     <link href="https://eric999j.github.io/life/world/"/>
     <id>https://eric999j.github.io/life/world/</id>
     <published>2022-04-03T08:30:00.000Z</published>
-    <updated>2022-05-18T09:04:54.860Z</updated>
+    <updated>2022-05-28T11:47:47.401Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(33).jpeg&quot;&gt;&lt;/p&gt;
@@ -384,46 +426,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;我如果再做一件事不比現在更好就不要做&lt;br&gt;我現在很好，但可以比以前更好&lt;br&gt;– Kadane’s Algorithm&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日語地圖</title>
-    <link href="https://eric999j.github.io/life/japanese/"/>
-    <id>https://eric999j.github.io/life/japanese/</id>
-    <published>2022-03-13T10:00:00.000Z</published>
-    <updated>2022-04-08T09:36:30.042Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;おれの財宝か？&lt;br&gt;欲しけりゃくれてやるぜ…&lt;br&gt;探してみろ&lt;br&gt;この世のすべてをそこに置いてきた  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Dynamic Programming</title>
-    <link href="https://eric999j.github.io/interview/dynamicProgramming/"/>
-    <id>https://eric999j.github.io/interview/dynamicProgramming/</id>
-    <published>2022-03-13T09:00:00.000Z</published>
-    <updated>2022-03-19T09:09:44.446Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;因為Shvara蛀牙了，那就來複習一些程式觀念吧，依照OKR的理念，我決定一開始就直接切入動態規劃。&lt;/p&gt;</summary>
     
     
     

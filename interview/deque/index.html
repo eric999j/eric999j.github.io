@@ -20,16 +20,16 @@
     var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Deque更安全方便的添加元素。">
+  <meta name="description" content="似 list, 但更安全">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Deque">
 <meta property="og:url" content="https://eric999j.github.io/interview/deque/index.html">
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
-<meta property="og:description" content="Deque更安全方便的添加元素。">
+<meta property="og:description" content="似 list, 但更安全">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg">
-<meta property="article:published_time" content="2021-03-06T08:00:00.000Z">
-<meta property="article:modified_time" content="2021-03-06T12:28:39.306Z">
+<meta property="article:published_time" content="2022-05-28T12:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-28T12:44:56.341Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-03-06 16:00:00 / Modified: 20:28:39" itemprop="dateCreated datePublished" datetime="2021-03-06T16:00:00+08:00">2021-03-06</time>
+              <time title="Created: 2022-05-28 20:00:00 / Modified: 20:44:56" itemprop="dateCreated datePublished" datetime="2022-05-28T20:00:00+08:00">2022-05-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>58</span>
+              <span>441</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -248,10 +248,19 @@
 
       
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg"></p>
-<p>Deque更安全方便的添加元素。</p>
+<blockquote>
+<p>似 list, 但<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/717148/queue-queue-vs-collections-deque/20330499#20330499">更安全</a> </p>
+</blockquote>
 <a id="more"></a>
-<p>一般list只能從右邊新增刪除元素，deque可以雙向，適合queue, stack。</p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/collection-deque?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<p>collections.deque是stack 和 queue 的一般化<a target="_blank" rel="noopener" href="https://docs.python.org/zh-tw/3/library/collections.html#collections.deque">ref</a><br>一般list只能從右邊新增刪除元素，deque可以雙向，適合queue, stack。</p>
+<h1 id="背景知識"><a href="#背景知識" class="headerlink" title="背景知識"></a>背景知識</h1><p>stack, queue</p>
+<h1 id="理解問題"><a href="#理解問題" class="headerlink" title="理解問題"></a>理解問題</h1><p>利用deque新增刪除元素。</p>
+<h1 id="思路視覺化"><a href="#思路視覺化" class="headerlink" title="思路視覺化"></a>思路視覺化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0&gt;[]&lt;1 新增</span><br><span class="line">[0,1]</span><br><span class="line">&lt;[0,1]&gt; 刪除</span><br><span class="line">[]</span><br></pre></td></tr></table></figure>
+<h1 id="程式化"><a href="#程式化" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">from collections import deque</span><br><span class="line">de &#x3D; deque()</span><br><span class="line"></span><br><span class="line">de.append(1)  # 向右添加元素</span><br><span class="line">print(de)</span><br><span class="line">de.appendleft(0)  # 向左添加元素</span><br><span class="line">print(de)</span><br><span class="line"></span><br><span class="line">de.pop()  # 1 右删除 stack</span><br><span class="line">de.popleft()  # 0 左删除 queue</span><br><span class="line"></span><br><span class="line">if len(de) &#x3D;&#x3D; 0:</span><br><span class="line">  print(&quot;empty&quot;)</span><br><span class="line">  </span><br><span class="line">&gt; deque([1])</span><br><span class="line">deque([0, 1])</span><br><span class="line">empty</span><br></pre></td></tr></table></figure>
+
+<h1 id="複雜度分析"><a href="#複雜度分析" class="headerlink" title="複雜度分析"></a>複雜度分析</h1><p>TC: 頭尾O(1), 其他O(n)<br>SC: O(n)</p>
+
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -293,12 +302,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/interview/TechnicalWriting/" rel="prev" title="TechnicalWriting">
-      <i class="fa fa-chevron-left"></i> TechnicalWriting
+    <a href="/life/voice/" rel="prev" title="ただ声一つ - ロクデナシ">
+      <i class="fa fa-chevron-left"></i> ただ声一つ - ロクデナシ
     </a></div>
       <div class="post-nav-item">
-    <a href="/interview/ActiveVoice/" rel="next" title="ActiveVoice">
-      ActiveVoice <i class="fa fa-chevron-right"></i>
+    <a href="/manager/star/" rel="next" title="STAR">
+      STAR <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -359,6 +368,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98"><span class="nav-number">1.</span> <span class="nav-text">背景知識</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E5%95%8F%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">理解問題</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%E8%A6%96%E8%A6%BA%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">思路視覺化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">程式化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A4%87%E9%9B%9C%E5%BA%A6%E5%88%86%E6%9E%90"><span class="nav-number">5.</span> <span class="nav-text">複雜度分析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -376,7 +386,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">204</span>
+          <span class="site-state-item-count">205</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -444,12 +454,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">209k</span>
+    <span title="Symbols count total">211k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">3:10</span>
+    <span title="Reading time total">3:11</span>
 </div>
 
         
