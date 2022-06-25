@@ -28,8 +28,8 @@
 <meta property="og:description" content="除了是非題也會遇到多選題。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
-<meta property="article:published_time" content="2022-04-09T13:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-09T13:00:20.893Z">
+<meta property="article:published_time" content="2022-06-25T10:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-25T10:15:43.470Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -203,7 +203,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-09 21:00:00 / Modified: 21:00:20" itemprop="dateCreated datePublished" datetime="2022-04-09T21:00:00+08:00">2022-04-09</time>
+              <time title="Created: 2022-06-25 18:00:00 / Modified: 18:15:43" itemprop="dateCreated datePublished" datetime="2022-06-25T18:00:00+08:00">2022-06-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>517</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -266,6 +266,14 @@
 <h1 id="程式化"><a href="#程式化" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">from typing import List</span><br><span class="line">class Solution:</span><br><span class="line">    def coinChange(self, coins: List[int], amount: int) -&gt; int:</span><br><span class="line">        dp &#x3D; [amount+1] * (amount+1) # set all maximum</span><br><span class="line">        dp[0] &#x3D; 0</span><br><span class="line">        </span><br><span class="line">        for a in range(1, amount+1):</span><br><span class="line">            for c in coins:</span><br><span class="line">                if a-c &gt;&#x3D; 0:</span><br><span class="line">                    dp[a]&#x3D; min(dp[a], 1+dp[a-c]) # 1:original amount</span><br><span class="line">                    </span><br><span class="line">        return -1 if dp[amount] &#x3D;&#x3D; amount+1 else dp[amount] # dp[amount] + 1 is default </span><br><span class="line"></span><br><span class="line">print(Solution().coinChange([1,2,5],11))</span><br></pre></td></tr></table></figure>
 
 <h1 id="複雜度分析"><a href="#複雜度分析" class="headerlink" title="複雜度分析"></a>複雜度分析</h1><p>TC: O(a*c)<br>SC: O(amount+1)</p>
+<h1 id="39-Combination-Sum"><a href="#39-Combination-Sum" class="headerlink" title="39. Combination Sum"></a>39. Combination Sum</h1><p>使用DFS。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: candidates &#x3D; [2,3,6,7], target &#x3D; 7</span><br><span class="line">Output: [[2,2,3],[7]]</span><br></pre></td></tr></table></figure>
+
+<h1 id="思路視覺化-1"><a href="#思路視覺化-1" class="headerlink" title="思路視覺化"></a>思路視覺化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[2,3,6,7], 7</span><br><span class="line">2+2+3 &#x3D;&#x3D; 7</span><br><span class="line">7 &#x3D;&#x3D; 7</span><br></pre></td></tr></table></figure>
+
+<h1 id="程式化-1"><a href="#程式化-1" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def combinationSum(self, candidates: List[int], target: int) -&gt; List[List[int]]:</span><br><span class="line">        if not candidates: return []</span><br><span class="line">        res &#x3D; []</span><br><span class="line">        candidates.sort()</span><br><span class="line">        def dfs(idx, path, cur): # 開始加總位置, 建構可能解，目前的值</span><br><span class="line">            if cur &gt; target: return # less than target</span><br><span class="line">            if cur &#x3D;&#x3D; target: # same as target</span><br><span class="line">                res.append(path)</span><br><span class="line">                return</span><br><span class="line">            for i in range(idx, len(candidates)):</span><br><span class="line">                dfs(i, path+[candidates[i]], cur+candidates[i])</span><br><span class="line">        dfs(0, [], 0)</span><br><span class="line">        return res</span><br></pre></td></tr></table></figure>
+
+<h1 id="複雜度分析-1"><a href="#複雜度分析-1" class="headerlink" title="複雜度分析"></a>複雜度分析</h1><p>TC: O(nˆ2)<br>    SC: O(path)</p>
 
 <div>
     <hr>
@@ -308,12 +316,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/life/world/" rel="prev" title="Travel Around the World">
-      <i class="fa fa-chevron-left"></i> Travel Around the World
+    <a href="/life/arrozConLeche/" rel="prev" title="Arroz con Leche">
+      <i class="fa fa-chevron-left"></i> Arroz con Leche
     </a></div>
       <div class="post-nav-item">
-    <a href="/life/pancakes/" rel="next" title="Argentina Panqueques">
-      Argentina Panqueques <i class="fa fa-chevron-right"></i>
+    <a href="/life/melody/" rel="next" title="旋律">
+      旋律 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -374,7 +382,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98"><span class="nav-number">1.</span> <span class="nav-text">背景知識</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E5%95%8F%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">理解問題</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%E8%A6%96%E8%A6%BA%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">思路視覺化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">程式化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A4%87%E9%9B%9C%E5%BA%A6%E5%88%86%E6%9E%90"><span class="nav-number">5.</span> <span class="nav-text">複雜度分析</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98"><span class="nav-number">1.</span> <span class="nav-text">背景知識</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E5%95%8F%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">理解問題</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%E8%A6%96%E8%A6%BA%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">思路視覺化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">程式化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A4%87%E9%9B%9C%E5%BA%A6%E5%88%86%E6%9E%90"><span class="nav-number">5.</span> <span class="nav-text">複雜度分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#39-Combination-Sum"><span class="nav-number">6.</span> <span class="nav-text">39. Combination Sum</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%E8%A6%96%E8%A6%BA%E5%8C%96-1"><span class="nav-number">7.</span> <span class="nav-text">思路視覺化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E5%8C%96-1"><span class="nav-number">8.</span> <span class="nav-text">程式化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A4%87%E9%9B%9C%E5%BA%A6%E5%88%86%E6%9E%90-1"><span class="nav-number">9.</span> <span class="nav-text">複雜度分析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -392,7 +400,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">211</span>
+          <span class="site-state-item-count">212</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -460,12 +468,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">220k</span>
+    <span title="Symbols count total">223k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">3:20</span>
+    <span title="Reading time total">3:23</span>
 </div>
 
         

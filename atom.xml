@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-06-18T11:00:41.272Z</updated>
+  <updated>2022-06-25T10:16:25.444Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>旋律</title>
+    <link href="https://eric999j.github.io/life/melody/"/>
+    <id>https://eric999j.github.io/life/melody/</id>
+    <published>2022-06-25T11:30:00.000Z</published>
+    <updated>2022-06-25T10:16:25.444Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(24).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;經過海牛的解說，我才發覺音樂中的特定旋律(動機)也是種語言，重點在察覺呈現的方式與隱含的故事。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unbound Knapsack</title>
+    <link href="https://eric999j.github.io/interview/unbound/"/>
+    <id>https://eric999j.github.io/interview/unbound/</id>
+    <published>2022-06-25T10:00:00.000Z</published>
+    <updated>2022-06-25T10:15:43.470Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;除了是非題也會遇到多選題。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Arroz con Leche</title>
@@ -40,7 +82,7 @@
     <link href="https://eric999j.github.io/interview/notes/"/>
     <id>https://eric999j.github.io/interview/notes/</id>
     <published>2022-06-18T11:00:00.000Z</published>
-    <updated>2022-06-18T11:01:01.124Z</updated>
+    <updated>2022-06-20T09:04:52.565Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -351,7 +393,7 @@
     <link href="https://eric999j.github.io/life/movie/"/>
     <id>https://eric999j.github.io/life/movie/</id>
     <published>2022-04-23T12:30:00.000Z</published>
-    <updated>2022-05-30T10:21:22.372Z</updated>
+    <updated>2022-06-23T08:26:59.640Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
@@ -376,48 +418,6 @@
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;深度堆疊[]，廣度佇列deque()。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>D.O. 디오 &#39;괜찮아도 괜찮아 (That&#39;s okay)&#39;</title>
-    <link href="https://eric999j.github.io/life/okay/"/>
-    <id>https://eric999j.github.io/life/okay/</id>
-    <published>2022-04-17T12:00:00.000Z</published>
-    <updated>2022-04-17T10:49:27.983Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;這首歌是菲律賓朋友給我的，意外發現菲律賓很重視韓文，也很喜歡這首歌。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Depth-First Search</title>
-    <link href="https://eric999j.github.io/interview/dfs/"/>
-    <id>https://eric999j.github.io/interview/dfs/</id>
-    <published>2022-04-17T11:00:00.000Z</published>
-    <updated>2022-04-22T10:39:18.053Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(13).jpeg&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;深度堆疊[]，廣度佇列deque()。&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
