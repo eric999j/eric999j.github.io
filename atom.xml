@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-07-17T11:04:30.894Z</updated>
+  <updated>2022-08-07T11:47:34.083Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Archetype</title>
+    <link href="https://eric999j.github.io/manager/archetype/"/>
+    <id>https://eric999j.github.io/manager/archetype/</id>
+    <published>2022-08-07T12:00:00.000Z</published>
+    <updated>2022-08-07T11:47:34.083Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Thinking, dismantling, and reorganizing from the essence of things, then we can discover potential value.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Catalan Number</title>
+    <link href="https://eric999j.github.io/interview/catalanNumber/"/>
+    <id>https://eric999j.github.io/interview/catalanNumber/</id>
+    <published>2022-08-07T11:00:00.000Z</published>
+    <updated>2022-08-07T11:47:30.795Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1, 1, 2, 5, 14, 42…&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Pechenye Yabloki</title>
@@ -40,7 +82,7 @@
     <link href="https://eric999j.github.io/interview/self/"/>
     <id>https://eric999j.github.io/interview/self/</id>
     <published>2022-07-17T10:00:00.000Z</published>
-    <updated>2022-07-17T11:13:44.638Z</updated>
+    <updated>2022-07-19T13:43:14.638Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
@@ -62,7 +104,7 @@
     <link href="https://eric999j.github.io/life/brigadeiro/"/>
     <id>https://eric999j.github.io/life/brigadeiro/</id>
     <published>2022-07-09T12:30:00.000Z</published>
-    <updated>2022-07-09T11:00:30.553Z</updated>
+    <updated>2022-08-03T10:20:26.618Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/eR1wdJh.jpg&quot;&gt;&lt;br&gt;Hi Brazil!  &lt;/p&gt;</summary>
@@ -81,7 +123,7 @@
     <link href="https://eric999j.github.io/interview/slidingWindow/"/>
     <id>https://eric999j.github.io/interview/slidingWindow/</id>
     <published>2022-07-09T10:00:00.000Z</published>
-    <updated>2022-07-09T11:00:26.056Z</updated>
+    <updated>2022-08-03T12:32:09.046Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg&quot;&gt;&lt;/p&gt;
@@ -103,7 +145,7 @@
     <link href="https://eric999j.github.io/life/portuguese/"/>
     <id>https://eric999j.github.io/life/portuguese/</id>
     <published>2022-07-03T09:30:00.000Z</published>
-    <updated>2022-07-03T09:51:04.202Z</updated>
+    <updated>2022-08-07T10:05:21.403Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(2).jpeg&quot;&gt;&lt;/p&gt;
@@ -165,10 +207,10 @@
     <link href="https://eric999j.github.io/life/arrozConLeche/"/>
     <id>https://eric999j.github.io/life/arrozConLeche/</id>
     <published>2022-06-18T12:00:00.000Z</published>
-    <updated>2022-06-18T11:00:41.272Z</updated>
+    <updated>2022-08-03T12:33:37.087Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JzEt8Gb.jpg&quot;&gt;&lt;br&gt;Hi Mexico!  &lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JzEt8Gb.jpg&quot;&gt;&lt;br&gt;Hi Peru!  &lt;/p&gt;</summary>
     
     
     
@@ -184,7 +226,7 @@
     <link href="https://eric999j.github.io/interview/notes/"/>
     <id>https://eric999j.github.io/interview/notes/</id>
     <published>2022-06-18T11:00:00.000Z</published>
-    <updated>2022-07-05T09:21:47.706Z</updated>
+    <updated>2022-07-19T14:38:16.771Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -263,7 +305,7 @@
     <link href="https://eric999j.github.io/interview/decompression/"/>
     <id>https://eric999j.github.io/interview/decompression/</id>
     <published>2022-06-04T12:00:00.000Z</published>
-    <updated>2022-06-11T10:06:31.676Z</updated>
+    <updated>2022-08-03T12:32:56.770Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
@@ -381,48 +423,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Trie</title>
-    <link href="https://eric999j.github.io/interview/trie/"/>
-    <id>https://eric999j.github.io/interview/trie/</id>
-    <published>2022-05-14T12:00:00.000Z</published>
-    <updated>2022-05-14T13:26:07.747Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有序字典樹。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>八正道（Noble Eightfold Path）</title>
-    <link href="https://eric999j.github.io/manager/path/"/>
-    <id>https://eric999j.github.io/manager/path/</id>
-    <published>2022-05-07T12:00:00.000Z</published>
-    <updated>2022-05-07T11:03:39.193Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(17).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;前幾天遇到大學學長提供給我這個知識點，也很久沒更新文藝部分了，就來研究一下吧。&lt;br&gt;&lt;code&gt;頻道要轉型了嗎（誤&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
