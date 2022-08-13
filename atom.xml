@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-08-07T11:47:34.083Z</updated>
+  <updated>2022-08-13T09:34:46.732Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The Mythical Man-Month</title>
+    <link href="https://eric999j.github.io/manager/manMonth/"/>
+    <id>https://eric999j.github.io/manager/manMonth/</id>
+    <published>2022-08-13T11:00:00.000Z</published>
+    <updated>2022-08-13T09:34:46.732Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Information management bible.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fibonacci Number</title>
+    <link href="https://eric999j.github.io/interview/fibonacciNumber/"/>
+    <id>https://eric999j.github.io/interview/fibonacciNumber/</id>
+    <published>2022-08-13T09:00:00.000Z</published>
+    <updated>2022-08-13T10:46:34.938Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;0, 1, 1, 2, 3, 5, 8…&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Archetype</title>
@@ -41,12 +83,12 @@
     <link href="https://eric999j.github.io/interview/catalanNumber/"/>
     <id>https://eric999j.github.io/interview/catalanNumber/</id>
     <published>2022-08-07T11:00:00.000Z</published>
-    <updated>2022-08-07T11:47:30.795Z</updated>
+    <updated>2022-08-08T10:44:55.613Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;1, 1, 2, 5, 14, 42…&lt;/p&gt;
+&lt;p&gt;0, 1, 1, 2, 5, 14, 42…&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
@@ -262,11 +304,11 @@
   </entry>
   
   <entry>
-    <title>LinkedList</title>
+    <title>Linked List</title>
     <link href="https://eric999j.github.io/interview/linkedList/"/>
     <id>https://eric999j.github.io/interview/linkedList/</id>
     <published>2022-06-11T10:00:00.000Z</published>
-    <updated>2022-06-13T07:49:52.215Z</updated>
+    <updated>2022-08-13T09:39:19.117Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
@@ -374,48 +416,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;好久沒跟大家一起聽日文歌了，我想念這個系列。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DefaultDict</title>
-    <link href="https://eric999j.github.io/interview/defaultDict/"/>
-    <id>https://eric999j.github.io/interview/defaultDict/</id>
-    <published>2022-05-21T12:00:00.000Z</published>
-    <updated>2022-05-28T12:25:00.737Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;預設的值。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tyler Shaw - Love You Still</title>
-    <link href="https://eric999j.github.io/life/love/"/>
-    <id>https://eric999j.github.io/life/love/</id>
-    <published>2022-05-14T13:00:00.000Z</published>
-    <updated>2022-05-14T13:26:04.222Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;愛就是這樣簡單而毫無聲息地佔據心房。&lt;/p&gt;</summary>
     
     
     
