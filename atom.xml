@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-08-13T09:34:46.732Z</updated>
+  <updated>2022-08-20T11:23:44.811Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chicken Tibs</title>
+    <link href="https://eric999j.github.io/life/chickenTibs/"/>
+    <id>https://eric999j.github.io/life/chickenTibs/</id>
+    <published>2022-08-20T12:30:00.000Z</published>
+    <updated>2022-08-20T11:23:44.811Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/iCZ7FCS.jpg&quot;&gt;&lt;br&gt;Hi Ethiopia!  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Binary Search Tree</title>
+    <link href="https://eric999j.github.io/interview/binarySearchTree/"/>
+    <id>https://eric999j.github.io/interview/binarySearchTree/</id>
+    <published>2022-08-20T10:00:00.000Z</published>
+    <updated>2022-08-20T11:23:15.657Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;樹狀結構&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>The Mythical Man-Month</title>
@@ -249,7 +288,7 @@
     <link href="https://eric999j.github.io/life/arrozConLeche/"/>
     <id>https://eric999j.github.io/life/arrozConLeche/</id>
     <published>2022-06-18T12:00:00.000Z</published>
-    <updated>2022-08-03T12:33:37.087Z</updated>
+    <updated>2022-08-16T07:16:17.418Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JzEt8Gb.jpg&quot;&gt;&lt;br&gt;Hi Peru!  &lt;/p&gt;</summary>
@@ -268,7 +307,7 @@
     <link href="https://eric999j.github.io/interview/notes/"/>
     <id>https://eric999j.github.io/interview/notes/</id>
     <published>2022-06-18T11:00:00.000Z</published>
-    <updated>2022-07-19T14:38:16.771Z</updated>
+    <updated>2022-08-16T08:30:00.990Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -381,48 +420,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Deque</title>
-    <link href="https://eric999j.github.io/interview/deque/"/>
-    <id>https://eric999j.github.io/interview/deque/</id>
-    <published>2022-05-28T12:00:00.000Z</published>
-    <updated>2022-05-29T17:23:53.257Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;似 list, 但&lt;a href=&quot;https://stackoverflow.com/questions/717148/queue-queue-vs-collections-deque/20330499#20330499&quot;&gt;更安全&lt;/a&gt; &lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ただ声一つ - ロクデナシ</title>
-    <link href="https://eric999j.github.io/life/voice/"/>
-    <id>https://eric999j.github.io/life/voice/</id>
-    <published>2022-05-21T13:00:00.000Z</published>
-    <updated>2022-05-21T10:52:42.808Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;好久沒跟大家一起聽日文歌了，我想念這個系列。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
