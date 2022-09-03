@@ -20,17 +20,17 @@
     var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="0, 1, 1, 2, 5, 14, 42…">
+  <meta name="description" content="1, 2, 5, 14, 42…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Catalan Number">
 <meta property="og:url" content="https://eric999j.github.io/interview/catalanNumber/index.html">
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
-<meta property="og:description" content="0, 1, 1, 2, 5, 14, 42…">
+<meta property="og:description" content="1, 2, 5, 14, 42…">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg">
 <meta property="og:image" content="https://i.imgur.com/kW8QtPB.jpg">
 <meta property="article:published_time" content="2022-08-07T11:00:00.000Z">
-<meta property="article:modified_time" content="2022-08-08T10:44:55.613Z">
+<meta property="article:modified_time" content="2022-09-02T10:48:22.506Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-08-08 18:44:55" itemprop="dateModified" datetime="2022-08-08T18:44:55+08:00">2022-08-08</time>
+                <time title="Modified: 2022-09-02 18:48:22" itemprop="dateModified" datetime="2022-09-02T18:48:22+08:00">2022-09-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,14 +235,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>645</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -256,14 +256,16 @@
       
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg"></p>
 <blockquote>
-<p>0, 1, 1, 2, 5, 14, 42…</p>
+<p>1, 2, 5, 14, 42…</p>
 </blockquote>
 <a id="more"></a>
 
-<h1 id="背景知識"><a href="#背景知識" class="headerlink" title="背景知識"></a>背景知識</h1><p>組合公式：𝐶(n, r)= n!/r!(n-r)!<br>卡塔蘭數：𝐶𝑛=𝐶(2𝑛, 𝑛)/(n+1)=(2n)!/(n+1)!n!,  n = 0, 1, 2, 3, …   </p>
+<h1 id="背景知識"><a href="#背景知識" class="headerlink" title="背景知識"></a>背景知識</h1><p>組合公式：𝐶(n, r)= n!/r!(n-r)!<br>卡塔蘭數：𝐶𝑛=𝐶(2𝑛, 𝑛)/(n+1)=(2n)!/(n+1)!n!,  n = 1, 2, 3, … </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return int((math.factorial(2*n) &#x2F; (math.factorial(n+1) * math.factorial(n))))</span><br></pre></td></tr></table></figure>
+
 <h1 id="理解問題"><a href="#理解問題" class="headerlink" title="理解問題"></a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%A1%94%E5%85%B0%E6%95%B0">理解問題</a></h1><ul>
-<li><a target="_blank" rel="noopener" href="https://massivealgorithms.blogspot.com/2015/07/leetcodedifferent-ways-to-add.html">包含n組括號的合法運算式的個數: ((())) ()(()) ()()() (())() (()())</a></li>
-<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/unique-binary-search-trees/discuss?currentPage=1&orderBy=hot&query=&tag=catalan-number">2n+1個節點組成不同構滿二元樹的方案數</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/generate-parentheses/discuss/1636899/Python-DFS">22. Generate Parentheses</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/unique-binary-search-trees/discuss?currentPage=1&orderBy=hot&query=&tag=catalan-number">96. Unique Binary Search Trees</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xD_-A4vbTdE">所有在n × n格點中不越過對角線的最短路徑的個數</a></li>
 <li>將n + 2邊的凸多邊形分成三角形的方法個數</li>
 </ul>
@@ -281,9 +283,23 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def numTrees(self, n: int) -&gt; int:</span><br><span class="line">		# Base case is dp[0] is 1.</span><br><span class="line">        dp &#x3D; [1] + ([0] * n)</span><br><span class="line">        for i in range(1, n + 1):</span><br><span class="line">            for j in range(i):</span><br><span class="line">                dp[i] +&#x3D; dp[j] * dp[i - 1 - j]</span><br><span class="line">        return dp[n]</span><br></pre></td></tr></table></figure>
 
 <h1 id="相似"><a href="#相似" class="headerlink" title="相似"></a>相似</h1><ul>
-<li>LeetCode 62</li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/generate-parentheses/solution/">22</a><br>Number is catanlan<br>1(1), 2(2), 3(5), 4(14)</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">from typing import List</span><br><span class="line">class Solution:</span><br><span class="line">    def generateParenthesis(self, n: int) -&gt; List[str]:</span><br><span class="line">        res &#x3D; []</span><br><span class="line">        def dfs(left, right, temp):</span><br><span class="line">            if left:</span><br><span class="line">                dfs(left-1, right, temp + &quot;(&quot;)</span><br><span class="line">            if right and left &lt; right:</span><br><span class="line">                dfs(left, right-1, temp + &quot;)&quot;)</span><br><span class="line">            if not right:</span><br><span class="line">                res.append(temp)</span><br><span class="line">            return res        </span><br><span class="line">        return dfs(n, n, &quot;&quot;) # n left, right</span><br><span class="line">print(Solution().generateParenthesis(4))</span><br><span class="line">&gt; </span><br><span class="line">[&#39;(((())))&#39;, &#39;((()()))&#39;, &#39;((())())&#39;, &#39;((()))()&#39;, &#39;(()(()))&#39;, &#39;(()()())&#39;, &#39;(()())()&#39;, &#39;(())(())&#39;, &#39;(())()()&#39;, &#39;()((()))&#39;, &#39;()(()())&#39;, &#39;()(())()&#39;, &#39;()()(())&#39;, &#39;()()()()&#39;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/unique-binary-search-trees-ii/">95</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def generateTrees(self, n: int) -&gt; List[TreeNode]:</span><br><span class="line">        def dfs(start, end):</span><br><span class="line">            if start &gt; end:return [None]	</span><br><span class="line">            if start &#x3D;&#x3D; end:return [TreeNode(start)]</span><br><span class="line">            </span><br><span class="line">            ret &#x3D; []</span><br><span class="line">            for i in range(start, end+1):</span><br><span class="line">                left &#x3D; dfs(start, i-1)</span><br><span class="line">                right &#x3D; dfs(i+1, end)</span><br><span class="line">                for pair in product(left, right):</span><br><span class="line">                    ret.append(TreeNode(i, pair[0], pair[1]))</span><br><span class="line">            return ret</span><br><span class="line">        </span><br><span class="line">        return  dfs(1,n)</span><br><span class="line">&gt;</span><br><span class="line">[[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/unique-binary-search-trees/discuss/1567153/Python-3-Time-O(1)-oror-math">96</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/different-ways-to-add-parentheses/">241</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution(object):</span><br><span class="line">    def diffWaysToCompute(self, inp):</span><br><span class="line">        ops &#x3D; &#123;</span><br><span class="line">            &#39;-&#39;: lambda x, y: x - y,</span><br><span class="line">            &#39;+&#39;: lambda x, y: x + y,</span><br><span class="line">            &#39;*&#39;: lambda x, y: x * y,</span><br><span class="line">            &#125;</span><br><span class="line">        def helper(l, r):</span><br><span class="line">            ans &#x3D; []</span><br><span class="line">            for i in range(l, r):</span><br><span class="line">                if inp[i] not in ops: # skip number</span><br><span class="line">                    continue</span><br><span class="line">                # handle operator, shift ()  </span><br><span class="line">                # ans +&#x3D; [ops[inp[i]](le, ri) for le in helper(l, i) for ri in helper(i + 1, r)]</span><br><span class="line">                </span><br><span class="line">                for le in helper(l, i):</span><br><span class="line">                    for ri in helper(i + 1, r):</span><br><span class="line">                        ans.append(ops[inp[i]](le, ri))</span><br><span class="line">                        </span><br><span class="line">            return ans if len(ans) !&#x3D; 0 else [int(inp[l:r])]</span><br><span class="line">        return helper(0, len(inp)) # &quot;2-1-1&quot;</span><br></pre></td></tr></table></figure>
 
+<ul>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/all-possible-full-binary-trees/">894</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def allPossibleFBT(self, N: int) -&gt; List[TreeNode]:</span><br><span class="line">        if N % 2 &#x3D;&#x3D; 0: return [] # binary tree + root should be odd</span><br><span class="line">        trees_all &#x3D; collections.defaultdict(list)</span><br><span class="line">		</span><br><span class="line">        trees_all[1] &#x3D; [TreeNode(0)]</span><br><span class="line">        for n in range(3, N+1, 2):</span><br><span class="line">            for k in range(1, n, 2):</span><br><span class="line">				# consider all potential pairs</span><br><span class="line">                for tree1, tree2 in itertools.product(trees_all[k], trees_all[n-k-1]):</span><br><span class="line">                    tree &#x3D; TreeNode(0)</span><br><span class="line">                    tree.left &#x3D; tree1</span><br><span class="line">                    tree.right &#x3D; tree2</span><br><span class="line">                    trees_all[n].append(tree)</span><br><span class="line">                    </span><br><span class="line">        return trees_all[N]</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -409,7 +425,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">225</span>
+          <span class="site-state-item-count">226</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -477,12 +493,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">244k</span>
+    <span title="Symbols count total">250k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">3:42</span>
+    <span title="Reading time total">3:47</span>
 </div>
 
         
