@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-09-03T08:52:04.094Z</updated>
+  <updated>2022-09-09T18:41:43.518Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Kazuo Inamori</title>
-    <link href="https://eric999j.github.io/manager/KazuoInamori/"/>
-    <id>https://eric999j.github.io/manager/KazuoInamori/</id>
-    <published>2022-09-03T09:00:00.000Z</published>
-    <updated>2022-09-03T08:52:04.094Z</updated>
+    <title>Elizabeth II Regina</title>
+    <link href="https://eric999j.github.io/manager/EIIR/"/>
+    <id>https://eric999j.github.io/manager/EIIR/</id>
+    <published>2022-09-09T09:00:00.000Z</published>
+    <updated>2022-09-09T18:41:43.518Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;A Japanese philanthropist, entrepreneur and the founder of Kyocera and KDDI. He was the chairman of Japan Airlines- &lt;a href=&quot;https://en.wikipedia.org/wiki/Kazuo_Inamori&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;When life seems hard, the courageous do not lie down and accept defeat; instead, they are all the more determined to struggle for better future. - &lt;a href=&quot;https://en.m.wikipedia.org/wiki/Elizabeth_II&quot;&gt;Elizabeth II&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
@@ -41,7 +41,7 @@
     <link href="https://eric999j.github.io/interview/review/"/>
     <id>https://eric999j.github.io/interview/review/</id>
     <published>2022-09-03T08:30:00.000Z</published>
-    <updated>2022-09-03T09:01:32.846Z</updated>
+    <updated>2022-09-09T13:10:51.010Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
@@ -68,7 +68,7 @@
     <link href="https://eric999j.github.io/life/keepYourHeadUpPrincess/"/>
     <id>https://eric999j.github.io/life/keepYourHeadUpPrincess/</id>
     <published>2022-08-28T10:00:00.000Z</published>
-    <updated>2022-08-28T08:32:18.624Z</updated>
+    <updated>2022-09-05T08:04:48.460Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(26).jpeg&quot;&gt;&lt;/p&gt;
@@ -104,6 +104,26 @@
   </entry>
   
   <entry>
+    <title>Kazuo Inamori</title>
+    <link href="https://eric999j.github.io/manager/KazuoInamori/"/>
+    <id>https://eric999j.github.io/manager/KazuoInamori/</id>
+    <published>2022-08-24T09:00:00.000Z</published>
+    <updated>2022-09-09T18:44:10.572Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;A Japanese philanthropist, entrepreneur and the founder of Kyocera and KDDI. He was the chairman of Japan Airlines. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Kazuo_Inamori&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Chicken Tibs</title>
     <link href="https://eric999j.github.io/life/chickenTibs/"/>
     <id>https://eric999j.github.io/life/chickenTibs/</id>
@@ -127,7 +147,7 @@
     <link href="https://eric999j.github.io/interview/binarySearchTree/"/>
     <id>https://eric999j.github.io/interview/binarySearchTree/</id>
     <published>2022-08-20T10:00:00.000Z</published>
-    <updated>2022-08-24T07:33:06.687Z</updated>
+    <updated>2022-09-08T10:15:44.443Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
@@ -291,7 +311,7 @@
     <link href="https://eric999j.github.io/interview/slidingWindow/"/>
     <id>https://eric999j.github.io/interview/slidingWindow/</id>
     <published>2022-07-09T10:00:00.000Z</published>
-    <updated>2022-08-03T12:32:09.046Z</updated>
+    <updated>2022-09-05T09:52:17.787Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg&quot;&gt;&lt;/p&gt;
@@ -333,7 +353,7 @@
     <link href="https://eric999j.github.io/life/melody/"/>
     <id>https://eric999j.github.io/life/melody/</id>
     <published>2022-06-25T11:30:00.000Z</published>
-    <updated>2022-08-31T08:24:24.578Z</updated>
+    <updated>2022-09-05T19:33:00.899Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(24).jpeg&quot;&gt;&lt;/p&gt;
@@ -406,26 +426,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SBI</title>
-    <link href="https://eric999j.github.io/manager/sbi/"/>
-    <id>https://eric999j.github.io/manager/sbi/</id>
-    <published>2022-06-11T11:00:00.000Z</published>
-    <updated>2022-06-11T10:14:15.546Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;A way to seeking feedback.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   

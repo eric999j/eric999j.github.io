@@ -2,30 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eric999j.github.io/interview/review/</loc>
+    <loc>https://eric999j.github.io/manager/KazuoInamori/</loc>
     
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-09</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/manager/KazuoInamori/</loc>
+    <loc>https://eric999j.github.io/manager/EIIR/</loc>
     
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/interview/trie/</loc>
+    
+    <lastmod>2022-09-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/interview/review/</loc>
+    
+    <lastmod>2022-09-09</lastmod>
     
   </url>
   
   <url>
     <loc>https://eric999j.github.io/manager/cycle/</loc>
     
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/interview/linkedList/</loc>
+    
+    <lastmod>2022-09-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/interview/binarySearchTree/</loc>
+    
+    <lastmod>2022-09-08</lastmod>
     
   </url>
   
   <url>
     <loc>https://eric999j.github.io/life/world/</loc>
     
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/melody/</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/interview/slidingWindow/</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/baking/</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/keepYourHeadUpPrincess/</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/movie/</loc>
+    
+    <lastmod>2022-09-05</lastmod>
     
   </url>
   
@@ -65,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/life/melody/</loc>
-    
-    <lastmod>2022-08-31</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/interview/topologicalSort/</loc>
     
     <lastmod>2022-08-29</lastmod>
@@ -93,13 +149,6 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/life/keepYourHeadUpPrincess/</loc>
-    
-    <lastmod>2022-08-28</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/engineer/automation/</loc>
     
     <lastmod>2022-08-25</lastmod>
@@ -108,13 +157,6 @@
   
   <url>
     <loc>https://eric999j.github.io/life/review/</loc>
-    
-    <lastmod>2022-08-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/interview/binarySearchTree/</loc>
     
     <lastmod>2022-08-24</lastmod>
     
@@ -135,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/life/movie/</loc>
-    
-    <lastmod>2022-08-22</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/life/chickenTibs/</loc>
     
     <lastmod>2022-08-20</lastmod>
@@ -152,13 +187,6 @@
     <loc>https://eric999j.github.io/life/arrozConLeche/</loc>
     
     <lastmod>2022-08-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/interview/linkedList/</loc>
-    
-    <lastmod>2022-08-13</lastmod>
     
   </url>
   
@@ -206,13 +234,6 @@
   
   <url>
     <loc>https://eric999j.github.io/interview/decompression/</loc>
-    
-    <lastmod>2022-08-03</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/interview/slidingWindow/</loc>
     
     <lastmod>2022-08-03</lastmod>
     
@@ -362,13 +383,6 @@
     <loc>https://eric999j.github.io/life/voice/</loc>
     
     <lastmod>2022-05-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/interview/trie/</loc>
-    
-    <lastmod>2022-05-14</lastmod>
     
   </url>
   
@@ -579,13 +593,6 @@
     <loc>https://eric999j.github.io/interview/323/</loc>
     
     <lastmod>2022-01-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/life/baking/</loc>
-    
-    <lastmod>2022-01-09</lastmod>
     
   </url>
   
@@ -1614,7 +1621,7 @@
 
   <url>
     <loc>https://eric999j.github.io/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1622,70 +1629,70 @@
   
   <url>
     <loc>https://eric999j.github.io/tags/Instrument/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/AwesomeThings/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/LeetCode/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Planting/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Diet/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Music/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Workout/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/TechnicalWriting/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Linguistic/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Past/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1694,28 +1701,28 @@
   
   <url>
     <loc>https://eric999j.github.io/categories/manager/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/engineer/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/interview/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/life/</loc>
-    <lastmod>2022-09-03</lastmod>
+    <lastmod>2022-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
