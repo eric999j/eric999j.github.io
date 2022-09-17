@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="article:published_time" content="2022-05-07T11:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-14T12:27:14.467Z">
+<meta property="article:modified_time" content="2022-09-15T09:55:07.936Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-05-14 20:27:14" itemprop="dateModified" datetime="2022-05-14T20:27:14+08:00">2022-05-14</time>
+                <time title="Modified: 2022-09-15 17:55:07" itemprop="dateModified" datetime="2022-09-15T17:55:07+08:00">2022-09-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>792</span>
+              <span>801</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -260,13 +260,13 @@
 <a id="more"></a>
 
 <p>其實在搜尋前都要先排序。</p>
-<h1 id="背景知識"><a href="#背景知識" class="headerlink" title="背景知識"></a>背景知識</h1><p>雙指針</p>
+<h1 id="背景知識"><a href="#背景知識" class="headerlink" title="背景知識"></a>背景知識</h1><p>雙指針<br>遞迴</p>
 <h1 id="理解問題"><a href="#理解問題" class="headerlink" title="理解問題"></a>理解問題</h1><blockquote>
 <p>遞增排序</p>
 </blockquote>
 <h1 id="思路視覺化"><a href="#思路視覺化" class="headerlink" title="思路視覺化"></a>思路視覺化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">切割 divide</span><br><span class="line">[5,3,8,6,2,7,1,4] 一直切半至單體</span><br><span class="line"></span><br><span class="line">合併 merge</span><br><span class="line">雙指針兩兩比大小，加入小的</span><br><span class="line"></span><br><span class="line">[2,7,1,4] -&gt; [1,2,4,7]</span><br><span class="line"></span><br><span class="line">left: [2,7, inf]</span><br><span class="line">right: [1,4, inf]</span><br><span class="line"></span><br><span class="line">2&gt;1, r&#x3D; 4 , [1,0,0,0]</span><br><span class="line">4&gt;2, l&#x3D; 7, [1,2,0,0]</span><br><span class="line">7&gt;4, r&#x3D; inf, [1,2,4,0]</span><br><span class="line">inf&gt;7, l&#x3D; inf, [1,2,4,7]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h1 id="程式化"><a href="#程式化" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">def merge(left, right):</span><br><span class="line">    result &#x3D; []</span><br><span class="line">    while len(left) and len(right):</span><br><span class="line">        if left[0] &lt; right[0]:</span><br><span class="line">            result.append(left.pop(0))</span><br><span class="line">        else:</span><br><span class="line">            result.append(right.pop(0))</span><br><span class="line"></span><br><span class="line">    result &#x3D; result+left if len(left) else result+right # 添加小的</span><br><span class="line">    return result</span><br><span class="line"></span><br><span class="line">def mergeSort(array):</span><br><span class="line"></span><br><span class="line">    # Devide</span><br><span class="line">    if len(array) &lt; 2: return array</span><br><span class="line">    mid &#x3D; len(array)&#x2F;&#x2F;2</span><br><span class="line">    return merge(mergeSort(array[:mid]),mergeSort(array[mid:]))</span><br><span class="line"></span><br><span class="line">print(mergeSort([5,3,8,6,2,7,1,4]))</span><br><span class="line"></span><br><span class="line">&gt; [1, 2, 3, 4, 5, 6, 7, 8]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="程式化"><a href="#程式化" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">def merge(left, right):</span><br><span class="line"></span><br><span class="line">    result &#x3D; []</span><br><span class="line">    </span><br><span class="line">    while len(left) and len(right):</span><br><span class="line">        if left[0] &lt; right[0]:</span><br><span class="line">            result.append(left.pop(0))</span><br><span class="line">        else:</span><br><span class="line">            result.append(right.pop(0))</span><br><span class="line"></span><br><span class="line">    result &#x3D; result+left if len(left) else result+right # 添加小的到結果</span><br><span class="line">    return result</span><br><span class="line"></span><br><span class="line">def mergeSort(array):</span><br><span class="line"></span><br><span class="line">    # Devide</span><br><span class="line">    if len(array) &lt; 2: return array</span><br><span class="line">    mid &#x3D; len(array)&#x2F;&#x2F;2</span><br><span class="line">    return merge(mergeSort(array[:mid]),mergeSort(array[mid:]))</span><br><span class="line"></span><br><span class="line">print(mergeSort([5,3,8,6,2,7,1,4]))</span><br><span class="line"></span><br><span class="line">&gt; [1, 2, 3, 4, 5, 6, 7, 8]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h1 id="複雜度分析"><a href="#複雜度分析" class="headerlink" title="複雜度分析"></a>複雜度分析</h1><p>TC: O(nlogn): log base is 2, half each time<br>SC: O(n): store each item singal item</p>
 
@@ -395,7 +395,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">227</span>
+          <span class="site-state-item-count">230</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -463,12 +463,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">255k</span>
+    <span title="Symbols count total">258k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">3:52</span>
+    <span title="Reading time total">3:54</span>
 </div>
 
         

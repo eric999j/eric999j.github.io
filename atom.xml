@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-09-09T18:41:43.518Z</updated>
+  <updated>2022-09-17T09:39:58.296Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>攝影</title>
+    <link href="https://eric999j.github.io/life/photography/"/>
+    <id>https://eric999j.github.io/life/photography/</id>
+    <published>2022-09-17T10:00:00.000Z</published>
+    <updated>2022-09-17T09:39:58.296Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(26).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;一直都很喜歡走走拍拍，我想攝影也是種語言。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Heap</title>
+    <link href="https://eric999j.github.io/interview/heap/"/>
+    <id>https://eric999j.github.io/interview/heap/</id>
+    <published>2022-09-17T09:30:00.000Z</published>
+    <updated>2022-09-17T09:38:24.103Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;堆積結構&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quick Sort</title>
+    <link href="https://eric999j.github.io/interview/quickSort/"/>
+    <id>https://eric999j.github.io/interview/quickSort/</id>
+    <published>2022-09-17T09:00:00.000Z</published>
+    <updated>2022-09-17T09:38:27.018Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二元排序&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Elizabeth II Regina</title>
@@ -41,7 +103,7 @@
     <link href="https://eric999j.github.io/interview/review/"/>
     <id>https://eric999j.github.io/interview/review/</id>
     <published>2022-09-03T08:30:00.000Z</published>
-    <updated>2022-09-13T08:43:27.516Z</updated>
+    <updated>2022-09-17T09:44:49.320Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
@@ -333,7 +395,7 @@
     <link href="https://eric999j.github.io/life/portuguese/"/>
     <id>https://eric999j.github.io/life/portuguese/</id>
     <published>2022-07-03T09:30:00.000Z</published>
-    <updated>2022-08-07T10:05:21.403Z</updated>
+    <updated>2022-09-15T08:17:50.805Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(2).jpeg&quot;&gt;&lt;/p&gt;
@@ -365,67 +427,6 @@
     
     
     <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unbound Knapsack</title>
-    <link href="https://eric999j.github.io/interview/unbound/"/>
-    <id>https://eric999j.github.io/interview/unbound/</id>
-    <published>2022-06-25T10:00:00.000Z</published>
-    <updated>2022-06-25T10:15:43.470Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;除了是非題也會遇到多選題。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arroz con Leche</title>
-    <link href="https://eric999j.github.io/life/arrozConLeche/"/>
-    <id>https://eric999j.github.io/life/arrozConLeche/</id>
-    <published>2022-06-18T12:00:00.000Z</published>
-    <updated>2022-08-16T07:16:17.418Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JzEt8Gb.jpg&quot;&gt;&lt;br&gt;Hi Peru!  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notes</title>
-    <link href="https://eric999j.github.io/interview/notes/"/>
-    <id>https://eric999j.github.io/interview/notes/</id>
-    <published>2022-06-18T11:00:00.000Z</published>
-    <updated>2022-09-01T08:41:46.245Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;記錄各種容易遺忘的段落&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
