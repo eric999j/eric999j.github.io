@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg">
 <meta property="article:published_time" content="2022-09-17T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-09-17T09:38:24.103Z">
+<meta property="article:modified_time" content="2022-09-19T09:27:46.822Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-09-17 17:30:00 / Modified: 17:38:24" itemprop="dateCreated datePublished" datetime="2022-09-17T17:30:00+08:00">2022-09-17</time>
+              <time title="Created: 2022-09-17 17:30:00" itemprop="dateCreated datePublished" datetime="2022-09-17T17:30:00+08:00">2022-09-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-19 17:27:46" itemprop="dateModified" datetime="2022-09-19T17:27:46+08:00">2022-09-19</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>409</span>
+              <span>496</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -253,7 +259,7 @@
 
 <h1 id="背景知識"><a href="#背景知識" class="headerlink" title="背景知識"></a>背景知識</h1><p>最大最小堆積<br>python  </p>
 <h1 id="理解問題"><a href="#理解問題" class="headerlink" title="理解問題"></a>理解問題</h1><p>建構堆積取得最大最小值。</p>
-<h1 id="程式化"><a href="#程式化" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import heapq, copy</span><br><span class="line"></span><br><span class="line">li &#x3D; [5, 7, 9, 1, 3]</span><br><span class="line">heapq.heapify(li) # to heap</span><br><span class="line">print(li)</span><br><span class="line"></span><br><span class="line">heapq.heappush(li, 4)</span><br><span class="line">print(li)</span><br><span class="line"></span><br><span class="line">cp &#x3D; copy.deepcopy(li) # deep copy original list</span><br><span class="line">print(cp)</span><br><span class="line">print(heapq.heappop(li)) # pop the smallest</span><br><span class="line"></span><br><span class="line">print(heapq.nlargest(3, cp)) # 3 largest</span><br><span class="line">print(heapq.nsmallest(3, cp)) # 3 smallest</span><br><span class="line"></span><br><span class="line">print(cp)</span><br></pre></td></tr></table></figure>
+<h1 id="程式化"><a href="#程式化" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">import heapq, copy</span><br><span class="line"></span><br><span class="line">li &#x3D; [5, 7, 9, 1, 3]</span><br><span class="line">heapq.heapify(li) # to heap</span><br><span class="line">print(li)</span><br><span class="line"></span><br><span class="line">heapq.heappush(li, 4)</span><br><span class="line">print(li)</span><br><span class="line"></span><br><span class="line">cp &#x3D; copy.deepcopy(li) # deep copy original list</span><br><span class="line">print(cp)</span><br><span class="line">print(heapq.heappop(li)) # pop the smallest</span><br><span class="line"></span><br><span class="line">print(heapq.nlargest(3, cp)) # 3 largest</span><br><span class="line">print(heapq.nsmallest(3, cp)) # 3 smallest</span><br><span class="line"></span><br><span class="line">print(cp)</span><br><span class="line"></span><br><span class="line">&gt;</span><br><span class="line">[1, 3, 9, 7, 5]</span><br><span class="line">[1, 3, 4, 7, 5, 9]</span><br><span class="line">[1, 3, 4, 7, 5, 9]</span><br><span class="line">1</span><br><span class="line">[9, 7, 5]</span><br><span class="line">[1, 3, 4]</span><br><span class="line">[1, 3, 4, 7, 5, 9]</span><br></pre></td></tr></table></figure>
 
 <h1 id="複雜度分析"><a href="#複雜度分析" class="headerlink" title="複雜度分析"></a>複雜度分析</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TC: Push&#x2F;Pop: O(logn), Nlargest&#x2F;Nsmallest: O(nlogn)</span><br><span class="line">SC: O(n)</span><br></pre></td></tr></table></figure>
 
@@ -383,7 +389,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">230</span>
+          <span class="site-state-item-count">232</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -451,12 +457,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">258k</span>
+    <span title="Symbols count total">261k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">3:54</span>
+    <span title="Reading time total">3:57</span>
 </div>
 
         
