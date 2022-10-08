@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eric999j.github.io/life/krems%CC%8Cnita/</loc>
+    <loc>https://eric999j.github.io/life/world/</loc>
+    
+    <lastmod>2022-10-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/kremsnita/</loc>
     
     <lastmod>2022-10-08</lastmod>
     
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://eric999j.github.io/interview/twoDimension/</loc>
-    
-    <lastmod>2022-10-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/life/world/</loc>
     
     <lastmod>2022-10-08</lastmod>
     
