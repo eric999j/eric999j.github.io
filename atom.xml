@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-10-08T08:26:40.751Z</updated>
+  <updated>2022-10-15T10:40:02.991Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Melim - Meu Abrigo</title>
+    <link href="https://eric999j.github.io/life/melimMeu/"/>
+    <id>https://eric999j.github.io/life/melimMeu/</id>
+    <published>2022-10-15T10:00:00.000Z</published>
+    <updated>2022-10-15T10:40:02.991Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;巴西朋友傳來的歌，研究一下XD&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
   
   <entry>
     <title>Kremšnita</title>
@@ -221,7 +241,7 @@
     <link href="https://eric999j.github.io/interview/review/"/>
     <id>https://eric999j.github.io/interview/review/</id>
     <published>2022-09-03T08:30:00.000Z</published>
-    <updated>2022-09-29T10:26:03.199Z</updated>
+    <updated>2022-10-15T10:38:23.666Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
@@ -401,28 +421,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Catalan Number</title>
-    <link href="https://eric999j.github.io/interview/catalanNumber/"/>
-    <id>https://eric999j.github.io/interview/catalanNumber/</id>
-    <published>2022-08-07T11:00:00.000Z</published>
-    <updated>2022-09-02T10:48:22.506Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1, 2, 5, 14, 42…&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
