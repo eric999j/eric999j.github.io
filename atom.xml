@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-10-16T07:28:14.977Z</updated>
+  <updated>2022-10-22T09:39:21.680Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PARA</title>
+    <link href="https://eric999j.github.io/manager/para/"/>
+    <id>https://eric999j.github.io/manager/para/</id>
+    <published>2022-10-22T09:30:00.000Z</published>
+    <updated>2022-10-22T09:39:21.680Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;A way to manage data&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>Melim - Meu Abrigo</title>
@@ -241,7 +261,7 @@
     <link href="https://eric999j.github.io/interview/review/"/>
     <id>https://eric999j.github.io/interview/review/</id>
     <published>2022-09-03T08:30:00.000Z</published>
-    <updated>2022-10-15T10:38:23.666Z</updated>
+    <updated>2022-10-22T09:37:19.758Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
@@ -401,26 +421,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Archetype</title>
-    <link href="https://eric999j.github.io/manager/archetype/"/>
-    <id>https://eric999j.github.io/manager/archetype/</id>
-    <published>2022-08-07T12:00:00.000Z</published>
-    <updated>2022-08-07T11:47:34.083Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Thinking, dismantling, and reorganizing from the essence of things, then we can discover potential value.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
