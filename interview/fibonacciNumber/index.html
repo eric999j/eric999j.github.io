@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg">
 <meta property="article:published_time" content="2022-08-13T09:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-01T08:39:29.165Z">
+<meta property="article:modified_time" content="2022-10-30T08:06:17.935Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-09-01 16:39:29" itemprop="dateModified" datetime="2022-09-01T16:39:29+08:00">2022-09-01</time>
+                <time title="Modified: 2022-10-30 16:06:17" itemprop="dateModified" datetime="2022-10-30T16:06:17+08:00">2022-10-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>539</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -270,7 +270,9 @@
 <h1 id="思路視覺化"><a href="#思路視覺化" class="headerlink" title="思路視覺化"></a>思路視覺化</h1><p>0, 1, 1, 2, 3, 5…</p>
 <p>f(1) = 0+1 == 1<br>f(2) = 1+1 == 2<br>f(3) = 1+2 == 3 # f(1)+f(2)<br>f(4) = 2+3 == 5 # f(2)+f(3)  </p>
 <p>f(n) = f(n-2) + f(n-1), n = 2, 3, 4…</p>
-<h1 id="程式化"><a href="#程式化" class="headerlink" title="程式化"></a>程式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">TC: O(2ˆn), SC: O(n)</span><br><span class="line">def recur_fibo(n):</span><br><span class="line">  if n&lt; 2, return n</span><br><span class="line">  else:</span><br><span class="line">    return recur_fibo(n-2) + recur_fibo(n-1)</span><br><span class="line"></span><br><span class="line">TC: O(n), SC: O(n)</span><br><span class="line">memo&#x3D;&#123;&#125;</span><br><span class="line">def memo_fibo(n):</span><br><span class="line">    if n in memo: return memo[n]</span><br><span class="line">    if n&lt;2: return n</span><br><span class="line">    memo[n] &#x3D; memo_fibo(n-1)+ memo_fibo(n-2)</span><br><span class="line">    return memo[n]</span><br><span class="line"></span><br><span class="line">TC: O(n), SC: O(1)</span><br><span class="line">def reuse_fibo(n):</span><br><span class="line">  a,b &#x3D; 1,0</span><br><span class="line">  for _ in range(n):</span><br><span class="line">    a,b &#x3D; a+b,a</span><br><span class="line">  return a</span><br></pre></td></tr></table></figure>
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">TC: O(2ˆn), SC: O(n)</span><br><span class="line">def recur_fibo(n):</span><br><span class="line">  if n&lt; 2: return n</span><br><span class="line">  else:</span><br><span class="line">    return recur_fibo(n-2) + recur_fibo(n-1)</span><br><span class="line"></span><br><span class="line">TC: O(n), SC: O(n)</span><br><span class="line">memo&#x3D;&#123;&#125;</span><br><span class="line">def memo_fibo(n):</span><br><span class="line">    if n in memo: return memo[n]</span><br><span class="line">    if n&lt;2: return n</span><br><span class="line">    memo[n] &#x3D; memo_fibo(n-1)+ memo_fibo(n-2)</span><br><span class="line">    return memo[n]</span><br><span class="line"></span><br><span class="line">TC: O(n), SC: O(1)</span><br><span class="line">def series_fibo(n):</span><br><span class="line">  a,b &#x3D; 1,0</span><br><span class="line">  for _ in range(n):</span><br><span class="line">    a,b &#x3D; a+b,a</span><br><span class="line">  return a</span><br></pre></td></tr></table></figure>
+
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1,1,2,3,5,8</span><br><span class="line"></span><br><span class="line">class Fibonacci &#123;</span><br><span class="line">public static void main(String[] args)&#123;</span><br><span class="line">    int index &#x3D; 4;</span><br><span class="line">    &#x2F;&#x2F;System.out.println(recur_fibo(index+1));</span><br><span class="line">    &#x2F;&#x2F;System.out.println(memo_fibo(index+1));</span><br><span class="line">    System.out.println(series_fibo(index));</span><br><span class="line">&#125;</span><br><span class="line">public static long recur_fibo (int n)&#123;</span><br><span class="line">    if (n&lt;2) return n;</span><br><span class="line">    long ret &#x3D; recur_fibo(n - 1) + recur_fibo(n - 2);</span><br><span class="line">    return ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public static long memo_fibo (int n)&#123;</span><br><span class="line">    long[] memo &#x3D; new long[n+1];</span><br><span class="line">    if(memo[n] &#x3D;&#x3D;0)&#123;</span><br><span class="line">        if (n &lt; 2) &#123;</span><br><span class="line">            memo[n] &#x3D; n;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            memo[n] &#x3D; memo_fibo(n - 1) + memo_fibo(n - 2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return memo[n];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">static int a&#x3D;0,b&#x3D;1,c&#x3D;0;  </span><br><span class="line">public static long series_fibo (int n)&#123;</span><br><span class="line">    if(n&gt;0)&#123;</span><br><span class="line">        c &#x3D; a + b;</span><br><span class="line">        a&#x3D; b;</span><br><span class="line">        b&#x3D; c;</span><br><span class="line">        series_fibo(n-1);</span><br><span class="line">    &#125;</span><br><span class="line">    return c;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 <div>
@@ -380,7 +382,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98"><span class="nav-number">1.</span> <span class="nav-text">背景知識</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E5%95%8F%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">理解問題</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%E8%A6%96%E8%A6%BA%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">思路視覺化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">程式化</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98"><span class="nav-number">1.</span> <span class="nav-text">背景知識</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E5%95%8F%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">理解問題</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%E8%A6%96%E8%A6%BA%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">思路視覺化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">4.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java"><span class="nav-number">5.</span> <span class="nav-text">Java</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -398,7 +400,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">238</span>
+          <span class="site-state-item-count">239</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -466,12 +468,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">270k</span>
+    <span title="Symbols count total">272k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:06</span>
+    <span title="Reading time total">4:07</span>
 </div>
 
         
