@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-10-30T08:09:42.242Z</updated>
+  <updated>2022-11-05T06:32:35.482Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>15分鐘寫出爆紅千字文</title>
+    <link href="https://eric999j.github.io/life/attractive/"/>
+    <id>https://eric999j.github.io/life/attractive/</id>
+    <published>2022-11-05T07:00:00.000Z</published>
+    <updated>2022-11-05T06:32:35.482Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Google圖書正好有促銷，順便買來理解一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java</title>
+    <link href="https://eric999j.github.io/interview/java/"/>
+    <id>https://eric999j.github.io/interview/java/</id>
+    <published>2022-11-05T06:00:00.000Z</published>
+    <updated>2022-11-05T06:32:40.238Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;記錄Java各種容易遺忘的段落&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>香料漱口水</title>
@@ -381,46 +421,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Binary Search Tree</title>
-    <link href="https://eric999j.github.io/interview/binarySearchTree/"/>
-    <id>https://eric999j.github.io/interview/binarySearchTree/</id>
-    <published>2022-08-20T10:00:00.000Z</published>
-    <updated>2022-09-08T10:15:44.443Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;樹狀結構&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The Mythical Man-Month</title>
-    <link href="https://eric999j.github.io/manager/manMonth/"/>
-    <id>https://eric999j.github.io/manager/manMonth/</id>
-    <published>2022-08-13T11:00:00.000Z</published>
-    <updated>2022-08-13T09:34:46.732Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(31).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Information management bible.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
