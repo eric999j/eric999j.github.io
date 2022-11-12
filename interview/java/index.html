@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg">
 <meta property="article:published_time" content="2022-11-05T06:00:00.000Z">
-<meta property="article:modified_time" content="2022-11-05T06:32:40.238Z">
+<meta property="article:modified_time" content="2022-11-10T09:44:30.706Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-11-05 14:00:00 / Modified: 14:32:40" itemprop="dateCreated datePublished" datetime="2022-11-05T14:00:00+08:00">2022-11-05</time>
+              <time title="Created: 2022-11-05 14:00:00" itemprop="dateCreated datePublished" datetime="2022-11-05T14:00:00+08:00">2022-11-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-11-10 17:44:30" itemprop="dateModified" datetime="2022-11-10T17:44:30+08:00">2022-11-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1k</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -250,15 +256,16 @@
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg"></p>
 <p>記錄Java各種容易遺忘的段落</p>
 <a id="more"></a>
+<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">int [] array &#x3D; &#123;1, 3, 8, 9, 4, 7, 6&#125;;</span><br><span class="line"></span><br><span class="line">int [] intArray &#x3D; new int [] &#123;52,45,32,64,12,87,78,98,23,7&#125;;</span><br><span class="line">System.out.println(Arrays.toString(intArray));</span><br><span class="line"></span><br><span class="line">&gt;</span><br><span class="line">java -cp &#x2F;tmp&#x2F;ZzMu196mR2 Solution</span><br><span class="line">[52, 45, 32, 64, 12, 87, 78, 98, 23, 7]</span><br><span class="line"></span><br><span class="line">List&lt;Integer&gt; list &#x3D; Arrays.asList(1, 10, 2, 9, 3, 7, 4, 6, 5, 7, 7, 7);</span><br></pre></td></tr></table></figure>
 
-<h1 id="static-固定記憶體空間"><a href="#static-固定記憶體空間" class="headerlink" title="static 固定記憶體空間"></a>static 固定記憶體空間</h1><ol>
+<h1 id="Static-固定記憶體空間"><a href="#Static-固定記憶體空間" class="headerlink" title="Static 固定記憶體空間"></a>Static 固定記憶體空間</h1><ol>
 <li>不用new也可以用。</li>
 <li>new也只是用固定內空間。  </li>
 <li>new 值會覆蓋。</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Example&#123;</span><br><span class="line">     static int data &#x3D; 0;</span><br><span class="line">     public Example() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Main &#123;</span><br><span class="line">     public static void main(String[] argv)  &#123;</span><br><span class="line">          System.out.println(Example.data); &#x2F;&#x2F; 1</span><br><span class="line">          Example exp1 &#x3D; new Example();</span><br><span class="line">          Example exp2 &#x3D; new Example();</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">          exp2.data  &#x3D; 1;</span><br><span class="line">          System.out.println(exp2.data); &#x2F;&#x2F; 2 3</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">0  </span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 
-<h1 id="final-不可修改"><a href="#final-不可修改" class="headerlink" title="final 不可修改"></a>final 不可修改</h1><ol>
+<h1 id="Final-不可修改"><a href="#Final-不可修改" class="headerlink" title="Final 不可修改"></a>Final 不可修改</h1><ol>
 <li>類別：無法被繼承(extends)。</li>
 <li>函數：繼承他的子類別無法覆寫。</li>
 <li>變數：常數無法被修改。</li>
@@ -371,7 +378,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">1.</span> <span class="nav-text">static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#final-%E4%B8%8D%E5%8F%AF%E4%BF%AE%E6%94%B9"><span class="nav-number">2.</span> <span class="nav-text">final 不可修改</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">1.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">2.</span> <span class="nav-text">Static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Final-%E4%B8%8D%E5%8F%AF%E4%BF%AE%E6%94%B9"><span class="nav-number">3.</span> <span class="nav-text">Final 不可修改</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -389,7 +396,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">241</span>
+          <span class="site-state-item-count">242</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -457,12 +464,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">286k</span>
+    <span title="Symbols count total">297k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:20</span>
+    <span title="Reading time total">4:30</span>
 </div>
 
         
