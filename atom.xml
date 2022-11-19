@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-11-12T07:48:20.465Z</updated>
+  <updated>2022-11-19T10:26:04.103Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>黃酒</title>
+    <link href="https://eric999j.github.io/life/riceWine/"/>
+    <id>https://eric999j.github.io/life/riceWine/</id>
+    <published>2022-11-19T10:00:00.000Z</published>
+    <updated>2022-11-19T10:26:04.103Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;每種曲風都用酒類命名，著實酒不醉人人自醉。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Remainder</title>
+    <link href="https://eric999j.github.io/interview/remainder/"/>
+    <id>https://eric999j.github.io/interview/remainder/</id>
+    <published>2022-11-19T09:00:00.000Z</published>
+    <updated>2022-11-19T10:24:02.762Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;補些遺漏的部分。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>AISAS</title>
@@ -61,7 +103,7 @@
     <link href="https://eric999j.github.io/interview/java/"/>
     <id>https://eric999j.github.io/interview/java/</id>
     <published>2022-11-05T06:00:00.000Z</published>
-    <updated>2022-11-10T09:44:30.706Z</updated>
+    <updated>2022-11-16T11:56:37.342Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -301,7 +343,7 @@
     <link href="https://eric999j.github.io/interview/quickSort/"/>
     <id>https://eric999j.github.io/interview/quickSort/</id>
     <published>2022-09-17T09:00:00.000Z</published>
-    <updated>2022-09-17T09:38:27.018Z</updated>
+    <updated>2022-11-18T07:58:25.210Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
@@ -343,7 +385,7 @@
     <link href="https://eric999j.github.io/interview/review/"/>
     <id>https://eric999j.github.io/interview/review/</id>
     <published>2022-09-03T08:30:00.000Z</published>
-    <updated>2022-11-11T08:01:22.835Z</updated>
+    <updated>2022-11-19T09:31:07.199Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
@@ -382,46 +424,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kahn&#39;s Algorithm (Topological Sort)</title>
-    <link href="https://eric999j.github.io/interview/topologicalSort/"/>
-    <id>https://eric999j.github.io/interview/topologicalSort/</id>
-    <published>2022-08-28T09:00:00.000Z</published>
-    <updated>2022-11-09T10:08:27.013Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;DAG圖形結構中用BFS找合理順序&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kazuo Inamori</title>
-    <link href="https://eric999j.github.io/manager/KazuoInamori/"/>
-    <id>https://eric999j.github.io/manager/KazuoInamori/</id>
-    <published>2022-08-24T09:00:00.000Z</published>
-    <updated>2022-09-09T18:44:10.572Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;A Japanese philanthropist, entrepreneur and the founder of Kyocera and KDDI. He was the chairman of Japan Airlines. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Kazuo_Inamori&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   

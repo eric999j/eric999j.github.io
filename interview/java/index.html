@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg">
 <meta property="article:published_time" content="2022-11-05T06:00:00.000Z">
-<meta property="article:modified_time" content="2022-11-10T09:44:30.706Z">
+<meta property="article:modified_time" content="2022-11-16T11:56:37.342Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-11-10 17:44:30" itemprop="dateModified" datetime="2022-11-10T17:44:30+08:00">2022-11-10</time>
+                <time title="Modified: 2022-11-16 19:56:37" itemprop="dateModified" datetime="2022-11-16T19:56:37+08:00">2022-11-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.3k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -256,12 +256,12 @@
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg"></p>
 <p>記錄Java各種容易遺忘的段落</p>
 <a id="more"></a>
-<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">int [] array &#x3D; &#123;1, 3, 8, 9, 4, 7, 6&#125;;</span><br><span class="line"></span><br><span class="line">int [] intArray &#x3D; new int [] &#123;52,45,32,64,12,87,78,98,23,7&#125;;</span><br><span class="line">System.out.println(Arrays.toString(intArray));</span><br><span class="line"></span><br><span class="line">&gt;</span><br><span class="line">java -cp &#x2F;tmp&#x2F;ZzMu196mR2 Solution</span><br><span class="line">[52, 45, 32, 64, 12, 87, 78, 98, 23, 7]</span><br><span class="line"></span><br><span class="line">List&lt;Integer&gt; list &#x3D; Arrays.asList(1, 10, 2, 9, 3, 7, 4, 6, 5, 7, 7, 7);</span><br></pre></td></tr></table></figure>
+<h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; String to array</span><br><span class="line">char[] strArray &#x3D; inputString.toCharArray();</span><br><span class="line">        </span><br><span class="line">&#x2F;&#x2F; 實例 int [] array 與 new int [] &#123;&#125;給初始值</span><br><span class="line">int [] array &#x3D; new int [] &#123;1, 3, 8, 9, 4, 7, 6&#125;;</span><br><span class="line">System.out.println(Arrays.toString(array));</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 也可寫成</span><br><span class="line">int [] array &#x3D; &#123;1, 3, 8, 9, 4, 7, 6&#125;;</span><br><span class="line">&gt;</span><br><span class="line">java -cp &#x2F;tmp&#x2F;ZzMu196mR2 Solution</span><br><span class="line">[52, 45, 32, 64, 12, 87, 78, 98, 23, 7]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 分割</span><br><span class="line">int [] arr &#x3D; Arrays.copyOfRange(array, 0, 3);</span><br><span class="line">System.out.println(Arrays.toString(arr));</span><br><span class="line">&gt;</span><br><span class="line">java -cp &#x2F;tmp&#x2F;3QZLh3auEl Main</span><br><span class="line">[1, 3, 8]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 改成list</span><br><span class="line">List&lt;Integer&gt; list &#x3D; Arrays.asList(1, 10, 2, 9, 3, 7, 4, 6, 5, 7, 7, 7);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 印出</span><br><span class="line">import java.util.*;</span><br><span class="line">System.out.println(Arrays.toString(array));</span><br></pre></td></tr></table></figure>
 
 <h1 id="Static-固定記憶體空間"><a href="#Static-固定記憶體空間" class="headerlink" title="Static 固定記憶體空間"></a>Static 固定記憶體空間</h1><ol>
 <li>不用new也可以用。</li>
 <li>new也只是用固定內空間。  </li>
-<li>new 值會覆蓋。</li>
+<li>new值會覆蓋。</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Example&#123;</span><br><span class="line">     static int data &#x3D; 0;</span><br><span class="line">     public Example() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Main &#123;</span><br><span class="line">     public static void main(String[] argv)  &#123;</span><br><span class="line">          System.out.println(Example.data); &#x2F;&#x2F; 1</span><br><span class="line">          Example exp1 &#x3D; new Example();</span><br><span class="line">          Example exp2 &#x3D; new Example();</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">          exp2.data  &#x3D; 1;</span><br><span class="line">          System.out.println(exp2.data); &#x2F;&#x2F; 2 3</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">0  </span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 
@@ -270,7 +270,7 @@
 <li>函數：繼承他的子類別無法覆寫。</li>
 <li>變數：常數無法被修改。</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class Example&#123;</span><br><span class="line">     final int data &#x3D; 0;</span><br><span class="line">     public Example() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Main &#123;</span><br><span class="line">     public static void main(String[] argv)  &#123;</span><br><span class="line">         System.out.println(Example.data);</span><br><span class="line">          Example exp1 &#x3D; new Example();</span><br><span class="line">          exp1.data  &#x3D; 1;</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">&#x2F;tmp&#x2F;DC9NTE17Mc&#x2F;Main.java:7: error: non-static variable data cannot be referenced from a static context</span><br><span class="line">System.out.println(Example.data);</span><br><span class="line">^</span><br><span class="line">&#x2F;tmp&#x2F;DC9NTE17Mc&#x2F;Main.java:9: error: cannot assign a value to final variable data</span><br><span class="line">          exp1.data  &#x3D; 1;</span><br><span class="line">^</span><br><span class="line">2 errors</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Example&#123;</span><br><span class="line">     final int data &#x3D; 0;</span><br><span class="line">     public Example() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Main &#123;</span><br><span class="line">     public static void main(String[] argv)  &#123;</span><br><span class="line">          System.out.println(Example.data);</span><br><span class="line">          Example exp1 &#x3D; new Example();</span><br><span class="line">          exp1.data  &#x3D; 1;</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">&#x2F;tmp&#x2F;DC9NTE17Mc&#x2F;Main.java:7: error: non-static variable data cannot be referenced from a static context</span><br><span class="line">System.out.println(Example.data); &#x2F;&#x2F; final static int data &#x3D; 0;</span><br><span class="line"></span><br><span class="line">^</span><br><span class="line">&#x2F;tmp&#x2F;DC9NTE17Mc&#x2F;Main.java:9: error: cannot assign a value to final variable data</span><br><span class="line">          exp1.data  &#x3D; 1; &#x2F;&#x2F; final 無法修改。</span><br><span class="line">^</span><br><span class="line">2 errors</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -396,7 +396,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">242</span>
+          <span class="site-state-item-count">244</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -464,12 +464,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">297k</span>
+    <span title="Symbols count total">311k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:30</span>
+    <span title="Reading time total">4:43</span>
 </div>
 
         
