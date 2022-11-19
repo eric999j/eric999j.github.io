@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eric999j.github.io/life/riceWine/</loc>
-    
-    <lastmod>2022-11-19</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/interview/remainder/</loc>
     
     <lastmod>2022-11-19</lastmod>
@@ -17,6 +10,13 @@
   
   <url>
     <loc>https://eric999j.github.io/interview/review/</loc>
+    
+    <lastmod>2022-11-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/riceWine/</loc>
     
     <lastmod>2022-11-19</lastmod>
     
