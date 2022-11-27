@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg">
 <meta property="article:published_time" content="2022-09-03T08:30:00.000Z">
-<meta property="article:modified_time" content="2022-11-19T13:04:13.658Z">
+<meta property="article:modified_time" content="2022-11-24T09:45:47.275Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-11-19 21:04:13" itemprop="dateModified" datetime="2022-11-19T21:04:13+08:00">2022-11-19</time>
+                <time title="Modified: 2022-11-24 17:45:47" itemprop="dateModified" datetime="2022-11-24T17:45:47+08:00">2022-11-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.6k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -282,16 +282,28 @@
 <li>用例子邊說邊測試優化 35-50 min        </li>
 <li>面試官提問 50 min-1 hr</li>
 </ol>
-<h2 id="題型回顧：-2022-9-100"><a href="#題型回顧：-2022-9-100" class="headerlink" title="題型回顧： (2022/9: 100%)"></a>題型回顧： (2022/9: 100%)</h2><h3 id="結構"><a href="#結構" class="headerlink" title="結構"></a><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-collections-complexity">結構</a></h3><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">Array</a><br>適合 Random Access O(1): <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a><br>不適合 Append, Delete: <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a><br><a href="https://eric999j.github.io/interview/linkedList/">LinkedList</a><br>適合 Append, Delete O(1): <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a><br>不適合 Random Access O(nˆ2 logn): <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a>，刪要尋訪各node<br><code>circular detection，問題適合single or double</code>  </p>
-<h2 id="Traverse"><a href="#Traverse" class="headerlink" title="Traverse"></a>Traverse</h2><p><a href="https://eric999j.github.io/interview/dfs/">Stack, DFS, FILO</a><br>適合 Function call，Sequential access<br><a href="https://eric999j.github.io/interview/bfs/">Queue, BFS, FIFO</a><br>適合 Tree level traverse<br><code>Stack, Queue 類似串列   都不適合 Random Access，任意刪data</code>   </p>
-<p><a href="https://eric999j.github.io/interview/remainder/">Priority queue</a><br>streaming 頻繁push,pop O(logn)<br>適合  get  min, max O(1)<br>不適合  Random Access，Delete  </p>
-<h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h2><p><a href="https://eric999j.github.io/interview/remainder/">HashSet</a><br>適合 無順序 add(), remove() and contains()是O(1) ，因為底層是HashMap<br><a href="https://eric999j.github.io/interview/remainder/">TreeSet</a><br>適合 有順序 add(), remove() and contains()是O(log(n)) ，因為底層是TreeMap</p>
-<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><p><a href="https://eric999j.github.io/interview/remainder/">Binary tree</a><br>不能假設左子比右子小<br><a href="https://eric999j.github.io/interview/binarySearchTree/">Binary search tree</a><br>左子比右子小<br>Balance tree<br>左右子同深度 access: O(logn)<br>適合  Append，Search<br>不適合  Delete，Copy，Change Order，In-place sorting<br><a href="https://eric999j.github.io/interview/trie/">Trie</a><br>適合 Auto-completion O(logn)<br>不適合 Delete，Copy<br><code>BFS, DFS，各有利弊 Tree 很深DFS可能Stack overflow，可以假定深度D，比較方便討論複雜度</code></p>
-<h2 id="Graph"><a href="#Graph" class="headerlink" title="Graph"></a>Graph</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">HashMap</a><br>適合 無順序，良好hash function下put, get value O(1)<br><a href="https://eric999j.github.io/interview/remainder/">TreeMap</a><br>適合 有順序<br><a href="https://eric999j.github.io/interview/topologicalSort/">DAG圖</a>    </p>
-<h2 id="演算法"><a href="#演算法" class="headerlink" title="演算法"></a>演算法</h2><h2 id="Sorting"><a href="#Sorting" class="headerlink" title="Sorting"></a>Sorting</h2><p><a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a><br><a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a><br>Others: 小scale用bubble sort[不斷交換]，大部分排好：Inserting sort[前2筆排好，後面不斷插入適當位置]  </p>
-<h2 id="Searching"><a href="#Searching" class="headerlink" title="Searching"></a>Searching</h2><p><a href="https://eric999j.github.io/interview/binarySearch/">二元搜尋</a>   </p>
+<h2 id="題型回顧：-2022-9-100"><a href="#題型回顧：-2022-9-100" class="headerlink" title="題型回顧： (2022/9: 100%)"></a>題型回顧： (2022/9: 100%)</h2><h3 id="結構"><a href="#結構" class="headerlink" title="結構"></a><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-collections-complexity">結構</a></h3><h2 id="List-特定順序加入"><a href="#List-特定順序加入" class="headerlink" title="List: 特定順序加入"></a>List: 特定順序加入</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">ArrayList</a><br>適合 Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> TC:O(nlogn), SC:O(n)<br>Add, Get:O(1)<br>不適合 Append, Delete: <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a><br>Add(index, element), remove, indexof, contains: O(n)  </p>
+<p><a href="https://eric999j.github.io/interview/linkedList/">LinkedList</a><br>適合 Append, Delete O(1): <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a> TC:O(nlogn), SC:O(n)<br>Add: O(1)<br>不適合 Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> O(nˆ2 logn)，刪要尋訪各node<br>Add(index, element), remove, contains: O(n)  </p>
+<p><a href="https://eric999j.github.io/interview/topologicalSort/">Circular Detection</a>  </p>
+<p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/doubly-linked-list/">Double Linkedlist</a> </p>
+<p>小資料 <a href="https://eric999j.github.io/interview/remainder/">Others</a><br>Bubble sort[不斷交換]:小scale容易達到Best O(n)<br>Average:O(nˆ2)<br>Space: O(1)  </p>
+<p>Inserting sort[取第一筆當排好，後面不斷插入適當位置]: 大部分排好容易達到Best O(n)<br>Average:O(nˆ2)<br>Space: O(1)  </p>
+<h2 id="Traverse"><a href="#Traverse" class="headerlink" title="Traverse"></a>Traverse</h2><p><code>Stack, Queue 類似串列   都不適合 Random Access pop(idx)，任意刪data O(n)</code> </p>
+<p><a href="https://eric999j.github.io/interview/dfs/">Stack, DFS, FILO</a><br>適合 Function call，Sequential access<br>List: O(V+E)<br>Matrix: O(V^2)   </p>
+<p><a href="https://eric999j.github.io/interview/bfs/">Queue, BFS, FIFO</a><br>適合 Tree level traverse: Pop O(1)<br>List: O(V+E)<br>Matrix: O(V^2)   </p>
+<p><a href="https://eric999j.github.io/interview/remainder/">Priority Queue</a><br>streaming 頻繁push,pop O(logn)<br>適合  Get, Min, Max O(1)<br>不適合  Random Access，Delete  </p>
+<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><p><a href="https://eric999j.github.io/interview/remainder/">Binary tree</a><br>不能假設左子比右子小  </p>
+<p><a href="https://eric999j.github.io/interview/binarySearchTree/">Binary search tree</a><br>左子比右子小  </p>
+<p>Balance tree<br>左右子同深度 access: O(logn)<br>適合  Append，Search<br>不適合  Delete，Copy，Change Order，In-place sorting<br><a href="https://eric999j.github.io/interview/trie/">Trie</a><br>適合 Auto-completion O(logn)<br>不適合 Delete，Copy<br><code>BFS, DFS，各有利弊 Tree 很深DFS可能Stack overflow，可以假定深度D，比較方便討論複雜度</code> </p>
+<h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">HashMap</a><br>適合 無順序<br>Put, Get,Remove, ContainsKey: O(1)，良好hash function下  </p>
+<p><a href="https://eric999j.github.io/interview/remainder/">TreeMap</a><br>適合 有順序<br>Put, Get, Remove, ContainsKey: O(logn)  </p>
+<h2 id="Set：元素不重複"><a href="#Set：元素不重複" class="headerlink" title="Set：元素不重複"></a>Set：元素不重複</h2><p><a href="https://eric999j.github.io/interview/remainder/">HashSet</a><br>適合 無順序<br>Add, Remove, Contains: O(1) ，因為底層是HashMap  </p>
+<p><a href="https://eric999j.github.io/interview/remainder/">TreeSet</a><br>適合 有順序<br>Add, Remove, Contains: O(logn) ，因為底層是TreeMap  </p>
+<h2 id="演算法"><a href="#演算法" class="headerlink" title="演算法"></a>演算法</h2><h2 id="Sorting"><a href="#Sorting" class="headerlink" title="Sorting"></a>Sorting</h2><p><a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a>: Average: O(nlogn), Worse: O(nˆ2), SC:O(n)   </p>
+<p><a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a>: Average: O(nlogn), Worse: O(nlogn), SC:O(n)  </p>
+<h2 id="Searching"><a href="#Searching" class="headerlink" title="Searching"></a>Searching</h2><p><a href="https://eric999j.github.io/interview/binarySearch/">二元搜尋</a> : 每次步驟砍半: O(logn)  </p>
 <h2 id="動態規劃"><a href="#動態規劃" class="headerlink" title="動態規劃"></a>動態規劃</h2><p>小問題升至大問題<br><a href="https://eric999j.github.io/interview/oneDimension/">一維決策樹</a><br><a href="https://eric999j.github.io/interview/twoDimension/">二維轉移矩陣</a><br><a href="https://eric999j.github.io/interview/zeroOne/">0/1背包</a><br><a href="https://eric999j.github.io/interview/unbound/">多重背包</a>  </p>
-<h2 id="Multithreading"><a href="#Multithreading" class="headerlink" title="Multithreading"></a>Multithreading</h2><p>Deadlock, busy wating…</p>
+<h2 id="Multithreading"><a href="#Multithreading" class="headerlink" title="Multithreading"></a>Multithreading</h2><p>Deadlock, busy wating…<br>List的CopyOnWriteArrayList是thread-safe<br>Get: O(1)<br>Add, remove, contains: O(n)  </p>
 <h2 id="Mock-Interview-80"><a href="#Mock-Interview-80" class="headerlink" title="Mock Interview (80%)"></a>Mock Interview (80%)</h2><p><a target="_blank" rel="noopener" href="https://igotanoffer.com/blogs/tech/google-behavioral-interview">Behavioral</a><br>任何經驗都有可取之處，所以要保持正向<br>依職位可能不會談到領導力，但還是要知道  </p>
 <ul>
 <li>System Design<br>前端，後端針對自己專業回答就好，要了解Domain knowledge<br>Backend: 使用者很多，可用load balancer  </li>
@@ -405,7 +417,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9F%A5%E9%81%93%E8%B6%8A%E5%A4%9A%E5%B0%B1%E8%B6%8A%E6%9C%89%E7%99%BC%E5%B1%95%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">知道越多就越有發展性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">2.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">3.</span> <span class="nav-text">KRs</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD%EF%BC%9A-100"><span class="nav-number">3.1.</span> <span class="nav-text">前置作業：(100%)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-Solving-Steps"><span class="nav-number">3.1.1.</span> <span class="nav-text">Problem Solving Steps</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%8C%E5%9E%8B%E5%9B%9E%E9%A1%A7%EF%BC%9A-2022-9-100"><span class="nav-number">3.2.</span> <span class="nav-text">題型回顧： (2022&#x2F;9: 100%)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%90%E6%A7%8B"><span class="nav-number">3.2.1.</span> <span class="nav-text">結構</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic"><span class="nav-number">3.3.</span> <span class="nav-text">Basic</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Traverse"><span class="nav-number">3.4.</span> <span class="nav-text">Traverse</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Set"><span class="nav-number">3.5.</span> <span class="nav-text">Set</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tree"><span class="nav-number">3.6.</span> <span class="nav-text">Tree</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Graph"><span class="nav-number">3.7.</span> <span class="nav-text">Graph</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%94%E7%AE%97%E6%B3%95"><span class="nav-number">3.8.</span> <span class="nav-text">演算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sorting"><span class="nav-number">3.9.</span> <span class="nav-text">Sorting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Searching"><span class="nav-number">3.10.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83"><span class="nav-number">3.11.</span> <span class="nav-text">動態規劃</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multithreading"><span class="nav-number">3.12.</span> <span class="nav-text">Multithreading</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mock-Interview-80"><span class="nav-number">3.13.</span> <span class="nav-text">Mock Interview (80%)</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9F%A5%E9%81%93%E8%B6%8A%E5%A4%9A%E5%B0%B1%E8%B6%8A%E6%9C%89%E7%99%BC%E5%B1%95%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">知道越多就越有發展性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">2.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">3.</span> <span class="nav-text">KRs</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD%EF%BC%9A-100"><span class="nav-number">3.1.</span> <span class="nav-text">前置作業：(100%)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-Solving-Steps"><span class="nav-number">3.1.1.</span> <span class="nav-text">Problem Solving Steps</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%8C%E5%9E%8B%E5%9B%9E%E9%A1%A7%EF%BC%9A-2022-9-100"><span class="nav-number">3.2.</span> <span class="nav-text">題型回顧： (2022&#x2F;9: 100%)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%90%E6%A7%8B"><span class="nav-number">3.2.1.</span> <span class="nav-text">結構</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#List-%E7%89%B9%E5%AE%9A%E9%A0%86%E5%BA%8F%E5%8A%A0%E5%85%A5"><span class="nav-number">3.3.</span> <span class="nav-text">List: 特定順序加入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Traverse"><span class="nav-number">3.4.</span> <span class="nav-text">Traverse</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tree"><span class="nav-number">3.5.</span> <span class="nav-text">Tree</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Map"><span class="nav-number">3.6.</span> <span class="nav-text">Map</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Set%EF%BC%9A%E5%85%83%E7%B4%A0%E4%B8%8D%E9%87%8D%E8%A4%87"><span class="nav-number">3.7.</span> <span class="nav-text">Set：元素不重複</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%94%E7%AE%97%E6%B3%95"><span class="nav-number">3.8.</span> <span class="nav-text">演算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sorting"><span class="nav-number">3.9.</span> <span class="nav-text">Sorting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Searching"><span class="nav-number">3.10.</span> <span class="nav-text">Searching</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83"><span class="nav-number">3.11.</span> <span class="nav-text">動態規劃</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Multithreading"><span class="nav-number">3.12.</span> <span class="nav-text">Multithreading</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mock-Interview-80"><span class="nav-number">3.13.</span> <span class="nav-text">Mock Interview (80%)</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -423,7 +435,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">244</span>
+          <span class="site-state-item-count">247</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -491,12 +503,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">311k</span>
+    <span title="Symbols count total">319k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:43</span>
+    <span title="Reading time total">4:50</span>
 </div>
 
         

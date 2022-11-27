@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2021-07-24T09:30:00.000Z">
-<meta property="article:modified_time" content="2022-09-29T10:13:27.549Z">
+<meta property="article:modified_time" content="2022-11-27T09:22:29.587Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="語言">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-09-29 18:13:27" itemprop="dateModified" datetime="2022-09-29T18:13:27+08:00">2022-09-29</time>
+                <time title="Modified: 2022-11-27 17:22:29" itemprop="dateModified" datetime="2022-11-27T17:22:29+08:00">2022-11-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.1k</span>
+              <span>5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -262,7 +262,7 @@
 <h1 id="Big-O"><a href="#Big-O" class="headerlink" title="Big O"></a>Big O</h1><img src="https://docs.google.com/drawings/d/e/2PACX-1vT4thJcLU5BeCPWWAp2Eg_Sd_b1ak4dwVpWCTBOatctjcn-QU-b7uQh9VJbGr79GiyP6rvfTkXZAxZd/pub?w=960&amp;h=720">
 
 <p>完成某事需要多久時間，一般來說nˆ2程式效能就很糟了</p>
-<p>O(1): Constant, hashmap, queue的pop<br>O(logn): Logarithmic 遞迴，每次步驟砍半, Binary Search<br>O(n): Linear [List, queue, stack的pop(idx)], BFS, DFS<br>O(nlogn): Sub-quadratic(Linearithmic), Quick/Merge/Heap Sort<br>O(nˆ2): N square(Quadratic) 二次方 two layer for loop<br>O(nˆ3): Cubic<br>O(2ˆn): Exponential 遞迴，每次步驟倍增，遞迴Fibonacci<br>O(n!): Factorial  </p>
+<p>O(1): Constant, hashmap, queue的pop<br>O(logn): Logarithmic 遞迴，每次步驟砍半, Binary Search<br>O(n): Linear [List, queue, stack的pop(idx)], BFS, DFS<br>O(nlogn): Sub-quadratic(Linearithmic), Quick/Merge/Heap Sort<br>O(nˆ2): N square(Quadratic) 二次方 two layer for loop<br>O(nˆ3): Cubic<br>O(2ˆn): Exponential 遞迴，每次步驟倍增，遞迴Fibonacci<br>O(3ˆn)<br>O((n/2)ˆn/2)<br>O(n!): Factorial  </p>
 <p>每次步驟少一半log n (Binary Search<br>每次步驟多2倍2^n (遞迴Fibonacci  </p>
 <h2 id="Search-Time-Complexity"><a href="#Search-Time-Complexity" class="headerlink" title="Search Time Complexity"></a>Search Time Complexity</h2><p>BFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(Vˆ2) # queue中每個點又接多個點    </p>
 <p>DFS:<br>TC: O(V+E) # 最糟時要走過所有點跟邊<br>SC: O(h) # recursive: 樹的層數<br>SC: O(Vˆ2) # stack中每個點又接多個點   </p>
@@ -286,12 +286,10 @@
 <li>要common strings：Map, Trie </li>
 <li>Map/Set for O(1) time &amp; O(n) space </li>
 </ul>
-<h2 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h2><p>將數字轉bit處理  </p>
-<p>7.Reverse Integer  <code>32 bit int = -2ˆ31 to 2ˆ31-1, check after reverse</code><br>136.Single Number <code>0 XOR</code><br>338.Counting Bits <code>bin()</code>  </p>
+<h2 id="Bit-Manipulation"><a href="#Bit-Manipulation" class="headerlink" title="Bit Manipulation"></a>Bit Manipulation</h2><p>將數字轉bit處理，先不考慮String轉Int   </p>
+<p><a href="https://eric999j.github.io/interview/7/">7.Reverse Integer</a><br><a href="https://eric999j.github.io/interview/136/">136.Single Number</a><br><a href="https://eric999j.github.io/interview/338/">338.Counting Bits</a> </p>
 <h2 id="In-place"><a href="#In-place" class="headerlink" title="In-place"></a>In-place</h2><p>在不用多餘空間前提下操作原陣列取得結果  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a,b &#x3D; b,a</span><br></pre></td></tr></table></figure>
-
-<p>189.Rotate Array: <code>%; a,b=b,a</code><br>206.Reverse Linked List: <code>head.next; reverse; return</code><br>833. Find And Replace in String <code>if S[i:].startswith(x):</code>     </p>
+<p><a href="https://eric999j.github.io/interview/189">189.Rotate Array</a><br><a href="https://eric999j.github.io/interview/206">206.Reverse Linked List</a><br><a href="https://eric999j.github.io/interview/833">833. Find And Replace in String</a></p>
 <h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><p>針對陣列操作，常須in-place 或跟其他資料結構搭配  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set用add; []用append, pop(0開頭&#x2F;-1結尾)  </span><br></pre></td></tr></table></figure>
 <p><a href="https://eric999j.github.io/interview/decompression/">Decompression</a></p>
@@ -459,7 +457,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">244</span>
+          <span class="site-state-item-count">247</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -527,12 +525,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">311k</span>
+    <span title="Symbols count total">319k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:43</span>
+    <span title="Reading time total">4:50</span>
 </div>
 
         

@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg">
 <meta property="article:published_time" content="2021-03-27T09:00:00.000Z">
-<meta property="article:modified_time" content="2021-05-15T09:06:17.964Z">
+<meta property="article:modified_time" content="2022-11-24T08:45:23.238Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-05-15 17:06:17" itemprop="dateModified" datetime="2021-05-15T17:06:17+08:00">2021-05-15</time>
+                <time title="Modified: 2022-11-24 16:45:23" itemprop="dateModified" datetime="2022-11-24T16:45:23+08:00">2022-11-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>954</span>
+              <span>1.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -266,7 +266,28 @@
 <p>Example 3:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: nums &#x3D; [3,3], target &#x3D; 6</span><br><span class="line">Output: [0,1]</span><br><span class="line">&#96;&#96;&#96; </span><br><span class="line"></span><br><span class="line">Constraints:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>2 &lt;= nums.length &lt;= 103<br>-109 &lt;= nums[i] &lt;= 109<br>-109 &lt;= target &lt;= 109<br>Only one valid answer exists.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">經典第一題，思路是先把需要的值減去尋訪到的值，如果剩下的值有沒有在array裡就回傳index。</span><br><span class="line"></span><br><span class="line">1. 列index  </span><br><span class="line">for i, num in enumerate(nums):</span><br><span class="line"></span><br><span class="line">2. 由數字找index  </span><br><span class="line">keys[remain]</span><br><span class="line"></span><br><span class="line">3. 列表對應  </span><br><span class="line">keys[num] &#x3D; i   </span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">經典第一題，思路是先把需要的值減去尋訪到的值，如果剩下的值有沒有在Array裡就回傳index。</span><br><span class="line"></span><br><span class="line">1. 列index  </span><br><span class="line">for i, num in enumerate(nums):</span><br><span class="line"></span><br><span class="line">2. 由數字找index  </span><br><span class="line">keys[remain]</span><br><span class="line"></span><br><span class="line">3. 列表對應  </span><br><span class="line">keys[num] &#x3D; i   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Java</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Time: O(n), Space: O(1)</p>
+<p>import java.util.*;<br>class Solution {<br>    public static int[] twoSum(int[] nums, int target) {<br>        Map&lt;Integer,Integer&gt; map=new HashMap&lt;&gt;();</p>
+<pre><code>    // There must have two number sum to target, &#123;value: index&#125;
+    int[] result=new int[2]; 
+
+    for(int i=0;i&lt;nums.length;i++)&#123;
+        if(map.containsKey(target-nums[i]))&#123;
+            result[1]=i;
+            result[0]=map.get(target-nums[i]);
+            return result;
+        &#125;
+        map.put(nums[i],i);
+    &#125;
+    return result;
+&#125;
+public static void main(String[] args) &#123;
+    int [] nums = &#123;2,7,11,15&#125;;
+    System.out.println(Arrays.toString(twoSum(nums,9)));
+&#125;</code></pre>
+<p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Python</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>Time: O(n), Space: O(1)</p>
 <p>class Solution:<br>    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:<br>        keys = {}<br>        for i, num in enumerate(nums):<br>            remain = target - num<br>            if remain in keys:<br>                return [keys[remain], i]<br>            else:<br>                keys[num] = i<br>```</p>
 
@@ -394,7 +415,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">244</span>
+          <span class="site-state-item-count">247</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -462,12 +483,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">311k</span>
+    <span title="Symbols count total">319k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:43</span>
+    <span title="Reading time total">4:50</span>
 </div>
 
         

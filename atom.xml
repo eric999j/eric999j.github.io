@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-11-19T10:26:04.103Z</updated>
+  <updated>2022-11-27T09:31:16.738Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,83 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>香水</title>
+    <link href="https://eric999j.github.io/life/LunskiNo1/"/>
+    <id>https://eric999j.github.io/life/LunskiNo1/</id>
+    <published>2022-11-27T10:30:00.000Z</published>
+    <updated>2022-11-27T09:31:16.738Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/1TH0mXX.jpg[/img&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;記得我們學過&lt;a href=&quot;https://eric999j.github.io/life/perfume/&quot;&gt;氣味&lt;/a&gt;的語言，那就用它來說一段話吧。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>833. Find And Replace in String</title>
+    <link href="https://eric999j.github.io/interview/833/"/>
+    <id>https://eric999j.github.io/interview/833/</id>
+    <published>2022-11-27T09:30:00.000Z</published>
+    <updated>2022-11-27T09:30:46.039Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You are given a 0-indexed string s that you must perform k replacement operations on. The replacement operations are given as three 0-indexed parallel arrays, indices, sources, and targets, all of length k.&lt;/p&gt;
+&lt;p&gt;To complete the ith replacement operation:&lt;/p&gt;
+&lt;p&gt;Check if the substring sources[i] occurs at index indices[i] in the original string s.&lt;br&gt;If it does not occur, do nothing.&lt;br&gt;Otherwise if it does occur, replace that substring with targets[i].&lt;br&gt;For example, if s = “abcd”, indices[i] = 0, sources[i] = “ab”, and targets[i] = “eee”, then the result of this replacement will be “eeecd”.&lt;/p&gt;
+&lt;p&gt;All replacement operations must occur simultaneously, meaning the replacement operations should not affect the indexing of each other. The testcases will be generated such that the replacements will not overlap.&lt;/p&gt;
+&lt;p&gt;For example, a testcase with s = “abc”, indices = [0, 1], and sources = [“ab”,”bc”] will not be generated because the “ab” and “bc” replacements overlap.&lt;br&gt;Return the resulting string after performing all replacement operations on s.&lt;/p&gt;
+&lt;p&gt;A substring is a contiguous sequence of characters in a string.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;abcd&amp;quot;, indices &amp;#x3D; [0, 2], sources &amp;#x3D; [&amp;quot;a&amp;quot;, &amp;quot;cd&amp;quot;], targets &amp;#x3D; [&amp;quot;eee&amp;quot;, &amp;quot;ffff&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;eeebffff&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;quot;a&amp;quot; occurs at index 0 in s, so we replace it with &amp;quot;eee&amp;quot;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;quot;cd&amp;quot; occurs at index 2 in s, so we replace it with &amp;quot;ffff&amp;quot;.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;abcd&amp;quot;, indices &amp;#x3D; [0, 2], sources &amp;#x3D; [&amp;quot;ab&amp;quot;,&amp;quot;ec&amp;quot;], targets &amp;#x3D; [&amp;quot;eee&amp;quot;,&amp;quot;ffff&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;eeecd&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;quot;ab&amp;quot; occurs at index 0 in s, so we replace it with &amp;quot;eee&amp;quot;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;quot;ec&amp;quot; does not occur at index 2 in s, so we do nothing.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>189. Rotate Array</title>
+    <link href="https://eric999j.github.io/interview/189/"/>
+    <id>https://eric999j.github.io/interview/189/</id>
+    <published>2022-11-27T09:00:00.000Z</published>
+    <updated>2022-11-27T09:31:34.291Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an array, rotate the array to the right by k steps, where k is non-negative.  &lt;/p&gt;
+&lt;p&gt;Example 1:  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1,2,3,4,5,6,7], k &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 1 steps to the right: [7,1,2,3,4,5,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 2 steps to the right: [6,7,1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 3 steps to the right: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [-1,-100,3,99], k &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [3,99,-1,-100]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 1 steps to the right: [99,-1,-100,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 2 steps to the right: [3,99,-1,-100]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>黃酒</title>
@@ -41,7 +118,7 @@
     <link href="https://eric999j.github.io/interview/remainder/"/>
     <id>https://eric999j.github.io/interview/remainder/</id>
     <published>2022-11-19T09:00:00.000Z</published>
-    <updated>2022-11-19T13:04:33.433Z</updated>
+    <updated>2022-11-22T09:09:20.769Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg&quot;&gt;&lt;/p&gt;
@@ -103,7 +180,7 @@
     <link href="https://eric999j.github.io/interview/java/"/>
     <id>https://eric999j.github.io/interview/java/</id>
     <published>2022-11-05T06:00:00.000Z</published>
-    <updated>2022-11-16T11:56:37.342Z</updated>
+    <updated>2022-11-25T08:52:31.338Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -283,7 +360,7 @@
     <link href="https://eric999j.github.io/interview/hashTable/"/>
     <id>https://eric999j.github.io/interview/hashTable/</id>
     <published>2022-09-24T09:30:00.000Z</published>
-    <updated>2022-11-11T08:34:35.971Z</updated>
+    <updated>2022-11-22T09:27:30.416Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -323,7 +400,7 @@
     <link href="https://eric999j.github.io/interview/heap/"/>
     <id>https://eric999j.github.io/interview/heap/</id>
     <published>2022-09-17T09:30:00.000Z</published>
-    <updated>2022-11-10T10:11:24.594Z</updated>
+    <updated>2022-11-22T09:30:11.133Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -343,7 +420,7 @@
     <link href="https://eric999j.github.io/interview/quickSort/"/>
     <id>https://eric999j.github.io/interview/quickSort/</id>
     <published>2022-09-17T09:00:00.000Z</published>
-    <updated>2022-11-18T07:58:25.210Z</updated>
+    <updated>2022-11-22T09:03:41.381Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
@@ -357,73 +434,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Elizabeth II Regina</title>
-    <link href="https://eric999j.github.io/manager/EIIR/"/>
-    <id>https://eric999j.github.io/manager/EIIR/</id>
-    <published>2022-09-09T09:00:00.000Z</published>
-    <updated>2022-09-09T18:41:43.518Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;When life seems hard, the courageous do not lie down and accept defeat; instead, they are all the more determined to struggle for better future. - &lt;a href=&quot;https://en.m.wikipedia.org/wiki/Elizabeth_II&quot;&gt;Elizabeth II&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面試計畫</title>
-    <link href="https://eric999j.github.io/interview/review/"/>
-    <id>https://eric999j.github.io/interview/review/</id>
-    <published>2022-09-03T08:30:00.000Z</published>
-    <updated>2022-11-19T13:04:13.658Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;知道越多就越有發展性&quot;&gt;&lt;a href=&quot;#知道越多就越有發展性&quot; class=&quot;headerlink&quot; title=&quot;知道越多就越有發展性&quot;&gt;&lt;/a&gt;知道越多就越有發展性&lt;/h1&gt;&lt;ol start=&quot;0&quot;&gt;
-&lt;li&gt;蒐集: 重點知識&lt;/li&gt;
-&lt;li&gt;理解: 讀懂問題&lt;/li&gt;
-&lt;li&gt;歸納: 組織解法&lt;/li&gt;
-&lt;li&gt;演繹: 寫虛擬碼&lt;/li&gt;
-&lt;li&gt;實做: 轉為程式&lt;/li&gt;
-&lt;li&gt;完善: 修正解題&lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Anson Seabra - Keep Your Head Up Princess</title>
-    <link href="https://eric999j.github.io/life/keepYourHeadUpPrincess/"/>
-    <id>https://eric999j.github.io/life/keepYourHeadUpPrincess/</id>
-    <published>2022-08-28T10:00:00.000Z</published>
-    <updated>2022-09-05T08:04:48.460Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(26).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;IG Reels常用配樂，覺得滿好聽的。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
