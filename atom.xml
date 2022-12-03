@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-11-27T09:31:16.738Z</updated>
+  <updated>2022-12-03T10:29:10.286Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,14 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>香蕉鬆餅</title>
+    <link href="https://eric999j.github.io/life/bananaPancakes/"/>
+    <id>https://eric999j.github.io/life/bananaPancakes/</id>
+    <published>2022-12-03T10:30:00.000Z</published>
+    <updated>2022-12-03T10:29:10.286Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/yZLzDvs.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以做成鬆餅或蛋糕。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>287. Find the Duplicate Number</title>
+    <link href="https://eric999j.github.io/interview/287/"/>
+    <id>https://eric999j.github.io/interview/287/</id>
+    <published>2022-12-03T10:00:00.000Z</published>
+    <updated>2022-12-03T10:28:06.484Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.&lt;/p&gt;
+&lt;p&gt;There is only one repeated number in nums, return this repeated number.&lt;/p&gt;
+&lt;p&gt;You must solve the problem without modifying the array nums and uses only constant extra space.&lt;/p&gt;
+&lt;p&gt;Example 1:  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1,3,4,2,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Example 2:  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [3,1,3,4,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
+    
+    
+    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>香水</title>
     <link href="https://eric999j.github.io/life/LunskiNo1/"/>
     <id>https://eric999j.github.io/life/LunskiNo1/</id>
     <published>2022-11-27T10:30:00.000Z</published>
-    <updated>2022-11-27T09:31:16.738Z</updated>
+    <updated>2022-11-27T09:52:52.665Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/1TH0mXX.jpg[/img&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/1TH0mXX.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;記得我們學過&lt;a href=&quot;https://eric999j.github.io/life/perfume/&quot;&gt;氣味&lt;/a&gt;的語言，那就用它來說一段話吧。&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
@@ -392,48 +441,6 @@
     
     
     <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Heap</title>
-    <link href="https://eric999j.github.io/interview/heap/"/>
-    <id>https://eric999j.github.io/interview/heap/</id>
-    <published>2022-09-17T09:30:00.000Z</published>
-    <updated>2022-11-22T09:30:11.133Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;堆積結構&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Quick Sort</title>
-    <link href="https://eric999j.github.io/interview/quickSort/"/>
-    <id>https://eric999j.github.io/interview/quickSort/</id>
-    <published>2022-09-17T09:00:00.000Z</published>
-    <updated>2022-11-22T09:03:41.381Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;二元排序&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   

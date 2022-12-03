@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg">
 <meta property="article:published_time" content="2020-12-05T14:00:00.000Z">
-<meta property="article:modified_time" content="2020-12-05T14:24:44.291Z">
+<meta property="article:modified_time" content="2022-11-29T10:24:28.209Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-12-05 22:00:00 / Modified: 22:24:44" itemprop="dateCreated datePublished" datetime="2020-12-05T22:00:00+08:00">2020-12-05</time>
+              <time title="Created: 2020-12-05 22:00:00" itemprop="dateCreated datePublished" datetime="2020-12-05T22:00:00+08:00">2020-12-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-11-29 18:24:28" itemprop="dateModified" datetime="2022-11-29T18:24:28+08:00">2022-11-29</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>935</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -260,8 +266,9 @@
 <p>Example 3:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: [7,6,4,3,1]</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: In this case, no transaction is done, i.e. max profit &#x3D; 0.</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>要找最大利益，那就是至少不虧錢，如果今天賣出價格比昨天好就賣，greedy的感覺，整個累積起來也是一筆錢，看leetcode長姿勢/。</p>
-<iframe height="400px" width="100%" src="https://repl.it/@eric999j/122-Best-Time-to-Buy-and-Sell-Stock-II?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<p>要找最大利益，那就是至少不虧錢，如果今天賣出價格比昨天好就賣。</p>
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">TC:O(n), SC:O(1)  </span><br><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">    public int maxProfit(int[] prices) &#123;      </span><br><span class="line">        int profitFromPriceGain &#x3D; 0;</span><br><span class="line">        </span><br><span class="line">        for( int i &#x3D; 0 ; i &lt; prices.length-1 ; i++ )&#123;</span><br><span class="line">            if( prices[i] &lt; prices[i+1] )</span><br><span class="line">                profitFromPriceGain +&#x3D; ( prices[i+1] - prices[i] );</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        return profitFromPriceGain;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -369,6 +376,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java"><span class="nav-number">1.</span> <span class="nav-text">Java</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -386,7 +394,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">247</span>
+          <span class="site-state-item-count">249</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -454,12 +462,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">319k</span>
+    <span title="Symbols count total">324k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:50</span>
+    <span title="Reading time total">4:55</span>
 </div>
 
         
