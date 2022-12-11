@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(13).jpeg">
 <meta property="article:published_time" content="2021-06-19T09:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-31T09:04:50.267Z">
+<meta property="article:modified_time" content="2022-12-09T08:28:43.772Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-31 17:04:50" itemprop="dateModified" datetime="2021-12-31T17:04:50+08:00">2021-12-31</time>
+                <time title="Modified: 2022-12-09 16:28:43" itemprop="dateModified" datetime="2022-12-09T16:28:43+08:00">2022-12-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>484</span>
+              <span>988</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -264,7 +264,9 @@
 <a id="more"></a>
 
 <p>依區間結尾排序，看區間有無重疊，上個時間結尾如果超出下個開始就給false</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">T:O(n), S:O(1)</span><br><span class="line">class Solution(object):</span><br><span class="line">    def canAttendMeetings(self, intervals):</span><br><span class="line">        # intervals.sort(key&#x3D;lambda itv: (itv[0], itv[1))</span><br><span class="line">        for i in range(1, len(intervals)):</span><br><span class="line">            if intervals[i][0] &lt; intervals[i - 1][1]:</span><br><span class="line">                return False</span><br><span class="line">        return True</span><br></pre></td></tr></table></figure>
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import java.util.*;</span><br><span class="line">public class MeetingRooms &#123;</span><br><span class="line">	public static boolean canAttend(int[][] intervals)&#123;</span><br><span class="line">		if(intervals &#x3D;&#x3D; null || intervals.length &#x3D;&#x3D; 0) return true;</span><br><span class="line">		for(int i &#x3D; 1; i &lt; intervals.length; i++)&#123;</span><br><span class="line">			if(intervals[i][0] &lt; intervals[i - 1][1])</span><br><span class="line">				return false;</span><br><span class="line">		&#125;</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		int[][] slot &#x3D; &#123;&#123;0, 3&#125;, &#123;5, 10&#125;, &#123;15, 20&#125;&#125;;</span><br><span class="line">		System.out.println(canAttend(slot));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">T:O(n), S:O(1)</span><br><span class="line">class Solution(object):</span><br><span class="line">    def canAttendMeetings(self, intervals):</span><br><span class="line">        # intervals.sort(key&#x3D;lambda itv: (itv[0], itv[1))</span><br><span class="line">        for i in range(1, len(intervals)):</span><br><span class="line">            if intervals[i][0] &lt; intervals[i - 1][1]:</span><br><span class="line">                return False</span><br><span class="line">        return True</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -372,6 +374,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java"><span class="nav-number">1.</span> <span class="nav-text">Java</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">2.</span> <span class="nav-text">Python</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -389,7 +392,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">249</span>
+          <span class="site-state-item-count">251</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -457,12 +460,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">324k</span>
+    <span title="Symbols count total">327k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:55</span>
+    <span title="Reading time total">4:58</span>
 </div>
 
         
