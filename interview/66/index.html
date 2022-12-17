@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg">
 <meta property="article:published_time" content="2021-01-02T06:00:00.000Z">
-<meta property="article:modified_time" content="2022-11-29T10:14:46.456Z">
+<meta property="article:modified_time" content="2022-12-15T08:19:25.083Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-11-29 18:14:46" itemprop="dateModified" datetime="2022-11-29T18:14:46+08:00">2022-11-29</time>
+                <time title="Modified: 2022-12-15 16:19:25" itemprop="dateModified" datetime="2022-12-15T16:19:25+08:00">2022-12-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>992</span>
+              <span>1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -269,7 +269,7 @@
 <a id="more"></a>
 
 <p>給一個1-9數字陣列[8,8]，實作十進位器，從右邊開始，當遇到9以下加1，進位要考慮2個情況，一個是陣列內9加1要進到左邊一位[8,9]，另一個是超出陣列的進位，像[9,9]再加1 [1,0,0]。</p>
-<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public int[] plusOne(int[] digits) &#123;</span><br><span class="line">    for (int i &#x3D; digits.length - 1; i &gt;&#x3D;0; i--) &#123;</span><br><span class="line">        if (digits[i] !&#x3D; 9) &#123;</span><br><span class="line">            digits[i]++;</span><br><span class="line">            break;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            digits[i] &#x3D; 0;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; Carry</span><br><span class="line">    if (digits[0] &#x3D;&#x3D; 0) &#123;</span><br><span class="line">        int[] res &#x3D; new int[digits.length+1];</span><br><span class="line">        res[0] &#x3D; 1;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    return digits;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public int[] plusOne(int[] digits) &#123;</span><br><span class="line">	&#x2F;&#x2F; no need carry</span><br><span class="line">    for (int i &#x3D; digits.length - 1; i &gt;&#x3D;0; i--) &#123;</span><br><span class="line">        if (digits[i] !&#x3D; 9) &#123;</span><br><span class="line">            digits[i]++;</span><br><span class="line">            break;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            digits[i] &#x3D; 0;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; Carry</span><br><span class="line">    if (digits[0] &#x3D;&#x3D; 0) &#123;</span><br><span class="line">        int[] res &#x3D; new int[digits.length+1];</span><br><span class="line">        res[0] &#x3D; 1;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    return digits;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -395,7 +395,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">251</span>
+          <span class="site-state-item-count">257</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -463,12 +463,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">327k</span>
+    <span title="Symbols count total">336k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:58</span>
+    <span title="Reading time total">5:06</span>
 </div>
 
         

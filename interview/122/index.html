@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg">
 <meta property="article:published_time" content="2020-12-05T14:00:00.000Z">
-<meta property="article:modified_time" content="2022-11-29T10:24:28.209Z">
+<meta property="article:modified_time" content="2022-12-15T07:48:49.022Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-11-29 18:24:28" itemprop="dateModified" datetime="2022-11-29T18:24:28+08:00">2022-11-29</time>
+                <time title="Modified: 2022-12-15 15:48:49" itemprop="dateModified" datetime="2022-12-15T15:48:49+08:00">2022-12-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -266,7 +266,7 @@
 <p>Example 3:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: [7,6,4,3,1]</span><br><span class="line">Output: 0</span><br><span class="line">Explanation: In this case, no transaction is done, i.e. max profit &#x3D; 0.</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>要找最大利益，那就是至少不虧錢，如果今天賣出價格比昨天好就賣。</p>
+<p>數列中數值變大就加總差距。<br>[7,1,5,3,6,4] &gt;<br>5-1 = 4<br>6-3 = 3<br>4+3 =7  </p>
 <h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">TC:O(n), SC:O(1)  </span><br><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">    public int maxProfit(int[] prices) &#123;      </span><br><span class="line">        int profitFromPriceGain &#x3D; 0;</span><br><span class="line">        </span><br><span class="line">        for( int i &#x3D; 0 ; i &lt; prices.length-1 ; i++ )&#123;</span><br><span class="line">            if( prices[i] &lt; prices[i+1] )</span><br><span class="line">                profitFromPriceGain +&#x3D; ( prices[i+1] - prices[i] );</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        return profitFromPriceGain;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <div>
@@ -394,7 +394,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">251</span>
+          <span class="site-state-item-count">257</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -462,12 +462,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">327k</span>
+    <span title="Symbols count total">336k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:58</span>
+    <span title="Reading time total">5:06</span>
 </div>
 
         

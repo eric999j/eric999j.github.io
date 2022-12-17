@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg">
 <meta property="article:published_time" content="2022-09-03T08:30:00.000Z">
-<meta property="article:modified_time" content="2022-12-09T10:21:01.381Z">
+<meta property="article:modified_time" content="2022-12-17T10:27:38.305Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-12-09 18:21:01" itemprop="dateModified" datetime="2022-12-09T18:21:01+08:00">2022-12-09</time>
+                <time title="Modified: 2022-12-17 18:27:38" itemprop="dateModified" datetime="2022-12-17T18:27:38+08:00">2022-12-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2k</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -282,13 +282,15 @@
 <li>用例子邊說邊測試優化 35-50 min        </li>
 <li>面試官提問 50 min-1 hr</li>
 </ol>
-<h2 id="題型回顧：-2022-9-100"><a href="#題型回顧：-2022-9-100" class="headerlink" title="題型回顧： (2022/9: 100%)"></a>題型回顧： (2022/9: 100%)</h2><h3 id="結構"><a href="#結構" class="headerlink" title="結構"></a><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-collections-complexity">結構</a></h3><h2 id="List-特定順序加入"><a href="#List-特定順序加入" class="headerlink" title="List: 特定順序加入"></a>List: 特定順序加入</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">ArrayList</a><br>適合 Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> TC:O(nlogn), SC:O(n)<br>Add, Get:O(1)<br>不適合 Append, Delete: <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a><br>Add(index, element), remove, indexof, contains: O(n)  </p>
-<p><a href="https://eric999j.github.io/interview/linkedList/">LinkedList (Circular Detection)</a><br>適合 Append, Delete O(1): <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a> TC:O(nlogn), SC:O(n)<br>Add: O(1)<br>不適合 Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> O(nˆ2 logn)，刪要尋訪各node<br>Add(index, element), remove, contains: O(n)    </p>
+<h2 id="題型回顧：-2022-9-100"><a href="#題型回顧：-2022-9-100" class="headerlink" title="題型回顧： (2022/9: 100%)"></a>題型回顧： (2022/9: 100%)</h2><h3 id="結構"><a href="#結構" class="headerlink" title="結構"></a><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-collections-complexity">結構</a></h3><h2 id="List-特定順序加入"><a href="#List-特定順序加入" class="headerlink" title="List: 特定順序加入"></a>List: 特定順序加入</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">ArrayList</a><br>適合<br>Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> TC:O(nlogn), SC:O(n)<br>Add, Get:O(1)  </p>
+<p>不適合<br>Append, Delete: <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a><br>Add(index, element), remove, indexof, contains: O(n)</p>
+<p><a href="https://eric999j.github.io/interview/linkedList/">LinkedList (Circular Detection)</a><br>適合<br><a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a> TC:O(nlogn), SC:O(n)<br>Add: O(1), Append, Delete O(1) </p>
+<p>不適合<br>Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> O(nˆ2 logn)，刪要尋訪各node<br>Add(index, element), remove, contains: O(n)    </p>
 <p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/doubly-linked-list/">Double Linkedlist</a> </p>
-<p>小資料 <a href="https://eric999j.github.io/interview/remainder/">Others</a><br>Bubble sort[不斷交換]:小scale容易達到Best O(n)<br>Average:O(nˆ2)<br>Space: O(1)  </p>
+<p>小資料<br><a href="https://eric999j.github.io/interview/remainder/">Others</a><br>Bubble sort[不斷交換]:小scale容易達到Best O(n)<br>Average:O(nˆ2)<br>Space: O(1)  </p>
 <p>Inserting sort[取第一筆當排好，後面不斷插入適當位置]: 大部分排好容易達到Best O(n)<br>Average:O(nˆ2)<br>Space: O(1)  </p>
 <h2 id="Traverse"><a href="#Traverse" class="headerlink" title="Traverse"></a>Traverse</h2><p><code>Stack, Queue 類似串列   都不適合 Random Access pop(idx)，任意刪data O(n)</code> </p>
-<p><a href="https://eric999j.github.io/interview/dfs/">Stack, DFS, FILO</a><br>適合 Function call，Sequential access<br>List: O(V+E)<br>Matrix: O(V^2)   </p>
+<p><a href="https://eric999j.github.io/interview/dfs/">Stack, DFS, FILO</a><br>適合 Function call，Sequential access<br>push, pop, peek: O(1)<br>List: O(V+E)<br>Matrix: O(V^2)   </p>
 <p><a href="https://eric999j.github.io/interview/bfs/">Queue, BFS, FIFO</a><br>適合 Tree level traverse: Pop O(1)<br>List: O(V+E)<br>Matrix: O(V^2)   </p>
 <p><a href="https://eric999j.github.io/interview/heap/">Priority Queue</a><br>streaming 頻繁push,pop O(logn)<br>適合  Get, Min, Max O(1)<br>不適合  Random Access，Delete  </p>
 <h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><p><a href="https://eric999j.github.io/interview/remainder/">Binary tree</a><br>不能假設左子比右子小  </p>
@@ -434,7 +436,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">251</span>
+          <span class="site-state-item-count">257</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -502,12 +504,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">327k</span>
+    <span title="Symbols count total">336k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:58</span>
+    <span title="Reading time total">5:06</span>
 </div>
 
         

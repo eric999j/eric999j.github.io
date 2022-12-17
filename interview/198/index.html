@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(2).jpeg">
 <meta property="article:published_time" content="2021-05-15T10:30:00.000Z">
-<meta property="article:modified_time" content="2022-09-23T10:52:55.588Z">
+<meta property="article:modified_time" content="2022-12-14T10:46:16.352Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-09-23 18:52:55" itemprop="dateModified" datetime="2022-09-23T18:52:55+08:00">2022-09-23</time>
+                <time title="Modified: 2022-12-14 18:46:16" itemprop="dateModified" datetime="2022-12-14T18:46:16+08:00">2022-12-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>984</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -264,8 +264,10 @@
 
 <a id="more"></a>
 
-<p>。選第1或第2家開始，間隔最大</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># T:O(n), S:O(n)</span><br><span class="line">class Solution:</span><br><span class="line">    def rob(self, nums: List[int]) -&gt; int:</span><br><span class="line">        if nums &#x3D;&#x3D; []:  return 0        </span><br><span class="line">        rob1, rob2 &#x3D; 0, 0</span><br><span class="line">        # [rob1, rob2, n, n+1, ...]</span><br><span class="line">        for n in nums:</span><br><span class="line">            temp &#x3D; max(rob1+ n, rob2)</span><br><span class="line">            rob1 &#x3D; rob2</span><br><span class="line">            rob2 &#x3D; temp</span><br><span class="line">        return rob2</span><br></pre></td></tr></table></figure>
+<p>。第1或第2家吹大的開始，rob1+ n間隔rob2，之後就循環間隔。  </p>
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># T:O(n), S:O(n)</span><br><span class="line">class Solution &#123;</span><br><span class="line">    public int rob(int[] nums) &#123;</span><br><span class="line">        if(nums.length &#x3D;&#x3D; 0) return 0;</span><br><span class="line">        int temp &#x3D; 0, rob1 &#x3D; 0, rob2 &#x3D; 0; </span><br><span class="line">        &#x2F;&#x2F;swap</span><br><span class="line">        for(int n: nums)&#123;</span><br><span class="line">            temp &#x3D; Math.max(rob1+n, rob2);</span><br><span class="line">            rob1 &#x3D; rob2;</span><br><span class="line">            rob2 &#x3D; temp;</span><br><span class="line">        &#125;</span><br><span class="line">        return rob2;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># T:O(n), S:O(n)</span><br><span class="line">class Solution:</span><br><span class="line">    def rob(self, nums: List[int]) -&gt; int:</span><br><span class="line">        if nums &#x3D;&#x3D; []:  return 0        </span><br><span class="line">        rob1, rob2 &#x3D; 0, 0</span><br><span class="line">        # [rob1, rob2, n, n+1, ...]</span><br><span class="line">        for n in nums:</span><br><span class="line">            temp &#x3D; max(rob1+ n, rob2)</span><br><span class="line">            rob1 &#x3D; rob2</span><br><span class="line">            rob2 &#x3D; temp</span><br><span class="line">        return rob2</span><br></pre></td></tr></table></figure>
 
 
 <div>
@@ -375,6 +377,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java"><span class="nav-number">1.</span> <span class="nav-text">Java</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">2.</span> <span class="nav-text">Python</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -392,7 +395,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">251</span>
+          <span class="site-state-item-count">257</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -460,12 +463,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">327k</span>
+    <span title="Symbols count total">336k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">4:58</span>
+    <span title="Reading time total">5:06</span>
 </div>
 
         
