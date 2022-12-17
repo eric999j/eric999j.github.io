@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-12-16T11:18:27.248Z</updated>
+  <updated>2022-12-17T12:57:52.915Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mentor</title>
+    <link href="https://eric999j.github.io/manager/mentor/"/>
+    <id>https://eric999j.github.io/manager/mentor/</id>
+    <published>2022-12-17T13:30:00.000Z</published>
+    <updated>2022-12-17T12:57:52.915Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;做好自身，造福他人。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>239. Sliding Window Maximum</title>
@@ -341,7 +361,7 @@
     <link href="https://eric999j.github.io/interview/remainder/"/>
     <id>https://eric999j.github.io/interview/remainder/</id>
     <published>2022-11-19T09:00:00.000Z</published>
-    <updated>2022-12-09T07:50:21.479Z</updated>
+    <updated>2022-12-17T12:53:59.752Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg&quot;&gt;&lt;/p&gt;
@@ -355,26 +375,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mentor</title>
-    <link href="https://eric999j.github.io/manager/mentor/"/>
-    <id>https://eric999j.github.io/manager/mentor/</id>
-    <published>2022-11-12T12:30:00.000Z</published>
-    <updated>2022-12-16T11:18:55.906Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;做好自身，造福他人。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   

@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg">
 <meta property="article:published_time" content="2022-07-09T10:00:00.000Z">
-<meta property="article:modified_time" content="2022-11-22T09:13:43.845Z">
+<meta property="article:modified_time" content="2022-12-17T12:44:40.685Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-11-22 17:13:43" itemprop="dateModified" datetime="2022-11-22T17:13:43+08:00">2022-11-22</time>
+                <time title="Modified: 2022-12-17 20:44:40" itemprop="dateModified" datetime="2022-12-17T20:44:40+08:00">2022-12-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.3k</span>
+              <span>3.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -260,9 +260,10 @@
 <a id="more"></a>
 
 <h1 id="背景知識"><a href="#背景知識" class="headerlink" title="背景知識"></a>背景知識</h1><ul>
-<li>基礎程式語法</li>
-<li>雙指針</li>
+<li>Implement hashmap</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line">public class Entry&lt;K, V&gt; &#123;</span><br><span class="line">    private K key;</span><br><span class="line">    private V value;</span><br><span class="line"></span><br><span class="line">    public Entry(K key, V value) &#123;</span><br><span class="line">        this.key &#x3D; key;</span><br><span class="line">        this.value &#x3D; value;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; to store entries</span><br><span class="line">public class Bucket &#123;</span><br><span class="line">    private List&lt;Entry&gt; entries;</span><br><span class="line"></span><br><span class="line">    public Bucket() &#123;</span><br><span class="line">        if(entries &#x3D;&#x3D; null)</span><br><span class="line">            entries &#x3D; new LinkedList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public List&lt;Entry&gt; getEntries() &#123;</span><br><span class="line">        return entries;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    &#x2F;&#x2F; linkedlist structure to add remove</span><br><span class="line">    public void addEntry(Entry entry) &#123;</span><br><span class="line">        this.entries.add(entry);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void removeEntry(Entry entry) &#123;</span><br><span class="line">        this.entries.remove(entry);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class HashMap&lt;K, V&gt; &#123;</span><br><span class="line">    private int CAPACITY &#x3D; 10;</span><br><span class="line">    private Bucket[] bucket;</span><br><span class="line">    private int size &#x3D; 0;</span><br><span class="line"></span><br><span class="line">    public HashMap() &#123;</span><br><span class="line">        this.bucket &#x3D; new Bucket[CAPACITY];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    &#x2F;&#x2F; hash function</span><br><span class="line">    private int getHash(K key) &#123;</span><br><span class="line">        return (key.hashCode() &amp; 0xfffffff) % CAPACITY;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean containsKey(K key) &#123;</span><br><span class="line">        int hash &#x3D; getHash(key);</span><br><span class="line">        return !(Objects.isNull(bucket[hash]) || Objects.isNull(getEntry(key)));</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public void put(K key, V value) &#123;</span><br><span class="line">        if(containsKey(key)) &#123;</span><br><span class="line">            Entry entry &#x3D; getEntry(key);</span><br><span class="line">            entry.setValue(value);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            int hash &#x3D; getHash(key);</span><br><span class="line">            if(bucket[hash] &#x3D;&#x3D; null) &#123;</span><br><span class="line">                bucket[hash] &#x3D; new Bucket();</span><br><span class="line">            &#125;</span><br><span class="line">            bucket[hash].addEntry(new Entry&lt;&gt;(key, value));</span><br><span class="line">            size++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    private Entry getEntry(K key) &#123;</span><br><span class="line">        int hash &#x3D; getHash(key);</span><br><span class="line">        for (int i &#x3D; 0; i &lt; bucket[hash].getEntries().size(); i++) &#123;</span><br><span class="line">            Entry entry &#x3D; bucket[hash].getEntries().get(i);</span><br><span class="line">            if(Entry.getKey().equals(key))</span><br><span class="line">                return entry;</span><br><span class="line">        &#125;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public V get(K key) &#123;</span><br><span class="line">        return containsKey(key) ? (V) getEntry(key).getValue() : null;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void delete(K key) &#123;</span><br><span class="line">        if(containsKey(key)) &#123;</span><br><span class="line">            int hash &#x3D; getHash(key);</span><br><span class="line">            bucket[hash].removeEntry(getEntry(key));</span><br><span class="line">            size--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    public int size() &#123;</span><br><span class="line">        return size;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h1 id="理解問題"><a href="#理解問題" class="headerlink" title="理解問題"></a>理解問題</h1><p>給定雙字串s, p，p  是s子集，當p任意排列，求符合字串的index列表。  </p>
 <p>s = “cbaebabacd”<br>p = “abc”<br>[0,6]  </p>
 <h1 id="思路視覺化"><a href="#思路視覺化" class="headerlink" title="思路視覺化"></a>思路視覺化</h1><p>0: Counter(“cba”) == Counter(“abc”)<br>6: Counter(“bac”) == Counter(“abc”)  </p>
@@ -465,12 +466,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">336k</span>
+    <span title="Symbols count total">339k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">5:06</span>
+    <span title="Reading time total">5:08</span>
 </div>
 
         
