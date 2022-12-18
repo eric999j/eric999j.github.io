@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg">
 <meta property="article:published_time" content="2022-09-03T08:30:00.000Z">
-<meta property="article:modified_time" content="2022-12-17T12:47:03.254Z">
+<meta property="article:modified_time" content="2022-12-18T09:01:28.410Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-12-17 20:47:03" itemprop="dateModified" datetime="2022-12-17T20:47:03+08:00">2022-12-17</time>
+                <time title="Modified: 2022-12-18 17:01:28" itemprop="dateModified" datetime="2022-12-18T17:01:28+08:00">2022-12-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.2k</span>
+              <span>2.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -285,7 +285,7 @@
 <h2 id="題型回顧：-2022-9-100"><a href="#題型回顧：-2022-9-100" class="headerlink" title="題型回顧： (2022/9: 100%)"></a>題型回顧： (2022/9: 100%)</h2><h3 id="結構"><a href="#結構" class="headerlink" title="結構"></a><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-collections-complexity">結構</a></h3><h2 id="List-特定順序加入"><a href="#List-特定順序加入" class="headerlink" title="List: 特定順序加入"></a>List: 特定順序加入</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">ArrayList</a><br>適合<br>Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> TC:O(nlogn), SC:O(n)<br>Add, Get:O(1)  </p>
 <p>不適合<br>Append, Delete: <a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a><br>Add(index, element), remove, indexof, contains: O(n)</p>
 <p><a href="https://eric999j.github.io/interview/linkedList/">LinkedList (Circular Detection)</a><br>適合<br><a href="https://eric999j.github.io/interview/mergeSort/">Merge Sort</a> TC:O(nlogn), SC:O(n)<br>Add: O(1), Append, Delete O(1) </p>
-<p>不適合<br>Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> O(nˆ2 logn)，刪要尋訪各node<br>Add(index, element), remove, contains: O(n)    </p>
+<p>不適合<br>Random Access: <a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a> O(nˆ2 logn)，Quick sort nlogn基礎上再random access找刪除元素，所以要再乘以n<br>Add(index, element), remove, contains: O(n)    </p>
 <p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/doubly-linked-list/">Double Linkedlist</a> </p>
 <p>小資料<br><a href="https://eric999j.github.io/interview/remainder/">Others</a><br>Bubble sort[不斷交換]:小scale容易達到Best O(n)<br>Average:O(nˆ2)<br>Space: O(1)  </p>
 <p>Inserting sort[取第一筆當排好，後面不斷插入適當位置]: 大部分排好容易達到Best O(n)<br>Average:O(nˆ2)<br>Space: O(1)  </p>
@@ -298,7 +298,7 @@
 <p>Delete<br>Tc:<br>Best: O(n) avg: O(logn) wst:O(n)<br>Sc: O(n)</p>
 <p>Balance tree<br>左右子同深度 access: O(logn)<br>適合  Append，Search<br>不適合  Delete，Copy，Change Order，In-place sorting<br><a href="https://eric999j.github.io/interview/trie/">Trie</a><br>適合 Auto-completion O(logn)<br>不適合 Delete，Copy<br><code>BFS, DFS，各有利弊 Tree 很深DFS可能Stack overflow，可以假定深度D，比較方便討論複雜度</code> </p>
 <h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><p><a href="https://eric999j.github.io/interview/slidingWindow/">HashMap</a><br>可以為之後要處理的做preprocessing, reduce time complexity<br>適合 無順序<br>Put, Get,Remove, ContainsKey: O(1)，良好hash function下  </p>
-<p><a href="https://eric999j.github.io/interview/remainder/">TreeMap</a><br>適合 有順序<br>Put, Get, Remove, ContainsKey: O(logn)  </p>
+<p><a href="https://eric999j.github.io/interview/remainder/">TreeMap</a><br>適合 有順序<br>Put, Get, Remove, ContainsKey: 樹狀結構 O(logn)<br><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/internal-working-of-treemap-in-java/">Implement</a>紅黑樹<br>紅黑樹是self-balancing binary search tree  </p>
 <h2 id="Set：元素不重複"><a href="#Set：元素不重複" class="headerlink" title="Set：元素不重複"></a>Set：元素不重複</h2><p><a href="https://eric999j.github.io/interview/remainder/">HashSet</a><br>適合 無順序<br>Add, Remove, Contains: O(1) ，因為底層是HashMap  </p>
 <p><a href="https://eric999j.github.io/interview/remainder/">TreeSet</a><br>適合 有順序<br>Add, Remove, Contains: O(logn) ，因為底層是TreeMap  </p>
 <h2 id="演算法"><a href="#演算法" class="headerlink" title="演算法"></a>演算法</h2><h2 id="Sorting"><a href="#Sorting" class="headerlink" title="Sorting"></a>Sorting</h2><p><a href="https://eric999j.github.io/interview/quickSort/">Quick Sort</a>: Average: O(nlogn), Worse: O(nˆ2), SC:O(n)   </p>
