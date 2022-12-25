@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-12-24T08:25:05.505Z</updated>
+  <updated>2022-12-25T11:01:50.449Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>熱紅酒</title>
+    <link href="https://eric999j.github.io/life/mulledWine/"/>
+    <id>https://eric999j.github.io/life/mulledWine/</id>
+    <published>2022-12-25T10:00:00.000Z</published>
+    <updated>2022-12-25T11:01:50.449Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這時候就要喝熱紅酒啊啊啊&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
   
   <entry>
     <title>洗碗精</title>
@@ -459,26 +479,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java</title>
-    <link href="https://eric999j.github.io/interview/java/"/>
-    <id>https://eric999j.github.io/interview/java/</id>
-    <published>2022-11-05T06:00:00.000Z</published>
-    <updated>2022-11-25T08:52:31.338Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;記錄Java各種容易遺忘的段落&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
