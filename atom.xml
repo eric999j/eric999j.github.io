@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-12-25T11:01:50.449Z</updated>
+  <updated>2022-12-31T08:10:01.244Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>京都Talk</title>
+    <link href="https://eric999j.github.io/life/temple/"/>
+    <id>https://eric999j.github.io/life/temple/</id>
+    <published>2022-12-31T08:00:00.000Z</published>
+    <updated>2022-12-31T08:10:01.244Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這本電子書介紹很多京都實用知識，想去玩的人建議買來聽。  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>熱紅酒</title>
@@ -178,7 +198,7 @@
     <link href="https://eric999j.github.io/interview/32/"/>
     <id>https://eric999j.github.io/interview/32/</id>
     <published>2022-12-17T10:30:00.000Z</published>
-    <updated>2022-12-16T11:05:44.089Z</updated>
+    <updated>2022-12-29T09:49:55.577Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
@@ -452,26 +472,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(26).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;2004年日本電通採用的消費者行為模式，背景是1870年認知心理學AIDA。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>15分鐘寫出爆紅千字文</title>
-    <link href="https://eric999j.github.io/life/attractive/"/>
-    <id>https://eric999j.github.io/life/attractive/</id>
-    <published>2022-11-05T07:00:00.000Z</published>
-    <updated>2022-11-05T06:32:35.482Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Google圖書正好有促銷，順便買來理解一下。&lt;/p&gt;</summary>
     
     
     
