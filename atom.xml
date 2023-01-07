@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2022-12-31T08:10:01.244Z</updated>
+  <updated>2023-01-07T10:23:00.323Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>50個超學習法</title>
+    <link href="https://eric999j.github.io/life/learning/"/>
+    <id>https://eric999j.github.io/life/learning/</id>
+    <published>2023-01-07T10:00:00.000Z</published>
+    <updated>2023-01-07T10:23:00.323Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這本書介紹很多如何做到快速有效的學習，大家可以參考看看。  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>京都Talk</title>
@@ -459,26 +479,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AISAS</title>
-    <link href="https://eric999j.github.io/manager/aisas/"/>
-    <id>https://eric999j.github.io/manager/aisas/</id>
-    <published>2022-11-12T06:00:00.000Z</published>
-    <updated>2022-11-12T07:48:20.465Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(26).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2004年日本電通採用的消費者行為模式，背景是1870年認知心理學AIDA。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
