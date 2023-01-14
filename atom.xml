@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-01-07T10:23:00.323Z</updated>
+  <updated>2023-01-14T11:02:12.129Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>圖像分類</title>
+    <link href="https://eric999j.github.io/engineer/classification/"/>
+    <id>https://eric999j.github.io/engineer/classification/</id>
+    <published>2023-01-14T11:30:00.000Z</published>
+    <updated>2023-01-14T11:02:12.129Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2種貓熊分別訓練，那這是個監督式學習分類問題的範例。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>50個超學習法</title>
@@ -457,28 +477,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Remainder</title>
-    <link href="https://eric999j.github.io/interview/remainder/"/>
-    <id>https://eric999j.github.io/interview/remainder/</id>
-    <published>2022-11-19T09:00:00.000Z</published>
-    <updated>2022-12-18T08:57:55.286Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(20).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;補些遺漏的部分。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
