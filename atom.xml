@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-01-14T11:02:12.129Z</updated>
+  <updated>2023-01-21T08:00:51.568Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>屠蘇酒</title>
+    <link href="https://eric999j.github.io/life/toso/"/>
+    <id>https://eric999j.github.io/life/toso/</id>
+    <published>2023-01-21T08:00:00.000Z</published>
+    <updated>2023-01-21T08:00:51.568Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PyO6i9Q.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;接下來是新年假期，祝大家新年快樂。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
     <title>圖像分類</title>
     <link href="https://eric999j.github.io/engineer/classification/"/>
     <id>https://eric999j.github.io/engineer/classification/</id>
     <published>2023-01-14T11:30:00.000Z</published>
-    <updated>2023-01-14T11:02:12.129Z</updated>
+    <updated>2023-01-20T11:33:29.662Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
@@ -457,26 +477,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>黃酒</title>
-    <link href="https://eric999j.github.io/life/riceWine/"/>
-    <id>https://eric999j.github.io/life/riceWine/</id>
-    <published>2022-11-19T10:00:00.000Z</published>
-    <updated>2022-11-19T10:26:04.103Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;每種曲風都用酒類命名，著實酒不醉人人自醉。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
