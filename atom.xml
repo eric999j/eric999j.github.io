@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-01-21T08:00:51.568Z</updated>
+  <updated>2023-02-04T11:22:52.425Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring and Hibernate</title>
+    <link href="https://eric999j.github.io/engineer/spring/"/>
+    <id>https://eric999j.github.io/engineer/spring/</id>
+    <published>2023-02-04T11:30:00.000Z</published>
+    <updated>2023-02-04T11:22:52.425Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;熟悉主流Java框架。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>屠蘇酒</title>
@@ -41,7 +61,7 @@
     <link href="https://eric999j.github.io/engineer/classification/"/>
     <id>https://eric999j.github.io/engineer/classification/</id>
     <published>2023-01-14T11:30:00.000Z</published>
-    <updated>2023-01-20T11:33:29.662Z</updated>
+    <updated>2023-02-04T09:38:22.002Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
@@ -445,31 +465,6 @@
 
 &lt;p&gt;Example 2:&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;abcd&amp;quot;, indices &amp;#x3D; [0, 2], sources &amp;#x3D; [&amp;quot;ab&amp;quot;,&amp;quot;ec&amp;quot;], targets &amp;#x3D; [&amp;quot;eee&amp;quot;,&amp;quot;ffff&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;eeecd&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;quot;ab&amp;quot; occurs at index 0 in s, so we replace it with &amp;quot;eee&amp;quot;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;quot;ec&amp;quot; does not occur at index 2 in s, so we do nothing.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>189. Rotate Array</title>
-    <link href="https://eric999j.github.io/interview/189/"/>
-    <id>https://eric999j.github.io/interview/189/</id>
-    <published>2022-11-27T09:00:00.000Z</published>
-    <updated>2022-11-27T09:31:34.291Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Given an array, rotate the array to the right by k steps, where k is non-negative.  &lt;/p&gt;
-&lt;p&gt;Example 1:  &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [1,2,3,4,5,6,7], k &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 1 steps to the right: [7,1,2,3,4,5,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 2 steps to the right: [6,7,1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 3 steps to the right: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:  &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: nums &amp;#x3D; [-1,-100,3,99], k &amp;#x3D; 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [3,99,-1,-100]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 1 steps to the right: [99,-1,-100,3]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rotate 2 steps to the right: [3,99,-1,-100]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
