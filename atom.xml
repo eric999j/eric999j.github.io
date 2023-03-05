@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-02-25T14:25:50.422Z</updated>
+  <updated>2023-03-05T07:33:41.148Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>H2 Database</title>
+    <link href="https://eric999j.github.io/engineer/h2/"/>
+    <id>https://eric999j.github.io/engineer/h2/</id>
+    <published>2023-03-05T07:30:00.000Z</published>
+    <updated>2023-03-05T07:33:41.148Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Hi H2。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Mézes Krémes</title>
@@ -40,7 +60,7 @@
     <link href="https://eric999j.github.io/engineer/kubernetes/"/>
     <id>https://eric999j.github.io/engineer/kubernetes/</id>
     <published>2023-02-19T07:30:00.000Z</published>
-    <updated>2023-02-25T14:24:06.629Z</updated>
+    <updated>2023-03-05T06:56:55.545Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
@@ -100,7 +120,7 @@
     <link href="https://eric999j.github.io/engineer/spring/"/>
     <id>https://eric999j.github.io/engineer/spring/</id>
     <published>2023-02-04T11:30:00.000Z</published>
-    <updated>2023-02-23T10:57:39.073Z</updated>
+    <updated>2023-03-05T06:57:04.543Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
@@ -423,33 +443,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>187. Repeated DNA Sequences</title>
-    <link href="https://eric999j.github.io/interview/187/"/>
-    <id>https://eric999j.github.io/interview/187/</id>
-    <published>2022-12-11T08:00:00.000Z</published>
-    <updated>2022-12-11T08:55:36.616Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(22).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;The DNA sequence is composed of a series of nucleotides abbreviated as ‘A’, ‘C’, ‘G’, and ‘T’.  &lt;/p&gt;
-&lt;p&gt;For example, “ACGAATTCCG” is a DNA sequence.&lt;br&gt;When studying DNA, it is useful to identify repeated sequences within the DNA.  &lt;/p&gt;
-&lt;p&gt;Given a string s that represents a DNA sequence, return all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. You may return the answer in any order.  &lt;/p&gt;
-&lt;p&gt;Example 1:  &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [&amp;quot;AAAAACCCCC&amp;quot;,&amp;quot;CCCCCAAAAA&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Example 2:  &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: s &amp;#x3D; &amp;quot;AAAAAAAAAAAAA&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: [&amp;quot;AAAAAAAAAA&amp;quot;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
     
   </entry>
   
