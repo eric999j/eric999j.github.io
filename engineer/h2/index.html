@@ -20,16 +20,29 @@
     var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Hi H2。">
+  <meta name="description" content="Hi H2&#x2F;MySQL。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="H2 Database">
 <meta property="og:url" content="https://eric999j.github.io/engineer/h2/index.html">
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
-<meta property="og:description" content="Hi H2。">
+<meta property="og:description" content="Hi H2&#x2F;MySQL。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg">
+<meta property="og:image" content="https://i.imgur.com/lamXSNA.png">
+<meta property="og:image" content="https://i.imgur.com/8tphjhH.png">
+<meta property="og:image" content="https://i.imgur.com/kTlATTv.png">
+<meta property="og:image" content="https://i.imgur.com/WxIZ6Dt.png">
+<meta property="og:image" content="https://i.imgur.com/8aOvHUu.png">
+<meta property="og:image" content="https://i.imgur.com/JHxpf2D.png">
+<meta property="og:image" content="https://i.imgur.com/Nwufw5o.png">
+<meta property="og:image" content="https://i.imgur.com/rU35POZ.png">
+<meta property="og:image" content="https://i.imgur.com/4DzPzuP.png">
+<meta property="og:image" content="https://i.imgur.com/70Sg06C.png">
+<meta property="og:image" content="https://i.imgur.com/YKVh9hA.png">
+<meta property="og:image" content="https://i.imgur.com/ZjqcYSu.png">
+<meta property="og:image" content="https://i.imgur.com/PoVlRpr.png">
 <meta property="article:published_time" content="2023-03-05T07:30:00.000Z">
-<meta property="article:modified_time" content="2023-03-05T07:33:41.148Z">
+<meta property="article:modified_time" content="2023-03-08T12:01:58.425Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -201,10 +214,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-03-05 15:30:00 / Modified: 15:33:41" itemprop="dateCreated datePublished" datetime="2023-03-05T15:30:00+08:00">2023-03-05</time>
+              <time title="Created: 2023-03-05 15:30:00" itemprop="dateCreated datePublished" datetime="2023-03-05T15:30:00+08:00">2023-03-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-03-08 20:01:58" itemprop="dateModified" datetime="2023-03-08T20:01:58+08:00">2023-03-08</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +247,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>257</span>
+              <span>463</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -248,20 +267,27 @@
 
       
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg"></p>
-<p>Hi H2。</p>
+<p>Hi H2/MySQL。</p>
 <a id="more"></a>
 
-<h1 id="O"><a href="#O" class="headerlink" title="O"></a>O</h1><p>在Spring Boot使用H2 mysql mode，並用Postman顯示API回傳</p>
+<h1 id="O"><a href="#O" class="headerlink" title="O"></a>O</h1><p>在Spring Boot使用H2/Mysql，並用Postman顯示API</p>
 <h1 id="KRs"><a href="#KRs" class="headerlink" title="KRs"></a>KRs</h1><ol>
 <li><a href="https://eric999j.github.io/engineer/spring/">H2背景</a> 100%</li>
-<li>將原先使用Mysql的專案改成H2 MySQL</li>
-<li>Postman測試回傳</li>
-<li>SQL語句  </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/eric999j/h2Demo/tree/mysql">將原先使用Mysql的專案改成H2 MySQL</a> 100%</li>
+<li>Postman測試回傳 100%</li>
+<li>SQL語句 100%  </li>
 </ol>
-<h1 id="H2-MySQL"><a href="#H2-MySQL" class="headerlink" title="H2 MySQL"></a>H2 MySQL</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jdbc:h2:&lt;url&gt;;MODE&#x3D;&lt;databaseType&gt;</span><br><span class="line">jdbc:h2:~&#x2F;test;MODE&#x3D;MYSQL;DATABASE_TO_LOWER&#x3D;TRUE</span><br></pre></td></tr></table></figure>
+<h1 id="使用H2"><a href="#使用H2" class="headerlink" title="使用H2"></a><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10237915">使用H2</a></h1><p><img src="https://i.imgur.com/lamXSNA.png" alt="img"><br><img src="https://i.imgur.com/8tphjhH.png" alt="img"><br><img src="https://i.imgur.com/kTlATTv.png" alt="img"><br><img src="https://i.imgur.com/WxIZ6Dt.png" alt="img"></p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/kanpiaoxue/article/details/84925996">Database URL Overview</a></li>
+<li>Create<br><img src="https://i.imgur.com/8aOvHUu.png" alt="img"></li>
+<li>Request<br><img src="https://i.imgur.com/JHxpf2D.png" alt="img"></li>
+<li>Update<br><img src="https://i.imgur.com/Nwufw5o.png" alt="img"></li>
+<li>Delete<br><img src="https://i.imgur.com/rU35POZ.png" alt="img"></li>
 </ul>
+<h1 id="改成MySQL"><a href="#改成MySQL" class="headerlink" title="改成MySQL"></a><a target="_blank" rel="noopener" href="https://github.com/eric999j/h2Demo/tree/mysql">改成MySQL</a></h1><p>1.<a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-install-mysql.html">Docker 裝MySQL</a><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10186431">ref2</a><br>2.mysql&gt; CREATE DATABASE ems;<br><img src="https://i.imgur.com/4DzPzuP.png" alt="img"><br><img src="https://i.imgur.com/70Sg06C.png" alt="img"></p>
+<p>3.pom.xml加入段落，並把jar放到External Libraries重啟</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;mysql&lt;&#x2F;groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;mysql-connector-java&lt;&#x2F;artifactId&gt;</span><br><span class="line">	&lt;version&gt;8.0.13&lt;&#x2F;version&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure>
+<p>4.加入<a target="_blank" rel="noopener" href="https://github.com/eric999j/h2Demo/blob/mysql/src/main/resources/application.yml">application.yml</a><br><img src="https://i.imgur.com/YKVh9hA.png" alt="img"><br><img src="https://i.imgur.com/ZjqcYSu.png" alt="img"><br><img src="https://i.imgur.com/PoVlRpr.png" alt="img"></p>
 <p>時程: 2023/3/1- 2023/4/1</p>
 
 <div>
@@ -368,7 +394,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#H2-MySQL"><span class="nav-number">3.</span> <span class="nav-text">H2 MySQL</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8H2"><span class="nav-number">3.</span> <span class="nav-text">使用H2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%94%B9%E6%88%90MySQL"><span class="nav-number">4.</span> <span class="nav-text">改成MySQL</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -454,12 +480,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">367k</span>
+    <span title="Symbols count total">369k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">5:34</span>
+    <span title="Reading time total">5:35</span>
 </div>
 
         
