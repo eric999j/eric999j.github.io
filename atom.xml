@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-03-08T12:01:58.425Z</updated>
+  <updated>2023-03-11T09:59:33.043Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>咖啡</title>
+    <link href="https://eric999j.github.io/life/coffee/"/>
+    <id>https://eric999j.github.io/life/coffee/</id>
+    <published>2023-03-11T10:00:00.000Z</published>
+    <updated>2023-03-11T09:59:33.043Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/jbxvzR8.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;紀錄咖啡風味。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
+    
+  </entry>
   
   <entry>
     <title>H2 Database</title>
@@ -423,26 +443,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>白酒</title>
-    <link href="https://eric999j.github.io/life/ChineseBaijiu/"/>
-    <id>https://eric999j.github.io/life/ChineseBaijiu/</id>
-    <published>2022-12-11T09:00:00.000Z</published>
-    <updated>2022-12-11T08:37:47.184Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;相較於黃酒的戲腔，白酒帶來近代上海女伶的歌聲。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
