@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg">
 <meta property="article:published_time" content="2022-11-05T06:00:00.000Z">
-<meta property="article:modified_time" content="2022-12-26T08:53:03.834Z">
+<meta property="article:modified_time" content="2023-03-25T10:05:37.360Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-12-26 16:53:03" itemprop="dateModified" datetime="2022-12-26T16:53:03+08:00">2022-12-26</time>
+                <time title="Modified: 2023-03-25 18:05:37" itemprop="dateModified" datetime="2023-03-25T18:05:37+08:00">2023-03-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.6k</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -269,12 +269,20 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Example&#123;</span><br><span class="line">     static int data &#x3D; 0;</span><br><span class="line">     public Example() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Main &#123;</span><br><span class="line">     public static void main(String[] argv)  &#123;</span><br><span class="line">          System.out.println(Example.data); &#x2F;&#x2F; 1</span><br><span class="line">          Example exp1 &#x3D; new Example();</span><br><span class="line">          Example exp2 &#x3D; new Example();</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">          exp2.data  &#x3D; 1;</span><br><span class="line">          System.out.println(exp2.data); &#x2F;&#x2F; 2 3</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">0  </span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 
-<h1 id="Final-不可修改"><a href="#Final-不可修改" class="headerlink" title="Final 不可修改"></a>Final 不可修改</h1><ol>
+<h1 id="Final"><a href="#Final" class="headerlink" title="Final"></a><a target="_blank" rel="noopener" href="https://medium.com/@clu1022/java%E7%AD%86%E8%A8%98-final-finally-%E8%88%87-finalize-d72dc66e49eb">Final</a></h1><ol>
 <li>類別：無法被繼承(extends)。</li>
 <li>函數：繼承他的子類別無法覆寫。</li>
 <li>變數：常數無法被修改。</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Example&#123;</span><br><span class="line">     final int data &#x3D; 0;</span><br><span class="line">     public Example() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Main &#123;</span><br><span class="line">     public static void main(String[] argv)  &#123;</span><br><span class="line">          System.out.println(Example.data);</span><br><span class="line">          Example exp1 &#x3D; new Example();</span><br><span class="line">          exp1.data  &#x3D; 1;</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">&#x2F;tmp&#x2F;DC9NTE17Mc&#x2F;Main.java:7: error: non-static variable data cannot be referenced from a static context</span><br><span class="line">System.out.println(Example.data); &#x2F;&#x2F; final static int data &#x3D; 0;</span><br><span class="line"></span><br><span class="line">^</span><br><span class="line">&#x2F;tmp&#x2F;DC9NTE17Mc&#x2F;Main.java:9: error: cannot assign a value to final variable data</span><br><span class="line">          exp1.data  &#x3D; 1; &#x2F;&#x2F; final 無法修改。</span><br><span class="line">^</span><br><span class="line">2 errors</span><br></pre></td></tr></table></figure>
+
+<h2 id="Finally"><a href="#Finally" class="headerlink" title="Finally"></a>Finally</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">try-catch-finally</span><br></pre></td></tr></table></figure>
+
+<h2 id="Finalize"><a href="#Finalize" class="headerlink" title="Finalize"></a>Finalize</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">與GC相關，deprecated 了</span><br></pre></td></tr></table></figure>
+
+<h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><a target="_blank" rel="noopener" href="https://www.ewdna.com/2009/06/stringbuilderstringbuffer.html?m=1">StringBuilder</a></h1><p>不需考量多執行緒同步的時候我們使用StringBuilder來獲得最佳的效率。  </p>
+<h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><p>要考慮多執行緒的情況下使用StringBuffer來讓類別自動處理同步的問題。</p>
+
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -382,7 +390,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean%E6%A2%9D%E4%BB%B6-%E6%88%90%E7%AB%8B%EF%BC%9A%E4%B8%8D%E6%88%90%E7%AB%8B"><span class="nav-number">1.</span> <span class="nav-text">Boolean條件?成立：不成立</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Integer"><span class="nav-number">2.</span> <span class="nav-text">Integer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">3.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Loop"><span class="nav-number">4.</span> <span class="nav-text">Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">5.</span> <span class="nav-text">Static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Final-%E4%B8%8D%E5%8F%AF%E4%BF%AE%E6%94%B9"><span class="nav-number">6.</span> <span class="nav-text">Final 不可修改</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean%E6%A2%9D%E4%BB%B6-%E6%88%90%E7%AB%8B%EF%BC%9A%E4%B8%8D%E6%88%90%E7%AB%8B"><span class="nav-number">1.</span> <span class="nav-text">Boolean條件?成立：不成立</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Integer"><span class="nav-number">2.</span> <span class="nav-text">Integer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">3.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Loop"><span class="nav-number">4.</span> <span class="nav-text">Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">5.</span> <span class="nav-text">Static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Final"><span class="nav-number">6.</span> <span class="nav-text">Final</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Finally"><span class="nav-number">6.1.</span> <span class="nav-text">Finally</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finalize"><span class="nav-number">6.2.</span> <span class="nav-text">Finalize</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StringBuilder"><span class="nav-number">7.</span> <span class="nav-text">StringBuilder</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StringBuffer"><span class="nav-number">7.1.</span> <span class="nav-text">StringBuffer</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -400,7 +408,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">274</span>
+          <span class="site-state-item-count">275</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -468,12 +476,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">376k</span>
+    <span title="Symbols count total">384k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">5:42</span>
+    <span title="Reading time total">5:49</span>
 </div>
 
         
