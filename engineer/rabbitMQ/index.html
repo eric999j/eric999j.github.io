@@ -28,8 +28,11 @@
 <meta property="og:description" content="Hi RabbitMQ。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg">
+<meta property="og:image" content="https://i.imgur.com/BiBzne1.png">
+<meta property="og:image" content="https://i.imgur.com/iuiDS60.png">
+<meta property="og:image" content="https://i.imgur.com/GfLcC9W.png">
 <meta property="article:published_time" content="2023-04-08T07:30:00.000Z">
-<meta property="article:modified_time" content="2023-04-15T09:26:40.061Z">
+<meta property="article:modified_time" content="2023-04-20T08:08:34.364Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +212,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-04-15 17:26:40" itemprop="dateModified" datetime="2023-04-15T17:26:40+08:00">2023-04-15</time>
+                <time title="Modified: 2023-04-20 16:08:34" itemprop="dateModified" datetime="2023-04-20T16:08:34+08:00">2023-04-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +237,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>445</span>
+              <span>590</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -259,8 +262,8 @@
 
 <h1 id="O"><a href="#O" class="headerlink" title="O"></a>O</h1><p>使用RabbitMQ</p>
 <h1 id="KRs"><a href="#KRs" class="headerlink" title="KRs"></a>KRs</h1><ol>
-<li>RabbitMQ背景</li>
-<li>撰寫範例</li>
+<li>RabbitMQ背景 100%</li>
+<li>撰寫範例 80%</li>
 </ol>
 <h1 id="是什麼"><a href="#是什麼" class="headerlink" title="是什麼"></a>是什麼</h1><ol>
 <li>是<a target="_blank" rel="noopener" href="https://xiang753017.gitbook.io/zixiang-blog/broker/broker-dao-di-shi-shen-me">Broker</a>，傳遞訊息的一種架構。</li>
@@ -303,12 +306,12 @@
 <li><p>跟kafka類似，<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1706532">更多支持</a>，但如果使用者規模增大，吞吐量高，還是建議kafka。</p>
 </li>
 </ol>
-<h1 id="Spring-Boot-RabbitMq"><a href="#Spring-Boot-RabbitMq" class="headerlink" title="Spring Boot + RabbitMq"></a>Spring Boot + RabbitMq</h1><ol>
-<li><a target="_blank" rel="noopener" href="https://dotblogs.com.tw/ShihGoGo/2022/06/04/132634">ref1</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.tpisoftware.com/tpu/articleDetails/2116">ref2</a></li>
-<li><a target="_blank" rel="noopener" href="https://morosedog.gitlab.io/springboot-20190414-springboot26/">ref3</a></li>
-</ol>
+<h2 id="Rabbit-docker-service"><a href="#Rabbit-docker-service" class="headerlink" title="Rabbit docker service"></a>Rabbit docker service</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker pull rabbitmq:management</span><br><span class="line">docker run -d -p 5672:5672 -p 15672:15672 --name rabbitmq rabbitmq:management</span><br><span class="line">127.0.0.1:15672</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.imgur.com/BiBzne1.png" alt="img"></p>
+<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a><a target="_blank" rel="noopener" href="https://github.com/eric999j/rabbitMQ">Code</a></h1><p><img src="https://i.imgur.com/iuiDS60.png" alt="img"><br><img src="https://i.imgur.com/GfLcC9W.png" alt="img"></p>
 <p>時程: 2023/4/1- 2023/5/1</p>
+<h1 id="Spring-Boot-RabbitMq"><a href="#Spring-Boot-RabbitMq" class="headerlink" title="Spring Boot + RabbitMq"></a>Spring Boot + RabbitMq</h1><p><a target="_blank" rel="noopener" href="https://www.tpisoftware.com/tpu/articleDetails/2116">ref1</a> <a target="_blank" rel="noopener" href="https://dotblogs.com.tw/ShihGoGo/2022/06/04/132634">ref2</a> <a target="_blank" rel="noopener" href="https://morosedog.gitlab.io/springboot-20190414-springboot26/">ref3</a></p>
 
 <div>
     <hr>
@@ -417,7 +420,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E9%BA%BC"><span class="nav-number">3.</span> <span class="nav-text">是什麼</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%BC%83"><span class="nav-number">4.</span> <span class="nav-text">比較</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#RabbitMQ%EF%BC%9A%E5%90%9E%E5%90%90%E9%87%8F%E4%B8%8D%E5%A4%A7%EF%BC%9A%E8%90%AC%E6%A2%9D%E4%BA%8B%E4%BB%B6-%E7%A7%92"><span class="nav-number">4.1.</span> <span class="nav-text">RabbitMQ：吞吐量不大：萬條事件&#x2F;秒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kafka%EF%BC%9A%E5%90%9E%E5%90%90%E9%87%8F%E5%A4%A7%EF%BC%9A%E5%8D%81%E8%90%AC%E6%A2%9D%E4%BA%8B%E4%BB%B6-%E7%A7%92"><span class="nav-number">4.2.</span> <span class="nav-text">Kafka：吞吐量大：十萬條事件&#x2F;秒</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Boot-RabbitMq"><span class="nav-number">5.</span> <span class="nav-text">Spring Boot + RabbitMq</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%98%AF%E4%BB%80%E9%BA%BC"><span class="nav-number">3.</span> <span class="nav-text">是什麼</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%BC%83"><span class="nav-number">4.</span> <span class="nav-text">比較</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#RabbitMQ%EF%BC%9A%E5%90%9E%E5%90%90%E9%87%8F%E4%B8%8D%E5%A4%A7%EF%BC%9A%E8%90%AC%E6%A2%9D%E4%BA%8B%E4%BB%B6-%E7%A7%92"><span class="nav-number">4.1.</span> <span class="nav-text">RabbitMQ：吞吐量不大：萬條事件&#x2F;秒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kafka%EF%BC%9A%E5%90%9E%E5%90%90%E9%87%8F%E5%A4%A7%EF%BC%9A%E5%8D%81%E8%90%AC%E6%A2%9D%E4%BA%8B%E4%BB%B6-%E7%A7%92"><span class="nav-number">4.2.</span> <span class="nav-text">Kafka：吞吐量大：十萬條事件&#x2F;秒</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rabbit-docker-service"><span class="nav-number">4.3.</span> <span class="nav-text">Rabbit docker service</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">5.</span> <span class="nav-text">Code</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Boot-RabbitMq"><span class="nav-number">6.</span> <span class="nav-text">Spring Boot + RabbitMq</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -435,7 +438,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">279</span>
+          <span class="site-state-item-count">280</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -503,12 +506,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">387k</span>
+    <span title="Symbols count total">391k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">5:52</span>
+    <span title="Reading time total">5:56</span>
 </div>
 
         

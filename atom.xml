@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-04-15T09:28:20.623Z</updated>
+  <updated>2023-04-22T10:02:55.133Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Android and Kotlin</title>
+    <link href="https://eric999j.github.io/engineer/kotlin/"/>
+    <id>https://eric999j.github.io/engineer/kotlin/</id>
+    <published>2023-04-22T10:00:00.000Z</published>
+    <updated>2023-04-22T10:02:55.133Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;不知道一週能完成多少呢。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IntelliJ IDEA 小技巧</title>
     <link href="https://eric999j.github.io/engineer/idea/"/>
     <id>https://eric999j.github.io/engineer/idea/</id>
     <published>2023-04-15T10:00:00.000Z</published>
-    <updated>2023-04-15T09:28:20.623Z</updated>
+    <updated>2023-04-22T07:18:05.048Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -60,7 +80,7 @@
     <link href="https://eric999j.github.io/engineer/rabbitMQ/"/>
     <id>https://eric999j.github.io/engineer/rabbitMQ/</id>
     <published>2023-04-08T07:30:00.000Z</published>
-    <updated>2023-04-15T09:26:40.061Z</updated>
+    <updated>2023-04-20T08:08:34.364Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg&quot;&gt;&lt;/p&gt;
@@ -257,7 +277,7 @@
     <link href="https://eric999j.github.io/engineer/spring/"/>
     <id>https://eric999j.github.io/engineer/spring/</id>
     <published>2023-02-04T11:30:00.000Z</published>
-    <updated>2023-04-15T09:19:47.840Z</updated>
+    <updated>2023-04-22T08:10:27.929Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
@@ -383,28 +403,6 @@
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://imgur.com/mBjM3xx.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;實現洗碗精自由@w@/（誤。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>爽身粉</title>
-    <link href="https://eric999j.github.io/life/bodyPowder/"/>
-    <id>https://eric999j.github.io/life/bodyPowder/</id>
-    <published>2022-12-24T08:30:00.000Z</published>
-    <updated>2022-12-24T08:25:08.977Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Qjs5kG1.jpg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;啊，打翻了…。&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
