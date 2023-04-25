@@ -29,9 +29,11 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg">
 <meta property="og:image" content="https://developer.android.com/guide/components/images/activity_lifecycle.png">
+<meta property="og:image" content="https://i.imgur.com/IGg1HK9.png">
 <meta property="og:image" content="https://developer.android.com/static/images/service_lifecycle.png">
+<meta property="og:image" content="https://dotblogsfile.blob.core.windows.net/user/hank/df829373-fa6a-4af4-89be-27f3787b7506/1453806799_24752.png">
 <meta property="article:published_time" content="2023-04-22T10:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-22T10:02:55.133Z">
+<meta property="article:modified_time" content="2023-04-25T10:35:50.848Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -203,10 +205,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-04-22 18:00:00 / Modified: 18:02:55" itemprop="dateCreated datePublished" datetime="2023-04-22T18:00:00+08:00">2023-04-22</time>
+              <time title="Created: 2023-04-22 18:00:00" itemprop="dateCreated datePublished" datetime="2023-04-22T18:00:00+08:00">2023-04-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-04-25 18:35:50" itemprop="dateModified" datetime="2023-04-25T18:35:50+08:00">2023-04-25</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -230,14 +238,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.7k</span>
+              <span>6.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>6 mins.</span>
             </span>
 
         </div>
@@ -260,17 +268,21 @@
 </ol>
 <h1 id="四大組件"><a href="#四大組件" class="headerlink" title="四大組件"></a>四大組件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Activity: 提供UI，有不同狀態，User可以在UI間切換。</span><br><span class="line">Service: 可以沒有UI執行長時間的操作，如下載文件、播放音樂、後臺更新等。</span><br><span class="line">Broadcast Receiver: 接收系統或其他app的廣播，如系統啟動、電池電量低等。</span><br><span class="line">Content Provider: 管理app db，提供data給其他app，是和持久資料的場景。</span><br></pre></td></tr></table></figure>
 
-<h1 id="Activity生命週期"><a href="#Activity生命週期" class="headerlink" title="Activity生命週期"></a><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/activities/activity-lifecycle">Activity生命週期</a></h1><p><img src="https://developer.android.com/guide/components/images/activity_lifecycle.png"></p>
+<h1 id="Activity生命週期"><a href="#Activity生命週期" class="headerlink" title="Activity生命週期"></a>Activity生命週期</h1><p><img src="https://developer.android.com/guide/components/images/activity_lifecycle.png"><br><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/activities/activity-lifecycle">ref</a></p>
+<p><img src="https://i.imgur.com/IGg1HK9.png"><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10253102">ref</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">onCreate()：Activity第一次被創建，初始化Activity的狀態和布局。</span><br><span class="line">onStart()：Activity被啟動時調用，執行一些初始化操作，如註冊Broadcast Receiver等。</span><br><span class="line">onResume()：Activity從背景到使用者可視時的進入點，從onPause()啟動或恢復一些耗時操作，如開啟動畫效果等。</span><br><span class="line">onPause()：Activity失去焦點時調用，通常在這個方法中暫停或停止一些耗時操作，如動畫效果等。</span><br><span class="line">onRestart()：Activity從onStop()重新啟動時調用。</span><br><span class="line">onStop()：Activity不再可見時調用，通常在這個方法中釋放一些資源，如註銷Broadcast Receiver等。</span><br><span class="line">onDestroy()：當Activity被銷毀時調用，通常在這個方法中釋放所有的資源。</span><br></pre></td></tr></table></figure>
 
-<h1 id="Service生命週期"><a href="#Service生命週期" class="headerlink" title="Service生命週期"></a><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/services">Service生命週期</a></h1><p><img src="https://developer.android.com/static/images/service_lifecycle.png"></p>
-<p>有三種類型  </p>
+<h1 id="Service生命週期"><a href="#Service生命週期" class="headerlink" title="Service生命週期"></a>Service生命週期</h1><p><img src="https://developer.android.com/static/images/service_lifecycle.png"><br><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/services">ref</a></p>
+<p>有三種類型，兩種啟動方式    </p>
 <ul>
 <li>前台服務（Foreground Service） </li>
 <li>後台服務（Background Service）</li>
 <li>繫結服務（Bound Service）</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">onCreate()：Service第一次被創建時調用，如創建線程等。</span><br><span class="line">onStartCommand()：啟動Service時調用，執行一些耗時的操作，如網絡請求等。</span><br><span class="line">onBind()：繫結Service時調用，返回一個IBinder對象，用於繫結Service和客戶端進行通信。</span><br><span class="line">onUnbind()：解除繫結Service，可以在這個方法中釋放一些資源，如註銷Broadcast Receiver等。</span><br><span class="line">onDestroy()：Service被銷毀時調用，通常在這個方法中釋放所有的資源。</span><br></pre></td></tr></table></figure>
+
+<h1 id="ContentProvider"><a href="#ContentProvider" class="headerlink" title="ContentProvider"></a><a target="_blank" rel="noopener" href="https://developer.android.com/reference/android/content/ContentProvider">ContentProvider</a></h1><p>程式間互相分享資料 Views System：lists,grids,text boxes,buttons…元件  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import android.content.ContentProvider;</span><br><span class="line"></span><br><span class="line">public class LogProvider extends ContentProvider &#123;</span><br><span class="line"></span><br><span class="line">onCreate() : 初始化</span><br><span class="line">insert(Uri, ContentValues) ：將新數據插入內容提供者  </span><br><span class="line">update(Uri, ContentValues, Bundle) ：更新內容提供者中的現有數據</span><br><span class="line">delete(Uri, Bundle) 從內容提供者中刪除數據</span><br><span class="line">getType(Uri) 返回content provider中數據的MIME類型(檔案格式，HTML...)</span><br><span class="line">ParcelFileDescriptor openFile(Uri uri, String mode) throws FileNotFoundException ：檔案處理</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a><a target="_blank" rel="noopener" href="http://mahaljsp.asuscomm.com/index.php/2016/10/31/android_app_basic_16/">Thread</a></h1><ul>
 <li>Main (UI) Thread：負責處理UI事件、畫面渲染等操作，過5秒沒有反應的話, 就會彈出ANR的錯誤訊息，用AsyncTask避免ANR。</li>
@@ -280,10 +292,82 @@
 </ul>
 <h2 id="Thread-Safe"><a href="#Thread-Safe" class="headerlink" title="Thread Safe"></a>Thread Safe</h2><p>共享資源時，需要進行同步處理，避免多線程操作同一資源race condition。常見的同步處理方式包括使用synchronized關鍵字、ReentrantLock等。  </p>
 <p>使用ThreadLocal類型的變數來避免多線程環境下的狀態共享問題。ThreadLocal類型的變數只在當前線程中可見，不會與其他線程共享，從而避免了線程安全問題。</p>
+<h1 id="AsyncTask"><a href="#AsyncTask" class="headerlink" title="AsyncTask"></a>AsyncTask</h1><p><img src="https://dotblogsfile.blob.core.windows.net/user/hank/df829373-fa6a-4af4-89be-27f3787b7506/1453806799_24752.png"><br><a target="_blank" rel="noopener" href="https://dotblogs.com.tw/hanktom/2016/01/26/191154">ref</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">AsyncTask&lt;傳入值型態, 更新進度型態(Integer(35%)或Float(52.3%)...), 結果型態&gt;</span><br><span class="line"></span><br><span class="line">onPreExecute():前處理</span><br><span class="line">doInBackground(Void... voids):Async Thread執行</span><br><span class="line">onPostExecute(Void aVoid):後續</span><br><span class="line"></span><br><span class="line">executeOnExecutor(...)</span><br><span class="line">默認SERIAL_EXECUTOR，FIFO</span><br><span class="line">如果寫AsyncTask.THREAD_POOL_EXECUTOR，立即執行</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <h1 id="佈局"><a href="#佈局" class="headerlink" title="佈局"></a>佈局</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">LinearLayout：水平&#x2F;垂直。</span><br><span class="line">RelativeLayout：相對於其他元素或父容器定位。</span><br><span class="line">FrameLayout：元素可護疊，只顯示上層。</span><br><span class="line">ConstraintLayout：設置元素之間的約束條件，實現複雜的屏幕佈局效果。</span><br><span class="line">TableLayout：表格的形式排列。</span><br><span class="line">GridLayout：可以定義行和列的屬性。</span><br></pre></td></tr></table></figure>
 
 <h1 id="元件"><a href="#元件" class="headerlink" title="元件"></a>元件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ListView：從上到下顯示佈局。</span><br><span class="line">RecyclerView：多種不同的佈局，顯示大量的數據列表，例如聊天記錄、商品列表、新聞列表等，支持高效的數據重用，只顯示當前顯示區域內的數據，當列表滾動時，之前顯示的數據會被回收重用，減少了內存占用和重複創建視圖的消耗。</span><br></pre></td></tr></table></figure>
 <h1 id="Dependency-Injection"><a href="#Dependency-Injection" class="headerlink" title="Dependency Injection"></a>Dependency Injection</h1><p>降低耦合、代碼可讀性更好，減少重複、更容易進行單元測試，但需要額外學習一些框架，也增加了代碼複雜度。</p>
+<h1 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h1><ul>
+<li>程式比Java更簡潔，可以與Java 相容</li>
+<li>lateinit</li>
+</ul>
+<p>非null變數，之後再給值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class MyClass &#123;</span><br><span class="line">    lateinit var myString: String</span><br><span class="line"></span><br><span class="line">    fun initialize() &#123;</span><br><span class="line">        myString &#x3D; &quot;Hello World&quot;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    fun printString() &#123;</span><br><span class="line">        println(myString)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>var可賦值，val 不可</li>
+<li>類型推論（type inferred)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">val number &#x3D; 42 &#x2F;&#x2F; number is inferred to be an Int</span><br><span class="line">val message &#x3D; &quot;Hello, world!&quot; &#x2F;&#x2F; message is inferred to be a String</span><br><span class="line">fun add(a: Int, b: Int) &#x3D; a + b &#x2F;&#x2F; inferred return type is Int</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Range</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">val intRange &#x3D; 1..10 &#x2F;&#x2F; creates a range from 1 to 10 (inclusive)</span><br><span class="line">val charRange &#x3D; &#39;a&#39;..&#39;z&#39; &#x2F;&#x2F; creates a range from &#39;a&#39; to &#39;z&#39; (inclusive)</span><br><span class="line">val intRange2 &#x3D; 1.rangeTo(10) &#x2F;&#x2F; equivalent to 1..10</span><br><span class="line"></span><br><span class="line">println(intRange.last) &#x2F;&#x2F; prints 10</span><br><span class="line">println(charRange.contains(&#39;m&#39;)) &#x2F;&#x2F; prints true</span><br><span class="line"></span><br><span class="line">val evenNumbers &#x3D; 2..10 step 2 &#x2F;&#x2F; creates a range from 2 to 10 (inclusive) with a step of 2</span><br><span class="line">println(evenNumbers) &#x2F;&#x2F; prints 2, 4, 6, 8, 10</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Null Safety(避免NullPointerExceptions)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var nullableString: String? &#x3D; null &#x2F;&#x2F; nullable</span><br><span class="line">val nonNullString: String &#x3D; &quot;Hello&quot; &#x2F;&#x2F; non-null</span><br><span class="line"></span><br><span class="line">val length &#x3D; nullableString?.length &#x2F;&#x2F; length is null if nullableString is null</span><br><span class="line">val length &#x3D; nullableString?.length ?: -1 &#x2F;&#x2F; length is -1 if nullableString is null</span><br><span class="line">val length &#x3D; nullableString!!.length &#x2F;&#x2F; throws NPE if nullableString is null</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>when取代switch </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">fun describe(obj: Any): String &#x3D;</span><br><span class="line">    when (obj) &#123;</span><br><span class="line">        1 -&gt; &quot;One&quot;</span><br><span class="line">        &quot;Hello&quot; -&gt; &quot;Greeting&quot;</span><br><span class="line">        is Long -&gt; &quot;Long&quot;</span><br><span class="line">        !is String -&gt; &quot;Not a string&quot;</span><br><span class="line">        else -&gt; &quot;Unknown&quot;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"> -&gt;後也可以加&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Support <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/news/my-favorite-examples-of-functional-programming-in-kotlin-e69217b39112/">Functional Programming</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Student(</span><br><span class="line">    val name: String,</span><br><span class="line">    val surname: String,</span><br><span class="line">    val passing: Boolean,</span><br><span class="line">    val averageGrade: Double</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">students.filter &#123; it.passing &amp;&amp; it.averageGrade &gt; 4.0 &#125; &#x2F;&#x2F; 1</span><br><span class="line">    .sortedBy &#123; it.averageGrade &#125; &#x2F;&#x2F; 2</span><br><span class="line">    .take(10) &#x2F;&#x2F; 3</span><br><span class="line">    .sortedWith(compareBy(&#123; it.surname &#125;, &#123; it.name &#125;)) &#x2F;&#x2F; 4</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Companion Object</li>
+</ul>
+<p>Class中方便定義靜態函式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class MyClass &#123;</span><br><span class="line">    companion object &#123;</span><br><span class="line">        fun myStaticMethod() &#123;</span><br><span class="line">            println(&quot;This is a static method.&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">        val myStaticProperty &#x3D; &quot;This is a static property.&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">MyClass.myStaticMethod() &#x2F;&#x2F; Output: &quot;This is a static method.&quot;</span><br><span class="line">println(MyClass.myStaticProperty) &#x2F;&#x2F; Output: &quot;This is a static property.&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>繼承用：取代extends</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">open class Animal &#123;</span><br><span class="line">   open fun makeSound() &#123;</span><br><span class="line">      println(&quot;...&quot;)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Dog : Animal() &#123;</span><br><span class="line">   override fun makeSound() &#123;</span><br><span class="line">      println(&quot;Woof!&quot;)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>介面用：取代implements</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">interface Moveable &#123;</span><br><span class="line">   fun move()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Car : Moveable &#123;</span><br><span class="line">   override fun move() &#123;</span><br><span class="line">      println(&quot;Driving...&quot;)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.javatpoint.com/kotlin-extension-function">函式擴展</a>：不用繼承而增加methods  </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fun &lt;原class&gt;.&lt;新method&gt;()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://carterchen247.medium.com/kotlin%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97-%E5%85%AD-data-class-1689b1782abb">Data Class</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">toString()</span><br><span class="line">componentN()</span><br><span class="line">copy()</span><br><span class="line">hashCode()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>高階函數</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">map()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val squares &#x3D; numbers.map &#123; it * it &#125; &#x2F;&#x2F; [1, 4, 9, 16]</span><br><span class="line"></span><br><span class="line">filter()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val evens &#x3D; numbers.filter &#123; it % 2 &#x3D;&#x3D; 0 &#125; &#x2F;&#x2F; [2, 4]</span><br><span class="line"></span><br><span class="line">reduce()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val sum &#x3D; numbers.reduce &#123; acc, n -&gt; acc + n &#125; &#x2F;&#x2F; 10</span><br><span class="line"></span><br><span class="line">fold()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val sum &#x3D; numbers.fold(0) &#123; acc, n -&gt; acc + n &#125; &#x2F;&#x2F; 10</span><br><span class="line"></span><br><span class="line">forEach()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">numbers.forEach &#123; println(it) &#125;</span><br><span class="line"></span><br><span class="line">flatMap()</span><br><span class="line">val numbers &#x3D; listOf(listOf(1, 2), listOf(3, 4))</span><br><span class="line">val flattened &#x3D; numbers.flatMap &#123; it &#125; &#x2F;&#x2F; [1, 2, 3, 4]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Coroutines<br>不同於thread 的os level, 不與其他coroutine 共享記憶體, 發生錯誤不影響其他的coroutines, 不像thread 難追蹤race conditions, deadlocks問題</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">suspend fun getUserData(userId: String): UserData &#123;</span><br><span class="line">    return withContext(Dispatchers.IO) &#123;</span><br><span class="line">        &#x2F;&#x2F; perform an expensive I&#x2F;O operation, such as network call or disk access</span><br><span class="line">        &#x2F;&#x2F; and return the result as a UserData object</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; launch a coroutine to fetch the user data</span><br><span class="line">val job &#x3D; GlobalScope.launch(Dispatchers.Main) &#123;</span><br><span class="line">    val userData &#x3D; getUserData(&quot;123&quot;)</span><br><span class="line">    &#x2F;&#x2F; update the UI with the user data</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>時程: 2023/4/21- 2023/4/28</p>
 
 <div>
@@ -390,7 +474,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E5%A4%A7%E7%B5%84%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">四大組件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Activity%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">4.</span> <span class="nav-text">Activity生命週期</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Service%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">5.</span> <span class="nav-text">Service生命週期</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Thread"><span class="nav-number">6.</span> <span class="nav-text">Thread</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Thread-Safe"><span class="nav-number">6.1.</span> <span class="nav-text">Thread Safe</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%88%E5%B1%80"><span class="nav-number">7.</span> <span class="nav-text">佈局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%83%E4%BB%B6"><span class="nav-number">8.</span> <span class="nav-text">元件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dependency-Injection"><span class="nav-number">9.</span> <span class="nav-text">Dependency Injection</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E5%A4%A7%E7%B5%84%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">四大組件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Activity%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">4.</span> <span class="nav-text">Activity生命週期</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Service%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">5.</span> <span class="nav-text">Service生命週期</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ContentProvider"><span class="nav-number">6.</span> <span class="nav-text">ContentProvider</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Thread"><span class="nav-number">7.</span> <span class="nav-text">Thread</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Thread-Safe"><span class="nav-number">7.1.</span> <span class="nav-text">Thread Safe</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AsyncTask"><span class="nav-number">8.</span> <span class="nav-text">AsyncTask</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%88%E5%B1%80"><span class="nav-number">9.</span> <span class="nav-text">佈局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%83%E4%BB%B6"><span class="nav-number">10.</span> <span class="nav-text">元件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dependency-Injection"><span class="nav-number">11.</span> <span class="nav-text">Dependency Injection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Kotlin"><span class="nav-number">12.</span> <span class="nav-text">Kotlin</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -476,12 +560,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">391k</span>
+    <span title="Symbols count total">396k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">5:56</span>
+    <span title="Reading time total">6:01</span>
 </div>
 
         
