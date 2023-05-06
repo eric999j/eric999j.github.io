@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-04-30T06:58:57.499Z</updated>
+  <updated>2023-05-06T09:38:45.697Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Interface and Abstract Class</title>
+    <link href="https://eric999j.github.io/engineer/Interface/"/>
+    <id>https://eric999j.github.io/engineer/Interface/</id>
+    <published>2023-05-06T09:00:00.000Z</published>
+    <updated>2023-05-06T09:38:45.697Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yc5s30R.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Summon Chimera。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Android Studio 小技巧</title>
@@ -41,7 +61,7 @@
     <link href="https://eric999j.github.io/engineer/thread/"/>
     <id>https://eric999j.github.io/engineer/thread/</id>
     <published>2023-04-30T06:00:00.000Z</published>
-    <updated>2023-04-30T06:58:54.132Z</updated>
+    <updated>2023-05-02T04:56:06.005Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
@@ -198,7 +218,7 @@
     <link href="https://eric999j.github.io/life/coffee/"/>
     <id>https://eric999j.github.io/life/coffee/</id>
     <published>2023-03-11T10:00:00.000Z</published>
-    <updated>2023-04-27T08:39:13.376Z</updated>
+    <updated>2023-05-02T04:53:40.474Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/jbxvzR8.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -382,26 +402,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;這本書介紹很多如何做到快速有效的學習，大家可以參考看看。  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>京都Talk</title>
-    <link href="https://eric999j.github.io/life/temple/"/>
-    <id>https://eric999j.github.io/life/temple/</id>
-    <published>2022-12-31T08:00:00.000Z</published>
-    <updated>2022-12-31T08:10:01.244Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;這本電子書介紹很多京都實用知識，想去玩的人建議買來聽。  &lt;/p&gt;</summary>
     
     
     

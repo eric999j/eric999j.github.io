@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg">
 <meta property="article:published_time" content="2023-04-30T06:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-30T06:58:54.132Z">
+<meta property="article:modified_time" content="2023-05-02T04:56:06.005Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-04-30 14:00:00 / Modified: 14:58:54" itemprop="dateCreated datePublished" datetime="2023-04-30T14:00:00+08:00">2023-04-30</time>
+              <time title="Created: 2023-04-30 14:00:00" itemprop="dateCreated datePublished" datetime="2023-04-30T14:00:00+08:00">2023-04-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-05-02 12:56:06" itemprop="dateModified" datetime="2023-05-02T12:56:06+08:00">2023-05-02</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -288,7 +294,7 @@
 <h1 id="AsyncTask"><a href="#AsyncTask" class="headerlink" title="AsyncTask"></a>AsyncTask</h1><ul>
 <li>Higher-level abstraction, internally uses a Handler and a Thread to execute the task.  </li>
 <li><code>Short-lived tasks</code>( Downloading a file…).</li>
-<li>It runs on a separate thread, automatically updates the UI thread when the task completes.</li>
+<li>It runs on a separate thread, but no needs to create a new thread, automatically updates the UI thread when the task completes.</li>
 <li>Not require much communication between different components.</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">private class DownloadTask extends AsyncTask&lt;String, Void, String&gt; &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected String doInBackground(String... urls) &#123;</span><br><span class="line">        &#x2F;&#x2F; Perform the background task, such as downloading data from a server</span><br><span class="line">        String result &#x3D; &quot;&quot;;</span><br><span class="line">        try &#123;</span><br><span class="line">            URL url &#x3D; new URL(urls[0]);</span><br><span class="line">            HttpURLConnection urlConnection &#x3D; (HttpURLConnection) url.openConnection();</span><br><span class="line">            InputStream in &#x3D; new BufferedInputStream(urlConnection.getInputStream());</span><br><span class="line">            result &#x3D; readStream(in);</span><br><span class="line">            urlConnection.disconnect();</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            Log.e(&quot;DownloadTask&quot;, e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onPostExecute(String result) &#123;</span><br><span class="line">        &#x2F;&#x2F; Update the UI with the result of the background task</span><br><span class="line">        textView.setText(result);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private String readStream(InputStream is) &#123;</span><br><span class="line">        &#x2F;&#x2F; Helper method to read an InputStream into a String</span><br><span class="line">        BufferedReader reader &#x3D; new BufferedReader(new InputStreamReader(is));</span><br><span class="line">        StringBuilder sb &#x3D; new StringBuilder();</span><br><span class="line">        String line &#x3D; null;</span><br><span class="line">        try &#123;</span><br><span class="line">            while ((line &#x3D; reader.readLine()) !&#x3D; null) &#123;</span><br><span class="line">                sb.append(line + &quot;\n&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; finally &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                is.close();</span><br><span class="line">            &#125; catch (IOException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -441,7 +447,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">282</span>
+          <span class="site-state-item-count">283</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -509,12 +515,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">403k</span>
+    <span title="Symbols count total">405k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:06</span>
+    <span title="Reading time total">6:08</span>
 </div>
 
         
