@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-11.jpeg">
 <meta property="article:published_time" content="2023-04-30T07:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-30T06:58:57.499Z">
+<meta property="article:modified_time" content="2023-05-09T09:46:15.218Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-04-30 15:00:00 / Modified: 14:58:57" itemprop="dateCreated datePublished" datetime="2023-04-30T15:00:00+08:00">2023-04-30</time>
+              <time title="Created: 2023-04-30 15:00:00" itemprop="dateCreated datePublished" datetime="2023-04-30T15:00:00+08:00">2023-04-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-05-09 17:46:15" itemprop="dateModified" datetime="2023-05-09T17:46:15+08:00">2023-05-09</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>400</span>
+              <span>606</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -252,9 +258,10 @@
 <a id="more"></a>
 
 <h1 id="快捷鍵"><a href="#快捷鍵" class="headerlink" title="快捷鍵"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/intro/keyboard-shortcuts?hl=zh-tw">快捷鍵</a></h1><p>cmd + f : 找尋<br>cmd + r : 找尋取代<br>cmd + shift + f : 全局找尋<br>cmd + shift + a：Action<br>cmd + option + l : 格式化code<br>cmd + 6 : 功能表<br>cmd + w：關閉目前tab<br>ctrl + q：在函式上使用，看函式說明<br>ctrl + p：在變數上使用，看變數說明<br>ctrl + shift + (1-9) : 建書籤<br>ctrl + （1-9）： 跳至書籤<br>ctrl + shift + （1-9）：移除書籤<br>ctrl + /  : 註解code<br>ctrl + shift + / : 註解區塊  </p>
-<h1 id="增大記憶體"><a href="#增大記憶體" class="headerlink" title="增大記憶體"></a>增大記憶體</h1><p>finder&gt; application&gt; android studio&gt; 顯示套件內容&gt; contents&gt; bin&gt; studio.vmoptions<br>-Xms2048m<br>-Xmx2048m<br>-XX:ReservedCodeCacheSize=1024m  </p>
-<h1 id="apk"><a href="#apk" class="headerlink" title="apk"></a>apk</h1><p>app&gt; outputs&gt; apk  </p>
-
+<h1 id="增大IDE記憶體"><a href="#增大IDE記憶體" class="headerlink" title="增大IDE記憶體"></a>增大IDE記憶體</h1><p>finder&gt; application&gt; android studio&gt; 顯示套件內容&gt; contents&gt; bin&gt; studio.vmoptions<br>-Xms2048m<br>-Xmx2048m<br>-XX:ReservedCodeCacheSize=1024m  </p>
+<h1 id="APK"><a href="#APK" class="headerlink" title="APK"></a>APK</h1><p>app&gt; outputs&gt; apk<br>Build → Analyze APK  </p>
+<h1 id="Memory-Leak"><a href="#Memory-Leak" class="headerlink" title="Memory Leak"></a>Memory Leak</h1><h2 id="Profiler"><a href="#Profiler" class="headerlink" title="Profiler"></a><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10301340">Profiler</a></h2><p>「View」&gt;「Tool Windows」&gt;「Profiler」  </p>
+<h2 id="LeakCanary"><a href="#LeakCanary" class="headerlink" title="LeakCanary"></a><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10303853">LeakCanary</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* build.gradle</span><br><span class="line"></span><br><span class="line">debugImplementation &#39;com.squareup.leakcanary:leakcanary-android:2.9.1&#39;</span><br><span class="line"></span><br><span class="line">and filter LeakCanary in logcat  </span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -362,7 +369,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%8D%B5"><span class="nav-number">1.</span> <span class="nav-text">快捷鍵</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A2%9E%E5%A4%A7%E8%A8%98%E6%86%B6%E9%AB%94"><span class="nav-number">2.</span> <span class="nav-text">增大記憶體</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#apk"><span class="nav-number">3.</span> <span class="nav-text">apk</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%8D%B5"><span class="nav-number">1.</span> <span class="nav-text">快捷鍵</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A2%9E%E5%A4%A7IDE%E8%A8%98%E6%86%B6%E9%AB%94"><span class="nav-number">2.</span> <span class="nav-text">增大IDE記憶體</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#APK"><span class="nav-number">3.</span> <span class="nav-text">APK</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Memory-Leak"><span class="nav-number">4.</span> <span class="nav-text">Memory Leak</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Profiler"><span class="nav-number">4.1.</span> <span class="nav-text">Profiler</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LeakCanary"><span class="nav-number">4.2.</span> <span class="nav-text">LeakCanary</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -380,7 +387,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">283</span>
+          <span class="site-state-item-count">284</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -448,12 +455,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">405k</span>
+    <span title="Symbols count total">407k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:08</span>
+    <span title="Reading time total">6:10</span>
 </div>
 
         

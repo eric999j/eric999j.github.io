@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://i.imgur.com/IGg1HK9.png">
 <meta property="og:image" content="https://developer.android.com/static/images/service_lifecycle.png">
 <meta property="article:published_time" content="2023-04-22T10:00:00.000Z">
-<meta property="article:modified_time" content="2023-04-29T16:12:53.977Z">
+<meta property="article:modified_time" content="2023-05-14T09:38:42.352Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -212,7 +212,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-04-30 00:12:53" itemprop="dateModified" datetime="2023-04-30T00:12:53+08:00">2023-04-30</time>
+                <time title="Modified: 2023-05-14 17:38:42" itemprop="dateModified" datetime="2023-05-14T17:38:42+08:00">2023-05-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -237,14 +237,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>8.1k</span>
+              <span>8.6k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>7 mins.</span>
+              <span>8 mins.</span>
             </span>
 
         </div>
@@ -273,9 +273,15 @@
 </ul>
 <h2 id="Activity生命週期"><a href="#Activity生命週期" class="headerlink" title="Activity生命週期"></a>Activity生命週期</h2><p><img src="https://developer.android.com/guide/components/images/activity_lifecycle.png"><br><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/activities/activity-lifecycle">ref</a></p>
 <p><img src="https://i.imgur.com/IGg1HK9.png"><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10253102">ref</a></p>
+<ul>
+<li>OnCreate: Cold start</li>
+<li>OnStart: Warm start</li>
+<li>OnResume: Hot start  </li>
+</ul>
 <p>UI components represent individual screens in the app and typically handle user interactions.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">onCreate()：Activity第一次被創建，初始化Activity的狀態和布局。</span><br><span class="line">onStart()：Activity被啟動時調用，執行一些初始化操作，如註冊Broadcast Receiver等。</span><br><span class="line">onResume()：Activity從背景到使用者可視時的進入點，從onPause()啟動或恢復一些耗時操作，如開啟動畫效果等。</span><br><span class="line">onPause()：Activity失去焦點時調用，通常在這個方法中暫停或停止一些耗時操作，如動畫效果等。</span><br><span class="line">onRestart()：Activity從onStop()重新啟動時調用。</span><br><span class="line">onStop()：Activity不再可見時調用，通常在這個方法中釋放一些資源，如註銷Broadcast Receiver等。</span><br><span class="line">onDestroy()：當Activity被銷毀時調用，通常在這個方法中釋放所有的資源。</span><br></pre></td></tr></table></figure>
 
+<h3 id="優化"><a href="#優化" class="headerlink" title="優化"></a>優化</h3><p><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10294703">Startup library</a>: 透過 Content provider 的機制來加速 App 的開啟速度。  </p>
 <h2 id="Service生命週期"><a href="#Service生命週期" class="headerlink" title="Service生命週期"></a>Service生命週期</h2><p><img src="https://developer.android.com/static/images/service_lifecycle.png"><br><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/services">ref</a></p>
 <p>Background components perform long-running operations.  </p>
 <p>有三種服務，兩種啟動方式    </p>
@@ -347,7 +353,31 @@
 
 <h2 id="ListView-v-s-RecyclerView"><a href="#ListView-v-s-RecyclerView" class="headerlink" title="ListView v.s. RecyclerView"></a>ListView v.s. RecyclerView</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ListView：從上到下顯示佈局。</span><br><span class="line">RecyclerView：多種不同的佈局，顯示大量的數據列表，例如聊天記錄、商品列表、新聞列表等，支持高效的數據重用，只顯示當前顯示區域內的數據，當列表滾動時，之前顯示的數據會被回收重用，減少了內存占用和重複創建視圖的消耗。</span><br></pre></td></tr></table></figure>
 
-<h1 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a>Kotlin</h1><ul>
+<h1 id="Kotlin"><a href="#Kotlin" class="headerlink" title="Kotlin"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/Sindyue/article/details/99625012">Kotlin</a></h1><h2 id="符號"><a href="#符號" class="headerlink" title="符號"></a>符號</h2><ul>
+<li>？/!!</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val myList: ArrayList&lt;String&gt;? &#x3D; null &#x2F;&#x2F; null 時印null</span><br><span class="line">Log.d(&quot;Tag&quot;, &quot;List Size: &quot;+ myList!!.size) &#x2F;&#x2F; !! 在非空時有 NullPointerException</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>?:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">val mySize&#x3D; myList?.size ?: 0 &#x2F;&#x2F; myList?.size &#x3D;&#x3D; null 時回傳0  </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>::</li>
+</ul>
+<p>把方法當參數傳遞</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://louis383.medium.com/%E5%88%9D%E6%8E%A2-kotlin-lambda-%E8%A1%A8%E9%81%94%E5%BC%8F-cfe8796c9fac">-&gt;</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var action: (A, B) -&gt; ReturnType</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>==/===</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值&#x2F;位置</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>封裝繼承比Java更簡潔，有Coroutines</li>
 <li>lateinit</li>
 </ul>
@@ -412,7 +442,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">map()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val squares &#x3D; numbers.map &#123; it * it &#125; &#x2F;&#x2F; [1, 4, 9, 16]</span><br><span class="line"></span><br><span class="line">filter()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val evens &#x3D; numbers.filter &#123; it % 2 &#x3D;&#x3D; 0 &#125; &#x2F;&#x2F; [2, 4]</span><br><span class="line"></span><br><span class="line">reduce()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val sum &#x3D; numbers.reduce &#123; acc, n -&gt; acc + n &#125; &#x2F;&#x2F; 10</span><br><span class="line"></span><br><span class="line">fold()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">val sum &#x3D; numbers.fold(0) &#123; acc, n -&gt; acc + n &#125; &#x2F;&#x2F; 10</span><br><span class="line"></span><br><span class="line">forEach()</span><br><span class="line">val numbers &#x3D; listOf(1, 2, 3, 4)</span><br><span class="line">numbers.forEach &#123; println(it) &#125;</span><br><span class="line"></span><br><span class="line">flatMap()</span><br><span class="line">val numbers &#x3D; listOf(listOf(1, 2), listOf(3, 4))</span><br><span class="line">val flattened &#x3D; numbers.flatMap &#123; it &#125; &#x2F;&#x2F; [1, 2, 3, 4]</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>Coroutines<br>不同於thread 的os level, 不與其他coroutine 共享記憶體, 發生錯誤不影響其他的coroutines, 更好追蹤race conditions, deadlocks問題</li>
+<li>Coroutines<br>不同於thread 的os level, 不與其他coroutine 共享記憶體, 發生錯誤不影響其他的coroutines, 更好追蹤race conditions, deadlocks問題, 比AsyncTask更有效處理非同步。  </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">suspend fun getUserData(userId: String): UserData &#123;</span><br><span class="line">    return withContext(Dispatchers.IO) &#123;</span><br><span class="line">        &#x2F;&#x2F; perform an expensive I&#x2F;O operation, such as network call or disk access</span><br><span class="line">        &#x2F;&#x2F; and return the result as a UserData object</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; launch a coroutine to fetch the user data</span><br><span class="line">val job &#x3D; GlobalScope.launch(Dispatchers.Main) &#123;</span><br><span class="line">    val userData &#x3D; getUserData(&quot;123&quot;)</span><br><span class="line">    &#x2F;&#x2F; update the UI with the user data</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -525,7 +555,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Compoments"><span class="nav-number">3.</span> <span class="nav-text">Compoments</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Activity%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">3.1.</span> <span class="nav-text">Activity生命週期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Service%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">3.2.</span> <span class="nav-text">Service生命週期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BroadcastReceiver"><span class="nav-number">3.3.</span> <span class="nav-text">BroadcastReceiver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ContentProvider"><span class="nav-number">3.4.</span> <span class="nav-text">ContentProvider</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Android-Inter-Process-Communication-IPC"><span class="nav-number">4.</span> <span class="nav-text">Android Inter-Process Communication (IPC)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A9%9F%E6%99%BA%E5%95%8F%E7%AD%94"><span class="nav-number">5.</span> <span class="nav-text">機智問答</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Finally-Final-and-Finalize"><span class="nav-number">5.1.</span> <span class="nav-text">Finally, Final and Finalize</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Synchronized-and-Unsynchronized"><span class="nav-number">5.2.</span> <span class="nav-text">Synchronized and Unsynchronized</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">5.3.</span> <span class="nav-text">References</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JNI-Java-Native-Interface"><span class="nav-number">5.4.</span> <span class="nav-text">JNI(Java Native Interface)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Layouts"><span class="nav-number">5.5.</span> <span class="nav-text">Layouts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ListView-v-s-RecyclerView"><span class="nav-number">5.6.</span> <span class="nav-text">ListView v.s. RecyclerView</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Kotlin"><span class="nav-number">6.</span> <span class="nav-text">Kotlin</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Compoments"><span class="nav-number">3.</span> <span class="nav-text">Compoments</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Activity%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">3.1.</span> <span class="nav-text">Activity生命週期</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%84%AA%E5%8C%96"><span class="nav-number">3.1.1.</span> <span class="nav-text">優化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Service%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F"><span class="nav-number">3.2.</span> <span class="nav-text">Service生命週期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BroadcastReceiver"><span class="nav-number">3.3.</span> <span class="nav-text">BroadcastReceiver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ContentProvider"><span class="nav-number">3.4.</span> <span class="nav-text">ContentProvider</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Android-Inter-Process-Communication-IPC"><span class="nav-number">4.</span> <span class="nav-text">Android Inter-Process Communication (IPC)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A9%9F%E6%99%BA%E5%95%8F%E7%AD%94"><span class="nav-number">5.</span> <span class="nav-text">機智問答</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Finally-Final-and-Finalize"><span class="nav-number">5.1.</span> <span class="nav-text">Finally, Final and Finalize</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Synchronized-and-Unsynchronized"><span class="nav-number">5.2.</span> <span class="nav-text">Synchronized and Unsynchronized</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">5.3.</span> <span class="nav-text">References</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JNI-Java-Native-Interface"><span class="nav-number">5.4.</span> <span class="nav-text">JNI(Java Native Interface)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Layouts"><span class="nav-number">5.5.</span> <span class="nav-text">Layouts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ListView-v-s-RecyclerView"><span class="nav-number">5.6.</span> <span class="nav-text">ListView v.s. RecyclerView</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Kotlin"><span class="nav-number">6.</span> <span class="nav-text">Kotlin</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%A6%E8%99%9F"><span class="nav-number">6.1.</span> <span class="nav-text">符號</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -543,7 +573,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">283</span>
+          <span class="site-state-item-count">284</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -611,12 +641,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">405k</span>
+    <span title="Symbols count total">407k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:08</span>
+    <span title="Reading time total">6:10</span>
 </div>
 
         

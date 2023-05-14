@@ -28,8 +28,9 @@
 <meta property="og:description" content="執行緒，和執行緒以外的。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg">
+<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:924/format:webp/1*YP90U2imn7lo2FSTA6OaQg.png">
 <meta property="article:published_time" content="2023-04-30T06:00:00.000Z">
-<meta property="article:modified_time" content="2023-05-02T04:56:06.005Z">
+<meta property="article:modified_time" content="2023-05-12T03:35:43.661Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-05-02 12:56:06" itemprop="dateModified" datetime="2023-05-02T12:56:06+08:00">2023-05-02</time>
+                <time title="Modified: 2023-05-12 11:35:43" itemprop="dateModified" datetime="2023-05-12T11:35:43+08:00">2023-05-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +235,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3.5k</span>
+              <span>4.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>3 mins.</span>
+              <span>4 mins.</span>
             </span>
 
         </div>
@@ -257,6 +258,11 @@
 <p>執行緒，和執行緒以外的。</p>
 <a id="more"></a>
 
+<h1 id="Background-Tasks"><a href="#Background-Tasks" class="headerlink" title="Background Tasks"></a>Background Tasks</h1><p><img src="https://miro.medium.com/v2/resize:fit:924/format:webp/1*YP90U2imn7lo2FSTA6OaQg.png"></p>
+<p><a target="_blank" rel="noopener" href="https://developer.android.com/guide/background">ref</a></p>
+<ul>
+<li>Execute immediately: Background thread</li>
+</ul>
 <p>If we didn’t use thread, run a long-running task on UI thread, it will cause ANR(Application Not Responding) for 5 seconds, UI thread should focus on UI, we can update the UI in the UI thread using a Handler or AsyncTask.</p>
 <h1 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h1><ul>
 <li>Lowest level of the three. </li>
@@ -321,6 +327,22 @@
 </li>
 </ul>
 <h1 id="Deadlock"><a href="#Deadlock" class="headerlink" title="Deadlock"></a>Deadlock</h1><p>Two thread waiting for eachother, causing the program to hang or crash.</p>
+<h1 id="ANR-Application-Not-Responding"><a href="#ANR-Application-Not-Responding" class="headerlink" title="ANR(Application Not Responding)"></a>ANR(Application Not Responding)</h1><p>App on UI thread does not respond for more than 5 seconds.  </p>
+<ol>
+<li>If there is a time-consuming operation, use asynctask instead.  </li>
+<li>Check for deadlock or infinite loop, use Memory Profiler or LeakCanary to monitor memory leaks.  </li>
+</ol>
+<ul>
+<li>User interact: less than 0.2s  </li>
+<li>Start App: less than 0.5s  </li>
+</ul>
+<h1 id="OOM（Out-of-Memory）"><a href="#OOM（Out-of-Memory）" class="headerlink" title="OOM（Out of Memory）"></a><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10300708">OOM（Out of Memory）</a></h1><p>There is not enough memory for the program to run.  </p>
+<ol>
+<li>Use Memory Profiler or LeakCanary to monitor memory leaks.  </li>
+<li>Reduce memory consumption and use lightweight data structures. For example, use SparseArray instead of HashMap, use ArrayList instead of LinkedList, etc.</li>
+<li>Compress large images</li>
+<li>Algorithm optimization (binary search replaces linear search).  </li>
+</ol>
 
 <div>
     <hr>
@@ -429,7 +451,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Thread"><span class="nav-number">1.</span> <span class="nav-text">Thread</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Handler"><span class="nav-number">2.</span> <span class="nav-text">Handler</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AsyncTask"><span class="nav-number">3.</span> <span class="nav-text">AsyncTask</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Task"><span class="nav-number">4.</span> <span class="nav-text">Task</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sleep-and-Wait"><span class="nav-number">5.</span> <span class="nav-text">Sleep and Wait</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Deadlock"><span class="nav-number">6.</span> <span class="nav-text">Deadlock</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Background-Tasks"><span class="nav-number">1.</span> <span class="nav-text">Background Tasks</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Thread"><span class="nav-number">2.</span> <span class="nav-text">Thread</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Handler"><span class="nav-number">3.</span> <span class="nav-text">Handler</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AsyncTask"><span class="nav-number">4.</span> <span class="nav-text">AsyncTask</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Task"><span class="nav-number">5.</span> <span class="nav-text">Task</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sleep-and-Wait"><span class="nav-number">6.</span> <span class="nav-text">Sleep and Wait</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Deadlock"><span class="nav-number">7.</span> <span class="nav-text">Deadlock</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ANR-Application-Not-Responding"><span class="nav-number">8.</span> <span class="nav-text">ANR(Application Not Responding)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OOM%EF%BC%88Out-of-Memory%EF%BC%89"><span class="nav-number">9.</span> <span class="nav-text">OOM（Out of Memory）</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -447,7 +469,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">283</span>
+          <span class="site-state-item-count">284</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -515,12 +537,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">405k</span>
+    <span title="Symbols count total">407k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:08</span>
+    <span title="Reading time total">6:10</span>
 </div>
 
         
