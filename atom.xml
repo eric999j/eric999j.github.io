@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-05-14T09:10:38.497Z</updated>
+  <updated>2023-05-20T05:36:52.252Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OWASP</title>
+    <link href="https://eric999j.github.io/manager/OWASP/"/>
+    <id>https://eric999j.github.io/manager/OWASP/</id>
+    <published>2023-05-20T06:00:00.000Z</published>
+    <updated>2023-05-20T05:36:52.252Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Open Web Application Security Project top 10.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>Herb Cookies</title>
@@ -257,7 +277,7 @@
     <link href="https://eric999j.github.io/engineer/h2/"/>
     <id>https://eric999j.github.io/engineer/h2/</id>
     <published>2023-03-05T07:30:00.000Z</published>
-    <updated>2023-03-18T11:16:21.455Z</updated>
+    <updated>2023-05-20T05:09:46.494Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg&quot;&gt;&lt;/p&gt;
@@ -356,7 +376,7 @@
     <link href="https://eric999j.github.io/engineer/spring/"/>
     <id>https://eric999j.github.io/engineer/spring/</id>
     <published>2023-02-04T11:30:00.000Z</published>
-    <updated>2023-04-22T08:10:27.929Z</updated>
+    <updated>2023-05-15T12:16:46.422Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
@@ -388,26 +408,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>圖像分類</title>
-    <link href="https://eric999j.github.io/engineer/classification/"/>
-    <id>https://eric999j.github.io/engineer/classification/</id>
-    <published>2023-01-14T11:30:00.000Z</published>
-    <updated>2023-02-04T09:38:22.002Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-01.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2種貓熊分別訓練，那這是個監督式學習分類問題的範例。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
