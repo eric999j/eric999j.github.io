@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-05-27T09:50:28.686Z</updated>
+  <updated>2023-06-03T12:24:19.106Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>你不是不會做事，是不會說話</title>
+    <link href="https://eric999j.github.io/manager/talk/"/>
+    <id>https://eric999j.github.io/manager/talk/</id>
+    <published>2023-06-03T10:00:00.000Z</published>
+    <updated>2023-06-03T12:24:19.106Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;先說重點，定期回饋。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>改造焦慮大腦</title>
@@ -388,26 +408,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring and Hibernate</title>
-    <link href="https://eric999j.github.io/engineer/spring/"/>
-    <id>https://eric999j.github.io/engineer/spring/</id>
-    <published>2023-02-04T11:30:00.000Z</published>
-    <updated>2023-05-15T12:16:46.422Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;主流Java框架Spring。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
