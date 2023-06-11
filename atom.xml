@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-06-03T12:24:19.106Z</updated>
+  <updated>2023-06-11T07:47:05.903Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dae Jang Geum</title>
+    <link href="https://eric999j.github.io/manager/perseverance/"/>
+    <id>https://eric999j.github.io/manager/perseverance/</id>
+    <published>2023-06-11T08:00:00.000Z</published>
+    <updated>2023-06-11T07:47:05.903Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;Perseverance and Positive Thinking.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>你不是不會做事，是不會說話</title>
@@ -388,26 +408,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Rum</title>
-    <link href="https://eric999j.github.io/life/rum/"/>
-    <id>https://eric999j.github.io/life/rum/</id>
-    <published>2023-02-11T11:00:00.000Z</published>
-    <updated>2023-02-15T11:01:26.161Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(1).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Just like a story, rum makes people feel simple and warm。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
