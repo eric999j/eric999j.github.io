@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-06-11T07:47:05.903Z</updated>
+  <updated>2023-06-18T13:57:32.178Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OSI model</title>
+    <link href="https://eric999j.github.io/engineer/osi/"/>
+    <id>https://eric999j.github.io/engineer/osi/</id>
+    <published>2023-06-18T13:30:00.000Z</published>
+    <updated>2023-06-18T13:57:32.178Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;網路通訊協議，實體的資料在網路上傳輸，讓會議表現更好應用了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Dae Jang Geum</title>
@@ -388,26 +408,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SOLID</title>
-    <link href="https://eric999j.github.io/manager/solid/"/>
-    <id>https://eric999j.github.io/manager/solid/</id>
-    <published>2023-02-19T06:00:00.000Z</published>
-    <updated>2023-02-20T03:47:16.862Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Useful design principles, aim for high cohesion and loose coupling.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
