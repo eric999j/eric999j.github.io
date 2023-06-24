@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-06-18T13:57:32.178Z</updated>
+  <updated>2023-06-23T09:47:43.258Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>夜舞者 - 今瀨</title>
+    <link href="https://eric999j.github.io/life/nightDancer/"/>
+    <id>https://eric999j.github.io/life/nightDancer/</id>
+    <published>2023-06-24T10:00:00.000Z</published>
+    <updated>2023-06-23T09:47:43.258Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;跟喜歡的人相處，平凡時刻也會變得特別。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
     <title>OSI model</title>
     <link href="https://eric999j.github.io/engineer/osi/"/>
     <id>https://eric999j.github.io/engineer/osi/</id>
     <published>2023-06-18T13:30:00.000Z</published>
-    <updated>2023-06-18T13:57:32.178Z</updated>
+    <updated>2023-06-19T06:50:51.381Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg&quot;&gt;&lt;/p&gt;
@@ -317,7 +337,7 @@
     <link href="https://eric999j.github.io/engineer/sql/"/>
     <id>https://eric999j.github.io/engineer/sql/</id>
     <published>2023-03-18T07:30:00.000Z</published>
-    <updated>2023-04-15T09:10:52.030Z</updated>
+    <updated>2023-06-19T06:42:08.727Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
@@ -357,7 +377,7 @@
     <link href="https://eric999j.github.io/engineer/h2/"/>
     <id>https://eric999j.github.io/engineer/h2/</id>
     <published>2023-03-05T07:30:00.000Z</published>
-    <updated>2023-05-20T05:09:46.494Z</updated>
+    <updated>2023-06-19T06:42:14.003Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg&quot;&gt;&lt;/p&gt;
@@ -388,26 +408,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Boot on Kubernetes</title>
-    <link href="https://eric999j.github.io/engineer/kubernetes/"/>
-    <id>https://eric999j.github.io/engineer/kubernetes/</id>
-    <published>2023-02-19T07:30:00.000Z</published>
-    <updated>2023-04-08T07:13:07.097Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Hi Spring Boot。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
