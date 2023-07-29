@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-07-23T11:01:17.030Z</updated>
+  <updated>2023-07-29T10:39:34.558Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Cold Tapioca Pearl</title>
+    <link href="https://eric999j.github.io/life/tapiocaPearl/"/>
+    <id>https://eric999j.github.io/life/tapiocaPearl/</id>
+    <published>2023-07-29T11:00:00.000Z</published>
+    <updated>2023-07-29T10:39:34.558Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/NyGpMq8.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Hi Japan &amp;amp;&amp;amp; Taiwan!  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
     <title>點字</title>
     <link href="https://eric999j.github.io/life/braille/"/>
     <id>https://eric999j.github.io/life/braille/</id>
     <published>2023-07-23T11:30:00.000Z</published>
-    <updated>2023-07-23T11:01:17.030Z</updated>
+    <updated>2023-07-29T10:02:25.415Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/GO95sU9.jpg&quot;&gt;&lt;/p&gt;
@@ -389,26 +408,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL</title>
-    <link href="https://eric999j.github.io/engineer/sql/"/>
-    <id>https://eric999j.github.io/engineer/sql/</id>
-    <published>2023-03-18T07:30:00.000Z</published>
-    <updated>2023-06-19T06:42:08.727Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Hi SQL。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
