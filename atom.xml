@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-08-20T11:20:17.147Z</updated>
+  <updated>2023-09-02T13:08:35.802Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Jenkins</title>
+    <link href="https://eric999j.github.io/engineer/jenkins/"/>
+    <id>https://eric999j.github.io/engineer/jenkins/</id>
+    <published>2023-09-02T13:30:00.000Z</published>
+    <updated>2023-09-02T13:08:35.802Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-11.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;好的管家帶你上天堂。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C3P0</title>
     <link href="https://eric999j.github.io/engineer/c3p0/"/>
     <id>https://eric999j.github.io/engineer/c3p0/</id>
     <published>2023-08-20T11:30:00.000Z</published>
-    <updated>2023-08-20T11:20:17.147Z</updated>
+    <updated>2023-08-28T06:41:40.047Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
@@ -379,7 +399,7 @@
     <link href="https://eric999j.github.io/engineer/idea/"/>
     <id>https://eric999j.github.io/engineer/idea/</id>
     <published>2023-04-15T10:00:00.000Z</published>
-    <updated>2023-04-27T16:12:30.560Z</updated>
+    <updated>2023-08-20T17:03:38.054Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -391,25 +411,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mayonnaise</title>
-    <link href="https://eric999j.github.io/life/mayonnaise/"/>
-    <id>https://eric999j.github.io/life/mayonnaise/</id>
-    <published>2023-04-08T08:00:00.000Z</published>
-    <updated>2023-04-08T07:16:15.043Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/p4pCdNt.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Hi Japan!  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
     
   </entry>
   
