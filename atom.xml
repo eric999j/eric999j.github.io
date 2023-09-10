@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-09-02T13:08:35.802Z</updated>
+  <updated>2023-09-10T12:50:36.376Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bootstrap</title>
+    <link href="https://eric999j.github.io/engineer/bootstrap/"/>
+    <id>https://eric999j.github.io/engineer/bootstrap/</id>
+    <published>2023-09-10T13:21:21.000Z</published>
+    <updated>2023-09-10T12:50:36.376Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;符合RWD的前端開發框架，有很多內建元件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Jenkins</title>
@@ -384,26 +404,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;不知道一週能完成多少呢。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IntelliJ IDEA 小技巧</title>
-    <link href="https://eric999j.github.io/engineer/idea/"/>
-    <id>https://eric999j.github.io/engineer/idea/</id>
-    <published>2023-04-15T10:00:00.000Z</published>
-    <updated>2023-08-20T17:03:38.054Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;IntelliJ IDEA是款優秀的IDE，大大提升開發效率。&lt;/p&gt;</summary>
     
     
     
