@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://i.imgur.com/FuhBA2t.png">
 <meta property="og:image" content="https://i.imgur.com/59d2jdu.png">
 <meta property="article:published_time" content="2023-07-02T07:30:00.000Z">
-<meta property="article:modified_time" content="2023-07-02T08:17:37.342Z">
+<meta property="article:modified_time" content="2023-09-12T08:43:36.851Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -203,10 +203,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-07-02 15:30:00 / Modified: 16:17:37" itemprop="dateCreated datePublished" datetime="2023-07-02T15:30:00+08:00">2023-07-02</time>
+              <time title="Created: 2023-07-02 15:30:00" itemprop="dateCreated datePublished" datetime="2023-07-02T15:30:00+08:00">2023-07-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-09-12 16:43:36" itemprop="dateModified" datetime="2023-09-12T16:43:36+08:00">2023-09-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -230,7 +236,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>278</span>
+              <span>714</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -253,8 +259,24 @@
 <p>Hi ELK。</p>
 <a id="more"></a>
 
+<h1 id="ETL（Extract-Transform-Load）"><a href="#ETL（Extract-Transform-Load）" class="headerlink" title="ETL（Extract, Transform, Load）"></a>ETL（Extract, Transform, Load）</h1><p>從多種資料源提取資料，對其進行轉換，以適應資料倉儲或其他系統的需求，然後將其加載到目標數據庫或數據倉儲中。</p>
+<ul>
+<li>提取 (Extract)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM orders WHERE order_date BETWEEN &#39;2022-01-01&#39; AND &#39;2022-12-31&#39;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>轉換 (Transform)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE orders </span><br><span class="line">SET order_amount_twd &#x3D; order_amount_usd * 28 </span><br><span class="line">WHERE order_date BETWEEN &#39;2022-01-01&#39; AND &#39;2022-12-31&#39;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>加載 (Load)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO orders_2022 </span><br><span class="line">SELECT * FROM orders </span><br><span class="line">WHERE order_date BETWEEN &#39;2022-01-01&#39; AND &#39;2022-12-31&#39;;</span><br></pre></td></tr></table></figure>
+
 <h1 id="ELK"><a href="#ELK" class="headerlink" title="ELK"></a><a target="_blank" rel="noopener" href="http://www.omniwaresoft.com.tw/product-news/elastic-news/elk-what-is-elk-stack/">ELK</a></h1><p><img src="https://i.imgur.com/FuhBA2t.png" alt="img"></p>
-<p>讓用戶能在一個平台上搜尋，搜尋與監控所有日誌。  </p>
+<p>一個ETL應用，讓用戶能在一個平台上搜尋，搜尋與監控所有日誌。  </p>
 <ol>
 <li>Elasticsearch: 集中儲存資料以便於做快速搜尋，輕易擴展分析。  <code>搜尋log</code></li>
 <li>Logstash: 能夠從多個資料源擷取、轉換、再將其傳送至您的「存放區」。 <code>處理log</code></li>
@@ -383,7 +405,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ELK"><span class="nav-number">1.</span> <span class="nav-text">ELK</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%A6%E6%99%82%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%92%8C%E5%88%86%E6%9E%90%E9%A0%98%E5%9F%9F"><span class="nav-number">2.</span> <span class="nav-text">實時數據處理和分析領域</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ETL%EF%BC%88Extract-Transform-Load%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">ETL（Extract, Transform, Load）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ELK"><span class="nav-number">2.</span> <span class="nav-text">ELK</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%A6%E6%99%82%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%92%8C%E5%88%86%E6%9E%90%E9%A0%98%E5%9F%9F"><span class="nav-number">3.</span> <span class="nav-text">實時數據處理和分析領域</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -401,7 +423,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">299</span>
+          <span class="site-state-item-count">300</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -469,12 +491,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">421k</span>
+    <span title="Symbols count total">423k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:23</span>
+    <span title="Reading time total">6:24</span>
 </div>
 
         

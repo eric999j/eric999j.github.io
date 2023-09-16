@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-09-10T12:50:36.376Z</updated>
+  <updated>2023-09-16T09:26:17.635Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django</title>
+    <link href="https://eric999j.github.io/engineer/django/"/>
+    <id>https://eric999j.github.io/engineer/django/</id>
+    <published>2023-09-16T10:00:00.000Z</published>
+    <updated>2023-09-16T09:26:17.635Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-13.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Python的前端開發框架。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Bootstrap</title>
@@ -61,7 +81,7 @@
     <link href="https://eric999j.github.io/engineer/c3p0/"/>
     <id>https://eric999j.github.io/engineer/c3p0/</id>
     <published>2023-08-20T11:30:00.000Z</published>
-    <updated>2023-08-28T06:41:40.047Z</updated>
+    <updated>2023-09-14T09:36:23.777Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
@@ -180,7 +200,7 @@
     <link href="https://eric999j.github.io/engineer/ELK/"/>
     <id>https://eric999j.github.io/engineer/ELK/</id>
     <published>2023-07-02T07:30:00.000Z</published>
-    <updated>2023-07-02T08:17:37.342Z</updated>
+    <updated>2023-09-12T08:43:36.851Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -384,26 +404,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;執行緒，和執行緒以外的。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android and Kotlin</title>
-    <link href="https://eric999j.github.io/engineer/kotlin/"/>
-    <id>https://eric999j.github.io/engineer/kotlin/</id>
-    <published>2023-04-22T10:00:00.000Z</published>
-    <updated>2023-05-14T09:38:42.352Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;不知道一週能完成多少呢。&lt;/p&gt;</summary>
     
     
     
