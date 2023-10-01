@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-09-17T14:11:40.955Z</updated>
+  <updated>2023-10-01T09:49:06.723Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Annotation</title>
+    <link href="https://eric999j.github.io/engineer/annotation/"/>
+    <id>https://eric999j.github.io/engineer/annotation/</id>
+    <published>2023-10-01T10:00:00.000Z</published>
+    <updated>2023-10-01T09:49:06.723Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-14.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;貼標籤。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Django</title>
@@ -384,26 +404,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-11.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Android 開發必備神器。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Thread</title>
-    <link href="https://eric999j.github.io/engineer/thread/"/>
-    <id>https://eric999j.github.io/engineer/thread/</id>
-    <published>2023-04-30T06:00:00.000Z</published>
-    <updated>2023-05-12T03:35:43.661Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;執行緒，和執行緒以外的。&lt;/p&gt;</summary>
     
     
     

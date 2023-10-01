@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg">
 <meta property="article:published_time" content="2022-11-05T06:00:00.000Z">
-<meta property="article:modified_time" content="2023-09-23T08:08:08.119Z">
+<meta property="article:modified_time" content="2023-10-01T09:24:38.339Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-09-23 16:08:08" itemprop="dateModified" datetime="2023-09-23T16:08:08+08:00">2023-09-23</time>
+                <time title="Modified: 2023-10-01 17:24:38" itemprop="dateModified" datetime="2023-10-01T17:24:38+08:00">2023-10-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.4k</span>
+              <span>4.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>5 mins.</span>
+              <span>4 mins.</span>
             </span>
 
         </div>
@@ -266,6 +266,9 @@
 <h1 id="Inheritance"><a href="#Inheritance" class="headerlink" title="Inheritance"></a><a target="_blank" rel="noopener" href="https://www.w3schools.com/java/java_inheritance.asp">Inheritance</a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Vehicle &#123;</span><br><span class="line">  protected String brand &#x3D; &quot;Ford&quot;;</span><br><span class="line">  public void honk() &#123;</span><br><span class="line">    System.out.println(&quot;Tuut, tuut!&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Car extends Vehicle &#123;</span><br><span class="line">  private String modelName &#x3D; &quot;Mustang&quot;;    &#x2F;&#x2F; Car attribute</span><br><span class="line">  public static void main(String[] args) &#123;</span><br><span class="line">  </span><br><span class="line">    Car myCar &#x3D; new Car();</span><br><span class="line"></span><br><span class="line">    myCar.honk();</span><br><span class="line">    </span><br><span class="line">    System.out.println(myCar.brand + &quot; &quot; + myCar.modelName);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&gt; Tuut, tuut!</span><br><span class="line">Ford Mustang</span><br></pre></td></tr></table></figure>
 
 <h1 id="8-Primitive-Data-Types"><a href="#8-Primitive-Data-Types" class="headerlink" title="8 Primitive Data Types"></a>8 Primitive Data Types</h1><p>byte, short, int, long, float, double, boolean, char  </p>
+<h1 id="and-equals"><a href="#and-equals" class="headerlink" title="== and .equals()"></a>== and .equals()</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class HelloWorld &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String A&#x3D;&quot;A&quot;;</span><br><span class="line">        String B&#x3D;&quot;B&quot;;</span><br><span class="line">        String C&#x3D;&quot;C&quot;;</span><br><span class="line">        String D&#x3D; A+B+C;</span><br><span class="line">        String E&#x3D;&quot;ABC&quot;;</span><br><span class="line">        System.out.println(D &#x3D;&#x3D; E); &#x2F;&#x2F; false</span><br><span class="line">        System.out.println(D.equals(E)); &#x2F;&#x2F; true</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>== : Memory equal<br>.equals(): Value equal</p>
 <h1 id="Boolean條件-成立：不成立"><a href="#Boolean條件-成立：不成立" class="headerlink" title="Boolean條件?成立：不成立"></a>Boolean條件?成立：不成立</h1><p>(int)reverse==reverse?(int)reverse:0  </p>
 <h1 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h1><p>int 是基本數據類型，int 變量存儲的是數值。<br>Integer 是引用類型，實際是一個對象，Integer 存儲的是引用對象的地址。  </p>
 <h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; String to array</span><br><span class="line">char[] strArray &#x3D; inputString.toCharArray();</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; init</span><br><span class="line">int[] array &#x3D;new int [2];</span><br><span class="line">int[] array &#x3D;new int [] &#123;0,0&#125;;</span><br><span class="line">        </span><br><span class="line">&#x2F;&#x2F; 實例 int [] array 與 new int [] &#123;&#125;給初始值</span><br><span class="line">int [] array &#x3D; new int [] &#123;1, 3, 8, 9, 4, 7, 6&#125;;</span><br><span class="line">System.out.println(Arrays.toString(array));</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 也可寫成</span><br><span class="line">int [] array &#x3D; &#123;1, 3, 8, 9, 4, 7, 6&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 分割</span><br><span class="line">int [] arr &#x3D; Arrays.copyOfRange(array, 0, 3);</span><br><span class="line">System.out.println(Arrays.toString(arr));</span><br><span class="line">&gt;</span><br><span class="line">java -cp &#x2F;tmp&#x2F;3QZLh3auEl Main</span><br><span class="line">[1, 3, 8]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 複製</span><br><span class="line">nt [] arr2 &#x3D; Arrays.addAll(arr);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 改成list</span><br><span class="line">List&lt;Integer&gt; list &#x3D; Arrays.asList(1, 10, 2, 9, 3, 7, 4, 6, 5, 7, 7, 7);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 印出</span><br><span class="line">import java.util.*;</span><br><span class="line">System.out.println(Arrays.toString(array));</span><br><span class="line"></span><br><span class="line">int[] ints &#x3D; new int[10]; &#x2F;&#x2F; 陣列Array ints[0]&#x3D;0;</span><br><span class="line">ArrayList intList &#x3D; new ArrayList(10); &#x2F;&#x2F; ArrayList intList.add(0);</span><br><span class="line"></span><br><span class="line">1.Array的大小是固定的；ArrayList的大小是可變的。</span><br><span class="line">2.Array中的元素可以是原始型別(primitive)或物件(object)；3.ArrayList的元素只能是物件。</span><br><span class="line">4.Array不能使用泛型(generic)，ArrayList可以使用泛型。</span><br><span class="line">5.Array用length屬性取得內容長度；ArrayList用size()方法取得內容長度。</span><br><span class="line">6.Array用賦值符(&#x3D;)儲存元素值；ArrayList用add()方法儲存元素值。</span><br></pre></td></tr></table></figure>
@@ -292,38 +295,7 @@
 
 <h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><a target="_blank" rel="noopener" href="https://www.ewdna.com/2009/06/stringbuilderstringbuffer.html?m=1">StringBuilder</a></h1><p>不需考量多執行緒同步的時候我們使用StringBuilder來獲得最佳的效率。  </p>
 <h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><p>要考慮多執行緒的情況下使用StringBuffer來讓類別自動處理同步的問題。</p>
-<h1 id="Annotation"><a href="#Annotation" class="headerlink" title="Annotation"></a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/27643133?utm_id=0">Annotation</a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">類似介面的宣告方式</span><br><span class="line">public @interface TestAnnotation &#123;</span><br><span class="line">    int id();</span><br><span class="line">    String msg();</span><br><span class="line">    </span><br><span class="line">    &#x2F;*</span><br><span class="line">    或先宣告</span><br><span class="line">    public int id() default -1;</span><br><span class="line">    public String msg() default &quot;Hi&quot;;</span><br><span class="line">    *&#x2F;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">使用</span><br><span class="line">@TestAnnotation(id&#x3D;3,msg&#x3D;&quot;hello annotation&quot;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; @TestAnnotation()</span><br><span class="line">public class Test &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="5個元注解"><a href="#5個元注解" class="headerlink" title="5個元注解"></a>5個元注解</h2><p>@Retention、@Documented、@Target、@Inherited、@Repeatable</p>
-<ul>
-<li>@Retention - 註解保留時間 <ul>
-<li>@Retention(RetentionPolicy.RUNTIME)  - 會加載到JVM，運行時可用</li>
-<li>RetentionPolicy.CLASS - 不加載JVM，編譯時可用</li>
-<li>RetentionPolicy.SOURC - 不編譯，只存在程式碼</li>
-</ul>
-</li>
-<li>@Documented - 在Javadoc會出現</li>
-<li>@Target - 指名註解地方<ul>
-<li>ElementType.ANNOTATION_TYPE 給注解進行注解</li>
-<li>ElementType.CONSTRUCTOR </li>
-<li>ElementType.FIELD 屬性</li>
-<li>ElementType.LOCAL_VARIABLE 局部變數</li>
-<li>ElementType.METHOD </li>
-<li>ElementType.PACKAGE </li>
-<li>ElementType.PARAMETER 方法內參數</li>
-<li>ElementType.TYPE 類、接口、枚舉 </li>
-</ul>
-</li>
-<li>@Inherited - 子類繼承父類標籤</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Inherited</span><br><span class="line">@Retention(RetentionPolicy.RUNTIME)</span><br><span class="line">@interface Test &#123;&#125;</span><br><span class="line"></span><br><span class="line">@Test</span><br><span class="line">public class A &#123;&#125;</span><br><span class="line"></span><br><span class="line">public class B extends A &#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>@Repeatable - 多個標籤</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@interface Persons &#123;</span><br><span class="line">    Person[]  value();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Repeatable(Persons.class)</span><br><span class="line">@interface Person&#123;</span><br><span class="line">    String role default &quot;&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Person(role&#x3D;&quot;artist&quot;)</span><br><span class="line">@Person(role&#x3D;&quot;coder&quot;)</span><br><span class="line">@Person(role&#x3D;&quot;PM&quot;)</span><br><span class="line">public class SuperMan&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Java-預設註解"><a href="#Java-預設註解" class="headerlink" title="Java 預設註解"></a>Java 預設註解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@Deprecated</span><br><span class="line">@Override</span><br><span class="line">@SuppressWarnings</span><br></pre></td></tr></table></figure>
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -431,7 +403,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Interface"><span class="nav-number">1.</span> <span class="nav-text">Interface</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Use-interface-to-connect-two-layers"><span class="nav-number">1.1.</span> <span class="nav-text">Use interface to connect two layers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Inheritance"><span class="nav-number">2.</span> <span class="nav-text">Inheritance</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-Primitive-Data-Types"><span class="nav-number">3.</span> <span class="nav-text">8 Primitive Data Types</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean%E6%A2%9D%E4%BB%B6-%E6%88%90%E7%AB%8B%EF%BC%9A%E4%B8%8D%E6%88%90%E7%AB%8B"><span class="nav-number">4.</span> <span class="nav-text">Boolean條件?成立：不成立</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Integer"><span class="nav-number">5.</span> <span class="nav-text">Integer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">6.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Loop"><span class="nav-number">7.</span> <span class="nav-text">Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">8.</span> <span class="nav-text">Static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Final"><span class="nav-number">9.</span> <span class="nav-text">Final</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Finally"><span class="nav-number">9.1.</span> <span class="nav-text">Finally</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finalize"><span class="nav-number">9.2.</span> <span class="nav-text">Finalize</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StringBuilder"><span class="nav-number">10.</span> <span class="nav-text">StringBuilder</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StringBuffer"><span class="nav-number">10.1.</span> <span class="nav-text">StringBuffer</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Annotation"><span class="nav-number">11.</span> <span class="nav-text">Annotation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E5%80%8B%E5%85%83%E6%B3%A8%E8%A7%A3"><span class="nav-number">11.1.</span> <span class="nav-text">5個元注解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E9%A0%90%E8%A8%AD%E8%A8%BB%E8%A7%A3"><span class="nav-number">11.2.</span> <span class="nav-text">Java 預設註解</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Interface"><span class="nav-number">1.</span> <span class="nav-text">Interface</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Use-interface-to-connect-two-layers"><span class="nav-number">1.1.</span> <span class="nav-text">Use interface to connect two layers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Inheritance"><span class="nav-number">2.</span> <span class="nav-text">Inheritance</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-Primitive-Data-Types"><span class="nav-number">3.</span> <span class="nav-text">8 Primitive Data Types</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#and-equals"><span class="nav-number">4.</span> <span class="nav-text">&#x3D;&#x3D; and .equals()</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean%E6%A2%9D%E4%BB%B6-%E6%88%90%E7%AB%8B%EF%BC%9A%E4%B8%8D%E6%88%90%E7%AB%8B"><span class="nav-number">5.</span> <span class="nav-text">Boolean條件?成立：不成立</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Integer"><span class="nav-number">6.</span> <span class="nav-text">Integer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">7.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Loop"><span class="nav-number">8.</span> <span class="nav-text">Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">9.</span> <span class="nav-text">Static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Final"><span class="nav-number">10.</span> <span class="nav-text">Final</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Finally"><span class="nav-number">10.1.</span> <span class="nav-text">Finally</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finalize"><span class="nav-number">10.2.</span> <span class="nav-text">Finalize</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StringBuilder"><span class="nav-number">11.</span> <span class="nav-text">StringBuilder</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StringBuffer"><span class="nav-number">11.1.</span> <span class="nav-text">StringBuffer</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -449,7 +421,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">300</span>
+          <span class="site-state-item-count">301</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -517,12 +489,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">424k</span>
+    <span title="Symbols count total">426k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:26</span>
+    <span title="Reading time total">6:27</span>
 </div>
 
         
