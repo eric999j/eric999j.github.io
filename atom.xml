@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-10-22T07:22:14.137Z</updated>
+  <updated>2023-10-28T09:18:06.533Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mobile Network</title>
+    <link href="https://eric999j.github.io/manager/mobile/"/>
+    <id>https://eric999j.github.io/manager/mobile/</id>
+    <published>2023-10-28T09:30:00.000Z</published>
+    <updated>2023-10-28T09:18:06.533Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;行動通訊架構&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Wi-Fi</title>
     <link href="https://eric999j.github.io/manager/wifi/"/>
     <id>https://eric999j.github.io/manager/wifi/</id>
     <published>2023-10-22T07:30:00.000Z</published>
-    <updated>2023-10-22T07:22:14.137Z</updated>
+    <updated>2023-10-24T05:41:08.150Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
@@ -391,26 +411,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Interface and Abstract Class</title>
-    <link href="https://eric999j.github.io/engineer/Interface/"/>
-    <id>https://eric999j.github.io/engineer/Interface/</id>
-    <published>2023-05-06T09:00:00.000Z</published>
-    <updated>2023-09-23T07:34:10.712Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yc5s30R.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Summon Chimera。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
