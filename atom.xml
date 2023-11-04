@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-10-28T09:18:06.533Z</updated>
+  <updated>2023-11-04T09:48:44.257Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>資料科學中的隱私保護</title>
+    <link href="https://eric999j.github.io/manager/DSPrivacy/"/>
+    <id>https://eric999j.github.io/manager/DSPrivacy/</id>
+    <published>2023-11-04T09:00:00.000Z</published>
+    <updated>2023-11-04T09:48:44.257Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;資料科學中隱私保護要點&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>Mobile Network</title>
@@ -392,25 +412,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Herb Cookies</title>
-    <link href="https://eric999j.github.io/life/herbCookies/"/>
-    <id>https://eric999j.github.io/life/herbCookies/</id>
-    <published>2023-05-14T08:00:00.000Z</published>
-    <updated>2023-05-14T09:10:38.497Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/temy03c.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Happy Mother’s Day!  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
     
   </entry>
   
