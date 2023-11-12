@@ -28,8 +28,9 @@
 <meta property="og:description" content="基於IEEE 802.11標準的無線區域網路技術">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg">
-<meta property="article:published_time" content="2023-10-22T07:30:00.000Z">
-<meta property="article:modified_time" content="2023-10-24T05:41:08.150Z">
+<meta property="og:image" content="https://cdn2.techbang.com/system/images/694296/original/af765f71da7879d6a058833cc692bb8a.jpg?1697690327">
+<meta property="article:published_time" content="2023-11-12T10:30:00.000Z">
+<meta property="article:modified_time" content="2023-11-12T10:27:56.364Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="文書">
 <meta name="twitter:card" content="summary">
@@ -201,16 +202,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2023-10-22 15:30:00" itemprop="dateCreated datePublished" datetime="2023-10-22T15:30:00+08:00">2023-10-22</time>
+              <time title="Created: 2023-11-12 18:30:00 / Modified: 18:27:56" itemprop="dateCreated datePublished" datetime="2023-11-12T18:30:00+08:00">2023-11-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-10-24 13:41:08" itemprop="dateModified" datetime="2023-10-24T13:41:08+08:00">2023-10-24</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -234,7 +229,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>844</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -257,6 +252,10 @@
 <p>基於IEEE 802.11標準的無線區域網路技術</p>
 <a id="more"></a> 
 
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IEEE_802.11k-2008#:~:text=IEEE%20802.11k%20and%20802.11,is%20distributed%20within%20a%20network.">概覽</a></p>
+<ul>
+<li>802.11k/v/r, s: Mesh</li>
+</ul>
 <p>🛜    802.11-1997</p>
 <ul>
 <li>頻寬: 最高2Mbps</li>
@@ -286,9 +285,13 @@
 <li>頻率: 2.4GHz與5GHz</li>
 </ul>
 <p>雙頻率，頻寬大幅提升，引進Beamforming技術</p>
+<p><img src="https://cdn2.techbang.com/system/images/694296/original/af765f71da7879d6a058833cc692bb8a.jpg?1697690327"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.techbang.com/posts/110483-quick-questions-and-answers-is-the-wi-fi-6e-wi-fi-7-era-coming">來源</a></li>
+</ul>
 <p>5️⃣    802.11ac</p>
 <ul>
-<li>頻寬: 最高6.9Gbps</li>
+<li>頻寬: 最高3.5Gbps</li>
 <li>頻率: 5GHz</li>
 </ul>
 <p>廣泛利用Beamforming，透過智慧型天線，定向發射WiFi訊號，增加訊號的強度與穩定性，減少干擾，引入MU-MIMO</p>
@@ -297,13 +300,13 @@
 <li>頻寬: 最高9.6Gbps</li>
 <li>頻率: 2.4GHz，5GHz與6GHz</li>
 </ul>
-<p>特色: OFDMA、MU-MIMO等新技術，效率大幅提升</p>
+<p>特色: OFDMA、MU-MIMO、BSS Coloring、TwT等新技術，效率大幅提升，6E作為 Wi-Fi 6 的後續標準，Wi-Fi 6E 正式把工作頻段延伸至 6GHz</p>
 <p>7️⃣    802.11be</p>
 <ul>
-<li>頻寬: 最高4.6Gbps</li>
+<li>頻寬: 最高46Gbps</li>
 <li>頻率: 2.4GHz，5GHz與6GHz</li>
 </ul>
-<p>改善WiFi網絡的品質服務(QoS)，增強了WiFi在音視頻、VoIP等方面的表現，引入EDCA與HCCA 協定以支持QoS</p>
+<p>改善WiFi網絡的品質服務(QoS)，增強了WiFi在音視頻、VoIP等方面的表現，引入EDCA與HCCA 協定以支持QoS，MLO(Multi-link Operation)達到更快傳輸速度  </p>
 <hr>
 <ul>
 <li><p>Beamforming：定向收送訊號</p>
@@ -312,11 +315,17 @@
 </li>
 <li><p>MU-MIMO(Multi-User Multiple-Input Multiple-Output)：多用戶<br>多設備連接，高吞吐量</p>
 </li>
+<li><p>BSS Coloring：識別重疊基本服務集（OBSS），最小化傳輸時間與減少由於OBSS場景導致的效能下降  </p>
+</li>
+<li><p>TwT(Target Wake Time): 裝置定時喚醒等待AP連接，其他時間休眠節能  </p>
+</li>
 <li><p>WPA(Wi-Fi Protected Access): 安全<br>解決Wi-Fi網路安全性問題</p>
 </li>
 <li><p>EDCA(Enhanced Distributed Channel Access)：優先<br>不同類型的流量提供不同優先級，從而改善WiFi網絡的服務品質(QoS)</p>
 </li>
 <li><p>HCCA(HCF Controlled Channel Access) ：控制<br>集中式媒體接入控制(MAC)</p>
+</li>
+<li><p>MLO(Multi-link Operation): 多頻聚合傳輸，同時連接多個不同頻段，單一裝置速度更快  </p>
 </li>
 </ul>
 <p><a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-tw/Wi-Fi">歷史</a></p>
@@ -362,13 +371,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/engineer/annotation/" rel="prev" title="Annotation">
-      <i class="fa fa-chevron-left"></i> Annotation
+    <a href="/manager/DSPrivacy/" rel="prev" title="資料科學中的隱私保護">
+      <i class="fa fa-chevron-left"></i> 資料科學中的隱私保護
     </a></div>
-      <div class="post-nav-item">
-    <a href="/manager/mobile/" rel="next" title="Mobile Network">
-      Mobile Network <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
