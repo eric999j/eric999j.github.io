@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-11-19T08:45:37.627Z</updated>
+  <updated>2023-12-02T08:20:22.557Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>手作坊</title>
+    <link href="https://eric999j.github.io/life/handicraftWorkshop/"/>
+    <id>https://eric999j.github.io/life/handicraftWorkshop/</id>
+    <published>2023-12-02T08:30:00.000Z</published>
+    <updated>2023-12-02T08:20:22.557Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JWGpvK0.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;美好生活 @w@/&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
   
   <entry>
     <title>Golden milk chia pudding and Curry</title>
@@ -384,26 +406,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;  &lt;/p&gt;
 &lt;p&gt;Perseverance and Positive Thinking.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你不是不會做事，是不會說話</title>
-    <link href="https://eric999j.github.io/manager/talk/"/>
-    <id>https://eric999j.github.io/manager/talk/</id>
-    <published>2023-06-03T10:00:00.000Z</published>
-    <updated>2023-06-03T12:24:19.106Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;先說重點，定期回饋。&lt;/p&gt;</summary>
     
     
     
