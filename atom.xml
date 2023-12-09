@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-12-02T08:20:22.557Z</updated>
+  <updated>2023-12-09T22:32:15.594Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java EE</title>
+    <link href="https://eric999j.github.io/engineer/javaEE/"/>
+    <id>https://eric999j.github.io/engineer/javaEE/</id>
+    <published>2023-12-09T22:30:00.000Z</published>
+    <updated>2023-12-09T22:32:15.594Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;親兒子，&lt;a href=&quot;https://eric999j.github.io/engineer/spring/&quot;&gt;Spring&lt;/a&gt;是私生子=p&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>手作坊</title>
     <link href="https://eric999j.github.io/life/handicraftWorkshop/"/>
     <id>https://eric999j.github.io/life/handicraftWorkshop/</id>
-    <published>2023-12-02T08:30:00.000Z</published>
-    <updated>2023-12-02T08:20:22.557Z</updated>
+    <published>2023-12-02T23:30:00.000Z</published>
+    <updated>2023-12-09T21:54:50.432Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JWGpvK0.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -393,26 +413,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Dae Jang Geum</title>
-    <link href="https://eric999j.github.io/manager/perseverance/"/>
-    <id>https://eric999j.github.io/manager/perseverance/</id>
-    <published>2023-06-11T08:00:00.000Z</published>
-    <updated>2023-06-11T07:47:05.903Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;  &lt;/p&gt;
-&lt;p&gt;Perseverance and Positive Thinking.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
