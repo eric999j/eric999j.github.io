@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-12-09T22:32:15.594Z</updated>
+  <updated>2023-12-17T00:42:25.007Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>洗髮精</title>
+    <link href="https://eric999j.github.io/life/bodyWash/"/>
+    <id>https://eric999j.github.io/life/bodyWash/</id>
+    <published>2023-12-17T01:00:00.000Z</published>
+    <updated>2023-12-17T00:42:25.007Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/YmEDXZN.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;皮膚比較愛弱酸性。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NetBeans 小技巧</title>
+    <link href="https://eric999j.github.io/engineer/netBeans/"/>
+    <id>https://eric999j.github.io/engineer/netBeans/</id>
+    <published>2023-12-17T00:00:00.000Z</published>
+    <updated>2023-12-17T00:48:00.943Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;官方支持的Java IDE。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java EE</title>
     <link href="https://eric999j.github.io/engineer/javaEE/"/>
     <id>https://eric999j.github.io/engineer/javaEE/</id>
     <published>2023-12-09T22:30:00.000Z</published>
-    <updated>2023-12-09T22:32:15.594Z</updated>
+    <updated>2023-12-17T00:26:12.373Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
@@ -41,7 +83,7 @@
     <link href="https://eric999j.github.io/life/handicraftWorkshop/"/>
     <id>https://eric999j.github.io/life/handicraftWorkshop/</id>
     <published>2023-12-02T23:30:00.000Z</published>
-    <updated>2023-12-09T21:54:50.432Z</updated>
+    <updated>2023-12-14T18:29:00.281Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JWGpvK0.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -62,8 +104,8 @@
     <title>Golden milk chia pudding and Curry</title>
     <link href="https://eric999j.github.io/life/goldenMilk/"/>
     <id>https://eric999j.github.io/life/goldenMilk/</id>
-    <published>2023-11-19T09:00:00.000Z</published>
-    <updated>2023-11-19T08:45:37.627Z</updated>
+    <published>2023-11-20T00:00:00.000Z</published>
+    <updated>2023-12-17T00:47:10.858Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/EP7ktCw.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Hi Mexico &amp;amp;&amp;amp; India,  &lt;/p&gt;</summary>
@@ -366,46 +408,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Hi ELK。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>夜舞者 - 今瀨</title>
-    <link href="https://eric999j.github.io/life/nightDancer/"/>
-    <id>https://eric999j.github.io/life/nightDancer/</id>
-    <published>2023-06-24T10:00:00.000Z</published>
-    <updated>2023-06-26T08:11:27.940Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;跟喜歡的人相處，平凡時刻也會變得特別。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OSI model</title>
-    <link href="https://eric999j.github.io/engineer/osi/"/>
-    <id>https://eric999j.github.io/engineer/osi/</id>
-    <published>2023-06-18T13:30:00.000Z</published>
-    <updated>2023-06-19T06:50:51.381Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;網路通訊協議，實體的資料在網路上傳輸，讓會議表現更好應用了。&lt;/p&gt;</summary>
     
     
     
