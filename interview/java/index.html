@@ -28,8 +28,8 @@
 <meta property="og:description" content="記錄Java各種容易遺忘的段落">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg">
-<meta property="article:published_time" content="2022-11-05T20:00:00.000Z">
-<meta property="article:modified_time" content="2023-12-14T22:46:02.867Z">
+<meta property="article:published_time" content="2022-11-05T06:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-22T06:19:19.200Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="力扣">
 <meta name="twitter:card" content="summary">
@@ -202,14 +202,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-11-05 14:00:00" itemprop="dateCreated datePublished" datetime="2022-11-05T14:00:00-06:00">2022-11-05</time>
+              <time title="Created: 2022-11-05 14:00:00" itemprop="dateCreated datePublished" datetime="2022-11-05T14:00:00+08:00">2022-11-05</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-12-14 15:46:02" itemprop="dateModified" datetime="2023-12-14T15:46:02-07:00">2023-12-14</time>
+                <time title="Modified: 2023-12-22 14:19:19" itemprop="dateModified" datetime="2023-12-22T14:19:19+08:00">2023-12-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.6k</span>
+              <span>5.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -304,6 +304,9 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Example&#123;</span><br><span class="line">     static int data &#x3D; 0;</span><br><span class="line">     public Example() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Main &#123;</span><br><span class="line">     public static void main(String[] argv)  &#123;</span><br><span class="line">          System.out.println(Example.data); &#x2F;&#x2F; 1</span><br><span class="line">          Example exp1 &#x3D; new Example();</span><br><span class="line">          Example exp2 &#x3D; new Example();</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">          exp2.data  &#x3D; 1;</span><br><span class="line">          System.out.println(exp2.data); &#x2F;&#x2F; 2 3</span><br><span class="line">          System.out.println(exp1.data);</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br><span class="line">0  </span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 
+<h1 id="Native"><a href="#Native" class="headerlink" title="Native"></a><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/native-keyword-java/">Native</a></h1><p>Only for methods, implemented in native code using JNI (Java Native Interface).</p>
+<h1 id="Volatile-Synchronized"><a href="#Volatile-Synchronized" class="headerlink" title="Volatile, Synchronized"></a><a href="https://eric999j.github.io/engineer/Interface/">Volatile, Synchronized</a></h1><p>Volatile means the working memory of each thread is<br>not used, and access, reading and writing are always<br>done from the main memory.</p>
+<p>Synchronized good for multithread, but lower performance.</p>
 <h1 id="Final"><a href="#Final" class="headerlink" title="Final"></a><a target="_blank" rel="noopener" href="https://medium.com/@clu1022/java%E7%AD%86%E8%A8%98-final-finally-%E8%88%87-finalize-d72dc66e49eb">Final</a></h1><ol>
 <li>類別：無法被繼承(extends)。</li>
 <li>函數：繼承他的子類別無法覆寫。</li>
@@ -359,12 +362,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/life/attractive/" rel="prev" title="15分鐘寫出爆紅千字文">
-      <i class="fa fa-chevron-left"></i> 15分鐘寫出爆紅千字文
+    <a href="/life/mouthwash/" rel="prev" title="香料漱口水">
+      <i class="fa fa-chevron-left"></i> 香料漱口水
     </a></div>
       <div class="post-nav-item">
-    <a href="/manager/aisas/" rel="next" title="AISAS">
-      AISAS <i class="fa fa-chevron-right"></i>
+    <a href="/life/attractive/" rel="next" title="15分鐘寫出爆紅千字文">
+      15分鐘寫出爆紅千字文 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -425,7 +428,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A6%8F%E7%AF%84"><span class="nav-number">1.</span> <span class="nav-text">規範</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-SE"><span class="nav-number">2.</span> <span class="nav-text">Java SE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-EE"><span class="nav-number">3.</span> <span class="nav-text">Java EE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-ME"><span class="nav-number">4.</span> <span class="nav-text">Java ME</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%8B%E9%9D%A2-%E6%8A%BD%E8%B1%A1-Interface"><span class="nav-number">5.</span> <span class="nav-text">介面&#x2F;抽象  (Interface)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Use-interface-to-connect-two-layers"><span class="nav-number">5.1.</span> <span class="nav-text">Use interface to connect two layers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B9%BC%E6%89%BF-Inheritance"><span class="nav-number">6.</span> <span class="nav-text">繼承 (Inheritance)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%81%E8%A3%9D%EF%BC%88Encapsulation%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">封裝（Encapsulation）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E5%9E%8B-%E5%A4%9A%E6%85%8B%EF%BC%88Polymorphism%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">多型&#x2F;多態（Polymorphism）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-Primitive-Data-Types"><span class="nav-number">9.</span> <span class="nav-text">8 Primitive Data Types</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#and-equals"><span class="nav-number">10.</span> <span class="nav-text">&#x3D;&#x3D; and .equals()</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean%E6%A2%9D%E4%BB%B6-%E6%88%90%E7%AB%8B%EF%BC%9A%E4%B8%8D%E6%88%90%E7%AB%8B"><span class="nav-number">11.</span> <span class="nav-text">Boolean條件?成立：不成立</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Integer"><span class="nav-number">12.</span> <span class="nav-text">Integer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">13.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Loop"><span class="nav-number">14.</span> <span class="nav-text">Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">15.</span> <span class="nav-text">Static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Final"><span class="nav-number">16.</span> <span class="nav-text">Final</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Finally"><span class="nav-number">16.1.</span> <span class="nav-text">Finally</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finalize"><span class="nav-number">16.2.</span> <span class="nav-text">Finalize</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StringBuilder"><span class="nav-number">17.</span> <span class="nav-text">StringBuilder</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StringBuffer"><span class="nav-number">17.1.</span> <span class="nav-text">StringBuffer</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%84%AA%E5%8C%96"><span class="nav-number">18.</span> <span class="nav-text">優化</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A6%8F%E7%AF%84"><span class="nav-number">1.</span> <span class="nav-text">規範</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-SE"><span class="nav-number">2.</span> <span class="nav-text">Java SE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-EE"><span class="nav-number">3.</span> <span class="nav-text">Java EE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-ME"><span class="nav-number">4.</span> <span class="nav-text">Java ME</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%8B%E9%9D%A2-%E6%8A%BD%E8%B1%A1-Interface"><span class="nav-number">5.</span> <span class="nav-text">介面&#x2F;抽象  (Interface)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Use-interface-to-connect-two-layers"><span class="nav-number">5.1.</span> <span class="nav-text">Use interface to connect two layers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B9%BC%E6%89%BF-Inheritance"><span class="nav-number">6.</span> <span class="nav-text">繼承 (Inheritance)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%81%E8%A3%9D%EF%BC%88Encapsulation%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">封裝（Encapsulation）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E5%9E%8B-%E5%A4%9A%E6%85%8B%EF%BC%88Polymorphism%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">多型&#x2F;多態（Polymorphism）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-Primitive-Data-Types"><span class="nav-number">9.</span> <span class="nav-text">8 Primitive Data Types</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#and-equals"><span class="nav-number">10.</span> <span class="nav-text">&#x3D;&#x3D; and .equals()</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boolean%E6%A2%9D%E4%BB%B6-%E6%88%90%E7%AB%8B%EF%BC%9A%E4%B8%8D%E6%88%90%E7%AB%8B"><span class="nav-number">11.</span> <span class="nav-text">Boolean條件?成立：不成立</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Integer"><span class="nav-number">12.</span> <span class="nav-text">Integer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Array"><span class="nav-number">13.</span> <span class="nav-text">Array</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Loop"><span class="nav-number">14.</span> <span class="nav-text">Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Static-%E5%9B%BA%E5%AE%9A%E8%A8%98%E6%86%B6%E9%AB%94%E7%A9%BA%E9%96%93"><span class="nav-number">15.</span> <span class="nav-text">Static 固定記憶體空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Native"><span class="nav-number">16.</span> <span class="nav-text">Native</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Volatile-Synchronized"><span class="nav-number">17.</span> <span class="nav-text">Volatile, Synchronized</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Final"><span class="nav-number">18.</span> <span class="nav-text">Final</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Finally"><span class="nav-number">18.1.</span> <span class="nav-text">Finally</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Finalize"><span class="nav-number">18.2.</span> <span class="nav-text">Finalize</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#StringBuilder"><span class="nav-number">19.</span> <span class="nav-text">StringBuilder</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StringBuffer"><span class="nav-number">19.1.</span> <span class="nav-text">StringBuffer</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%84%AA%E5%8C%96"><span class="nav-number">20.</span> <span class="nav-text">優化</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -443,7 +446,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">309</span>
+          <span class="site-state-item-count">310</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -511,12 +514,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">436k</span>
+    <span title="Symbols count total">441k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:36</span>
+    <span title="Reading time total">6:41</span>
 </div>
 
         

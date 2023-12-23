@@ -33,8 +33,8 @@
 <meta property="og:image" content="https://i.imgur.com/e5G8yRF.png">
 <meta property="og:image" content="https://i.imgur.com/oMgUWX5.png">
 <meta property="og:image" content="https://i.imgur.com/KDDrYwu.png">
-<meta property="article:published_time" content="2023-05-06T23:00:00.000Z">
-<meta property="article:modified_time" content="2023-12-15T23:32:25.250Z">
+<meta property="article:published_time" content="2023-05-06T09:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-22T03:28:19.237Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -207,14 +207,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-05-06 17:00:00" itemprop="dateCreated datePublished" datetime="2023-05-06T17:00:00-06:00">2023-05-06</time>
+              <time title="Created: 2023-05-06 17:00:00" itemprop="dateCreated datePublished" datetime="2023-05-06T17:00:00+08:00">2023-05-06</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-12-15 16:32:25" itemprop="dateModified" datetime="2023-12-15T16:32:25-07:00">2023-12-15</time>
+                <time title="Modified: 2023-12-22 11:28:19" itemprop="dateModified" datetime="2023-12-22T11:28:19+08:00">2023-12-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -239,14 +239,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.7k</span>
+              <span>3.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -284,14 +284,16 @@
 </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public abstract class Animal &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    </span><br><span class="line">    public Animal(String name) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public abstract void makeSound();</span><br><span class="line">    </span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="Use-Singleton-for-Chimera"><a href="#Use-Singleton-for-Chimera" class="headerlink" title="Use Singleton for Chimera"></a>Use Singleton for Chimera</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">* Chimera</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; static for allocate specific memory location, good for multithread</span><br><span class="line"></span><br><span class="line">private static class InstanceHolder &#123;</span><br><span class="line">    public static Chimera instance &#x3D; new Chimera(3);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public static Chimera getInstance() &#123;</span><br><span class="line">    return InstanceHolder.instance;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">* Main</span><br><span class="line"></span><br><span class="line">Chimera chimera &#x3D; Chimera.getInstance();</span><br></pre></td></tr></table></figure>
+<h1 id="Use-Singleton-for-Chimera"><a href="#Use-Singleton-for-Chimera" class="headerlink" title="Use Singleton for Chimera"></a>Use Singleton for Chimera</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">* Eagerly way rely on JVM, but bad for multi-thread</span><br><span class="line"></span><br><span class="line">	private static Chimera uniqueInstance &#x3D; new Chimera(3);</span><br><span class="line">	</span><br><span class="line">	private Chimera(int level) &#123;super(level);&#125;</span><br><span class="line">	</span><br><span class="line">	public static Chimera getInstance() &#123;</span><br><span class="line">	    return uniqueInstance;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">* Double lock Chimera reduce synchronized, but suitable for Java 5 above</span><br><span class="line"></span><br><span class="line">&#x2F;*</span><br><span class="line"> private and static for prevent public calling</span><br><span class="line"> and allocate specific memory location</span><br><span class="line"></span><br><span class="line"> volatile means the working memory of each thread is</span><br><span class="line"> not used, and access, reading and writing are always</span><br><span class="line"> done from the main memory.</span><br><span class="line">*&#x2F;</span><br><span class="line">	private volatile static Chimera uniqueInstance;</span><br><span class="line">	</span><br><span class="line">	private Chimera(int level) &#123;super(level);&#125;</span><br><span class="line">	</span><br><span class="line">	public static Chimera getInstance() &#123;</span><br><span class="line">	    &#x2F;&#x2F; if not instantized, into synchronized block</span><br><span class="line">	    if (uniqueInstance &#x3D;&#x3D; null)&#123;</span><br><span class="line">	        synchronized (Chimera.class)&#123; &#x2F;&#x2F; use synchronized good for multithread, but lower performance</span><br><span class="line">	            &#x2F;&#x2F; check again in synchronized block</span><br><span class="line">	            if(uniqueInstance &#x3D;&#x3D; null)</span><br><span class="line">	                uniqueInstance &#x3D; new Chimera(3);</span><br><span class="line">	        &#125;</span><br><span class="line">	    &#125;</span><br><span class="line">	    return uniqueInstance;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">* Main</span><br><span class="line"></span><br><span class="line">Chimera chimera &#x3D; Chimera.getInstance();</span><br></pre></td></tr></table></figure>
 
-
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.tpisoftware.com/tpu/articleDetails/1753">volatile</a></li>
+</ul>
 <h1 id="Lambda-runnable-is-more-flexible-and-support-multi-core-cpu"><a href="#Lambda-runnable-is-more-flexible-and-support-multi-core-cpu" class="headerlink" title="Lambda + runnable is more flexible and support multi-core cpu"></a>Lambda + runnable is more flexible and support multi-core cpu</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">* Chimera</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void Sound() &#123;</span><br><span class="line">        System.out.println(&quot;growl&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public void run(Runnable action)&#123;</span><br><span class="line">        for(int i&#x3D; 0; i&lt; 20; i++)&#123;</span><br><span class="line">            action.run();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">* Main</span><br><span class="line"></span><br><span class="line">chimera.run(()-&gt; &#123;chimera.Sound();&#125;);</span><br><span class="line"></span><br><span class="line">1. Replace statement lambda with expression lambda</span><br><span class="line"></span><br><span class="line">chimera.run(()-&gt; chimera.Sound()); &#x2F;&#x2F; remove &#123;;&#125;</span><br><span class="line"></span><br><span class="line">2. Replace lambda with method reference</span><br><span class="line"></span><br><span class="line">chimera.run(chimera::Sound); &#x2F;&#x2F; use Class::Method</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><a target="_blank" rel="noopener" href="https://github.com/eric999j/Interface/blob/master/src/Main.java">Code</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/eric999j/Interface/commit/b18eb1a8a11823d2dc63fa702bd90e278734b031">Code</a></p>
 <h1 id="PanltUML"><a href="#PanltUML" class="headerlink" title="PanltUML"></a>PanltUML</h1><p><img src="https://i.imgur.com/BFVQLtr.png" alt="img"></p>
-<p>File-&gt;Settings-&gt;Plugins-&gt;Browse repositories-&gt;panltUML-&gt;Install plugin</p>
+<p>File-&gt; Settings-&gt; Plugins-&gt; Browse repositories-&gt; panltUML-&gt; Install plugin</p>
 <p><img src="https://i.imgur.com/e5G8yRF.png" alt="img"></p>
 <p>PlantUML File  </p>
 <h1 id="Graphviz"><a href="#Graphviz" class="headerlink" title="Graphviz"></a>Graphviz</h1><p><img src="https://i.imgur.com/oMgUWX5.png" alt="img"></p>
@@ -444,7 +446,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">309</span>
+          <span class="site-state-item-count">310</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -512,12 +514,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">436k</span>
+    <span title="Symbols count total">441k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:36</span>
+    <span title="Reading time total">6:41</span>
 </div>
 
         

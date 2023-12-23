@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-12-17T00:42:25.007Z</updated>
+  <updated>2023-12-23T06:10:42.381Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java8 Lambda and Stream</title>
+    <link href="https://eric999j.github.io/engineer/stream/"/>
+    <id>https://eric999j.github.io/engineer/stream/</id>
+    <published>2023-12-23T06:00:00.000Z</published>
+    <updated>2023-12-23T06:10:42.381Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;好用的酷東西。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>洗髮精</title>
@@ -42,8 +62,8 @@
     <title>NetBeans 小技巧</title>
     <link href="https://eric999j.github.io/engineer/netBeans/"/>
     <id>https://eric999j.github.io/engineer/netBeans/</id>
-    <published>2023-12-17T00:00:00.000Z</published>
-    <updated>2023-12-17T00:48:00.943Z</updated>
+    <published>2023-12-16T09:00:00.000Z</published>
+    <updated>2023-12-22T08:53:49.298Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -62,8 +82,8 @@
     <title>Java EE</title>
     <link href="https://eric999j.github.io/engineer/javaEE/"/>
     <id>https://eric999j.github.io/engineer/javaEE/</id>
-    <published>2023-12-09T22:30:00.000Z</published>
-    <updated>2023-12-17T00:26:12.373Z</updated>
+    <published>2023-12-09T07:30:00.000Z</published>
+    <updated>2023-12-22T09:06:36.250Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
@@ -395,26 +415,6 @@
     
     
     <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ELK</title>
-    <link href="https://eric999j.github.io/engineer/ELK/"/>
-    <id>https://eric999j.github.io/engineer/ELK/</id>
-    <published>2023-07-02T07:30:00.000Z</published>
-    <updated>2023-09-12T08:43:36.851Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Hi ELK。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
