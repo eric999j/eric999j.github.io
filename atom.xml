@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-12-23T06:10:42.381Z</updated>
+  <updated>2023-12-25T12:20:32.119Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>薑餅人</title>
+    <link href="https://eric999j.github.io/life/gingerbread/"/>
+    <id>https://eric999j.github.io/life/gingerbread/</id>
+    <published>2023-12-25T11:30:00.000Z</published>
+    <updated>2023-12-25T12:20:32.119Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JRHdLw3.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;聖誕快樂 🧑‍🎄&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
   
   <entry>
     <title>Java8 Lambda and Stream</title>
@@ -388,26 +407,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/GO95sU9.jpg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;每次看到這些小凸點總會好奇在說些什麼，今天就來研究一下吧。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>五感</title>
-    <link href="https://eric999j.github.io/life/sensory/"/>
-    <id>https://eric999j.github.io/life/sensory/</id>
-    <published>2023-07-15T11:30:00.000Z</published>
-    <updated>2023-07-23T09:52:01.100Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;視聽嗅味觸，任何感官都是語言。&lt;/p&gt;</summary>
     
     
     
