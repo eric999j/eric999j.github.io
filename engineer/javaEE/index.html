@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg">
 <meta property="og:image" content="https://i.imgur.com/pYrmIoU.jpg">
 <meta property="article:published_time" content="2023-12-09T07:30:00.000Z">
-<meta property="article:modified_time" content="2023-12-22T09:06:36.250Z">
+<meta property="article:modified_time" content="2023-12-29T10:04:29.448Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-12-22 17:06:36" itemprop="dateModified" datetime="2023-12-22T17:06:36+08:00">2023-12-22</time>
+                <time title="Modified: 2023-12-29 18:04:29" itemprop="dateModified" datetime="2023-12-29T18:04:29+08:00">2023-12-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,14 +235,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.9k</span>
+              <span>2.9k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -255,33 +255,11 @@
 
       
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg"></p>
-<p>親兒子，<a href="https://eric999j.github.io/engineer/spring/">Spring</a>是私生子=p</p>
+<p>親兒子，Spring是私生子=p</p>
 <a id="more"></a>
 
-<p>與Spring一樣採用MVC架構</p>
-<h1 id="Presentation-Layer"><a href="#Presentation-Layer" class="headerlink" title="Presentation Layer"></a>Presentation Layer</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/intercepting-filter.html">Intercepting Filter Pattern</a> - 分類與轉送不同需求到適當元件, 用於認證、日誌記錄等。 </li>
-<li><a target="_blank" rel="noopener" href="https://www.tutorialspoint.com/design_pattern/front_controller_pattern.htm">Front Controller Pattern</a> - 所有請求的單一處理程序。用於中心化的請求處理/路由。 </li>
-<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/viewhelper.html">View Helper Pattern</a> - 封裝視圖渲染邏輯。提高重用性和分離關注點。</li>
-<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/composite-view.html">Composite View Pattern</a> - 從多個源中合併數據到一個視圖中。</li>
-</ul>
-<p>JavaFX v.s. PrimeFaces: JavaFX 是swing 後繼, 內建Ajax; PrimeFaces基於JSF建構企業網頁UI</p>
-<ul>
-<li><p>PrimeFaces<br>面向Java EE的UI庫,可以想成java版的jQuery, 但PrimeFaces在伺服器運行, 通過JSF生成HTML</p>
-</li>
-<li><p>JSF(JavaServer Faces): 表示層<br>Java EE的MVC web框架,定義標準UI與提供API, 用Ajax實現無頁面刷新, 良好支援Spring, Hibernate之類的其他標準,用”action”呼叫controller, p:commandButton的update跳轉到下個xhtml的p:pannelGroup id</p>
-<ul>
-<li>core: JSF 驗證與轉換Tag</li>
-<li>html: HTML Tag</li>
-<li>facelets: 頁面區塊</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>使用<br>main/resources/A.properties<br>app.title=標題  </p>
-<p>main/webapp/jsff/B.xhtml<br>’#{A[‘app.title’]}‘  </p>
-</blockquote>
-<h2 id="JSF執行流程"><a href="#JSF執行流程" class="headerlink" title="JSF執行流程"></a>JSF執行流程</h2><p><img src="https://i.imgur.com/pYrmIoU.jpg" alt="img"></p>
+<p>與<a href="https://eric999j.github.io/engineer/spring/">Spring</a>一樣採用MVC架構，Java EE是Java平台企業版（Java Platform Enterprise Edition），之前稱為Java 2 Platform, Enterprise Edition (J2EE)，2018年3月更名為Jakarta EE   </p>
+<h1 id="Jakarta-EE"><a href="#Jakarta-EE" class="headerlink" title="Jakarta EE"></a>Jakarta EE</h1><p><img src="https://i.imgur.com/pYrmIoU.jpg" alt="img"></p>
 <p>Six Stages of JSF life cycle</p>
 <ol>
 <li>Restore Phase of view</li>
@@ -291,44 +269,80 @@
 <li>IProcess events: Invoke step of application</li>
 <li>Render response step</li>
 </ol>
+<h1 id="Jakarta-EE-Annotations"><a href="#Jakarta-EE-Annotations" class="headerlink" title="Jakarta EE Annotations"></a>Jakarta EE Annotations</h1><p>javax.persistence.Entity;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@Entity @Table @Id @Persistence </span><br><span class="line"></span><br><span class="line">@Named - 設定xhtml呼叫名稱, 預設class name(與# class.method關聯)</span><br><span class="line">public class ...&#123;&#125;</span><br><span class="line"></span><br><span class="line">@Inject - 呼叫其他 controller</span><br><span class="line">private ...</span><br><span class="line"></span><br><span class="line">@Stateless &#x2F; @Stateful - 標記在stateless EJB上,表示狀態，facade一般stateless</span><br><span class="line"></span><br><span class="line">@EJB - 呼叫其他Facade</span><br><span class="line">private ...</span><br><span class="line"></span><br><span class="line">@ViewScoped - 當前畫面存活，比@RequestScoped更長</span><br></pre></td></tr></table></figure>
+
+<h1 id="Controller-amp-amp-View-6-Presentation-Layer"><a href="#Controller-amp-amp-View-6-Presentation-Layer" class="headerlink" title="[Controller &amp;&amp; View] 6 Presentation Layer"></a>[Controller &amp;&amp; View] 6 Presentation Layer</h1><p><strong>技術標準</strong>: JAX-RS: 各家可以實作RESful API 的解決方案</p>
 <ul>
-<li><p>JSP(JavaServer Pages)<br>靜態網頁渲染, 不像JSF要求MVC, 可以隨意加入Java程式, 與JSF可合併使用, 或說JSP可以被包含在JSF</p>
-</li>
 <li><p>XHTML: 繼承HTML並融合XML的嚴謹</p>
+</li>
+<li><p>JavaFX<br>Oracle官方UI框架, awt, swing 後繼, java 8後內建於jdk, 要取代swing, 建構行動與桌面UI<br>AWT&gt;swing&gt; JavaFX </p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.primefaces.org/showcase-v8/index.xhtml">PrimeFaces</a><br>基於JSF建構企業網頁UI, 可以想成java版的jQuery, 但PrimeFaces在伺服器運行, 通過JSF生成HTML</p>
+</li>
+</ul>
+<blockquote>
+<p>PrimeFaces bottom update連到另一個xhtml panelGroup id<br>PF(‘xxx’).show() 中 PF 是PrimeFaces 元件的選擇器</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hychen39.github.io/jsf_teach/">JSF(JavaServer Faces)</a><br>Java EE的MVC web框架,定義標準UI與提供API, 用Ajax實現無頁面刷新, 良好支援Spring, Hibernate之類的其他標準,用”action”呼叫controller, p:commandButton的update跳轉到下個xhtml的p:pannelGroup id</li>
+</ul>
+<blockquote>
+<p>core: JSF 驗證與轉換Tag<br>html: HTML Tag<br>facelets: 頁面區塊  </p>
+<p>使用<br>main/resources/A.properties<br>app.title=標題  </p>
+<p>main/webapp/jsff/B.xhtml<br>’#{A[‘app.title’]}‘  </p>
+</blockquote>
+<ul>
+<li><p>Faces Servlet<br>JSF 框架的一部分,用來處理頁面請求 </p>
+</li>
+<li><p>JSP(JavaServer Pages)<br>靜態網頁渲染, 不像JSF要求MVC, 可以隨意加入Java程式, 與JSF可合併使用, 或說JSP可以被包含在JSF  </p>
 </li>
 </ul>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/643690434">ref</a>,<br><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/2095397/what-is-the-difference-between-jsf-servlet-and-jsp">ref2</a>,<br><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/JavaServer_Faces">ref3</a>,<br><a target="_blank" rel="noopener" href="https://www.w3schools.cn/html/html_xhtml.asp">ref4</a>,<br><a target="_blank" rel="noopener" href="https://hychen39.github.io/jsf_teach/">ref5</a></p>
-<h1 id="Business-Layer"><a href="#Business-Layer" class="headerlink" title="Business Layer"></a>Business Layer</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/business-delegate.html">Business Delegate Pattern</a> - 處理分層的互動。解耦表示層和業務層。</li>
+<hr>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/intercepting-filter.html">Intercepting Filter Pattern</a> - 分類與轉送不同需求到適當元件, 用於認證、日誌記錄等。 </li>
+<li><a target="_blank" rel="noopener" href="https://www.tutorialspoint.com/design_pattern/front_controller_pattern.htm">Front Controller Pattern</a> - 所有請求的單一處理程序。用於中心化的請求處理/路由。 </li>
+<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/viewhelper.html">View Helper Pattern</a> - 封裝視圖渲染邏輯。提高重用性和分離關注點。</li>
+<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/composite-view.html">Composite View Pattern</a> - 從多個源中合併數據到一個視圖中。</li>
+</ul>
+<h1 id="Model-Domain-Model-Data-Access-Layer"><a href="#Model-Domain-Model-Data-Access-Layer" class="headerlink" title="Model = Domain Model + Data Access Layer"></a>Model = Domain Model + Data Access Layer</h1><h2 id="Domain-Model-Business-Layer"><a href="#Domain-Model-Business-Layer" class="headerlink" title="[Domain Model] Business Layer"></a>[Domain Model] Business Layer</h2><p>負責業務邏輯和處理,實現系統的核心功能, Spring只實現部份Java EE與新增其他新功能。</p>
+<p><strong>技術標準</strong>：EJB(Enterpise JavaBean)<br>一種伺服器規範, 在JavaEE規範下完成訪問後端資料庫與安全, 部屬等事務</p>
+<p><strong>技術標準</strong>：CDI(Contexts and Dependency Injection)<br>標準化依賴注入，開發者不會再深陷於特定廠商@Annotation</p>
+<ul>
+<li>Payara: 支持EJB的開源應用</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.javatpoint.com/what-is-ejb#:~:text=EJB%20is%20an%20acronym%20for,robust%20and%20scalable%20distributed%20applications">ref</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunbirdhan/article/details/118355623">ref2</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunbirdhan/article/details/118380092">ref3</a></p>
+<hr>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/business-delegate.html">Business Delegate Pattern</a> - 處理分層的互動。解耦 6表現層和 5業務(會話)層。</li>
 <li><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-service-locator-pattern">Service Locator Pattern</a> - 根據需要傳回服務實例。</li>
 <li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/session-facade.html">Session Facade Pattern</a> - 提供業務服務的簡化和統一視圖。屏蔽客户端的複雜性。</li>
 <li><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-dto-pattern">Transfer Object Pattern</a> - 在層間傳輸的聚合數據。減少遠程調用。</li>
 </ul>
-<p>JSF Scope完全符合CDI, Jakarta Scope更加擴展 (例: @ViewScoped - 當前畫面存活，比CDI的@RequestScoped更長)</p>
+<h2 id="Data-Access-Layer-Persistence-Layer-Integration-Layer"><a href="#Data-Access-Layer-Persistence-Layer-Integration-Layer" class="headerlink" title="[Data Access Layer] Persistence Layer/Integration Layer"></a>[Data Access Layer] Persistence Layer/Integration Layer</h2><p><strong>技術標準</strong>：JTA(Java Transaction API)<br>Java管理事務的規範, Java EE自帶JTA, 方便管理事務</p>
+<p><strong>技術標準</strong>：JNDI(Java Naming and Directory Interface)<br>為應用中對象命名, 提供API讓EJB透過它查找目錄,  廣泛應用於J2EE, Spring框架獲取配置信息, 資源查找, 服務訪問等, 但也存在Log4j2中的JNDI注入漏洞  </p>
 <ul>
-<li><p>規範<br>EJB(Enterpise JavaBean): 一種伺服器規範, 在JavaEE規範下完成訪問後端資料庫與安全, 部屬等事務</p>
-</li>
-<li><p>作法<br>CDI(Contexts and Dependency Injection): Java EE6開始引入的依賴注入框架, EJB3.0開始用CDI實現依賴注入</p>
-</li>
-<li><p>實現<br>Payara: 支持EJB的開源應用</p>
-</li>
+<li><a target="_blank" rel="noopener" href="https://www.baeldung.com/hibernate-criteria-queries">JPA(Java Persistence API, javax.persistence)</a>: 5業務與 2資料層   </li>
 </ul>
-<p>Spring只實現部份Java EE, JSF還沒辦法替代</p>
-<p><a target="_blank" rel="noopener" href="https://www.javatpoint.com/what-is-ejb#:~:text=EJB%20is%20an%20acronym%20for,robust%20and%20scalable%20distributed%20applications">ref</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunbirdhan/article/details/118355623">ref2</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunbirdhan/article/details/118380092">ref3</a></p>
-<h1 id="Persistence-Layer-Integration-Layer"><a href="#Persistence-Layer-Integration-Layer" class="headerlink" title="Persistence Layer/Integration Layer"></a>Persistence Layer/Integration Layer</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-dao-pattern#:~:text=The%20Data%20Access%20Object%20(DAO,mechanism)%20using%20an%20abstract%20API.">Data Access Object Pattern</a> - 持久化使用抽象API, 隔離應用, 業務, 持久層。</li>
-<li><a target="_blank" rel="noopener" href="http://www.corej2eepatterns.com/WebServiceBroker.htm">Web Service Broker Pattern</a> - 使用XML, web協定讓不同服務交流。</li>
-</ul>
-<p>JPA v.s. JPL: 都是ORM架構, JPA有整個Java生態系, 但發展放緩; JPL持續發展, 但較不成熟</p>
+<p>Java物件和關聯式資料庫之間儲存資料, 有整個Java生態系, 但發展放緩, 只是個規範, 實現的ORM(Object-Relational Mapping)框架有開源的EclipseLink, Spring 中的<a href="https://eric999j.github.io/engineer/spring/">Hibernate</a>，<a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10219121">Spring Data JPA</a>簡化JPA開發的框架，不implemention接口的情況下, 直接對資料庫做CRUD，底層使用了Hibernate</p>
 <ul>
-<li><p>JNDI(Java Naming and Directory Interface)<br>為應用中對象命名,EJB透過它查找對象</p>
-</li>
-<li><p>JPA(Java Persistence API): 業務與資料層<br>實現ORM的框架,在Java EE有自帶JPA外,開源的EclipseLink也是種實現, Spring 中的實現是Hibernate</p>
-</li>
-<li><p>JTA(Java Transaction API)<br>Java管理事務的規範, Java EE自帶JTA, 方便管理事務</p>
-</li>
+<li>JPL(Jakarta Persistence Layer, jakarta.persistence) </li>
 </ul>
-<h1 id="Steps-to-load-class"><a href="#Steps-to-load-class" class="headerlink" title="Steps to load class"></a>Steps to load class</h1><ol>
+<p>JPL持續發展, 但較不成熟</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://matthung0807.blogspot.com/2018/06/jpa-jpql.html">JPQL(Java Persistence Query Language)</a></li>
+</ul>
+<p>Java持久化查詢語言,是JPA中使用的面向對象的查詢語言,語法可類似SQL, 但其查詢資料源是持久化物件(Entity)而非資料庫本身</p>
+<blockquote>
+<p>implements Serializable 為了在不同JVM共享物件<br>Marven中位於<a target="_blank" rel="noopener" href="https://docs.oracle.com/javaee/5/tutorial/doc/bnbtg.html">/src/main/resources/META-INF/persistence.xml</a></p>
+</blockquote>
+<hr>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.baeldung.com/java-dao-pattern#:~:text=The%20Data%20Access%20Object%20(DAO,mechanism)%20using%20an%20abstract%20API.">Data Access Object Pattern</a> - 持久化使用抽象API, 隔離 7應用, 5業務層  </li>
+<li><a target="_blank" rel="noopener" href="http://www.corej2eepatterns.com/WebServiceBroker.htm">Web Service Broker Pattern</a> - 使用XML, web協定讓不同服務交流  </li>
+</ul>
+<h2 id="OSI-Model"><a href="#OSI-Model" class="headerlink" title="OSI Model"></a><a href="https://eric999j.github.io/engineer/osi/">OSI Model</a></h2><h1 id="Steps-to-load-class"><a href="#Steps-to-load-class" class="headerlink" title="Steps to load class"></a>Steps to load class</h1><ol>
 <li>Application Class Loader</li>
 <li>Extension Class Loader</li>
 <li>BootStrap Class Loader</li>
@@ -441,7 +455,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Presentation-Layer"><span class="nav-number">1.</span> <span class="nav-text">Presentation Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JSF%E5%9F%B7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">JSF執行流程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Business-Layer"><span class="nav-number">2.</span> <span class="nav-text">Business Layer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Persistence-Layer-Integration-Layer"><span class="nav-number">3.</span> <span class="nav-text">Persistence Layer&#x2F;Integration Layer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Steps-to-load-class"><span class="nav-number">4.</span> <span class="nav-text">Steps to load class</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Jakarta-EE"><span class="nav-number">1.</span> <span class="nav-text">Jakarta EE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Jakarta-EE-Annotations"><span class="nav-number">2.</span> <span class="nav-text">Jakarta EE Annotations</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Controller-amp-amp-View-6-Presentation-Layer"><span class="nav-number">3.</span> <span class="nav-text">[Controller &amp;&amp; View] 6 Presentation Layer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Model-Domain-Model-Data-Access-Layer"><span class="nav-number">4.</span> <span class="nav-text">Model &#x3D; Domain Model + Data Access Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Domain-Model-Business-Layer"><span class="nav-number">4.1.</span> <span class="nav-text">[Domain Model] Business Layer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Access-Layer-Persistence-Layer-Integration-Layer"><span class="nav-number">4.2.</span> <span class="nav-text">[Data Access Layer] Persistence Layer&#x2F;Integration Layer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OSI-Model"><span class="nav-number">4.3.</span> <span class="nav-text">OSI Model</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Steps-to-load-class"><span class="nav-number">5.</span> <span class="nav-text">Steps to load class</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -459,7 +473,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">311</span>
+          <span class="site-state-item-count">314</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -527,12 +541,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">441k</span>
+    <span title="Symbols count total">446k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:41</span>
+    <span title="Reading time total">6:45</span>
 </div>
 
         

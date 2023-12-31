@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-12-25T12:20:32.119Z</updated>
+  <updated>2023-12-31T08:09:35.753Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UML</title>
+    <link href="https://eric999j.github.io/engineer/uml/"/>
+    <id>https://eric999j.github.io/engineer/uml/</id>
+    <published>2023-12-31T08:30:00.000Z</published>
+    <updated>2023-12-31T08:09:35.753Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;描述物件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Log4j and i18n</title>
+    <link href="https://eric999j.github.io/engineer/log4j/"/>
+    <id>https://eric999j.github.io/engineer/log4j/</id>
+    <published>2023-12-31T08:00:00.000Z</published>
+    <updated>2023-12-31T08:11:22.376Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-13.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;寫日誌與多國語言。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anyway</title>
+    <link href="https://eric999j.github.io/manager/anyway/"/>
+    <id>https://eric999j.github.io/manager/anyway/</id>
+    <published>2023-12-31T07:00:00.000Z</published>
+    <updated>2023-12-31T08:24:35.141Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;善良不一定讓人生順遂，但不管怎樣，還是要善良。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>薑餅人</title>
@@ -40,7 +100,7 @@
     <link href="https://eric999j.github.io/engineer/stream/"/>
     <id>https://eric999j.github.io/engineer/stream/</id>
     <published>2023-12-23T06:00:00.000Z</published>
-    <updated>2023-12-23T06:10:42.381Z</updated>
+    <updated>2023-12-27T06:22:17.905Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
@@ -82,7 +142,7 @@
     <link href="https://eric999j.github.io/engineer/netBeans/"/>
     <id>https://eric999j.github.io/engineer/netBeans/</id>
     <published>2023-12-16T09:00:00.000Z</published>
-    <updated>2023-12-22T08:53:49.298Z</updated>
+    <updated>2023-12-28T07:58:41.943Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -102,11 +162,11 @@
     <link href="https://eric999j.github.io/engineer/javaEE/"/>
     <id>https://eric999j.github.io/engineer/javaEE/</id>
     <published>2023-12-09T07:30:00.000Z</published>
-    <updated>2023-12-22T09:06:36.250Z</updated>
+    <updated>2023-12-29T10:04:29.448Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;親兒子，&lt;a href=&quot;https://eric999j.github.io/engineer/spring/&quot;&gt;Spring&lt;/a&gt;是私生子=p&lt;/p&gt;</summary>
+&lt;p&gt;親兒子，Spring是私生子=p&lt;/p&gt;</summary>
     
     
     
@@ -243,7 +303,7 @@
     <link href="https://eric999j.github.io/engineer/annotation/"/>
     <id>https://eric999j.github.io/engineer/annotation/</id>
     <published>2023-10-01T10:00:00.000Z</published>
-    <updated>2023-10-01T09:49:06.723Z</updated>
+    <updated>2023-12-31T07:48:47.632Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-14.jpeg&quot;&gt;&lt;/p&gt;
@@ -323,11 +383,11 @@
     <link href="https://eric999j.github.io/engineer/c3p0/"/>
     <id>https://eric999j.github.io/engineer/c3p0/</id>
     <published>2023-08-20T11:30:00.000Z</published>
-    <updated>2023-09-14T09:36:23.777Z</updated>
+    <updated>2023-12-29T07:53:18.379Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;開源 JDBC pool(存放空閒連線的buffer)，比JDBC高效，更好處理高並發。&lt;/p&gt;</summary>
+&lt;p&gt;開源 JDBC pool(存放空閒連線的buffer)，比DBCP高效，更好處理高並發。&lt;/p&gt;</summary>
     
     
     
@@ -355,65 +415,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TOAD溝通法</title>
-    <link href="https://eric999j.github.io/manager/TOAD/"/>
-    <id>https://eric999j.github.io/manager/TOAD/</id>
-    <published>2023-08-06T09:00:00.000Z</published>
-    <updated>2023-08-06T11:06:03.964Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-14.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;告知、觀察、提問、討論，四種溝通方式。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cold Tapioca Pearl</title>
-    <link href="https://eric999j.github.io/life/tapiocaPearl/"/>
-    <id>https://eric999j.github.io/life/tapiocaPearl/</id>
-    <published>2023-07-29T11:00:00.000Z</published>
-    <updated>2023-08-12T04:44:44.537Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/NyGpMq8.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Hi Japan &amp;amp;&amp;amp; Taiwan!  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>點字</title>
-    <link href="https://eric999j.github.io/life/braille/"/>
-    <id>https://eric999j.github.io/life/braille/</id>
-    <published>2023-07-23T11:30:00.000Z</published>
-    <updated>2023-07-29T10:02:25.415Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/GO95sU9.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;每次看到這些小凸點總會好奇在說些什麼，今天就來研究一下吧。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
     
   </entry>
   

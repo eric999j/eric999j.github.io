@@ -20,16 +20,16 @@
     var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="開源 JDBC pool(存放空閒連線的buffer)，比JDBC高效，更好處理高並發。">
+  <meta name="description" content="開源 JDBC pool(存放空閒連線的buffer)，比DBCP高效，更好處理高並發。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C3P0">
 <meta property="og:url" content="https://eric999j.github.io/engineer/c3p0/index.html">
 <meta property="og:site_name" content="Lunski&#39;s Clutter">
-<meta property="og:description" content="開源 JDBC pool(存放空閒連線的buffer)，比JDBC高效，更好處理高並發。">
+<meta property="og:description" content="開源 JDBC pool(存放空閒連線的buffer)，比DBCP高效，更好處理高並發。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg">
 <meta property="article:published_time" content="2023-08-20T11:30:00.000Z">
-<meta property="article:modified_time" content="2023-09-14T09:36:23.777Z">
+<meta property="article:modified_time" content="2023-12-29T07:53:18.379Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-09-14 17:36:23" itemprop="dateModified" datetime="2023-09-14T17:36:23+08:00">2023-09-14</time>
+                <time title="Modified: 2023-12-29 15:53:18" itemprop="dateModified" datetime="2023-12-29T15:53:18+08:00">2023-12-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.6k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -254,18 +254,40 @@
 
       
         <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg"></p>
-<p>開源 JDBC pool(存放空閒連線的buffer)，比JDBC高效，更好處理高並發。</p>
+<p>開源 JDBC pool(存放空閒連線的buffer)，比DBCP高效，更好處理高並發。</p>
 <a id="more"></a>
 
-<p>實現<a target="_blank" rel="noopener" href="https://blog.csdn.net/wn084/article/details/80729230">JNDI</a>(J2EE配置與管理後端資料庫)，優化資料庫連接時間(連接池存取)與利用(連接成本比JDBC低)，避免memory leak。</p>
-<h1 id="利用上次的mysql-image"><a href="#利用上次的mysql-image" class="headerlink" title="利用上次的mysql image"></a><a href="https://eric999j.github.io/engineer/h2/">利用上次的mysql image</a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h 127.0.0.1 -u root -p</span><br></pre></td></tr></table></figure>
+<p>C3P0實現<a href="https://eric999j.github.io/engineer/javaEE/">JNDI</a>，優化資料庫連接時間，避免memory leak。</p>
+<p><code>2013/12</code> 更流行的連接池技術是 <a target="_blank" rel="noopener" href="https://www.baeldung.com/hikaricp">HikariCP</a>，更高的性能、穩定性,並提供了比 C3P0 和 DBCP 更簡單的配置方式。</p>
+<h1 id="C3P0-v-s-DBCP"><a href="#C3P0-v-s-DBCP" class="headerlink" title="C3P0 v.s. DBCP"></a>C3P0 v.s. DBCP</h1><p>DBCP</p>
+<ul>
+<li>Apache 開源基金會較早的數據庫連接池技術</li>
+<li>較易用</li>
+</ul>
+<p>C3P0</p>
+<ul>
+<li>提供了比 DBCP 更多的功能, 如自動回收空閒連接, 自動重試失敗等</li>
+<li>較高效</li>
+</ul>
+<h1 id="C3P0-利用上次的mysql-image-建置"><a href="#C3P0-利用上次的mysql-image-建置" class="headerlink" title="C3P0 利用上次的mysql image 建置"></a>C3P0 <a href="https://eric999j.github.io/engineer/h2/">利用上次的mysql image</a> 建置</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h 127.0.0.1 -u root -p</span><br></pre></td></tr></table></figure>
 
 <h2 id="增加測資"><a href="#增加測資" class="headerlink" title="增加測資"></a>增加測資</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE DATABASE ems;</span><br><span class="line">Query OK, 1 row affected (0.06 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; use ems;</span><br><span class="line">Database changed</span><br><span class="line">mysql&gt; create table mytesttable(</span><br><span class="line">    -&gt;   rollno int primary key auto_increment,</span><br><span class="line">    -&gt;   firstname varchar(50) not null,</span><br><span class="line">    -&gt;   lastname varchar(50) not null,</span><br><span class="line">    -&gt;   CreatedDTTM DATETIME DEFAULT NOW()</span><br><span class="line">    -&gt; );</span><br><span class="line">Query OK, 0 rows affected (0.21 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; insert into mytesttable(rollno, firstname, lastname) values(1, &#39;Eric&#39;, &#39;Lu&#39;);</span><br><span class="line">Query OK, 1 row affected (0.08 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; SHOW COLUMNS FROM mytesttable;</span><br><span class="line">+-------------+-------------+------+-----+-------------------+-------------------+</span><br><span class="line">| Field       | Type        | Null | Key | Default           | Extra             |</span><br><span class="line">+-------------+-------------+------+-----+-------------------+-------------------+</span><br><span class="line">| rollno      | int         | NO   | PRI | NULL              | auto_increment    |</span><br><span class="line">| firstname   | varchar(50) | NO   |     | NULL              |                   |</span><br><span class="line">| lastname    | varchar(50) | NO   |     | NULL              |                   |</span><br><span class="line">| CreatedDTTM | datetime    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |</span><br><span class="line">+-------------+-------------+------+-----+-------------------+-------------------+</span><br><span class="line">4 rows in set (0.05 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; select * from mytesttable;</span><br><span class="line">+--------+-----------+----------+---------------------+</span><br><span class="line">| rollno | firstname | lastname | CreatedDTTM         |</span><br><span class="line">+--------+-----------+----------+---------------------+</span><br><span class="line">|      1 | Eric      | Lu       | 2023-08-20 10:47:50 |</span><br><span class="line">+--------+-----------+----------+---------------------+</span><br><span class="line">1 row in set (0.01 sec)</span><br></pre></td></tr></table></figure>
 
-<h1 id="C3P0使用"><a href="#C3P0使用" class="headerlink" title="C3P0使用"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/SUN99bk/p/12181493.html#_label4">C3P0使用</a></h1><h1 id="資料庫設計高並發優化"><a href="#資料庫設計高並發優化" class="headerlink" title="資料庫設計高並發優化"></a>資料庫設計高並發優化</h1><p>“讀寫分離” (Read-Write Splitting) 是一種常見的資料庫優化策略，將資料庫的讀取（Read）和寫入（Write）操作分隔到不同的伺服器或伺服器集群上，從而提高整體的性能和伸縮性。</p>
-<h1 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h1><ul>
+<h2 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://linuxhint.com/fix-zsh-command-not-found-mac/">zsh command not found mysql Error on Mac</a></li>
 </ul>
+<h1 id="C3P0使用"><a href="#C3P0使用" class="headerlink" title="C3P0使用"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/SUN99bk/p/12181493.html#_label4">C3P0使用</a></h1><h1 id="資料庫設計高並發優化"><a href="#資料庫設計高並發優化" class="headerlink" title="資料庫設計高並發優化"></a>資料庫設計高並發優化</h1><p>“讀寫分離” (Read-Write Splitting) 是一種常見的資料庫優化策略，將資料庫的讀取（Read）和寫入（Write）操作分隔到不同的伺服器或伺服器集群上，從而提高整體的性能和伸縮性。</p>
+<h1 id="DBCP-DataBase-Connection-Pool"><a href="#DBCP-DataBase-Connection-Pool" class="headerlink" title="DBCP(DataBase Connection Pool)"></a>DBCP(DataBase Connection Pool)</h1><p>建立在Jakarta Commons Pool連接池框架的基礎上,用於在應用程序中管理數據庫連接的創建、訪問和關閉。</p>
+<ol>
+<li>支持連接池:創建一個連接池,管理創建和重用連接對象,避免反覆創建新連接。</li>
+<li>支持多種數據庫:支持常見關系型數據庫如Oracle、MySQL、PostgreSQL等。</li>
+<li>連接管理:管理空閒和活動連接,能夠清理無效和泄露的連接。</li>
+<li>性能優化:池化和重用連接可以提高系統性能,減輕數據庫負載。</li>
+<li>多線程安全:連接池和連接訪問支持多線程應用。</li>
+<li>監控統計:提供大量連接池使用和性能的監控統計數據。</li>
+<li>參數配置:各類超時、最大連接數等都可以通過參數進行調整。</li>
+<li>JMX管理:支持JMXface管理和監控接口。</li>
+</ol>
 
 <div>
     <hr>
@@ -374,7 +396,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%A9%E7%94%A8%E4%B8%8A%E6%AC%A1%E7%9A%84mysql-image"><span class="nav-number">1.</span> <span class="nav-text">利用上次的mysql image</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%B8%AC%E8%B3%87"><span class="nav-number">1.1.</span> <span class="nav-text">增加測資</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">C3P0使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E5%BA%AB%E8%A8%AD%E8%A8%88%E9%AB%98%E4%B8%A6%E7%99%BC%E5%84%AA%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">資料庫設計高並發優化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Issue"><span class="nav-number">4.</span> <span class="nav-text">Issue</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0-v-s-DBCP"><span class="nav-number">1.</span> <span class="nav-text">C3P0 v.s. DBCP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0-%E5%88%A9%E7%94%A8%E4%B8%8A%E6%AC%A1%E7%9A%84mysql-image-%E5%BB%BA%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">C3P0 利用上次的mysql image 建置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%B8%AC%E8%B3%87"><span class="nav-number">2.1.</span> <span class="nav-text">增加測資</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Issue"><span class="nav-number">2.2.</span> <span class="nav-text">Issue</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0%E4%BD%BF%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">C3P0使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E5%BA%AB%E8%A8%AD%E8%A8%88%E9%AB%98%E4%B8%A6%E7%99%BC%E5%84%AA%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">資料庫設計高並發優化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DBCP-DataBase-Connection-Pool"><span class="nav-number">5.</span> <span class="nav-text">DBCP(DataBase Connection Pool)</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -392,7 +414,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">311</span>
+          <span class="site-state-item-count">314</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -460,12 +482,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">441k</span>
+    <span title="Symbols count total">446k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:41</span>
+    <span title="Reading time total">6:45</span>
 </div>
 
         
