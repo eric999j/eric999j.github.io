@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2023-12-31T08:09:35.753Z</updated>
+  <updated>2024-01-06T14:51:15.882Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JSP (Jakarta/Java Server Pages) Scope</title>
+    <link href="https://eric999j.github.io/engineer/scope/"/>
+    <id>https://eric999j.github.io/engineer/scope/</id>
+    <published>2024-01-06T15:00:00.000Z</published>
+    <updated>2024-01-06T14:51:15.882Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;網頁的生命週期&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>UML</title>
@@ -142,7 +162,7 @@
     <link href="https://eric999j.github.io/engineer/netBeans/"/>
     <id>https://eric999j.github.io/engineer/netBeans/</id>
     <published>2023-12-16T09:00:00.000Z</published>
-    <updated>2023-12-28T07:58:41.943Z</updated>
+    <updated>2024-01-06T14:56:29.171Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -388,26 +408,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;開源 JDBC pool(存放空閒連線的buffer)，比DBCP高效，更好處理高並發。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Grafana</title>
-    <link href="https://eric999j.github.io/engineer/grafana/"/>
-    <id>https://eric999j.github.io/engineer/grafana/</id>
-    <published>2023-08-13T08:30:00.000Z</published>
-    <updated>2023-11-12T09:31:10.129Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Hi Grafana。&lt;/p&gt;</summary>
     
     
     
