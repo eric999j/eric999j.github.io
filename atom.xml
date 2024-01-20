@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-01-06T14:51:15.882Z</updated>
+  <updated>2024-01-19T05:40:36.619Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP</title>
+    <link href="https://eric999j.github.io/manager/HTTP/"/>
+    <id>https://eric999j.github.io/manager/HTTP/</id>
+    <published>2024-01-20T10:30:00.000Z</published>
+    <updated>2024-01-19T05:40:36.619Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;網頁傳輸狀態碼與操作介紹&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>JSP (Jakarta/Java Server Pages) Scope</title>
@@ -162,7 +182,7 @@
     <link href="https://eric999j.github.io/engineer/netBeans/"/>
     <id>https://eric999j.github.io/engineer/netBeans/</id>
     <published>2023-12-16T09:00:00.000Z</published>
-    <updated>2024-01-06T14:56:29.171Z</updated>
+    <updated>2024-01-10T01:30:34.146Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -388,26 +408,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-11.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;好的管家帶你上天堂。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C3P0</title>
-    <link href="https://eric999j.github.io/engineer/c3p0/"/>
-    <id>https://eric999j.github.io/engineer/c3p0/</id>
-    <published>2023-08-20T11:30:00.000Z</published>
-    <updated>2023-12-29T07:53:18.379Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;開源 JDBC pool(存放空閒連線的buffer)，比DBCP高效，更好處理高並發。&lt;/p&gt;</summary>
     
     
     

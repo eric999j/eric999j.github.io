@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-10.jpeg">
 <meta property="article:published_time" content="2023-08-20T11:30:00.000Z">
-<meta property="article:modified_time" content="2023-12-29T07:53:18.379Z">
+<meta property="article:modified_time" content="2024-01-10T03:11:27.696Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-12-29 15:53:18" itemprop="dateModified" datetime="2023-12-29T15:53:18+08:00">2023-12-29</time>
+                <time title="Modified: 2024-01-10 11:11:27" itemprop="dateModified" datetime="2024-01-10T11:11:27+08:00">2024-01-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -259,6 +259,17 @@
 
 <p>C3P0實現<a href="https://eric999j.github.io/engineer/javaEE/">JNDI</a>，優化資料庫連接時間，避免memory leak。</p>
 <p><code>2013/12</code> 更流行的連接池技術是 <a target="_blank" rel="noopener" href="https://www.baeldung.com/hikaricp">HikariCP</a>，更高的性能、穩定性,並提供了比 C3P0 和 DBCP 更簡單的配置方式。</p>
+<h1 id="DBCP-DataBase-Connection-Pool"><a href="#DBCP-DataBase-Connection-Pool" class="headerlink" title="DBCP(DataBase Connection Pool)"></a>DBCP(DataBase Connection Pool)</h1><p>建立在Jakarta Commons Pool連接池框架的基礎上,用於在應用程序中管理數據庫連接的創建、訪問和關閉。</p>
+<ol>
+<li>支持連接池:創建一個連接池,管理創建和重用連接對象,避免反覆創建新連接。</li>
+<li>支持多種數據庫:支持常見關系型數據庫如Oracle、MySQL、PostgreSQL等。</li>
+<li>連接管理:管理空閒和活動連接,能夠清理無效和泄露的連接。</li>
+<li>性能優化:池化和重用連接可以提高系統性能,減輕數據庫負載。</li>
+<li>多線程安全:連接池和連接訪問支持多線程應用。</li>
+<li>監控統計:提供大量連接池使用和性能的監控統計數據。</li>
+<li>參數配置:各類超時、最大連接數等都可以通過參數進行調整。</li>
+<li>JMX管理:支持JMXface管理和監控接口。</li>
+</ol>
 <h1 id="C3P0-v-s-DBCP"><a href="#C3P0-v-s-DBCP" class="headerlink" title="C3P0 v.s. DBCP"></a>C3P0 v.s. DBCP</h1><p>DBCP</p>
 <ul>
 <li>Apache 開源基金會較早的數據庫連接池技術</li>
@@ -277,17 +288,6 @@
 <li><a target="_blank" rel="noopener" href="https://linuxhint.com/fix-zsh-command-not-found-mac/">zsh command not found mysql Error on Mac</a></li>
 </ul>
 <h1 id="C3P0使用"><a href="#C3P0使用" class="headerlink" title="C3P0使用"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/SUN99bk/p/12181493.html#_label4">C3P0使用</a></h1><h1 id="資料庫設計高並發優化"><a href="#資料庫設計高並發優化" class="headerlink" title="資料庫設計高並發優化"></a>資料庫設計高並發優化</h1><p>“讀寫分離” (Read-Write Splitting) 是一種常見的資料庫優化策略，將資料庫的讀取（Read）和寫入（Write）操作分隔到不同的伺服器或伺服器集群上，從而提高整體的性能和伸縮性。</p>
-<h1 id="DBCP-DataBase-Connection-Pool"><a href="#DBCP-DataBase-Connection-Pool" class="headerlink" title="DBCP(DataBase Connection Pool)"></a>DBCP(DataBase Connection Pool)</h1><p>建立在Jakarta Commons Pool連接池框架的基礎上,用於在應用程序中管理數據庫連接的創建、訪問和關閉。</p>
-<ol>
-<li>支持連接池:創建一個連接池,管理創建和重用連接對象,避免反覆創建新連接。</li>
-<li>支持多種數據庫:支持常見關系型數據庫如Oracle、MySQL、PostgreSQL等。</li>
-<li>連接管理:管理空閒和活動連接,能夠清理無效和泄露的連接。</li>
-<li>性能優化:池化和重用連接可以提高系統性能,減輕數據庫負載。</li>
-<li>多線程安全:連接池和連接訪問支持多線程應用。</li>
-<li>監控統計:提供大量連接池使用和性能的監控統計數據。</li>
-<li>參數配置:各類超時、最大連接數等都可以通過參數進行調整。</li>
-<li>JMX管理:支持JMXface管理和監控接口。</li>
-</ol>
 
 <div>
     <hr>
@@ -396,7 +396,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0-v-s-DBCP"><span class="nav-number">1.</span> <span class="nav-text">C3P0 v.s. DBCP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0-%E5%88%A9%E7%94%A8%E4%B8%8A%E6%AC%A1%E7%9A%84mysql-image-%E5%BB%BA%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">C3P0 利用上次的mysql image 建置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%B8%AC%E8%B3%87"><span class="nav-number">2.1.</span> <span class="nav-text">增加測資</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Issue"><span class="nav-number">2.2.</span> <span class="nav-text">Issue</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0%E4%BD%BF%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">C3P0使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E5%BA%AB%E8%A8%AD%E8%A8%88%E9%AB%98%E4%B8%A6%E7%99%BC%E5%84%AA%E5%8C%96"><span class="nav-number">4.</span> <span class="nav-text">資料庫設計高並發優化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DBCP-DataBase-Connection-Pool"><span class="nav-number">5.</span> <span class="nav-text">DBCP(DataBase Connection Pool)</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DBCP-DataBase-Connection-Pool"><span class="nav-number">1.</span> <span class="nav-text">DBCP(DataBase Connection Pool)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0-v-s-DBCP"><span class="nav-number">2.</span> <span class="nav-text">C3P0 v.s. DBCP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0-%E5%88%A9%E7%94%A8%E4%B8%8A%E6%AC%A1%E7%9A%84mysql-image-%E5%BB%BA%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">C3P0 利用上次的mysql image 建置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%B8%AC%E8%B3%87"><span class="nav-number">3.1.</span> <span class="nav-text">增加測資</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Issue"><span class="nav-number">3.2.</span> <span class="nav-text">Issue</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C3P0%E4%BD%BF%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">C3P0使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E5%BA%AB%E8%A8%AD%E8%A8%88%E9%AB%98%E4%B8%A6%E7%99%BC%E5%84%AA%E5%8C%96"><span class="nav-number">5.</span> <span class="nav-text">資料庫設計高並發優化</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -414,7 +414,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">315</span>
+          <span class="site-state-item-count">316</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -482,12 +482,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">447k</span>
+    <span title="Symbols count total">451k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:46</span>
+    <span title="Reading time total">6:50</span>
 </div>
 
         
