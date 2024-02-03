@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg">
 <meta property="article:published_time" content="2023-06-18T13:30:00.000Z">
-<meta property="article:modified_time" content="2023-12-31T08:06:02.924Z">
+<meta property="article:modified_time" content="2024-01-24T02:14:33.537Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-12-31 16:06:02" itemprop="dateModified" datetime="2023-12-31T16:06:02+08:00">2023-12-31</time>
+                <time title="Modified: 2024-01-24 10:14:33" itemprop="dateModified" datetime="2024-01-24T10:14:33+08:00">2024-01-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>407</span>
+              <span>678</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -265,6 +265,20 @@
 <h1 id="2-資料鏈結層MAC-address"><a href="#2-資料鏈結層MAC-address" class="headerlink" title="2.資料鏈結層MAC address"></a>2.資料鏈結層MAC address</h1><p>MAC位置，框架(將封包分解為更小的部分)中的流量控制和錯誤控制，確立封包內流程控制。<br><code>[MAC資訊 [IP資訊 [Socket資訊 [訊息]]]]</code></p>
 <h2 id="1-實體層"><a href="#1-實體層" class="headerlink" title="1.實體層"></a>1.實體層</h2><p>硬體設備轉0/1電子訊號，確立位元流。  </p>
 <p>發送方：7&gt;1<br>接收方：1&gt;7  </p>
+<h1 id="JAVA-物件種類"><a href="#JAVA-物件種類" class="headerlink" title="JAVA 物件種類"></a>JAVA <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000041290899">物件種類</a></h1><ul>
+<li><p>POJO (Plain Old Java Object)<br>最常見的JavaBean, 私有類別成員與getter, setter的物件</p>
+</li>
+<li><p>VO (Value Object): 表示層<br>準備給前端呈現，存取資料的物件</p>
+</li>
+<li><p>BO (Business Object): 業務層<br>包含業務邏輯，服務內部使用的物件</p>
+</li>
+<li><p>PO (Persistent Object)：持久層<br>ORM下對應資料表，儲存資料的物件</p>
+</li>
+<li><p>DTO (Data Transfer Object) ：數據傳輸<br>存在各層方便傳資料的物件，依目的可以轉VO，BO，或從PO轉DTO  </p>
+</li>
+<li><p>DAO (Data Access Object)<br>撰寫sql的物件</p>
+</li>
+</ul>
 
 <div>
     <hr>
@@ -373,7 +387,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#7-%E6%87%89%E7%94%A8%E5%B1%A4HTTP-header"><span class="nav-number">1.</span> <span class="nav-text">7.應用層HTTP header</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E8%A1%A8%E7%A4%BA-%E7%8F%BE-%E5%B1%A4"><span class="nav-number">1.1.</span> <span class="nav-text">6.表示(現)層</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%9C%83%E8%A9%B1-%E6%A5%AD%E5%8B%99-%E6%8C%81%E4%B9%85%E5%B1%A4"><span class="nav-number">1.2.</span> <span class="nav-text">5.會話(業務)&#x2F;持久層</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E5%82%B3%E8%BC%B8%E5%B1%A4TCP-check"><span class="nav-number">2.</span> <span class="nav-text">4.傳輸層TCP check</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E7%B6%B2%E8%B7%AF%E5%B1%A4IP-connect"><span class="nav-number">3.</span> <span class="nav-text">3.網路層IP connect</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E8%B3%87%E6%96%99%E9%8F%88%E7%B5%90%E5%B1%A4MAC-address"><span class="nav-number">4.</span> <span class="nav-text">2.資料鏈結層MAC address</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AF%A6%E9%AB%94%E5%B1%A4"><span class="nav-number">4.1.</span> <span class="nav-text">1.實體層</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#7-%E6%87%89%E7%94%A8%E5%B1%A4HTTP-header"><span class="nav-number">1.</span> <span class="nav-text">7.應用層HTTP header</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E8%A1%A8%E7%A4%BA-%E7%8F%BE-%E5%B1%A4"><span class="nav-number">1.1.</span> <span class="nav-text">6.表示(現)層</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%9C%83%E8%A9%B1-%E6%A5%AD%E5%8B%99-%E6%8C%81%E4%B9%85%E5%B1%A4"><span class="nav-number">1.2.</span> <span class="nav-text">5.會話(業務)&#x2F;持久層</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E5%82%B3%E8%BC%B8%E5%B1%A4TCP-check"><span class="nav-number">2.</span> <span class="nav-text">4.傳輸層TCP check</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E7%B6%B2%E8%B7%AF%E5%B1%A4IP-connect"><span class="nav-number">3.</span> <span class="nav-text">3.網路層IP connect</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E8%B3%87%E6%96%99%E9%8F%88%E7%B5%90%E5%B1%A4MAC-address"><span class="nav-number">4.</span> <span class="nav-text">2.資料鏈結層MAC address</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AF%A6%E9%AB%94%E5%B1%A4"><span class="nav-number">4.1.</span> <span class="nav-text">1.實體層</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JAVA-%E7%89%A9%E4%BB%B6%E7%A8%AE%E9%A1%9E"><span class="nav-number">5.</span> <span class="nav-text">JAVA 物件種類</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -391,7 +405,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">316</span>
+          <span class="site-state-item-count">318</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -459,12 +473,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">451k</span>
+    <span title="Symbols count total">454k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6:50</span>
+    <span title="Reading time total">6:52</span>
 </div>
 
         
