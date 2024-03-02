@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-03-02T15:28:04.368Z</updated>
+  <updated>2024-03-02T16:06:42.547Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高效人士的7個習慣</title>
+    <link href="https://eric999j.github.io/manager/success/"/>
+    <id>https://eric999j.github.io/manager/success/</id>
+    <published>2024-03-02T15:40:00.000Z</published>
+    <updated>2024-03-02T16:06:42.547Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;管理好自身，幫助他人&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>年後剷肉</title>
@@ -388,26 +408,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;基於IEEE 802.11標準的無線區域網路技術&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>資料科學中的隱私保護</title>
-    <link href="https://eric999j.github.io/manager/DSPrivacy/"/>
-    <id>https://eric999j.github.io/manager/DSPrivacy/</id>
-    <published>2023-11-04T09:00:00.000Z</published>
-    <updated>2023-11-04T09:48:44.257Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;資料科學中隱私保護要點&lt;/p&gt;</summary>
     
     
     
