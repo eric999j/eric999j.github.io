@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-02-18T06:01:13.234Z</updated>
+  <updated>2024-03-02T15:28:04.368Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>年後剷肉</title>
+    <link href="https://eric999j.github.io/life/fitness/"/>
+    <id>https://eric999j.github.io/life/fitness/</id>
+    <published>2024-03-02T15:30:00.000Z</published>
+    <updated>2024-03-02T15:28:04.368Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;居家運動&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
+    
+  </entry>
   
   <entry>
     <title>雲林笨港味</title>
@@ -81,7 +101,7 @@
     <link href="https://eric999j.github.io/engineer/git/"/>
     <id>https://eric999j.github.io/engineer/git/</id>
     <published>2024-02-03T10:30:00.000Z</published>
-    <updated>2024-02-08T09:00:27.557Z</updated>
+    <updated>2024-03-02T15:08:25.236Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
@@ -262,11 +282,11 @@
     <link href="https://eric999j.github.io/engineer/netBeans/"/>
     <id>https://eric999j.github.io/engineer/netBeans/</id>
     <published>2023-12-16T09:00:00.000Z</published>
-    <updated>2024-01-10T01:30:34.146Z</updated>
+    <updated>2024-03-02T15:03:43.956Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;官方支持的Java IDE。&lt;/p&gt;</summary>
+&lt;p&gt;官方支持的Java IDE, intellij前身。  &lt;/p&gt;</summary>
     
     
     
@@ -388,26 +408,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(5).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;資料科學中隱私保護要點&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mobile Network</title>
-    <link href="https://eric999j.github.io/manager/mobile/"/>
-    <id>https://eric999j.github.io/manager/mobile/</id>
-    <published>2023-10-28T09:30:00.000Z</published>
-    <updated>2023-10-28T09:18:06.533Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;行動通訊架構&lt;/p&gt;</summary>
     
     
     
