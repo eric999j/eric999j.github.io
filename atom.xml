@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-03-02T16:06:42.547Z</updated>
+  <updated>2024-03-16T10:35:00.640Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MFA</title>
+    <link href="https://eric999j.github.io/manager/mfa/"/>
+    <id>https://eric999j.github.io/manager/mfa/</id>
+    <published>2024-03-16T06:00:00.000Z</published>
+    <updated>2024-03-16T10:35:00.640Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;身份認證&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>高效人士的7個習慣</title>
@@ -61,7 +81,7 @@
     <link href="https://eric999j.github.io/life/yunlin/"/>
     <id>https://eric999j.github.io/life/yunlin/</id>
     <published>2024-02-18T07:00:00.000Z</published>
-    <updated>2024-02-18T06:01:13.234Z</updated>
+    <updated>2024-03-16T09:02:19.835Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/1keU0NN.jpeg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -101,7 +121,7 @@
     <link href="https://eric999j.github.io/manager/abilities/"/>
     <id>https://eric999j.github.io/manager/abilities/</id>
     <published>2024-02-03T11:00:00.000Z</published>
-    <updated>2024-02-08T08:57:44.208Z</updated>
+    <updated>2024-03-16T07:37:08.972Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
@@ -121,7 +141,7 @@
     <link href="https://eric999j.github.io/engineer/git/"/>
     <id>https://eric999j.github.io/engineer/git/</id>
     <published>2024-02-03T10:30:00.000Z</published>
-    <updated>2024-03-02T15:08:25.236Z</updated>
+    <updated>2024-03-16T10:01:49.109Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
@@ -302,7 +322,7 @@
     <link href="https://eric999j.github.io/engineer/netBeans/"/>
     <id>https://eric999j.github.io/engineer/netBeans/</id>
     <published>2023-12-16T09:00:00.000Z</published>
-    <updated>2024-03-02T15:03:43.956Z</updated>
+    <updated>2024-03-16T10:09:09.006Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
@@ -322,7 +342,7 @@
     <link href="https://eric999j.github.io/engineer/javaEE/"/>
     <id>https://eric999j.github.io/engineer/javaEE/</id>
     <published>2023-12-09T07:30:00.000Z</published>
-    <updated>2023-12-29T10:04:29.448Z</updated>
+    <updated>2024-03-16T10:05:48.297Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
@@ -395,26 +415,6 @@
     
     
     <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wi-Fi</title>
-    <link href="https://eric999j.github.io/manager/wifi/"/>
-    <id>https://eric999j.github.io/manager/wifi/</id>
-    <published>2023-11-12T10:30:00.000Z</published>
-    <updated>2023-11-12T10:27:56.364Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;基於IEEE 802.11標準的無線區域網路技術&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
