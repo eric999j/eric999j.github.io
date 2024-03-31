@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg">
 <meta property="og:image" content="https://i.imgur.com/pYrmIoU.jpg">
 <meta property="article:published_time" content="2023-12-09T07:30:00.000Z">
-<meta property="article:modified_time" content="2024-03-16T10:05:48.297Z">
+<meta property="article:modified_time" content="2024-03-31T10:57:47.447Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-03-16 18:05:48" itemprop="dateModified" datetime="2024-03-16T18:05:48+08:00">2024-03-16</time>
+                <time title="Modified: 2024-03-31 18:57:47" itemprop="dateModified" datetime="2024-03-31T18:57:47+08:00">2024-03-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3.2k</span>
+              <span>3.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -359,6 +359,15 @@
 <li>Extension Class Loader</li>
 <li>BootStrap Class Loader</li>
 </ol>
+<h1 id="pdfBox"><a href="#pdfBox" class="headerlink" title="pdfBox"></a>pdfBox</h1><p>創建、解析和操作PDF的Java庫</p>
+<pre><code>* 加載pdf PDDocument.load()
+* 取得頁面 PDPageTree
+* 取得頁面字, 圖 PDResources
+* 取文本 PDFTextStripper
+* 取得頁面 PDDocument.getPages()
+* 取得關鍵字 PDDocumentInformation
+* 插入 PDPageContentStream
+* 儲存 PDDocument.save()或PDDocument.saveIncremental()</code></pre>
 
 <div>
     <hr>
@@ -467,7 +476,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Jakarta-EE"><span class="nav-number">1.</span> <span class="nav-text">Jakarta EE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Jakarta-EE-Annotations"><span class="nav-number">2.</span> <span class="nav-text">Jakarta EE Annotations</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Framework"><span class="nav-number">2.1.</span> <span class="nav-text">Framework</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Controller-amp-amp-View-6-Presentation-Layer"><span class="nav-number">3.</span> <span class="nav-text">[Controller &amp;&amp; View] 6 Presentation Layer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Model-Domain-Model-Data-Access-Layer"><span class="nav-number">4.</span> <span class="nav-text">Model &#x3D; Domain Model + Data Access Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Domain-Model-Business-Layer"><span class="nav-number">4.1.</span> <span class="nav-text">[Domain Model] Business Layer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Access-Layer-Persistence-Layer-Integration-Layer"><span class="nav-number">4.2.</span> <span class="nav-text">[Data Access Layer] Persistence Layer&#x2F;Integration Layer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OSI-Model"><span class="nav-number">4.3.</span> <span class="nav-text">OSI Model</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Steps-to-load-class"><span class="nav-number">5.</span> <span class="nav-text">Steps to load class</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Jakarta-EE"><span class="nav-number">1.</span> <span class="nav-text">Jakarta EE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Jakarta-EE-Annotations"><span class="nav-number">2.</span> <span class="nav-text">Jakarta EE Annotations</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Framework"><span class="nav-number">2.1.</span> <span class="nav-text">Framework</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Controller-amp-amp-View-6-Presentation-Layer"><span class="nav-number">3.</span> <span class="nav-text">[Controller &amp;&amp; View] 6 Presentation Layer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Model-Domain-Model-Data-Access-Layer"><span class="nav-number">4.</span> <span class="nav-text">Model &#x3D; Domain Model + Data Access Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Domain-Model-Business-Layer"><span class="nav-number">4.1.</span> <span class="nav-text">[Domain Model] Business Layer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Access-Layer-Persistence-Layer-Integration-Layer"><span class="nav-number">4.2.</span> <span class="nav-text">[Data Access Layer] Persistence Layer&#x2F;Integration Layer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OSI-Model"><span class="nav-number">4.3.</span> <span class="nav-text">OSI Model</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Steps-to-load-class"><span class="nav-number">5.</span> <span class="nav-text">Steps to load class</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pdfBox"><span class="nav-number">6.</span> <span class="nav-text">pdfBox</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -485,7 +494,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">323</span>
+          <span class="site-state-item-count">324</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -553,12 +562,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">462k</span>
+    <span title="Symbols count total">465k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">7:01</span>
+    <span title="Reading time total">7:02</span>
 </div>
 
         

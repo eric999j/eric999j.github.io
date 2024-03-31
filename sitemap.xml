@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/engineer/chrome/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/git/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/javaEE/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/about/index.html</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/netBeans/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/interview/java/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/JSFBasic/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/life/LunskiNo1/</loc>
     
     <lastmod>2024-03-31</lastmod>
@@ -16,35 +65,7 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/about/index.html</loc>
-    
-    <lastmod>2024-03-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/manager/mfa/</loc>
-    
-    <lastmod>2024-03-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/netBeans/</loc>
-    
-    <lastmod>2024-03-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/javaEE/</loc>
-    
-    <lastmod>2024-03-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/git/</loc>
     
     <lastmod>2024-03-16</lastmod>
     
@@ -122,13 +143,6 @@
   
   <url>
     <loc>https://eric999j.github.io/life/fitness/</loc>
-    
-    <lastmod>2024-03-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/interview/java/</loc>
     
     <lastmod>2024-03-02</lastmod>
     
@@ -388,13 +402,6 @@
   
   <url>
     <loc>https://eric999j.github.io/interview/mergeSort/</loc>
-    
-    <lastmod>2023-10-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/chrome/</loc>
     
     <lastmod>2023-10-16</lastmod>
     
