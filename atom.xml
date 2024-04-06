@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-03-31T10:29:20.945Z</updated>
+  <updated>2024-04-06T07:28:09.366Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,71 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ランデヴー - シャイトープ</title>
+    <link href="https://eric999j.github.io/life/rendezvous/"/>
+    <id>https://eric999j.github.io/life/rendezvous/</id>
+    <published>2024-04-06T08:00:00.000Z</published>
+    <updated>2024-04-06T07:28:09.366Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;回到過去。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue生命週期</title>
+    <link href="https://eric999j.github.io/engineer/vue/"/>
+    <id>https://eric999j.github.io/engineer/vue/</id>
+    <published>2024-04-06T07:00:00.000Z</published>
+    <updated>2024-04-06T07:47:24.283Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;初探知名的JS框架。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaServer Faces</title>
+    <link href="https://eric999j.github.io/engineer/JSF/"/>
+    <id>https://eric999j.github.io/engineer/JSF/</id>
+    <published>2024-04-06T06:30:00.000Z</published>
+    <updated>2024-04-06T07:41:15.789Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;用Java 寫網頁的東東&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JSF Tutorial - Basic</title>
     <link href="https://eric999j.github.io/engineer/JSFBasic/"/>
     <id>https://eric999j.github.io/engineer/JSFBasic/</id>
     <published>2024-03-31T10:00:00.000Z</published>
-    <updated>2024-03-31T10:29:20.945Z</updated>
+    <updated>2024-04-06T08:37:55.030Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-13.jpeg&quot;&gt;&lt;/p&gt;
@@ -354,67 +414,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java EE</title>
-    <link href="https://eric999j.github.io/engineer/javaEE/"/>
-    <id>https://eric999j.github.io/engineer/javaEE/</id>
-    <published>2023-12-09T07:30:00.000Z</published>
-    <updated>2024-03-31T10:57:47.447Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;親兒子，Spring是私生子=p&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手作坊</title>
-    <link href="https://eric999j.github.io/life/handicraftWorkshop/"/>
-    <id>https://eric999j.github.io/life/handicraftWorkshop/</id>
-    <published>2023-12-02T08:30:00.000Z</published>
-    <updated>2024-02-03T10:28:13.550Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JWGpvK0.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;美好生活 @w@/&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Golden milk chia pudding and Curry</title>
-    <link href="https://eric999j.github.io/life/goldenMilk/"/>
-    <id>https://eric999j.github.io/life/goldenMilk/</id>
-    <published>2023-11-20T00:00:00.000Z</published>
-    <updated>2023-12-17T00:47:10.858Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/EP7ktCw.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Hi Mexico &amp;amp;&amp;amp; India,  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
     
   </entry>
   
