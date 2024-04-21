@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-04-06T07:28:09.366Z</updated>
+  <updated>2024-04-21T14:05:29.651Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JPQL</title>
+    <link href="https://eric999j.github.io/engineer/JPQL/"/>
+    <id>https://eric999j.github.io/engineer/JPQL/</id>
+    <published>2024-04-21T11:30:00.000Z</published>
+    <updated>2024-04-21T14:05:29.651Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;JPA提供的一種查詢語言, 更符合OO。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>ランデヴー - シャイトープ</title>
@@ -394,26 +414,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NetBeans 小技巧</title>
-    <link href="https://eric999j.github.io/engineer/netBeans/"/>
-    <id>https://eric999j.github.io/engineer/netBeans/</id>
-    <published>2023-12-16T09:00:00.000Z</published>
-    <updated>2024-03-31T10:50:46.466Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;官方支持的Java IDE, intellij前身。  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
