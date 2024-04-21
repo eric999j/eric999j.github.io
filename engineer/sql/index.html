@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg">
 <meta property="article:published_time" content="2023-03-18T07:30:00.000Z">
-<meta property="article:modified_time" content="2024-02-18T06:15:45.417Z">
+<meta property="article:modified_time" content="2024-04-18T07:38:21.939Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-02-18 14:15:45" itemprop="dateModified" datetime="2024-02-18T14:15:45+08:00">2024-02-18</time>
+                <time title="Modified: 2024-04-18 15:38:21" itemprop="dateModified" datetime="2024-04-18T15:38:21+08:00">2024-04-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -264,6 +264,7 @@
 <li>Oracle 10%</li>
 <li>Container中使用SQL語法 80%</li>
 </ol>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>Join ==(inner) join<br>left/right join == left/right (outer) join<br>需要注意空格  </p>
 <h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a><a target="_blank" rel="noopener" href="https://hub.docker.com/_/mysql">MySQL</a></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull mysql</span><br><span class="line"></span><br><span class="line">$ docker run --name lunski-mysql -e MYSQL_ROOT_PASSWORD&#x3D;123456 -d mysql:latest</span><br><span class="line">5ced7384a860f02ab35c8993e27b766fad7be57e3d39cb1e7898fced47b80693</span><br><span class="line"></span><br><span class="line">$ docker ps</span><br><span class="line">CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                 NAMES</span><br><span class="line">5ced7384a860   mysql:latest   &quot;docker-entrypoint.s…&quot;   55 seconds ago   Up 54 seconds   3306&#x2F;tcp, 33060&#x2F;tcp   lunski-mysql</span><br><span class="line"></span><br><span class="line">$ docker exec -it lunski-mysql bash</span><br><span class="line">bash-4.4#  mysql -h localhost -u root -p</span><br><span class="line">&gt;</span><br><span class="line"></span><br><span class="line">$ mysql&gt; </span><br></pre></td></tr></table></figure>
 
 <ul>
@@ -542,7 +543,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL"><span class="nav-number">3.</span> <span class="nav-text">MySQL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question"><span class="nav-number">4.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mongo"><span class="nav-number">5.</span> <span class="nav-text">Mongo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Oracle"><span class="nav-number">6.</span> <span class="nav-text">Oracle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Select"><span class="nav-number">7.</span> <span class="nav-text">Select</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Update"><span class="nav-number">8.</span> <span class="nav-text">Update</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Delete"><span class="nav-number">9.</span> <span class="nav-text">Delete</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#insert"><span class="nav-number">10.</span> <span class="nav-text">insert</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Join"><span class="nav-number">11.</span> <span class="nav-text">Join</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Where"><span class="nav-number">12.</span> <span class="nav-text">Where</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ORDER-BY-%E2%80%9C%E6%AC%84%E4%BD%8D%E5%90%8D%E2%80%9D-ASC-DESC"><span class="nav-number">13.</span> <span class="nav-text">ORDER BY “欄位名” [ASC, DESC]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GROUP-BY-%E2%80%9C%E6%AC%84%E4%BD%8D%E5%90%8D%E2%80%9D"><span class="nav-number">14.</span> <span class="nav-text">GROUP BY “欄位名”;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HAVING-%E5%87%BD%E6%95%B8%E6%A2%9D%E4%BB%B6"><span class="nav-number">15.</span> <span class="nav-text">HAVING (函數條件);</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%91%E5%BE%B7%E6%AD%A3%E8%A6%8F%E5%8C%96"><span class="nav-number">15.1.</span> <span class="nav-text">科德正規化</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#O"><span class="nav-number">1.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#KRs"><span class="nav-number">2.</span> <span class="nav-text">KRs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F"><span class="nav-number">3.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL"><span class="nav-number">4.</span> <span class="nav-text">MySQL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question"><span class="nav-number">5.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mongo"><span class="nav-number">6.</span> <span class="nav-text">Mongo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Oracle"><span class="nav-number">7.</span> <span class="nav-text">Oracle</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Select"><span class="nav-number">8.</span> <span class="nav-text">Select</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Update"><span class="nav-number">9.</span> <span class="nav-text">Update</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Delete"><span class="nav-number">10.</span> <span class="nav-text">Delete</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#insert"><span class="nav-number">11.</span> <span class="nav-text">insert</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Join"><span class="nav-number">12.</span> <span class="nav-text">Join</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Where"><span class="nav-number">13.</span> <span class="nav-text">Where</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ORDER-BY-%E2%80%9C%E6%AC%84%E4%BD%8D%E5%90%8D%E2%80%9D-ASC-DESC"><span class="nav-number">14.</span> <span class="nav-text">ORDER BY “欄位名” [ASC, DESC]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GROUP-BY-%E2%80%9C%E6%AC%84%E4%BD%8D%E5%90%8D%E2%80%9D"><span class="nav-number">15.</span> <span class="nav-text">GROUP BY “欄位名”;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HAVING-%E5%87%BD%E6%95%B8%E6%A2%9D%E4%BB%B6"><span class="nav-number">16.</span> <span class="nav-text">HAVING (函數條件);</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%91%E5%BE%B7%E6%AD%A3%E8%A6%8F%E5%8C%96"><span class="nav-number">16.1.</span> <span class="nav-text">科德正規化</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -560,7 +561,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">327</span>
+          <span class="site-state-item-count">328</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -628,12 +629,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">471k</span>
+    <span title="Symbols count total">472k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">7:08</span>
+    <span title="Reading time total">7:09</span>
 </div>
 
         
