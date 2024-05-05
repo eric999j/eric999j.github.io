@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-04-21T14:05:29.651Z</updated>
+  <updated>2024-05-05T11:05:40.857Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chocolate Cake</title>
+    <link href="https://eric999j.github.io/life/chocolateCake/"/>
+    <id>https://eric999j.github.io/life/chocolateCake/</id>
+    <published>2024-05-05T11:30:00.000Z</published>
+    <updated>2024-05-05T11:05:40.857Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/39yy9Vd.jpeg&quot;&gt;&lt;br&gt;Brazilian Chef’s recipe!  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>買電腦要點</title>
+    <link href="https://eric999j.github.io/life/computer/"/>
+    <id>https://eric999j.github.io/life/computer/</id>
+    <published>2024-05-05T11:00:00.000Z</published>
+    <updated>2024-05-05T11:04:22.741Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(2).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;最近到光華找繪圖電腦, 也遇到三位熱心的服務生，上了寶貴的一課，就融合自身經驗紀錄下來吧&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
   
   <entry>
     <title>JPQL</title>
@@ -261,7 +300,7 @@
     <link href="https://eric999j.github.io/manager/HTTP/"/>
     <id>https://eric999j.github.io/manager/HTTP/</id>
     <published>2024-01-20T10:30:00.000Z</published>
-    <updated>2024-01-19T05:40:36.619Z</updated>
+    <updated>2024-05-01T06:36:05.988Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
@@ -365,48 +404,6 @@
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JRHdLw3.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;聖誕快樂 🧑‍🎄&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java8 Lambda and Stream</title>
-    <link href="https://eric999j.github.io/engineer/stream/"/>
-    <id>https://eric999j.github.io/engineer/stream/</id>
-    <published>2023-12-23T06:00:00.000Z</published>
-    <updated>2023-12-27T06:22:17.905Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;好用的酷東西。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>洗髮精</title>
-    <link href="https://eric999j.github.io/life/bodyWash/"/>
-    <id>https://eric999j.github.io/life/bodyWash/</id>
-    <published>2023-12-16T10:00:00.000Z</published>
-    <updated>2024-04-18T07:43:27.091Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/YmEDXZN.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;皮膚比較愛弱酸性。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
     
     
     
