@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg">
 <meta property="article:published_time" content="2024-02-03T10:30:00.000Z">
-<meta property="article:modified_time" content="2024-03-31T11:12:47.130Z">
+<meta property="article:modified_time" content="2024-05-18T08:15:38.581Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-03-31 19:12:47" itemprop="dateModified" datetime="2024-03-31T19:12:47+08:00">2024-03-31</time>
+                <time title="Modified: 2024-05-18 16:15:38" itemprop="dateModified" datetime="2024-05-18T16:15:38+08:00">2024-05-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.3k</span>
+              <span>2.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -266,7 +266,7 @@
 <li>git –set-upstream-to=origin (設定上游)</li>
 </ul>
 <h1 id="程式"><a href="#程式" class="headerlink" title="程式"></a>程式</h1><blockquote>
-<p>何時pull:<br>在開始工作之前 (以便了解最新的更改)<br>在你推送之前 (以防工作時發生了變化)  </p>
+<p>何時pull:<br>在開始工作之前 (以便了解最新的更改)<br>在推送之前 (以防工作時發生了變化)  </p>
 </blockquote>
 <ul>
 <li>git clone (下載)</li>
@@ -275,19 +275,37 @@
 <li>git merge origin/master (合併主線到當前分支)</li>
 <li>git reset –hard (pull不過就覆蓋本地更改)</li>
 </ul>
-<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><ul>
-<li>git branch (-r看遠端分支, -a 本機與遠端)</li>
-<li>git branch <dev> (開新分支dev)</li>
-<li>git branch –set-upstream-to=origin <new_branch> (開新分支指定上游)</li>
-<li>git checkout -b <dev> (建立並切換到新分支dev)</li>
-<li>git checkout -b <dev> <commit-hash> (基於 commit開分支)</li>
-<li>git checkout master (切到主分支)</li>
-<li>git checkout -t origin/<remoteBranch> (切換到另一個遠端分支)</li>
-<li>git merge origin/main (將新分支合併回主線)</li>
-<li><a target="_blank" rel="noopener" href="https://gitbook.tw/chapters/branch/merge-branch">how to use merge</a>  </li>
+<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><h2 id="開分支與設定上游"><a href="#開分支與設定上游" class="headerlink" title="開分支與設定上游"></a>開分支與設定上游</h2><ul>
+<li><p>git branch <dev> (開新分支dev)</p>
+</li>
+<li><p>git push –set-upstream origin <new_branch> (開新分支指定上游)</p>
+<h2 id="查看與切換分支"><a href="#查看與切換分支" class="headerlink" title="查看與切換分支"></a>查看與切換分支</h2></li>
+<li><p>git branch (-r看遠端分支, -a 本機與遠端)</p>
+</li>
+<li><p>git checkout -b <dev> (建立並切換到新分支dev)</p>
+</li>
+<li><p>git checkout -b <dev> <commit-hash> (基於 commit開分支)</p>
+</li>
+<li><p>git checkout master (切到主分支)</p>
+<h2 id="遠端分支"><a href="#遠端分支" class="headerlink" title="遠端分支"></a>遠端分支</h2></li>
+<li><p>git branch -v -a (看所有遠端分支)</p>
+<blockquote>
+<p>remotes/origin/[remote_branch]<br>…</p>
+</blockquote>
+</li>
+<li><p>git switch <remoteBranch> (切到某個遠端分支)  </p>
+</li>
+<li><p>git checkout -t origin/<remoteBranch> (切換到另一個遠端分支)</p>
+</li>
+<li><p>git merge origin/main (將新分支合併回主線)</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://gitbook.tw/chapters/branch/merge-branch">how to use merge</a>  </p>
+</li>
 </ul>
 <p>不要怕開分支, 最少功能, 開發, 驗證三分支  </p>
 <h2 id="只選擇某commit-合併到主線"><a href="#只選擇某commit-合併到主線" class="headerlink" title="只選擇某commit 合併到主線"></a>只選擇某commit 合併到主線</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* git log 查找要合併的commit id</span><br><span class="line">* git checkout master</span><br><span class="line">* git merge &lt;commit_hash&gt;</span><br><span class="line"></span><br><span class="line">或</span><br><span class="line">git cherry-pick &lt;commit_hash&gt;  </span><br></pre></td></tr></table></figure>
+
+<h1 id="跟主線同步"><a href="#跟主線同步" class="headerlink" title="跟主線同步"></a>跟主線同步</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git checkout main </span><br><span class="line">git pull</span><br><span class="line">got checkout branch </span><br><span class="line">git pull </span><br><span class="line">git merge origin&#x2F;main</span><br></pre></td></tr></table></figure>
 
 <h1 id="回復"><a href="#回復" class="headerlink" title="回復"></a><a target="_blank" rel="noopener" href="https://roykwokcode.medium.com/%E8%AE%93%E4%BD%A0%E7%9A%84%E4%BB%A3%E7%A2%BC%E5%9B%9E%E5%88%B0%E9%81%8E%E5%8E%BB-git-reset-%E8%88%87-git-revert-%E7%9A%84%E7%94%A8%E8%99%95-6ba4b7545690">回復</a></h1><ul>
 <li>git reset -h<br>  –mixed               reset HEAD and index<br>  –soft                reset only HEAD<br>  –hard                reset HEAD, index and working tree(丢弃回退的提交中的所有更改)</li>
@@ -448,7 +466,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A4%8E"><span class="nav-number">1.</span> <span class="nav-text">基礎</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">程式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E6%94%AF"><span class="nav-number">3.</span> <span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AA%E9%81%B8%E6%93%87%E6%9F%90commit-%E5%90%88%E4%BD%B5%E5%88%B0%E4%B8%BB%E7%B7%9A"><span class="nav-number">3.1.</span> <span class="nav-text">只選擇某commit 合併到主線</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9E%E5%BE%A9"><span class="nav-number">4.</span> <span class="nav-text">回復</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%AA%E9%99%A4"><span class="nav-number">5.</span> <span class="nav-text">刪除</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8A%E5%82%B3"><span class="nav-number">6.</span> <span class="nav-text">上傳</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%95%B0%E5%B8%B8"><span class="nav-number">7.</span> <span class="nav-text">異常</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git%E5%88%86%E6%94%AFcommit%E9%81%8E%E7%9A%84%E8%AE%8A%E6%9B%B4%E5%90%88%E4%BD%B5%E5%88%B0%E4%B8%BB%E7%B7%9A"><span class="nav-number">8.</span> <span class="nav-text">git分支commit過的變更合併到主線</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Repo"><span class="nav-number">9.</span> <span class="nav-text">Repo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Gitflow-v-s-Github-flow"><span class="nav-number">10.</span> <span class="nav-text">Gitflow v.s. Github flow</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A8%E8%96%A6%E7%94%A8SourceTree%E8%A6%96%E8%A6%BA%E5%8C%96"><span class="nav-number">11.</span> <span class="nav-text">推薦用SourceTree視覺化</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A4%8E"><span class="nav-number">1.</span> <span class="nav-text">基礎</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">程式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E6%94%AF"><span class="nav-number">3.</span> <span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%96%8B%E5%88%86%E6%94%AF%E8%88%87%E8%A8%AD%E5%AE%9A%E4%B8%8A%E6%B8%B8"><span class="nav-number">3.1.</span> <span class="nav-text">開分支與設定上游</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E8%88%87%E5%88%87%E6%8F%9B%E5%88%86%E6%94%AF"><span class="nav-number">3.2.</span> <span class="nav-text">查看與切換分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF"><span class="nav-number">3.3.</span> <span class="nav-text">遠端分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AA%E9%81%B8%E6%93%87%E6%9F%90commit-%E5%90%88%E4%BD%B5%E5%88%B0%E4%B8%BB%E7%B7%9A"><span class="nav-number">3.4.</span> <span class="nav-text">只選擇某commit 合併到主線</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%9F%E4%B8%BB%E7%B7%9A%E5%90%8C%E6%AD%A5"><span class="nav-number">4.</span> <span class="nav-text">跟主線同步</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9E%E5%BE%A9"><span class="nav-number">5.</span> <span class="nav-text">回復</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%AA%E9%99%A4"><span class="nav-number">6.</span> <span class="nav-text">刪除</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8A%E5%82%B3"><span class="nav-number">7.</span> <span class="nav-text">上傳</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%95%B0%E5%B8%B8"><span class="nav-number">8.</span> <span class="nav-text">異常</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git%E5%88%86%E6%94%AFcommit%E9%81%8E%E7%9A%84%E8%AE%8A%E6%9B%B4%E5%90%88%E4%BD%B5%E5%88%B0%E4%B8%BB%E7%B7%9A"><span class="nav-number">9.</span> <span class="nav-text">git分支commit過的變更合併到主線</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Repo"><span class="nav-number">10.</span> <span class="nav-text">Repo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Gitflow-v-s-Github-flow"><span class="nav-number">11.</span> <span class="nav-text">Gitflow v.s. Github flow</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A8%E8%96%A6%E7%94%A8SourceTree%E8%A6%96%E8%A6%BA%E5%8C%96"><span class="nav-number">12.</span> <span class="nav-text">推薦用SourceTree視覺化</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -466,7 +484,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">330</span>
+          <span class="site-state-item-count">332</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -534,12 +552,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">473k</span>
+    <span title="Symbols count total">474k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">7:10</span>
+    <span title="Reading time total">7:11</span>
 </div>
 
         

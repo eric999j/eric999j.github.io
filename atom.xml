@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-05-05T11:05:40.857Z</updated>
+  <updated>2024-05-19T07:34:07.343Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chocolate Brownie</title>
+    <link href="https://eric999j.github.io/life/chocolateBrownie/"/>
+    <id>https://eric999j.github.io/life/chocolateBrownie/</id>
+    <published>2024-05-19T08:30:00.000Z</published>
+    <updated>2024-05-19T07:34:07.343Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/zarqpe3.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Happy Mother’s Day!&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微服務架構</title>
+    <link href="https://eric999j.github.io/engineer/microservices/"/>
+    <id>https://eric999j.github.io/engineer/microservices/</id>
+    <published>2024-05-19T07:00:00.000Z</published>
+    <updated>2024-05-19T07:32:47.439Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;現行主流架構, 與容器化技術搭配減少系統危害範圍, 否則增加運維成本。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Chocolate Cake</title>
@@ -280,7 +319,7 @@
     <link href="https://eric999j.github.io/engineer/git/"/>
     <id>https://eric999j.github.io/engineer/git/</id>
     <published>2024-02-03T10:30:00.000Z</published>
-    <updated>2024-03-31T11:12:47.130Z</updated>
+    <updated>2024-05-18T08:15:38.581Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
@@ -372,45 +411,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Anyway</title>
-    <link href="https://eric999j.github.io/manager/anyway/"/>
-    <id>https://eric999j.github.io/manager/anyway/</id>
-    <published>2023-12-31T07:00:00.000Z</published>
-    <updated>2023-12-31T08:24:35.141Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;善良不一定讓人生順遂，但不管怎樣，還是要善良。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>薑餅人</title>
-    <link href="https://eric999j.github.io/life/gingerbread/"/>
-    <id>https://eric999j.github.io/life/gingerbread/</id>
-    <published>2023-12-25T11:30:00.000Z</published>
-    <updated>2023-12-25T12:20:32.119Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JRHdLw3.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;聖誕快樂 🧑‍🎄&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
     
   </entry>
   
