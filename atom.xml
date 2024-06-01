@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-05-19T07:34:07.343Z</updated>
+  <updated>2024-06-01T14:01:18.197Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CRUD Operations with JDBC in Oracle Database</title>
+    <link href="https://eric999j.github.io/engineer/JSFAdvanced/"/>
+    <id>https://eric999j.github.io/engineer/JSFAdvanced/</id>
+    <published>2024-06-01T14:00:00.000Z</published>
+    <updated>2024-06-01T14:01:18.197Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-14.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Oracle 的強大SQL。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Chocolate Brownie</title>
     <link href="https://eric999j.github.io/life/chocolateBrownie/"/>
     <id>https://eric999j.github.io/life/chocolateBrownie/</id>
     <published>2024-05-19T08:30:00.000Z</published>
-    <updated>2024-05-19T07:34:07.343Z</updated>
+    <updated>2024-06-01T14:24:14.697Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/zarqpe3.jpg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;Happy Mother’s Day!&lt;/p&gt;</summary>
@@ -319,7 +339,7 @@
     <link href="https://eric999j.github.io/engineer/git/"/>
     <id>https://eric999j.github.io/engineer/git/</id>
     <published>2024-02-03T10:30:00.000Z</published>
-    <updated>2024-05-18T08:15:38.581Z</updated>
+    <updated>2024-06-01T14:23:08.183Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
@@ -384,26 +404,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;描述物件。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Log4j and i18n</title>
-    <link href="https://eric999j.github.io/engineer/log4j/"/>
-    <id>https://eric999j.github.io/engineer/log4j/</id>
-    <published>2023-12-31T08:00:00.000Z</published>
-    <updated>2023-12-31T08:11:22.376Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-13.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;寫日誌與多國語言。&lt;/p&gt;</summary>
     
     
     
