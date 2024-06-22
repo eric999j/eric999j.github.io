@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-06-01T14:01:18.197Z</updated>
+  <updated>2024-06-22T12:50:19.359Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>提示工程</title>
+    <link href="https://eric999j.github.io/manager/prompt/"/>
+    <id>https://eric999j.github.io/manager/prompt/</id>
+    <published>2024-06-22T13:00:00.000Z</published>
+    <updated>2024-06-22T12:50:19.359Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;初級咒語指南（誤&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>CRUD Operations with JDBC in Oracle Database</title>
@@ -179,7 +199,7 @@
     <link href="https://eric999j.github.io/engineer/JSF/"/>
     <id>https://eric999j.github.io/engineer/JSF/</id>
     <published>2024-04-06T06:30:00.000Z</published>
-    <updated>2024-04-07T07:24:51.879Z</updated>
+    <updated>2024-06-20T08:07:22.012Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
@@ -384,26 +404,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;網頁的生命週期&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UML</title>
-    <link href="https://eric999j.github.io/engineer/uml/"/>
-    <id>https://eric999j.github.io/engineer/uml/</id>
-    <published>2023-12-31T08:30:00.000Z</published>
-    <updated>2023-12-31T08:09:35.753Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;描述物件。&lt;/p&gt;</summary>
     
     
     
