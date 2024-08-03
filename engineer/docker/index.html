@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="容器化的主流工具。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker">
+<meta property="og:url" content="https://eric999j.github.io/engineer/docker/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="容器化的主流工具。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg">
+<meta property="article:published_time" content="2024-08-03T13:00:00.000Z">
+<meta property="article:modified_time" content="2024-08-03T13:13:18.412Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="好用">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/engineer/docker/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>Docker | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/engineer/docker/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Docker
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-08-03 21:00:00 / Modified: 21:13:18" itemprop="dateCreated datePublished" datetime="2024-08-03T21:00:00+08:00">2024-08-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/engineer/" itemprop="url" rel="index"><span itemprop="name">工程</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.2k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg"></p>
+<p>容器化的主流工具。</p>
+<a id="more"></a>
+
+<h1 id="Container-容器化"><a href="#Container-容器化" class="headerlink" title="Container 容器化"></a>Container 容器化</h1><ol>
+<li>快速部署與一致性：Docker映像包含所有軟件依賴項，確保在多個平台上創建一致環境。  </li>
+<li>隔離與安全性：每個容器獨立運行應用程序皆使用自己資源，實現了最大的安全性和可靠性。  </li>
+<li>可伸縮性與便攜性：容器隔離環境，易於擴展。</li>
+</ol>
+<p>在還沒Docker前我們可能要用VMWare開虛擬機, 耗費大量資源, 伸縮性也不佳。</p>
+<h1 id="Docker-File-定義映像檔如何啟動"><a href="#Docker-File-定義映像檔如何啟動" class="headerlink" title="Docker File 定義映像檔如何啟動"></a>Docker File 定義映像檔如何啟動</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* From: Image</span><br><span class="line">* COPY: to folder</span><br><span class="line">* RUN: execude Linux cmd</span><br><span class="line">* CMD: command to execude</span><br></pre></td></tr></table></figure>
+
+<h1 id="映像檔"><a href="#映像檔" class="headerlink" title="映像檔"></a>映像檔</h1><ul>
+<li>docker search 搜尋想裝的 Docker Image  </li>
+<li>docker pull 指 Docker Image 下載回 local  </li>
+<li>docker images 顯示出在 local 下載了哪些 Docker Image  </li>
+<li>docker build –tag node-docker . 生成鏡像  </li>
+<li>docker run 使用 Docker Image 啟動執行 Docker Container  </li>
+<li>docker container ls 或 docker ps 確認目前執行中的容器  </li>
+<li>docker exec -it bash: runs a new command in a running container 如果要使用 foreground，我們則要使用 -it 這個參數 沒有加 -it ，基本上，只 run 一下，馬上就跳回來了  </li>
+<li>docker rmi [OPTIONS] IMAGE [IMAGE…] 删除本地一个或多少镜像</li>
+</ul>
+<h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><ul>
+<li>docker history <image_name> 操作歷史  </li>
+<li>docker inspect <image_name> 容器資訊  </li>
+<li>docker –version 查看版本  </li>
+<li>docker run –help 查看可使用操作  </li>
+<li>docker COMMAND –help 查看所有指令  </li>
+<li>docker info 查看狀態  </li>
+<li>docker ps -a 查看所有容器   </li>
+<li>docker stats 查看容器資源使用情況</li>
+<li>docker ps 查看運行的容器  </li>
+<li>docker rename <old_name> <new_name> 重命名容器  </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* docker start $(sudo docker ps -a -q) 啟動所有容器</span><br><span class="line">* docker stop $(sudo docker ps -a -q) 暫停所有容器   </span><br><span class="line">* docker start nginx 啟動容器  </span><br><span class="line">* docker stop nginx 暫停容器 </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>docker pause <container_id> 暫停所有容器   </li>
+<li>docker unpause <container_id> </li>
+<li>docker restart <container_id> 重啟容器  </li>
+<li>docker ps 顯示了啟動了哪些的 Docker Container  </li>
+</ul>
+<p>-a 列出所有容器<br>-l 列出最後一次執行容器  </p>
+<ul>
+<li>docker exec -it nginx bash 進入容器    </li>
+<li>docker container stop 會優雅停止 (gracefully stop) 容器，若要強制關閉 (force shutdown) 容器，可用 docker container kill    </li>
+<li>docker rm &lt;277e632692e2&gt;: Error response from daemon: conflict: unable to delete 7bc4c38be46a (must be forced) - image is being used by stopped container 277e632692e2 時使用  </li>
+<li>docker rm nginx 刪除容器 </li>
+<li>docker rm -f nginx 強制刪除容器   </li>
+</ul>
+<h1 id="Docker-logs"><a href="#Docker-logs" class="headerlink" title="Docker logs"></a>Docker logs</h1><ul>
+<li>docker logs -t my_container 查看帶時間戳的日誌  </li>
+<li>docker logs –since 2024-06-25T15:00:00 my_container 查看從特定時間點後的日誌   </li>
+</ul>
+<h1 id="Docker-管理容器儲存2種方式"><a href="#Docker-管理容器儲存2種方式" class="headerlink" title="Docker 管理容器儲存2種方式"></a>Docker 管理容器儲存2種方式</h1><ul>
+<li><p><a target="_blank" rel="noopener" href="https://docs.docker.com/storage/volumes/">Volume</a><br>不同容器間持久化分享 </p>
+<ul>
+<li>docker volume create my_volume 建立 </li>
+<li>docker run -d -v my_volume:/data ubuntu 掛載卷到容器 </li>
+<li>docker volume ls </li>
+<li>docker volume rm my_volume </li>
+</ul>
+</li>
+<li><p>Mount<br>可以熱加載，適合頻繁修改場景 </p>
+</li>
+</ul>
+<h1 id="Docker-Network"><a href="#Docker-Network" class="headerlink" title="Docker Network"></a>Docker Network</h1><ul>
+<li>docker network ls </li>
+<li>docker network create my_network </li>
+<li>docker network connect my_network my_container</li>
+</ul>
+<h1 id="Docker-Compose"><a href="#Docker-Compose" class="headerlink" title="Docker Compose"></a>Docker Compose</h1><ul>
+<li>version 指定檔案的版本</li>
+<li>services 定義應用程式的服務  </li>
+<li>image 指定要使用的 Docker 映像   </li>
+<li>container_name 指定容器的名稱   </li>
+<li>ports 指定容器要公開的埠  </li>
+<li>volumes 指定要掛載到容器的卷  </li>
+<li>environment 指定要設定的環境變數  </li>
+<li>depends_on 指定此服務在啟動前需依賴的服務  </li>
+<li>networks 指定此服務要加入的網路  </li>
+<li>restart 指定容器的重啟策略  </li>
+<li>healthcheck 指定容器的健康檢查  </li>
+<li>logging 指定容器的日誌記錄  </li>
+<li>build 指定如何建立容器映像   </li>
+<li>command 指定容器啟動時要執行的命令   </li>
+<li>working_dir 指定容器的工作目錄   </li>
+<li>user 指定容器的使用者   </li>
+<li>labels 指定容器的標籤   </li>
+<li>volumes 定義應用程式要使用的卷   </li>
+<li>build 指定如何建立容器映像   </li>
+<li>context 指定建立映像的 Dockerfile 檔案所在的目錄   </li>
+<li>dockerfile 指定要使用的 Dockerfile 檔案的名稱   </li>
+<li>args 指定傳遞給 Dockerfile 檔案的引數   </li>
+<li>build-args 指定傳遞給 docker build 命令的引數  </li>
+<li>shm-size 指定共享記憶體的大小   </li>
+<li>timeout 指定建立映像的超時時間  </li>
+</ul>
+<h1 id="Play-Ground"><a href="#Play-Ground" class="headerlink" title="Play Ground"></a><a target="_blank" rel="noopener" href="https://labs.play-with-docker.com/">Play Ground</a></h1><h1 id="K8S"><a href="#K8S" class="headerlink" title="K8S"></a><a target="_blank" rel="noopener" href="https://jovepater.com/article/for-k8s-beginner-ep-5-basic-kubectl/">K8S</a></h1>
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AwesomeThings/" rel="tag"><i class="fa fa-tag"></i> 好用</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/life/littleTalk/" rel="prev" title="Little Talk">
+      <i class="fa fa-chevron-left"></i> Little Talk
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/life/omakase/" rel="next" title="料理靈感">
+      料理靈感 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Container-%E5%AE%B9%E5%99%A8%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">Container 容器化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-File-%E5%AE%9A%E7%BE%A9%E6%98%A0%E5%83%8F%E6%AA%94%E5%A6%82%E4%BD%95%E5%95%9F%E5%8B%95"><span class="nav-number">2.</span> <span class="nav-text">Docker File 定義映像檔如何啟動</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%98%A0%E5%83%8F%E6%AA%94"><span class="nav-number">3.</span> <span class="nav-text">映像檔</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-logs"><span class="nav-number">5.</span> <span class="nav-text">Docker logs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-%E7%AE%A1%E7%90%86%E5%AE%B9%E5%99%A8%E5%84%B2%E5%AD%982%E7%A8%AE%E6%96%B9%E5%BC%8F"><span class="nav-number">6.</span> <span class="nav-text">Docker 管理容器儲存2種方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-Network"><span class="nav-number">7.</span> <span class="nav-text">Docker Network</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-Compose"><span class="nav-number">8.</span> <span class="nav-text">Docker Compose</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Play-Ground"><span class="nav-number">9.</span> <span class="nav-text">Play Ground</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#K8S"><span class="nav-number">10.</span> <span class="nav-text">K8S</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">340</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">485k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">7:21</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : 'a426a73bb266a6e2637bed5a2a746ee2',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
