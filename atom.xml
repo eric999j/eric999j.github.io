@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-08-03T13:12:14.072Z</updated>
+  <updated>2024-08-17T15:40:39.910Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Requeijão Caseiro</title>
+    <link href="https://eric999j.github.io/life/creamCheese/"/>
+    <id>https://eric999j.github.io/life/creamCheese/</id>
+    <published>2024-08-17T14:30:00.000Z</published>
+    <updated>2024-08-17T15:40:39.910Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vPlZOUG.jpeg&quot; alt=&quot;img&quot;&gt;&lt;br&gt;茅屋起司的進化版，很適合沾東西吃。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代理模式</title>
+    <link href="https://eric999j.github.io/manager/proxy/"/>
+    <id>https://eric999j.github.io/manager/proxy/</id>
+    <published>2024-08-17T14:00:00.000Z</published>
+    <updated>2024-08-17T15:39:50.737Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;媽媽模式。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
     <title>料理靈感</title>
     <link href="https://eric999j.github.io/life/omakase/"/>
     <id>https://eric999j.github.io/life/omakase/</id>
     <published>2024-08-03T13:30:00.000Z</published>
-    <updated>2024-08-03T13:12:14.072Z</updated>
+    <updated>2024-08-10T08:00:41.941Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JWGpvK0.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -373,46 +412,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高效人士的7個習慣</title>
-    <link href="https://eric999j.github.io/manager/success/"/>
-    <id>https://eric999j.github.io/manager/success/</id>
-    <published>2024-03-02T15:40:00.000Z</published>
-    <updated>2024-03-02T16:06:42.547Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;管理好自身，幫助他人&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>年後剷肉</title>
-    <link href="https://eric999j.github.io/life/fitness/"/>
-    <id>https://eric999j.github.io/life/fitness/</id>
-    <published>2024-03-02T15:30:00.000Z</published>
-    <updated>2024-03-02T15:28:04.368Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;居家運動&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
     
   </entry>
   
