@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-08-17T15:40:39.910Z</updated>
+  <updated>2024-08-25T12:48:08.922Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>蜜罐</title>
+    <link href="https://eric999j.github.io/manager/honeypot/"/>
+    <id>https://eric999j.github.io/manager/honeypot/</id>
+    <published>2024-08-25T14:00:00.000Z</published>
+    <updated>2024-08-25T12:48:08.922Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;包著蜜糖的毒藥.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>保健食品何時吃</title>
+    <link href="https://eric999j.github.io/life/when/"/>
+    <id>https://eric999j.github.io/life/when/</id>
+    <published>2024-08-25T13:30:00.000Z</published>
+    <updated>2024-08-25T12:46:59.199Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;營養素這麼多，何時吃最好？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
+    
+  </entry>
   
   <entry>
     <title>Requeijão Caseiro</title>
@@ -372,46 +412,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JSF Tutorial - Basic</title>
-    <link href="https://eric999j.github.io/engineer/JSFBasic/"/>
-    <id>https://eric999j.github.io/engineer/JSFBasic/</id>
-    <published>2024-03-31T10:00:00.000Z</published>
-    <updated>2024-04-06T08:37:55.030Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-13.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;新企劃。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MFA</title>
-    <link href="https://eric999j.github.io/manager/mfa/"/>
-    <id>https://eric999j.github.io/manager/mfa/</id>
-    <published>2024-03-16T06:00:00.000Z</published>
-    <updated>2024-03-16T10:35:00.640Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;身份認證&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
