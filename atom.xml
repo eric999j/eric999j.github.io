@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-08-25T12:48:08.922Z</updated>
+  <updated>2024-09-07T14:22:47.537Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Raspberry PI OS</title>
+    <link href="https://eric999j.github.io/engineer/raspbian/"/>
+    <id>https://eric999j.github.io/engineer/raspbian/</id>
+    <published>2024-09-07T14:30:00.000Z</published>
+    <updated>2024-09-07T14:22:47.537Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;重拾小電腦&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>軟體開發生命週期(Software Development Life Cycle)</title>
+    <link href="https://eric999j.github.io/manager/sdlc/"/>
+    <id>https://eric999j.github.io/manager/sdlc/</id>
+    <published>2024-09-07T14:00:00.000Z</published>
+    <updated>2024-09-07T14:18:43.181Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;制定軟體開發各階段目標，達成大家都滿意的結果&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>蜜罐</title>
@@ -372,46 +412,6 @@
     
     
     <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue生命週期</title>
-    <link href="https://eric999j.github.io/engineer/vue/"/>
-    <id>https://eric999j.github.io/engineer/vue/</id>
-    <published>2024-04-06T07:00:00.000Z</published>
-    <updated>2024-04-06T07:47:24.283Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;初探知名的JS框架。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaServer Faces</title>
-    <link href="https://eric999j.github.io/engineer/JSF/"/>
-    <id>https://eric999j.github.io/engineer/JSF/</id>
-    <published>2024-04-06T06:30:00.000Z</published>
-    <updated>2024-06-20T08:07:22.012Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;用Java 寫網頁的東東&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
