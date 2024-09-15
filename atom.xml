@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-09-07T14:22:47.537Z</updated>
+  <updated>2024-09-15T07:45:59.437Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Trans-Flash Card</title>
+    <link href="https://eric999j.github.io/life/TFCard/"/>
+    <id>https://eric999j.github.io/life/TFCard/</id>
+    <published>2025-09-15T08:00:00.000Z</published>
+    <updated>2024-09-15T07:45:59.437Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;幫樹莓派挑張好卡&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>12 因子應用設計 (The Twelve-Factor App)</title>
+    <link href="https://eric999j.github.io/manager/12factor/"/>
+    <id>https://eric999j.github.io/manager/12factor/</id>
+    <published>2025-09-15T07:30:00.000Z</published>
+    <updated>2024-09-15T07:42:07.281Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;規範雲端原生應用程式的開發與部署，打造彈性、可擴展的現代化應用程式，透過遵循這些原則，開發者可以更好地應對雲端環境的挑戰，並提高應用程式的品質和可靠性。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>Raspberry PI OS</title>
@@ -372,46 +412,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JPQL</title>
-    <link href="https://eric999j.github.io/engineer/JPQL/"/>
-    <id>https://eric999j.github.io/engineer/JPQL/</id>
-    <published>2024-04-21T11:30:00.000Z</published>
-    <updated>2024-04-21T14:05:29.651Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;JPA提供的一種查詢語言, 更符合OO。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ランデヴー - シャイトープ</title>
-    <link href="https://eric999j.github.io/life/rendezvous/"/>
-    <id>https://eric999j.github.io/life/rendezvous/</id>
-    <published>2024-04-06T08:00:00.000Z</published>
-    <updated>2024-04-06T07:28:09.366Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(25).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;回到過去。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
