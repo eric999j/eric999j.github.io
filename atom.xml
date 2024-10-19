@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-10-05T10:50:59.155Z</updated>
+  <updated>2024-10-19T10:43:09.082Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS Chrome Extension</title>
+    <link href="https://eric999j.github.io/engineer/chromeExtension/"/>
+    <id>https://eric999j.github.io/engineer/chromeExtension/</id>
+    <published>2024-10-19T11:00:00.000Z</published>
+    <updated>2024-10-19T10:43:09.082Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-13.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;JavaScript是單線程、同步執行的語言，所以程式碼會按照順序，由上而下執行。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>架構師之路</title>
+    <link href="https://eric999j.github.io/engineer/architecture/"/>
+    <id>https://eric999j.github.io/engineer/architecture/</id>
+    <published>2024-10-19T10:00:00.000Z</published>
+    <updated>2024-10-19T10:40:13.133Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;GCP&lt;a href=&quot;https://www.cloudskillsboost.google/paths/12&quot;&gt;架構師線&lt;/a&gt;學習筆記。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Site Reliability Engineering</title>
@@ -367,46 +407,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;不容錯過的神器。  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>提示工程</title>
-    <link href="https://eric999j.github.io/manager/prompt/"/>
-    <id>https://eric999j.github.io/manager/prompt/</id>
-    <published>2024-06-22T13:00:00.000Z</published>
-    <updated>2024-06-22T12:50:19.359Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;初級咒語指南（誤&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CRUD Operations with JDBC in Oracle Database</title>
-    <link href="https://eric999j.github.io/engineer/JSFAdvanced/"/>
-    <id>https://eric999j.github.io/engineer/JSFAdvanced/</id>
-    <published>2024-06-01T14:00:00.000Z</published>
-    <updated>2024-06-01T14:01:18.197Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-14.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Oracle 的強大SQL。&lt;/p&gt;</summary>
     
     
     

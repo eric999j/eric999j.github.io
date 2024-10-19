@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="GCP架構師線學習筆記。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="架構師之路">
+<meta property="og:url" content="https://eric999j.github.io/engineer/architecture/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="GCP架構師線學習筆記。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg">
+<meta property="og:image" content="https://i.imgur.com/BEEwFLv.jpeg">
+<meta property="og:image" content="https://i.imgur.com/xXw3u3D.jpeg">
+<meta property="og:image" content="https://i.imgur.com/tgJ2FSI.jpeg">
+<meta property="og:image" content="https://i.imgur.com/87uW2R7.jpeg">
+<meta property="og:image" content="https://i.imgur.com/Queq5Zh.jpeg">
+<meta property="article:published_time" content="2024-10-19T10:00:00.000Z">
+<meta property="article:modified_time" content="2024-10-19T10:40:13.133Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="好用">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/engineer/architecture/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>架構師之路 | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/engineer/architecture/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          架構師之路
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-10-19 18:00:00 / Modified: 18:40:13" itemprop="dateCreated datePublished" datetime="2024-10-19T18:00:00+08:00">2024-10-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/engineer/" itemprop="url" rel="index"><span itemprop="name">工程</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>1.1k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg"></p>
+<p>GCP<a target="_blank" rel="noopener" href="https://www.cloudskillsboost.google/paths/12">架構師線</a>學習筆記。</p>
+<a id="more"></a>
+
+<ul>
+<li>架構師必須理解客戶問題，知道每個系統部件特性，再依需求權衡組合方案利弊（記憶體，花費…）</li>
+<li>遇到系統問題要知用什麼步驟正確解決</li>
+</ul>
+<h1 id="充足背景知識"><a href="#充足背景知識" class="headerlink" title="充足背景知識"></a>充足背景知識</h1><ul>
+<li>混沌工程：故意讓系統失敗以建構更好應用</li>
+<li>Tags: 防火牆規則</li>
+<li>Labels: 帳單</li>
+<li>RabbitMQ可跑在集群，但節點離開或加入只允許奇數，PubSub沒這問題且更能與Google其他服務整合</li>
+<li>Spinnaker可以取代Jenkins</li>
+<li>Cloud Run 只需要在Folder有<ul>
+<li>Json package file</li>
+<li>Index.js</li>
+<li>Docker file<br>並下指令<br>gcloud builds submit –tag gcr.io/$GOOGLE_CLOUD_PROJECT/helloworld<br>gcloud container images list</li>
+</ul>
+</li>
+</ul>
+<h1 id="釐清問題"><a href="#釐清問題" class="headerlink" title="釐清問題"></a>釐清問題</h1><h2 id="5w1h分析需求"><a href="#5w1h分析需求" class="headerlink" title="5w1h分析需求"></a>5w1h分析需求</h2><ul>
+<li>系統涉及到誰，Role</li>
+<li>系統有什麼功能，解決什麼問題</li>
+<li>為什麼需要系統</li>
+<li>開發時程</li>
+<li>負載平衡與細節注意</li>
+</ul>
+<h2 id="Invest評估使用者情境"><a href="#Invest評估使用者情境" class="headerlink" title="Invest評估使用者情境"></a>Invest評估使用者情境</h2><ul>
+<li>Independ: 設定優先順序</li>
+<li>Negotable: 方便開發者與客戶溝通</li>
+<li>Valuable: 不只交付，還確實能幫用戶產生價值</li>
+<li>Estimatable: 能預想結果</li>
+<li>Small: 如果不能預想需縮小範圍</li>
+<li>Testable: 可測試</li>
+</ul>
+<h1 id="解決方案"><a href="#解決方案" class="headerlink" title="解決方案"></a>解決方案</h1><p>運算資源選擇<br><img src="https://i.imgur.com/BEEwFLv.jpeg" alt="img"></p>
+<p>儲存體選擇<br><img src="https://i.imgur.com/xXw3u3D.jpeg" alt="img"><br><img src="https://i.imgur.com/tgJ2FSI.jpeg" alt="img"></p>
+<h2 id="雲原生架構設計"><a href="#雲原生架構設計" class="headerlink" title="雲原生架構設計"></a>雲原生架構設計</h2><p>知目標&gt;知使用者&gt;訂預期成果&gt;設計架構&gt;達成方法&gt;風險控管</p>
+<ul>
+<li>知道Objective</li>
+<li>Key Results(SLI, SLO)<ul>
+<li>依各情境制定可用目標%與達成標準</li>
+</ul>
+</li>
+<li>分析使用者<ul>
+<li>列幾個主要特徵與使用者</li>
+<li>使用者人格特質</li>
+<li>設想使用情境</li>
+</ul>
+</li>
+<li>設計系統架構<ul>
+<li>拆分系統為多個微服務</li>
+<li>設計每個微服務的主要功能, Rest API, 依功能切組件</li>
+<li>設計儲存體(結構化?響應速度?需求容量…)</li>
+<li>評估這些需求適合用什麼服務達成</li>
+<li>加入網路, 負載平衡</li>
+<li>畫出網路架構</li>
+</ul>
+</li>
+<li>實作與魯棒性<ul>
+<li>考量到災難復原</li>
+<li>防火牆與安全性</li>
+</ul>
+</li>
+<li>估算成本</li>
+</ul>
+<h2 id="儲存體"><a href="#儲存體" class="headerlink" title="儲存體"></a>儲存體</h2><p><img src="https://i.imgur.com/87uW2R7.jpeg" alt="img"></p>
+<p>要考慮:資料類型，讀寫方式，擴展方式，一致性，資料大小，成本</p>
+<ul>
+<li>大型數據集 [小數據集花費高]：BigTable( 部份關聯式)/Spanner( 關聯式資料庫，強烈I/O需求)</li>
+<li>小數據(讀寫成本), 移動應用：FireStore( 非關聯式資料庫)</li>
+<li>本地K8: Anthos</li>
+<li>只針對特定型別：Cloud Storage</li>
+<li>不提供快速log訪問, 每筆查詢都要花錢：BigQuery</li>
+</ul>
+<h3 id="儲存時間"><a href="#儲存時間" class="headerlink" title="儲存時間"></a>儲存時間</h3><ul>
+<li>Standard: Hot data</li>
+<li>Nearline: Once per month </li>
+<li>Coldline: Once every 90 days </li>
+<li>Archive: Once a year </li>
+</ul>
+<h2 id="連接地端-On-Premises-與雲-Off-Premises"><a href="#連接地端-On-Premises-與雲-Off-Premises" class="headerlink" title="連接地端(On-Premises)與雲(Off-Premises)"></a>連接地端(On-Premises)與雲(Off-Premises)</h2><ul>
+<li>GCP Cloud Interconnect : 在混和雲環境(地端, GCP)提供高效物理連接</li>
+<li>AWS Transit Gateway: 在AWS環境連接 VPC、VPN</li>
+</ul>
+<h2 id="負載平衡"><a href="#負載平衡" class="headerlink" title="負載平衡"></a>負載平衡</h2><p><img src="https://i.imgur.com/Queq5Zh.jpeg" alt="img"></p>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AwesomeThings/" rel="tag"><i class="fa fa-tag"></i> 好用</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/manager/SRE/" rel="prev" title="Site Reliability Engineering">
+      <i class="fa fa-chevron-left"></i> Site Reliability Engineering
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/engineer/chromeExtension/" rel="next" title="JS Chrome Extension">
+      JS Chrome Extension <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%85%E8%B6%B3%E8%83%8C%E6%99%AF%E7%9F%A5%E8%AD%98"><span class="nav-number">1.</span> <span class="nav-text">充足背景知識</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%87%90%E6%B8%85%E5%95%8F%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">釐清問題</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5w1h%E5%88%86%E6%9E%90%E9%9C%80%E6%B1%82"><span class="nav-number">2.1.</span> <span class="nav-text">5w1h分析需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Invest%E8%A9%95%E4%BC%B0%E4%BD%BF%E7%94%A8%E8%80%85%E6%83%85%E5%A2%83"><span class="nav-number">2.2.</span> <span class="nav-text">Invest評估使用者情境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%A1%88"><span class="nav-number">3.</span> <span class="nav-text">解決方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%B2%E5%8E%9F%E7%94%9F%E6%9E%B6%E6%A7%8B%E8%A8%AD%E8%A8%88"><span class="nav-number">3.1.</span> <span class="nav-text">雲原生架構設計</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%84%B2%E5%AD%98%E9%AB%94"><span class="nav-number">3.2.</span> <span class="nav-text">儲存體</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%84%B2%E5%AD%98%E6%99%82%E9%96%93"><span class="nav-number">3.2.1.</span> <span class="nav-text">儲存時間</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%A3%E6%8E%A5%E5%9C%B0%E7%AB%AF-On-Premises-%E8%88%87%E9%9B%B2-Off-Premises"><span class="nav-number">3.3.</span> <span class="nav-text">連接地端(On-Premises)與雲(Off-Premises)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B2%A0%E8%BC%89%E5%B9%B3%E8%A1%A1"><span class="nav-number">3.4.</span> <span class="nav-text">負載平衡</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">354</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">501k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">7:36</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : '9a7011e151d677a775096450206dc44e',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
