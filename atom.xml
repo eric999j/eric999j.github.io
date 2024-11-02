@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-10-19T10:43:09.082Z</updated>
+  <updated>2024-11-02T12:30:34.061Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>私は猫の目</title>
+    <link href="https://eric999j.github.io/life/impermanence/"/>
+    <id>https://eric999j.github.io/life/impermanence/</id>
+    <published>2024-11-02T13:00:00.000Z</published>
+    <updated>2024-11-02T12:30:34.061Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(38).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;\椎名大好/&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DNS 加密方法</title>
+    <link href="https://eric999j.github.io/manager/DNS/"/>
+    <id>https://eric999j.github.io/manager/DNS/</id>
+    <published>2024-11-02T12:30:00.000Z</published>
+    <updated>2024-11-02T12:32:35.211Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;簡介域名系統加密方式。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>JS Chrome Extension</title>
@@ -374,46 +414,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ed Sheeran - The Joker And The Queen</title>
-    <link href="https://eric999j.github.io/life/jokerQueen/"/>
-    <id>https://eric999j.github.io/life/jokerQueen/</id>
-    <published>2024-07-06T10:00:00.000Z</published>
-    <updated>2024-07-06T08:16:26.705Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Ed Sheeran獻給他的妻子Cherry Seaborn，用撲克牌的象徵貫穿整首歌，將自己比喻為鬼牌的小丑（Joker），而妻子是皇后（Queen），隱喻兩個原本應該註定不會相識的命運，但最終卻相遇並相愛。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VS Code 小技巧</title>
-    <link href="https://eric999j.github.io/engineer/vscode/"/>
-    <id>https://eric999j.github.io/engineer/vscode/</id>
-    <published>2024-07-06T08:00:00.000Z</published>
-    <updated>2024-07-28T08:18:22.292Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;不容錯過的神器。  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
