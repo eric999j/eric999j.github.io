@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2024-12-15T01:22:18.091Z</updated>
+  <updated>2024-12-28T08:33:08.156Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>零信任</title>
+    <link href="https://eric999j.github.io/manager/zeroTrust/"/>
+    <id>https://eric999j.github.io/manager/zeroTrust/</id>
+    <published>2024-12-28T08:30:00.000Z</published>
+    <updated>2024-12-28T08:33:08.156Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;永不信任，始終驗證。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Netflix的架構設計十個關鍵點</title>
+    <link href="https://eric999j.github.io/manager/netflix/"/>
+    <id>https://eric999j.github.io/manager/netflix/</id>
+    <published>2024-12-28T08:00:00.000Z</published>
+    <updated>2024-12-28T08:34:37.446Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如果Netflix是家注重效率的大型餐廳&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>滲透測試(Penetration Test，PT)</title>
@@ -373,46 +413,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>蜜罐</title>
-    <link href="https://eric999j.github.io/manager/honeypot/"/>
-    <id>https://eric999j.github.io/manager/honeypot/</id>
-    <published>2024-08-25T14:00:00.000Z</published>
-    <updated>2024-08-25T12:48:08.922Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;包著蜜糖的毒藥.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>保健食品何時吃</title>
-    <link href="https://eric999j.github.io/life/when/"/>
-    <id>https://eric999j.github.io/life/when/</id>
-    <published>2024-08-25T13:30:00.000Z</published>
-    <updated>2024-08-25T12:46:59.199Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;營養素這麼多，何時吃最好？&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
     
   </entry>
   

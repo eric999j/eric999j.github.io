@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-04.jpeg">
 <meta property="article:published_time" content="2024-08-03T13:00:00.000Z">
-<meta property="article:modified_time" content="2024-08-03T13:13:18.412Z">
+<meta property="article:modified_time" content="2024-12-15T02:33:27.904Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2024-08-03 21:00:00 / Modified: 21:13:18" itemprop="dateCreated datePublished" datetime="2024-08-03T21:00:00+08:00">2024-08-03</time>
+              <time title="Created: 2024-08-03 21:00:00" itemprop="dateCreated datePublished" datetime="2024-08-03T21:00:00+08:00">2024-08-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-12-15 10:33:27" itemprop="dateModified" datetime="2024-12-15T10:33:27+08:00">2024-12-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.2k</span>
+              <span>3.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -257,8 +263,9 @@
 <li>可伸縮性與便攜性：容器隔離環境，易於擴展。</li>
 </ol>
 <p>在還沒Docker前我們可能要用VMWare開虛擬機, 耗費大量資源, 伸縮性也不佳。</p>
-<h1 id="Docker-File-定義映像檔如何啟動"><a href="#Docker-File-定義映像檔如何啟動" class="headerlink" title="Docker File 定義映像檔如何啟動"></a>Docker File 定義映像檔如何啟動</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* From: Image</span><br><span class="line">* COPY: to folder</span><br><span class="line">* RUN: execude Linux cmd</span><br><span class="line">* CMD: command to execude</span><br></pre></td></tr></table></figure>
+<h1 id="Docker-File-定義映像檔如何啟動"><a href="#Docker-File-定義映像檔如何啟動" class="headerlink" title="Docker File 定義映像檔如何啟動"></a>Docker File 定義映像檔如何啟動</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># 基礎映像  </span><br><span class="line">From python: 3.9</span><br><span class="line"></span><br><span class="line"># 維護者信息</span><br><span class="line">MAINTAINER Eric </span><br><span class="line"></span><br><span class="line"># 工作目錄</span><br><span class="line">WORKDIR &#x2F;app   </span><br><span class="line"></span><br><span class="line"># 複製當前目錄下的所有文件到工作目錄</span><br><span class="line">COPY . &#x2F;app  </span><br><span class="line"></span><br><span class="line"># 添加本地的 JDK 壓縮包到工作目錄中並解壓</span><br><span class="line">ADD jdk-8u152-linux-x64.tar.gz  &#x2F;app&#x2F;</span><br><span class="line"></span><br><span class="line"># 安裝所需的Python包</span><br><span class="line">RUN pip install --no-cache-dir -r requirements.txt</span><br><span class="line"></span><br><span class="line"># 設定環境變數</span><br><span class="line">ENV JAVA_HOME&#x3D;&#x2F;app&#x2F;jdk1.8.0_152</span><br><span class="line">ENV PATH&#x3D;$PATH:&#x2F;app&#x2F;jdk1.8.0_152&#x2F;bin</span><br><span class="line"></span><br><span class="line"># 暴露應用端口</span><br><span class="line">EXPOSE 5000</span><br><span class="line"></span><br><span class="line"># 啟動應用</span><br><span class="line">CMD [&quot;python&quot;, &quot;app.py&quot;]</span><br></pre></td></tr></table></figure>
 
+<p>docker build -t my-python-app . # 建構映像檔</p>
 <h1 id="映像檔"><a href="#映像檔" class="headerlink" title="映像檔"></a>映像檔</h1><ul>
 <li>docker search 搜尋想裝的 Docker Image  </li>
 <li>docker pull 指 Docker Image 下載回 local  </li>
@@ -270,10 +277,17 @@
 <li>docker rmi [OPTIONS] IMAGE [IMAGE…] 删除本地一个或多少镜像</li>
 </ul>
 <h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><ul>
+<li>docker login 指令登入到 Docker Hub</li>
 <li>docker history <image_name> 操作歷史  </li>
 <li>docker inspect <image_name> 容器資訊  </li>
+<li>docker save -o  <path_to_file> # 將 Docker Image 存檔出一個檔案</li>
+<li>docker load -i  <path_to_file></li>
 <li>docker –version 查看版本  </li>
 <li>docker run –help 查看可使用操作  </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name web -p 8080:80 docker hub user&#x2F;project</span><br><span class="line">* -d: 背景執行</span><br><span class="line">* --name web: 指定此container叫web</span><br><span class="line">* -p: 映射port</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>docker COMMAND –help 查看所有指令  </li>
 <li>docker info 查看狀態  </li>
 <li>docker ps -a 查看所有容器   </li>
@@ -281,7 +295,7 @@
 <li>docker ps 查看運行的容器  </li>
 <li>docker rename <old_name> <new_name> 重命名容器  </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* docker start $(sudo docker ps -a -q) 啟動所有容器</span><br><span class="line">* docker stop $(sudo docker ps -a -q) 暫停所有容器   </span><br><span class="line">* docker start nginx 啟動容器  </span><br><span class="line">* docker stop nginx 暫停容器 </span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* docker start nginx 啟動容器  </span><br><span class="line">* docker stop nginx 暫停容器 </span><br><span class="line">* docker start $(sudo docker ps -a -q) 啟動所有容器</span><br><span class="line">* docker stop $(sudo docker ps -a -q) 暫停所有容器   </span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>docker pause <container_id> 暫停所有容器   </li>
@@ -301,18 +315,16 @@
 <li>docker logs -t my_container 查看帶時間戳的日誌  </li>
 <li>docker logs –since 2024-06-25T15:00:00 my_container 查看從特定時間點後的日誌   </li>
 </ul>
-<h1 id="Docker-管理容器儲存2種方式"><a href="#Docker-管理容器儲存2種方式" class="headerlink" title="Docker 管理容器儲存2種方式"></a>Docker 管理容器儲存2種方式</h1><ul>
-<li><p><a target="_blank" rel="noopener" href="https://docs.docker.com/storage/volumes/">Volume</a><br>不同容器間持久化分享 </p>
-<ul>
-<li>docker volume create my_volume 建立 </li>
-<li>docker run -d -v my_volume:/data ubuntu 掛載卷到容器 </li>
-<li>docker volume ls </li>
-<li>docker volume rm my_volume </li>
-</ul>
-</li>
-<li><p>Mount<br>可以熱加載，適合頻繁修改場景 </p>
-</li>
-</ul>
+<h1 id="Docker-Volume"><a href="#Docker-Volume" class="headerlink" title="Docker Volume"></a>Docker <a target="_blank" rel="noopener" href="https://docs.docker.com/storage/volumes/">Volume</a></h1><ol>
+<li>持久化數據</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 創建Volume</span><br><span class="line">docker volume create vol1</span><br><span class="line">&lt;docker volume rm vol1&gt;</span><br><span class="line"># 啟動第一個Ubuntu容器並掛載vol1</span><br><span class="line">docker run -it --name ubuntu1 -v vol1:&#x2F;data ubuntu</span><br><span class="line"></span><br><span class="line"># 在 ubuntu1 容器中創建一些數據</span><br><span class="line">echo &quot;This is some persistent data&quot; &gt; &#x2F;data&#x2F;sample.txt</span><br><span class="line"># 確認數據已經寫入</span><br><span class="line">cat &#x2F;data&#x2F;sample.txt</span><br><span class="line"># 退出 ubuntu1 容器</span><br><span class="line">exit</span><br><span class="line"></span><br><span class="line"># 重啟 ubuntu1 容器</span><br><span class="line">docker restart ubuntu1</span><br><span class="line"># 重新進入 ubuntu1 容器</span><br><span class="line">docker exec -it ubuntu1 bash</span><br><span class="line"># 確認數據依舊存在</span><br><span class="line">cat &#x2F;data&#x2F;sample.txt</span><br><span class="line"># 退出 ubuntu1 容器</span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>不同機器間傳遞數據</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 使用 ubuntu2 容器範例掛載 vol1</span><br><span class="line">docker run -it --rm --name temp-ubuntu -v vol1:&#x2F;data-share ubuntu</span><br><span class="line"># 確認數據是否存在</span><br><span class="line">ls &#x2F;data-share</span><br><span class="line"># 你應該會看到 &#39;sample.txt&#39; 文件</span><br><span class="line">cat &#x2F;data-share&#x2F;sample.txt</span><br><span class="line"># 退出臨時容器</span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+
 <h1 id="Docker-Network"><a href="#Docker-Network" class="headerlink" title="Docker Network"></a>Docker Network</h1><ul>
 <li>docker network ls </li>
 <li>docker network create my_network </li>
@@ -453,7 +465,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Container-%E5%AE%B9%E5%99%A8%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">Container 容器化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-File-%E5%AE%9A%E7%BE%A9%E6%98%A0%E5%83%8F%E6%AA%94%E5%A6%82%E4%BD%95%E5%95%9F%E5%8B%95"><span class="nav-number">2.</span> <span class="nav-text">Docker File 定義映像檔如何啟動</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%98%A0%E5%83%8F%E6%AA%94"><span class="nav-number">3.</span> <span class="nav-text">映像檔</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-logs"><span class="nav-number">5.</span> <span class="nav-text">Docker logs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-%E7%AE%A1%E7%90%86%E5%AE%B9%E5%99%A8%E5%84%B2%E5%AD%982%E7%A8%AE%E6%96%B9%E5%BC%8F"><span class="nav-number">6.</span> <span class="nav-text">Docker 管理容器儲存2種方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-Network"><span class="nav-number">7.</span> <span class="nav-text">Docker Network</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-Compose"><span class="nav-number">8.</span> <span class="nav-text">Docker Compose</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Play-Ground"><span class="nav-number">9.</span> <span class="nav-text">Play Ground</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#K8S"><span class="nav-number">10.</span> <span class="nav-text">K8S</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Container-%E5%AE%B9%E5%99%A8%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">Container 容器化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-File-%E5%AE%9A%E7%BE%A9%E6%98%A0%E5%83%8F%E6%AA%94%E5%A6%82%E4%BD%95%E5%95%9F%E5%8B%95"><span class="nav-number">2.</span> <span class="nav-text">Docker File 定義映像檔如何啟動</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%98%A0%E5%83%8F%E6%AA%94"><span class="nav-number">3.</span> <span class="nav-text">映像檔</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-logs"><span class="nav-number">5.</span> <span class="nav-text">Docker logs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-Volume"><span class="nav-number">6.</span> <span class="nav-text">Docker Volume</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-Network"><span class="nav-number">7.</span> <span class="nav-text">Docker Network</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-Compose"><span class="nav-number">8.</span> <span class="nav-text">Docker Compose</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Play-Ground"><span class="nav-number">9.</span> <span class="nav-text">Play Ground</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#K8S"><span class="nav-number">10.</span> <span class="nav-text">K8S</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -471,7 +483,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">362</span>
+          <span class="site-state-item-count">364</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -539,12 +551,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">508k</span>
+    <span title="Symbols count total">510k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">7:42</span>
+    <span title="Reading time total">7:44</span>
 </div>
 
         
