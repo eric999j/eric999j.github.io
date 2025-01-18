@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg">
 <meta property="article:published_time" content="2020-10-11T07:00:00.000Z">
-<meta property="article:modified_time" content="2024-12-28T08:57:00.877Z">
+<meta property="article:modified_time" content="2025-01-04T06:46:16.273Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-12-28 16:57:00" itemprop="dateModified" datetime="2024-12-28T16:57:00+08:00">2024-12-28</time>
+                <time title="Modified: 2025-01-04 14:46:16" itemprop="dateModified" datetime="2025-01-04T14:46:16+08:00">2025-01-04</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>8.7k</span>
+              <span>8.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -261,7 +261,7 @@
 <p>timeout 120 bash -c – ‘while true; do curl localhost; sleep $((RANDOM % 4)) ; done’</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">120 秒內不斷地向 localhost 發送 HTTP 請求，每次請求之間會隨機等待 0 到 3 秒。</span><br><span class="line"></span><br><span class="line">1. timeout 120: 這個命令會在 120 秒後自動終止後面的命令。</span><br><span class="line">2. bash -c -- &#39;...&#39;: 這部分表示在一個新的 bash shell 中執行引號內的命令。</span><br><span class="line">3. curl localhost: 這個命令會向 localhost 發送一個 HTTP 請求。</span><br><span class="line">4. sleep $((RANDOM % 4)): 這個命令會讓程式暫停一段隨機時間（0 到 3 秒之間），然後繼續下一次循環。</span><br><span class="line">5. done是 while 循環的結束標記。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p> while true; do</p>
-<h1 id="執行的命令"><a href="#執行的命令" class="headerlink" title="執行的命令"></a>執行的命令</h1><p>done<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 等效for迴圈</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>export MY_SERVER=localhost<br>timeout 120 bash -c – ‘for (( ; ; )) ; do curl  $MY_SERVER; sleep $((RANDOM % 4)); done’<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">在Python中，for的無限迴圈寫法是 for _, 與[Bash](https:&#x2F;&#x2F;dev.to&#x2F;patadiarushabh&#x2F;mastering-shell-scripting-from-basics-to-advanced-automation-343)不同</span><br><span class="line"></span><br><span class="line"># 系統管理</span><br></pre></td></tr></table></figure><br>whoami: 顯示目前使用者<br>hostname: 顯示主機名稱<br>uname: 系統資訊<br>du -h: 目錄大小<br>ps -aux: 執行續狀態<br>netstat: 網路狀態<br>/etc/profile: 系統環境變數<br>.bashrc: 用戶環境變數<br>ping: 測試與其他主機的連線是否暢通<br>tracert: 追蹤資料封包從來源主機到目的主機所經過的路徑<br>netstat: 顯示網路連線、路由表、網路介面等資訊<br>tcpdump: 捕捉網路封包並進行分析<br>iftop: 實時顯示網路流量使用情況  </p>
+<h1 id="執行的命令"><a href="#執行的命令" class="headerlink" title="執行的命令"></a>執行的命令</h1><p>done<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 等效for迴圈</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>export MY_SERVER=localhost<br>timeout 120 bash -c – ‘for (( ; ; )) ; do curl  $MY_SERVER; sleep $((RANDOM % 4)); done’<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">在Python中，for的無限迴圈寫法是 for _, 與[Bash](https:&#x2F;&#x2F;dev.to&#x2F;patadiarushabh&#x2F;mastering-shell-scripting-from-basics-to-advanced-automation-343)不同</span><br><span class="line"></span><br><span class="line"># 系統管理</span><br></pre></td></tr></table></figure><br>whoami: 顯示目前使用者<br>dig: 看網域資訊<br>host: 看域名<br>ip a: 新的ifconfig<br>ss: 看目前開的port<br>tcpdump: 查看傳輸封包<br>hostname: 顯示主機名稱<br>uname: 系統資訊<br>du -h: 目錄大小<br>ps -aux: 執行續狀態<br>netstat: 網路狀態<br>/etc/profile: 系統環境變數<br>.bashrc: 用戶環境變數<br>ping: 測試與其他主機的連線是否暢通<br>tracert: 追蹤資料封包從來源主機到目的主機所經過的路徑<br>netstat: 顯示網路連線、路由表、網路介面等資訊<br>tcpdump: 捕捉網路封包並進行分析<br>iftop: 實時顯示網路流量使用情況<br>mtr: ping+ traceroute  </p>
 <ul>
 <li><p>關閉SE Linux<br>$ vi /etc/selinux/config<br>SELINUX = disabled</p>
 </li>
@@ -464,7 +464,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">366</span>
+          <span class="site-state-item-count">368</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -532,7 +532,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">511k</span>
+    <span title="Symbols count total">512k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
