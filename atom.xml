@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-02-02T04:22:46.563Z</updated>
+  <updated>2025-02-15T07:30:15.392Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>身份驗證</title>
+    <link href="https://eric999j.github.io/manager/authentication/"/>
+    <id>https://eric999j.github.io/manager/authentication/</id>
+    <published>2025-02-15T07:00:00.000Z</published>
+    <updated>2025-02-15T07:30:15.392Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;四種常見的方法&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高蛋白肉桂小點心</title>
+    <link href="https://eric999j.github.io/life/whey/"/>
+    <id>https://eric999j.github.io/life/whey/</id>
+    <published>2025-02-12T08:00:00.000Z</published>
+    <updated>2025-02-15T07:31:07.036Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vLT0cPl.jpeg&quot;&gt;&lt;br&gt;饞嘴貓熊的小點心  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
   
   <entry>
     <title>秦基博 – 泣き笑いのエピソード</title>
@@ -365,46 +404,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-12.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;GCP&lt;a href=&quot;https://www.cloudskillsboost.google/paths/12&quot;&gt;架構師線&lt;/a&gt;學習筆記。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Site Reliability Engineering</title>
-    <link href="https://eric999j.github.io/manager/SRE/"/>
-    <id>https://eric999j.github.io/manager/SRE/</id>
-    <published>2024-10-05T12:30:00.000Z</published>
-    <updated>2024-10-05T10:50:59.155Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;服務等級協議(Service Level Agreement)&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SWAP</title>
-    <link href="https://eric999j.github.io/engineer/swap/"/>
-    <id>https://eric999j.github.io/engineer/swap/</id>
-    <published>2024-10-05T11:00:00.000Z</published>
-    <updated>2024-10-05T10:54:41.314Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Raspberry PI內建1G實體記憶體，有辦法擴充嗎？&lt;/p&gt;</summary>
     
     
     

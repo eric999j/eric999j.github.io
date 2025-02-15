@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg">
 <meta property="article:published_time" content="2024-09-07T14:30:00.000Z">
-<meta property="article:modified_time" content="2024-09-07T14:22:47.537Z">
+<meta property="article:modified_time" content="2025-02-09T07:51:11.043Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2024-09-07 22:30:00 / Modified: 22:22:47" itemprop="dateCreated datePublished" datetime="2024-09-07T22:30:00+08:00">2024-09-07</time>
+              <time title="Created: 2024-09-07 22:30:00" itemprop="dateCreated datePublished" datetime="2024-09-07T22:30:00+08:00">2024-09-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-02-09 15:51:11" itemprop="dateModified" datetime="2025-02-09T15:51:11+08:00">2025-02-09</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -256,6 +262,9 @@
 <p><a target="_blank" rel="noopener" href="https://www.raspberrypi.com/software/">Raspberry PI Imager</a></p>
 <p>裝置，系統，儲存體點完就結束了，我還先把Image載好了說（艸</p>
 <h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update # 更新索引</span><br><span class="line">sudo apt-get upgrade # 更新軟體</span><br></pre></td></tr></table></figure>
+
+<h1 id="虛擬環境"><a href="#虛擬環境" class="headerlink" title="虛擬環境"></a>虛擬環境</h1><p>由於raspberry pi 上的python 環境是控管的，需裝在虛擬環境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 在當前目錄開虛擬環境</span><br><span class="line">python3 -m venv selenium_env</span><br><span class="line"># 啟動虛擬環境</span><br><span class="line">source selenium_env&#x2F;bin&#x2F;activate</span><br><span class="line">pip install selenium</span><br><span class="line">#驗證安裝</span><br><span class="line">python -c &quot;import selenium; print(selenium.__version__)&quot;</span><br><span class="line">#退出</span><br><span class="line">deactivate</span><br></pre></td></tr></table></figure>
 
 <h1 id="裝-Docker"><a href="#裝-Docker" class="headerlink" title="裝 Docker"></a>裝 Docker</h1><p>這邊官方提供<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/install/raspberry-pi-os/">三種辦法</a>，我裝到第三個才成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https:&#x2F;&#x2F;test.docker.com -o test-docker.sh</span><br><span class="line">sudo sh test-docker.sh</span><br><span class="line">sudo service docker start</span><br><span class="line">sudo docker run hello-world</span><br><span class="line"></span><br><span class="line">eka@Ekade-MacBook-Pro  ~  ssh eka@x.x.x.x</span><br><span class="line">Linux eric 6.6.31+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.6.31-1+rpt1 (2024-05-29) aarch64</span><br><span class="line"></span><br><span class="line">The programs included with the Debian GNU&#x2F;Linux system are free software;</span><br><span class="line">the exact distribution terms for each program are described in the</span><br><span class="line">individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.</span><br><span class="line"></span><br><span class="line">Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent</span><br><span class="line">permitted by applicable law.</span><br><span class="line">Last login: Sat Aug 31 16:44:07 2024 from 192.168.0.139</span><br><span class="line">eka@eric:~ $ docker</span><br><span class="line"></span><br><span class="line">Usage:  docker [OPTIONS] COMMAND</span><br><span class="line"></span><br><span class="line">A self-sufficient runtime for containers</span><br><span class="line"></span><br><span class="line">Common Commands:</span><br><span class="line">  run         Create and run a new container from an image</span><br><span class="line">  exec        Execute a command in a running container</span><br><span class="line">  ps          List containers</span><br></pre></td></tr></table></figure>
@@ -369,7 +378,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A3%9DOS"><span class="nav-number">1.</span> <span class="nav-text">裝OS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-number">2.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A3%9D-Docker"><span class="nav-number">3.</span> <span class="nav-text">裝 Docker</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A3%9DOS"><span class="nav-number">1.</span> <span class="nav-text">裝OS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-number">2.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83"><span class="nav-number">3.</span> <span class="nav-text">虛擬環境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A3%9D-Docker"><span class="nav-number">4.</span> <span class="nav-text">裝 Docker</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -387,7 +396,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">370</span>
+          <span class="site-state-item-count">372</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -455,12 +464,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">513k</span>
+    <span title="Symbols count total">518k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">7:46</span>
+    <span title="Reading time total">7:51</span>
 </div>
 
         

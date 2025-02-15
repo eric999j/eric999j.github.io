@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="四種常見的方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="身份驗證">
+<meta property="og:url" content="https://eric999j.github.io/manager/authentication/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="四種常見的方法">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
+<meta property="article:published_time" content="2025-02-15T07:00:00.000Z">
+<meta property="article:modified_time" content="2025-02-15T07:30:15.392Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="文書">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/manager/authentication/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>身份驗證 | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/manager/authentication/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          身份驗證
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-02-15 15:00:00 / Modified: 15:30:15" itemprop="dateCreated datePublished" datetime="2025-02-15T15:00:00+08:00">2025-02-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/manager/" itemprop="url" rel="index"><span itemprop="name">管理</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>1.7k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg"></p>
+<p>四種常見的方法</p>
+<a id="more"></a> 
+
+<h1 id="1-基本身份驗證-Basic-Authentication"><a href="#1-基本身份驗證-Basic-Authentication" class="headerlink" title="1.基本身份驗證 (Basic Authentication)"></a>1.基本身份驗證 (Basic Authentication)</h1><p><code>簡單但安全性與使用體驗不良( 每次請求都需要重新輸入憑證)</code></p>
+<ol>
+<li>客戶端發送請求訪問受保護的資源。</li>
+<li>伺服器回應 401 Unauthorized 狀態碼，並在 WWW-Authenticate 標頭中指示使用 “Basic” 方案。</li>
+<li>客戶端將使用者名稱和密碼進行 Base64 編碼。</li>
+<li>客戶端在 Authorization 標頭中包含編碼後的字串，再次發送請求。</li>
+<li>伺服器解碼 Authorization 標頭中的 Base64 字串，獲得使用者名稱和密碼。</li>
+<li>伺服器驗證使用者名稱和密碼。</li>
+<li>如果驗證成功，伺服器返回請求的資源。若驗證失敗，伺服器可能再次返回 401 Unauthorized 狀態碼。</li>
+</ol>
+<h1 id="2-基於-Cookie-的身份驗證-Cookie-Based-Authentication"><a href="#2-基於-Cookie-的身份驗證-Cookie-Based-Authentication" class="headerlink" title="2.基於 Cookie 的身份驗證 (Cookie-Based Authentication)"></a>2.基於 Cookie 的身份驗證 (Cookie-Based Authentication)</h1><p><code>保持會話，但有跨站攻擊風險</code></p>
+<ol>
+<li>使用者成功登入，伺服器創建一個會話 (Session) 並生成一個唯一的會話 ID (Session ID)。</li>
+<li>伺服器將這個 Session ID 儲存在伺服器端的記憶體或資料庫中。</li>
+<li>伺服器在 HTTP 回應的 Set-Cookie 標頭中包含這個 Session ID，發送給瀏覽器。</li>
+<li>瀏覽器自動儲存這個 Cookie。</li>
+<li>瀏覽器在之後每次向同一個伺服器發送請求時，都會在 Cookie 標頭中自動帶上這個 Session ID。</li>
+<li>伺服器接收到請求後，通過 Cookie 中的 Session ID 查找伺服器端儲存的會話資訊。</li>
+<li>伺服器驗證會話資訊以確定使用者身份。</li>
+</ol>
+<h1 id="3-JSON-Web-Tokens-JWT"><a href="#3-JSON-Web-Tokens-JWT" class="headerlink" title="3.JSON Web Tokens (JWT)"></a>3.JSON Web Tokens (JWT)</h1><p><code>適用分散式系統與API，需要考慮 Token 失效管理和伺服器端驗證開銷</code></p>
+<p>基於 JSON 的RFC 7519標準，包含所有驗證使用者身份所需信息，伺服器不需儲存會話</p>
+<ol>
+<li>Header (標頭): 包含 JWT 的類型和所使用的簽名演算法。</li>
+<li>Payload (載荷): <ul>
+<li>Registered claims: 例如 iss (簽發者), sub (主題), exp (過期時間), iat (簽發時間), jti (JWT ID)。</li>
+<li>Public claims: 可以由 JWT 的使用者隨意定義，但應避免與 Registered claims 衝突。</li>
+<li>Private claims: 自定義的聲明，用於在應用程式之間傳遞資訊。</li>
+</ul>
+</li>
+<li>Signature (簽名): 用於驗證 JWT 的完整性和發送者身份。簽名是通過 Header 中指定的演算法，使用 Header、Payload 和一個 Secret Key (或 Private Key) 計算得出的。</li>
+</ol>
+<h1 id="4-令牌基礎身份驗證-Token-Based-Authentication"><a href="#4-令牌基礎身份驗證-Token-Based-Authentication" class="headerlink" title="4.令牌基礎身份驗證 (Token-Based Authentication)"></a>4.令牌基礎身份驗證 (Token-Based Authentication)</h1><p><code>伺服器不需維護會話狀態，需防範 XSS 攻擊</code></p>
+<ol>
+<li>使用者成功登入後，伺服器生成一個隨機的、唯一的令牌 (Token)。</li>
+<li>伺服器將這個令牌儲存在資料庫中，並與使用者關聯。</li>
+<li>伺服器將這個令牌返回給客戶端（可以通過 Cookie 或 HTTP 回應 Body 傳遞）。</li>
+<li>客戶端接收到令牌並儲存。</li>
+<li>客戶端在後續每次請求受保護資源時，將這個令牌放在 Authorization 標頭中發送給伺服器。</li>
+<li>伺服器接收到請求後，從 Authorization 標頭中提取令牌。</li>
+<li>伺服器在資料庫中查找這個令牌，以驗證它是否有效及與哪個使用者關聯。</li>
+<li>如果令牌驗證成功，允許訪問請求的資源；若驗證失敗，可能返回相應的錯誤狀態碼（如 401 Unauthorized）</li>
+</ol>
+<h1 id="基於-Cookie-的身份驗證與令牌基礎身份驗證差異"><a href="#基於-Cookie-的身份驗證與令牌基礎身份驗證差異" class="headerlink" title="基於 Cookie 的身份驗證與令牌基礎身份驗證差異"></a>基於 Cookie 的身份驗證與令牌基礎身份驗證差異</h1><h2 id="基於-Cookie-的身份驗證"><a href="#基於-Cookie-的身份驗證" class="headerlink" title="基於 Cookie 的身份驗證"></a>基於 Cookie 的身份驗證</h2><ul>
+<li>會話管理方式：伺服器生成並存儲 Session ID，客戶端用 Cookie 存儲 Session ID 並隨請求發送。</li>
+<li>狀態性：狀態性，伺服器需維護使用者的會話狀態。</li>
+<li>安全性：容易受 CSRF 攻擊，但可通過設置 SameSite 屬性減輕風險。</li>
+<li>擴展性：需解決會話共享問題（如 Session Stickiness），水平擴展較複雜。</li>
+</ul>
+<h2 id="令牌基礎身份驗證"><a href="#令牌基礎身份驗證" class="headerlink" title="令牌基礎身份驗證"></a>令牌基礎身份驗證</h2><ul>
+<li>會話管理方式：伺服器生成令牌並存儲於資料庫中，客戶端在請求中使用令牌認證。</li>
+<li>狀態性：可以是無狀態（如JWT），伺服器不需維護會話狀態。</li>
+<li>安全性：需防範 XSS 攻擊，無狀態令牌需管理過期和刷新。</li>
+<li>擴展性：無狀態令牌支持分佈式系統，易於水平擴展。</li>
+</ul>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Instrument/" rel="tag"><i class="fa fa-tag"></i> 文書</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/life/whey/" rel="prev" title="高蛋白肉桂小點心">
+      <i class="fa fa-chevron-left"></i> 高蛋白肉桂小點心
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%9F%BA%E6%9C%AC%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89-Basic-Authentication"><span class="nav-number">1.</span> <span class="nav-text">1.基本身份驗證 (Basic Authentication)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%9F%BA%E6%96%BC-Cookie-%E7%9A%84%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89-Cookie-Based-Authentication"><span class="nav-number">2.</span> <span class="nav-text">2.基於 Cookie 的身份驗證 (Cookie-Based Authentication)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-JSON-Web-Tokens-JWT"><span class="nav-number">3.</span> <span class="nav-text">3.JSON Web Tokens (JWT)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E4%BB%A4%E7%89%8C%E5%9F%BA%E7%A4%8E%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89-Token-Based-Authentication"><span class="nav-number">4.</span> <span class="nav-text">4.令牌基礎身份驗證 (Token-Based Authentication)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%96%BC-Cookie-%E7%9A%84%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89%E8%88%87%E4%BB%A4%E7%89%8C%E5%9F%BA%E7%A4%8E%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89%E5%B7%AE%E7%95%B0"><span class="nav-number">5.</span> <span class="nav-text">基於 Cookie 的身份驗證與令牌基礎身份驗證差異</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%96%BC-Cookie-%E7%9A%84%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89"><span class="nav-number">5.1.</span> <span class="nav-text">基於 Cookie 的身份驗證</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A4%E7%89%8C%E5%9F%BA%E7%A4%8E%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89"><span class="nav-number">5.2.</span> <span class="nav-text">令牌基礎身份驗證</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">372</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">518k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">7:51</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : 'f2935dbe5dd27d9b2e426e89c64a6ed1',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
