@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
 <meta property="article:published_time" content="2025-02-15T07:00:00.000Z">
-<meta property="article:modified_time" content="2025-02-15T07:30:15.392Z">
+<meta property="article:modified_time" content="2025-03-15T13:37:27.907Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="文書">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2025-02-15 15:00:00 / Modified: 15:30:15" itemprop="dateCreated datePublished" datetime="2025-02-15T15:00:00+08:00">2025-02-15</time>
+              <time title="Created: 2025-02-15 15:00:00" itemprop="dateCreated datePublished" datetime="2025-02-15T15:00:00+08:00">2025-02-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-03-15 21:37:27" itemprop="dateModified" datetime="2025-03-15T21:37:27+08:00">2025-03-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +234,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.7k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -272,7 +278,7 @@
 <li>伺服器驗證會話資訊以確定使用者身份。</li>
 </ol>
 <h1 id="3-JSON-Web-Tokens-JWT"><a href="#3-JSON-Web-Tokens-JWT" class="headerlink" title="3.JSON Web Tokens (JWT)"></a>3.JSON Web Tokens (JWT)</h1><p><code>適用分散式系統與API，需要考慮 Token 失效管理和伺服器端驗證開銷</code></p>
-<p>基於 JSON 的RFC 7519標準，包含所有驗證使用者身份所需信息，伺服器不需儲存會話</p>
+<p>基於 JSON 的RFC 7519標準，包含所有驗證使用者身份所需信息，簡潔、無狀態且經過數位簽署，伺服器不需儲存會話，允許伺服器在無需持續查詢資料庫的情況下驗證聲明。但若未正確處理漏洞（例如接受 “alg”: “none”），則可能存在風險。</p>
 <ol>
 <li>Header (標頭): 包含 JWT 的類型和所使用的簽名演算法。</li>
 <li>Payload (載荷): <ul>
@@ -283,7 +289,11 @@
 </li>
 <li>Signature (簽名): 用於驗證 JWT 的完整性和發送者身份。簽名是通過 Header 中指定的演算法，使用 Header、Payload 和一個 Secret Key (或 Private Key) 計算得出的。</li>
 </ol>
-<h1 id="4-令牌基礎身份驗證-Token-Based-Authentication"><a href="#4-令牌基礎身份驗證-Token-Based-Authentication" class="headerlink" title="4.令牌基礎身份驗證 (Token-Based Authentication)"></a>4.令牌基礎身份驗證 (Token-Based Authentication)</h1><p><code>伺服器不需維護會話狀態，需防範 XSS 攻擊</code></p>
+<h1 id="4-令牌基礎身份驗證-Token-Based-Authentication"><a href="#4-令牌基礎身份驗證-Token-Based-Authentication" class="headerlink" title="4.令牌基礎身份驗證 (Token-Based Authentication)"></a>4.令牌基礎身份驗證 (Token-Based Authentication)</h1><p><code>發放令牌 (Token)，然後讓應用程式拿著這個令牌去存取資源，伺服器不需維護會話狀態，需防範 XSS 攻擊</code></p>
+<ul>
+<li>API 金鑰: 授予永久存取權限的靜態字串。  </li>
+<li><a target="_blank" rel="noopener" href="https://dev.to/leapcell/mastering-oauth-20-step-by-step-2726">OAuth 2.0</a>： 有期限的動態生成憑證。     </li>
+</ul>
 <ol>
 <li>使用者成功登入後，伺服器生成一個隨機的、唯一的令牌 (Token)。</li>
 <li>伺服器將這個令牌儲存在資料庫中，並與使用者關聯。</li>
@@ -432,7 +442,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">374</span>
+          <span class="site-state-item-count">377</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -500,12 +510,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">519k</span>
+    <span title="Symbols count total">522k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">7:52</span>
+    <span title="Reading time total">7:54</span>
 </div>
 
         
