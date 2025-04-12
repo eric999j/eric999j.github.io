@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-03-22T10:16:31.239Z</updated>
+  <updated>2025-04-12T08:46:16.738Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>That&#39;s the way it is</title>
+    <link href="https://eric999j.github.io/life/insist/"/>
+    <id>https://eric999j.github.io/life/insist/</id>
+    <published>2025-04-12T08:30:00.000Z</published>
+    <updated>2025-04-12T08:46:16.738Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5ShgU6K.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這次是聖歌🙏🏻&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gitlab CI YML</title>
+    <link href="https://eric999j.github.io/engineer/gitlabCI/"/>
+    <id>https://eric999j.github.io/engineer/gitlabCI/</id>
+    <published>2025-04-12T08:00:00.000Z</published>
+    <updated>2025-04-12T08:45:50.213Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Gitlab自動建置參數&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>財經書籍</title>
@@ -363,46 +403,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;如果Netflix是家注重效率的大型餐廳&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>滲透測試(Penetration Test，PT)</title>
-    <link href="https://eric999j.github.io/manager/PT/"/>
-    <id>https://eric999j.github.io/manager/PT/</id>
-    <published>2024-12-15T01:30:00.000Z</published>
-    <updated>2024-12-15T01:22:18.091Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;紅藍紫定義與生成對抗網路（GAN）對照&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>加密</title>
-    <link href="https://eric999j.github.io/manager/encryption/"/>
-    <id>https://eric999j.github.io/manager/encryption/</id>
-    <published>2024-12-15T01:00:00.000Z</published>
-    <updated>2024-12-15T01:21:24.649Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;加密的強弱程度&lt;/p&gt;</summary>
     
     
     

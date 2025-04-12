@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg">
 <meta property="article:published_time" content="2020-10-11T07:00:00.000Z">
-<meta property="article:modified_time" content="2025-02-22T10:31:46.150Z">
+<meta property="article:modified_time" content="2025-04-06T09:28:51.628Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-02-22 18:31:46" itemprop="dateModified" datetime="2025-02-22T18:31:46+08:00">2025-02-22</time>
+                <time title="Modified: 2025-04-06 17:28:51" itemprop="dateModified" datetime="2025-04-06T17:28:51+08:00">2025-04-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>8.9k</span>
+              <span>9.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>8 mins.</span>
+              <span>9 mins.</span>
             </span>
 
         </div>
@@ -262,7 +262,30 @@
 <p>timeout 120 bash -c – ‘while true; do curl localhost; sleep $((RANDOM % 4)) ; done’</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">120 秒內不斷地向 localhost 發送 HTTP 請求，每次請求之間會隨機等待 0 到 3 秒。</span><br><span class="line"></span><br><span class="line">1. timeout 120: 這個命令會在 120 秒後自動終止後面的命令。</span><br><span class="line">2. bash -c -- &#39;...&#39;: 這部分表示在一個新的 bash shell 中執行引號內的命令。</span><br><span class="line">3. curl localhost: 這個命令會向 localhost 發送一個 HTTP 請求。</span><br><span class="line">4. sleep $((RANDOM % 4)): 這個命令會讓程式暫停一段隨機時間（0 到 3 秒之間），然後繼續下一次循環。</span><br><span class="line">5. done是 while 循環的結束標記。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p> while true; do</p>
-<h1 id="執行的命令"><a href="#執行的命令" class="headerlink" title="執行的命令"></a>執行的命令</h1><p>done<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 等效for迴圈</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>export MY_SERVER=localhost<br>timeout 120 bash -c – ‘for (( ; ; )) ; do curl  $MY_SERVER; sleep $((RANDOM % 4)); done’<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">在Python中，for的無限迴圈寫法是 for _, 與[Bash](https:&#x2F;&#x2F;dev.to&#x2F;patadiarushabh&#x2F;mastering-shell-scripting-from-basics-to-advanced-automation-343)不同</span><br><span class="line"></span><br><span class="line"># 系統管理</span><br></pre></td></tr></table></figure><br>whoami: 顯示目前使用者<br>dig: 看網域資訊<br>host: 看域名<br>ip a: 新的ifconfig<br>ss: 看目前開的port<br>tcpdump: 查看傳輸封包<br>hostname: 顯示主機名稱<br>uname: 系統資訊<br>du -h: 目錄大小<br>ps -aux: 執行續狀態<br>netstat: 網路狀態<br>/etc/profile: 系統環境變數<br>.bashrc: 用戶環境變數<br>ping: 測試與其他主機的連線是否暢通<br>tracert: 追蹤資料封包從來源主機到目的主機所經過的路徑<br>netstat: 顯示網路連線、路由表、網路介面等資訊<br>tcpdump: 捕捉網路封包並進行分析<br>iftop: 實時顯示網路流量使用情況<br>mtr: ping+ traceroute<br>journalctl -xb: 查看日誌<br>sudo dmesg | tail -50: 系統問題</p>
+<h1 id="執行的命令"><a href="#執行的命令" class="headerlink" title="執行的命令"></a>執行的命令</h1><p>done<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 等效for迴圈</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>export MY_SERVER=localhost<br>timeout 120 bash -c – ‘for (( ; ; )) ; do curl  $MY_SERVER; sleep $((RANDOM % 4)); done’<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">在Python中，for的無限迴圈寫法是 for _, 與[Bash](https:&#x2F;&#x2F;dev.to&#x2F;patadiarushabh&#x2F;mastering-shell-scripting-from-basics-to-advanced-automation-343)不同</span><br><span class="line"></span><br><span class="line"># 替代</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h1 id="scp替代"><a href="#scp替代" class="headerlink" title="scp替代"></a>scp替代</h1><p>sudo apt install rsync  #Debian / Ubuntu</p>
+<p>rsync -av source/ destination/<br>rsync -avz source/ user@remote:/destination</p>
+<h1 id="cat替代"><a href="#cat替代" class="headerlink" title="cat替代"></a>cat替代</h1><p>sudo apt install bat</p>
+<p>bat FileToRead.txt</p>
+<h1 id="find替代"><a href="#find替代" class="headerlink" title="find替代"></a>find替代</h1><p>sudo apt install fd-find</p>
+<p>fd “pattern” /search/path<br>fd “.log” /var/log</p>
+<h1 id="du替代"><a href="#du替代" class="headerlink" title="du替代"></a>du替代</h1><p>sudo apt install ncdu</p>
+<p>ncdu –help</p>
+<h1 id="top替代"><a href="#top替代" class="headerlink" title="top替代"></a>top替代</h1><p>sudo apt install htop</p>
+<p>htop –help</p>
+<h1 id="column印表格"><a href="#column印表格" class="headerlink" title="column印表格"></a>column印表格</h1><p>cat data.txt | column -t | more</p>
+<h1 id="watch實時監控"><a href="#watch實時監控" class="headerlink" title="watch實時監控"></a>watch實時監控</h1><p>watch df -h</p>
+<h1 id="tree樹狀結構"><a href="#tree樹狀結構" class="headerlink" title="tree樹狀結構"></a>tree樹狀結構</h1><p>sudo apt install tree</p>
+<p>tree /etc/</p>
+<h1 id="pv進度條"><a href="#pv進度條" class="headerlink" title="pv進度條"></a>pv進度條</h1><p>sudo apt install pv</p>
+<p>pv file_to_compress | gzip &gt; compressed_file.gz</p>
+<h1 id="man替代"><a href="#man替代" class="headerlink" title="man替代"></a>man替代</h1><p>sudo apt install tldr</p>
+<p>tldr tar</p>
+<h1 id="ls替代"><a href="#ls替代" class="headerlink" title="ls替代"></a>ls替代</h1><p>sudo apt install eza</p>
+<p>#List tree structure<br>eza –long –tree –level=3</p>
+<p>#List headers, icons, and Git statuses<br>eza –long –header –icons –git</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 系統管理</span><br></pre></td></tr></table></figure>
+<p>whoami: 顯示目前使用者<br>dig: 看網域資訊<br>host: 看域名<br>ip a: 新的ifconfig<br>ss: 看目前開的port<br>tcpdump: 查看傳輸封包<br>hostname: 顯示主機名稱<br>uname: 系統資訊<br>du -h: 目錄大小<br>ps -aux: 執行續狀態<br>netstat: 網路狀態<br>/etc/profile: 系統環境變數<br>.bashrc: 用戶環境變數<br>ping: 測試與其他主機的連線是否暢通<br>tracert: 追蹤資料封包從來源主機到目的主機所經過的路徑<br>netstat: 顯示網路連線、路由表、網路介面等資訊<br>tcpdump: 捕捉網路封包並進行分析<br>iftop: 實時顯示網路流量使用情況<br>mtr: ping+ traceroute<br>journalctl -xb: 查看日誌<br>sudo dmesg | tail -50: 系統問題</p>
 <ul>
 <li><p>關閉SE Linux<br>$ vi /etc/selinux/config<br>SELINUX = disabled</p>
 </li>
@@ -447,7 +470,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">執行的命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NoMachine"><span class="nav-number">3.</span> <span class="nav-text">NoMachine</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">日常操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">執行的命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#scp%E6%9B%BF%E4%BB%A3"><span class="nav-number">3.</span> <span class="nav-text">scp替代</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cat%E6%9B%BF%E4%BB%A3"><span class="nav-number">4.</span> <span class="nav-text">cat替代</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#find%E6%9B%BF%E4%BB%A3"><span class="nav-number">5.</span> <span class="nav-text">find替代</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#du%E6%9B%BF%E4%BB%A3"><span class="nav-number">6.</span> <span class="nav-text">du替代</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#top%E6%9B%BF%E4%BB%A3"><span class="nav-number">7.</span> <span class="nav-text">top替代</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#column%E5%8D%B0%E8%A1%A8%E6%A0%BC"><span class="nav-number">8.</span> <span class="nav-text">column印表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#watch%E5%AF%A6%E6%99%82%E7%9B%A3%E6%8E%A7"><span class="nav-number">9.</span> <span class="nav-text">watch實時監控</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tree%E6%A8%B9%E7%8B%80%E7%B5%90%E6%A7%8B"><span class="nav-number">10.</span> <span class="nav-text">tree樹狀結構</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pv%E9%80%B2%E5%BA%A6%E6%A2%9D"><span class="nav-number">11.</span> <span class="nav-text">pv進度條</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#man%E6%9B%BF%E4%BB%A3"><span class="nav-number">12.</span> <span class="nav-text">man替代</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ls%E6%9B%BF%E4%BB%A3"><span class="nav-number">13.</span> <span class="nav-text">ls替代</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NoMachine"><span class="nav-number">14.</span> <span class="nav-text">NoMachine</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -465,7 +488,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">380</span>
+          <span class="site-state-item-count">382</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -533,12 +556,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">523k</span>
+    <span title="Symbols count total">527k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">7:56</span>
+    <span title="Reading time total">7:59</span>
 </div>
 
         
