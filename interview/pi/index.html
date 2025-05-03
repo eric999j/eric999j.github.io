@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="1π &#x3D; 4 ( 1 - 1&#x2F;3 + 1&#x2F;5 - 1&#x2F;7 + 1&#x2F;9 - 1&#x2F;11 + ⋯ )">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leibniz formula for π">
+<meta property="og:url" content="https://eric999j.github.io/interview/pi/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="1π &#x3D; 4 ( 1 - 1&#x2F;3 + 1&#x2F;5 - 1&#x2F;7 + 1&#x2F;9 - 1&#x2F;11 + ⋯ )">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
+<meta property="article:published_time" content="2025-05-03T14:00:00.000Z">
+<meta property="article:modified_time" content="2025-05-03T15:04:02.971Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="力扣">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/interview/pi/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>Leibniz formula for π | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/interview/pi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Leibniz formula for π
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-05-03 22:00:00 / Modified: 23:04:02" itemprop="dateCreated datePublished" datetime="2025-05-03T22:00:00+08:00">2025-05-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/interview/" itemprop="url" rel="index"><span itemprop="name">面試</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>1.9k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">π &#x3D; 4 ( 1 - 1&#x2F;3 + 1&#x2F;5 - 1&#x2F;7 + 1&#x2F;9 - 1&#x2F;11 + ⋯ )</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>π 可以由<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80#:~:text=The%20Leibniz%20formula%20can%20be%20interpreted%20as%20a%20Dirichlet%20series,in%20order%20of%20increasing%20p.">萊布尼茲公式</a>近似，特色是算越多項越接近pi, 因為公式都是重疊子問題，很適合用動態規劃實作</p>
+<h1 id="動態規劃的實作思路"><a href="#動態規劃的實作思路" class="headerlink" title="動態規劃的實作思路"></a>動態規劃的實作思路</h1><ol>
+<li>狀態表示： 設置一個數組 dp，其中 dp[i] 表示計算到第 i 項的累積和。</li>
+<li>狀態轉移方程： 我們有 dp[i] = dp[i-1] + ((-1) ** i) / (2 * i + 1)。這樣每次只需要加上第i項的新值，就可以得到當前的近似值。</li>
+<li>初始化： 設定 dp[0] = 4 * (1)，這是公式的第一項。</li>
+</ol>
+<ul>
+<li>Math.pow(-1, n): (-1)^n 因為某項跟上一項正負相反</li>
+<li>TC:O(n)每次疊代只用常數時間計算（-1）^n/（2*n+1)</li>
+<li>SC:O(1)只用previousSum, piApprox存變數且變數不會增長</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">def dynamic_programming_for_pi(target_pi&#x3D;3.1415926, threshold&#x3D;1e-7):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    Approximates the value of π using the Leibniz formula for π.</span><br><span class="line">    </span><br><span class="line">    Parameters:</span><br><span class="line">    - target_pi: 設置目標 pi 和精度閾值</span><br><span class="line">    - threshold: 控制逼近的精確度</span><br><span class="line">    </span><br><span class="line">    Returns:</span><br><span class="line">    - pi_approx: The approximated value of π.</span><br><span class="line">    - terms_used: The number of terms used to reach the approximation.</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    n &#x3D; 1  # 初始項數</span><br><span class="line">    pi_approx &#x3D; 4.0  # dp[0] 的值</span><br><span class="line">    previous_sum &#x3D; 1.0  # 第一項的值</span><br><span class="line">    terms &#x3D; [1.0] # 記錄每一項的值</span><br><span class="line">    while abs(pi_approx - target_pi) &gt;&#x3D; threshold:</span><br><span class="line">        # 計算第 n 項，使用動態累積和</span><br><span class="line">        if n &lt; len(terms):</span><br><span class="line">            term &#x3D; terms[n]        </span><br><span class="line">        else:</span><br><span class="line">            term &#x3D; ((-1) ** n) &#x2F; (2 * n + 1)</span><br><span class="line">            terms.append(term)</span><br><span class="line">        </span><br><span class="line">        previous_sum +&#x3D; term</span><br><span class="line">        pi_approx &#x3D; 4 * previous_sum</span><br><span class="line">        n +&#x3D; 1  # 增加項數</span><br><span class="line"></span><br><span class="line">    return pi_approx, n</span><br></pre></td></tr></table></figure>
+
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public class PiApproximation &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        double targetPi &#x3D; 3.1415926;</span><br><span class="line">        double threshold &#x3D; 1e-7; &#x2F;&#x2F; 控制逼近的精確度</span><br><span class="line"></span><br><span class="line">        double piApprox &#x3D; approximatePi(targetPi, threshold);</span><br><span class="line">        System.out.println(&quot;逼近的 pi 值: &quot; + piApprox);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static double approximatePi(double targetPi, double threshold) &#123;</span><br><span class="line">        int n &#x3D; 1; &#x2F;&#x2F; 初始項數</span><br><span class="line">        double previousSum &#x3D; 1.0; &#x2F;&#x2F; 第一項的值</span><br><span class="line">        double piApprox &#x3D; 4 * previousSum; &#x2F;&#x2F; 初始化的 pi 近似值</span><br><span class="line">        int sign &#x3D; -1; &#x2F;&#x2F; 從第二項開始，符號交替，初始設置為 -1</span><br><span class="line"></span><br><span class="line">        while (Math.abs(piApprox - targetPi) &gt;&#x3D; threshold) &#123;</span><br><span class="line">            &#x2F;&#x2F; 直接計算下一項，並切換符號</span><br><span class="line">            double term &#x3D; sign &#x2F; (double) (2 * n + 1);</span><br><span class="line">            previousSum +&#x3D; term;</span><br><span class="line">            piApprox &#x3D; 4 * previousSum;</span><br><span class="line">            sign &#x3D; -sign; &#x2F;&#x2F; 符號切換</span><br><span class="line">            n++; &#x2F;&#x2F; 增加項數</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;使用的項數: &quot; + n);</span><br><span class="line">        return piApprox;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/LeetCode/" rel="tag"><i class="fa fa-tag"></i> 力扣</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/life/insist/" rel="prev" title="That's the way it is">
+      <i class="fa fa-chevron-left"></i> That's the way it is
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/life/hualien/" rel="next" title="創意花蓮味">
+      創意花蓮味 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83%E7%9A%84%E5%AF%A6%E4%BD%9C%E6%80%9D%E8%B7%AF"><span class="nav-number">1.</span> <span class="nav-text">動態規劃的實作思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java"><span class="nav-number">2.</span> <span class="nav-text">Java</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">384</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">530k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">8:01</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : 'ad31adb02d17b957767f9a44d20e2f32',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
