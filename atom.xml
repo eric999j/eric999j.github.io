@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-05-10T11:34:46.280Z</updated>
+  <updated>2025-05-24T09:58:20.328Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>硬舉</title>
+    <link href="https://eric999j.github.io/life/deadlift/"/>
+    <id>https://eric999j.github.io/life/deadlift/</id>
+    <published>2025-05-24T09:00:00.000Z</published>
+    <updated>2025-05-24T09:58:20.328Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;自從收到前同事DW的啞鈴組，就想試試&lt;a href=&quot;https://tw.sports.yahoo.com/news/%E5%82%B3%E7%B5%B1%E7%A1%AC%E8%88%89%E8%A6%BA%E5%BE%97%E5%A4%AA%E7%84%A1%E8%81%8A%EF%BC%9F%E4%BE%86%E8%A9%A6%E8%A9%A6%E5%85%B6%E4%BB%96%E7%9A%84%E8%AE%8A%E5%8C%96%E5%BC%8F%E5%90%A7%EF%BC%81-010947469.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly9hcHAuc2ltcGxlbm90ZS5jb20v&amp;guce_referrer_sig=AQAAANA6mxoUOAy6ywAvTQBZwZDKaFq8oC22hzS4FIbpdq60PoDl7h6K47d4d210B6Ib1Og3n_R2gOx8yJHsy_r6Y5-cS8m8wiPLM1E0jICGXOpBQ6J9pnCGHG-gloqCWp-be5YieMEOiu2zPUkmzerEmE-mEZOtmfwKjFYX3Hqe3HhM&quot;&gt;硬舉&lt;/a&gt;，但該注意什麼？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="運動" scheme="https://eric999j.github.io/tags/Workout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SDLC</title>
+    <link href="https://eric999j.github.io/engineer/sdlc/"/>
+    <id>https://eric999j.github.io/engineer/sdlc/</id>
+    <published>2025-05-24T08:00:00.000Z</published>
+    <updated>2025-05-24T10:00:13.079Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;軟體開發生命週期&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Environmental, Social, and Governance</title>
     <link href="https://eric999j.github.io/manager/ESG/"/>
     <id>https://eric999j.github.io/manager/ESG/</id>
     <published>2025-05-10T11:30:00.000Z</published>
-    <updated>2025-05-10T11:34:46.280Z</updated>
+    <updated>2025-05-24T09:21:16.038Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg&quot;&gt;&lt;/p&gt;
@@ -364,46 +404,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;CAP延伸&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>充電器材選擇</title>
-    <link href="https://eric999j.github.io/life/charger/"/>
-    <id>https://eric999j.github.io/life/charger/</id>
-    <published>2025-01-18T08:00:00.000Z</published>
-    <updated>2025-01-18T07:13:27.545Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(4).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;到底在GaN什麼？&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CAP Theorem</title>
-    <link href="https://eric999j.github.io/engineer/cap/"/>
-    <id>https://eric999j.github.io/engineer/cap/</id>
-    <published>2025-01-18T07:00:00.000Z</published>
-    <updated>2025-01-18T07:12:54.683Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-08.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;分散式系統中讀寫操作權衡，一致性、可用性和分區容忍度。&lt;/p&gt;</summary>
     
     
     
