@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-05-24T09:58:20.328Z</updated>
+  <updated>2025-05-30T07:28:04.351Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>公約與協定</title>
+    <link href="https://eric999j.github.io/manager/protocol/"/>
+    <id>https://eric999j.github.io/manager/protocol/</id>
+    <published>2025-05-30T07:30:00.000Z</published>
+    <updated>2025-05-30T07:28:04.351Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;碳管理前大架構&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>氣候永續</title>
+    <link href="https://eric999j.github.io/manager/climateSustainability/"/>
+    <id>https://eric999j.github.io/manager/climateSustainability/</id>
+    <published>2025-05-30T06:00:00.000Z</published>
+    <updated>2025-05-30T07:29:34.037Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;氣候永續課程隨筆&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>硬舉</title>
@@ -371,46 +411,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>秦基博 – 泣き笑いのエピソード</title>
-    <link href="https://eric999j.github.io/life/smile/"/>
-    <id>https://eric999j.github.io/life/smile/</id>
-    <published>2025-02-02T07:00:00.000Z</published>
-    <updated>2025-02-02T04:22:46.563Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(39).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;當傷口癒合時，我希望能將這些哭笑交織的故事與你分享。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACID &amp;&amp; BASE</title>
-    <link href="https://eric999j.github.io/engineer/ACID/"/>
-    <id>https://eric999j.github.io/engineer/ACID/</id>
-    <published>2025-02-02T06:00:00.000Z</published>
-    <updated>2025-02-02T04:21:33.087Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;CAP延伸&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
