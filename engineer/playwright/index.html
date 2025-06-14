@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg">
 <meta property="article:published_time" content="2025-05-10T11:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-10T11:15:17.619Z">
+<meta property="article:modified_time" content="2025-06-14T06:57:03.920Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2025-05-10 19:00:00 / Modified: 19:15:17" itemprop="dateCreated datePublished" datetime="2025-05-10T19:00:00+08:00">2025-05-10</time>
+              <time title="Created: 2025-05-10 19:00:00" itemprop="dateCreated datePublished" datetime="2025-05-10T19:00:00+08:00">2025-05-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-06-14 14:57:03" itemprop="dateModified" datetime="2025-06-14T14:57:03+08:00">2025-06-14</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.9k</span>
+              <span>3.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -272,6 +278,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page.route(&#39;**&#x2F;*&#39;, lambda route: route.fulfill(status&#x3D;200, body&#x3D;&#39;mocked data&#39;))</span><br></pre></td></tr></table></figure>
 
 <ul>
+<li>加上截圖</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">page.screenshot(path&#x3D;&quot;before_click.png&quot;)</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>腳本錄製</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">playwright codegen --target python -o script.py -b chromium https:&#x2F;&#x2F;example.com</span><br></pre></td></tr></table></figure>
@@ -300,6 +311,49 @@
 <li>複製完整地址  </li>
 </ol>
 <h1 id="Python-程式碼入口比較"><a href="#Python-程式碼入口比較" class="headerlink" title="Python 程式碼入口比較"></a>Python 程式碼入口比較</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* if __name__ &#x3D;&#x3D; &quot;__main__&quot;</span><br><span class="line">	* 通用，用於一般的Python程式入口設置，能夠幫助程式碼模組化，使之更容易測試和重用。</span><br><span class="line"></span><br><span class="line">* with sync_playwright() as playwright</span><br><span class="line">	* 特定於 Playwright 庫，用於瀏覽器自動化腳本的資源管理和壽命週期控制。</span><br></pre></td></tr></table></figure>
+
+<h1 id="Docker-上使用-Playwright"><a href="#Docker-上使用-Playwright" class="headerlink" title="Docker 上使用 Playwright"></a>Docker 上使用 Playwright</h1><ul>
+<li>Docker Server建置</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* 使用mcr.microsoft.com&#x2F;playwright:v1.52.0-noble Image</span><br><span class="line">	docker pull mcr.microsoft.com&#x2F;playwright:v1.52.0-noble</span><br><span class="line"></span><br><span class="line">* 映射輸出端口( 若有加 --rm在exit時會刪除容器，--user pwuser會以user身分都入)</span><br><span class="line">	docker run -p 3000:3000 --init -it --workdir &#x2F;home&#x2F;pwuser mcr.microsoft.com&#x2F;playwright:v1.52.0-noble   &#x2F;bin&#x2F;sh -c &quot;npm set strict-ssl false &amp;&amp; npx -y playwright@1.52.0 run-server --port 3000 --host 0.0.0.0 &quot;</span><br><span class="line"></span><br><span class="line">運行後顯示 Listening on ws:&#x2F;&#x2F;0.0.0.0:3000&#x2F;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>本地Websocket設定</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; Windows 設定環境變數 </span><br><span class="line">$env:PW_TEST_CONNECT_WS_ENDPOINT &#x3D; &quot;ws:&#x2F;&#x2F;127.0.0.1:3000&#x2F;&quot; </span><br><span class="line"></span><br><span class="line">&gt; Linux 設定環境變數</span><br><span class="line">PW_TEST_CONNECT_WS_ENDPOINT&#x3D;ws:&#x2F;&#x2F;127.0.0.1:3000&#x2F; </span><br><span class="line"></span><br><span class="line">&gt; 關鍵段落</span><br><span class="line">browser &#x3D; playwright.chromium.connect(ws_endpoint&#x3D;&quot;ws:&#x2F;&#x2F;127.0.0.1:3000&#x2F;&quot;) </span><br><span class="line"></span><br><span class="line">&gt; 若非WebSocket，在遠端設定背景執行</span><br><span class="line">browser &#x3D; playwright.chromium.launch(headless&#x3D;True)</span><br></pre></td></tr></table></figure>
+
+<p>設定了 <strong>環境變數</strong>與<strong>關鍵段落</strong>後，瀏覽器的所有操作都會透過 WebSocket 傳送到 Docker 容器中執行，本機只負責執行 Python 腳本的邏輯。</p>
+<ul>
+<li>執行方式</li>
+</ul>
+<p>```<br>JavaScript腳本: npx playwright test<br>Python腳本<br>    # browser = playwright.chromium.launch(headless=False)<br>    browser = playwright.chromium.connect(ws_endpoint=”ws://127.0.0.1:3000/“)<br>與本地相同:指令 python automate_form.py<br>``</p>
+<h1 id="Playwright執行環境比較"><a href="#Playwright執行環境比較" class="headerlink" title="Playwright執行環境比較"></a>Playwright執行環境比較</h1><ul>
+<li><p>Windows 中的 Playwright</p>
+<ul>
+<li>性能較佳( 沒有Docker的虛擬化層)</li>
+<li>GUI測試較方便</li>
+<li>技術門檻較低</li>
+<li>適合<strong>需要執行時看到結果情境</strong></li>
+</ul>
+</li>
+<li><p>Gitlab CI的 Playwright</p>
+<ul>
+<li>適合自動化測試</li>
+<li>適合團隊協作</li>
+<li>環境一致性高( 依賴管理/ 跨平台/ 隔離)</li>
+<li>適合<strong>自動化測試，透過斷言並在Gitlab Artifacts看到測試結果</strong></li>
+</ul>
+</li>
+<li><p>使用WebSocket優勢</p>
+<ul>
+<li>手動執行</li>
+<li>程式碼並將截圖保留在本地</li>
+<li>適合<strong>本地開發，又想用遠端Docker執行情境</strong></li>
+</ul>
+</li>
+</ul>
+<p>最方便執行方式還是在本地， Docker Playwright Server優勢在自動化測試，雖存在WebSocket用法但需要一定技術門檻</p>
+
 <div>
     <hr>
     <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
@@ -407,7 +461,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Playwright-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Playwright 常用指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Playwright%E6%8D%95%E6%8D%89Growl"><span class="nav-number">2.</span> <span class="nav-text">Playwright捕捉Growl</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-number">3.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">實作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#XPath"><span class="nav-number">5.</span> <span class="nav-text">XPath</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%85%A5%E5%8F%A3%E6%AF%94%E8%BC%83"><span class="nav-number">6.</span> <span class="nav-text">Python 程式碼入口比較</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Playwright-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Playwright 常用指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Playwright%E6%8D%95%E6%8D%89Growl"><span class="nav-number">2.</span> <span class="nav-text">Playwright捕捉Growl</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-number">3.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">實作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#XPath"><span class="nav-number">5.</span> <span class="nav-text">XPath</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%85%A5%E5%8F%A3%E6%AF%94%E8%BC%83"><span class="nav-number">6.</span> <span class="nav-text">Python 程式碼入口比較</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-%E4%B8%8A%E4%BD%BF%E7%94%A8-Playwright"><span class="nav-number">7.</span> <span class="nav-text">Docker 上使用 Playwright</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Playwright%E5%9F%B7%E8%A1%8C%E7%92%B0%E5%A2%83%E6%AF%94%E8%BC%83"><span class="nav-number">8.</span> <span class="nav-text">Playwright執行環境比較</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -425,7 +479,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">390</span>
+          <span class="site-state-item-count">392</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -493,12 +547,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">537k</span>
+    <span title="Symbols count total">545k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">8:08</span>
+    <span title="Reading time total">8:16</span>
 </div>
 
         

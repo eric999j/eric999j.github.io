@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="地球的小棉襖">
+<meta property="og:type" content="article">
+<meta property="og:title" content="溫室氣體盤查">
+<meta property="og:url" content="https://eric999j.github.io/manager/GHG/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="地球的小棉襖">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
+<meta property="article:published_time" content="2025-06-14T09:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-14T09:41:24.058Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="文書">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/manager/GHG/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>溫室氣體盤查 | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/manager/GHG/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          溫室氣體盤查
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-06-14 17:00:00 / Modified: 17:41:24" itemprop="dateCreated datePublished" datetime="2025-06-14T17:00:00+08:00">2025-06-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/manager/" itemprop="url" rel="index"><span itemprop="name">管理</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.8k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>3 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg"></p>
+<p>地球的小棉襖</p>
+<a id="more"></a> 
+
+<h1 id="溫室氣體-GHG（二甲氧氫全63）："><a href="#溫室氣體-GHG（二甲氧氫全63）：" class="headerlink" title="溫室氣體 GHG（二甲氧氫全63）："></a>溫室氣體 GHG（二甲氧氫全63）：</h1><ul>
+<li>二氧化碳 (CO2)：主要來自燃燒化石燃料，如煤炭、石油和天然氣。</li>
+<li>甲烷 (CH4)：主要來自農業活動、垃圾掩埋場和天然氣洩漏，AR6是27, 不是27.9。</li>
+<li>氧化亞氮 (N2O)：主要來自農業活動、工業過程和燃燒。</li>
+<li>氫氟碳化物 (HFCs)：主要用於冷媒和製冷劑，用來取代氯氟碳化物，雖不破壞臭氧，但其溫室效應潛勢極高。</li>
+<li>全氟碳化物 (PFCs)：主要來自鋁生產和某些工業過程。</li>
+<li>六氟化硫 (SF6)：主要來自電力產業和某些工業過程。</li>
+<li>三氟化氮 (NF3)：主要用於半導體、液晶螢幕和薄膜太陽能電池製造過程中的蝕刻劑。</li>
+<li>氯氟碳化物(CFCs)：主要來自過去的冷媒和噴霧劑，蒙特婁議定書規定的，疑似會破壞臭氧，已逐步淘汰，但仍存在於大氣中。</li>
+<li>水蒸氣，臭氧也是溫室氣體，但無危害</li>
+<li>二氧化碳當量：其它溫室氣體統一換成二氧化碳的比較量</li>
+</ul>
+<h1 id="溫室氣體全球暖化潛勢-Global-Warming-Potential-GWP"><a href="#溫室氣體全球暖化潛勢-Global-Warming-Potential-GWP" class="headerlink" title="溫室氣體全球暖化潛勢 (Global Warming Potential, GWP)"></a><code>溫室氣體全球暖化潛勢 (Global Warming Potential, GWP)</code></h1><p>用來衡量不同溫室氣體相對於二氧化碳 (CO₂) 造成地球暖化能力的指標，基準是100年</p>
+<ul>
+<li>IPCC第幾次評估報告（如 AR4、AR5 或 AR6）</li>
+<li>用於比較不同溫室氣體對全球暖化的影響，通常以二氧化碳 (CO2) 作為基準（CO2 的 GWP 為 1）。</li>
+<li>AR6 (2021) : 聯合國政府間氣候變化專門委員會 (IPCC) 第六次評估報告 (Sixth Assessment Report)，更新GWP值。<ul>
+<li>更新了各種溫室氣體的 GWP 值，但不強制所有報告都必須採用最新的 GWP 值。</li>
+</ul>
+</li>
+</ul>
+<h1 id="溫室氣體-GHG-盤查-碳盤查"><a href="#溫室氣體-GHG-盤查-碳盤查" class="headerlink" title="溫室氣體 (GHG) 盤查=碳盤查"></a><code>溫室氣體 (GHG) 盤查=碳盤查</code></h1><ul>
+<li>衡量企業或組織溫室氣體排放量的重要工具。</li>
+<li>減量目標<ul>
+<li>絕對目標：組織型盤查</li>
+<li>強度目標：產品</li>
+</ul>
+</li>
+<li>有範疇，一度電0.509 公斤CO2e/度<ul>
+<li>範疇 1：直接排放 - 企業直接排放的溫室氣體，重點在於「降低逸散」，例如自有發電設備、鍋爐燃燒、車輛燃料消耗等。</li>
+<li>範疇 2：間接排放 - 企業因購買電力、熱能等能源所產生（如外購電力、熱力、蒸汽、冷卻）在使用過程中產生的溫室氣體排放，重點在於「發展綠電、提升能源效率」<ul>
+<li>「採購進來的人員使用」屬於此範疇。</li>
+</ul>
+</li>
+<li>範疇 3：其他間接排放 - 不屬於範疇 1 或範疇 2 的所有其他間接溫室氣體排放，供應鏈、產品使用及廢棄等環節，佔98% 碳排， 其中59% 是產品製造。有 15 項，分為「上游」和「下游」。<ul>
+<li>上游： 「公司付錢」的相關活動，重點在於「與供應商合作」，例如採購的商品或服務的生產、價值鏈中的其他來源，如供應鏈、員工通勤、商務旅行等。<ul>
+<li>特別提及「電力上游盤查到油井」，以及「產品委外加工再回公司」屬於上游，且「排放量最高但不被重視」。</li>
+</ul>
+</li>
+<li>下游： 「產品收錢」的相關活動，例如產品使用、產品報廢處理等。「不回公司」的委外加工則屬於下游。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="碳盤查五大原則-關整一準透"><a href="#碳盤查五大原則-關整一準透" class="headerlink" title="碳盤查五大原則( 關整一準透)"></a>碳盤查五大原則( 關整一準透)</h2><ul>
+<li>相關性（Relevance）： 盤查資訊應「與使用者的需求相關」，滿足報告使用者的需求。</li>
+<li>完整性（Completeness）： 應涵蓋「所有相關的溫室氣體排放源和活動」，確保盤查結果的「全面性」。</li>
+<li>一致性（Consistency）： 盤查方法和數據應「保持一致性」，以便進行「比較和追蹤」減排成效。</li>
+<li>準確性（Accuracy）： 盤查數據應「盡可能準確」，減少不確定性。強調「使用適當的測量方法、排放係數和數據來源」，並進行「數據品質管理」。</li>
+<li>透明性（Transparency）： 盤查過程和結果應「清晰透明」，便於理解和審查，增加「報告的可信度」，可被第三方查驗。</li>
+</ul>
+<h2 id="碳盤查程序-邊源算報查"><a href="#碳盤查程序-邊源算報查" class="headerlink" title="碳盤查程序( 邊源算報查)"></a>碳盤查程序( 邊源算報查)</h2><ul>
+<li>邊： 邊界設定（組織與報告邊界）。</li>
+<li>源： 排放源鑑別。</li>
+<li>算： 排放量計算。</li>
+<li>報： 盤查報告書製作。</li>
+<li>查： 內外部查驗作業。</li>
+</ul>
+<h2 id="排放量計算方法"><a href="#排放量計算方法" class="headerlink" title="排放量計算方法"></a>排放量計算方法</h2><ul>
+<li>排放係數法： 活動數據 x 排放係數（常用）。</li>
+<li>質量平衡法： 根據物質守恆推算（適用於難以直接測量）。</li>
+<li>直接測量法： 使用儀器直接測量（用於大型排放源）。</li>
+</ul>
+<h1 id="國際標準與指引-–-讓參賽者（企業、組織）記錄得分（排放量）的比賽"><a href="#國際標準與指引-–-讓參賽者（企業、組織）記錄得分（排放量）的比賽" class="headerlink" title="國際標準與指引 –[讓參賽者（企業、組織）記錄得分（排放量）的比賽]"></a>國際標準與指引 –[讓參賽者（企業、組織）記錄得分（排放量）的比賽]</h1><ul>
+<li>UNFCCC 締約國有150多已開發國（ 只能已開發），要求碳排減回1990 – [訂定遊戲規則和主辦比賽]</li>
+<li>IPCC （政府間氣候變化專門委員會）: 聯合國政府氣候變化專門委員會，專注於提供「科學基礎」和「數據」給UNFCCC。 – [提供比賽所需的科學數據]<ul>
+<li>IPCC 2006, 2019： 國家溫盤指引，主要用於國家層級的溫室氣體盤查規劃 – [比賽規則書]</li>
+<li>「2006」指的是 2006 年發布的 IPCC 國家溫室氣體盤查指引（2006 IPCC Guidelines for National Greenhouse Gas Inventories）。</li>
+<li>「2019」指的是 2019 年對 2006 年指引的「修訂版」或「增補版」（2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories）。</li>
+</ul>
+</li>
+<li>GHG Protocol (溫室氣體盤查議定書)： 能源間接排放與價值鏈指引，主要針對企業的溫室氣體盤查，「如何計算和報告排放量」的「方法和標準」，主要用於企業或組織盤查。 – [計分系統]<ul>
+<li>計算時會用到 IPCC 提供的那些 GWP 數值。</li>
+</ul>
+</li>
+<li>ISO （國際標準化組織）: 制定各種國際標準，更「正規」、「可驗證」的「管理和報告框架」，企業/組織或專案的盤查和驗證標準。 – [裁判標準]<ul>
+<li>溫室氣體領域，ISO 也有相關標準，最常用的是 ISO 14064 系列標準。</li>
+<li>許多公司在完成 GHG Protocol 架構下的盤查後，會請第三方機構依據 ISO 14064 標準進行驗證，增加報告的可信度。 </li>
+</ul>
+</li>
+</ul>
+<h1 id="ISO"><a href="#ISO" class="headerlink" title="ISO"></a>ISO</h1><ul>
+<li>ISO 14064-1 溫盤 （ 組織面盤查清冊）<ul>
+<li>ISO 14064-1 2018： 組織層級溫室氣體排放和移除的量化和報告規範，「國內使用」。</li>
+<li>ISO 14064-1 的類別 1, 2 對應 GHG 範疇 1, 2。</li>
+<li>ISO 14064-1 的類別 3-6 對應 GHG 範疇 3。</li>
+</ul>
+</li>
+<li>ISO 14064-2 碳權 ( 技術面專案溫室氣體減量報告)： 減不了才抵換</li>
+<li>ISO 14065：驗證機構要求</li>
+<li>ISO 14066：查驗小組要求</li>
+<li>ISO 14067/ PAS 2050 碳足跡（ 產品面碳足跡生命週期）<ul>
+<li>氣候變遷因應法37條，全部組織性盤查完才有碳足跡<ul>
+<li>PCR(產品類別規則)： 定義產品碳足跡範本</li>
+<li>LCA(產品生命週期評估)：碳足跡評估的核心，需定義產品的生命週期邊界，四階段</li>
+</ul>
+</li>
+<li>目標與範疇界定</li>
+<li>盤查分析</li>
+<li>衝擊評估</li>
+<li>闡釋</li>
+</ul>
+</li>
+<li>ISO 14021, 14926 碳中和環境標籤與宣告，要有短期（5-10年）與長期（20年）目標</li>
+<li>ISO 14027: 內部產品類別規則</li>
+<li>ISO 14040, 14044: 內部生命週期評估，生成14067報告基準，14044也用來對外審查</li>
+<li>ISO 14065 碳中和機構</li>
+<li>ISO 14066 碳中和人員</li>
+<li>ISO 14067 碳中和查證</li>
+<li>ISO 14068/ PAS 2060： 碳中和確認，碳中和(國家)或淨零碳排（企業，排放與移除達到中和，強調透過減排和碳移除達成）<ul>
+<li>英國BSI制訂PAS 2060演變而成</li>
+<li>後來PAS 2060只剩英國用<ul>
+<li>IPCC認可碳中和只有減碳和碳移除，沒有碳權，ISO 14068 有碳權</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>企業要先溫盤&gt; 擴大到產品碳足跡&gt; 最終實現碳中和而符合世界淨零碳排目標</p>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Instrument/" rel="tag"><i class="fa fa-tag"></i> 文書</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/manager/protocol/" rel="prev" title="公約與協定">
+      <i class="fa fa-chevron-left"></i> 公約與協定
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/manager/CDR/" rel="next" title="碳管理">
+      碳管理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94-GHG%EF%BC%88%E4%BA%8C%E7%94%B2%E6%B0%A7%E6%B0%AB%E5%85%A863%EF%BC%89%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">溫室氣體 GHG（二甲氧氫全63）：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E5%85%A8%E7%90%83%E6%9A%96%E5%8C%96%E6%BD%9B%E5%8B%A2-Global-Warming-Potential-GWP"><span class="nav-number">2.</span> <span class="nav-text">溫室氣體全球暖化潛勢 (Global Warming Potential, GWP)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94-GHG-%E7%9B%A4%E6%9F%A5-%E7%A2%B3%E7%9B%A4%E6%9F%A5"><span class="nav-number">3.</span> <span class="nav-text">溫室氣體 (GHG) 盤查&#x3D;碳盤查</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A2%B3%E7%9B%A4%E6%9F%A5%E4%BA%94%E5%A4%A7%E5%8E%9F%E5%89%87-%E9%97%9C%E6%95%B4%E4%B8%80%E6%BA%96%E9%80%8F"><span class="nav-number">3.1.</span> <span class="nav-text">碳盤查五大原則( 關整一準透)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A2%B3%E7%9B%A4%E6%9F%A5%E7%A8%8B%E5%BA%8F-%E9%82%8A%E6%BA%90%E7%AE%97%E5%A0%B1%E6%9F%A5"><span class="nav-number">3.2.</span> <span class="nav-text">碳盤查程序( 邊源算報查)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E6%94%BE%E9%87%8F%E8%A8%88%E7%AE%97%E6%96%B9%E6%B3%95"><span class="nav-number">3.3.</span> <span class="nav-text">排放量計算方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%8B%E9%9A%9B%E6%A8%99%E6%BA%96%E8%88%87%E6%8C%87%E5%BC%95-%E2%80%93-%E8%AE%93%E5%8F%83%E8%B3%BD%E8%80%85%EF%BC%88%E4%BC%81%E6%A5%AD%E3%80%81%E7%B5%84%E7%B9%94%EF%BC%89%E8%A8%98%E9%8C%84%E5%BE%97%E5%88%86%EF%BC%88%E6%8E%92%E6%94%BE%E9%87%8F%EF%BC%89%E7%9A%84%E6%AF%94%E8%B3%BD"><span class="nav-number">4.</span> <span class="nav-text">國際標準與指引 –[讓參賽者（企業、組織）記錄得分（排放量）的比賽]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ISO"><span class="nav-number">5.</span> <span class="nav-text">ISO</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">392</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">545k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">8:16</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : 'ef50c185ae0c0744950cc3b3df7a8228',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-05-31T13:25:18.637Z</updated>
+  <updated>2025-06-14T09:42:21.147Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>碳管理</title>
+    <link href="https://eric999j.github.io/manager/CDR/"/>
+    <id>https://eric999j.github.io/manager/CDR/</id>
+    <published>2025-06-14T10:00:00.000Z</published>
+    <updated>2025-06-14T09:42:21.147Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;幫地球穿少一些&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>溫室氣體盤查</title>
+    <link href="https://eric999j.github.io/manager/GHG/"/>
+    <id>https://eric999j.github.io/manager/GHG/</id>
+    <published>2025-06-14T09:00:00.000Z</published>
+    <updated>2025-06-14T09:41:24.058Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;地球的小棉襖&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
     <title>公約與協定</title>
     <link href="https://eric999j.github.io/manager/protocol/"/>
     <id>https://eric999j.github.io/manager/protocol/</id>
     <published>2025-05-30T07:30:00.000Z</published>
-    <updated>2025-05-31T13:25:18.637Z</updated>
+    <updated>2025-06-14T09:12:45.085Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
@@ -121,7 +161,7 @@
     <link href="https://eric999j.github.io/engineer/playwright/"/>
     <id>https://eric999j.github.io/engineer/playwright/</id>
     <published>2025-05-10T11:00:00.000Z</published>
-    <updated>2025-05-10T11:15:17.619Z</updated>
+    <updated>2025-06-14T06:57:03.920Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-05.jpeg&quot;&gt;&lt;/p&gt;
@@ -372,45 +412,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>身份驗證</title>
-    <link href="https://eric999j.github.io/manager/authentication/"/>
-    <id>https://eric999j.github.io/manager/authentication/</id>
-    <published>2025-02-15T07:00:00.000Z</published>
-    <updated>2025-03-15T13:37:27.907Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;四種常見的方法&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高蛋白肉桂小點心</title>
-    <link href="https://eric999j.github.io/life/whey/"/>
-    <id>https://eric999j.github.io/life/whey/</id>
-    <published>2025-02-12T08:00:00.000Z</published>
-    <updated>2025-02-15T07:31:07.036Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vLT0cPl.jpeg&quot;&gt;&lt;br&gt;饞嘴貓熊的小點心  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
     
   </entry>
   

@@ -2,9 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/manager/CDR/</loc>
+    
+    <lastmod>2025-06-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/manager/GHG/</loc>
+    
+    <lastmod>2025-06-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/manager/protocol/</loc>
     
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/docker/</loc>
+    
+    <lastmod>2025-06-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/h2/</loc>
+    
+    <lastmod>2025-06-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/michelin/</loc>
+    
+    <lastmod>2025-06-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/linux/</loc>
+    
+    <lastmod>2025-06-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/engineer/playwright/</loc>
+    
+    <lastmod>2025-06-14</lastmod>
     
   </url>
   
@@ -37,23 +86,9 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/engineer/docker/</loc>
-    
-    <lastmod>2025-05-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/life/movie/</loc>
     
     <lastmod>2025-05-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/playwright/</loc>
-    
-    <lastmod>2025-05-10</lastmod>
     
   </url>
   
@@ -96,13 +131,6 @@
     <loc>https://eric999j.github.io/engineer/macintosh/</loc>
     
     <lastmod>2025-04-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/linux/</loc>
-    
-    <lastmod>2025-04-06</lastmod>
     
   </url>
   
@@ -906,13 +934,6 @@
   
   <url>
     <loc>https://eric999j.github.io/engineer/rabbitMQ/</loc>
-    
-    <lastmod>2023-12-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/engineer/h2/</loc>
     
     <lastmod>2023-12-29</lastmod>
     
@@ -1969,13 +1990,6 @@
   </url>
   
   <url>
-    <loc>https://eric999j.github.io/life/michelin/</loc>
-    
-    <lastmod>2022-01-09</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eric999j.github.io/manager/genius/</loc>
     
     <lastmod>2022-01-02</lastmod>
@@ -2762,7 +2776,7 @@
 
   <url>
     <loc>https://eric999j.github.io/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -2770,70 +2784,70 @@
   
   <url>
     <loc>https://eric999j.github.io/tags/Instrument/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/AwesomeThings/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/LeetCode/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Planting/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Diet/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Music/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Workout/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/TechnicalWriting/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Linguistic/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/tags/Past/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2842,28 +2856,28 @@
   
   <url>
     <loc>https://eric999j.github.io/categories/manager/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/engineer/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/interview/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://eric999j.github.io/categories/life/</loc>
-    <lastmod>2025-05-31</lastmod>
+    <lastmod>2025-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
