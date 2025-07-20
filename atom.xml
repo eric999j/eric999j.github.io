@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-07-06T11:15:11.919Z</updated>
+  <updated>2025-07-20T06:49:15.763Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日韓點心獵熊</title>
+    <link href="https://eric999j.github.io/life/hunter/"/>
+    <id>https://eric999j.github.io/life/hunter/</id>
+    <published>2025-07-20T08:00:00.000Z</published>
+    <updated>2025-07-20T06:49:15.763Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;紀錄那些吃過與快吃到的日韓點心&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微服務模式</title>
+    <link href="https://eric999j.github.io/manager/microservicePattern/"/>
+    <id>https://eric999j.github.io/manager/microservicePattern/</id>
+    <published>2025-07-20T06:00:00.000Z</published>
+    <updated>2025-07-20T06:53:54.135Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;創建健壯、可擴展且可靠的微服務的 &lt;a href=&quot;https://medium.com/javarevisited/top-10-microservice-design-patterns-for-experienced-developers-f4f5f782810e&quot;&gt;10 種&lt;/a&gt;基本微服務設計模式&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>健力三項</title>
@@ -365,46 +405,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;用角落的事物編織出新生活  &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>懶惰的日常</title>
-    <link href="https://eric999j.github.io/engineer/lazy/"/>
-    <id>https://eric999j.github.io/engineer/lazy/</id>
-    <published>2025-03-15T14:30:00.000Z</published>
-    <updated>2025-03-15T14:13:45.113Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;懶是進步的起源, 原來進步只需一顆P100？！&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>舊硬體作業系統選擇</title>
-    <link href="https://eric999j.github.io/engineer/reborn/"/>
-    <id>https://eric999j.github.io/engineer/reborn/</id>
-    <published>2025-03-15T14:00:00.000Z</published>
-    <updated>2025-06-28T12:16:20.906Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;\穢土轉生，再戰十年/&lt;/p&gt;</summary>
     
     
     
