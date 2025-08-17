@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-08-02T10:23:50.891Z</updated>
+  <updated>2025-08-17T12:23:23.491Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qi無線充電標準</title>
+    <link href="https://eric999j.github.io/manager/Qi/"/>
+    <id>https://eric999j.github.io/manager/Qi/</id>
+    <published>2025-08-17T13:00:00.000Z</published>
+    <updated>2025-08-17T12:23:23.491Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(7).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;由無線充電聯盟（Wireless Power Consortium, WPC）制定的國際無線充電標準，廣泛應用於行動裝置、耳機、穿戴式設備等產品。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Subquery</title>
+    <link href="https://eric999j.github.io/engineer/subquery/"/>
+    <id>https://eric999j.github.io/engineer/subquery/</id>
+    <published>2025-08-17T12:00:00.000Z</published>
+    <updated>2025-08-17T12:23:29.375Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-06.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;SQL： Hi my son.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Spring Cloud 模組</title>
@@ -373,45 +413,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>財經書籍</title>
-    <link href="https://eric999j.github.io/manager/money/"/>
-    <id>https://eric999j.github.io/manager/money/</id>
-    <published>2025-03-22T11:00:00.000Z</published>
-    <updated>2025-03-22T10:16:31.239Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(27).jpeg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>能量基模型與麥凱猜想的發想</title>
-    <link href="https://eric999j.github.io/manager/inspire/"/>
-    <id>https://eric999j.github.io/manager/inspire/</id>
-    <published>2025-03-22T10:00:00.000Z</published>
-    <updated>2025-03-22T10:15:25.871Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;迷宮，地圖與鑰匙&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
