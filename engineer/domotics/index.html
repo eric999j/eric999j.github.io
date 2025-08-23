@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vRFGDSDMqnFoGC50r3JoqlDSvxTRxYp7E8kxWea8VKklxofo90AqvM8o52mfeRBO1dQf5cUleipf_m2/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2025-03-15T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-02T12:39:46.220Z">
+<meta property="article:modified_time" content="2025-08-23T14:56:50.747Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-08-02 20:39:46" itemprop="dateModified" datetime="2025-08-02T20:39:46+08:00">2025-08-02</time>
+                <time title="Modified: 2025-08-23 22:56:50" itemprop="dateModified" datetime="2025-08-23T22:56:50+08:00">2025-08-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,14 +235,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.3k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -271,46 +271,72 @@
 
 <h2 id="基礎建設"><a href="#基礎建設" class="headerlink" title="基礎建設"></a>基礎建設</h2><p>支撐整個系統運作的基礎設備</p>
 <ul>
-<li>電源與延長線  </li>
+<li>電源與延長線。 </li>
+<li>USB Hub: 替代原有Chromecast with Google TV Type C線。 </li>
 <li>路由器: 整個家庭劇院的網路核心。</li>
-<li>樹梅派: 為喇叭提供電源。</li>
 </ul>
 <h2 id="影音來源"><a href="#影音來源" class="headerlink" title="影音來源"></a>影音來源</h2><p>影音內容來源</p>
 <ul>
-<li>Chromecast with Google TV: 直接在 Chromecast 裝置上使用內建的網頁瀏覽功能或應用程式。</li>
 <li>手機投影: 將手機畫面無線投影到電視上。</li>
-<li>隨身硬碟: 表示您可以透過隨身硬碟播放預先儲存的影音檔案。</li>
+<li>樹梅派: 用 DietPi OS 加Samba 搭配隨身硬碟變成 NAS。</li>
+<li>隨身硬碟: 接樹梅派透過Samba播預存檔案。</li>
 <li>MacBook samba 共享: 透過 MacBook 的Samba 共享功能，從電腦讀取影音檔案。</li>
-<li>樹梅派: 當電腦操控。</li>
+<li>Chromecast with Google TV: 直接在 Chromecast 裝置上使用內建的網頁瀏覽功能或應用程式。</li>
+<li>隨身碟：透過USB Hub在Chromecast with Google TV播預存檔案。</li>
 </ul>
-<p><code>隱藏用法</code>： 如果還有USB Hub可以換掉Chromecast with Google TV的Type C線，配置會變成  </p>
+<h3 id="有USB-Hub的配置"><a href="#有USB-Hub的配置" class="headerlink" title="有USB Hub的配置"></a>有USB Hub的配置</h3><p>替換掉Chromecast with Google TV原有的Type c線</p>
 <blockquote>
-<p>螢幕&gt;HDMI&gt; Chromecast with Google TV &gt;USB Hub&gt; 5V 3A快充(確保Hub使用行動硬碟時電源充足)</p>
+<p>螢幕&gt;HDMI&gt; Chromecast with Google TV &gt;USB Hub&gt; 5V 3A快充(確保Hub使用行動硬碟時電源充足，隨身碟可以不用到3A)</p>
 </blockquote>
-<p>這個設置的前提是hub有個快充口（通常是Type C介面）</p>
 <h2 id="輸入輸出"><a href="#輸入輸出" class="headerlink" title="輸入輸出"></a>輸入輸出</h2><p>這區塊展示了影音訊號的輸入輸出設備</p>
 <ul>
+<li>電風扇：搭配Tapo插座手機控制電風扇。</li>
+<li>螢幕: Chromecast 將影像訊號輸出到螢幕上顯示。</li>
+<li>鍵盤：使用樹莓派時需要鍵盤。  </li>
+<li>Magic Mouse: 若用樹莓派時需要滑鼠(DietPi 指令介面不用)</li>
 <li>Chromecast with Google TV: 再次出現 Chromecast，但在此作為輸出的核心，負責將影音訊號傳送到螢幕和音訊設備。</li>
 <li>AirPod: 也可以用 AirPod 等無線耳機來聆聽聲音，訊號同樣來自 Chromecast。</li>
-<li>Magic Mouse: 使用樹莓派時需要滑鼠</li>
-<li>鍵盤：使用樹莓派時需要鍵盤  </li>
-<li>螢幕: Chromecast 將影像訊號輸出到螢幕上顯示。</li>
-<li>喇叭: 連接螢幕音源口。</li>
+<li>藍芽喇叭: 藍芽接Chromecast with Google TV 可調音量。</li>
 </ul>
 <h2 id="控制"><a href="#控制" class="headerlink" title="控制"></a>控制</h2><p>其他周邊設備和控制方式，在<a href="https://eric999j.github.io/engineer/lazy">懶人日常</a>介紹，是家庭劇院子模組</p>
 <ul>
-<li>Tapo P100: 透過Tapo App控制電風扇的開關。</li>
 <li>Chromecast Remote: 控制Chromecast 的部分功能 (例如播放、暫停等)。</li>
-<li>Gemini: 也可以用手機/遙控器智慧助理聲控上述元件。</li>
+<li>MacBook/ Q4OS/ 手機：透過Termius或終端登入DietPi。</li>
+<li>Tapo P100: 透過Tapo App控制電風扇的開關。</li>
 </ul>
 <p>因為螢幕HDMI端口只有一個，但要連接Chromecast與有時要監控樹莓派上DietPI中Docker 容器有點麻煩，因為不想買HDMI 一對二切換器就在手機與電腦裝Termius內網無線下指令</p>
-<h2 id="影音源播放方式比較"><a href="#影音源播放方式比較" class="headerlink" title="影音源播放方式比較"></a>影音源播放方式比較</h2><ul>
-<li><p>方法1：MacBook 上用nas分享本機隨身硬碟檔案到Chromecast with Google tv </p>
-</li>
-<li><p>方法2：MacBook 上用betterdummy 與chrome 分頁投放到Chromecast with Google tv 上</p>
-</li>
-</ul>
-<p>Chromecast with Google TV 遙控器在方法2的情境下，主要功能仍然是控制 Chromecast 系統本身 (例如調整音量、選取 Chromecast 介面上的選項)，無法直接操作 MacBook 投射的 Chrome 瀏覽器頁面。<br>如果您想要在電視上操作投射的頁面，您仍然需要使用 MacBook 的觸控板或滑鼠來進行控制，故方法1較理想。  </p>
+<h2 id="用-DietPi-讓-Raspberry-Pi-搭配隨身硬碟變成-NAS"><a href="#用-DietPi-讓-Raspberry-Pi-搭配隨身硬碟變成-NAS" class="headerlink" title="用 DietPi 讓 Raspberry Pi 搭配隨身硬碟變成 NAS"></a>用 DietPi 讓 Raspberry Pi 搭配隨身硬碟變成 NAS</h2><pre><code>如何用 DietPi 自帶的 dietpi-drive_manager 工具掛載隨身硬碟?
+
+* 插入隨身硬碟 到 Raspberry Pi 的 USB 介面
+* dietpi-drive_manager
+* 在主菜單中，選擇 Refresh，讓系統重新偵測已連接的硬碟設備（如果剛插入沒馬上顯示，可以多等幾秒後再刷新）
+* 從列表中選擇你想掛載的隨身硬碟，按 Enter
+* 掛載硬碟時，選擇 Mount，即可將硬碟掛載到系統路徑
+
+如何在 DietPi 安裝 SMB/Samba 服務?
+* sudo apt update
+* sudo apt install samba -y
+* 編輯 Samba 設定檔 /etc/samba/smb.conf，加入要分享的資料夾。
+
+如果掛載的隨身硬碟掛載點是 /mnt/usbdrive，可以在檔案末尾加入：
+[usbshare]
+   path =   /mnt/usbdrive
+   browseable = yes
+   read only = no
+   guest ok = yes 
+
+若要重新掛載
+* dietpi-drive_manager 取消掛載
+  * 或sudo umount /mnt/usbdrive 再 lsblk 或 df -h 確認掛載
+* 更改USB位置
+* dietpi-drive_manager 掛載
+* 修改/etc/samba/smb.conf &gt; guest ok = no
+* （可選）重啟samba sudo systemctl restart smbd
+
+* 以設置 Samba 使用者並設定密碼
+* sudo smbpasswd -a your_username
+* (其中 your_username 必須是 DietPi 上已存在的 Linux 使用者帳號)
+* sudo systemctl restart smbd</code></pre>
 <p>這個配置可玩性很高，如果把Chromecast改成Nintendo Switch搭配健身環就從家庭劇院變家庭GYM啦～</p>
 <p>同場加映<a href="https://eric999j.github.io/life/movie/">電影片單</a></p>
 
@@ -421,7 +447,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%9C%E5%AE%B6%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">作家模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">睡眠模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%B6%E5%BA%AD%E5%8A%87%E9%99%A2%E6%A8%A1%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">家庭劇院模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD"><span class="nav-number">3.1.</span> <span class="nav-text">基礎建設</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%B1%E9%9F%B3%E4%BE%86%E6%BA%90"><span class="nav-number">3.2.</span> <span class="nav-text">影音來源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BC%B8%E5%85%A5%E8%BC%B8%E5%87%BA"><span class="nav-number">3.3.</span> <span class="nav-text">輸入輸出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6"><span class="nav-number">3.4.</span> <span class="nav-text">控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%B1%E9%9F%B3%E6%BA%90%E6%92%AD%E6%94%BE%E6%96%B9%E5%BC%8F%E6%AF%94%E8%BC%83"><span class="nav-number">3.5.</span> <span class="nav-text">影音源播放方式比較</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%9C%E5%AE%B6%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">作家模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">睡眠模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%B6%E5%BA%AD%E5%8A%87%E9%99%A2%E6%A8%A1%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">家庭劇院模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD"><span class="nav-number">3.1.</span> <span class="nav-text">基礎建設</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%B1%E9%9F%B3%E4%BE%86%E6%BA%90"><span class="nav-number">3.2.</span> <span class="nav-text">影音來源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89USB-Hub%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">3.2.1.</span> <span class="nav-text">有USB Hub的配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BC%B8%E5%85%A5%E8%BC%B8%E5%87%BA"><span class="nav-number">3.3.</span> <span class="nav-text">輸入輸出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6"><span class="nav-number">3.4.</span> <span class="nav-text">控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8-DietPi-%E8%AE%93-Raspberry-Pi-%E6%90%AD%E9%85%8D%E9%9A%A8%E8%BA%AB%E7%A1%AC%E7%A2%9F%E8%AE%8A%E6%88%90-NAS"><span class="nav-number">3.5.</span> <span class="nav-text">用 DietPi 讓 Raspberry Pi 搭配隨身硬碟變成 NAS</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
