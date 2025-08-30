@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-08-17T12:23:23.491Z</updated>
+  <updated>2025-08-30T10:12:53.842Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿魏篳拨牛奶咖哩：北印度傳統香料料理</title>
+    <link href="https://eric999j.github.io/life/curry/"/>
+    <id>https://eric999j.github.io/life/curry/</id>
+    <published>2025-08-30T11:00:00.000Z</published>
+    <updated>2025-08-30T10:12:53.842Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kdFTsrl.jpeg&quot;&gt;&lt;br&gt;這次試試AI食譜！！  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DQN (深度Q網絡 / Deep Q-Network)</title>
+    <link href="https://eric999j.github.io/engineer/DQN/"/>
+    <id>https://eric999j.github.io/engineer/DQN/</id>
+    <published>2025-08-30T10:00:00.000Z</published>
+    <updated>2025-08-30T10:10:46.491Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;\Happy Vibe Coding/&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>Qi無線充電標準</title>
@@ -373,46 +412,6 @@
     
     
     <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>That&#39;s the way it is</title>
-    <link href="https://eric999j.github.io/life/insist/"/>
-    <id>https://eric999j.github.io/life/insist/</id>
-    <published>2025-04-12T08:30:00.000Z</published>
-    <updated>2025-04-12T08:46:16.738Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5ShgU6K.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;這次是聖歌🙏🏻&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gitlab CI YML</title>
-    <link href="https://eric999j.github.io/engineer/gitlabCI/"/>
-    <id>https://eric999j.github.io/engineer/gitlabCI/</id>
-    <published>2025-04-12T08:00:00.000Z</published>
-    <updated>2025-04-12T08:45:50.213Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-07.jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Gitlab自動建置參數&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   

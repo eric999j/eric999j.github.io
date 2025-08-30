@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="\Happy Vibe Coding&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DQN (深度Q網絡 &#x2F; Deep Q-Network)">
+<meta property="og:url" content="https://eric999j.github.io/engineer/DQN/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="\Happy Vibe Coding&#x2F;">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg">
+<meta property="og:image" content="https://i.imgur.com/CbZPvZC.png">
+<meta property="og:image" content="https://i.imgur.com/qfaa4wt.png">
+<meta property="article:published_time" content="2025-08-30T10:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-30T10:10:46.491Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="好用">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/engineer/DQN/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>DQN (深度Q網絡 / Deep Q-Network) | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/engineer/DQN/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          DQN (深度Q網絡 / Deep Q-Network)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-08-30 18:00:00 / Modified: 18:10:46" itemprop="dateCreated datePublished" datetime="2025-08-30T18:00:00+08:00">2025-08-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/engineer/" itemprop="url" rel="index"><span itemprop="name">工程</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.3k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-09.jpeg"></p>
+<p>\Happy Vibe Coding/</p>
+<a id="more"></a>
+
+<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p><img src="https://i.imgur.com/CbZPvZC.png" alt="img"></p>
+<ul>
+<li>DQN是一種強化學習 (Reinforcement Learning, RL) 的演算法。</li>
+<li>教導一個智能體（Agent)如何在某個環境中採取行動，獲得最大累積獎勵。</li>
+<li>用一個神經網絡估計在某狀態 (State)下，採取某行動 (Action)能得到的未來總獎勵期望值Q值 (Q-value)。</li>
+<li>然後智能體就傾向於選擇那個 Q 值最高的行動。</li>
+</ul>
+<h1 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h1><p>企鵝大神說過<a target="_blank" rel="noopener" href="https://en.wikiquote.org/wiki/Linus_Torvalds">Talk is cheap. Show me the code. - Linus Torvalds</a>，但DQN程式又臭又長，我們就直接上<a target="_blank" rel="noopener" href="https://colab.research.google.com/drive/1whXHbbPiFJfRUSuChLQQ0EscGrFhSTS9?usp=sharing">Colab</a>，模組化切割征服吧～</p>
+<h2 id="重要模組"><a href="#重要模組" class="headerlink" title="重要模組"></a>重要模組</h2><ul>
+<li><code>ReplayMemory</code>: 實現一個經驗回放緩衝區，用於儲存和取樣轉換，以訓練 DQN 代理</li>
+<li><code>DQN</code>: 定義深度 Q 網絡模型</li>
+<li><code>DQNAgent</code>: 實現 DQN 代理，包括選擇動作、學習和更新網絡的方法。</li>
+</ul>
+<h1 id="圖表"><a href="#圖表" class="headerlink" title="圖表"></a>圖表</h1><p><img src="https://i.imgur.com/qfaa4wt.png" alt="img"></p>
+<ul>
+<li>X軸 - Episode: 代表訓練回合數( agent 練習了多少次)，從第 0 次練習到大約第 600 次練習。</li>
+<li>Y軸 - Duration: 代表在每一個回合中，智能體持續了多久才結束。數值越高表現越好。</li>
+</ul>
+<p>在很多像「平衡桿」(CartPole) 這類的強化學習任務中，「持續時間」通常指智能體成功維持了多少個時間步（或者說撐了多久）才失敗（例如桿子倒了）或達到目標。</p>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><ul>
+<li><p>最高表現 (Peak Performance):<br>有多次達到接近 200 的高峰 (大約在 250 和 350 回合附近)。</p>
+</li>
+<li><p>學習速度與穩定性</p>
+<ul>
+<li>初期學習: 在 150-200 回合左右開始顯著進步。</li>
+<li>高峰維持: 在 200 到 380 回合之間，維持較高表現 (例如持續時間 &gt; 100) 。</li>
+<li>避免了大崩盤: 下滑比較和緩，穩定在 50-75 左右一段時間。可能表示學習過程更穩健，或者參數調整得更好，避免了「災難性遺忘」之類的問題。</li>
+</ul>
+</li>
+<li><p>後期表現 (Late Stage Performance)<br>在訓練的尾聲 (大約 550 回合之後)出現了一波明顯的回升，再次突破 100，表示智能體在訓練後期還有學習和改進的潛力</p>
+</li>
+</ul>
+<h1 id="煉丹-調參"><a href="#煉丹-調參" class="headerlink" title="煉丹( 調參)"></a>煉丹( 調參)</h1><ol>
+<li>學習率 (Learning Rate, α): 控制每次更新模型權重的幅度，太高訓練不穩（ 學習成效不佳），太低學習太慢。</li>
+<li>探索率 (Epsilon, ε) 的衰減策略 (Epsilon Decay): 控制 AI 有多少機率會「隨機探索」而不是「選擇已知最好的動作」。</li>
+<li>折扣因子 (Discount Factor, γ): 決定 AI 多看重「未來」的獎勵。接近 1 表示更看重長遠利益，接近 0 表示只看眼前，需要長期規劃才能成功的任務（例如活得更久），通常需要較高的 γ。</li>
+<li>經驗回放緩衝區大小 (Replay Capacity): 儲存過去經驗供 AI 學習，太小導致學到的經驗不夠多樣化，太大可能學到太舊、不相關的經驗。</li>
+<li>批次大小 (Batch Size): 每次從緩衝區取多少經驗來學習，加大後一次學得更多。</li>
+<li>知識更新速度(Knowledge Update Period, τ)：學習新知識的速度有多快。</li>
+</ol>
+<h2 id="舉個栗子🌰：訓練一隻狗"><a href="#舉個栗子🌰：訓練一隻狗" class="headerlink" title="舉個栗子🌰：訓練一隻狗"></a>舉個栗子🌰：訓練一隻狗</h2><ol>
+<li>Learning Rate: 教小狗撿球時，告訴它做對了要給多少獎勵<ul>
+<li>注意：學習率太高，就像你一下子給小狗太多指令，它可能會搞不清楚，反而學不好。所以也要慢慢調整。</li>
+</ul>
+</li>
+<li>Epsilon: 讓小狗早點開始練習「正式撿球」<ul>
+<li>注意：太早結束探索，小狗可能會錯過一些更好的撿球方法。</li>
+</ul>
+</li>
+<li>Discount Factor: 每次小狗成功撿到球，都會給牠小餅乾獎勵，「折扣因子」就像是小狗的「耐心程度」。<ul>
+<li>注意：折扣因子太低不考慮未來，越接近1越重視長遠獎勵，學得也較好</li>
+</ul>
+</li>
+<li>Replay Buffer Size: 小狗的記憶力<ul>
+<li>注意：太小小狗可能學不到什麼東西，很快就會忘記之前學到的。</li>
+</ul>
+</li>
+<li>Batch Size: 讓小狗一次撿多一點球<ul>
+<li>注意： 一次撿太多球小狗可能會累壞 (電腦記憶體可能會不夠用)，所以要慢慢嘗試，不要一次調太高</li>
+</ul>
+</li>
+<li>Knowledge Update Period: 小狗消化新知速度</li>
+</ol>
+<h1 id="DQN-變種-Advanced-DQN-Variants"><a href="#DQN-變種-Advanced-DQN-Variants" class="headerlink" title="DQN 變種 (Advanced DQN Variants)"></a>DQN 變種 (Advanced DQN Variants)</h1><ul>
+<li>Double DQN (DDQN): 常用且有效的改進，可以緩解 DQN 容易過度高估 Q 值的問題，讓學習更穩定。</li>
+<li>Dueling DQN: 將 Q 值拆成「狀態價值 (Value)」和「動作優勢 (Advantage)」，在某些情況下能學得更好。</li>
+<li>Prioritized Experience Replay (PER): 不再隨機抽樣經驗，而是優先學習那些讓 AI「感到意外」（TD-error 較大）的經驗，提升學習效率。</li>
+<li>Rainbow DQN: 把上面好幾種改進（還有其他如 Noisy Nets, Distributional RL）結合在一起的「大禮包」，通常效果拔群，但實現也更複雜。</li>
+</ul>
+<p>就跟&lt;&lt;動手學深度學習&gt;&gt;一書期望的，希望能讓大家在執行時更深入感受到這個程式。</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="epsilon-greedy-策略"><a href="#epsilon-greedy-策略" class="headerlink" title="epsilon-greedy 策略"></a>epsilon-greedy 策略</h2><ul>
+<li>探索: 讓代理人可以發現新的、可能更好的行為。</li>
+<li>利用: 讓代理人可以利用它已經學到的知識，選擇那些已知會帶來好結果的行為。</li>
+</ul>
+<p>隨著時間的推移，代理人會越來越了解環境，它可能會逐漸降低 epsilon 的值，變得更傾向於利用已知的最佳策略。</p>
+<p>DQNAgent中select_action：使用 epsilon-greedy 策略選擇一個動作。<br>learn：從經驗回放緩衝區中取樣一批轉換，計算損失，並更新策略網絡。  </p>
+<h2 id="gymnasium-庫"><a href="#gymnasium-庫" class="headerlink" title="gymnasium 庫"></a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/876047971">gymnasium 庫</a></h2><p>提供了一系列標準化的「環境 (environment)」，可以用於開發和測試強化學習演算法，使用 gymnasium 庫與 CartPole 環境互動。  </p>
+<ul>
+<li>初始化環境和代理。</li>
+<li>執行指定數量的 episode。</li>
+<li>在每個 episode 中，代理選擇一個動作，執行它，接收獎勵，並將轉換儲存在經驗回放緩衝區中。</li>
+<li>代理定期學習和更新其網絡。</li>
+<li>訓練完成後，它會繪製 episode 持續時間。</li>
+</ul>
+<h1 id="延伸"><a href="#延伸" class="headerlink" title="延伸"></a>延伸</h1><p><a target="_blank" rel="noopener" href="https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/exercise/Deep_Q_Network.ipynb">ref1</a>, <a target="_blank" rel="noopener" href="https://github.com/IbrahimSobh/Practical-DRL">ref2</a>, <a target="_blank" rel="noopener" href="https://github.com/udacity/deep-reinforcement-learning">ref3</a>, <a target="_blank" rel="noopener" href="https://github.com/Rafael1s/Deep-Reinforcement-Learning-Algorithms">ref4</a></p>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AwesomeThings/" rel="tag"><i class="fa fa-tag"></i> 好用</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/manager/Qi/" rel="prev" title="Qi無線充電標準">
+      <i class="fa fa-chevron-left"></i> Qi無線充電標準
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/life/curry/" rel="next" title="阿魏篳拨牛奶咖哩：北印度傳統香料料理">
+      阿魏篳拨牛奶咖哩：北印度傳統香料料理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">2.</span> <span class="nav-text">程式碼</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E8%A6%81%E6%A8%A1%E7%B5%84"><span class="nav-number">2.1.</span> <span class="nav-text">重要模組</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%96%E8%A1%A8"><span class="nav-number">3.</span> <span class="nav-text">圖表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E6%9E%90"><span class="nav-number">4.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%85%89%E4%B8%B9-%E8%AA%BF%E5%8F%83"><span class="nav-number">5.</span> <span class="nav-text">煉丹( 調參)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%88%89%E5%80%8B%E6%A0%97%E5%AD%90%F0%9F%8C%B0%EF%BC%9A%E8%A8%93%E7%B7%B4%E4%B8%80%E9%9A%BB%E7%8B%97"><span class="nav-number">5.1.</span> <span class="nav-text">舉個栗子🌰：訓練一隻狗</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DQN-%E8%AE%8A%E7%A8%AE-Advanced-DQN-Variants"><span class="nav-number">6.</span> <span class="nav-text">DQN 變種 (Advanced DQN Variants)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">7.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#epsilon-greedy-%E7%AD%96%E7%95%A5"><span class="nav-number">7.1.</span> <span class="nav-text">epsilon-greedy 策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gymnasium-%E5%BA%AB"><span class="nav-number">7.2.</span> <span class="nav-text">gymnasium 庫</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BB%B6%E4%BC%B8"><span class="nav-number">8.</span> <span class="nav-text">延伸</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">402</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">565k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">8:34</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : '54d7c714f22380c44def777dce66549e',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
