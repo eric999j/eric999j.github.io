@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="AI系統從單模型變多代理協作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Agentic AI協議演進">
+<meta property="og:url" content="https://eric999j.github.io/manager/agentic/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="AI系統從單模型變多代理協作">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg">
+<meta property="article:published_time" content="2025-10-11T07:00:00.000Z">
+<meta property="article:modified_time" content="2025-10-11T07:29:29.616Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="文書">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/manager/agentic/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>Agentic AI協議演進 | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/manager/agentic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Agentic AI協議演進
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-10-11 15:00:00 / Modified: 15:29:29" itemprop="dateCreated datePublished" datetime="2025-10-11T15:00:00+08:00">2025-10-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/manager/" itemprop="url" rel="index"><span itemprop="name">管理</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>892</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg"></p>
+<p>AI系統從單模型變多代理協作</p>
+<a id="more"></a> 
+
+<p>自主系統領域面臨大型語言模型 (LLM) 代理在可擴展、安全與模組化環境中無縫互操作的挑戰。為克服碎片化問題，四種創新協定——MCP、ACP、A2A 和 ANP——提供了一套標準化互通性的藍圖。</p>
+<h1 id="協議"><a href="#協議" class="headerlink" title="協議"></a>協議</h1><h2 id="Anthropic-MCP（模型上下文協定）：-標準化單一-LLM-代理與外部工具及資源的互動"><a href="#Anthropic-MCP（模型上下文協定）：-標準化單一-LLM-代理與外部工具及資源的互動" class="headerlink" title="Anthropic: MCP（模型上下文協定）： 標準化單一 LLM 代理與外部工具及資源的互動"></a>Anthropic: MCP（模型上下文協定）： 標準化單一 LLM 代理與外部工具及資源的互動</h2><ul>
+<li>透過 JSON-RPC 機制，使代理能動態攝取工具元數據和結構化上下文。</li>
+<li>實現即時驗證、安全執行與工具無縫替換，促進模組化和供應商中立性，如同 AI 工具的「USB-C」。</li>
+</ul>
+<h2 id="Google-A2A（代理到代理協定）：實現跨不同網域、組織或雲端環境的企業級多代理對點協作"><a href="#Google-A2A（代理到代理協定）：實現跨不同網域、組織或雲端環境的企業級多代理對點協作" class="headerlink" title="Google: A2A（代理到代理協定）：實現跨不同網域、組織或雲端環境的企業級多代理對點協作"></a>Google: A2A（代理到代理協定）：實現跨不同網域、組織或雲端環境的企業級多代理對點協作</h2><ul>
+<li>基於代理卡 (Agent Cards)，這是一種自包含的 JSON 描述符，用於宣傳代理的能力、通訊端點和存取策略。</li>
+<li>允許代理在任務執行前協商協作條款，實現基於能力的模組化委派、資源存取安全協商及分散式工作流程（無需中央協調器），增強彈性和可擴展性。</li>
+</ul>
+<h2 id="IBM-BeeAI-ACP（代理通訊協定）：邏輯嚴密的供應鏈管理協商機制"><a href="#IBM-BeeAI-ACP（代理通訊協定）：邏輯嚴密的供應鏈管理協商機制" class="headerlink" title="IBM/BeeAI: ACP（代理通訊協定）：邏輯嚴密的供應鏈管理協商機制"></a>IBM/BeeAI: ACP（代理通訊協定）：邏輯嚴密的供應鏈管理協商機制</h2><ul>
+<li>提供原生 REST、非同步優先的消息傳遞層，支援多模式內容、即時更新和容錯工作流程。</li>
+<li>支援多部分消息和串流回應，並擁有內建的可觀察性，便於追蹤通訊、效能指標和錯誤，對於生產環境中的除錯至關重要。</li>
+</ul>
+<h2 id="ANP（代理網路協定）：為在開放網際網路上運作的代理提供去中心化智能體協作網絡的基礎，解決發現、身份驗證和信任管理問題"><a href="#ANP（代理網路協定）：為在開放網際網路上運作的代理提供去中心化智能體協作網絡的基礎，解決發現、身份驗證和信任管理問題" class="headerlink" title="ANP（代理網路協定）：為在開放網際網路上運作的代理提供去中心化智能體協作網絡的基礎，解決發現、身份驗證和信任管理問題"></a>ANP（代理網路協定）：為在開放網際網路上運作的代理提供去中心化智能體協作網絡的基礎，解決發現、身份驗證和信任管理問題</h2><ul>
+<li>結合語義 Web 技術與加密身份模型，利用 W3C 標準的分散式識別碼 (DIDs) 和 JSON-LD 圖建立自我描述、可驗證的代理身份。</li>
+<li>實現大規模的可發現性、信任和安全性（如同 DNS 和 TLS 對網際網路的作用），支援加密消息通道、簽名和代理能力的選擇性披露，促進跨組織的去信任化合作。</li>
+</ul>
+<h1 id="比較"><a href="#比較" class="headerlink" title="比較"></a>比較</h1><ul>
+<li>延展性：MCP（垂直深，橫向有限）、A2A（中）、ACP（取決拓撲）、ANP（橫向廣、需治理）</li>
+<li>複雜度：MCP（低） &lt; A2A（中） &lt; ACP（高語義） &lt; ANP（多維度：身份+經濟+路由）</li>
+</ul>
+<h1 id="協議選擇"><a href="#協議選擇" class="headerlink" title="協議選擇"></a>協議選擇</h1><ul>
+<li>快速整合工具 → MCP</li>
+<li>企業級多代理協作與審計 → A2A</li>
+<li>嚴格協商語義與本地資源最佳化 → ACP</li>
+<li>跨組織去信任化市場與身份可攜 → ANP</li>
+</ul>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Instrument/" rel="tag"><i class="fa fa-tag"></i> 文書</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/life/taipei/" rel="prev" title="台北宴會味">
+      <i class="fa fa-chevron-left"></i> 台北宴會味
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/life/spices/" rel="next" title="香料">
+      香料 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%94%E8%AD%B0"><span class="nav-number">1.</span> <span class="nav-text">協議</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Anthropic-MCP%EF%BC%88%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%94%E5%AE%9A%EF%BC%89%EF%BC%9A-%E6%A8%99%E6%BA%96%E5%8C%96%E5%96%AE%E4%B8%80-LLM-%E4%BB%A3%E7%90%86%E8%88%87%E5%A4%96%E9%83%A8%E5%B7%A5%E5%85%B7%E5%8F%8A%E8%B3%87%E6%BA%90%E7%9A%84%E4%BA%92%E5%8B%95"><span class="nav-number">1.1.</span> <span class="nav-text">Anthropic: MCP（模型上下文協定）： 標準化單一 LLM 代理與外部工具及資源的互動</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Google-A2A%EF%BC%88%E4%BB%A3%E7%90%86%E5%88%B0%E4%BB%A3%E7%90%86%E5%8D%94%E5%AE%9A%EF%BC%89%EF%BC%9A%E5%AF%A6%E7%8F%BE%E8%B7%A8%E4%B8%8D%E5%90%8C%E7%B6%B2%E5%9F%9F%E3%80%81%E7%B5%84%E7%B9%94%E6%88%96%E9%9B%B2%E7%AB%AF%E7%92%B0%E5%A2%83%E7%9A%84%E4%BC%81%E6%A5%AD%E7%B4%9A%E5%A4%9A%E4%BB%A3%E7%90%86%E5%B0%8D%E9%BB%9E%E5%8D%94%E4%BD%9C"><span class="nav-number">1.2.</span> <span class="nav-text">Google: A2A（代理到代理協定）：實現跨不同網域、組織或雲端環境的企業級多代理對點協作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IBM-BeeAI-ACP%EF%BC%88%E4%BB%A3%E7%90%86%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A%EF%BC%89%EF%BC%9A%E9%82%8F%E8%BC%AF%E5%9A%B4%E5%AF%86%E7%9A%84%E4%BE%9B%E6%87%89%E9%8F%88%E7%AE%A1%E7%90%86%E5%8D%94%E5%95%86%E6%A9%9F%E5%88%B6"><span class="nav-number">1.3.</span> <span class="nav-text">IBM&#x2F;BeeAI: ACP（代理通訊協定）：邏輯嚴密的供應鏈管理協商機制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ANP%EF%BC%88%E4%BB%A3%E7%90%86%E7%B6%B2%E8%B7%AF%E5%8D%94%E5%AE%9A%EF%BC%89%EF%BC%9A%E7%82%BA%E5%9C%A8%E9%96%8B%E6%94%BE%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF%E4%B8%8A%E9%81%8B%E4%BD%9C%E7%9A%84%E4%BB%A3%E7%90%86%E6%8F%90%E4%BE%9B%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E6%99%BA%E8%83%BD%E9%AB%94%E5%8D%94%E4%BD%9C%E7%B6%B2%E7%B5%A1%E7%9A%84%E5%9F%BA%E7%A4%8E%EF%BC%8C%E8%A7%A3%E6%B1%BA%E7%99%BC%E7%8F%BE%E3%80%81%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89%E5%92%8C%E4%BF%A1%E4%BB%BB%E7%AE%A1%E7%90%86%E5%95%8F%E9%A1%8C"><span class="nav-number">1.4.</span> <span class="nav-text">ANP（代理網路協定）：為在開放網際網路上運作的代理提供去中心化智能體協作網絡的基礎，解決發現、身份驗證和信任管理問題</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%BC%83"><span class="nav-number">2.</span> <span class="nav-text">比較</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%94%E8%AD%B0%E9%81%B8%E6%93%87"><span class="nav-number">3.</span> <span class="nav-text">協議選擇</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">408</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">571k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">8:39</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : '2b70884723c9f2c541674bf8962b9854',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
