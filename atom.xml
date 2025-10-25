@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-10-11T07:31:01.133Z</updated>
+  <updated>2025-10-25T06:22:29.577Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>主流檔案系統比較</title>
+    <link href="https://eric999j.github.io/manager/fileSystem/"/>
+    <id>https://eric999j.github.io/manager/fileSystem/</id>
+    <published>2025-10-25T06:00:00.000Z</published>
+    <updated>2025-10-25T06:22:29.577Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;釐清上次的bug&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VFAT</title>
+    <link href="https://eric999j.github.io/engineer/vfat/"/>
+    <id>https://eric999j.github.io/engineer/vfat/</id>
+    <published>2025-10-25T05:00:00.000Z</published>
+    <updated>2025-10-25T06:22:35.279Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;無群組概念  &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>香料</title>
@@ -260,7 +300,7 @@
     <link href="https://eric999j.github.io/life/hunter/"/>
     <id>https://eric999j.github.io/life/hunter/</id>
     <published>2025-07-20T08:00:00.000Z</published>
-    <updated>2025-09-25T11:45:52.778Z</updated>
+    <updated>2025-10-11T09:07:45.179Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
@@ -365,46 +405,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;地球的小棉襖&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>公約與會議</title>
-    <link href="https://eric999j.github.io/manager/conference/"/>
-    <id>https://eric999j.github.io/manager/conference/</id>
-    <published>2025-05-30T07:30:00.000Z</published>
-    <updated>2025-08-15T15:46:47.960Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;人類開始意識到地球發燒了&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>氣候永續</title>
-    <link href="https://eric999j.github.io/manager/climateSustainability/"/>
-    <id>https://eric999j.github.io/manager/climateSustainability/</id>
-    <published>2025-05-30T06:00:00.000Z</published>
-    <updated>2025-07-27T06:56:19.094Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;氣候永續課程隨筆&lt;/p&gt;</summary>
     
     
     
