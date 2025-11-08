@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg">
 <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vRFGDSDMqnFoGC50r3JoqlDSvxTRxYp7E8kxWea8VKklxofo90AqvM8o52mfeRBO1dQf5cUleipf_m2/pub?w=960&amp;h=720">
 <meta property="article:published_time" content="2025-03-15T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-30T10:24:43.078Z">
+<meta property="article:modified_time" content="2025-10-26T02:53:44.576Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-08-30 18:24:43" itemprop="dateModified" datetime="2025-08-30T18:24:43+08:00">2025-08-30</time>
+                <time title="Modified: 2025-10-26 10:53:44" itemprop="dateModified" datetime="2025-10-26T10:53:44+08:00">2025-10-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.9k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -335,10 +335,14 @@
 * 修改/etc/samba/smb.conf &gt; guest ok = no
 * （可選）重啟samba sudo systemctl restart smbd
 
-* 以設置 Samba 使用者並設定密碼
+* 設置 Samba 使用者並設定密碼
 * sudo smbpasswd -a your_username
 * (其中 your_username 必須是 DietPi 上已存在的 Linux 使用者帳號)
-* sudo systemctl restart smbd</code></pre>
+* sudo systemctl restart smbd
+
+重啟時自動掛載
+* vim /etc/fstab
+    UUID=usbdrive  /mnt/usbdrive  exfat  noatime,lazytime,rw,uid=1000,gid=1000,fmask=0002,dmask=0002,nofail,x-systemd.automount  0 0</code></pre>
 <p>這個配置可玩性很高，如果把Chromecast改成Nintendo Switch搭配健身環就從家庭劇院變家庭GYM啦～</p>
 <p>同場加映<a href="https://eric999j.github.io/life/movie/">電影片單</a></p>
 
@@ -467,7 +471,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">410</span>
+          <span class="site-state-item-count">412</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -535,12 +539,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">573k</span>
+    <span title="Symbols count total">574k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">8:41</span>
+    <span title="Reading time total">8:42</span>
 </div>
 
         

@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2025-10-25T06:22:29.577Z</updated>
+  <updated>2025-11-08T11:21:15.505Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KDE Plasma</title>
+    <link href="https://eric999j.github.io/engineer/plasma/"/>
+    <id>https://eric999j.github.io/engineer/plasma/</id>
+    <published>2025-11-08T12:00:00.000Z</published>
+    <updated>2025-11-08T11:21:15.505Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(36).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;有顏值的Debian桌面 &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>媒體格式</title>
+    <link href="https://eric999j.github.io/manager/media/"/>
+    <id>https://eric999j.github.io/manager/media/</id>
+    <published>2025-11-08T11:30:00.000Z</published>
+    <updated>2025-11-08T11:20:09.652Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(9).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;影音格式掃盲&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>主流檔案系統比較</title>
@@ -41,7 +81,7 @@
     <link href="https://eric999j.github.io/engineer/vfat/"/>
     <id>https://eric999j.github.io/engineer/vfat/</id>
     <published>2025-10-25T05:00:00.000Z</published>
-    <updated>2025-10-25T06:22:35.279Z</updated>
+    <updated>2025-10-25T10:24:03.742Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(35).jpeg&quot;&gt;&lt;/p&gt;
@@ -365,46 +405,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(29).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;模擬退火與梯度下降是常見的優化算法，但在原理、適用場景和優缺點上各有不同。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>碳管理</title>
-    <link href="https://eric999j.github.io/manager/CDR/"/>
-    <id>https://eric999j.github.io/manager/CDR/</id>
-    <published>2025-06-14T10:00:00.000Z</published>
-    <updated>2025-08-15T15:35:42.410Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;幫地球穿少一些&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>溫室氣體盤查</title>
-    <link href="https://eric999j.github.io/manager/GHG/"/>
-    <id>https://eric999j.github.io/manager/GHG/</id>
-    <published>2025-06-14T09:00:00.000Z</published>
-    <updated>2025-08-15T15:45:19.037Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;地球的小棉襖&lt;/p&gt;</summary>
     
     
     
