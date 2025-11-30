@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg">
 <meta property="article:published_time" content="2025-09-13T08:00:00.000Z">
-<meta property="article:modified_time" content="2025-09-13T08:07:18.566Z">
+<meta property="article:modified_time" content="2025-11-30T09:43:11.888Z">
 <meta property="article:author" content="lunski">
 <meta property="article:tag" content="好用">
 <meta name="twitter:card" content="summary">
@@ -201,10 +201,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2025-09-13 16:00:00 / Modified: 16:07:18" itemprop="dateCreated datePublished" datetime="2025-09-13T16:00:00+08:00">2025-09-13</time>
+              <time title="Created: 2025-09-13 16:00:00" itemprop="dateCreated datePublished" datetime="2025-09-13T16:00:00+08:00">2025-09-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-11-30 17:43:11" itemprop="dateModified" datetime="2025-11-30T17:43:11+08:00">2025-11-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,14 +234,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.4k</span>
+              <span>2.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -253,26 +259,40 @@
 
 <h1 id="確定隨身碟有足夠空間"><a href="#確定隨身碟有足夠空間" class="headerlink" title="確定隨身碟有足夠空間"></a>確定隨身碟有足夠空間</h1><p>自從建了samba，有nas私有雲就考慮到備份重要性，但手邊只有一個隨身硬碟與一個隨身碟，不能將隨身碟內資料全放到隨身碟做到raid 1，但我還有<a target="_blank" rel="noopener" href="https://eric999j-github-io.pages.dev/engineer/reborn/">重生的老電腦</a>，它的硬碟容量應該夠備份最重要的資料夾了。</p>
 <h1 id="確立掛載點"><a href="#確立掛載點" class="headerlink" title="確立掛載點"></a>確立掛載點</h1><p>隨身硬碟掛載點：/mnt/BE11-30B3<br>隨身碟掛載點：/mnt/3679-1DF8<br>你要同步的資料夾（在硬碟上）：/mnt/BE11-30B3/hddshare<br>目標資料夾（在隨身碟上）：/mnt/3679-1DF8/usbshare  </p>
-<h1 id="掛載Samba共享資料夾到本地目錄"><a href="#掛載Samba共享資料夾到本地目錄" class="headerlink" title="掛載Samba共享資料夾到本地目錄"></a>掛載Samba共享資料夾到本地目錄</h1><p>sudo apt update<br>sudo apt install cifs-utils  </p>
-<h1 id="查看Samba資料夾-會提示輸入密碼"><a href="#查看Samba資料夾-會提示輸入密碼" class="headerlink" title="查看Samba資料夾(會提示輸入密碼)"></a>查看Samba資料夾(會提示輸入密碼)</h1><p>smbclient -L //ip address -U USER_NAME</p>
-<h1 id="手動掛載Samba共享資料夾"><a href="#手動掛載Samba共享資料夾" class="headerlink" title="手動掛載Samba共享資料夾"></a>手動掛載Samba共享資料夾</h1><p>sudo mkdir -p /mnt/samba_share<br>sudo mount -t cifs //ip address/hddshare/memories /mnt/samba_share -o username=USER_NAME,password=PWD,iocharset=utf8,file_mode=0777,dir_mode=0777</p>
-<h1 id="rsync同步掛載後資料夾memories至本地-rsync-再執行一次就增量更新）"><a href="#rsync同步掛載後資料夾memories至本地-rsync-再執行一次就增量更新）" class="headerlink" title="rsync同步掛載後資料夾memories至本地 (rsync 再執行一次就增量更新）"></a>rsync同步掛載後資料夾memories至本地 (rsync 再執行一次就增量更新）</h1><p>mkdir -p ~/backup_memories<br>rsync -av /mnt/samba_share/memories/ ~/backup_memories/</p>
+<h1 id="掛載Samba共享資料夾到本地目錄"><a href="#掛載Samba共享資料夾到本地目錄" class="headerlink" title="掛載Samba共享資料夾到本地目錄"></a>掛載Samba共享資料夾到本地目錄</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update  </span><br><span class="line">sudo apt install cifs-utils  </span><br></pre></td></tr></table></figure>
+
+<h1 id="查看Samba資料夾-會提示輸入密碼"><a href="#查看Samba資料夾-會提示輸入密碼" class="headerlink" title="查看Samba資料夾(會提示輸入密碼)"></a>查看Samba資料夾(會提示輸入密碼)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">smbclient -L &#x2F;&#x2F;ip address -U USER_NAME</span><br></pre></td></tr></table></figure>
+
+<h1 id="手動掛載Samba共享資料夾"><a href="#手動掛載Samba共享資料夾" class="headerlink" title="手動掛載Samba共享資料夾"></a>手動掛載Samba共享資料夾</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p &#x2F;mnt&#x2F;samba_share  </span><br><span class="line">sudo mount -t cifs &#x2F;&#x2F;ip address&#x2F;hddshare&#x2F;memories &#x2F;mnt&#x2F;samba_share -o username&#x3D;USER_NAME,password&#x3D;PWD,iocharset&#x3D;utf8,file_mode&#x3D;0777,dir_mode&#x3D;0777</span><br></pre></td></tr></table></figure>
+
+<h1 id="rsync同步掛載後資料夾memories至本地-rsync-再執行一次就增量更新）"><a href="#rsync同步掛載後資料夾memories至本地-rsync-再執行一次就增量更新）" class="headerlink" title="rsync同步掛載後資料夾memories至本地 (rsync 再執行一次就增量更新）"></a>rsync同步掛載後資料夾memories至本地 (rsync 再執行一次就增量更新）</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~&#x2F;backup_memories</span><br><span class="line">rsync -av &#x2F;mnt&#x2F;samba_share&#x2F;memories&#x2F; ~&#x2F;backup_memories&#x2F;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>參數說明<br>-a：archive 模式，會遞迴、保留權限、符號連結等<br>-v：verbose，顯示詳細資訊<br>-h：human-readable，讓檔案大小容易看懂<br>-z：compress，在資料傳輸時對資料進行壓縮，減少透過網路傳輸的資料量<br>注意路徑後面有斜線 /，這會影響 rsync 的行為<br>/mnt/hdd/my_folder/ 是同步「裡面的內容」<br>/mnt/hdd/my_folder 是同步「整個資料夾」本身  </p>
 </blockquote>
 <h1 id="若要定期同步"><a href="#若要定期同步" class="headerlink" title="若要定期同步"></a>若要定期同步</h1><p>可以建立一個 cron 任務，每月1日同步一次  </p>
-<p>crontab -e<br>0 0 1 * * rsync -av /mnt/samba_share/memories/ ~/backup_memories/</p>
-<blockquote>
-<p>分 時 日 月 星期<br>0   0   1   *   *<br>每個月的 1 號凌晨 00:00執行一次資料夾同步</p>
-</blockquote>
-<h1 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h1><p>原本想將本地隨身硬碟的資料夾同步到雲端，也考慮過用事件驅動方式（ 當有本地有新檔案增加時要同步到雲端硬碟），選好方案後再次回顧想達成的，除了設定繁雜，維護成本也增加，但壓垮駱駝最後一根稻草是考慮到本地硬碟親友合照上雲給他人託管就是種風險，最後才演變成這個修改後的方案，這也讓我意識到<a target="_blank" rel="noopener" href="https://temberature.github.io/post/1a9_MXf8S/">過度設計</a> 的迷思，先想個堪用的方案再逐步修正或許才是最理想的，這也是我智慧居家系統的宗旨呢。</p>
-<h1 id="回顧RAID"><a href="#回顧RAID" class="headerlink" title="回顧RAID"></a>回顧RAID</h1><ul>
-<li>RAID 0：資料分條（striping），效能提升明顯，但不具容錯能力，一顆硬碟壞掉會導致全部資料遺失。</li>
-<li>RAID 1：資料鏡像，所有資料完全複製到兩顆硬碟，提升容錯能力，一顆硬碟壞掉資料不會遺失，但容量利用率為50%。</li>
-<li>RAID 5：至少三顆硬碟，使用資料分條與奇偶校驗（parity），能容許一顆硬碟故障且資料不遺失，兼顧效能與容錯，但寫入速度較慢。</li>
-<li>RAID 6：類似RAID 5，但可容許兩顆硬碟同時故障，資料更安全。</li>
-<li>RAID 10（RAID 1+0）：先做鏡像，再做分條，兼具效能與高容錯，需至少四顆硬碟。</li>
-</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br><span class="line">0 0 1 * * rsync -av &#x2F;mnt&#x2F;samba_share&#x2F;memories&#x2F; ~&#x2F;backup_memories&#x2F;</span><br><span class="line"></span><br><span class="line">&gt; 分 時 日 月 星期</span><br><span class="line">0   0   1   *   *</span><br><span class="line">每個月的 1 號凌晨 00:00執行一次資料夾同步</span><br><span class="line">&#96;&#96;</span><br><span class="line"></span><br><span class="line"># 設定開機同步</span><br><span class="line"></span><br><span class="line">## 建立 rsync service</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>sudo nano /etc/systemd/system/rsync-backup.service<br>[Unit]<br>Description=One-time Rsync Backup on Boot<br>After=network-online.target mnt-samba_share.mount<br>Wants=network-online.target</p>
+<p>[Service]<br>Type=oneshot<br>ExecStart=/usr/bin/rsync -av /mnt/samba_share/memories/ /home/$USER/backup_memories/</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 如果掛載名稱不是 mnt-samba_share.mount  </span><br><span class="line"></span><br><span class="line">&gt; 執行systemctl list-units | grep mnt  </span><br><span class="line">替換 service 內的 After&#x3D;... 即可</span><br><span class="line"></span><br><span class="line"># 建立 timer — 開機後延遲 60 秒執行一次</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>sudo nano /etc/systemd/system/rsync-backup.timer<br>[Unit]<br>Description=Run Rsync Backup Once At Boot</p>
+<p>[Timer]<br>OnBootSec=1min<br>AccuracySec=10s<br>Unit=rsync-backup.service</p>
+<p>[Install]<br>WantedBy=timers.target</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 啟用並測試</span><br></pre></td></tr></table></figure>
+<p>sudo systemctl daemon-reload<br>sudo systemctl enable –now rsync-backup.timer</p>
+<p>查看systemctl list-timers | grep rsync</p>
+<pre><code>
+# 反思
+原本想將本地隨身硬碟的資料夾同步到雲端，也考慮過用事件驅動方式（ 當有本地有新檔案增加時要同步到雲端硬碟），選好方案後再次回顧想達成的，除了設定繁雜，維護成本也增加，但壓垮駱駝最後一根稻草是考慮到本地硬碟親友合照上雲給他人託管就是種風險，最後才演變成這個修改後的方案，這也讓我意識到[過度設計](https://temberature.github.io/post/1a9_MXf8S/) 的迷思，先想個堪用的方案再逐步修正或許才是最理想的，這也是我智慧居家系統的宗旨呢。
+
+# 回顧RAID
+* RAID 0：資料分條（striping），效能提升明顯，但不具容錯能力，一顆硬碟壞掉會導致全部資料遺失。
+* RAID 1：資料鏡像，所有資料完全複製到兩顆硬碟，提升容錯能力，一顆硬碟壞掉資料不會遺失，但容量利用率為50%。
+* RAID 5：至少三顆硬碟，使用資料分條與奇偶校驗（parity），能容許一顆硬碟故障且資料不遺失，兼顧效能與容錯，但寫入速度較慢。
+* RAID 6：類似RAID 5，但可容許兩顆硬碟同時故障，資料更安全。
+* RAID 10（RAID 1+0）：先做鏡像，再做分條，兼具效能與高容錯，需至少四顆硬碟。
+
+</code></pre>
 
 <div>
     <hr>
@@ -381,7 +401,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A2%BA%E5%AE%9A%E9%9A%A8%E8%BA%AB%E7%A2%9F%E6%9C%89%E8%B6%B3%E5%A4%A0%E7%A9%BA%E9%96%93"><span class="nav-number">1.</span> <span class="nav-text">確定隨身碟有足夠空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A2%BA%E7%AB%8B%E6%8E%9B%E8%BC%89%E9%BB%9E"><span class="nav-number">2.</span> <span class="nav-text">確立掛載點</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%9B%E8%BC%89Samba%E5%85%B1%E4%BA%AB%E8%B3%87%E6%96%99%E5%A4%BE%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%AE%E9%8C%84"><span class="nav-number">3.</span> <span class="nav-text">掛載Samba共享資料夾到本地目錄</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8BSamba%E8%B3%87%E6%96%99%E5%A4%BE-%E6%9C%83%E6%8F%90%E7%A4%BA%E8%BC%B8%E5%85%A5%E5%AF%86%E7%A2%BC"><span class="nav-number">4.</span> <span class="nav-text">查看Samba資料夾(會提示輸入密碼)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%8B%E5%8B%95%E6%8E%9B%E8%BC%89Samba%E5%85%B1%E4%BA%AB%E8%B3%87%E6%96%99%E5%A4%BE"><span class="nav-number">5.</span> <span class="nav-text">手動掛載Samba共享資料夾</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rsync%E5%90%8C%E6%AD%A5%E6%8E%9B%E8%BC%89%E5%BE%8C%E8%B3%87%E6%96%99%E5%A4%BEmemories%E8%87%B3%E6%9C%AC%E5%9C%B0-rsync-%E5%86%8D%E5%9F%B7%E8%A1%8C%E4%B8%80%E6%AC%A1%E5%B0%B1%E5%A2%9E%E9%87%8F%E6%9B%B4%E6%96%B0%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">rsync同步掛載後資料夾memories至本地 (rsync 再執行一次就增量更新）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8B%A5%E8%A6%81%E5%AE%9A%E6%9C%9F%E5%90%8C%E6%AD%A5"><span class="nav-number">7.</span> <span class="nav-text">若要定期同步</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%8D%E6%80%9D"><span class="nav-number">8.</span> <span class="nav-text">反思</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9E%E9%A1%A7RAID"><span class="nav-number">9.</span> <span class="nav-text">回顧RAID</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A2%BA%E5%AE%9A%E9%9A%A8%E8%BA%AB%E7%A2%9F%E6%9C%89%E8%B6%B3%E5%A4%A0%E7%A9%BA%E9%96%93"><span class="nav-number">1.</span> <span class="nav-text">確定隨身碟有足夠空間</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A2%BA%E7%AB%8B%E6%8E%9B%E8%BC%89%E9%BB%9E"><span class="nav-number">2.</span> <span class="nav-text">確立掛載點</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%9B%E8%BC%89Samba%E5%85%B1%E4%BA%AB%E8%B3%87%E6%96%99%E5%A4%BE%E5%88%B0%E6%9C%AC%E5%9C%B0%E7%9B%AE%E9%8C%84"><span class="nav-number">3.</span> <span class="nav-text">掛載Samba共享資料夾到本地目錄</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8BSamba%E8%B3%87%E6%96%99%E5%A4%BE-%E6%9C%83%E6%8F%90%E7%A4%BA%E8%BC%B8%E5%85%A5%E5%AF%86%E7%A2%BC"><span class="nav-number">4.</span> <span class="nav-text">查看Samba資料夾(會提示輸入密碼)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%8B%E5%8B%95%E6%8E%9B%E8%BC%89Samba%E5%85%B1%E4%BA%AB%E8%B3%87%E6%96%99%E5%A4%BE"><span class="nav-number">5.</span> <span class="nav-text">手動掛載Samba共享資料夾</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rsync%E5%90%8C%E6%AD%A5%E6%8E%9B%E8%BC%89%E5%BE%8C%E8%B3%87%E6%96%99%E5%A4%BEmemories%E8%87%B3%E6%9C%AC%E5%9C%B0-rsync-%E5%86%8D%E5%9F%B7%E8%A1%8C%E4%B8%80%E6%AC%A1%E5%B0%B1%E5%A2%9E%E9%87%8F%E6%9B%B4%E6%96%B0%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">rsync同步掛載後資料夾memories至本地 (rsync 再執行一次就增量更新）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8B%A5%E8%A6%81%E5%AE%9A%E6%9C%9F%E5%90%8C%E6%AD%A5"><span class="nav-number">7.</span> <span class="nav-text">若要定期同步</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -399,7 +419,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">414</span>
+          <span class="site-state-item-count">416</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -467,12 +487,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">577k</span>
+    <span title="Symbols count total">580k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">8:44</span>
+    <span title="Reading time total">8:47</span>
 </div>
 
         
