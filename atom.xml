@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2026-01-03T07:16:53.500Z</updated>
+  <updated>2026-01-17T07:13:37.738Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction to Agents Day 2</title>
+    <link href="https://eric999j.github.io/manager/mcp/"/>
+    <id>https://eric999j.github.io/manager/mcp/</id>
+    <published>2026-01-17T08:30:00.000Z</published>
+    <updated>2026-01-17T07:13:37.738Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(16).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;代理工具及與模型上下文協定 (MCP) 的互通性&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Avahi</title>
+    <link href="https://eric999j.github.io/engineer/avahi/"/>
+    <id>https://eric999j.github.io/engineer/avahi/</id>
+    <published>2026-01-17T08:00:00.000Z</published>
+    <updated>2026-01-17T07:11:36.413Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;建立本地DNS &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>MCP 規範</title>
@@ -375,46 +415,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>壓縮格式</title>
-    <link href="https://eric999j.github.io/manager/compress/"/>
-    <id>https://eric999j.github.io/manager/compress/</id>
-    <published>2025-09-13T09:30:00.000Z</published>
-    <updated>2025-09-13T16:33:30.699Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(3).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;聽說日本電車是人類zip( 誤&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>資料備份</title>
-    <link href="https://eric999j.github.io/engineer/backup/"/>
-    <id>https://eric999j.github.io/engineer/backup/</id>
-    <published>2025-09-13T08:00:00.000Z</published>
-    <updated>2025-11-30T09:43:11.888Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;完美很好，但有必要嗎?&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
     
   </entry>
   
