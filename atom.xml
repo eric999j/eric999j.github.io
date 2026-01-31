@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2026-01-17T07:13:37.738Z</updated>
+  <updated>2026-01-31T06:37:54.546Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction to Agents Day 3</title>
+    <link href="https://eric999j.github.io/manager/context/"/>
+    <id>https://eric999j.github.io/manager/context/</id>
+    <published>2026-01-31T05:00:00.000Z</published>
+    <updated>2026-01-31T06:37:54.546Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;情境工程：會話與記憶&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>Introduction to Agents Day 2</title>
@@ -166,6 +186,26 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;天命&amp;gt; 主角&amp;gt; 數字，一切皆源自宇宙 &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>易經八卦</title>
+    <link href="https://eric999j.github.io/life/iching/"/>
+    <id>https://eric999j.github.io/life/iching/</id>
+    <published>2025-12-13T06:30:00.000Z</published>
+    <updated>2026-01-31T06:45:05.778Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(41).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;變動的象，物極必反&lt;/p&gt;</summary>
     
     
     
@@ -368,46 +408,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;AI系統從單模型變多代理協作&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>台北宴會味</title>
-    <link href="https://eric999j.github.io/life/taipei/"/>
-    <id>https://eric999j.github.io/life/taipei/</id>
-    <published>2025-09-28T13:00:00.000Z</published>
-    <updated>2025-09-28T12:32:43.023Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BI4sqhb.jpeg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-&lt;p&gt;身為台北人竟然現在才介紹台北點心（汗。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Natural language processing</title>
-    <link href="https://eric999j.github.io/manager/NLP/"/>
-    <id>https://eric999j.github.io/manager/NLP/</id>
-    <published>2025-09-28T11:30:00.000Z</published>
-    <updated>2025-09-28T12:35:55.794Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;自然語言處理（NLP）的兩大基石&lt;/p&gt;</summary>
     
     
     
