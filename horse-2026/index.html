@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminary Gallop 2026 - Year of the Horse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@1,400;1,600&family=Noto+Serif+SC:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red-dark: #641414;
+            --red-bright: #C0392B;
+            --gold: #D4AF37;
+            --gold-light: #FFDF80;
+            --cream: #FAF9F6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--red-bright) 0%, var(--red-dark) 100%);
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lora', serif;
+            color: var(--gold);
+            position: relative;
+        }
+
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            mix-blend-mode: color-dodge; /* Adds to the luminosity */
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* Glassmorphism subtle effect to separate text from busy background */
+            backdrop-filter: blur(2px); 
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            animation-delay: 0.5s;
+        }
+
+        .year {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(4rem, 15vw, 12rem);
+            line-height: 0.9;
+            background: linear-gradient(to bottom, var(--gold-light), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .chinese-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin-top: 1rem;
+            color: var(--gold-light);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            font-weight: 300;
+            letter-spacing: 0.5em;
+            margin-left: 0.5em; /* Compensate for letter spacing */
+        }
+
+        .subtitle {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 1.5rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .seal {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--gold);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: var(--red-bright);
+            background: var(--gold);
+            font-family: 'Noto Serif SC', serif;
+            font-weight: bold;
+            font-size: 2rem;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            transform: rotate(-15deg);
+        }
+
+        /* Scanlines/Texture overlay */
+        .texture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 3;
+            mix-blend-mode: overlay;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="texture"></div>
+    <div id="canvas-container">
+        <canvas id="bgCanvas"></canvas>
+    </div>
+
+    <div class="content">
+        <!-- Optional Seal/Stamp -->
+        <!-- <div class="seal">春</div> -->
+        
+        <div class="year">2026</div>
+        <div class="chinese-title">光輝奔騰</div>
+        <div class="subtitle">Luminary Gallop &nbsp;|&nbsp; Year of the Horse</div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Colors
+        const RED_DARK = {r:100, g:20, b:20};
+        const RED_BRIGHT = {r:192, g:57, b:43};
+        const GOLD = {r:212, g:175, b:55};
+        const GOLD_LIGHT = {r:255, g:223, b:128};
+        
+        let width, height;
+        let lines = [];
+        
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+            initLines();
+        }
+        
+        class Curve {
+            constructor() {
+                this.reset();
+                // Random starting progress for organic feel if we want looped animation
+                // But for "drawing in" effect, start at 0
+                this.progress = 0;
+                this.speed = 0.002 + Math.random() * 0.003;
+                this.life = 0; 
+            }
+            
+            reset() {
+                // Logic adapted from generate_card.py
+                // start_y = HEIGHT * 0.5 + random.randint(-600, 600)
+                const startYBase = height * 0.5;
+                const spread = height * 0.6;
+                
+                this.yStart = startYBase + (Math.random() * spread * 2 - spread);
+                this.yEnd = startYBase + (Math.random() * spread * 2 - spread);
+                
+                this.xStart = -200;
+                this.xEnd = width + 200;
+                
+                // Control points
+                this.cp1x = width * 0.4;
+                this.cp1y = this.yStart - (300 + Math.random() * 600); // Upward curve intent
+                
+                this.cp2x = width * 0.6;
+                this.cp2y = this.yEnd + (300 + Math.random() * 600); // Downward/Upward
+                
+                // Visual properties
+                this.width = 1 + Math.random() * 6; // Thinner for elegance
+                this.opacityBase = 0.1 + Math.random() * 0.5;
+                this.colorMix = Math.random(); // 0 to 1 mixing GOLD and GOLD_LIGHT
+                
+                // Animation state
+                this.drawProgress = 0;
+            }
+            
+            getPoint(t) {
+                // Cubic Bezier formula
+                const invT = 1 - t;
+                const x = Math.pow(invT, 3) * this.xStart + 
+                          3 * Math.pow(invT, 2) * t * this.cp1x + 
+                          3 * invT * Math.pow(t, 2) * this.cp2x + 
+                          Math.pow(t, 3) * this.xEnd;
+                          
+                const y = Math.pow(invT, 3) * this.yStart + 
+                          3 * Math.pow(invT, 2) * t * this.cp1y + 
+                          3 * invT * Math.pow(t, 2) * this.cp2y + 
+                          Math.pow(t, 3) * this.yEnd;
+                return {x, y};
+            }
+            
+            update() {
+                if (this.drawProgress < 1) {
+                    this.drawProgress += this.speed;
+                    if (this.drawProgress > 1) this.drawProgress = 1;
+                }
+            }
+            
+            draw(ctx) {
+                ctx.beginPath();
+                ctx.moveTo(this.xStart, this.yStart);
+                
+                // Should we draw the whole curve or just a segment? 
+                // Let's draw the whole curve but manipulate opacity or length based on progress.
+                // Actually, full bezier drawing is tricky if we want to "grow" it exactly along path without complex math.
+                // A simpler way for visual effect: Draw the curve, but use lineDash to reveal it.
+                // Or just sample points.
+                
+                const steps = 50; 
+                // Draw up to drawProgress
+                const currentT = this.drawProgress;
+                
+                // Optimization: using native bezierCurveTo is faster/smoother than lines
+                // But native bezier doesn't support "partial" drawing easily.
+                // We will just draw the full curve but fade it in.
+                
+                // Let's try drifting the control points slightly for life
+                const time = Date.now() * 0.001;
+                const drift = Math.sin(time + this.yStart) * 20;
+                
+                ctx.bezierCurveTo(
+                    this.cp1x, this.cp1y + drift, 
+                    this.cp2x, this.cp2y - drift, 
+                    this.xEnd, this.yEnd
+                );
+                
+                // Color interpolation
+                const r = Math.round(GOLD.r + (GOLD_LIGHT.r - GOLD.r) * this.colorMix);
+                const g = Math.round(GOLD.g + (GOLD_LIGHT.g - GOLD.g) * this.colorMix);
+                const b = Math.round(GOLD.b + (GOLD_LIGHT.b - GOLD.b) * this.colorMix);
+                
+                // Fade in effect
+                ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${this.opacityBase * this.drawProgress})`;
+                ctx.lineWidth = this.width;
+                ctx.lineCap = 'round';
+                ctx.stroke();
+            }
+        }
+        
+        function initLines() {
+            lines = [];
+            for(let i=0; i<60; i++) {
+                lines.push(new Curve());
+            }
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            
+            // Composite mode for "glowing" effect
+            ctx.globalCompositeOperation = 'lighter'; // or 'screen'
+            
+            lines.forEach(line => {
+                line.update();
+                line.draw(ctx);
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        window.addEventListener('resize', resize);
+        resize();
+        animate();
+        
+    </script>
+</body>
+</html>
