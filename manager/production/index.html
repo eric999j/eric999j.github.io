@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"eric999j.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="從原型到生產環境">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Introduction to Agents Day 5">
+<meta property="og:url" content="https://eric999j.github.io/manager/production/index.html">
+<meta property="og:site_name" content="Lunski&#39;s Clutter">
+<meta property="og:description" content="從原型到生產環境">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg">
+<meta property="article:published_time" content="2026-02-28T09:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-28T09:40:05.060Z">
+<meta property="article:author" content="lunski">
+<meta property="article:tag" content="文書">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg">
+
+<link rel="canonical" href="https://eric999j.github.io/manager/production/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-tw'
+  };
+</script>
+
+  <title>Introduction to Agents Day 5 | Lunski's Clutter</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179395953-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179395953-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Lunski's Clutter" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lunski's Clutter</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a place to put my clutters, no matter you like it or not, welcome here.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
+    <link itemprop="mainEntityOfPage" href="https://eric999j.github.io/manager/production/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/lunski.png">
+      <meta itemprop="name" content="lunski">
+      <meta itemprop="description" content="あ、どうもはじめまして。盧です。どうぞよろしくお願いします。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lunski's Clutter">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Introduction to Agents Day 5
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2026-02-28 17:00:00 / Modified: 17:40:05" itemprop="dateCreated datePublished" datetime="2026-02-28T17:00:00+08:00">2026-02-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/manager/" itemprop="url" rel="index"><span itemprop="name">管理</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>568</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(14).jpeg"></p>
+<p>從原型到生產環境</p>
+<a id="more"></a>
+
+<h1 id="第五天"><a href="#第五天" class="headerlink" title="第五天"></a><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=8Wyt9l7ge-g">第五天</a></h1><p>超越本地測試，學習如何部署和擴展 AI 代理，使其適用於實際應用。本次課程將涵蓋部署代理程式的最佳實踐，以便其他人可以使用它們，包括如何使用 Agent2Agent (A2A) 協定創建真正的多代理系統。</p>
+<ul>
+<li>作業1: <a target="_blank" rel="noopener" href="https://www.kaggle.com/code/kaggle5daysofai/day-5a-agent2agent-communication">探索如何使用 Agent2Agent (A2A) 協定實現代理程式之間的互動</a></li>
+<li>作業2: <a target="_blank" rel="noopener" href="https://www.kaggle.com/code/kaggle5daysofai/day-5b-agent-deployment"><code>可選</code> 將您的代理程式部署到 Google Cloud 上的 Agentu 上的 Agent Engine</a></li>
+</ul>
+<h1 id="Agent-基礎建設"><a href="#Agent-基礎建設" class="headerlink" title="Agent 基礎建設"></a>Agent 基礎建設</h1><ol>
+<li>自動評估產出</li>
+<li>自動CICD</li>
+<li>複雜的處理能力</li>
+</ol>
+<h1 id="AI-engineer-vs-Prompt-engineer"><a href="#AI-engineer-vs-Prompt-engineer" class="headerlink" title="AI engineer vs Prompt engineer"></a>AI engineer vs Prompt engineer</h1><ul>
+<li>AI工程師與數據科學家合作，提示工程師在技術團隊與終端使用者間操縱模型反饋</li>
+<li>AI工程師面向模型訓練，提示工程師注重模型反饋</li>
+<li>AI 工程師偏重於技術與數據科學知識的深入應用，而提示工程師則更加專注於與語言模型互動的人機溝通技巧與輸出品質控制 </li>
+</ul>
+<h1 id="工程上最快除錯的方式"><a href="#工程上最快除錯的方式" class="headerlink" title="工程上最快除錯的方式"></a>工程上最快除錯的方式</h1><ol>
+<li>好的CI在更新程式時立即找出問題</li>
+<li>好的CD在終端使用者前攔截錯誤</li>
+<li>弭平產品化前的鴻溝</li>
+<li>版本控制</li>
+</ol>
+<h1 id="三層防護prompt-injection"><a href="#三層防護prompt-injection" class="headerlink" title="三層防護prompt injection"></a>三層防護prompt injection</h1><ol>
+<li>制定Agent基礎規則</li>
+<li>輸入輸出控管</li>
+<li>紅隊演練，持續監控修改</li>
+</ol>
+<h1 id="白皮書要點"><a href="#白皮書要點" class="headerlink" title="白皮書要點"></a>白皮書要點</h1><ul>
+<li>人工智慧代理運行生命週期的技術指南，重點關注部署、擴展和生產化</li>
+<li>原型過渡到企業級解決方案所面臨的挑戰</li>
+<li>A2A多代理協作</li>
+<li>將代理程式部署到 Google Cloud 上的 Vertex AI Agent Engine</li>
+</ul>
+
+<div>
+    <hr>
+    <p style="margin-bottom: 0;">如果你覺得這篇文章很棒，請你不吝點讚 (ﾟ∀ﾟ)</p>
+    <iframe width="100%" height="230px" scrolling="no" frameborder="0" id="player" src="https://button.like.co/in/embed/likerlunski/button/?referrer=<%- post.permalink %>" allowfullscreen="true"></iframe>
+</div>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Instrument/" rel="tag"><i class="fa fa-tag"></i> 文書</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/manager/conceptualization/" rel="prev" title="美食撰文提要">
+      <i class="fa fa-chevron-left"></i> 美食撰文提要
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/life/hilton/" rel="next" title="新板希爾頓">
+      新板希爾頓 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E5%A4%A9"><span class="nav-number">1.</span> <span class="nav-text">第五天</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Agent-%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD"><span class="nav-number">2.</span> <span class="nav-text">Agent 基礎建設</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AI-engineer-vs-Prompt-engineer"><span class="nav-number">3.</span> <span class="nav-text">AI engineer vs Prompt engineer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%A5%E7%A8%8B%E4%B8%8A%E6%9C%80%E5%BF%AB%E9%99%A4%E9%8C%AF%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">4.</span> <span class="nav-text">工程上最快除錯的方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E5%B1%A4%E9%98%B2%E8%AD%B7prompt-injection"><span class="nav-number">5.</span> <span class="nav-text">三層防護prompt injection</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%99%BD%E7%9A%AE%E6%9B%B8%E8%A6%81%E9%BB%9E"><span class="nav-number">6.</span> <span class="nav-text">白皮書要點</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lunski"
+      src="/uploads/lunski.png">
+  <p class="site-author-name" itemprop="name">lunski</p>
+  <div class="site-description" itemprop="description">あ、どうもはじめまして。盧です。どうぞよろしくお願いします。</div>
+</div>
+
+
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">433</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/eric999j" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eric999j" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:eric999j@gmail.com" title="E-Mail → mailto:eric999j@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/100000185298736" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;100000185298736" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/shvara" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;shvara" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:eric999j?call|chat" title="Skype → skype:eric999j?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9F%8F%E4%BA%A8%EF%BC%88eric-%E7%9B%A7-792362b9" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;柏亨（eric-盧-792362b9" rel="noopener" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-fw"></i>Linkedin</a>
+      </span>
+  </div>
+
+
+
+      </div>
+    </div>
+   </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lunski</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="Symbols count total">602k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">9:08</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '282e6ebad41e061ecb0e',
+      clientSecret: 'c33b8e01dfddfbc146f2d7baab6a25016e85f303',
+      repo        : 'eric999j.github.io',
+      owner       : 'eric999j',
+      admin       : ['eric999j'],
+      id          : '1b6f74e8f22b5b032a9bb8f5cb3a7ee6',
+        language: 'zh-TW',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
