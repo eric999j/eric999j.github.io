@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2026-03-14T10:13:45.148Z</updated>
+  <updated>2026-03-22T06:23:58.880Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>打發蛋白</title>
+    <link href="https://eric999j.github.io/life/eggWhite/"/>
+    <id>https://eric999j.github.io/life/eggWhite/</id>
+    <published>2026-03-22T07:00:00.000Z</published>
+    <updated>2026-03-22T06:23:58.880Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(24).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我就不信總是失敗（艸&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="語言" scheme="https://eric999j.github.io/tags/Linguistic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>平台工程</title>
+    <link href="https://eric999j.github.io/manager/platformEngineering/"/>
+    <id>https://eric999j.github.io/manager/platformEngineering/</id>
+    <published>2026-03-22T06:30:00.000Z</published>
+    <updated>2026-03-22T06:22:39.134Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;PaaS&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>LLM技能擴展</title>
@@ -373,48 +413,6 @@
     
     
     <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SAP</title>
-    <link href="https://eric999j.github.io/manager/SAP/"/>
-    <id>https://eric999j.github.io/manager/SAP/</id>
-    <published>2025-11-30T10:00:00.000Z</published>
-    <updated>2025-11-30T10:49:26.804Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(10).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;企業營運軟體霸主&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>吸引力</title>
-    <link href="https://eric999j.github.io/manager/attractive/"/>
-    <id>https://eric999j.github.io/manager/attractive/</id>
-    <published>2025-11-15T15:00:00.000Z</published>
-    <updated>2025-11-15T15:19:28.742Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(12).jpeg&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;吸引力 = 獨特性 × 信賴感 × 對他人的價值感&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
