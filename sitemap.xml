@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eric999j.github.io/life/movie/</loc>
+    
+    <lastmod>2026-04-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eric999j.github.io/life/world/</loc>
+    
+    <lastmod>2026-04-19</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eric999j.github.io/life/kousui/</loc>
     
     <lastmod>2026-04-19</lastmod>
@@ -66,13 +80,6 @@
   
   <url>
     <loc>https://eric999j.github.io/manager/contextEngineering/</loc>
-    
-    <lastmod>2026-03-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/life/world/</loc>
     
     <lastmod>2026-03-14</lastmod>
     
@@ -348,13 +355,6 @@
     <loc>https://eric999j.github.io/manager/fileSystem/</loc>
     
     <lastmod>2025-10-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eric999j.github.io/life/movie/</loc>
-    
-    <lastmod>2025-10-12</lastmod>
     
   </url>
   
