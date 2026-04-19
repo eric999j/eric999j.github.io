@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2026-04-05T10:21:35.495Z</updated>
+  <updated>2026-04-19T04:11:38.675Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>香水 - 瑛人 × 優里</title>
+    <link href="https://eric999j.github.io/life/kousui/"/>
+    <id>https://eric999j.github.io/life/kousui/</id>
+    <published>2026-04-19T05:00:00.000Z</published>
+    <updated>2026-04-19T04:11:38.675Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(40).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;N4以上，滿滿て型的歌（汗。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubiquiti（UniFi）路由器</title>
+    <link href="https://eric999j.github.io/manager/unifi/"/>
+    <id>https://eric999j.github.io/manager/unifi/</id>
+    <published>2026-04-19T04:00:00.000Z</published>
+    <updated>2026-04-19T04:10:26.880Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(32).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;新世代路由選擇&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>新葡苑</title>
@@ -373,46 +413,6 @@
     
     
     <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python Decorator</title>
-    <link href="https://eric999j.github.io/interview/pythonDecorator/"/>
-    <id>https://eric999j.github.io/interview/pythonDecorator/</id>
-    <published>2025-12-27T08:00:00.000Z</published>
-    <updated>2025-12-27T08:14:31.823Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(6).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Python進階用法&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="面試" scheme="https://eric999j.github.io/categories/interview/"/>
-    
-    
-    <category term="力扣" scheme="https://eric999j.github.io/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello/Goodbye (안녕)</title>
-    <link href="https://eric999j.github.io/life/sojourner/"/>
-    <id>https://eric999j.github.io/life/sojourner/</id>
-    <published>2025-12-13T07:00:00.000Z</published>
-    <updated>2025-12-13T06:34:48.130Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(28).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;新的嘗試&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
-    
-    
-    <category term="音樂" scheme="https://eric999j.github.io/tags/Music/"/>
     
   </entry>
   
