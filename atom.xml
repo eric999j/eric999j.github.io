@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2026-04-19T04:11:38.675Z</updated>
+  <updated>2026-05-01T10:38:37.354Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大腦中的神經傳導物質</title>
+    <link href="https://eric999j.github.io/manager/neurotransmitter/"/>
+    <id>https://eric999j.github.io/manager/neurotransmitter/</id>
+    <published>2026-05-01T11:00:00.000Z</published>
+    <updated>2026-05-01T10:38:37.354Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(23).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;腦中的神秘東東&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>認知科學</title>
+    <link href="https://eric999j.github.io/manager/cognitive/"/>
+    <id>https://eric999j.github.io/manager/cognitive/</id>
+    <published>2026-05-01T10:00:00.000Z</published>
+    <updated>2026-05-01T10:38:34.412Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(8).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;研究「心智與智能」的跨領域學科。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
   
   <entry>
     <title>香水 - 瑛人 × 優里</title>
@@ -366,46 +406,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;同文館&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Introduction to Agents Day 1</title>
-    <link href="https://eric999j.github.io/manager/agent/"/>
-    <id>https://eric999j.github.io/manager/agent/</id>
-    <published>2026-01-03T06:00:00.000Z</published>
-    <updated>2026-01-03T07:17:10.775Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(17).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;智能體簡介&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>反轉C的思考練習</title>
-    <link href="https://eric999j.github.io/manager/transform/"/>
-    <id>https://eric999j.github.io/manager/transform/</id>
-    <published>2025-12-27T09:00:00.000Z</published>
-    <updated>2025-12-27T08:20:09.058Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(11).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;夢裡什麼都有  &lt;/p&gt;</summary>
     
     
     
