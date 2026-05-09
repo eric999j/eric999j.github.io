@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2026-05-01T10:38:37.354Z</updated>
+  <updated>2026-05-09T05:47:09.452Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Banana Hoon Kueh</title>
+    <link href="https://eric999j.github.io/life/hoonKueh/"/>
+    <id>https://eric999j.github.io/life/hoonKueh/</id>
+    <published>2026-05-09T07:30:00.000Z</published>
+    <updated>2026-05-09T05:47:09.452Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://lh3.googleusercontent.com/pw/AP1GczNTY7uVAmVV-yQHaI9-F91Y3VbOc87QYE86kqrTHivhKlgcrAWvjDjO8E0B57QoYsYPhLLvJjL1xbVp9QyrlzUjAaEAkBhJZbwf_ayAcctpKMP_6Of7=w2400?source=screenshot.guru&quot;&gt; &lt;img src=&quot;https://lh3.googleusercontent.com/pw/AP1GczNTY7uVAmVV-yQHaI9-F91Y3VbOc87QYE86kqrTHivhKlgcrAWvjDjO8E0B57QoYsYPhLLvJjL1xbVp9QyrlzUjAaEAkBhJZbwf_ayAcctpKMP_6Of7=w600-h315-p-k&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Indonesia!&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新興之愛</title>
+    <link href="https://eric999j.github.io/manager/emergingLove/"/>
+    <id>https://eric999j.github.io/manager/emergingLove/</id>
+    <published>2026-05-09T07:00:00.000Z</published>
+    <updated>2026-05-09T05:45:59.361Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(30).jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;為什麼「完美」反而是吸引力的天敵？從認知科學看長久關係的 5 個驚人真相&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
+    
+    
+    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>好的API</title>
+    <link href="https://eric999j.github.io/engineer/api/"/>
+    <id>https://eric999j.github.io/engineer/api/</id>
+    <published>2026-05-09T06:30:00.000Z</published>
+    <updated>2026-05-09T05:45:12.161Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/2020-10-02.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;服務生訓練守則&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
+    
+    
+    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
+    
+  </entry>
   
   <entry>
     <title>大腦中的神經傳導物質</title>
@@ -346,66 +406,6 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;情境工程：會話與記憶&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Introduction to Agents Day 2</title>
-    <link href="https://eric999j.github.io/manager/mcp/"/>
-    <id>https://eric999j.github.io/manager/mcp/</id>
-    <published>2026-01-17T08:30:00.000Z</published>
-    <updated>2026-01-17T07:13:37.738Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(16).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;代理工具及與模型上下文協定 (MCP) 的互通性&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Avahi</title>
-    <link href="https://eric999j.github.io/engineer/avahi/"/>
-    <id>https://eric999j.github.io/engineer/avahi/</id>
-    <published>2026-01-17T08:00:00.000Z</published>
-    <updated>2026-01-17T07:11:36.413Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(34).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;建立本地DNS &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="工程" scheme="https://eric999j.github.io/categories/engineer/"/>
-    
-    
-    <category term="好用" scheme="https://eric999j.github.io/tags/AwesomeThings/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MCP 規範</title>
-    <link href="https://eric999j.github.io/manager/contextProtocol/"/>
-    <id>https://eric999j.github.io/manager/contextProtocol/</id>
-    <published>2026-01-03T07:00:00.000Z</published>
-    <updated>2026-01-03T07:16:53.500Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(19).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;同文館&lt;/p&gt;</summary>
     
     
     
