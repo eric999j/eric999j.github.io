@@ -6,7 +6,7 @@
   <link href="https://eric999j.github.io/atom.xml" rel="self"/>
   
   <link href="https://eric999j.github.io/"/>
-  <updated>2026-05-09T05:47:09.452Z</updated>
+  <updated>2026-09-12T08:34:29.655Z</updated>
   <id>https://eric999j.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>茗捷印尼餐廳</title>
+    <link href="https://eric999j.github.io/life/nita/"/>
+    <id>https://eric999j.github.io/life/nita/</id>
+    <published>2026-09-12T08:30:00.000Z</published>
+    <updated>2026-09-12T08:34:29.655Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/pw/AP1GczOi5GVPC1ALO8AzUW_eybicfROkpWvjl6b0qNoJo3nqTYUePwMvgMBkTyhkVT0YxQnTnobfdAWexuNOele9f5nhrqYqek0XibSDtIWq14XggOxeeBHr=w2400&quot;&gt;&lt;/p&gt;
+&lt;p&gt;深入東爪哇家鄉味，這家餐廳還通過了清真認證。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://eric999j.github.io/categories/life/"/>
+    
+    
+    <category term="飲食" scheme="https://eric999j.github.io/tags/Diet/"/>
+    
+  </entry>
   
   <entry>
     <title>Banana Hoon Kueh</title>
@@ -393,26 +413,6 @@
     
     
     <category term="回憶" scheme="https://eric999j.github.io/tags/Past/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Introduction to Agents Day 3</title>
-    <link href="https://eric999j.github.io/manager/context/"/>
-    <id>https://eric999j.github.io/manager/context/</id>
-    <published>2026-01-31T05:00:00.000Z</published>
-    <updated>2026-01-31T06:37:54.546Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/eric999j/Clutter/master/blog/japan(15).jpeg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;情境工程：會話與記憶&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="管理" scheme="https://eric999j.github.io/categories/manager/"/>
-    
-    
-    <category term="文書" scheme="https://eric999j.github.io/tags/Instrument/"/>
     
   </entry>
   
